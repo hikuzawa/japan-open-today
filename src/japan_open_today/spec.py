@@ -202,6 +202,11 @@ SPOT_SPEC = ExtractionSpec(
     summary_max_chars=120,
     verbatim_overlap_chars=30,
     summary_fallback=spot_summary_fallback,
+    # 本文に営業時間が無い施設のための最後の一手。schema.org の JSON-LD に
+    # 施設自身が書いた `openingHoursSpecification` があればそれを使う（sitemill ADR 0018 追記）。
+    # 二十四の瞳映画村は本文に時間が無く、フッターの「AM9:00〜PM5:00」は TEL の隣にあって
+    # 電話の受付時間とも読めるため根拠にできなかった。JSON-LD には 9:00–17:00 が書かれている
+    structured_hours_target="hours",
 )
 
 NOTICE_SPEC = ExtractionSpec(

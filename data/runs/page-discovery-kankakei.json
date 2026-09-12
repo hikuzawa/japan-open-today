@@ -1,0 +1,27 @@
+{
+  "discovered_at": "2026-09-12T20:06:06.933089+09:00",
+  "requests": 2,
+  "results": [
+    {
+      "source_id": "kagawa-kankakei",
+      "name": "寒霞渓",
+      "existing_kinds": [
+        "notice",
+        "spot_access",
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-kankakei",
+          "kind": "spot_hours",
+          "url": "https://www.kankakei.co.jp/ropeway/",
+          "label": "ロープウェイ",
+          "found_on": "https://www.kankakei.co.jp/",
+          "verified": true,
+          "detail": "乗りゴンドラで所要時間5分の絶景の空中散歩をお楽しみください。 期間 営業時間 始発 最終便 03/21~10/20 8:30~17:00 8:36 17:00 10/21~11/"
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

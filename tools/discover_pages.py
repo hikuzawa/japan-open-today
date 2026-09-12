@@ -43,6 +43,10 @@ KIND_KEYWORDS: tuple[tuple[str, re.Pattern[str]], ...] = (
         re.compile(
             r"開[園館場]時間|営業時間|開[園館場]日|利用案内|入[園館場]案内|ご利用案内|"
             r"開館情報|営業案内|hours|opening"
+            # ロープウェイ・遊覧船が施設そのものの場合、時間は乗り物の名前と「時刻表」の側にある
+            # （寒霞渓の開館時間は /ropeway/ の「時刻表」から辿る。第1フェーズの交通とは別で、
+            #   ここでの対象はその施設に入るための唯一の乗り物である）
+            r"|時刻表|運行時間|運転時間|運航時間|ropeway|cablecar|timetable"
         ),
     ),
     (
@@ -84,7 +88,11 @@ LABEL_EXCLUDE = re.compile(r"アクセシビリティ|プライバシー|個人�
 # （ベネッセの「シルバーウィーク期間のアート施設開館時間変更のお知らせ」で実際に起きた）。
 NOTICE_ONLY_LABEL = re.compile(r"お知らせ|変更|臨時|中止|delay|cancel")
 # 施設の時間を語る言葉。時刻がこの近くに無ければ、その施設の開館時間ではない
-HOURS_CONTEXT = re.compile(r"開[園館場]時間|営業時間|開[園館場]|入[園館場]|利用時間|受付時間")
+HOURS_CONTEXT = re.compile(
+    r"開[園館場]時間|営業時間|開[園館場]|入[園館場]|利用時間|受付時間"
+    # 乗り物が施設そのものの場合の言い方
+    r"|運行時間|運転時間|運航時間|始発|終発|上り|下り"
+)
 # 役所の窓口時間。自治体サイトのフッターにほぼ必ずあり、施設の時間と間違える
 OFFICE_HOURS = re.compile(r"開庁時間|執務時間|窓口(?:の)?時間")
 # 料金を語る言葉
@@ -263,11 +271,15 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true", help="kagawa.yaml に足す")
     parser.add_argument("--out", type=Path, default=Path("data/runs/page-discovery.json"))
+    parser.add_argument("--only", default="", help="情報源 id をカンマ区切りで絞る")
     args = parser.parse_args()
 
     ws = Workspace.open(Path.cwd())
     raw = RawCache(ws.raw_dir)
     entries = [e for e in load_entries(ws) if e.get("policy") == "crawl" and e.get("spot")]
+    if args.only:
+        wanted = {s.strip() for s in args.only.split(",") if s.strip()}
+        entries = [e for e in entries if e["id"] in wanted]
     results: list[SourceResult] = []
     ua = f"{ws.site.user_agent} page discovery"
     with PoliteClient(ua, default_delay=3.0, jitter=1.0, timeout=30.0) as client:

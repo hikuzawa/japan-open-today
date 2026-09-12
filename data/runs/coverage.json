@@ -175,42 +175,42 @@
       "spot_id": "kankakei",
       "name": "寒霞渓",
       "fields": [
-        "address",
-        "phone"
-      ],
-      "missing": [
         "hours",
-        "closures",
-        "fees",
+        "address",
+        "phone",
         "reservation_required"
       ],
-      "today": "unknown",
+      "missing": [
+        "closures",
+        "fees"
+      ],
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 7
+        "open": 7
       }
     },
     {
       "spot_id": "24hitomi",
       "name": "二十四の瞳映画村",
       "fields": [
+        "hours",
         "address",
         "phone"
       ],
       "missing": [
-        "hours",
         "closures",
         "fees",
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 7
+        "open": 7
       }
     },
     {
@@ -308,18 +308,18 @@
     }
   ],
   "field_counts": {
-    "hours": 7,
+    "hours": 9,
     "fees": 4,
     "address": 12,
     "phone": 12,
-    "reservation_required": 8,
+    "reservation_required": 9,
     "closures": 4
   },
   "states": {
-    "open": 7,
-    "unknown": 5
+    "open": 9,
+    "unknown": 3
   },
   "unknown_reasons": {
-    "no_data": 5
+    "no_data": 3
   }
 }

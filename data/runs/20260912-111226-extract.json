@@ -5,71 +5,71 @@
   "extraction_metrics": {
     "fields": {
       "address": {
-        "not_found": 0,
+        "not_found": 2,
         "notes": {
-          "quote_joined": 1
+          "quote_not_in_source": 1
         },
         "parsed": 3,
-        "quote_not_in_source": 0,
-        "total": 3,
+        "quote_not_in_source": 1,
+        "total": 6,
         "unparsed": 0
       },
       "closures": {
-        "not_found": 2,
+        "not_found": 5,
         "notes": {
           "always_open": 1
         },
         "parsed": 1,
         "quote_not_in_source": 0,
-        "total": 3,
+        "total": 6,
         "unparsed": 0
       },
       "fee_adult": {
-        "not_found": 2,
+        "not_found": 4,
         "notes": {
-          "quote_not_in_source": 1
+          "quote_not_in_source": 2
         },
         "parsed": 0,
-        "quote_not_in_source": 1,
-        "total": 3,
+        "quote_not_in_source": 2,
+        "total": 6,
         "unparsed": 0
       },
       "fee_child": {
-        "not_found": 2,
+        "not_found": 4,
         "notes": {
-          "quote_not_in_source": 1
+          "quote_not_in_source": 2
         },
         "parsed": 0,
-        "quote_not_in_source": 1,
-        "total": 3,
+        "quote_not_in_source": 2,
+        "total": 6,
         "unparsed": 0
       },
       "fee_senior": {
-        "not_found": 3,
+        "not_found": 6,
         "notes": {},
         "parsed": 0,
         "quote_not_in_source": 0,
-        "total": 3,
+        "total": 6,
         "unparsed": 0
       },
       "hours": {
-        "not_found": 2,
-        "notes": {
-          "quote_joined": 1
-        },
-        "parsed": 1,
-        "quote_not_in_source": 0,
-        "total": 3,
-        "unparsed": 0
-      },
-      "phone": {
-        "not_found": 0,
+        "not_found": 5,
         "notes": {
           "quote_not_in_source": 1
         },
-        "parsed": 2,
+        "parsed": 0,
         "quote_not_in_source": 1,
-        "total": 3,
+        "total": 6,
+        "unparsed": 0
+      },
+      "phone": {
+        "not_found": 2,
+        "notes": {
+          "quote_not_in_source": 1
+        },
+        "parsed": 3,
+        "quote_not_in_source": 1,
+        "total": 6,
         "unparsed": 0
       },
       "reason": {
@@ -81,11 +81,11 @@
         "unparsed": 0
       },
       "reservation_note": {
-        "not_found": 2,
+        "not_found": 5,
         "notes": {},
         "parsed": 1,
         "quote_not_in_source": 0,
-        "total": 3,
+        "total": 6,
         "unparsed": 0
       },
       "span": {
@@ -97,40 +97,42 @@
         "unparsed": 0
       },
       "visit_minutes": {
-        "not_found": 2,
+        "not_found": 5,
         "notes": {},
         "parsed": 1,
         "quote_not_in_source": 0,
-        "total": 3,
+        "total": 6,
         "unparsed": 0
       }
     },
-    "flags": {},
-    "items": 10,
-    "pages": 4,
+    "flags": {
+      "summary_truncated": 1
+    },
+    "items": 13,
+    "pages": 7,
     "summary_replaced": 0,
     "truncated_pages": 0
   },
-  "finished_at": "2026-09-12T11:16:10Z",
+  "finished_at": "2026-09-12T11:12:26Z",
   "llm": {
-    "cached_calls": 4,
-    "calls": 4,
-    "input_tokens": 16168,
-    "output_tokens": 1403
+    "cached_calls": 7,
+    "calls": 7,
+    "input_tokens": 28444,
+    "output_tokens": 2133
   },
   "notes": [],
   "service": "japan-open-today",
   "stages": {
     "extract": {
-      "items": 10,
-      "pages": 4
+      "items": 13,
+      "pages": 7
     },
     "ingest": {
       "created": 0,
       "skipped": 0,
-      "unchanged": 2,
-      "updated": 2
+      "unchanged": 6,
+      "updated": 1
     }
   },
-  "started_at": "2026-09-12T11:16:10Z"
+  "started_at": "2026-09-12T11:12:26Z"
 }

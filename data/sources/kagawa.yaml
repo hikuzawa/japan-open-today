@@ -293,6 +293,8 @@ sources:
         kind: notice
       - url: https://www.kankakei.co.jp/access/
         kind: spot_access
+      - url: https://www.kankakei.co.jp/ropeway/
+        kind: spot_hours  # 発見（S6）: ロープウェイ
     allow_hosts: [www.kankakei.co.jp]
     max_pages: 10
     spot:
