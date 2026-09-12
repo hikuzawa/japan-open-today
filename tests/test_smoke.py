@@ -8,6 +8,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
+from sitemill.i18n import load_catalogs
 from sitemill.settings import SiteConfig
 
 import japan_open_today
@@ -52,6 +53,27 @@ def test_crawl_is_polite(site: SiteConfig) -> None:
 def test_operator_is_not_yet_published(site: SiteConfig) -> None:
     """運営者名が決まるまでは「準備中」。決めたらこのテストを実際の値に直す（human-tasks 8）。"""
     assert site.operator.name == "準備中"
+
+
+def test_three_locales_with_japanese_at_the_root(site: SiteConfig) -> None:
+    """日本語をルート、英語と繁体字を接頭辞つきに置く（ADR 0005）。"""
+    assert site.multilingual
+    assert [(lc.code, lc.path) for lc in site.locale_list] == [
+        ("ja", ""),
+        ("en", "en"),
+        ("zh-Hant", "zh-hant"),
+    ]
+    assert site.default_locale.code == "ja"  # hreflang の x-default が指す先
+    assert site.locale("zh-Hant").lang == "zh-Hant"
+    assert site.locale("zh-Hant").og == "zh_TW"
+
+
+def test_display_names_come_from_the_catalogs(site: SiteConfig) -> None:
+    """正式名は site.toml に 1 つ。各言語の短い表記はカタログで差し替える（ADR 0005）。"""
+    catalogs = load_catalogs(ROOT / "i18n", [lc.code for lc in site.locale_list], default_code="ja")
+    assert catalogs["ja"].get("site.name_short") == "今日行ける日本"
+    assert catalogs["en"].get("site.name_short") == "Japan Open Today"
+    assert catalogs["zh-Hant"].get("site.name_short") == "今天能去的日本"
 
 
 def test_env_example_has_no_values() -> None:

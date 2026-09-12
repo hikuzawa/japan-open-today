@@ -7,9 +7,27 @@ name = "Japan Open Today"
 # CI は配置前に、生成物がこの値を指していることを検査する（--expect-base）。
 base_url = "https://japan-open-today.pages.dev"
 service = "japan_open_today.service:service"
-# 基準言語。英語・繁体字を含む一覧は sitemill の i18n を実装したとき [[locales]] として足す（ADR 0005、S1）
+# 基準言語。各言語の URL 接頭辞は下の [[locales]]（ADR 0005）
 language = "ja"
 description = "香川県の観光施設と交通について、今日・今週の開館状況と運航状況を、公式サイトの原文から機械抽出した事実だけで提供します。"
+
+# 言語（sitemill ADR 0016）。label は言語切り替えに出すので、その言語自身の表記で書く。
+# 表示名（ロゴ横）は i18n/<locale>.yaml の site.name_short に置く。site.name は正式名で固定。
+[[locales]]
+code = "ja"
+path = ""
+label = "日本語"
+default = true
+
+[[locales]]
+code = "en"
+path = "en"
+label = "English"
+
+[[locales]]
+code = "zh-Hant"
+path = "zh-hant"
+label = "繁體中文"
 
 [operator]
 name = "準備中"
