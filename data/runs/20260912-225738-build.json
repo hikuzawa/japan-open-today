@@ -3,7 +3,7 @@
   "command": "build",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-09-12T23:24:23Z",
+  "finished_at": "2026-09-12T22:57:40Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -14,9 +14,9 @@
   "service": "japan-open-today",
   "stages": {
     "build": {
-      "files": 567,
-      "pages": 559
+      "files": 342,
+      "pages": 334
     }
   },
-  "started_at": "2026-09-12T23:24:20Z"
+  "started_at": "2026-09-12T22:57:38Z"
 }

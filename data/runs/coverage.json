@@ -2238,6 +2238,1728 @@
         "open": 6,
         "closed": 1
       }
+    },
+    {
+      "spot_id": "shionoe",
+      "name": "塩江温泉郷",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p2852",
+      "name": "竹居観音岬・竹居観音寺（四国最北端）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "takamatsu",
+      "name": "サンポート高松",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-474",
+      "name": "大島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "naoshima",
+      "name": "直島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p429",
+      "name": "桃太郎神社（熊野権現）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "yashima-navi",
+      "name": "屋島山上",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "tamurajinja",
+      "name": "さぬき七福神",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "sanuki-ichinomiyaji",
+      "name": "一宮寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "sanukikokubunji",
+      "name": "国分寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "onigasima-472",
+      "name": "女木島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p3271",
+      "name": "岩部八幡神社のイチョウ",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p281",
+      "name": "「TIME",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p294",
+      "name": "「MATAKITENO」／流政之作（サンポート高松）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "town-446",
+      "name": "直島町役場",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p434",
+      "name": "「DAITEMMAI」／流政之作（JR高松駅）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p27",
+      "name": "田の浦海岸",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p39",
+      "name": "ふるさと海岸（東かがわ市）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p44",
+      "name": "山田海岸",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "sanuki-kanko",
+      "name": "大窪寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "shirotori-jinja",
+      "name": "白鳥神社",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p18",
+      "name": "大坂峠展望台",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "shidoji",
+      "name": "志度寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p43",
+      "name": "水主神社",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p20",
+      "name": "絹島・丸亀島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p35",
+      "name": "引田のまち並み",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "nagaoji",
+      "name": "長尾寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p425",
+      "name": "山上公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p424",
+      "name": "雨滝山",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "kotohirakankou",
+      "name": "こんぴら温泉郷",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "love-marugame",
+      "name": "飯野山（讃岐富士）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-161",
+      "name": "五色台",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p317",
+      "name": "【宇多津町】青の山頂展望台",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "town-421",
+      "name": "三霞洞渓谷",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "co-machi-no-ie",
+      "name": "【宇多津町】宇多津",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p431",
+      "name": "こんぴらの句碑群",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "sakaide-kankou",
+      "name": "与島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "tadotsu-kanko",
+      "name": "佐柳島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "shusshakaji",
+      "name": "出釋迦寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p436",
+      "name": "「またきまい」／流政之作（大崎山園地）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "setoohhashi",
+      "name": "「鬼屏風」／流政之作（瀬戸大橋記念公園）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "setoohhashi-439",
+      "name": "「どだま獅子」／流政之作（瀬戸大橋記念公園）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "setoohhashi-438",
+      "name": "「浜栗林」／流政之（1923～2018年）作（瀬戸大橋記念公園）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p46",
+      "name": "有明浜",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "pacificgolf",
+      "name": "琴平カントリー倶楽部",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "kanonji-kanko",
+      "name": "銭形砂絵（琴弾公園内）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "kanonji-kanko-4483",
+      "name": "高屋神社【天空の鳥居】",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "mitoyo-kanko",
+      "name": "紫雲出山",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "mitoyo-kanko-143",
+      "name": "不動の滝",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "kanonji-kanko-54",
+      "name": "名勝",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "mitoyo-kanko-128",
+      "name": "粟島",
+      "spot_type": "open_air",
+      "settled": false,
+      "fields": [
+        "hours",
+        "address"
+      ],
+      "missing": [
+        "closures",
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 6,
+        "open": 1
+      }
+    },
+    {
+      "spot_id": "p133",
+      "name": "荘内半島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "mitoyo-kanko-457",
+      "name": "志々島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-55",
+      "name": "琴弾八幡宮",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "kanonji-kanko-477",
+      "name": "伊吹島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "mitoyo-kanko-131",
+      "name": "鴨之越・丸山島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p3441",
+      "name": "粟井神社",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "shippouzan",
+      "name": "本山寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-2938",
+      "name": "【紅葉スポット】法泉寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "ichiyaan",
+      "name": "一夜庵",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-426",
+      "name": "塔重山公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "kanonji-kanko-65",
+      "name": "萩原寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-67",
+      "name": "豊稔池堰堤（アーチダム）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p484",
+      "name": "イサム・ノグチ遊具彫刻",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "town-306",
+      "name": "エンジェルロード（天使の散歩道）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p217",
+      "name": "美しの原高原",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "hoshoin",
+      "name": "宝生院のシンパク",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "hours",
+        "reservation_required"
+      ],
+      "missing": [
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "town-486",
+      "name": "大坂城石垣石丁場跡（小豆島石丁場跡）「天狗岩丁場」",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p3309",
+      "name": "屋形崎夕陽の丘",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "town-485",
+      "name": "小瀬の重岩",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "pref-469",
+      "name": "沖之島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "tonosho-shokokai",
+      "name": "迷路のまち",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p308",
+      "name": "高見山展望台",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "teshima-navi",
+      "name": "豊島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p312",
+      "name": "平和の群像",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
     }
   ],
   "routes": [
@@ -2297,26 +4019,26 @@
       "hours": 87
     },
     "open_air": {
-      "total": 4,
-      "settled": 4
+      "total": 79,
+      "settled": 78
     },
     "untyped": 0
   },
   "field_counts": {
-    "hours": 87,
-    "closures": 67,
+    "hours": 90,
+    "closures": 70,
     "fees": 48,
-    "address": 96,
-    "phone": 94,
-    "reservation_required": 31
+    "address": 164,
+    "phone": 160,
+    "reservation_required": 33
   },
   "states": {
-    "open": 75,
-    "unknown": 16,
+    "open": 77,
+    "unknown": 89,
     "closed": 5
   },
   "unknown_reasons": {
-    "no_data": 13,
+    "no_data": 86,
     "irregular_closed": 3
   }
 }

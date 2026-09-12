@@ -93,6 +93,8 @@ class Seed:
     operator_quote: str = ""
     operator_evidence_url: str = ""
     policy: str = "crawl"
+    spot_type: str = "gated"
+    type_reason: str = "営業時間または料金の記載あり（観光協会の一覧）"
     note: str = ""
     ok: bool = False
     info: dict[str, str] = field(default_factory=dict)
@@ -231,6 +233,8 @@ def build_seed(client: PoliteClient, cand: dict[str, Any]) -> Seed:
         source_url=_normalise(official or cand["url"]),
         official_url=_normalise(official or cand["url"]),
         info=cand.get("info") or {},
+        spot_type=cand.get("spot_type", "gated"),
+        type_reason=cand.get("reason", ""),
     )
     address = seed.info.get("住所", "")
     area = area_for_address(address)
@@ -303,7 +307,7 @@ def _yaml_block(seed: Seed, source_id: str) -> str:
         "    max_pages: 8",
         "    spot:",
         f"      spot_id: {seed.spot_id}",
-        "      spot_type: gated  # 営業時間または料金の記載あり（観光協会の一覧）",
+        f"      spot_type: {seed.spot_type}  # {seed.type_reason[:64]}",
         f"      area: {seed.area}",
         f"      category: {seed.category}",
         "      names:",
@@ -376,6 +380,9 @@ def main() -> int:
     parser.add_argument("--inventory", type=Path, default=Path("data/runs/kagawa-inventory.json"))
     parser.add_argument("--out", type=Path, default=Path("data/runs/spot-seeds.json"))
     parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument(
+        "--type", default="gated", help="収録する型（gated / open_air）。ADR 0011 の段階に合わせる"
+    )
     parser.add_argument("--apply", action="store_true", help="kagawa.yaml に追記する")
     parser.add_argument(
         "--from-saved",
@@ -403,10 +410,11 @@ def main() -> int:
     have_names |= {_plain_name(n) for n in have_names if n}
     have_spot_ids = {(e.get("spot") or {}).get("spot_id", "") for e in entries if e.get("spot")}
 
-    todo = [c for c in inventory["candidates"] if c.get("spot_type") == "gated"]
+    todo = [c for c in inventory["candidates"] if c.get("spot_type") == args.type]
     if args.limit:
         todo = todo[: args.limit]
-    print(f"== ゲートのある施設 {len(todo)} 件を情報源にする ==")
+    label = "ゲートのある施設" if args.type == "gated" else "屋外の場所"
+    print(f"== {label} {len(todo)} 件を情報源にする ==")
 
     seeds: list[Seed] = []
     if args.from_saved:

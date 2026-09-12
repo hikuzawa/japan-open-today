@@ -14,7 +14,13 @@ from sitemill.models import OperatorKind, Page, Provenance, Redirect, Source
 from sitemill.settings import Workspace
 from sitemill.store.records import RecordStore
 
-from japan_open_today.data import Dataset, load_sources, records_path, spot_from_entry
+from japan_open_today.data import (
+    Dataset,
+    load_entries,
+    load_sources,
+    records_path,
+    spot_from_entry,
+)
 from japan_open_today.ingest import ingest_items, merge_record
 from japan_open_today.spec import spec_for_kind
 
@@ -135,6 +141,11 @@ class JapanOpenTodayService:
                 phones.extend(find_phones(text))
                 # 施設が自分の公式ページに載せている問い合わせ先のメールも同じ扱いにする
                 emails.extend(EMAIL_RE.findall(text))
+        # 運営主体の根拠の引用も /data/ に出る。運営者の代表番号・FAX が入っていることがある
+        for entry in load_entries(ws):
+            quote = (entry.get("operator_evidence") or {}).get("quote") or ""
+            phones.extend(find_phones(quote))
+            emails.extend(EMAIL_RE.findall(quote))
         return allow_also(default_jp_gov_policy(), phones=phones, emails=emails)
 
     def review_candidates(self, ws: Workspace) -> list[dict[str, Any]]:

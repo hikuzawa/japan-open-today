@@ -1,0 +1,67 @@
+{
+  "collected_at": "2026-09-13T08:23:35.623154+09:00",
+  "requests": 54,
+  "hosts": [
+    "www.city.takamatsu.kagawa.jp",
+    "www.town.miki.lg.jp",
+    "www.town.manno.lg.jp",
+    "www.city.marugame.lg.jp",
+    "www.town.naoshima.lg.jp",
+    "www.city.sakaide.lg.jp",
+    "www.city.kanonji.kagawa.jp",
+    "www.city.mitoyo.lg.jp",
+    "www.town.tonosho.kagawa.jp",
+    "www.town.shodoshima.lg.jp",
+    "www.city.sanuki.lg.jp",
+    "www.city.sanuki.kagawa.jp",
+    "www.city.zentsuji.kagawa.jp",
+    "www.town.ayagawa.lg.jp"
+  ],
+  "proposals": [
+    {
+      "spot_id": "town-446",
+      "name": "直島町役場",
+      "url": "https://www.town.naoshima.lg.jp/about/shisetsu/townhall.html",
+      "label": "直島町役場",
+      "kind": "spot_hours",
+      "verified": false,
+      "detail": "施設の時間の記載が見つからない（役所の窓口時間は除く）"
+    },
+    {
+      "spot_id": "p46",
+      "name": "有明浜",
+      "url": "https://www.city.kanonji.kagawa.jp/soshiki/21/342.html",
+      "label": "有明浜",
+      "kind": "spot_hours",
+      "verified": false,
+      "detail": "施設の時間の記載が見つからない（役所の窓口時間は除く）"
+    },
+    {
+      "spot_id": "kanonji-kanko-477",
+      "name": "伊吹島",
+      "url": "https://www.city.kanonji.kagawa.jp/soshiki/21/23191.html",
+      "label": "伊吹島",
+      "kind": "spot_hours",
+      "verified": false,
+      "detail": "施設の時間の記載が見つからない（役所の窓口時間は除く）"
+    },
+    {
+      "spot_id": "p3441",
+      "name": "粟井神社",
+      "url": "https://www.city.kanonji.kagawa.jp/soshiki/21/13861.html",
+      "label": "粟井神社",
+      "kind": "spot_hours",
+      "verified": false,
+      "detail": "施設の時間の記載が見つからない（役所の窓口時間は除く）"
+    },
+    {
+      "spot_id": "kanonji-kanko-65",
+      "name": "萩原寺",
+      "url": "https://www.city.kanonji.kagawa.jp/soshiki/21/340.html",
+      "label": "萩原寺",
+      "kind": "spot_hours",
+      "verified": false,
+      "detail": "施設の時間の記載が見つからない（役所の窓口時間は除く）"
+    }
+  ]
+}
