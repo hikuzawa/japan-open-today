@@ -1,40 +1,177 @@
 {
-  "resolved_at": "2026-09-13T06:42:37.233220+09:00",
-  "requests": 88,
+  "resolved_at": "2026-09-13T08:31:31.261177+09:00",
+  "requests": 110,
   "resolved": [
     {
-      "spot_id": "p130",
-      "ja": "弥谷寺",
+      "spot_id": "takamatsu",
+      "ja": "サンポート高松",
       "locale": "en",
-      "text": "Iyadani-ji",
+      "text": "Sunport Takamatsu",
       "source": "glossary",
-      "url": "https://ja.wikipedia.org/wiki/%E5%BC%A5%E8%B0%B7%E5%AF%BA",
-      "note": "Wikipedia 日本語版「弥谷寺」の言語間リンク（de 版のラテン文字表記）"
+      "url": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E9%AB%98%E6%9D%BE",
+      "note": "Wikipedia 日本語版「サンポート高松」の言語間リンク（en）"
+    },
+    {
+      "spot_id": "naoshima",
+      "ja": "直島",
+      "locale": "en",
+      "text": "Naoshima Tourist Travel Site",
+      "source": "official",
+      "url": "http://naoshima.net/en/",
+      "note": "公式サイトのenページ（h1）"
+    },
+    {
+      "spot_id": "naoshima",
+      "ja": "直島",
+      "locale": "zh-Hant",
+      "text": "直島觀光旅遊網站 直島町觀光協會官方",
+      "source": "official",
+      "url": "http://naoshima.net/zh_tw/",
+      "note": "公式サイトのzh-Hantページ（h1）"
+    },
+    {
+      "spot_id": "sanuki-ichinomiyaji",
+      "ja": "一宮寺",
+      "locale": "en",
+      "text": "Ichinomiya-ji",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%80%E5%AE%AE%E5%AF%BA",
+      "note": "Wikipedia 日本語版「一宮寺」の言語間リンク（en）"
+    },
+    {
+      "spot_id": "onigasima-472",
+      "ja": "女木島",
+      "locale": "en",
+      "text": "Megijima",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A5%B3%E6%9C%A8%E5%B3%B6",
+      "note": "Wikipedia 日本語版「女木島」の言語間リンク（en）"
+    },
+    {
+      "spot_id": "onigasima-472",
+      "ja": "女木島",
+      "locale": "zh-Hant",
+      "text": "女木島",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A5%B3%E6%9C%A8%E5%B3%B6",
+      "note": "Wikipedia 日本語版「女木島」の言語間リンク（zh）"
+    },
+    {
+      "spot_id": "sanuki-kanko",
+      "ja": "大窪寺",
+      "locale": "en",
+      "text": "Ōkubo-ji",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E7%AA%AA%E5%AF%BA",
+      "note": "Wikipedia 日本語版「大窪寺」の言語間リンク（en）"
+    },
+    {
+      "spot_id": "shidoji",
+      "ja": "志度寺",
+      "locale": "en",
+      "text": "Shido-ji",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E5%BF%97%E5%BA%A6%E5%AF%BA",
+      "note": "Wikipedia 日本語版「志度寺」の言語間リンク（en）"
+    },
+    {
+      "spot_id": "nagaoji",
+      "ja": "長尾寺",
+      "locale": "en",
+      "text": "Nagao-ji",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E9%95%B7%E5%B0%BE%E5%AF%BA",
+      "note": "Wikipedia 日本語版「長尾寺」の言語間リンク（en）"
+    },
+    {
+      "spot_id": "kotohirakankou",
+      "ja": "こんぴら温泉郷",
+      "locale": "zh-Hant",
+      "text": "金毘羅溫泉鄉",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E3%81%93%E3%82%93%E3%81%B4%E3%82%89%E6%B8%A9%E6%B3%89%E9%83%B7",
+      "note": "Wikipedia 日本語版「こんぴら温泉郷」の言語間リンク（zh）"
+    },
+    {
+      "spot_id": "co-machi-no-ie",
+      "ja": "【宇多津町】宇多津",
+      "locale": "en",
+      "text": "Utazu",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E5%AE%87%E5%A4%9A%E6%B4%A5",
+      "note": "Wikipedia 日本語版「宇多津町」の言語間リンク（en）"
+    },
+    {
+      "spot_id": "co-machi-no-ie",
+      "ja": "【宇多津町】宇多津",
+      "locale": "zh-Hant",
+      "text": "宇多津町",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E5%AE%87%E5%A4%9A%E6%B4%A5",
+      "note": "Wikipedia 日本語版「宇多津町」の言語間リンク（zh）"
+    },
+    {
+      "spot_id": "tadotsu-kanko",
+      "ja": "佐柳島",
+      "locale": "en",
+      "text": "Sanagijima",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E4%BD%90%E6%9F%B3%E5%B3%B6",
+      "note": "Wikipedia 日本語版「佐柳島」の言語間リンク（de 版のラテン文字表記）"
+    },
+    {
+      "spot_id": "mitoyo-kanko-457",
+      "ja": "志々島",
+      "locale": "en",
+      "text": "Shishijima",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E5%BF%97%E3%80%85%E5%B3%B6",
+      "note": "Wikipedia 日本語版「志々島」の言語間リンク（en）"
+    },
+    {
+      "spot_id": "city-55",
+      "ja": "琴弾八幡宮",
+      "locale": "en",
+      "text": "Kotohiki Hachimangū",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E7%90%B4%E5%BC%BE%E5%85%AB%E5%B9%A1%E5%AE%AE",
+      "note": "Wikipedia 日本語版「琴弾八幡宮」の言語間リンク（en）"
+    },
+    {
+      "spot_id": "city-55",
+      "ja": "琴弾八幡宮",
+      "locale": "zh-Hant",
+      "text": "琴彈八幡宮",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E7%90%B4%E5%BC%BE%E5%85%AB%E5%B9%A1%E5%AE%AE",
+      "note": "Wikipedia 日本語版「琴弾八幡宮」の言語間リンク（zh）"
+    },
+    {
+      "spot_id": "kanonji-kanko-477",
+      "ja": "伊吹島",
+      "locale": "en",
+      "text": "Ibuki island",
+      "source": "glossary",
+      "url": "https://ja.wikipedia.org/wiki/%E4%BC%8A%E5%90%B9%E5%B3%B6",
+      "note": "Wikipedia 日本語版「伊吹島」の言語間リンク（en）"
+    },
+    {
+      "spot_id": "teshima-navi",
+      "ja": "豊島",
+      "locale": "en",
+      "text": "English",
+      "source": "official",
+      "url": "https://teshima-navi.jp/en/",
+      "note": "公式サイトのenページ（og:title）"
     }
   ],
   "misses": [
     [
-      "sanuki",
-      "en"
-    ],
-    [
       "sionoe",
       "en"
     ],
     [
       "sionoe",
-      "zh-Hant"
-    ],
-    [
-      "npo-wahaha",
-      "zh-Hant"
-    ],
-    [
-      "taka-spo",
-      "en"
-    ],
-    [
-      "taka-spo",
       "zh-Hant"
     ],
     [
@@ -46,40 +183,8 @@
       "zh-Hant"
     ],
     [
-      "town-375",
-      "en"
-    ],
-    [
-      "town-375",
-      "zh-Hant"
-    ],
-    [
-      "onigasima",
-      "en"
-    ],
-    [
-      "onigasima",
-      "zh-Hant"
-    ],
-    [
-      "takamatsujyo",
-      "en"
-    ],
-    [
-      "takamatsujyo",
-      "zh-Hant"
-    ],
-    [
       "pref",
       "en"
-    ],
-    [
-      "pref",
-      "zh-Hant"
-    ],
-    [
-      "88shikokuhenro",
-      "zh-Hant"
     ],
     [
       "kenminhall",
@@ -87,42 +192,6 @@
     ],
     [
       "kenminhall",
-      "zh-Hant"
-    ],
-    [
-      "p2463",
-      "en"
-    ],
-    [
-      "p2463",
-      "zh-Hant"
-    ],
-    [
-      "takamatsu-orne",
-      "en"
-    ],
-    [
-      "takamatsu-orne",
-      "zh-Hant"
-    ],
-    [
-      "sunport-hall",
-      "en"
-    ],
-    [
-      "sunport-hall",
-      "zh-Hant"
-    ],
-    [
-      "yakuriji",
-      "zh-Hant"
-    ],
-    [
-      "sakurashop",
-      "en"
-    ],
-    [
-      "sakurashop",
       "zh-Hant"
     ],
     [
@@ -134,47 +203,11 @@
       "zh-Hant"
     ],
     [
-      "nagarestudio",
-      "en"
-    ],
-    [
-      "nagarestudio",
-      "zh-Hant"
-    ],
-    [
-      "kawashima-af",
-      "en"
-    ],
-    [
-      "kawashima-af",
-      "zh-Hant"
-    ],
-    [
-      "city",
-      "en"
-    ],
-    [
-      "city",
-      "zh-Hant"
-    ],
-    [
-      "city-284",
-      "zh-Hant"
-    ],
-    [
       "kenminhall-435",
       "en"
     ],
     [
       "kenminhall-435",
-      "zh-Hant"
-    ],
-    [
-      "p443",
-      "en"
-    ],
-    [
-      "p443",
       "zh-Hant"
     ],
     [
@@ -186,63 +219,11 @@
       "zh-Hant"
     ],
     [
-      "p447",
-      "en"
-    ],
-    [
-      "p447",
-      "zh-Hant"
-    ],
-    [
-      "j-dc2",
-      "en"
-    ],
-    [
-      "j-dc2",
-      "zh-Hant"
-    ],
-    [
-      "souyu",
-      "en"
-    ],
-    [
-      "souyu",
-      "zh-Hant"
-    ],
-    [
-      "shirotorizoo",
-      "en"
-    ],
-    [
-      "shirotorizoo",
-      "zh-Hant"
-    ],
-    [
       "saltlake-hiketa",
       "en"
     ],
     [
       "saltlake-hiketa",
-      "zh-Hant"
-    ],
-    [
-      "sanukicity-sportspark",
-      "en"
-    ],
-    [
-      "sanukicity-sportspark",
-      "zh-Hant"
-    ],
-    [
-      "hiragagennai",
-      "zh-Hant"
-    ],
-    [
-      "higashikagawa",
-      "en"
-    ],
-    [
-      "higashikagawa",
       "zh-Hant"
     ],
     [
@@ -254,44 +235,8 @@
       "zh-Hant"
     ],
     [
-      "yodaji",
-      "en"
-    ],
-    [
-      "yodaji",
-      "zh-Hant"
-    ],
-    [
-      "goldtower",
-      "en"
-    ],
-    [
-      "goldtower",
-      "zh-Hant"
-    ],
-    [
-      "newreomaworld",
-      "en"
-    ],
-    [
-      "newreomaworld",
-      "zh-Hant"
-    ],
-    [
-      "ooedoonsen",
-      "en"
-    ],
-    [
-      "ooedoonsen",
-      "zh-Hant"
-    ],
-    [
       "p344",
       "en"
-    ],
-    [
-      "p344",
-      "zh-Hant"
     ],
     [
       "e-mikado",
@@ -318,55 +263,11 @@
       "zh-Hant"
     ],
     [
-      "konpirakabuki",
-      "en"
-    ],
-    [
-      "konpirakabuki",
-      "zh-Hant"
-    ],
-    [
-      "zentsuji",
-      "en"
-    ],
-    [
-      "zentsuji",
-      "zh-Hant"
-    ],
-    [
-      "shikoku-aquarium",
-      "zh-Hant"
-    ],
-    [
-      "pref-156",
-      "zh-Hant"
-    ],
-    [
-      "bansyouen",
-      "en"
-    ],
-    [
-      "bansyouen",
-      "zh-Hant"
-    ],
-    [
       "p2788",
       "en"
     ],
     [
       "p2788",
-      "zh-Hant"
-    ],
-    [
-      "shiromineji",
-      "zh-Hant"
-    ],
-    [
-      "setoohashitower",
-      "en"
-    ],
-    [
-      "setoohashitower",
       "zh-Hant"
     ],
     [
@@ -378,32 +279,8 @@
       "zh-Hant"
     ],
     [
-      "yakuyoke",
-      "en"
-    ],
-    [
-      "yakuyoke",
-      "zh-Hant"
-    ],
-    [
       "kyougokuann",
       "en"
-    ],
-    [
-      "kyougokuann",
-      "zh-Hant"
-    ],
-    [
-      "mimoca",
-      "zh-Hant"
-    ],
-    [
-      "kyuman",
-      "en"
-    ],
-    [
-      "kyuman",
-      "zh-Hant"
     ],
     [
       "p3639",
@@ -430,28 +307,8 @@
       "zh-Hant"
     ],
     [
-      "nishino-kinryo",
-      "en"
-    ],
-    [
-      "nishino-kinryo",
-      "zh-Hant"
-    ],
-    [
-      "park-mino",
-      "en"
-    ],
-    [
-      "park-mino",
-      "zh-Hant"
-    ],
-    [
       "kotohiki-kairo",
       "en"
-    ],
-    [
-      "kotohiki-kairo",
-      "zh-Hant"
     ],
     [
       "park-mino-380",
@@ -470,78 +327,6 @@
       "zh-Hant"
     ],
     [
-      "p144",
-      "en"
-    ],
-    [
-      "p144",
-      "zh-Hant"
-    ],
-    [
-      "livemax-resort",
-      "en"
-    ],
-    [
-      "livemax-resort",
-      "zh-Hant"
-    ],
-    [
-      "souyu-135",
-      "en"
-    ],
-    [
-      "souyu-135",
-      "zh-Hant"
-    ],
-    [
-      "shikoku-cable",
-      "zh-Hant"
-    ],
-    [
-      "p130",
-      "zh-Hant"
-    ],
-    [
-      "shikoku88-6869",
-      "en"
-    ],
-    [
-      "shikoku88-6869",
-      "zh-Hant"
-    ],
-    [
-      "komatsuoji",
-      "en"
-    ],
-    [
-      "komatsuoji",
-      "zh-Hant"
-    ],
-    [
-      "mizupark",
-      "en"
-    ],
-    [
-      "mizupark",
-      "zh-Hant"
-    ],
-    [
-      "olive-pk",
-      "en"
-    ],
-    [
-      "olive-pk",
-      "zh-Hant"
-    ],
-    [
-      "manten-shodoshima",
-      "en"
-    ],
-    [
-      "manten-shodoshima",
-      "zh-Hant"
-    ],
-    [
       "p309",
       "en"
     ],
@@ -550,36 +335,8 @@
       "zh-Hant"
     ],
     [
-      "shimahaku-shimameshi-shimayu",
-      "en"
-    ],
-    [
-      "shimahaku-shimameshi-shimayu",
-      "zh-Hant"
-    ],
-    [
-      "shimayado",
-      "en"
-    ],
-    [
-      "shimayado",
-      "zh-Hant"
-    ],
-    [
       "olive-pk-357",
       "en"
-    ],
-    [
-      "olive-pk-357",
-      "zh-Hant"
-    ],
-    [
-      "kokuminshukusha",
-      "en"
-    ],
-    [
-      "kokuminshukusha",
-      "zh-Hant"
     ],
     [
       "bgf",
@@ -594,31 +351,539 @@
       "en"
     ],
     [
-      "p3832",
-      "zh-Hant"
-    ],
-    [
-      "marukin",
-      "en"
-    ],
-    [
-      "marukin",
-      "zh-Hant"
-    ],
-    [
-      "p4337",
-      "en"
-    ],
-    [
-      "p4337",
-      "zh-Hant"
-    ],
-    [
       "morikuni",
       "en"
     ],
     [
       "morikuni",
+      "zh-Hant"
+    ],
+    [
+      "shionoe",
+      "en"
+    ],
+    [
+      "shionoe",
+      "zh-Hant"
+    ],
+    [
+      "p2852",
+      "en"
+    ],
+    [
+      "p2852",
+      "zh-Hant"
+    ],
+    [
+      "takamatsu",
+      "zh-Hant"
+    ],
+    [
+      "city-474",
+      "en"
+    ],
+    [
+      "city-474",
+      "zh-Hant"
+    ],
+    [
+      "p429",
+      "en"
+    ],
+    [
+      "p429",
+      "zh-Hant"
+    ],
+    [
+      "yashima-navi",
+      "en"
+    ],
+    [
+      "yashima-navi",
+      "zh-Hant"
+    ],
+    [
+      "tamurajinja",
+      "en"
+    ],
+    [
+      "tamurajinja",
+      "zh-Hant"
+    ],
+    [
+      "sanuki-ichinomiyaji",
+      "zh-Hant"
+    ],
+    [
+      "sanukikokubunji",
+      "en"
+    ],
+    [
+      "sanukikokubunji",
+      "zh-Hant"
+    ],
+    [
+      "p3271",
+      "en"
+    ],
+    [
+      "p3271",
+      "zh-Hant"
+    ],
+    [
+      "p281",
+      "en"
+    ],
+    [
+      "p281",
+      "zh-Hant"
+    ],
+    [
+      "p294",
+      "en"
+    ],
+    [
+      "p294",
+      "zh-Hant"
+    ],
+    [
+      "town-446",
+      "en"
+    ],
+    [
+      "town-446",
+      "zh-Hant"
+    ],
+    [
+      "p434",
+      "en"
+    ],
+    [
+      "p434",
+      "zh-Hant"
+    ],
+    [
+      "p27",
+      "en"
+    ],
+    [
+      "p27",
+      "zh-Hant"
+    ],
+    [
+      "p39",
+      "en"
+    ],
+    [
+      "p39",
+      "zh-Hant"
+    ],
+    [
+      "p44",
+      "en"
+    ],
+    [
+      "p44",
+      "zh-Hant"
+    ],
+    [
+      "sanuki-kanko",
+      "zh-Hant"
+    ],
+    [
+      "shirotori-jinja",
+      "en"
+    ],
+    [
+      "shirotori-jinja",
+      "zh-Hant"
+    ],
+    [
+      "p18",
+      "en"
+    ],
+    [
+      "p18",
+      "zh-Hant"
+    ],
+    [
+      "shidoji",
+      "zh-Hant"
+    ],
+    [
+      "p43",
+      "en"
+    ],
+    [
+      "p43",
+      "zh-Hant"
+    ],
+    [
+      "p20",
+      "en"
+    ],
+    [
+      "p20",
+      "zh-Hant"
+    ],
+    [
+      "p35",
+      "en"
+    ],
+    [
+      "p35",
+      "zh-Hant"
+    ],
+    [
+      "nagaoji",
+      "zh-Hant"
+    ],
+    [
+      "p425",
+      "en"
+    ],
+    [
+      "p425",
+      "zh-Hant"
+    ],
+    [
+      "p424",
+      "en"
+    ],
+    [
+      "p424",
+      "zh-Hant"
+    ],
+    [
+      "kotohirakankou",
+      "en"
+    ],
+    [
+      "love-marugame",
+      "en"
+    ],
+    [
+      "love-marugame",
+      "zh-Hant"
+    ],
+    [
+      "city-161",
+      "en"
+    ],
+    [
+      "city-161",
+      "zh-Hant"
+    ],
+    [
+      "p317",
+      "en"
+    ],
+    [
+      "p317",
+      "zh-Hant"
+    ],
+    [
+      "town-421",
+      "en"
+    ],
+    [
+      "town-421",
+      "zh-Hant"
+    ],
+    [
+      "p431",
+      "en"
+    ],
+    [
+      "p431",
+      "zh-Hant"
+    ],
+    [
+      "sakaide-kankou",
+      "en"
+    ],
+    [
+      "sakaide-kankou",
+      "zh-Hant"
+    ],
+    [
+      "tadotsu-kanko",
+      "zh-Hant"
+    ],
+    [
+      "shusshakaji",
+      "en"
+    ],
+    [
+      "shusshakaji",
+      "zh-Hant"
+    ],
+    [
+      "p436",
+      "en"
+    ],
+    [
+      "p436",
+      "zh-Hant"
+    ],
+    [
+      "setoohhashi",
+      "en"
+    ],
+    [
+      "setoohhashi",
+      "zh-Hant"
+    ],
+    [
+      "setoohhashi-439",
+      "en"
+    ],
+    [
+      "setoohhashi-439",
+      "zh-Hant"
+    ],
+    [
+      "setoohhashi-438",
+      "en"
+    ],
+    [
+      "setoohhashi-438",
+      "zh-Hant"
+    ],
+    [
+      "p46",
+      "en"
+    ],
+    [
+      "p46",
+      "zh-Hant"
+    ],
+    [
+      "pacificgolf",
+      "en"
+    ],
+    [
+      "pacificgolf",
+      "zh-Hant"
+    ],
+    [
+      "kanonji-kanko",
+      "en"
+    ],
+    [
+      "kanonji-kanko",
+      "zh-Hant"
+    ],
+    [
+      "kanonji-kanko-4483",
+      "en"
+    ],
+    [
+      "kanonji-kanko-4483",
+      "zh-Hant"
+    ],
+    [
+      "mitoyo-kanko",
+      "en"
+    ],
+    [
+      "mitoyo-kanko",
+      "zh-Hant"
+    ],
+    [
+      "mitoyo-kanko-143",
+      "en"
+    ],
+    [
+      "mitoyo-kanko-143",
+      "zh-Hant"
+    ],
+    [
+      "kanonji-kanko-54",
+      "en"
+    ],
+    [
+      "kanonji-kanko-54",
+      "zh-Hant"
+    ],
+    [
+      "mitoyo-kanko-128",
+      "en"
+    ],
+    [
+      "mitoyo-kanko-128",
+      "zh-Hant"
+    ],
+    [
+      "p133",
+      "en"
+    ],
+    [
+      "p133",
+      "zh-Hant"
+    ],
+    [
+      "mitoyo-kanko-457",
+      "zh-Hant"
+    ],
+    [
+      "kanonji-kanko-477",
+      "zh-Hant"
+    ],
+    [
+      "mitoyo-kanko-131",
+      "en"
+    ],
+    [
+      "mitoyo-kanko-131",
+      "zh-Hant"
+    ],
+    [
+      "p3441",
+      "en"
+    ],
+    [
+      "p3441",
+      "zh-Hant"
+    ],
+    [
+      "shippouzan",
+      "en"
+    ],
+    [
+      "shippouzan",
+      "zh-Hant"
+    ],
+    [
+      "city-2938",
+      "en"
+    ],
+    [
+      "city-2938",
+      "zh-Hant"
+    ],
+    [
+      "ichiyaan",
+      "en"
+    ],
+    [
+      "ichiyaan",
+      "zh-Hant"
+    ],
+    [
+      "city-426",
+      "en"
+    ],
+    [
+      "city-426",
+      "zh-Hant"
+    ],
+    [
+      "kanonji-kanko-65",
+      "en"
+    ],
+    [
+      "kanonji-kanko-65",
+      "zh-Hant"
+    ],
+    [
+      "city-67",
+      "en"
+    ],
+    [
+      "city-67",
+      "zh-Hant"
+    ],
+    [
+      "p484",
+      "en"
+    ],
+    [
+      "p484",
+      "zh-Hant"
+    ],
+    [
+      "town-306",
+      "en"
+    ],
+    [
+      "town-306",
+      "zh-Hant"
+    ],
+    [
+      "p217",
+      "en"
+    ],
+    [
+      "p217",
+      "zh-Hant"
+    ],
+    [
+      "hoshoin",
+      "en"
+    ],
+    [
+      "hoshoin",
+      "zh-Hant"
+    ],
+    [
+      "town-486",
+      "en"
+    ],
+    [
+      "town-486",
+      "zh-Hant"
+    ],
+    [
+      "p3309",
+      "en"
+    ],
+    [
+      "p3309",
+      "zh-Hant"
+    ],
+    [
+      "town-485",
+      "en"
+    ],
+    [
+      "town-485",
+      "zh-Hant"
+    ],
+    [
+      "pref-469",
+      "en"
+    ],
+    [
+      "pref-469",
+      "zh-Hant"
+    ],
+    [
+      "tonosho-shokokai",
+      "en"
+    ],
+    [
+      "tonosho-shokokai",
+      "zh-Hant"
+    ],
+    [
+      "p308",
+      "en"
+    ],
+    [
+      "p308",
+      "zh-Hant"
+    ],
+    [
+      "teshima-navi",
+      "zh-Hant"
+    ],
+    [
+      "p312",
+      "en"
+    ],
+    [
+      "p312",
       "zh-Hant"
     ]
   ]
