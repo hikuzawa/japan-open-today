@@ -8,8 +8,8 @@
 # リンクされている Commons カテゴリを辿って確定したもので、辿れなかったものは空にしてある
 # （tools/resolve_commons.py、結果は data/runs/commons-categories.json）。
 #
-# policy: pending は「運営主体を機械的に判定できなかった」もの。絶対に巡回せず、
-# レビュー行列に残す。試した情報源は notes に書いてある。
+# 運営主体を機械的に判定できないものは policy: pending にしてレビュー行列に回す。
+# 2026-09-12 時点の 14 件はすべて根拠が取れたので pending は 0 件（経緯は ADR 0009 追記）。
 sources:
   # --- 高松 ---------------------------------------------------------------
   - id: kagawa-ritsurin
@@ -45,7 +45,7 @@ sources:
     operator: 公益財団法人四国民家博物館
     operator_kind: facility_official
     operator_evidence:
-      quote: "公益財団法人に認定されました"
+      quote: "平成21年（2011）公益財団法人認定 高い次元の公益に資することを目的として公益財団法人に認定されました。"
       url: https://www.shikokumura.or.jp/about/
       checked_on: 2026-09-12
     policy: crawl
@@ -125,12 +125,29 @@ sources:
   - id: kagawa-tamamo
     name: 高松城跡 玉藻公園
     operator: 高松市
-    operator_kind: unknown
-    policy: pending
-    official_url: https://www.takamatsujyo.com/
-    notes: >-
-      robots.txt を取得できない（接続拒否）ため巡回しない。運営主体の根拠も取れていない。
-      高松市の公式サイト側に玉藻公園のページがあれば、そちらを情報源に差し替える（S6 の発見で再評価）。
+    operator_kind: municipality
+    operator_evidence:
+      quote: "史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu City, All rights reserved."
+      url: https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/park/tamamo/index.html
+      checked_on: 2026-09-12
+    policy: crawl
+    # 指定管理者のサイト（takamatsujyo.com）は robots.txt を取得できない（接続拒否）。
+    # 取得できない＝許可されていないと見なして巡回しない（sitemill の既定。ADR 0009 追記）。
+    # 開園時間・入園料は高松市の公式ページに載っているので、そちらを一次情報にする。
+    official_url: https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/park/tamamo/index.html
+    pages:
+      - url: https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/park/tamamo/index.html
+        kind: spot_detail
+      - url: https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/park/tamamo/bunzai2018060.html
+        kind: spot_hours
+      - url: https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/park/tamamo/bunzai201806.html
+        kind: spot_access
+    allow_hosts: [www.city.takamatsu.kagawa.jp]
+    max_pages: 8
+    external_links:
+      - label: 高松市立玉藻公園（指定管理者のサイト）
+        url: https://www.takamatsujyo.com/
+        note: robots.txt を取得できないため巡回しない。リンクのみ
     spot:
       spot_id: tamamo
       area: takamatsu
@@ -143,19 +160,28 @@ sources:
       commons_category: Takamatsu Castle (Sanuki)
 
   # --- 直島・豊島 ---------------------------------------------------------
-  # ベネッセアートサイト直島の 4 施設は、公式サイトから運営主体の記述を機械的に取得できず、
-  # 公的な施設一覧（香川県観光協会）からの相互リンクも見つからなかった。ADR 0009 のとおり
-  # レビュー行列に回す（運営主体は公益財団法人福武財団と広く知られているが、根拠として
-  # 引用できる記述をこちらで確認できていないため、推測で crawl にはしない）。
+  # 運営主体の根拠は benesse-artsite.jp/about/ の 1 文から取っている。施設ページ本体には無く、
+  # サイト全体の「〜とは」のページにある（最初の収集では法人名の空白でパターンが外れて拾えず、
+  # レビュー行列に入れていた。ADR 0009 追記）。
   - id: kagawa-chichu
     name: 地中美術館
-    operator: 不明（ベネッセアートサイト直島）
-    operator_kind: unknown
-    policy: pending
+    operator: 株式会社ベネッセコーポレーション・公益財団法人福武財団
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "「ベネッセアートサイト直島」は、直島・豊島（香川県）、犬島（岡山県）を舞台に株式会社ベネッセコーポレーションと公益財団法人 福武財団が展開しているアート活動の総称です。"
+      url: https://benesse-artsite.jp/about/
+      checked_on: 2026-09-12
+    policy: crawl
     official_url: https://benesse-artsite.jp/art/chichu.html
-    notes: >-
-      試した情報源: 公式トップ・/about/（運営主体の記述を機械的に取得できず）、
-      香川県観光協会のサイトマップ（benesse-artsite.jp へのリンクなし）。
+    pages:
+      - url: https://benesse-artsite.jp/art/chichu.html
+        kind: spot_detail
+      - url: https://benesse-artsite.jp/calendar/
+        kind: spot_hours
+      - url: https://benesse-artsite.jp/news/
+        kind: notice
+    allow_hosts: [benesse-artsite.jp]
+    max_pages: 10
     spot:
       spot_id: chichu
       area: naoshima
@@ -169,11 +195,23 @@ sources:
 
   - id: kagawa-benesse-house
     name: ベネッセハウス ミュージアム
-    operator: 不明（ベネッセアートサイト直島）
-    operator_kind: unknown
-    policy: pending
+    operator: 株式会社ベネッセコーポレーション・公益財団法人福武財団
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "「ベネッセアートサイト直島」は、直島・豊島（香川県）、犬島（岡山県）を舞台に株式会社ベネッセコーポレーションと公益財団法人 福武財団が展開しているアート活動の総称です。"
+      url: https://benesse-artsite.jp/about/
+      checked_on: 2026-09-12
+    policy: crawl
     official_url: https://benesse-artsite.jp/art/benessehouse-museum.html
-    notes: 試した情報源は kagawa-chichu と同じ。
+    pages:
+      - url: https://benesse-artsite.jp/art/benessehouse-museum.html
+        kind: spot_detail
+      - url: https://benesse-artsite.jp/calendar/
+        kind: spot_hours
+      - url: https://benesse-artsite.jp/news/
+        kind: notice
+    allow_hosts: [benesse-artsite.jp]
+    max_pages: 10
     spot:
       spot_id: benesse-house
       area: naoshima
@@ -187,11 +225,23 @@ sources:
 
   - id: kagawa-teshima-art
     name: 豊島美術館
-    operator: 不明（ベネッセアートサイト直島）
-    operator_kind: unknown
-    policy: pending
+    operator: 株式会社ベネッセコーポレーション・公益財団法人福武財団
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "「ベネッセアートサイト直島」は、直島・豊島（香川県）、犬島（岡山県）を舞台に株式会社ベネッセコーポレーションと公益財団法人 福武財団が展開しているアート活動の総称です。"
+      url: https://benesse-artsite.jp/about/
+      checked_on: 2026-09-12
+    policy: crawl
     official_url: https://benesse-artsite.jp/art/teshima-artmuseum.html
-    notes: 試した情報源は kagawa-chichu と同じ。
+    pages:
+      - url: https://benesse-artsite.jp/art/teshima-artmuseum.html
+        kind: spot_detail
+      - url: https://benesse-artsite.jp/calendar/
+        kind: spot_hours
+      - url: https://benesse-artsite.jp/news/
+        kind: notice
+    allow_hosts: [benesse-artsite.jp]
+    max_pages: 10
     spot:
       spot_id: teshima-art
       area: teshima
@@ -206,13 +256,12 @@ sources:
   # --- 小豆島 -------------------------------------------------------------
   - id: kagawa-kankakei
     name: 寒霞渓
-    operator: 小豆島ロープウェイ（寒霞渓ロープウェイ）
+    operator: 小豆島総合開発株式会社（寒霞渓ロープウェイ）
     operator_kind: facility_official
     operator_evidence:
-      quote: "主催 第6回四国おもてなし感激準大賞を受賞"
+      quote: "会社名 小豆島総合開発株式会社"
       url: https://www.kankakei.co.jp/company/
       checked_on: 2026-09-12
-      # 会社概要ページに事業者の記述がある。より明確な引用に差し替える余地あり（S6 の自己修復）
     policy: crawl
     official_url: https://www.kankakei.co.jp/
     pages:
@@ -426,12 +475,20 @@ sources:
   - id: kagawa-shikokukisen
     name: 四国汽船
     operator: 四国汽船株式会社
-    operator_kind: unknown
-    policy: pending
+    operator_kind: transport_operator
+    operator_evidence:
+      quote: "商号 四国汽船株式会社 所在地 本社 〒761-3110 香川県香川郡直島町2249番地40"
+      url: https://www.shikokukisen.com/company/
+      checked_on: 2026-09-12
+    policy: crawl
     official_url: https://www.shikokukisen.com/
-    notes: >-
-      公式サイトのトップと概要ページから、運営主体を示す記述（Copyright・法人名）を
-      機械的に取得できなかった。直島・豊島航路の中心なので優先して解決したい。
+    pages:
+      - url: https://shikokukisen.com/takamatsu-miyanoura-ferry-unko/
+        kind: timetable
+      - url: https://shikokukisen.com/news/
+        kind: notice
+    allow_hosts: [www.shikokukisen.com, shikokukisen.com]
+    max_pages: 8
     transport:
       operator_id: shikokukisen
       mode: ferry
