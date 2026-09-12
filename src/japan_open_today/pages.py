@@ -47,7 +47,14 @@ def _assets(ws: Workspace) -> dict[str, list[Asset]]:
     if not root.is_dir():
         return out
     for directory in sorted(p for p in root.iterdir() if p.is_dir()):
-        usable = [a for a in AssetStore(root, directory.name).load().values() if a.usable]
+        # 実体のあるものだけを出す。画像の実体は git 管理外なので、日次の実行で取り直せなかった
+        # ときは手元に無い（tools/fetch_assets.py）。記録だけを見て <img> を出すと本番で
+        # 404 になる。写真が無くても成立する作りなので、その 1 件を落とすほうが正しい
+        usable = [
+            a
+            for a in AssetStore(root, directory.name).load().values()
+            if a.usable and a.local_path.is_file()
+        ]
         if usable:
             out[directory.name] = usable
     return out

@@ -1,0 +1,56 @@
+# push / PR ごとに lint・テスト・秘密の全履歴スキャンを行う（akiya-atlas と同じ形）。
+# sitemill は public なので、既定の github.token で checkout できる。
+name: checks
+
+on:
+  push:
+    branches: [main]
+    # pipeline がデータだけをコミットするときは checks を走らせない（Actions 無料枠の節約）。
+    # コードや設定の変更では従来どおり走る。
+    paths-ignore:
+      - "data/**"
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: japan-open-today
+          fetch-depth: 0 # 履歴スキャンのため全履歴を取る
+      - uses: actions/checkout@v4
+        with:
+          repository: hikuzawa/sitemill
+          ref: v0.2.0 # タグ固定（sitemill ADR 0006）。sitemill の main の変更は自動では入らない
+          path: sitemill
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - working-directory: japan-open-today
+        run: uv sync --frozen
+      - working-directory: japan-open-today
+        # tools/ は CLI だが判定ロジックを持つ（型判定・名前解決）ので lint の対象に入れる
+        run: uv run ruff check src tests tools .github/scripts
+      - working-directory: japan-open-today
+        run: uv run pytest -q
+      - name: Secret scan (全履歴)
+        working-directory: japan-open-today
+        run: uv run sitemill scan-secrets --history
+
+  gitleaks:
+    runs-on: ubuntu-latest
+    # pull_request では対象コミットの一覧を API から引くので、PR の読み取り権限が要る
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,233 @@
+# 日次パイプライン: crawl → extract → 画像の用意 → build → 公開前検査 → (Secrets が揃えば) deploy。
+# akiya-atlas の pipeline.yml と同じ骨格。違いは次の 3 点:
+#   - heal と ad-check は無い（このサービスは heal フックを持たず、広告はまだ「準備中」表示のみ）
+#   - build の前に画像を用意する。写真の実体は git 管理外（sitemill ADR 0020）なので、
+#     キャッシュが切れた実行機には無い。出典から取り直し（fetch_assets。内容が変わっていたら
+#     採らない）、static/ へ複写する（sync_assets）
+#   - 公開 URL の検査に hreflang を含める（3 言語。1 言語でも欠けると別サイト扱いになる）
+# 設計（akiya-atlas と同じ）:
+#   - Cloudflare の Secrets が未設定でも crawl → extract → build までは必ず動く。
+#   - deploy は Secrets が両方そろっているときだけ実行し、無ければスキップ（run 自体は成功）。
+#   - Pages プロジェクト japan-open-today は deploy の直前に CI が用意する（無ければ作成）。
+#   - 手動実行の mode=deploy-only は、巡回・抽出・データのコミットを行わず、main の現在の
+#     データで build → 検査 → deploy だけを行う（テンプレートやデザインの変更を反映するとき）。
+# 実行時刻は akiya-atlas（18:00 UTC）と重ねない。Actions の同時実行と課金を分ける。
+name: pipeline
+run-name: "pipeline (${{ inputs.mode || 'full' }})"
+
+on:
+  schedule:
+    - cron: "0 20 * * *" # 05:00 JST
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: "Cloudflare Pages に配置する（Secrets がある場合）"
+        type: boolean
+        default: true
+      mode:
+        description: "full: 巡回→抽出→build→検査→deploy ／ deploy-only: 巡回・抽出・データのコミットを行わず、main の現在のデータで build→検査→deploy だけ"
+        type: choice
+        options:
+          - full
+          - deploy-only
+        default: full
+
+permissions:
+  contents: write
+  issues: write # 失敗時の通知 Issue
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      # Secrets を env に写して if: で参照できるようにする（if: からは secrets を直接読めない）
+      CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - name: Checkout japan-open-today
+        uses: actions/checkout@v4
+        with:
+          path: japan-open-today
+          # 全履歴を取る。shallow clone だと「HEAD:main への push」が fast-forward か判定できず、
+          # main 以外のブランチから手動実行したときに push が拒否される
+          fetch-depth: 0
+
+      - name: Checkout sitemill (path 依存の隣に置く。sitemill ADR 0006)
+        uses: actions/checkout@v4
+        with:
+          repository: hikuzawa/sitemill # public。既定の github.token で checkout できる
+          ref: v0.2.0 # タグ固定。sitemill の main の変更は自動では入らない
+          path: sitemill
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Restore raw HTML と画像のキャッシュ（git 管理外）
+        uses: actions/cache@v4
+        with:
+          # data/assets は provenance（assets.json）だけをコミットし、画像の実体は持たない。
+          # キャッシュに残っていれば取り直さずに済む（相手サイトへの負荷も減る）
+          path: |
+            japan-open-today/data/raw
+            japan-open-today/data/llm_cache
+            japan-open-today/data/assets
+          key: japan-open-today-cache-${{ github.run_id }}
+          restore-keys: |
+            japan-open-today-cache-
+
+      - name: Sync
+        working-directory: japan-open-today
+        run: uv sync --frozen
+
+      - name: Crawl
+        if: inputs.mode != 'deploy-only'
+        working-directory: japan-open-today
+        run: uv run sitemill crawl
+
+      - name: Extract
+        if: inputs.mode != 'deploy-only'
+        working-directory: japan-open-today
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: uv run sitemill extract
+
+      - name: 画像の実体を用意（無いものだけ出典から取り直す。内容が変わっていたら採らない）
+        working-directory: japan-open-today
+        run: uv run python -m tools.fetch_assets
+
+      - name: 採用画像を static/ へ複写
+        working-directory: japan-open-today
+        run: uv run python -m tools.sync_assets
+
+      - name: Build
+        working-directory: japan-open-today
+        env:
+          GOOGLE_MAPS_EMBED_KEY: ${{ secrets.GOOGLE_MAPS_EMBED_KEY }}
+          CF_WEB_ANALYTICS_TOKEN: ${{ secrets.CF_WEB_ANALYTICS_TOKEN }}
+        run: uv run sitemill build
+
+      - name: 公開 URL の検査（canonical / og:url / hreflang / sitemap / robots が base_url を指す）
+        working-directory: japan-open-today
+        # 本番ドメインを固定する。site.toml の base_url を変えるときはここも一緒に変える
+        # （japan-open-today.com のカスタムドメインを Pages に設定したあとで切り替える）
+        run: uv run python .github/scripts/check_public_urls.py --expect-base https://japan-open-today.pages.dev
+
+      - name: 充足率のレポート（営業時間・判定の内訳。ログに残すだけで、失敗させない）
+        if: inputs.mode != 'deploy-only'
+        working-directory: japan-open-today
+        continue-on-error: true
+        run: uv run python -m tools.report_coverage
+
+      - name: Eval (fixture、劣化検知)
+        if: inputs.mode != 'deploy-only'
+        working-directory: japan-open-today
+        run: uv run sitemill eval
+
+      - name: Commit data changes
+        id: commit
+        if: inputs.mode != 'deploy-only'
+        working-directory: japan-open-today
+        # push が競合しても配置（deploy）は続ける。失敗は下の通知ステップが outcome を見て Issue に出す
+        continue-on-error: true
+        run: |
+          git config user.name "sitemill-bot"
+          git config user.email "sitemill-bot@users.noreply.github.com"
+          git add data/state data/records data/runs
+          git diff --cached --quiet || git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ) の巡回・抽出結果"
+          # 人の作業が同時に main へ push されると拒否される。origin/main を取り込み直して最大 3 回まで
+          # 再試行し、data ファイル自体が競合したら諦める（巡回状態と記録は次回の巡回で再生成される）
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            echo "push が拒否された（試行 $attempt/3）。origin/main を取り込んで再試行する"
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::data のコミットが origin/main と競合したため push を諦めた（配置は続行）"
+              exit 1
+            fi
+          done
+          echo "::error::3 回試しても data を push できなかった（配置は続行）"
+          exit 1
+
+      - name: Cloudflare の Secrets を確認
+        id: cf
+        run: |
+          if [ -n "$CF_API_TOKEN" ] && [ -n "$CF_ACCOUNT_ID" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Cloudflare の Secrets が未設定のため deploy をスキップします（crawl→extract→build は完了）"
+          fi
+
+      - name: Cloudflare Pages プロジェクトを用意（無ければ作成、あれば何もしない）
+        if: >-
+          steps.cf.outputs.ready == 'true' &&
+          (github.event_name == 'schedule' || inputs.deploy)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          PROJECT_NAME: japan-open-today
+        run: |
+          # 存在確認は Pages API の GET で行う。200 なら既存なので何もしない、404 なら wrangler で作成する。
+          # それ以外（400/401/403 など）はトークンの権限やアカウント ID の問題なので、理由を出して止める。
+          body="$(mktemp)"
+          status="$(curl -sS -o "$body" -w '%{http_code}' \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/$PROJECT_NAME")"
+          case "$status" in
+            200)
+              echo "Pages プロジェクト $PROJECT_NAME は既に存在する（$(jq -r '.result.subdomain // "?"' "$body")）。作成はスキップ"
+              ;;
+            404)
+              echo "Pages プロジェクト $PROJECT_NAME が無いので作成する（production branch: main）"
+              # --force: 新規の静的プロジェクトを Workers に振り替える wrangler の自動委譲を使わず、
+              # 必ず Pages プロジェクト（<name>.pages.dev）として作る
+              npx --yes wrangler@4 pages project create "$PROJECT_NAME" --production-branch main --force
+              ;;
+            *)
+              echo "::error::Pages API が HTTP $status を返した。CLOUDFLARE_API_TOKEN に Account > Cloudflare Pages: Edit の権限があるか、CLOUDFLARE_ACCOUNT_ID が正しいかを確認する"
+              jq -r '.errors[]? | "  code \(.code): \(.message)"' "$body" 2>/dev/null || cat "$body"
+              exit 1
+              ;;
+          esac
+
+      - name: Deploy to Cloudflare Pages
+        if: >-
+          steps.cf.outputs.ready == 'true' &&
+          (github.event_name == 'schedule' || inputs.deploy)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # 作業ディレクトリ直下は git 管理外（2 リポジトリを並べている）で wrangler がブランチを
+          # 検出できないため、production branch の main を明示して本番に配置する
+          command: pages deploy japan-open-today/dist --project-name=japan-open-today --branch=main
+
+      - name: 失敗時に Issue で通知
+        if: failure() || steps.commit.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }} # 作業ディレクトリ直下は git 管理外なので、対象リポジトリを明示する
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          JOB_STATUS: ${{ job.status }}
+          COMMIT_OUTCOME: ${{ steps.commit.outcome }}
+        run: |
+          gh label create pipeline-failure --color B60205 --description "日次パイプラインの失敗" 2>/dev/null || true
+          num=$(gh issue list --label pipeline-failure --state open --json number --jq '.[0].number // empty')
+          if [ "$JOB_STATUS" = "success" ] && [ "$COMMIT_OUTCOME" = "failure" ]; then
+            msg="$(date -u +%FT%TZ) に data の push が失敗しました（並行する push と競合。配置は実行済み）: $RUN_URL"
+          else
+            msg="$(date -u +%FT%TZ) にパイプラインが失敗しました: $RUN_URL"
+          fi
+          if [ -n "$num" ]; then
+            gh issue comment "$num" --body "$msg"
+          else
+            gh issue create --title "日次パイプラインが失敗しました" --label pipeline-failure \
+              --body "$msg （失敗が続く限りこの Issue に追記されます。復旧を確認したら閉じてください）"
+          fi

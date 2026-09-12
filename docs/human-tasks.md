@@ -11,8 +11,13 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 2. ~~**GitHub リポジトリ**を作成し push する~~ → S0 で作成済み（private: `hikuzawa/japan-open-today`）。
 
 ## 公開までに必要
-3. **ドメイン `japan-open-today.com`** を取得する。取得後は `site.toml` の `base_url` の 1 行を差し替えるだけでよい
-   （canonical / hreflang / sitemap / robots はそこから決まる）。当面は Cloudflare Pages の既定ホストで動く。
+3. ~~**ドメイン `japan-open-today.com`** を取得する~~ → 取得済み（2026-09-13）。
+   **残っている作業**: Cloudflare Pages プロジェクト `japan-open-today` の
+   Custom domains にこのドメインを追加する（CI が初回の deploy でプロジェクトを作る）。
+   設定が済んだら AI 側が `site.toml` の `base_url` と
+   `.github/workflows/pipeline.yml` の `--expect-base` を同時に差し替える
+   （canonical / hreflang / sitemap / robots はそこから決まる）。それまでは
+   既定ホスト `japan-open-today.pages.dev` を本番として検査する。
 4. **Cloudflare アカウント**と API トークン（Account > Cloudflare Pages: Edit）・アカウント ID。
    akiya-atlas で発行済みのものを流用できる。Pages プロジェクト `japan-open-today` は CI が「無ければ作成」する。
    **注意**: `japan-open-today.pages.dev` が第三者に使われている場合、既定ホストは
@@ -55,6 +60,14 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 ## レビュー待ち: 現在 0 件
 S4 でいったん 5 件を保留にしたが、もう一段自動で探して全件の根拠が取れた（ADR 0009 追記）。
 `data/review/kagawa.yaml` は空。**人の判断を待っている項目は無い。**
+
+## 日次パイプライン（S7 で作成）
+`.github/workflows/pipeline.yml` が毎日 05:00 JST（20:00 UTC）に
+crawl → extract → 画像の用意 → build → 公開前検査 → Cloudflare Pages への配置を行う。
+akiya-atlas は 03:00 JST なので実行時刻は重ならない。
+`.github/workflows/checks.yml` は push / PR ごとに ruff・pytest・秘密の全履歴走査を行う。
+手で流すときは `gh workflow run pipeline.yml --repo hikuzawa/japan-open-today`
+（テンプレートだけを反映するなら `-f mode=deploy-only`）。
 
 ## AI 側で次に行う作業（人の作業を待たずに進められるもの）
 - S1: sitemill の多言語・巡回ゲート・ページ種別の一般化
