@@ -51,6 +51,7 @@ reason:
   no_data: 無法從官方網頁取得時間與休息（停駛）資訊
 facts:
   heading: 事實
+  closures: 休息日
   address: 地址
   phone: 電話
   fee: 費用
@@ -122,3 +123,9 @@ notfound:
 nearby:
   heading: 附近有開的設施
   lead: "已確認在 {date} 有開的附近設施。"
+open_air:
+  lead: 官方網頁沒有記載這裡的開放時間。這是戶外的場所，也沒有記載入場費。
+  no_notice: 目前也沒有禁止進入或休息的公告。
+  caution: 天候或施工仍可能無法進入。出發前請查看官方網頁。
+closures:
+  always_open: 全年無休

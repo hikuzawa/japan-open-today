@@ -52,6 +52,7 @@ reason:
   no_data: 時間・休業（運休）の情報を公式ページから取得できていない
 facts:
   heading: 事実
+  closures: 定休日
   address: 所在地
   phone: 電話
   fee: 料金
@@ -124,3 +125,9 @@ notfound:
 nearby:
   heading: 近くで開いている施設
   lead: "{date}に開いていると確認できた、近くの施設です。"
+open_air:
+  lead: この場所には開館時間の定めが公式ページに記載されていません。屋外の場所で、入場料の記載もありません。
+  no_notice: 立入禁止・休業の告知も出ていません。
+  caution: 天候や工事で立ち入れないことがあります。出発の前に公式ページをご確認ください。
+closures:
+  always_open: 年中無休

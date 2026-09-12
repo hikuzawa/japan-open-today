@@ -3,8 +3,19 @@
 <nav class="breadcrumb"><a href="{{ locale.url_path('') }}">{{ t('nav.home') }}</a> /
   <a href="{{ locale.url_path('areas/' ~ spot.area ~ '/') }}">{{ area.name(locale.code) }}</a></nav>
 <h1>{{ spot.name(locale.code) }}</h1>
+{% if no_hours_stated %}
+{# 屋外で時間の定めが無い場所（ADR 0011）。「不明」ではなく、定めが無いことをそのまま出す #}
+<div class="open-air-box">
+  <p class="verdict-date">{{ t('verdict.heading', date=today|date_short_l) }}</p>
+  <p class="open-air-lead">{{ t('open_air.lead') }}</p>
+  <p>{{ t('open_air.no_notice') }}</p>
+  <p class="note">{{ t('open_air.caution') }}</p>
+  <p class="actions">{{ ui.primary_link(spot.official_url, t('facts.official')) }}
+  {% if map.link_url %}<a class="secondary" href="{{ map.link_url }}" rel="noopener"
+     target="_blank">{{ t('facts.map') }}</a>{% endif %}</p>
+</div>
+{% elif verdict.state.value == 'unknown' %}
 {{ ui.verdict_line(verdict, locale) }}
-{% if verdict.state.value == 'unknown' %}
 {# 不明のときは、利用者がやるべき次の一手（公式ページを見る）を最も大きく出す #}
 <div class="unknown-box">
   <p class="unknown-lead">{{ t('verdict.unknown_lead') }}</p>
@@ -12,6 +23,7 @@
   {{ ui.reasons(verdict, locale) }}
 </div>
 {% else %}
+{{ ui.verdict_line(verdict, locale) }}
 <p class="actions">{{ ui.primary_link(spot.official_url, t('facts.official')) }}
 {% if map.link_url %}<a class="secondary" href="{{ map.link_url }}" rel="noopener"
    target="_blank">{{ t('facts.map') }}</a>{% endif %}</p>
@@ -36,12 +48,18 @@
       {% endfor %}
     </dd>
     {% endif %}
+    {% if closures_label %}
+    <dt>{{ t('facts.closures') }}</dt>
+    <dd>{{ t(closures_label) }}
+      {% if spot.closures_quote %}<span class="quote">{{ t('facts.quote', text=spot.closures_quote) }}</span>{% endif %}
+    </dd>
+    {% endif %}
     <dt>{{ t('facts.reservation') }}</dt>
     <dd>{{ t('reservation.' ~ spot.reservation_required) }}</dd>
     {% if spot.visit_minutes.ok %}
     <dt>{{ t('facts.visit_minutes') }}</dt><dd>{{ t('facts.minutes', n=spot.visit_minutes.value) }}</dd>
     {% endif %}
-    {% if verdict.state.value == 'unknown' and map.link_url %}
+    {% if verdict.state.value == 'unknown' and map.link_url and not no_hours_stated %}
     <dt>{{ t('facts.map') }}</dt>
     <dd><a href="{{ map.link_url }}" rel="noopener" target="_blank">{{ t('facts.map') }}</a></dd>
     {% endif %}

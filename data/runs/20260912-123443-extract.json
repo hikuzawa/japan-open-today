@@ -201,7 +201,7 @@
     "summary_replaced": 1,
     "truncated_pages": 0
   },
-  "finished_at": "2026-09-12T12:35:10Z",
+  "finished_at": "2026-09-12T12:34:45Z",
   "llm": {
     "cached_calls": 40,
     "calls": 40,
@@ -213,15 +213,17 @@
   "stages": {
     "extract": {
       "items": 67,
-      "pages": 40
+      "pages": 40,
+      "unseeded_dropped": 6
     },
     "ingest": {
       "created": 0,
+      "name_mismatch": 1,
       "skipped": 4,
       "unattributed": 15,
-      "unchanged": 31,
+      "unchanged": 30,
       "updated": 6
     }
   },
-  "started_at": "2026-09-12T12:35:08Z"
+  "started_at": "2026-09-12T12:34:43Z"
 }

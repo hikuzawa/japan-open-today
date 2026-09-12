@@ -37,6 +37,7 @@ sources:
     max_pages: 8
     spot:
       spot_id: ritsurin
+      spot_type: gated  # 入園料 500円・開園時間の記載あり
       area: takamatsu
       category: garden
       names:
@@ -69,6 +70,7 @@ sources:
     max_pages: 10
     spot:
       spot_id: shikokumura
+      spot_type: gated  # 入村料・開村時間の記載あり
       area: takamatsu
       category: museum
       names:
@@ -78,18 +80,24 @@ sources:
       map_query: 香川県高松市屋島中町 四国村ミウゼアム
       commons_category: Shikokumura
 
+  # 2026-09-12 訂正: point/29 を seed していたが、これは東かがわ市の「つばさ山温泉」のページで、
+  # 屋島とは別の施設だった（温泉の営業時間・入浴料・住所・電話を屋島の事実として公開していた）。
+  # 県観光協会の一覧からリンクされている point/298（見出し「屋島(山上)」）に差し替えた。
+  # ID を推測して URL を作ったのが原因。以後、URL は必ずリンクから辿って確定する（ADR 0009 追記）。
+  # 屋島そのものは無料の屋外（山上一帯）で、ページに載る時間は観光駐車場のもの。
+  # 山上の「やしまーる」は別の有料・時間のある施設なので、別の spot として扱う
   - id: kagawa-yashima
     name: 屋島
     operator: 公益社団法人香川県観光協会
     operator_kind: tourism_association
     operator_evidence:
       quote: "Copyright © kagawa Prefecture Tourism Association. ALL RIGHTS RESERVED."
-      url: https://www.my-kagawa.jp/point/29
+      url: https://www.my-kagawa.jp/point/298
       checked_on: 2026-09-12
     policy: crawl
-    official_url: https://www.my-kagawa.jp/point/29
+    official_url: https://www.my-kagawa.jp/point/298
     pages:
-      - url: https://www.my-kagawa.jp/point/29
+      - url: https://www.my-kagawa.jp/point/298
         kind: spot_detail
       - url: https://www.my-kagawa.jp/access
         kind: spot_access  # 発見（S6）: 交通
@@ -97,6 +105,7 @@ sources:
     max_pages: 4
     spot:
       spot_id: yashima
+      spot_type: open_air  # 山上一帯。無料で立ち入れる。ページの時間は観光駐車場のもの
       area: takamatsu
       category: viewpoint
       names:
@@ -127,6 +136,7 @@ sources:
     max_pages: 6
     spot:
       spot_id: kmuseum
+      spot_type: gated  # 観覧料・開館時間の記載あり
       area: takamatsu
       category: museum
       names:
@@ -166,6 +176,8 @@ sources:
         note: robots.txt を取得できないため巡回しない。リンクのみ
     spot:
       spot_id: tamamo
+      aliases: ["玉藻公園", "史跡高松城跡"]  # 高松市の一次情報はこの表記
+      spot_type: gated  # 普通入園料 300円・開園時間の記載あり（時間は季節別×入口別で値にできていない）
       area: takamatsu
       category: castle
       names:
@@ -204,6 +216,7 @@ sources:
     max_pages: 10
     spot:
       spot_id: chichu
+      spot_type: gated  # 要予約・開館時間の記載あり
       aliases: ["地中美術館"]  # 共有ページの告知の割り当てに使う（表示には使わない）
       area: naoshima
       category: museum
@@ -233,6 +246,7 @@ sources:
     max_pages: 10
     spot:
       spot_id: benesse-house
+      spot_type: gated  # 開館時間の記載あり
       aliases: ["ベネッセハウス ミュージアム", "ベネッセハウス ミュージアム／パーク", "ベネッセハウス"]  # 共有ページの告知の割り当てに使う（表示には使わない）
       area: naoshima
       category: museum
@@ -262,6 +276,7 @@ sources:
     max_pages: 10
     spot:
       spot_id: teshima-art
+      spot_type: gated  # 開館時間の記載あり
       aliases: ["豊島美術館"]  # 共有ページの告知の割り当てに使う（表示には使わない）
       area: teshima
       category: museum
@@ -320,6 +335,7 @@ sources:
     max_pages: 10
     spot:
       spot_id: kankakei
+      spot_type: gated  # ロープウェイの運賃・営業時間の記載あり
       area: shodoshima
       category: viewpoint
       names:
@@ -350,6 +366,7 @@ sources:
     max_pages: 10
     spot:
       spot_id: 24hitomi
+      spot_type: gated  # 入村料・営業時間（JSON-LD）の記載あり
       area: shodoshima
       category: museum
       names:
@@ -377,6 +394,7 @@ sources:
     max_pages: 8
     spot:
       spot_id: konpira
+      spot_type: open_air  # 境内は無料で、参拝時間の定めの記載が公式ページに無い
       area: kotohira
       category: shrine_temple
       names:
@@ -406,6 +424,7 @@ sources:
     max_pages: 6
     spot:
       spot_id: chichibugahama
+      spot_type: open_air  # 砂浜。料金・時間の記載が無く、門や柵が無い
       area: mitoyo
       category: park
       names:

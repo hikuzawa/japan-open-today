@@ -4,16 +4,17 @@
     {
       "spot_id": "ritsurin",
       "name": "栗林公園",
+      "spot_type": "gated",
+      "settled": true,
       "fields": [
         "hours",
+        "closures",
         "fees",
         "address",
         "phone",
         "reservation_required"
       ],
-      "missing": [
-        "closures"
-      ],
+      "missing": [],
       "today": "open",
       "today_reasons": [
         "regular_hours"
@@ -25,6 +26,8 @@
     {
       "spot_id": "shikokumura",
       "name": "四国村ミウゼアム",
+      "spot_type": "gated",
+      "settled": true,
       "fields": [
         "hours",
         "closures",
@@ -46,27 +49,31 @@
     {
       "spot_id": "yashima",
       "name": "屋島",
+      "spot_type": "open_air",
+      "settled": true,
       "fields": [
-        "hours",
-        "fees",
         "address",
         "phone"
       ],
       "missing": [
+        "hours",
         "closures",
+        "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 7
+        "unknown": 7
       }
     },
     {
       "spot_id": "kmuseum",
       "name": "香川県立ミュージアム",
+      "spot_type": "gated",
+      "settled": true,
       "fields": [
         "hours",
         "closures",
@@ -89,6 +96,8 @@
     {
       "spot_id": "tamamo",
       "name": "高松城跡 玉藻公園",
+      "spot_type": "gated",
+      "settled": false,
       "fields": [
         "closures",
         "fees",
@@ -110,6 +119,8 @@
     {
       "spot_id": "chichu",
       "name": "地中美術館",
+      "spot_type": "gated",
+      "settled": true,
       "fields": [
         "hours",
         "closures",
@@ -132,14 +143,16 @@
     {
       "spot_id": "benesse-house",
       "name": "ベネッセハウス ミュージアム",
+      "spot_type": "gated",
+      "settled": true,
       "fields": [
         "hours",
+        "closures",
         "address",
         "phone",
         "reservation_required"
       ],
       "missing": [
-        "closures",
         "fees"
       ],
       "today": "open",
@@ -153,6 +166,8 @@
     {
       "spot_id": "teshima-art",
       "name": "豊島美術館",
+      "spot_type": "gated",
+      "settled": true,
       "fields": [
         "hours",
         "address",
@@ -174,14 +189,16 @@
     {
       "spot_id": "kankakei",
       "name": "寒霞渓",
+      "spot_type": "gated",
+      "settled": true,
       "fields": [
         "hours",
+        "closures",
         "address",
         "phone",
         "reservation_required"
       ],
       "missing": [
-        "closures",
         "fees"
       ],
       "today": "open",
@@ -195,6 +212,8 @@
     {
       "spot_id": "24hitomi",
       "name": "二十四の瞳映画村",
+      "spot_type": "gated",
+      "settled": true,
       "fields": [
         "hours",
         "address",
@@ -216,6 +235,8 @@
     {
       "spot_id": "konpira",
       "name": "金刀比羅宮",
+      "spot_type": "open_air",
+      "settled": true,
       "fields": [
         "address",
         "phone",
@@ -237,6 +258,8 @@
     {
       "spot_id": "chichibugahama",
       "name": "父母ヶ浜",
+      "spot_type": "open_air",
+      "settled": true,
       "fields": [
         "address",
         "phone",
@@ -307,19 +330,30 @@
       ]
     }
   ],
+  "by_type": {
+    "gated": {
+      "total": 9,
+      "hours": 8
+    },
+    "open_air": {
+      "total": 3,
+      "settled": 3
+    },
+    "untyped": 0
+  },
   "field_counts": {
-    "hours": 9,
-    "fees": 4,
+    "hours": 8,
+    "closures": 7,
+    "fees": 3,
     "address": 12,
     "phone": 12,
-    "reservation_required": 9,
-    "closures": 4
+    "reservation_required": 9
   },
   "states": {
-    "open": 9,
-    "unknown": 3
+    "open": 8,
+    "unknown": 4
   },
   "unknown_reasons": {
-    "no_data": 3
+    "no_data": 4
   }
 }

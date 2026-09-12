@@ -144,3 +144,51 @@ def test_expired_and_unseeded_notices_are_dropped(ws: Workspace) -> None:
         for notice in spot.notices:
             url = notice.evidence.source_url if notice.evidence else None
             assert url is None or url in seeded, f"{spot.spot_id}: {url}"
+
+
+# --- seed した URL が別の施設のものだったとき -------------------------------
+
+
+def test_a_detail_page_that_does_not_name_the_spot_is_refused(ws: Workspace, tmp_path) -> None:
+    """屋島に温泉の URL を seed していた事故を止める門（ADR 0009 追記）。
+
+    施設の素性を決めるページなのに、その施設の名前がどこにも出てこないなら、
+    別の施設の URL を seed している。取り込まない。
+    """
+    from sitemill.store.raw import RawCache
+
+    from japan_open_today.ingest import _page_names_the_spot
+
+    spot = next(s for s in Dataset.load(ws).spots if s.spot_id == "yashima")
+    cache = RawCache(tmp_path)
+    other = "<html><body><h1>つばさ山温泉</h1><p>香川県東かがわ市引田991-16</p></body></html>"
+    right = "<html><body><h1>屋島(山上)</h1><p>香川県高松市屋島山上</p></body></html>"
+
+    class _WS:
+        raw_dir = tmp_path
+
+    cache.save("kagawa-yashima", "https://example.jp/onsen", other.encode(), {"encoding": "utf-8"})
+    cache.save(
+        "kagawa-yashima", "https://example.jp/yashima", right.encode(), {"encoding": "utf-8"}
+    )
+    assert _page_names_the_spot(_WS(), "kagawa-yashima", "https://example.jp/onsen", spot) is False
+    assert _page_names_the_spot(_WS(), "kagawa-yashima", "https://example.jp/yashima", spot) is True
+    # 生 HTML が無いときは判定しない（抽出は生 HTML が無ければ走らない）
+    assert _page_names_the_spot(_WS(), "kagawa-yashima", "https://example.jp/none", spot) is True
+
+
+def test_a_name_split_across_the_page_still_matches(ws: Workspace, tmp_path) -> None:
+    """公式は「史跡高松城跡」と「玉藻公園」を離して書く。語がすべてあれば同じ施設とする。"""
+    from sitemill.store.raw import RawCache
+
+    from japan_open_today.ingest import _page_names_the_spot
+
+    spot = next(s for s in Dataset.load(ws).spots if s.spot_id == "tamamo")
+    cache = RawCache(tmp_path)
+    html = "<html><body><h1>史跡高松城跡</h1><p>玉藻公園の開園時間</p></body></html>"
+    cache.save("kagawa-tamamo", "https://example.jp/tamamo", html.encode(), {"encoding": "utf-8"})
+
+    class _WS:
+        raw_dir = tmp_path
+
+    assert _page_names_the_spot(_WS(), "kagawa-tamamo", "https://example.jp/tamamo", spot) is True

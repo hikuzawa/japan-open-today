@@ -22,6 +22,8 @@ from sitemill.models.schedule import (
     SpecialNotice,
 )
 
+# 場所の型（ADR 0011）。営業時間が取れるかはゲートの有無で決まるので、充足率を型別に見る
+SpotType = Literal["gated", "open_air", "unknown"]
 SpotCategory = Literal[
     "museum", "shrine_temple", "park", "garden", "viewpoint", "onsen", "castle", "other"
 ]
@@ -86,6 +88,7 @@ class Spot(BaseModel):
     source_id: str
     area: str
     category: SpotCategory = "other"
+    spot_type: SpotType = "unknown"
     names: dict[str, LocalizedName] = Field(default_factory=dict)
     # 共有ページの告知を施設に割り当てるための別表記（「ベネッセハウス」など）。
     # 表示には使わない。公式ページに出る書き方だけを入れる
@@ -97,6 +100,10 @@ class Spot(BaseModel):
     phone: FieldValue[str] = Field(default_factory=FieldValue)
     hours: list[HoursPeriod] = Field(default_factory=list)
     closures: list[ClosureRule] = Field(default_factory=list)
+    # 規則が 0 件でも「年中無休」と書かれていれば注記が入る（`always_open`）。
+    # 「定休日が無い」と「書かれていない」は別のことなので区別する
+    closures_note: str | None = None
+    closures_quote: str | None = None
     notices: list[SpecialNotice] = Field(default_factory=list)
     fees: list[Fee] = Field(default_factory=list)
     reservation_required: ReservationState = "unknown"
@@ -129,6 +136,16 @@ class Spot(BaseModel):
     def has_schedule(self) -> bool:
         """開閉を計算する材料があるか。無ければページは「不明」と出す。"""
         return bool(self.hours or self.closures or self.notices)
+
+    @property
+    def closes_never(self) -> bool:
+        """定休日が無いと原文が言っているか（「年中無休」）。"""
+        return not self.closures and self.closures_note == "always_open"
+
+    @property
+    def hours_stated(self) -> bool:
+        """営業時間が一次情報から取れているか（充足率の分子。ADR 0011）。"""
+        return bool(self.hours)
 
     def path(self, locale_prefix: str = "") -> str:
         head = f"{locale_prefix}/" if locale_prefix else ""

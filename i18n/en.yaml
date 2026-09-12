@@ -54,6 +54,7 @@ reason:
   no_data: Hours and closures could not be obtained from the official page
 facts:
   heading: Facts
+  closures: Closing days
   address: Address
   phone: Phone
   fee: Admission
@@ -128,3 +129,12 @@ notfound:
 nearby:
   heading: Open nearby
   lead: "Places near here confirmed open on {date}."
+open_air:
+  lead: >-
+    The official page states no opening hours for this place. It is outdoors, and no admission
+    fee is stated either.
+  no_notice: No closure or access restriction has been announced.
+  caution: >-
+    Weather or works can still close access. Check the official page before you set out.
+closures:
+  always_open: Open every day

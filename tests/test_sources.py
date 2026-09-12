@@ -168,3 +168,24 @@ def test_registered_assets_are_usable(ws: Workspace) -> None:
         assert asset.usable, asset.asset_id
         assert asset.credit_text or asset.author, asset.asset_id
         assert asset.page_url, asset.asset_id
+
+
+def test_every_spot_declares_its_type(entries: list[dict]) -> None:
+    """型が未判定の施設は充足率の指標から漏れる（ADR 0011）。推測はせず、宣言を求める。"""
+    untyped = [
+        e["spot"].get("spot_id", e["id"])
+        for e in entries
+        if e.get("spot") and e["spot"].get("spot_type", "unknown") == "unknown"
+    ]
+    assert not untyped, f"spot_type を宣言していない施設: {untyped}"
+
+
+def test_open_air_places_do_not_claim_to_be_always_open(ws: Workspace) -> None:
+    """屋外でも「常に開いている」とは言わない。原文に根拠がある場合だけ always_open（ADR 0004）。"""
+    for spot in Dataset.load(ws).spots:
+        if spot.spot_type != "open_air":
+            continue
+        for period in spot.hours:
+            if period.always_open:
+                quote = (period.evidence.quote if period.evidence else None) or ""
+                assert quote, f"{spot.spot_id}: 根拠の引用なしに always_open にしている"

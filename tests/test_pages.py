@@ -148,3 +148,52 @@ def test_known_spots_do_not_need_nearby_but_may_have_it(built: list) -> None:
     for page in built:
         for row in page.context.get("nearby") or []:
             assert row["spot"].spot_id != page.context["spot"].spot_id
+
+
+def test_open_air_places_say_that_no_hours_are_stated(built: list) -> None:
+    """砂浜や境内を「不明」と出すのは事実に合わない。定めが無いことをそのまま出す（ADR 0011）。"""
+    pages = [p for p in built if p.meta.path.startswith("spots/")]
+    open_air = [p for p in pages if p.context["spot"].spot_type == "open_air"]
+    assert open_air, "屋外の場所が無いので、この検査が意味を持たない"
+    for page in open_air:
+        spot = page.context["spot"]
+        if spot.hours or spot.closures or spot.notices:
+            continue
+        assert page.context["no_hours_stated"] is True, page.meta.path
+    # ゲートのある施設ではこの表示をしない（時間が取れていないだけなので「不明」が正しい）
+    for page in pages:
+        if page.context["spot"].spot_type == "gated":
+            assert page.context["no_hours_stated"] is False, page.meta.path
+
+
+def test_a_place_with_a_notice_is_not_shown_as_having_no_hours(ws: Workspace) -> None:
+    """告知が出ているなら、まずその告知を出す。「定めが無い」で上書きしない。"""
+    from datetime import date
+
+    from sitemill.models.schedule import DateSpan, NoticeKind, SpecialNotice
+
+    ds = Dataset.load(ws)
+    spot = next(s for s in ds.spots if s.spot_type == "open_air")
+    assert page_builder.no_hours_stated(spot) is True
+    with_notice = spot.model_copy(
+        update={
+            "notices": [
+                SpecialNotice(
+                    kind=NoticeKind.closed,
+                    span=DateSpan(start=date(2026, 9, 12), end=date(2026, 9, 13)),
+                )
+            ]
+        }
+    )
+    assert page_builder.no_hours_stated(with_notice) is False
+
+
+def test_always_open_is_shown_as_a_fact_not_as_missing(built: list) -> None:
+    """「年中無休」は定休日が無いと分かっている状態。空欄と同じ扱いにしない。"""
+    pages = [p for p in built if p.meta.path.startswith("spots/")]
+    for page in pages:
+        spot = page.context["spot"]
+        if spot.closes_never:
+            assert page.context["closures_label"] == "closures.always_open", page.meta.path
+        else:
+            assert page.context["closures_label"] is None, page.meta.path

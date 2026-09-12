@@ -24,6 +24,11 @@ log = logging.getLogger(__name__)
 class JapanOpenTodayService:
     id = "japan-open-today"
 
+    # 情報源の pages が巡回対象のすべて（発見は YAML に seed を書き足す形で行う）。
+    # これを宣言すると、seed から外した URL の巡回状態が捨てられる。
+    # 間違った URL を外しても記録が入り続ける事故を防ぐため（ADR 0009 追記）
+    declared_pages_only = True
+
     # 巡回してよい運営主体（ADR 0009）。sitemill の既定（自治体だけ）より広い
     crawlable_operator_kinds = (
         OperatorKind.municipality,

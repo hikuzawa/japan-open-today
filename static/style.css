@@ -181,3 +181,10 @@ img { max-width: 100%; height: auto; }
 .actions-block .primary { width: 100%; justify-content: center; font-size: 1.15rem; min-height: 56px; }
 .unknown-box .why { background: transparent; border-color: var(--warn); }
 .nearby { margin-top: 32px; }
+
+/* 時間の定めが無い屋外の場所（ADR 0011）。「不明」の枠とは別の見え方にする */
+.open-air-box { background: var(--ai-100); border: 2px solid var(--ai-700); border-radius: var(--radius);
+  padding: 14px; margin: 12px 0 20px; }
+.open-air-lead { font-size: 1.25rem; font-weight: 700; margin-bottom: 8px; }
+.open-air-box .note { margin-bottom: 12px; }
+.fact-list .quote { display: block; color: var(--ink-2); font-size: 0.95rem; }

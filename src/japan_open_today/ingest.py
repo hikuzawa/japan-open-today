@@ -15,11 +15,12 @@ from datetime import date, datetime
 from typing import Any
 
 from sitemill.clock import jst_today
-from sitemill.diff.normalize import squash
+from sitemill.diff.normalize import page_text, squash
 from sitemill.extract import ExtractedItem
 from sitemill.models import Provenance, Source
 from sitemill.models.schedule import DateSpan, Evidence, NoticeKind, SpecialNotice
 from sitemill.settings import Workspace
+from sitemill.store.raw import RawCache
 from sitemill.store.records import RecordStore
 
 from japan_open_today.data import load_entries, records_path, routes_from_entry, spot_from_entry
@@ -60,6 +61,11 @@ def _spot_content(
             dumped["evidence"] = _evidence(url, closures.quote, provenance).model_dump(mode="json")
             rules.append(dumped)
         content["closures"] = rules
+        # 「年中無休」は規則が 0 件になるが、**定休日が無いと分かっている**ことは事実である。
+        # 注記を落とすと「未記載」と区別が付かず、ページに何も出せない
+        if not rules and closures.note:
+            content["closures_note"] = closures.note
+            content["closures_quote"] = closures.quote
         content.setdefault("hours_fetched_at", provenance.fetched_at.isoformat())
 
     fees: list[dict[str, Any]] = []
@@ -160,6 +166,19 @@ def ingest_items(
         if spot is None or not items:
             counts["skipped"] += 1
             return counts
+        if kind == "spot_detail" and not _page_names_the_spot(ws, source.id, url, spot):
+            # 施設の素性を決めるページなのに、その施設の名前が本文に無い。
+            # seed した URL が別の施設のものである（屋島に「つばさ山温泉」の URL を
+            # 当ててしまい、温泉の時間・料金・住所を屋島として公開していた実例がある）
+            counts["name_mismatch"] = counts.get("name_mismatch", 0) + 1
+            log.warning(
+                "%s: %s の本文に「%s」が出てこない。別の施設の URL を seed している疑いが"
+                "あるので取り込まない",
+                spot.spot_id,
+                url,
+                spot.name("ja"),
+            )
+            return counts
         content = _spot_content(items[0], url=url, kind=kind, provenance=provenance)
         content["spot_id"] = spot.spot_id
         result = store.upsert(
@@ -227,6 +246,29 @@ def ingest_items(
 
     counts["skipped"] += len(items) or 1
     return counts
+
+
+def _page_names_the_spot(ws: Workspace, source_id: str, url: str, spot: Any) -> bool:
+    """その施設の名前が本文に出てくるか。生 HTML が無ければ判定しない（True）。
+
+    「名前が出てくること」は弱い条件だが、**別の施設の URL を seed した**という事故は
+    これで止まる。事実の割り当ては共有ページと同じで、本文の名指しが根拠になる（ADR 0010）。
+    """
+    html = RawCache(ws.raw_dir).load_text(source_id, url)
+    if not html:
+        return True
+    text = squash(page_text(html))
+    for name in _spot_names(spot):
+        if squash(name) and squash(name) in text:
+            return True
+    # 名前が続いて出てこないことはある（公式は「史跡高松城跡」と「玉藻公園」を離して書く）。
+    # 語に割って、2 文字以上の語がすべてページにあれば同じ施設と見なす。
+    # 別の施設のページなら、どれか 1 語は必ず欠ける
+    for name in _spot_names(spot):
+        parts = [p for p in _NAME_SPLIT.split(name) if len(p.strip()) >= 2]
+        if parts and all(squash(p) in text for p in parts):
+            return True
+    return False
 
 
 def _covered_spots(ws: Workspace, entry: dict[str, Any]) -> list[Any]:
@@ -384,6 +426,8 @@ def _route_contents(
 
 
 _BRACKETS = re.compile(r"[（）()［］\[\]・／/]+")
+# 施設名を語に割る（「高松城跡 玉藻公園」→「高松城跡」「玉藻公園」）
+_NAME_SPLIT = re.compile(r"[\s　（）()［］\[\]「」・／/,、]+")
 
 
 def _tokens(node: str) -> list[str]:

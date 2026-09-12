@@ -5,24 +5,24 @@
   "extraction_metrics": {
     "fields": {
       "address": {
-        "not_found": 11,
+        "not_found": 12,
         "notes": {
           "quote_joined": 1
         },
-        "parsed": 15,
+        "parsed": 16,
         "quote_not_in_source": 0,
-        "total": 26,
+        "total": 28,
         "unparsed": 0
       },
       "closures": {
-        "not_found": 18,
+        "not_found": 19,
         "notes": {
-          "always_open": 3,
+          "always_open": 4,
           "quote_not_in_source": 1
         },
-        "parsed": 7,
+        "parsed": 8,
         "quote_not_in_source": 1,
-        "total": 26,
+        "total": 28,
         "unparsed": 0
       },
       "duration_minutes": {
@@ -67,11 +67,11 @@
         "not_found": 17,
         "notes": {
           "multiple": 5,
-          "quote_not_in_source": 2
+          "quote_not_in_source": 3
         },
-        "parsed": 2,
-        "quote_not_in_source": 2,
-        "total": 26,
+        "parsed": 3,
+        "quote_not_in_source": 3,
+        "total": 28,
         "unparsed": 5
       },
       "fee_child": {
@@ -79,21 +79,21 @@
         "notes": {
           "free": 1,
           "no_number": 3,
-          "quote_not_in_source": 3
+          "quote_not_in_source": 5
         },
         "parsed": 2,
-        "quote_not_in_source": 3,
-        "total": 26,
+        "quote_not_in_source": 5,
+        "total": 28,
         "unparsed": 3
       },
       "fee_senior": {
-        "not_found": 25,
+        "not_found": 26,
         "notes": {
-          "quote_not_in_source": 1
+          "quote_not_in_source": 2
         },
         "parsed": 0,
-        "quote_not_in_source": 1,
-        "total": 26,
+        "quote_not_in_source": 2,
+        "total": 28,
         "unparsed": 0
       },
       "first_departure": {
@@ -105,14 +105,14 @@
         "unparsed": 0
       },
       "hours": {
-        "not_found": 17,
+        "not_found": 18,
         "notes": {
           "quote_joined": 1,
           "quote_not_in_source": 2
         },
-        "parsed": 7,
+        "parsed": 8,
         "quote_not_in_source": 2,
-        "total": 26,
+        "total": 28,
         "unparsed": 0
       },
       "last_departure": {
@@ -128,9 +128,9 @@
         "notes": {
           "quote_not_in_source": 1
         },
-        "parsed": 15,
+        "parsed": 17,
         "quote_not_in_source": 1,
-        "total": 26,
+        "total": 28,
         "unparsed": 0
       },
       "reason": {
@@ -144,13 +144,13 @@
         "unparsed": 0
       },
       "reservation_note": {
-        "not_found": 20,
+        "not_found": 22,
         "notes": {
           "quote_not_in_source": 1
         },
         "parsed": 5,
         "quote_not_in_source": 1,
-        "total": 26,
+        "total": 28,
         "unparsed": 0
       },
       "route_label": {
@@ -182,13 +182,13 @@
         "unparsed": 6
       },
       "visit_minutes": {
-        "not_found": 23,
+        "not_found": 25,
         "notes": {
           "approx": 2
         },
         "parsed": 3,
         "quote_not_in_source": 0,
-        "total": 26,
+        "total": 28,
         "unparsed": 0
       }
     },
@@ -196,32 +196,33 @@
       "summary_truncated": 2,
       "summary_verbatim_overlap": 1
     },
-    "items": 67,
-    "pages": 40,
+    "items": 69,
+    "pages": 46,
     "summary_replaced": 1,
     "truncated_pages": 0
   },
-  "finished_at": "2026-09-12T12:35:10Z",
+  "finished_at": "2026-09-12T12:32:49Z",
   "llm": {
-    "cached_calls": 40,
-    "calls": 40,
-    "input_tokens": 187178,
-    "output_tokens": 10828
+    "cached_calls": 18,
+    "calls": 46,
+    "input_tokens": 204097,
+    "output_tokens": 11337
   },
   "notes": [],
   "service": "japan-open-today",
   "stages": {
     "extract": {
-      "items": 67,
-      "pages": 40
+      "items": 69,
+      "pages": 46
     },
     "ingest": {
-      "created": 0,
-      "skipped": 4,
+      "created": 1,
+      "name_mismatch": 2,
+      "skipped": 9,
       "unattributed": 15,
-      "unchanged": 31,
-      "updated": 6
+      "unchanged": 19,
+      "updated": 16
     }
   },
-  "started_at": "2026-09-12T12:35:08Z"
+  "started_at": "2026-09-12T12:32:08Z"
 }

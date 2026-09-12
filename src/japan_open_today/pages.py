@@ -235,6 +235,8 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         ),
                         "area": area(spot.area),
                         "nearby": nearby,
+                        "closures_label": _closures_label(spot),
+                        "no_hours_stated": no_hours_stated(spot),
                         "week_all_unknown": all(
                             v.state is DayState.unknown for v in weeks[spot.spot_id]
                         ),
@@ -405,6 +407,31 @@ def search_index(ws: Workspace, ds: Dataset, *, now: datetime | None = None) -> 
             )
         out[f"{locale.code}.json"] = {"generated_for": today.isoformat(), "spots": rows}
     return out
+
+
+def no_hours_stated(spot: Spot) -> bool:
+    """「時間の定めが無い屋外の場所」か（ADR 0011）。
+
+    砂浜や境内は閉まる時間が無く、公式ページも時間を書かない。これを「不明」と出すのは
+    事実に合わず、利用者も行動を決められない。**時間の定めが記載されていない**ことを
+    そのまま伝える（開いていると断定はしない）。
+
+    条件は「屋外と宣言されている」「時間も定休日規則も取れていない」「告知も出ていない」。
+    告知（臨時の立入禁止など）があるときは、その告知を出すほうが先なのでこの表示はしない。
+    """
+    return (
+        spot.spot_type == "open_air"
+        and not spot.hours
+        and not spot.closures
+        and not spot.notices
+    )
+
+
+def _closures_label(spot: Spot) -> str | None:
+    """定休日の表示に使う文言のキー。規則が無くても「年中無休」は事実なので出す。"""
+    if spot.closes_never:
+        return "closures.always_open"
+    return None
 
 
 def state_label_key(state: DayState) -> str:

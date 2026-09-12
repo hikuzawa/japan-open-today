@@ -22,7 +22,7 @@ from sitemill.parse.jp.dates import parse_date_range
 from sitemill.parse.jp.duration import parse_minutes
 from sitemill.parse.jp.hours import parse_clock, parse_opening_hours
 
-SPOT_PROMPT_VERSION = "spot_v1"
+SPOT_PROMPT_VERSION = "spot_v2"
 NOTICE_PROMPT_VERSION = "notice_v1"
 SHARED_NOTICE_PROMPT_VERSION = "shared_notice_v1"
 ROUTE_PROMPT_VERSION = "route_v1"
