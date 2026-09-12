@@ -76,6 +76,12 @@ def test_display_names_come_from_the_catalogs(site: SiteConfig) -> None:
     assert catalogs["zh-Hant"].get("site.name_short") == "今天能去的日本"
 
 
+def test_notice_pages_are_crawled_daily_and_freshness_has_a_floor(site: SiteConfig) -> None:
+    """鮮度が武器なので、告知は毎日取り、取得が途切れたら判定を落とす（ADR 0004・0007）。"""
+    assert site.crawl.always_daily_kinds == ("notice",)
+    assert site.crawl.stale_after_days == 14
+
+
 def test_env_example_has_no_values() -> None:
     """.env.example には値を書かない（git にコミットされる）。"""
     for line in (ROOT / ".env.example").read_text(encoding="utf-8").splitlines():

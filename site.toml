@@ -52,10 +52,11 @@ fresh_days = 7              # この日数内に変化があれば毎日
 slow_after_days = 28        # これ以上変化が無ければ最長間隔
 mid_interval_days = 3       # その中間
 max_interval_days = 7       # 最長（＝週 1 回）
-# お知らせ・運休告知は変化率に関わらず毎日取りに行く / 取得が途切れたら判定を「不明」に落とす閾値。
-# どちらも sitemill 側の実装が入ってから有効になる（ADR 0004・0007、S2）
-# always_daily_kinds = ["notice"]
-# stale_after_days = 14
+# お知らせ・運休告知は変化率に関わらず毎日取りに行く（ADR 0007）。
+# 臨時休業と運休は「変化の少ないページに突然出る」ので、間隔を延ばすと取り逃がす
+always_daily_kinds = ["notice"]
+# 公式ページの取得がこの日数できていなければ、規則上は開館日でも判定を「不明」に落とす（ADR 0004）
+stale_after_days = 14
 
 [llm]
 provider = "anthropic"
