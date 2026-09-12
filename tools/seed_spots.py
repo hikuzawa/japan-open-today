@@ -33,7 +33,7 @@ from urllib.parse import urljoin, urlparse
 
 from selectolax.parser import HTMLParser
 from sitemill.clock import jst_now
-from sitemill.diff.normalize import page_text
+from sitemill.diff.normalize import page_text, squash
 from sitemill.fetch.client import PoliteClient
 from sitemill.settings import Workspace
 
@@ -165,15 +165,58 @@ def _operator_name(quote: str) -> str:
     return quote[:60]
 
 
+def _try_source(client: PoliteClient, seed: Seed, url: str) -> tuple[str, str] | None:
+    """その URL を一次情報にできるか。返り値は (運営主体の引用, 根拠 URL)。
+
+    確かめるのは 3 つ。取得できるか、**施設の名前がページにあるか**（別の施設の URL を
+    掴んでいないか。ADR 0009 追記）、運営主体の根拠が取れるか。
+    """
+    res = client.get(url)
+    if res.blocked:
+        seed.note = f"robots.txt が拒否している（{res.error}）"
+        return None
+    if not res.ok:
+        seed.note = f"取得できない（status={res.status}）"
+        return None
+    text = _plain(res.text)
+    if squash(seed.name) not in squash(text):
+        seed.note = f"ページに「{seed.name}」が出てこない"
+        return None
+    host = urlparse(res.final_url).netloc
+    quote = _operator_quote(text)
+    if quote:
+        return quote, res.final_url
+    # 2 段目: 会社概要・運営者情報のページを 1 枚だけ辿る
+    for a in HTMLParser(res.text).css("a"):
+        label = " ".join((a.text() or "").split())
+        href = a.attributes.get("href") or ""
+        if not href or not ABOUT_LINK.search(label + href):
+            continue
+        about = urljoin(res.final_url, href.split("#")[0])
+        if urlparse(about).netloc != host:
+            continue
+        r2 = client.get(about)
+        if r2.ok:
+            quote = _operator_quote(_plain(r2.text))
+            if quote:
+                return quote, r2.final_url
+    if _operator_kind(host, "") in ("prefecture", "municipality"):
+        # 自治体・県のドメインは、それ自体が運営主体の根拠になる。見出しを引用にする
+        title = HTMLParser(res.text).css_first("title")
+        seed.note = "自治体ドメインの一次情報（見出しを根拠にした）"
+        return (" ".join((title.text() if title else "").split())[:120] or host, res.final_url)
+    seed.note = "運営主体の記述が無い"
+    return None
+
+
 def build_seed(client: PoliteClient, cand: dict[str, Any]) -> Seed:
     official = (cand.get("official_url") or "").strip()
     if official and THIRD_PARTY.search(urlparse(official).netloc):
         official = ""  # 第三者サイトは一次情報にしない
-    source_url = official or cand["url"]
     seed = Seed(
         point_id=cand["point_id"],
         name=cand["name"],
-        source_url=source_url,
+        source_url=official or cand["url"],
         official_url=official or cand["url"],
         info=cand.get("info") or {},
     )
@@ -184,47 +227,30 @@ def build_seed(client: PoliteClient, cand: dict[str, Any]) -> Seed:
         return seed
     seed.area = area
     seed.category = _category(seed.name)
-    seed.spot_id = _slug_from(source_url, seed.point_id)
 
-    res = client.get(source_url)
-    if res.blocked:
-        seed.policy = "link_only"
-        seed.note = f"robots.txt が拒否している（{res.error}）"
-        return seed
-    if not res.ok:
-        seed.note = f"取得できない（status={res.status}）"
-        return seed
-    text = _plain(res.text)
-    if seed.name not in text:
-        # 別の施設のページを掴んでいる。屋島に温泉の URL を当てた事故と同じ形
-        seed.note = f"ページに「{seed.name}」が出てこない"
-        return seed
-    host = urlparse(res.final_url).netloc
-    quote = _operator_quote(text)
-    evidence_url = res.final_url
-    if not quote:
-        # 2 段目: 会社概要・運営者情報のページを 1 枚だけ辿る
-        for a in HTMLParser(res.text).css("a"):
-            label = " ".join((a.text() or "").split())
-            href = a.attributes.get("href") or ""
-            if not href or not ABOUT_LINK.search(label + href):
-                continue
-            about = urljoin(res.final_url, href.split("#")[0])
-            if urlparse(about).netloc != host:
-                continue
-            r2 = client.get(about)
-            if r2.ok:
-                quote = _operator_quote(_plain(r2.text))
-                if quote:
-                    evidence_url = r2.final_url
-                    break
-    if not quote:
+    found: tuple[str, str] | None = None
+    if official:
+        found = _try_source(client, seed, official)
+    if found is None:
+        # 施設の公式サイトを一次情報にできない（robots・名前が無い・運営主体の記述が無い）。
+        # **観光協会のページを一次情報にする**。ADR 0001 が認める情報源で、基本情報
+        # （時間・料金）が構造化されている。施設の公式サイトはボタンのリンク先として持つ
+        why = seed.note or "公式サイトを一次情報にできない"
+        found = _try_source(client, seed, cand["url"])
+        if found is not None:
+            seed.source_url = cand["url"]
+            seed.note = f"観光協会のページを一次情報にした（{why}）"
+    if found is None:
         seed.policy = "pending"
-        seed.note = "運営主体の根拠が取れない（レビュー行列）"
+        seed.note = f"運営主体の根拠が取れない（レビュー行列。{seed.note}）"
         return seed
+    quote, evidence_url = found
+    # 識別子は施設の公式サイトの表記を優先する（観光協会のページを巡回する場合でも、
+    # URL に出る名前は施設側のローマ字表記のほうが読める）
+    seed.spot_id = _slug_from(official or seed.source_url, seed.point_id)
     seed.operator_quote = quote
     seed.operator_evidence_url = evidence_url
-    seed.operator_kind = _operator_kind(host, quote)
+    seed.operator_kind = _operator_kind(urlparse(evidence_url).netloc, quote)
     seed.operator = _operator_name(quote)
     seed.ok = True
     return seed
@@ -240,8 +266,9 @@ def _map_query(seed: Seed) -> str:
 
 def _yaml_block(seed: Seed, source_id: str) -> str:
     q = seed.operator_quote.replace('"', "'")
+    note = f"  # {seed.note}" if seed.note else ""
     lines = [
-        f"  - id: {source_id}",
+        f"  - id: {source_id}{note}",
         f"    name: {seed.name}",
         f"    operator: {seed.operator}",
         f"    operator_kind: {seed.operator_kind}",
@@ -250,7 +277,8 @@ def _yaml_block(seed: Seed, source_id: str) -> str:
         f"      url: {seed.operator_evidence_url}",
         f"      checked_on: {jst_now().date().isoformat()}",
         f"    policy: {seed.policy}",
-        f"    official_url: {seed.source_url}",
+        # 主ボタンのリンク先は施設の公式サイト。巡回するのは一次情報にできたページ
+        f"    official_url: {seed.official_url}",
         "    pages:",
         f"      - url: {seed.source_url}",
         "        kind: spot_detail",
@@ -278,8 +306,18 @@ def main() -> int:
 
     ws = Workspace.open(Path.cwd())
     inventory = json.loads(args.inventory.read_text(encoding="utf-8"))
-    have_ids = {e["id"] for e in load_entries(ws)}
-    have_hosts = {h for e in load_entries(ws) for h in (e.get("allow_hosts") or [])}
+    entries = load_entries(ws)
+    have_ids = {e["id"] for e in entries}
+    # 重複の判定は **URL と施設名** で行う。ホストで見ると、1 つのホストに多数の施設が
+    # 乗っているサイト（観光協会・ベネッセ）でまるごと弾かれる
+    have_urls = {p["url"] for e in entries for p in (e.get("pages") or [])}
+    have_urls |= {e.get("official_url", "") for e in entries}
+    have_names = {
+        (e.get("spot") or {}).get("names", {}).get("ja", {}).get("text", "")
+        for e in entries
+        if e.get("spot")
+    }
+    have_names |= {n for e in entries for n in ((e.get("spot") or {}).get("aliases") or [])}
 
     todo = [c for c in inventory["candidates"] if c.get("spot_type") == "gated"]
     if args.limit:
@@ -291,10 +329,12 @@ def main() -> int:
     with PoliteClient(ua, default_delay=3.0, jitter=1.0, timeout=30.0) as client:
         for n, cand in enumerate(todo, 1):
             seed = build_seed(client, cand)
-            host = urlparse(seed.source_url).netloc
-            if host in have_hosts:
+            if seed.source_url in have_urls:
                 seed.ok = False
-                seed.note = f"すでに収録済みのホスト（{host}）"
+                seed.note = f"すでに収録済みの URL（{seed.source_url}）"
+            elif seed.name in have_names:
+                seed.ok = False
+                seed.note = f"すでに収録済みの施設（{seed.name}）"
             seeds.append(seed)
             mark = "OK " if seed.ok else "NG "
             print(f"  {n:3}/{len(todo)} {mark}{seed.name[:20]:22} {seed.area:14} {seed.note[:44]}")
