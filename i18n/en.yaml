@@ -65,6 +65,8 @@ facts:
   missing: Not stated
   official: Official page (external)
   map: Open in Maps (external)
+  map_heading: Map
+  map_attribution: Map data ©Google
   social: Official accounts
 reservation:
   "yes": Booking required

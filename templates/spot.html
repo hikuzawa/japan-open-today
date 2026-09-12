@@ -65,6 +65,19 @@
     {% endif %}
   </dl>
 </section>
+{% if map.src_url %}
+{# 地図の埋め込み（ADR 0006 の経路④）。鍵が無いときは上の外部リンクだけになる #}
+<section class="map-embed">
+  <h2 class="section-head">{{ t('facts.map_heading') }}</h2>
+  <figure class="sm-embed" data-embed="map">
+    <iframe src="{{ map.src_url }}" title="{{ map.title }}" width="{{ map.width }}"
+            height="{{ map.height }}" style="border:0;max-width:100%" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    <figcaption class="sm-credit">{{ t('facts.map_attribution') }}
+      <a href="{{ map.link_url }}" rel="noopener" target="_blank">{{ t('facts.map') }}</a></figcaption>
+  </figure>
+</section>
+{% endif %}
 {% if nearby %}
 {# 不明でも、近くで開いていると分かっている施設があれば行き先を変えられる #}
 <section class="nearby">

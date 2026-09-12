@@ -24,6 +24,8 @@ from japan_open_today.schema import Spot
 from japan_open_today.verdict import route_verdict, spot_verdict, spot_week
 
 WEEK_DAYS = 7
+# Google Maps が使う言語コード。ロケール名とは違う（繁体字は zh-TW）
+MAPS_LANGUAGE = {"ja": "ja", "en": "en", "zh-Hant": "zh-TW"}
 
 
 def _locales(ws: Workspace) -> list[LocaleConfig]:
@@ -231,7 +233,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                             spot.map_query or spot.name("ja"),
                             api_key=ws.secrets.google_maps_embed_key,
                             title=spot.name(locale.code),
-                            language=locale.code,
+                            language=MAPS_LANGUAGE.get(locale.code, locale.code),
                         ),
                         "area": area(spot.area),
                         "nearby": nearby,

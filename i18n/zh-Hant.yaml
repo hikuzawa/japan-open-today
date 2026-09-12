@@ -62,6 +62,8 @@ facts:
   missing: 未記載
   official: 官方網頁（外部）
   map: 在地圖上查看（外部）
+  map_heading: 地圖
+  map_attribution: 地圖資料 ©Google
   social: 官方帳號
 reservation:
   "yes": 需預約

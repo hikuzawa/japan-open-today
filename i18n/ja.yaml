@@ -63,6 +63,8 @@ facts:
   missing: 記載なし
   official: 公式ページ（外部）
   map: 地図で見る（外部）
+  map_heading: 地図
+  map_attribution: 地図データ ©Google
   social: 公式アカウント
 reservation:
   "yes": 要予約
