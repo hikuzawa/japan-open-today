@@ -54,8 +54,10 @@ def test_the_identifier_comes_from_the_operators_own_spelling() -> None:
     assert _slug_from("https://www.shikokumura.or.jp/", "123") == "shikokumura"
     assert _slug_from("https://ritsuringarden.jp/hours/", "9") == "ritsuringarden"
     # 公式サイトが無く観光協会のページを一次情報にする場合は、その id を使う
-    assert _slug_from("https://www.my-kagawa.jp/point/298", "298") == "point"
+    assert _slug_from("https://www.my-kagawa.jp/point/298", "298") == "p298"
     assert _slug_from("https://www.my-kagawa.jp/", "298") == "p298"
+    # 借りているホスティングのホスト名は施設を表さないので、パスを使う
+    assert _slug_from("https://r.goope.jp/new-yashima-aq", "1") == "new-yashima-aq"
 
 
 def test_the_category_is_read_from_the_name() -> None:
@@ -95,3 +97,50 @@ def test_a_page_without_the_info_table_is_unknown_not_open_air() -> None:
     新屋島水族館がこれで、営業時間の無いページから open_air と決めてしまっていた。
     """
     assert _info_table("説明だけのページ。基本情報の表が無い。") == {}
+
+
+def test_the_name_check_ignores_full_width_and_half_width_brackets() -> None:
+    """一覧は「屋島（山上）」、ページは「屋島(山上)」。そのまま比べると全部外れる。"""
+    from sitemill.diff.normalize import squash
+
+    assert squash("屋島（山上）") in squash("屋島 屋島(山上) やしま・さんじょう 基本情報")
+    assert squash("金刀比羅宮") not in squash("つばさ山温泉 香川県東かがわ市引田")
+
+
+def test_stored_rows_can_be_redecided_without_fetching_again() -> None:
+    """規則を直したときに数百件を取り直さないための道。判定に本文が要らないものだけ。"""
+    from tools.collect_spots import Candidate, redecide_from_info
+
+    hotel = Candidate(
+        point_id="1",
+        name="トレスタ白山",
+        url="https://example.jp/1",
+        area="香川県中部",
+        spot_type="gated",
+        info={"営業時間": "チェックイン15:00、チェックアウト10:00"},
+    )
+    assert redecide_from_info(hotel) is True
+    assert hotel.spot_type == "skip"
+
+    aquarium = Candidate(
+        point_id="2",
+        name="新屋島水族館",
+        url="https://example.jp/2",
+        area="高松市周辺",
+        spot_type="open_air",
+        info={},
+    )
+    assert redecide_from_info(aquarium) is True
+    assert aquarium.spot_type == "unknown"
+
+    # 対象外と判定したものは触らない（本文を見ないと決められないため）
+    skipped = Candidate(
+        point_id="3",
+        name="山越うどん",
+        url="https://example.jp/3",
+        area="香川県中部",
+        spot_type="skip",
+        reason="restaurant",
+    )
+    assert redecide_from_info(skipped) is False
+    assert skipped.spot_type == "skip"

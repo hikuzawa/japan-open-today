@@ -102,14 +102,25 @@ def _plain(html: str) -> str:
     return " ".join(page_text(html).split())
 
 
+# 借りているホスティングのホスト名は施設を表さない（r.goope.jp/new-yashima-aq など）。
+# この場合はパスの先頭を使う
+SHARED_HOSTS = re.compile(
+    r"(?:goope|jimdo(?:free)?|wixsite|shopinfo|hp\.gogo|webnode|weebly|"
+    r"wordpress|blogspot|amebaownd|hatenablog|fc2|sakura\.ne|my-kagawa)"
+)
+
+
 def _slug_from(url: str, point_id: str) -> str:
     """運営者自身のローマ字表記から識別子を作る（こちらで訳さない。ADR 0005）。"""
-    host = urlparse(url).netloc.lower().removeprefix("www.")
+    parsed = urlparse(url)
+    host = parsed.netloc.lower().removeprefix("www.")
     label = host.split(".")[0]
-    if "my-kagawa" in host or not label or label in ("web", "home", "info"):
-        path = [p for p in urlparse(url).path.split("/") if p and not p.isdigit()]
-        label = path[0] if path else f"p{point_id}"
-    label = re.sub(r"[^a-z0-9-]+", "-", label).strip("-")
+    path = [seg for seg in parsed.path.split("/") if seg and not seg.isdigit()]
+    if SHARED_HOSTS.search(host) or len(label) < 3 or label in ("web", "home", "info"):
+        first = path[0] if path else ""
+        # 「point」「spot」のような一般語は施設を表さない。観光協会の id を使う
+        label = f"p{point_id}" if first in ("", "point", "spot", "attraction") else first
+    label = re.sub(r"[^a-z0-9-]+", "-", label.lower()).strip("-")[:40]
     return label or f"p{point_id}"
 
 

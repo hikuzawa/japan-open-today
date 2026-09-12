@@ -31,7 +31,7 @@ from urllib.parse import urljoin
 
 from selectolax.parser import HTMLParser
 from sitemill.clock import jst_now
-from sitemill.diff.normalize import page_text
+from sitemill.diff.normalize import page_text, squash
 from sitemill.fetch.client import PoliteClient
 from sitemill.settings import Workspace
 
@@ -168,8 +168,10 @@ def classify(client: PoliteClient, cand: Candidate) -> None:
         cand.reason = f"取得できない（status={r.status}）"
         return
     text = " ".join(page_text(r.text).split())
-    if cand.name and cand.name not in text:
-        # 一覧の名前がページに無い。別の施設のページを指している（ADR 0009 追記）
+    if cand.name and squash(cand.name) not in squash(text):
+        # 一覧の名前がページに無い。別の施設のページを指している（ADR 0009 追記）。
+        # 比較は squash（NFKC＋空白除去）で行う。一覧は全角括弧「屋島（山上）」、ページは
+        # 半角括弧「屋島(山上)」で書いていて、そのまま比べると全部外れる
         cand.spot_type = "unknown"
         cand.reason = "ページに一覧の名前が出てこない"
         return
@@ -206,6 +208,29 @@ def classify(client: PoliteClient, cand: Candidate) -> None:
         cand.reason = "営業時間・料金の記載が無い"
 
 
+def redecide_from_info(cand: Candidate) -> bool:
+    """保存済みの基本情報だけで型を決め直す（取得し直さない）。変わったら True。
+
+    判定の規則を直したあと、数百件を取得し直さずに反映するために使う。ページ本文が要る判定
+    （対象外の型・名前の照合）はここでは行えないので、`gated` と `open_air` だけを見る。
+    """
+    if cand.spot_type not in ("gated", "open_air"):
+        return False
+    before = (cand.spot_type, cand.reason)
+    hours = cand.info.get("営業時間", "")
+    fee = cand.info.get("料金", "")
+    if CHECK_IN.search(hours + " " + fee):
+        cand.spot_type, cand.reason = "skip", "lodging（チェックイン時刻の記載）"
+    elif not cand.info:
+        cand.spot_type, cand.reason = "unknown", "基本情報の表が読めない（別の情報源が要る）"
+    elif CLOCK.search(hours) or FEE_AMOUNT.search(fee):
+        cand.spot_type = "gated"
+        cand.reason = f"営業時間/料金の記載あり: {(hours or fee)[:60]}"
+    else:
+        cand.spot_type, cand.reason = "open_air", "営業時間・料金の記載が無い"
+    return (cand.spot_type, cand.reason) != before
+
+
 def _save(out: Path, cands: list[Candidate], requests: int, partial: list[str]) -> dict[str, int]:
     """結果を書き出す。途中でも呼べるようにしてある（数百件の取得をやり直さないため）。"""
     by_type: dict[str, int] = {}
@@ -239,6 +264,9 @@ def main() -> int:
     parser.add_argument(
         "--recheck", default="", help="この型のものを再判定する（例: skip,unknown）"
     )
+    parser.add_argument(
+        "--redecide", action="store_true", help="保存済みの基本情報だけで型を決め直す（取得しない）"
+    )
     parser.add_argument("--out", type=Path, default=Path("data/runs/kagawa-inventory.json"))
     args = parser.parse_args()
 
@@ -247,6 +275,14 @@ def main() -> int:
     if args.out.is_file():
         stored = json.loads(args.out.read_text(encoding="utf-8"))
     cands = [Candidate(**row) for row in stored.get("candidates", [])]
+
+    if args.redecide:
+        changed = sum(1 for cand in cands if redecide_from_info(cand))
+        by_type = _save(args.out, cands, stored.get("requests", 0), stored.get("partial", []))
+        print(f"== 保存済みの情報から決め直した: {changed} 件が変わった ==")
+        for key, n in sorted(by_type.items(), key=lambda kv: -kv[1]):
+            print(f"  {key:9} {n:4}")
+        return 0
 
     ua = f"{ws.site.user_agent} spot inventory"
     with PoliteClient(ua, default_delay=3.0, jitter=1.0, timeout=30.0) as client:
