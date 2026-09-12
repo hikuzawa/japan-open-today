@@ -1,0 +1,162 @@
+{
+  "resolved_at": "2026-09-12T18:09:01.023742+09:00",
+  "requests": 34,
+  "rows": [
+    {
+      "spot_id": "ritsurin",
+      "name": "栗林公園",
+      "category": "Ritsurin Garden",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Ritsurin_Garden",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.my-kagawa.jp/ritsuringarden/",
+        "https://ja.wikipedia.org/wiki/%E6%A0%97%E6%9E%97%E5%85%AC%E5%9C%92"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "tamamo",
+      "name": "高松城跡 玉藻公園",
+      "category": "Takamatsu Castle (Sanuki)",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Takamatsu_Castle_(Sanuki)",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.takamatsujyo.com/",
+        "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%9D%BE%E5%9F%8E_%28%E8%AE%83%E5%B2%90%E5%9B%BD%29"
+      ],
+      "note": "公式サイト: 取得できない（status=0 robots.txt を取得できないため今回は巡回しない）"
+    },
+    {
+      "spot_id": "shikokumura",
+      "name": "四国村ミウゼアム",
+      "category": "Shikokumura",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Shikokumura",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.shikokumura.or.jp/",
+        "https://ja.wikipedia.org/wiki/%E5%9B%9B%E5%9B%BD%E6%9D%91"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "yashima",
+      "name": "屋島",
+      "category": "Mount Yashima",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Mount_Yashima",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.my-kagawa.jp/point/29",
+        "https://ja.wikipedia.org/wiki/%E5%B1%8B%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "kmuseum",
+      "name": "香川県立ミュージアム",
+      "category": "The Kagawa Museum",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:The_Kagawa_Museum",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.pref.kagawa.lg.jp/kmuseum/",
+        "https://ja.wikipedia.org/wiki/%E9%A6%99%E5%B7%9D%E7%9C%8C%E7%AB%8B%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "chichu",
+      "name": "地中美術館",
+      "category": "Chichu Art Museum",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Chichu_Art_Museum",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://benesse-artsite.jp/art/chichu.html",
+        "https://ja.wikipedia.org/wiki/%E5%9C%B0%E4%B8%AD%E7%BE%8E%E8%A1%93%E9%A4%A8"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "benesse-house",
+      "name": "ベネッセハウス ミュージアム",
+      "category": "Benesse House",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Benesse_House",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://benesse-artsite.jp/art/benessehouse-museum.html",
+        "https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%8D%E3%83%83%E3%82%BB%E3%83%8F%E3%82%A6%E3%82%B9"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "naoshima-sento",
+      "name": "直島銭湯 I♥湯",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://benesse-artsite.jp/art/naoshimasento.html",
+        "https://ja.wikipedia.org/wiki/%E7%9B%B4%E5%B3%B6bankART"
+      ],
+      "note": "Wikipedia: 取得できない（status=404 HTTP 404）"
+    },
+    {
+      "spot_id": "teshima-art",
+      "name": "豊島美術館",
+      "category": "Teshima Art Museum",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Teshima_Art_Museum",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://benesse-artsite.jp/art/teshima-artmuseum.html",
+        "https://ja.wikipedia.org/wiki/%E8%B1%8A%E5%B3%B6%E7%BE%8E%E8%A1%93%E9%A4%A8"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "kankakei",
+      "name": "寒霞渓",
+      "category": "Kankakei",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Kankakei",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.kankakei.co.jp/",
+        "https://ja.wikipedia.org/wiki/%E5%AF%92%E9%9C%9E%E6%B8%93"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "24hitomi",
+      "name": "二十四の瞳映画村",
+      "category": "Twenty Four Eyes Film Village",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Twenty_Four_Eyes_Film_Village",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://24hitomi.or.jp/",
+        "https://ja.wikipedia.org/wiki/%E4%BA%8C%E5%8D%81%E5%9B%9B%E3%81%AE%E7%9E%B3%E6%98%A0%E7%94%BB%E6%9D%91"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "konpira",
+      "name": "金刀比羅宮",
+      "category": "Kotohira-gū",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Kotohira-g%C5%AB",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.konpira.or.jp/",
+        "https://ja.wikipedia.org/wiki/%E9%87%91%E5%88%80%E6%AF%94%E7%BE%85%E5%AE%AE"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "chichibugahama",
+      "name": "父母ヶ浜",
+      "category": "Chichibugahama",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Chichibugahama",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.mitoyo-kanko.com/spot/chichibugahama/",
+        "https://ja.wikipedia.org/wiki/%E7%88%B6%E6%AF%8D%E3%83%B6%E6%B5%9C"
+      ],
+      "note": ""
+    }
+  ]
+}

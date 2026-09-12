@@ -2,14 +2,65 @@
   "assets": [
     {
       "alt_text": "地中美術館",
+      "asset_id": "02390050f3dd3210",
+      "author": "663highland",
+      "byte_size": 508024,
+      "content_type": "image/jpeg",
+      "credit_text": "150505 Chichu Art Museum Naoshima Island Kagawa pref Japan01s3.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
+      "fetched_at": "2026-09-12T09:25:33+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-12T09:25:33Z",
+        "credit_text": "出典: 150505 Chichu Art Museum Naoshima Island Kagawa pref Japan01s3.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:150505_Chichu_Art_Museum_Naoshima_Island_Kagawa_pref_Japan01s3.jpg",
+        "license_id": "CC-BY-2.5",
+        "reason": "whitelist:CC-BY-2.5"
+      },
+      "local_path": "02390050f3dd3210.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:150505_Chichu_Art_Museum_Naoshima_Island_Kagawa_pref_Japan01s3.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/150505_Chichu_Art_Museum_Naoshima_Island_Kagawa_pref_Japan01s3.jpg/1280px-150505_Chichu_Art_Museum_Naoshima_Island_Kagawa_pref_Japan01s3.jpg",
+      "tags": [
+        "naoshima"
+      ]
+    },
+    {
+      "alt_text": "地中美術館",
+      "asset_id": "8ccda0be31902973",
+      "author": "663highland",
+      "byte_size": 450731,
+      "content_type": "image/jpeg",
+      "credit_text": "Chichu art museum01s2560.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
+      "fetched_at": "2026-09-12T09:25:29+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-12T09:25:29Z",
+        "credit_text": "出典: Chichu art museum01s2560.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Chichu_art_museum01s2560.jpg",
+        "license_id": "CC-BY-2.5",
+        "reason": "whitelist:CC-BY-2.5"
+      },
+      "local_path": "8ccda0be31902973.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Chichu_art_museum01s2560.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Chichu_art_museum01s2560.jpg/1280px-Chichu_art_museum01s2560.jpg",
+      "tags": [
+        "naoshima"
+      ]
+    },
+    {
+      "alt_text": "地中美術館",
       "asset_id": "9cc57ac763b3c3b9",
+      "author": "Fotointheworld",
       "byte_size": 409807,
       "content_type": "image/jpeg",
       "credit_text": "Chichu Art Museum Cafe 2025.jpg by Fotointheworld（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））/ Wikimedia Commons",
-      "fetched_at": "2026-09-12T08:27:58+00:00",
+      "fetched_at": "2026-09-12T09:25:36+00:00",
       "license": {
         "allowed": true,
-        "checked_at": "2026-09-12T08:27:58Z",
+        "checked_at": "2026-09-12T09:25:36Z",
         "credit_text": "出典: Chichu Art Museum Cafe 2025.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））",
         "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/4.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/4.0/deed.en\">Attribution 4.0 I",
         "evidence_url": "https://commons.wikimedia.org/wiki/File:Chichu_Art_Museum_Cafe_2025.jpg",
@@ -27,13 +78,14 @@
     {
       "alt_text": "地中美術館",
       "asset_id": "e02f66cc56e54f3e",
+      "author": "Fotointheworld",
       "byte_size": 561246,
       "content_type": "image/jpeg",
       "credit_text": "Chichu Art Museum exterior open space 2025.jpg by Fotointheworld（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））/ Wikimedia Commons",
-      "fetched_at": "2026-09-12T08:28:01+00:00",
+      "fetched_at": "2026-09-12T09:25:40+00:00",
       "license": {
         "allowed": true,
-        "checked_at": "2026-09-12T08:28:01Z",
+        "checked_at": "2026-09-12T09:25:40Z",
         "credit_text": "出典: Chichu Art Museum exterior open space 2025.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））",
         "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/4.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/4.0/deed.en\">Attribution 4.0 I",
         "evidence_url": "https://commons.wikimedia.org/wiki/File:Chichu_Art_Museum_exterior_open_space_2025.jpg",

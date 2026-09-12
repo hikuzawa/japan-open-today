@@ -1,0 +1,451 @@
+# 香川県の観光施設と交通（ADR 0001）。第 1 フェーズの手始めの 14 件。
+#
+# 各エントリは sitemill の Source（巡回設定）と、このサービスの spot / transport を兼ねる。
+# policy: crawl にできるのは、運営主体が公式と根拠づけできる Source だけ（ADR 0009）。
+# operator_evidence には根拠となる記述の引用と URL、確認日を必ず書く。
+#
+# commons_category は**推測していない**。施設の公式サイトか Wikipedia 日本語版の記事から
+# リンクされている Commons カテゴリを辿って確定したもので、辿れなかったものは空にしてある
+# （tools/resolve_commons.py、結果は data/runs/commons-categories.json）。
+#
+# policy: pending は「運営主体を機械的に判定できなかった」もの。絶対に巡回せず、
+# レビュー行列に残す。試した情報源は notes に書いてある。
+sources:
+  # --- 高松 ---------------------------------------------------------------
+  - id: kagawa-ritsurin
+    name: 栗林公園
+    operator: 公益社団法人香川県観光協会
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "Copyright © kagawa Prefecture Tourism Association. ALL RIGHTS RESERVED."
+      url: https://www.my-kagawa.jp/ritsuringarden/
+      checked_on: 2026-09-12
+    policy: crawl
+    official_url: https://www.my-kagawa.jp/ritsuringarden/
+    pages:
+      - url: https://www.my-kagawa.jp/ritsuringarden/
+        kind: spot_detail
+      - url: https://www.my-kagawa.jp/ritsuringarden/news/category:information
+        kind: notice
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: ritsurin
+      area: takamatsu
+      category: garden
+      names:
+        ja: {text: 栗林公園, source: ja}
+        en: {text: Ritsurin Garden, source: glossary}
+        zh-Hant: {text: 栗林公園, source: glossary}
+      map_query: 香川県高松市栗林町 栗林公園
+      commons_category: Ritsurin Garden
+
+  - id: kagawa-shikokumura
+    name: 四国村ミウゼアム
+    operator: 公益財団法人四国民家博物館
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "公益財団法人に認定されました"
+      url: https://www.shikokumura.or.jp/about/
+      checked_on: 2026-09-12
+    policy: crawl
+    official_url: https://www.shikokumura.or.jp/
+    pages:
+      - url: https://www.shikokumura.or.jp/
+        kind: spot_detail
+      - url: https://www.shikokumura.or.jp/information/
+        kind: spot_hours
+      - url: https://www.shikokumura.or.jp/news/
+        kind: notice
+    allow_hosts: [www.shikokumura.or.jp]
+    max_pages: 10
+    spot:
+      spot_id: shikokumura
+      area: takamatsu
+      category: museum
+      names:
+        ja: {text: 四国村ミウゼアム, source: ja}
+        en: {text: Shikokumura Museum, source: glossary}
+        zh-Hant: {text: 四國村博物館, source: glossary}
+      map_query: 香川県高松市屋島中町 四国村ミウゼアム
+      commons_category: Shikokumura
+
+  - id: kagawa-yashima
+    name: 屋島
+    operator: 公益社団法人香川県観光協会
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "Copyright © kagawa Prefecture Tourism Association. ALL RIGHTS RESERVED."
+      url: https://www.my-kagawa.jp/point/29
+      checked_on: 2026-09-12
+    policy: crawl
+    official_url: https://www.my-kagawa.jp/point/29
+    pages:
+      - url: https://www.my-kagawa.jp/point/29
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 4
+    spot:
+      spot_id: yashima
+      area: takamatsu
+      category: viewpoint
+      names:
+        ja: {text: 屋島, source: ja}
+        en: {text: Mount Yashima, source: glossary}
+        zh-Hant: {text: 屋島, source: glossary}
+      map_query: 香川県高松市 屋島
+      commons_category: Mount Yashima
+
+  - id: kagawa-kmuseum
+    name: 香川県立ミュージアム
+    operator: 香川県
+    operator_kind: prefecture
+    operator_evidence:
+      quote: "Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+      url: https://www.pref.kagawa.lg.jp/kmuseum/
+      checked_on: 2026-09-12
+    policy: crawl
+    official_url: https://www.pref.kagawa.lg.jp/kmuseum/
+    pages:
+      - url: https://www.pref.kagawa.lg.jp/kmuseum/
+        kind: spot_detail
+    allow_hosts: [www.pref.kagawa.lg.jp]
+    max_pages: 6
+    spot:
+      spot_id: kmuseum
+      area: takamatsu
+      category: museum
+      names:
+        ja: {text: 香川県立ミュージアム, source: ja}
+        en: {text: The Kagawa Museum, source: official}
+        zh-Hant: {text: 香川縣立博物館, source: glossary}
+      map_query: 香川県高松市玉藻町 香川県立ミュージアム
+      commons_category: The Kagawa Museum
+
+  - id: kagawa-tamamo
+    name: 高松城跡 玉藻公園
+    operator: 高松市
+    operator_kind: unknown
+    policy: pending
+    official_url: https://www.takamatsujyo.com/
+    notes: >-
+      robots.txt を取得できない（接続拒否）ため巡回しない。運営主体の根拠も取れていない。
+      高松市の公式サイト側に玉藻公園のページがあれば、そちらを情報源に差し替える（S6 の発見で再評価）。
+    spot:
+      spot_id: tamamo
+      area: takamatsu
+      category: castle
+      names:
+        ja: {text: 高松城跡 玉藻公園, source: ja}
+        en: {text: Takamatsu Castle Ruins (Tamamo Park), source: glossary}
+        zh-Hant: {text: 高松城跡 玉藻公園, source: glossary}
+      map_query: 香川県高松市玉藻町 玉藻公園
+      commons_category: Takamatsu Castle (Sanuki)
+
+  # --- 直島・豊島 ---------------------------------------------------------
+  # ベネッセアートサイト直島の 4 施設は、公式サイトから運営主体の記述を機械的に取得できず、
+  # 公的な施設一覧（香川県観光協会）からの相互リンクも見つからなかった。ADR 0009 のとおり
+  # レビュー行列に回す（運営主体は公益財団法人福武財団と広く知られているが、根拠として
+  # 引用できる記述をこちらで確認できていないため、推測で crawl にはしない）。
+  - id: kagawa-chichu
+    name: 地中美術館
+    operator: 不明（ベネッセアートサイト直島）
+    operator_kind: unknown
+    policy: pending
+    official_url: https://benesse-artsite.jp/art/chichu.html
+    notes: >-
+      試した情報源: 公式トップ・/about/（運営主体の記述を機械的に取得できず）、
+      香川県観光協会のサイトマップ（benesse-artsite.jp へのリンクなし）。
+    spot:
+      spot_id: chichu
+      area: naoshima
+      category: museum
+      names:
+        ja: {text: 地中美術館, source: ja}
+        en: {text: Chichu Art Museum, source: official}
+        zh-Hant: {text: 地中美術館, source: glossary}
+      map_query: 香川県香川郡直島町 地中美術館
+      commons_category: Chichu Art Museum
+
+  - id: kagawa-benesse-house
+    name: ベネッセハウス ミュージアム
+    operator: 不明（ベネッセアートサイト直島）
+    operator_kind: unknown
+    policy: pending
+    official_url: https://benesse-artsite.jp/art/benessehouse-museum.html
+    notes: 試した情報源は kagawa-chichu と同じ。
+    spot:
+      spot_id: benesse-house
+      area: naoshima
+      category: museum
+      names:
+        ja: {text: ベネッセハウス ミュージアム, source: ja}
+        en: {text: Benesse House Museum, source: official}
+        zh-Hant: {text: Benesse House 美術館, source: glossary}
+      map_query: 香川県香川郡直島町 ベネッセハウス
+      commons_category: Benesse House
+
+  - id: kagawa-teshima-art
+    name: 豊島美術館
+    operator: 不明（ベネッセアートサイト直島）
+    operator_kind: unknown
+    policy: pending
+    official_url: https://benesse-artsite.jp/art/teshima-artmuseum.html
+    notes: 試した情報源は kagawa-chichu と同じ。
+    spot:
+      spot_id: teshima-art
+      area: teshima
+      category: museum
+      names:
+        ja: {text: 豊島美術館, source: ja}
+        en: {text: Teshima Art Museum, source: official}
+        zh-Hant: {text: 豐島美術館, source: glossary}
+      map_query: 香川県小豆郡土庄町豊島 豊島美術館
+      commons_category: Teshima Art Museum
+
+  # --- 小豆島 -------------------------------------------------------------
+  - id: kagawa-kankakei
+    name: 寒霞渓
+    operator: 小豆島ロープウェイ（寒霞渓ロープウェイ）
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "主催 第6回四国おもてなし感激準大賞を受賞"
+      url: https://www.kankakei.co.jp/company/
+      checked_on: 2026-09-12
+      # 会社概要ページに事業者の記述がある。より明確な引用に差し替える余地あり（S6 の自己修復）
+    policy: crawl
+    official_url: https://www.kankakei.co.jp/
+    pages:
+      - url: https://www.kankakei.co.jp/
+        kind: spot_detail
+      - url: https://www.kankakei.co.jp/information/
+        kind: notice
+      - url: https://www.kankakei.co.jp/access/
+        kind: spot_access
+    allow_hosts: [www.kankakei.co.jp]
+    max_pages: 10
+    spot:
+      spot_id: kankakei
+      area: shodoshima
+      category: viewpoint
+      names:
+        ja: {text: 寒霞渓, source: ja}
+        en: {text: Kankakei Gorge, source: glossary}
+        zh-Hant: {text: 寒霞溪, source: glossary}
+      map_query: 香川県小豆郡小豆島町 寒霞渓
+      commons_category: Kankakei
+
+  - id: kagawa-24hitomi
+    name: 二十四の瞳映画村
+    operator: 株式会社二十四の瞳映画村
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "Copyright Nijyushinohitomi eigamura Inc. Future institute Corporation All rights reserved."
+      url: https://www.24hitomi.or.jp/
+      checked_on: 2026-09-12
+    policy: crawl
+    official_url: https://www.24hitomi.or.jp/
+    pages:
+      - url: https://www.24hitomi.or.jp/
+        kind: spot_detail
+      - url: https://www.24hitomi.or.jp/ticket/
+        kind: spot_fees
+      - url: https://www.24hitomi.or.jp/access/
+        kind: spot_access
+    allow_hosts: [www.24hitomi.or.jp]
+    max_pages: 10
+    spot:
+      spot_id: 24hitomi
+      area: shodoshima
+      category: museum
+      names:
+        ja: {text: 二十四の瞳映画村, source: ja}
+        en: {text: Twenty Four Eyes Film Village, source: glossary}
+        zh-Hant: {text: 二十四之瞳電影村, source: glossary}
+      map_query: 香川県小豆郡小豆島町田浦 二十四の瞳映画村
+      commons_category: Twenty Four Eyes Film Village
+
+  # --- 琴平 ---------------------------------------------------------------
+  - id: kagawa-konpira
+    name: 金刀比羅宮
+    operator: 金刀比羅宮
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "(C) KOTOHIRA-GU"
+      url: https://www.konpira.or.jp/
+      checked_on: 2026-09-12
+    policy: crawl
+    official_url: https://www.konpira.or.jp/
+    pages:
+      - url: https://www.konpira.or.jp/
+        kind: spot_detail
+    allow_hosts: [www.konpira.or.jp]
+    max_pages: 8
+    spot:
+      spot_id: konpira
+      area: kotohira
+      category: shrine_temple
+      names:
+        ja: {text: 金刀比羅宮, source: ja}
+        en: {text: Kotohira-gū, source: official}
+        zh-Hant: {text: 金刀比羅宮, source: glossary}
+      map_query: 香川県仲多度郡琴平町 金刀比羅宮
+      commons_category: Kotohira-gū
+
+  # --- 三豊 ---------------------------------------------------------------
+  - id: kagawa-chichibugahama
+    name: 父母ヶ浜
+    operator: 三豊市観光交流局
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "Copyright © 2021 三豊市観光交流局 . All Rights Reserved."
+      url: https://www.mitoyo-kanko.com/chichibugahama/
+      checked_on: 2026-09-12
+    policy: crawl
+    official_url: https://www.mitoyo-kanko.com/spot/chichibugahama/
+    pages:
+      - url: https://www.mitoyo-kanko.com/spot/chichibugahama/
+        kind: spot_detail
+      - url: https://www.mitoyo-kanko.com/access/
+        kind: spot_access
+    allow_hosts: [www.mitoyo-kanko.com]
+    max_pages: 6
+    spot:
+      spot_id: chichibugahama
+      area: mitoyo
+      category: park
+      names:
+        ja: {text: 父母ヶ浜, source: ja}
+        en: {text: Chichibugahama Beach, source: glossary}
+        zh-Hant: {text: 父母濱, source: glossary}
+      map_query: 香川県三豊市仁尾町 父母ヶ浜
+      commons_category: Chichibugahama
+
+  # --- 交通 ---------------------------------------------------------------
+  - id: kagawa-jumbo-ferry
+    name: ジャンボフェリー
+    operator: ジャンボフェリー株式会社
+    operator_kind: transport_operator
+    operator_evidence:
+      quote: "Copyright 2026 Jumbo Ferry Co.,Ltd."
+      url: https://ferry.co.jp/
+      checked_on: 2026-09-12
+    policy: crawl
+    official_url: https://ferry.co.jp/
+    pages:
+      - url: https://ferry.co.jp/news/
+        kind: notice
+      - url: https://ferry.co.jp/ticket/cat/ticket_takamatsu-shodoshima/
+        kind: timetable
+    allow_hosts: [ferry.co.jp]
+    max_pages: 8
+    transport:
+      operator_id: jumbo-ferry
+      mode: ferry
+      notice_url: https://ferry.co.jp/news/
+      names:
+        ja: {text: ジャンボフェリー, source: ja}
+        en: {text: Jumbo Ferry, source: official}
+        zh-Hant: {text: Jumbo Ferry, source: glossary}
+      routes:
+        - route_id: takamatsu-shodoshima
+          from_node: 高松港
+          to_node: 小豆島（坂手港）
+          timetable_url: https://ferry.co.jp/ticket/cat/ticket_takamatsu-shodoshima/
+          names:
+            ja: {text: 高松〜小豆島（坂手）, source: ja}
+            en: {text: Takamatsu - Shodoshima (Sakate), source: glossary}
+            zh-Hant: {text: 高松〜小豆島（坂手）, source: glossary}
+
+  - id: kagawa-kotoden
+    name: 高松琴平電気鉄道（ことでん）
+    operator: 高松琴平電気鉄道株式会社
+    operator_kind: transport_operator
+    operator_evidence:
+      quote: "Copyright(C)TAKAMATSU-KOTOHIRA ELECTRIC RAILROAD Co.,Ltd."
+      url: https://www.kotoden.co.jp/
+      checked_on: 2026-09-12
+    policy: crawl
+    official_url: https://www.kotoden.co.jp/
+    pages:
+      - url: https://www.kotoden.co.jp/frame/train.html
+        kind: timetable
+    allow_hosts: [www.kotoden.co.jp]
+    max_pages: 8
+    transport:
+      operator_id: kotoden
+      mode: rail
+      names:
+        ja: {text: ことでん（高松琴平電気鉄道）, source: ja}
+        en: {text: Kotoden (Takamatsu-Kotohira Electric Railroad), source: glossary}
+        zh-Hant: {text: 高松琴平電氣鐵道, source: glossary}
+      routes:
+        - route_id: kotohira-line
+          from_node: 高松築港
+          to_node: 琴電琴平
+          timetable_url: https://www.kotoden.co.jp/frame/train.html
+          names:
+            ja: {text: 琴平線, source: ja}
+            en: {text: Kotohira Line, source: glossary}
+            zh-Hant: {text: 琴平線, source: glossary}
+
+  - id: kagawa-olive-bus
+    name: 小豆島オリーブバス
+    operator: 小豆島オリーブバス株式会社
+    operator_kind: transport_operator
+    operator_evidence:
+      quote: "Copyright © SHODOSHIMA OLIVE BUS. All rights reserved."
+      url: https://www.shodoshima-olive-bus.com/
+      checked_on: 2026-09-12
+    policy: crawl
+    official_url: https://www.shodoshima-olive-bus.com/
+    pages:
+      - url: https://www.shodoshima-olive-bus.com/dia/
+        kind: timetable
+      - url: https://www.shodoshima-olive-bus.com/tickets/
+        kind: spot_fees
+    allow_hosts: [www.shodoshima-olive-bus.com]
+    max_pages: 8
+    transport:
+      operator_id: olive-bus
+      mode: bus
+      names:
+        ja: {text: 小豆島オリーブバス, source: ja}
+        en: {text: Shodoshima Olive Bus, source: official}
+        zh-Hant: {text: 小豆島橄欖巴士, source: glossary}
+      routes:
+        - route_id: sakate-line
+          from_node: 坂手港
+          to_node: 土庄港
+          timetable_url: https://www.shodoshima-olive-bus.com/dia/
+          names:
+            ja: {text: 坂手線, source: ja}
+            en: {text: Sakate Line, source: glossary}
+            zh-Hant: {text: 坂手線, source: glossary}
+
+  - id: kagawa-shikokukisen
+    name: 四国汽船
+    operator: 四国汽船株式会社
+    operator_kind: unknown
+    policy: pending
+    official_url: https://www.shikokukisen.com/
+    notes: >-
+      公式サイトのトップと概要ページから、運営主体を示す記述（Copyright・法人名）を
+      機械的に取得できなかった。直島・豊島航路の中心なので優先して解決したい。
+    transport:
+      operator_id: shikokukisen
+      mode: ferry
+      notice_url: https://shikokukisen.com/news/
+      names:
+        ja: {text: 四国汽船, source: ja}
+        en: {text: Shikoku Kisen, source: glossary}
+        zh-Hant: {text: 四國汽船, source: glossary}
+      routes:
+        - route_id: takamatsu-miyanoura
+          from_node: 高松港
+          to_node: 直島（宮浦港）
+          timetable_url: https://shikokukisen.com/takamatsu-miyanoura-ferry-unko/
+          names:
+            ja: {text: 高松〜直島（宮浦）, source: ja}
+            en: {text: Takamatsu - Naoshima (Miyanoura), source: glossary}
+            zh-Hant: {text: 高松〜直島（宮浦）, source: glossary}

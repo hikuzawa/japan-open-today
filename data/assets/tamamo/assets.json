@@ -1,0 +1,80 @@
+{
+  "assets": [
+    {
+      "alt_text": "高松城跡 玉藻公園",
+      "asset_id": "55ada653e3ceeb9d",
+      "author": "投稿者が撮影",
+      "byte_size": 300670,
+      "content_type": "image/jpeg",
+      "credit_text": "Takamatsu castle23.jpg by 投稿者が撮影（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））/ Wikimedia Commons",
+      "fetched_at": "2026-09-12T09:24:54+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-12T09:24:54Z",
+        "credit_text": "出典: Takamatsu castle23.jpg / Wikimedia Commons（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））",
+        "evidence_text": "icensetpl\" style=\"display:none\"> Public domain Public domain <span class=\"licensetpl",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Takamatsu_castle23.jpg",
+        "license_id": "public-domain",
+        "reason": "whitelist:public-domain"
+      },
+      "local_path": "55ada653e3ceeb9d.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Takamatsu_castle23.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Takamatsu_castle23.jpg/1280px-Takamatsu_castle23.jpg",
+      "tags": [
+        "takamatsu"
+      ]
+    },
+    {
+      "alt_text": "高松城跡 玉藻公園",
+      "asset_id": "8b8f3cf2c9cc9f4e",
+      "author": "投稿者が撮影",
+      "byte_size": 242736,
+      "content_type": "image/jpeg",
+      "credit_text": "Takamatsu castle29.jpg by 投稿者が撮影（クリエイティブ・コモンズ 表示 3.0（CC BY 3.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-12T09:25:01+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-12T09:25:01Z",
+        "credit_text": "出典: Takamatsu castle29.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 3.0（CC BY 3.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/3.0/deed.en\">Attribution 3.0 U",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Takamatsu_castle29.jpg",
+        "license_id": "CC-BY-3.0",
+        "reason": "whitelist:CC-BY-3.0"
+      },
+      "local_path": "8b8f3cf2c9cc9f4e.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Takamatsu_castle29.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Takamatsu_castle29.jpg/1280px-Takamatsu_castle29.jpg",
+      "tags": [
+        "takamatsu"
+      ]
+    },
+    {
+      "alt_text": "高松城跡 玉藻公園",
+      "asset_id": "f797459577b4763c",
+      "author": "osami",
+      "byte_size": 357905,
+      "content_type": "image/jpeg",
+      "credit_text": "高松城.jpg by osami（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））/ Wikimedia Commons",
+      "fetched_at": "2026-09-12T09:24:57+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-12T09:24:57Z",
+        "credit_text": "出典: 高松城.jpg / Wikimedia Commons（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））",
+        "evidence_text": "icensetpl\" style=\"display:none\"> Public domain Public domain <span class=\"licensetpl",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:%E9%AB%98%E6%9D%BE%E5%9F%8E.jpg",
+        "license_id": "public-domain",
+        "reason": "whitelist:public-domain"
+      },
+      "local_path": "f797459577b4763c.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E9%AB%98%E6%9D%BE%E5%9F%8E.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%E9%AB%98%E6%9D%BE%E5%9F%8E.jpg/1280px-%E9%AB%98%E6%9D%BE%E5%9F%8E.jpg",
+      "tags": [
+        "takamatsu"
+      ]
+    }
+  ],
+  "source_id": "tamamo"
+}

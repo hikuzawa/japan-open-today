@@ -2,14 +2,90 @@
   "assets": [
     {
       "alt_text": "ベネッセハウス ミュージアム",
+      "asset_id": "183847c0da0a5ff4",
+      "author": "663highland",
+      "byte_size": 178445,
+      "content_type": "image/jpeg",
+      "credit_text": "150505 Benesse House Oval Naoshima Kagawa pref Japan02s3.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
+      "fetched_at": "2026-09-12T09:26:14+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-12T09:26:14Z",
+        "credit_text": "出典: 150505 Benesse House Oval Naoshima Kagawa pref Japan02s3.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:150505_Benesse_House_Oval_Naoshima_Kagawa_pref_Japan02s3.jpg",
+        "license_id": "CC-BY-2.5",
+        "reason": "whitelist:CC-BY-2.5"
+      },
+      "local_path": "183847c0da0a5ff4.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:150505_Benesse_House_Oval_Naoshima_Kagawa_pref_Japan02s3.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/150505_Benesse_House_Oval_Naoshima_Kagawa_pref_Japan02s3.jpg/1280px-150505_Benesse_House_Oval_Naoshima_Kagawa_pref_Japan02s3.jpg",
+      "tags": [
+        "naoshima"
+      ]
+    },
+    {
+      "alt_text": "ベネッセハウス ミュージアム",
+      "asset_id": "58f565129fb36000",
+      "author": "663highland",
+      "byte_size": 422994,
+      "content_type": "image/jpeg",
+      "credit_text": "150505 Benesse House Museum Naoshima Kagawa pref Japan01b3s5.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
+      "fetched_at": "2026-09-12T09:26:10+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-12T09:26:10Z",
+        "credit_text": "出典: 150505 Benesse House Museum Naoshima Kagawa pref Japan01b3s5.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:150505_Benesse_House_Museum_Naoshima_Kagawa_pref_Japan01b3s5.jpg",
+        "license_id": "CC-BY-2.5",
+        "reason": "whitelist:CC-BY-2.5"
+      },
+      "local_path": "58f565129fb36000.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:150505_Benesse_House_Museum_Naoshima_Kagawa_pref_Japan01b3s5.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/150505_Benesse_House_Museum_Naoshima_Kagawa_pref_Japan01b3s5.jpg/1280px-150505_Benesse_House_Museum_Naoshima_Kagawa_pref_Japan01b3s5.jpg",
+      "tags": [
+        "naoshima"
+      ]
+    },
+    {
+      "alt_text": "ベネッセハウス ミュージアム",
+      "asset_id": "8a08f31576447922",
+      "author": "663highland",
+      "byte_size": 362873,
+      "content_type": "image/jpeg",
+      "credit_text": "Benesse house03s3872.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
+      "fetched_at": "2026-09-12T09:26:21+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-12T09:26:21Z",
+        "credit_text": "出典: Benesse house03s3872.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Benesse_house03s3872.jpg",
+        "license_id": "CC-BY-2.5",
+        "reason": "whitelist:CC-BY-2.5"
+      },
+      "local_path": "8a08f31576447922.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Benesse_house03s3872.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Benesse_house03s3872.jpg/1280px-Benesse_house03s3872.jpg",
+      "tags": [
+        "naoshima"
+      ]
+    },
+    {
+      "alt_text": "ベネッセハウス ミュージアム",
       "asset_id": "95e759ec15561df0",
+      "author": "Fotointheworld",
       "byte_size": 419173,
       "content_type": "image/jpeg",
       "credit_text": "Benesse House Beach 2025.JPG by Fotointheworld（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））/ Wikimedia Commons",
-      "fetched_at": "2026-09-12T08:28:30+00:00",
+      "fetched_at": "2026-09-12T09:26:17+00:00",
       "license": {
         "allowed": true,
-        "checked_at": "2026-09-12T08:28:30Z",
+        "checked_at": "2026-09-12T09:26:17Z",
         "credit_text": "出典: Benesse House Beach 2025.JPG / Wikimedia Commons（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））",
         "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/4.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/4.0/deed.en\">Attribution 4.0 I",
         "evidence_url": "https://commons.wikimedia.org/wiki/File:Benesse_House_Beach_2025.JPG",

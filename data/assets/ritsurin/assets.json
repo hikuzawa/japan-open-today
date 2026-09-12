@@ -7,10 +7,10 @@
       "byte_size": 159816,
       "content_type": "image/jpeg",
       "credit_text": "Ritsurin pano 956.jpg by Photos of Japan（CC0 1.0（パブリックドメイン提供））/ Wikimedia Commons",
-      "fetched_at": "2026-09-12T08:33:28+00:00",
+      "fetched_at": "2026-09-12T09:22:19+00:00",
       "license": {
         "allowed": true,
-        "checked_at": "2026-09-12T08:33:28Z",
+        "checked_at": "2026-09-12T09:22:19Z",
         "credit_text": "出典: Ritsurin pano 956.jpg / Wikimedia Commons（CC0 1.0（パブリックドメイン提供））",
         "evidence_text": "ass=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/zero/1.0/deed.en\">CC0 1.0 Univ",
         "evidence_url": "https://commons.wikimedia.org/wiki/File:Ritsurin_pano_956.jpg",
@@ -27,15 +27,40 @@
     },
     {
       "alt_text": "栗林公園",
+      "asset_id": "399a0a418629f89e",
+      "author": "ラハール",
+      "byte_size": 281316,
+      "content_type": "image/jpeg",
+      "credit_text": "Tokiwa-bashi Bridge, Takamatsu.jpg by ラハール（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））/ Wikimedia Commons",
+      "fetched_at": "2026-09-12T09:22:22+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-12T09:22:22Z",
+        "credit_text": "出典: Tokiwa-bashi Bridge, Takamatsu.jpg / Wikimedia Commons（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））",
+        "evidence_text": "icensetpl\" style=\"display:none\"> Public domain Public domain <span class=\"licensetpl",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Tokiwa-bashi_Bridge,_Takamatsu.jpg",
+        "license_id": "public-domain",
+        "reason": "whitelist:public-domain"
+      },
+      "local_path": "399a0a418629f89e.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tokiwa-bashi_Bridge,_Takamatsu.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Tokiwa-bashi_Bridge%2C_Takamatsu.jpg/1280px-Tokiwa-bashi_Bridge%2C_Takamatsu.jpg",
+      "tags": [
+        "takamatsu"
+      ]
+    },
+    {
+      "alt_text": "栗林公園",
       "asset_id": "5e1de93b921a774c",
-      "author": null,
+      "author": "Bigjap",
       "byte_size": 675074,
       "content_type": "image/jpeg",
       "credit_text": "51-RITSURI-KOEN-Takamatsu-7037.jpg by Bigjap（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））/ Wikimedia Commons",
-      "fetched_at": "2026-09-12T08:27:12+00:00",
+      "fetched_at": "2026-09-12T09:22:27+00:00",
       "license": {
         "allowed": true,
-        "checked_at": "2026-09-12T08:27:12Z",
+        "checked_at": "2026-09-12T09:22:27Z",
         "credit_text": "出典: 51-RITSURI-KOEN-Takamatsu-7037.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））",
         "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/4.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/4.0/deed.en\">Attribution 4.0 I",
         "evidence_url": "https://commons.wikimedia.org/wiki/File:51-RITSURI-KOEN-Takamatsu-7037.jpg",

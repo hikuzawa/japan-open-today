@@ -48,112 +48,29 @@ class Spot:
     map_query: str = ""
 
 
-SPOTS: tuple[Spot, ...] = (
-    Spot(
-        "ritsurin",
-        "栗林公園",
-        "takamatsu",
-        "https://www.my-kagawa.jp/ritsuringarden/",
-        "Ritsurin Garden",
-        "香川県高松市栗林町 栗林公園",
-    ),
-    Spot(
-        "tamamo",
-        "高松城跡 玉藻公園",
-        "takamatsu",
-        "https://www.takamatsujyo.com/",
-        "Takamatsu Castle",
-        "香川県高松市玉藻町 玉藻公園",
-    ),
-    Spot(
-        "shikokumura",
-        "四国村ミウゼアム",
-        "takamatsu",
-        "https://www.shikokumura.or.jp/",
-        "Shikoku Mura",
-        "香川県高松市屋島中町 四国村",
-    ),
-    Spot(
-        "yashima",
-        "屋島",
-        "takamatsu",
-        "https://www.my-kagawa.jp/point/29",
-        "Yashima",
-        "香川県高松市 屋島",
-    ),
-    Spot(
-        "kmuseum",
-        "香川県立ミュージアム",
-        "takamatsu",
-        "https://www.pref.kagawa.lg.jp/kmuseum/",
-        "Kagawa Museum",
-        "香川県高松市玉藻町 香川県立ミュージアム",
-    ),
-    Spot(
-        "chichu",
-        "地中美術館",
-        "naoshima",
-        "https://benesse-artsite.jp/art/chichu.html",
-        "Chichu Art Museum",
-        "香川県香川郡直島町 地中美術館",
-    ),
-    Spot(
-        "benesse-house",
-        "ベネッセハウス ミュージアム",
-        "naoshima",
-        "https://benesse-artsite.jp/art/benessehouse-museum.html",
-        "Benesse House",
-        "香川県香川郡直島町 ベネッセハウス",
-    ),
-    Spot(
-        "naoshima-sento",
-        "直島銭湯 I♥湯",
-        "naoshima",
-        "https://benesse-artsite.jp/art/naoshimasento.html",
-        "Naoshima Sento I Love Yu",
-        "香川県香川郡直島町 直島銭湯",
-    ),
-    Spot(
-        "teshima-art",
-        "豊島美術館",
-        "teshima",
-        "https://benesse-artsite.jp/art/teshima-artmuseum.html",
-        "Teshima Art Museum",
-        "香川県小豆郡土庄町豊島 豊島美術館",
-    ),
-    Spot(
-        "kankakei",
-        "寒霞渓",
-        "shodoshima",
-        "https://www.kankakei.co.jp/",
-        "Kankakei",
-        "香川県小豆郡小豆島町 寒霞渓",
-    ),
-    Spot(
-        "24hitomi",
-        "二十四の瞳映画村",
-        "shodoshima",
-        "https://24hitomi.or.jp/",
-        "Nijushi no Hitomi Eigamura",
-        "香川県小豆郡小豆島町田浦 二十四の瞳映画村",
-    ),
-    Spot(
-        "konpira",
-        "金刀比羅宮",
-        "kotohira",
-        "https://www.konpira.or.jp/",
-        "Kotohira-gu",
-        "香川県仲多度郡琴平町 金刀比羅宮",
-    ),
-    Spot(
-        "chichibugahama",
-        "父母ヶ浜",
-        "mitoyo",
-        "https://www.mitoyo-kanko.com/spot/chichibugahama/",
-        "Chichibugahama",
-        "香川県三豊市仁尾町 父母ヶ浜",
-    ),
-)
+def spots_from_sources() -> tuple[Spot, ...]:
+    """`data/sources/kagawa.yaml` から計測対象を読む（S4 以降）。
+
+    commons_category は tools/resolve_commons.py が**リンクを辿って確定**したもので、
+    空なら「カテゴリなし」として扱う（推測は入れない）。
+    """
+    from japan_open_today.data import Dataset
+
+    ws = Workspace.open(Path.cwd())
+    return tuple(
+        Spot(
+            spot_id=s.spot_id,
+            name=s.name("ja"),
+            area=s.area,
+            official_url=s.official_url,
+            commons_category=s.commons_category,
+            map_query=s.map_query or s.name("ja"),
+        )
+        for s in Dataset.load(ws).spots
+    )
+
+
+SPOTS: tuple[Spot, ...] = spots_from_sources()
 
 # 経路 1: 素材・規約ページを探す起点（自治体・観光協会）
 TERMS_SITES: tuple[tuple[str, str], str] = (  # type: ignore[assignment]

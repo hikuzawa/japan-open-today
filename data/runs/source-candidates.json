@@ -1,0 +1,684 @@
+{
+  "collected_at": "2026-09-12T18:13:03.701990+09:00",
+  "requests": 34,
+  "rows": [
+    {
+      "spot_id": "ritsurin",
+      "name": "栗林公園",
+      "official_url": "https://www.my-kagawa.jp/ritsuringarden/",
+      "status": 200,
+      "host": "www.my-kagawa.jp",
+      "operator_quotes": [
+        "Copyright &copy; kagawa Prefecture Tourism Association. ALL RIGHTS RESERVED. 当サイトでは、利便性の向",
+        "公益社団法人香川県観光協会について",
+        "公益社団法人香川県観光協会"
+      ],
+      "operator_evidence_url": "https://www.my-kagawa.jp/ritsuringarden/",
+      "seeds": [
+        {
+          "kind": "spot_access",
+          "url": "https://www.my-kagawa.jp/access",
+          "label": "交通"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.my-kagawa.jp/sitemap",
+          "label": "サイトマップ"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.my-kagawa.jp/ritsuringarden/news/category:information",
+          "label": ""
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.my-kagawa.jp/ritsuringarden/news/2324",
+          "label": "「栗林公園薪能」チケット販売中！"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.my-kagawa.jp/ritsuringarden/news/2400",
+          "label": "栗林公園におけるイノシシの捕獲について"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.my-kagawa.jp/ritsuringarden/news/2394",
+          "label": "「用の美」の木製品展"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.my-kagawa.jp/ritsuringarden/news/2390",
+          "label": "栗林公園におけるイノシシと思われる動物の目撃情報について"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.my-kagawa.jp/ritsuringarden/news/2382",
+          "label": "栗林公園・秋の高校生大茶会を開催します"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.my-kagawa.jp/ritsuringarden/news/2379",
+          "label": "栗林公園文化講座「香川のモダンクラフトとジョージ・ナカシマ」受講者募集"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.my-kagawa.jp/ritsuringarden/news/2369",
+          "label": "令和８年栗林公園秋のライトアップの開催日程について"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.my-kagawa.jp/ritsuringarden/news/category:hanadayori",
+          "label": ""
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.my-kagawa.jp/ritsuringarden/news/2392",
+          "label": "見頃の花々(R8.8.20)"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.my-kagawa.jp/ritsuringarden/feature/ritsuringarden/access",
+          "label": ""
+        }
+      ],
+      "sns": {
+        "instagram": "https://www.instagram.com/udonken_kagawa",
+        "x": "https://twitter.com/UdonkenKanko"
+      },
+      "terms": [],
+      "note": ""
+    },
+    {
+      "spot_id": "tamamo",
+      "name": "高松城跡 玉藻公園",
+      "official_url": "https://www.takamatsujyo.com/",
+      "status": 0,
+      "host": "",
+      "operator_quotes": [],
+      "operator_evidence_url": "",
+      "seeds": [],
+      "sns": {},
+      "terms": [],
+      "note": "取得できない（robots.txt を取得できないため今回は巡回しない）"
+    },
+    {
+      "spot_id": "shikokumura",
+      "name": "四国村ミウゼアム",
+      "official_url": "https://www.shikokumura.or.jp/",
+      "status": 200,
+      "host": "www.shikokumura.or.jp",
+      "operator_quotes": [
+        "公益財団法人認定",
+        "公益財団法人に認定されました"
+      ],
+      "operator_evidence_url": "https://www.shikokumura.or.jp/about/",
+      "seeds": [
+        {
+          "kind": "notice",
+          "url": "https://www.shikokumura.or.jp/information/",
+          "label": "入村案内"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.shikokumura.or.jp/guide/map/",
+          "label": "四国村案内"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.shikokumura.or.jp/access/",
+          "label": "アクセス"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.shikokumura.or.jp/news/",
+          "label": "ニュース"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.shikokumura.or.jp/news/%e3%80%8c%e5%9b%9b%e5%9b%bd%e6%9d%91%e3%83%9f%e3%82%a6%e3%82%bc%e3%82%a2%e3%83%a0%e9%96%8b%e6%9d%9150%e5%91%a8%e5%b9%b4-%e5%9b%9b%e5%9b%bd%e6%9d%91%e7%b5%b5%e5%b7%bb%ef%bd%9e%e5%a4%aa%e9%bc%93/",
+          "label": "2026/9/10 「四国村ミウゼアム開村50周年 四国村絵巻～太鼓と講談の饗宴～」チケット販売のご案内 2026/9/"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.shikokumura.or.jp/news/9%e6%9c%889%e6%97%a5%ef%bc%88%e6%b0%b4%ef%bc%89%e8%87%a8%e6%99%82%e4%bc%91%e6%9d%91%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b%e3%80%80%e9%ab%98%e6%9d%be%e5%9c%b0%e6%96%b9%e3%81%ab%e3%83%ac%e3%83%99/",
+          "label": "2026/9/9 9月9日（水）臨時休村のお知らせ 高松地方にレベル３大雨警報が出されました 2026/9/9"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.shikokumura.or.jp/news/%e6%9f%93%e3%81%8c%e6%bb%9d%e8%a8%ad%e5%82%99%e3%83%a1%e3%83%b3%e3%83%86%e3%83%8a%e3%83%b3%e3%82%b9%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b%e3%80%809%e6%9c%883%e6%97%a5%ef%bc%88%e6%9c%a8%ef%bc%89/",
+          "label": "2026/9/2 染が滝設備メンテナンスのお知らせ 9月3日（木）～10日（木）昼まで 2026/9/2"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.shikokumura.or.jp/news/%e5%90%84%e7%a8%ae%e6%b1%ba%e6%b8%88%e6%96%b9%e6%b3%95%e3%81%8c%e3%81%94%e5%88%a9%e7%94%a8%e5%8f%af%e8%83%bd%e3%81%ab%e3%81%aa%e3%82%8a%e3%81%be%e3%81%99%ef%bc%882026%e5%b9%b49%e6%9c%88%e3%81%8b/",
+          "label": "2026/9/2 各種決済方法がご利用いただけます（2026年9月から） 2026/9/2"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.shikokumura.or.jp/news/%e5%9b%9b%e5%9b%bd%e6%9d%91%e3%83%9f%e3%82%a6%e3%82%bc%e3%82%a2%e3%83%a0%e5%85%a5%e6%9d%91%e6%96%99%e3%81%ae%e6%94%b9%e5%ae%9a%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e3%80%902026%e5%b9%b410%e6%9c%881/",
+          "label": "2026/9/1 四国村ミウゼアム入村料の改定について【2026年10月1日～】 2026/9/1"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.shikokumura.or.jp/news/%e5%9b%9b%e5%9b%bd%e6%9d%91%e3%81%ae%e9%a2%a8%e9%88%b4%e9%a3%be%e3%82%8a%e3%81%af%ef%bc%98%e6%9c%88%ef%bc%93%ef%bc%90%e6%97%a5%ef%bc%88%e6%97%a5%ef%bc%89%e3%81%8c%e6%9c%80%e7%b5%82%e6%97%a5%e3%81%a7/",
+          "label": "2026/8/30 四国村の風鈴飾りは８月３０日（日）が最終日です 2026/8/30"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.shikokumura.or.jp/news/%e5%9b%9b%e5%9b%bd%e6%9d%91%e3%82%ab%e3%83%95%e3%82%a7%e3%81%ae%e8%b2%b8%e3%81%97%e5%88%87%e3%82%8a%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/",
+          "label": "2026/8/29 四国村カフェの貸し切りについて（８月２９日（土）終日・８月３０日（日）昼過ぎまで） 2026/8/2"
+        }
+      ],
+      "sns": {
+        "instagram": "https://www.instagram.com/shikoku_mura"
+      },
+      "terms": [],
+      "note": ""
+    },
+    {
+      "spot_id": "yashima",
+      "name": "屋島",
+      "official_url": "https://www.my-kagawa.jp/point/29",
+      "status": 200,
+      "host": "www.my-kagawa.jp",
+      "operator_quotes": [
+        "Copyright &copy; kagawa Prefecture Tourism Association. ALL RIGHTS RESERVED. 当サイトでは、利便性の向",
+        "公益社団法人香川県観光協会について",
+        "公益社団法人香川県観光協会"
+      ],
+      "operator_evidence_url": "https://www.my-kagawa.jp/point/29",
+      "seeds": [
+        {
+          "kind": "spot_access",
+          "url": "https://www.my-kagawa.jp/access",
+          "label": "交通"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.my-kagawa.jp/sitemap",
+          "label": "サイトマップ"
+        }
+      ],
+      "sns": {
+        "instagram": "https://www.instagram.com/udonken_kagawa",
+        "x": "https://twitter.com/UdonkenKanko"
+      },
+      "terms": [],
+      "note": ""
+    },
+    {
+      "spot_id": "kmuseum",
+      "name": "香川県立ミュージアム",
+      "official_url": "https://www.pref.kagawa.lg.jp/kmuseum/",
+      "status": 200,
+      "host": "www.pref.kagawa.lg.jp",
+      "operator_quotes": [
+        "Copyright &copy; 2020 Kagawa Prefectural Government. All rights reserved."
+      ],
+      "operator_evidence_url": "https://www.pref.kagawa.lg.jp/kmuseum/",
+      "seeds": [
+        {
+          "kind": "spot_hours",
+          "url": "https://www.pref.kagawa.lg.jp/kmuseum/setorekishi/events/r8_opening_kouen_rojo.html",
+          "label": "企画展オープニングイベント・記念講演会「面白いこと収集／分類家・林丈二の実践」（2026年8月29日）"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.pref.kagawa.lg.jp/cgi-bin/page/list.php?tpl_type=2&amp;dept_code=&amp;page_type=4&amp;tpl_id=&amp;dir=%2Fkmuseum%2F&amp;link_page_id=15840",
+          "label": "お知らせ・新着情報一覧を見る"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.pref.kagawa.lg.jp/sitemap.html",
+          "label": "サイトマップ"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.pref.kagawa.lg.jp/kocho/koho/kohosonota/accessibility.html",
+          "label": "ウェブアクセシビリティ方針"
+        }
+      ],
+      "sns": {
+        "x": "https://twitter.com/share"
+      },
+      "terms": [
+        {
+          "url": "https://www.pref.kagawa.lg.jp/kocho/koho/kohosonota/about.html",
+          "label": "このサイトについて",
+          "result": "不採用",
+          "detail": "利用を制限する表記あり（非営利|改変禁止|継承\\s*4\\.0|転載を?禁|無断転載|All Rights Reserved）"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "chichu",
+      "name": "地中美術館",
+      "official_url": "https://benesse-artsite.jp/art/chichu.html",
+      "status": 200,
+      "host": "benesse-artsite.jp",
+      "operator_quotes": [],
+      "operator_evidence_url": "",
+      "seeds": [
+        {
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/",
+          "label": "アクセス"
+        },
+        {
+          "kind": "spot_hours",
+          "url": "https://benesse-artsite.jp/calendar/",
+          "label": "開館カレンダー"
+        },
+        {
+          "kind": "notice",
+          "url": "https://benesse-artsite.jp/news/",
+          "label": "ニュース"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/naoshima/benessehouse.html",
+          "label": "ベネッセハウス周辺のアクセス"
+        },
+        {
+          "kind": "notice",
+          "url": "https://benesse-artsite.jp/hotel/20260113-3401.html",
+          "label": "「予約システム変更のお知らせ」"
+        }
+      ],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UCQGVCd9p9rXO8_W1U1iL5nQ",
+        "instagram": "https://www.instagram.com/benesse_artsite",
+        "x": "https://twitter.com/benesse_artsite"
+      },
+      "terms": [],
+      "note": ""
+    },
+    {
+      "spot_id": "benesse-house",
+      "name": "ベネッセハウス ミュージアム",
+      "official_url": "https://benesse-artsite.jp/art/benessehouse-museum.html",
+      "status": 200,
+      "host": "benesse-artsite.jp",
+      "operator_quotes": [],
+      "operator_evidence_url": "",
+      "seeds": [
+        {
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/",
+          "label": "アクセス"
+        },
+        {
+          "kind": "spot_hours",
+          "url": "https://benesse-artsite.jp/calendar/",
+          "label": "開館カレンダー"
+        },
+        {
+          "kind": "notice",
+          "url": "https://benesse-artsite.jp/news/",
+          "label": "ニュース"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/naoshima/benessehouse.html",
+          "label": "ベネッセハウス周辺のアクセス"
+        },
+        {
+          "kind": "notice",
+          "url": "https://benesse-artsite.jp/hotel/20260113-3401.html",
+          "label": "「予約システム変更のお知らせ」"
+        }
+      ],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UCQGVCd9p9rXO8_W1U1iL5nQ",
+        "instagram": "https://www.instagram.com/benesse_artsite",
+        "x": "https://twitter.com/benesse_artsite"
+      },
+      "terms": [],
+      "note": ""
+    },
+    {
+      "spot_id": "naoshima-sento",
+      "name": "直島銭湯 I♥湯",
+      "official_url": "https://benesse-artsite.jp/art/naoshimasento.html",
+      "status": 200,
+      "host": "benesse-artsite.jp",
+      "operator_quotes": [],
+      "operator_evidence_url": "",
+      "seeds": [
+        {
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/",
+          "label": "アクセス"
+        },
+        {
+          "kind": "spot_hours",
+          "url": "https://benesse-artsite.jp/calendar/",
+          "label": "開館カレンダー"
+        },
+        {
+          "kind": "notice",
+          "url": "https://benesse-artsite.jp/news/",
+          "label": "ニュース"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/naoshima/benessehouse.html",
+          "label": "ベネッセハウス周辺のアクセス"
+        },
+        {
+          "kind": "notice",
+          "url": "https://benesse-artsite.jp/hotel/20260113-3401.html",
+          "label": "「予約システム変更のお知らせ」"
+        }
+      ],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UCQGVCd9p9rXO8_W1U1iL5nQ",
+        "instagram": "https://www.instagram.com/benesse_artsite",
+        "x": "https://twitter.com/benesse_artsite"
+      },
+      "terms": [],
+      "note": ""
+    },
+    {
+      "spot_id": "teshima-art",
+      "name": "豊島美術館",
+      "official_url": "https://benesse-artsite.jp/art/teshima-artmuseum.html",
+      "status": 200,
+      "host": "benesse-artsite.jp",
+      "operator_quotes": [],
+      "operator_evidence_url": "",
+      "seeds": [
+        {
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/",
+          "label": "アクセス"
+        },
+        {
+          "kind": "spot_hours",
+          "url": "https://benesse-artsite.jp/calendar/",
+          "label": "開館カレンダー"
+        },
+        {
+          "kind": "notice",
+          "url": "https://benesse-artsite.jp/news/",
+          "label": "ニュース"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/naoshima/benessehouse.html",
+          "label": "ベネッセハウス周辺のアクセス"
+        },
+        {
+          "kind": "notice",
+          "url": "https://benesse-artsite.jp/hotel/20260113-3401.html",
+          "label": "「予約システム変更のお知らせ」"
+        }
+      ],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UCQGVCd9p9rXO8_W1U1iL5nQ",
+        "instagram": "https://www.instagram.com/benesse_artsite",
+        "x": "https://twitter.com/benesse_artsite"
+      },
+      "terms": [],
+      "note": ""
+    },
+    {
+      "spot_id": "kankakei",
+      "name": "寒霞渓",
+      "official_url": "https://www.kankakei.co.jp/",
+      "status": 200,
+      "host": "www.kankakei.co.jp",
+      "operator_quotes": [
+        "主催 第6回四国おもてなし感激準大賞を受賞 2023年10月6日 （令和5年） 広報担当の新キャラクター 鉄道むすめ“紅雲あづ"
+      ],
+      "operator_evidence_url": "https://www.kankakei.co.jp/company/",
+      "seeds": [
+        {
+          "kind": "spot_access",
+          "url": "https://www.kankakei.co.jp/access/",
+          "label": "アクセス"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.kankakei.co.jp/pickup/enjoy/entry-619.html",
+          "label": "寒霞渓行き町営バス運行のお知らせ 2026.03.27"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.kankakei.co.jp/pickup/enjoy/entry-615.html",
+          "label": "第2回JBCF 小豆島寒霞渓ヒルクライム 開催 及び交通規制のお知らせ 2026.02.06"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.kankakei.co.jp/pickup/enjoy/entry-609.html",
+          "label": "寒霞渓無料シャトルバス冬季期間（12月11日以降〜）運行日追加のお知らせ 2025.12.01"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.kankakei.co.jp/pickup/enjoy/entry-598.html",
+          "label": "第39回 寒霞渓もみじ茶会 開催のお知らせ 2025.10.09"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.kankakei.co.jp/information/entry-628.html",
+          "label": "2026.04.21 4月23日（木）ロープウェイ営業時間短縮のお知らせ"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.kankakei.co.jp/information/entry-623.html",
+          "label": "2026.04.01 4月28日（火）救助訓練に伴うロープウェイ最終便のお知らせ"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.kankakei.co.jp/information/entry-622.html",
+          "label": "2026.04.01 自動無人空撮サービス“SKYPIX”終了のお知らせ"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.kankakei.co.jp/information/",
+          "label": "一覧を見る"
+        }
+      ],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UCL0DRHW1DQd9hVzTogMwICQ",
+        "instagram": "https://www.instagram.com/kankakei_ropeway",
+        "x": "https://twitter.com/KankakeiRopeway"
+      },
+      "terms": [],
+      "note": ""
+    },
+    {
+      "spot_id": "24hitomi",
+      "name": "二十四の瞳映画村",
+      "official_url": "https://24hitomi.or.jp/",
+      "status": 200,
+      "host": "www.24hitomi.or.jp",
+      "operator_quotes": [
+        "Copyright Nijyushinohitomi eigamura Inc.Future institute Corporation All rights reserved."
+      ],
+      "operator_evidence_url": "https://www.24hitomi.or.jp/",
+      "seeds": [
+        {
+          "kind": "spot_access",
+          "url": "https://www.24hitomi.or.jp/access/",
+          "label": "Access"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.24hitomi.or.jp/2026/09/post-533.html",
+          "label": "*+*+*渡し舟 終日欠航のお知らせ+*+*+*"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.24hitomi.or.jp/2026/09/post-532.html",
+          "label": "【９月 渡し舟運航日のお知らせ】"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.24hitomi.or.jp/2026/08/post-531.html",
+          "label": "+*+*+*本日 渡し舟 セット券販売中止のお知らせ+*+*+*"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.24hitomi.or.jp/2026/08/post-530.html",
+          "label": "+*+*+*渡し舟 セット券販売再開のお知らせ+*+*+*"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.24hitomi.or.jp/2026/08/post-529.html",
+          "label": "+*+*+*本日の渡し舟 セット券販売中止のお知らせ+*+*+*"
+        },
+        {
+          "kind": "spot_fees",
+          "url": "https://www.24hitomi.or.jp/ticket/",
+          "label": "料金表"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.24hitomi.or.jp/pdf/villagemap_02.pdf",
+          "label": "散策MAP"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.24hitomi.or.jp/sp/topics.html",
+          "label": "トピックス TOPICS"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.24hitomi.or.jp/sp/access.html",
+          "label": "交通案内 ACCESS"
+        },
+        {
+          "kind": "spot_fees",
+          "url": "https://www.24hitomi.or.jp/sp/ticket/",
+          "label": "料金表 TICKET"
+        }
+      ],
+      "sns": {
+        "instagram": "https://www.instagram.com/24hitomi_eigamura",
+        "x": "https://twitter.com/intent"
+      },
+      "terms": [],
+      "note": ""
+    },
+    {
+      "spot_id": "konpira",
+      "name": "金刀比羅宮",
+      "official_url": "https://www.konpira.or.jp/",
+      "status": 200,
+      "host": "www.konpira.or.jp",
+      "operator_quotes": [
+        "(C) KOTOHIRA-GU 31-Mar-2026 21:54"
+      ],
+      "operator_evidence_url": "https://www.konpira.or.jp/articles_2026/20260331_about-changes-to-the-rules/article.html",
+      "seeds": [
+        {
+          "kind": "notice",
+          "url": "https://www.konpira.or.jp/articles_2025/20251026_lantern/article.html",
+          "label": "&nbsp;三穂津姫社前青銅灯籠復旧完了のお知らせ"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.konpira.or.jp/articles_2026/20260101_price-change-notification/materials/price-change-notification.pdf?cache=20260112",
+          "label": "&nbsp;PDF「授与品初穂料 改定のお知らせ」"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.konpira.or.jp/articles_2026/20260101_price-change-notification/article.html",
+          "label": "&nbsp;神前結婚式初穂料 改定のお知らせ"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.konpira.or.jp/articles_2024/20240518_important-cultural-propertys/article.html",
+          "label": "御本宮など国の重要文化財に指定"
+        },
+        {
+          "kind": "notice",
+          "url": "https://www.konpira.or.jp/articles_2024/20240701_red-seal-book/article.html",
+          "label": "重要文化財指定答申記念 桜蒔絵御朱印帳"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.konpira.or.jp/articles/20210816_guide-map/guide-map_v11.html",
+          "label": "境内案内図"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.konpira.or.jp/ARCHIVES/map/guide-3/guide-3_2015.html",
+          "label": "散策ガイド：裏参道編"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.konpira.or.jp/ARCHIVES/map/guide-4/guide-4_2015.html",
+          "label": "散策ガイド：神苑編"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.konpira.or.jp/articles/20220427_roadmap/roadmap_around-kotohiragu.pdf",
+          "label": "PDF「金刀比羅宮周辺 交通案内図」"
+        },
+        {
+          "kind": "spot_hours",
+          "url": "https://www.konpira.or.jp/articles_2026/20260330_open-days_calendar/article.html",
+          "label": "&nbsp;博物館施設 開館日カレンダー"
+        },
+        {
+          "kind": "timetable",
+          "url": "https://www.konpira.or.jp/articles_2025/20251207_AHNY/materials/TY/timetable.pdf",
+          "label": "&nbsp;令和8年〔2026〕お正月 〜 金刀比羅宮 時間表"
+        }
+      ],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UC0iepI_flVcY9n7y3VAYyKA",
+        "instagram": "https://www.instagram.com/kotohiranomiya",
+        "x": "https://twitter.com/kotohiranomiya"
+      },
+      "terms": [
+        {
+          "url": "https://www.konpira.or.jp/articles_2026/20260331_about-changes-to-the-rules/article.html",
+          "label": "&nbsp;博物館施設内での写真撮影の許可について",
+          "result": "不採用",
+          "detail": "明示的なライセンス表記が見つからない"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "chichibugahama",
+      "name": "父母ヶ浜",
+      "official_url": "https://www.mitoyo-kanko.com/spot/chichibugahama/",
+      "status": 200,
+      "host": "www.mitoyo-kanko.com",
+      "operator_quotes": [
+        "Copyright © 2021 三豊市観光交流局 . All Rights Reserved. {\"prefetch\":[{\"source\":\"document\",\"where"
+      ],
+      "operator_evidence_url": "https://www.mitoyo-kanko.com/chichibugahama/",
+      "seeds": [
+        {
+          "kind": "spot_access",
+          "url": "https://www.mitoyo-kanko.com/access/",
+          "label": "アクセス"
+        },
+        {
+          "kind": "spot_access",
+          "url": "https://www.mitoyo-kanko.com/site/wp-content/uploads/l-chichibu_map_2605.pdf",
+          "label": ""
+        }
+      ],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UCcNpMZYWUnTNePHU0IO38pQ",
+        "instagram": "https://instagram.com/seasonal_stand"
+      },
+      "terms": [
+        {
+          "url": "https://www.mitoyo-kanko.com/rental/",
+          "label": "写真の貸し出し",
+          "result": "不採用",
+          "detail": "利用に人の判断が必要（「申請」の記載）"
+        }
+      ],
+      "note": ""
+    }
+  ]
+}

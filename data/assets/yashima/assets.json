@@ -1,0 +1,55 @@
+{
+  "assets": [
+    {
+      "alt_text": "屋島",
+      "asset_id": "3aeff05920089623",
+      "author": "wilford peloquin",
+      "byte_size": 670523,
+      "content_type": "image/jpeg",
+      "credit_text": "71-1400aaaa, Japan 1971 (51390816728).jpg by wilford peloquin（クリエイティブ・コモンズ 表示 2.0（CC BY 2.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-12T09:23:42+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-12T09:23:42Z",
+        "credit_text": "出典: 71-1400aaaa, Japan 1971 (51390816728).jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.0（CC BY 2.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.0/deed.en\">Attribution 2.0 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:71-1400aaaa,_Japan_1971_(51390816728).jpg",
+        "license_id": "CC-BY-2.0",
+        "reason": "whitelist:CC-BY-2.0"
+      },
+      "local_path": "3aeff05920089623.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:71-1400aaaa,_Japan_1971_(51390816728).jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/71-1400aaaa%2C_Japan_1971_%2851390816728%29.jpg/1280px-71-1400aaaa%2C_Japan_1971_%2851390816728%29.jpg",
+      "tags": [
+        "takamatsu"
+      ]
+    },
+    {
+      "alt_text": "屋島",
+      "asset_id": "b71d32c415159880",
+      "author": "USGS Landsat",
+      "byte_size": 193273,
+      "content_type": "image/jpeg",
+      "credit_text": "Landsat Takamatsu -Yashima 01.jpg by USGS Landsat（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））/ Wikimedia Commons",
+      "fetched_at": "2026-09-12T09:23:38+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-12T09:23:38Z",
+        "credit_text": "出典: Landsat Takamatsu -Yashima 01.jpg / Wikimedia Commons（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））",
+        "evidence_text": "icensetpl\" style=\"display:none\"> Public domain Public domain <span class=\"licensetpl",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Landsat_Takamatsu_-Yashima_01.jpg",
+        "license_id": "public-domain",
+        "reason": "whitelist:public-domain"
+      },
+      "local_path": "b71d32c415159880.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Landsat_Takamatsu_-Yashima_01.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Landsat_Takamatsu_-Yashima_01.jpg/1280px-Landsat_Takamatsu_-Yashima_01.jpg",
+      "tags": [
+        "takamatsu"
+      ]
+    }
+  ],
+  "source_id": "yashima"
+}
