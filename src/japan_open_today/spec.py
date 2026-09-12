@@ -3,7 +3,8 @@
 ページ種別ごとに仕様を分ける:
   spot_detail / spot_hours / spot_fees / spot_access → SPOT_SPEC
   notice                                            → NOTICE_SPEC
-  timetable                                         → ROUTE_SPEC
+  shared_notice                                     → SHARED_NOTICE_SPEC（複数施設の共有ページ）
+  timetable / route_fares                           → ROUTE_SPEC
 仕様が無い種別は抽出されず、実行レポートで `no_spec` として数えられる。
 """
 
@@ -23,11 +24,16 @@ from sitemill.parse.jp.hours import parse_clock, parse_opening_hours
 
 SPOT_PROMPT_VERSION = "spot_v1"
 NOTICE_PROMPT_VERSION = "notice_v1"
+SHARED_NOTICE_PROMPT_VERSION = "shared_notice_v1"
 ROUTE_PROMPT_VERSION = "route_v1"
 
 # 料金ではない金額。抽出できても値にしない（akiya-atlas の spec と同じ考え方）
 _NOT_A_FEE = re.compile(
     r"団体|回数券|年間パスポート|定期|レンタル|駐車|送料|手数料|保証金|寄付|募金|補助|助成"
+    # 1 日乗車券・フリー券は「その区間の運賃」ではない。運賃として出すと利用者の計算が狂う。
+    # 「往復」はここに入れない。ロープウェイや遊覧船では往復券が通常の料金なので、
+    # 除くと本当の料金が出せなくなる（片道だけを出すのは航路側のプロンプトで縛る）
+    r"|1日乗車券|一日乗車券|1日券|一日券|フリー(?:乗車)?券"
 )
 _FREE = re.compile(r"無料|無償|不要|free", re.I)
 
@@ -127,6 +133,25 @@ NOTICE_ITEM_SCHEMA: dict[str, Any] = {
     "required": ["kind", "date_quote", "reason_quote", "title"],
     "additionalProperties": False,
 }
+# 共有ページ用。`facility_quote` で対象施設を名指しさせる。null なら捨てる（ADR 0010）
+SHARED_NOTICE_ITEM_SCHEMA: dict[str, Any] = {
+    "type": "object",
+    "properties": {
+        **NOTICE_ITEM_SCHEMA["properties"],
+        "facility_quote": _nullable(
+            "string", "この告知の対象施設名の原文。決められなければ null（推測しない）"
+        ),
+    },
+    "required": [*NOTICE_ITEM_SCHEMA["required"], "facility_quote"],
+    "additionalProperties": False,
+}
+SHARED_NOTICE_SCHEMA: dict[str, Any] = {
+    "type": "object",
+    "properties": {"notices": {"type": "array", "items": SHARED_NOTICE_ITEM_SCHEMA}},
+    "required": ["notices"],
+    "additionalProperties": False,
+}
+
 NOTICE_SCHEMA: dict[str, Any] = {
     "type": "object",
     "properties": {"notices": {"type": "array", "items": NOTICE_ITEM_SCHEMA}},
@@ -223,10 +248,26 @@ NOTICE_SPEC = ExtractionSpec(
     summary_field=None,
 )
 
+SHARED_NOTICE_SPEC = ExtractionSpec(
+    name="shared_notice",
+    prompt_version=SHARED_NOTICE_PROMPT_VERSION,
+    system_prompt=_load(SHARED_NOTICE_PROMPT_VERSION),
+    output_schema=SHARED_NOTICE_SCHEMA,
+    quote_fields=(
+        QuoteField("date_quote", "span", parse_notice_span),
+        QuoteField("reason_quote", "reason", None),
+        # 施設名も引用として検証する。ページに無い名前を書いた告知はここで落ちる
+        QuoteField("facility_quote", "facility", None),
+    ),
+    items_key="notices",
+    free_text_fields=("title", "kind"),
+    summary_field=None,
+)
+
 ROUTE_SPEC = ExtractionSpec(
     name="route",
     prompt_version=ROUTE_PROMPT_VERSION,
-    system_prompt=_load(SPOT_PROMPT_VERSION),  # route_v1 のプロンプトは S5 で作る
+    system_prompt=_load(ROUTE_PROMPT_VERSION),
     output_schema=ROUTE_SCHEMA,
     quote_fields=(
         QuoteField("route_label", "route_label", None),
@@ -249,7 +290,9 @@ SPECS_BY_KIND = {
     "spot_fees": SPOT_SPEC,
     "spot_access": SPOT_SPEC,
     "notice": NOTICE_SPEC,
+    "shared_notice": SHARED_NOTICE_SPEC,
     "timetable": ROUTE_SPEC,
+    "route_fares": ROUTE_SPEC,
 }
 
 

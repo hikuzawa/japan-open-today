@@ -87,6 +87,9 @@ class Spot(BaseModel):
     area: str
     category: SpotCategory = "other"
     names: dict[str, LocalizedName] = Field(default_factory=dict)
+    # 共有ページの告知を施設に割り当てるための別表記（「ベネッセハウス」など）。
+    # 表示には使わない。公式ページに出る書き方だけを入れる
+    aliases: list[str] = Field(default_factory=list)
     official_url: str
     operator: str
     operator_kind: str = "unknown"
@@ -151,6 +154,8 @@ class Route(BaseModel):
     service_days_quote: str | None = None
     notices: list[SpecialNotice] = Field(default_factory=list)
     timetable_url: str | None = None
+    # 運賃が PDF・フレーム内にあって値にできない航路のための一次情報リンク（ADR 0001）
+    fare_url: str | None = None
     evidence: Evidence | None = None
     notices_fetched_at: str | None = None
     provenance: dict[str, Any] | None = None

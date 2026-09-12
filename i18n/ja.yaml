@@ -49,7 +49,7 @@ reason:
   conflicting: 規則と告知が食い違っている
   stale_source: 公式ページの取得が途切れている（情報が古い）
   holiday_unknown: その年の祝日が分からない
-  no_data: 開館時間・休館日を公式ページから取得できていない
+  no_data: 時間・休業（運休）の情報を公式ページから取得できていない
 facts:
   heading: 事実
   address: 所在地
@@ -81,6 +81,8 @@ transport:
   last: 終発
   duration: 所要
   timetable: 時刻表（外部）
+  fares: 運賃表（外部）
+  service_days: 運航日
 affiliate:
   heading: 宿・体験
   preparing: 準備中

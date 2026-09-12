@@ -48,7 +48,7 @@ reason:
   conflicting: 規則與公告不一致
   stale_source: 官方網頁已有一段時間未能取得
   holiday_unknown: 該年度的國定假日不明
-  no_data: 無法從官方網頁取得開館時間與休館日
+  no_data: 無法從官方網頁取得時間與休息（停駛）資訊
 facts:
   heading: 事實
   address: 地址
@@ -80,6 +80,8 @@ transport:
   last: 末班
   duration: 所需
   timetable: 時刻表（外部）
+  fares: 票價表（外部）
+  service_days: 運航日
 affiliate:
   heading: 住宿與體驗
   preparing: 準備中

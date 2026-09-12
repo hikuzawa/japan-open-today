@@ -15,6 +15,7 @@ from datetime import date, datetime
 from typing import Any
 
 from sitemill.clock import jst_today
+from sitemill.diff.normalize import squash
 from sitemill.extract import ExtractedItem
 from sitemill.models import Provenance, Source
 from sitemill.models.schedule import DateSpan, Evidence, NoticeKind, SpecialNotice
@@ -194,7 +195,19 @@ def ingest_items(
             counts[result] += 1
         return counts
 
-    if kind == "timetable":
+    if kind == "shared_notice":
+        return _ingest_shared_notices(
+            ws,
+            store=store,
+            entry=entry,
+            items=items,
+            url=url,
+            provenance=provenance,
+            now=now,
+            counts=counts,
+        )
+
+    if kind in ("timetable", "route_fares"):
         routes = routes_from_entry(entry)
         if not routes:
             counts["skipped"] += 1
@@ -213,6 +226,105 @@ def ingest_items(
         return counts
 
     counts["skipped"] += len(items) or 1
+    return counts
+
+
+def _covered_spots(ws: Workspace, entry: dict[str, Any]) -> list[Any]:
+    """共有ページが扱う施設。`covers` に書いた spot_id を他の情報源から引く。"""
+    wanted = list(entry.get("covers") or [])
+    if not wanted:
+        return []
+    by_id = {}
+    for other in load_entries(ws):
+        spot = spot_from_entry(other)
+        if spot is not None:
+            by_id[spot.spot_id] = spot
+    missing = [sid for sid in wanted if sid not in by_id]
+    if missing:
+        raise ValueError(f"{entry['id']} の covers に未知の spot_id: {missing}")
+    return [by_id[sid] for sid in wanted]
+
+
+def _spot_names(spot: Any) -> list[str]:
+    """照合に使う表記。日本語の表示名と別名だけ（英語・繁体字の表記は本文に出ない）。"""
+    out = [spot.names["ja"].text] if "ja" in spot.names else []
+    out.extend(spot.aliases)
+    return [n for n in out if n]
+
+
+def match_facility(quote: str, spots: Sequence[Any]) -> Any | None:
+    """告知が名指しした施設を 1 つに決める。決まらなければ None。
+
+    共有ページでは、この割り当てを間違えると**開いている施設のページに「休館」と出る**。
+    だから「たぶんこれ」で当てない。完全一致 → 包含関係、の順で見て、候補が 1 つに
+    絞れないときは None を返して告知を捨てる。
+    """
+    target = squash(quote or "")
+    if not target:
+        return None
+    exact = [s for s in spots if any(squash(n) == target for n in _spot_names(s))]
+    if len(exact) == 1:
+        return exact[0]
+    if exact:
+        return None  # 同名の施設が 2 つある。決められない
+    loose = [
+        s
+        for s in spots
+        if any(squash(n) and (squash(n) in target or target in squash(n)) for n in _spot_names(s))
+    ]
+    return loose[0] if len(loose) == 1 else None
+
+
+def _ingest_shared_notices(
+    ws: Workspace,
+    *,
+    store: RecordStore,
+    entry: dict[str, Any],
+    items: Sequence[ExtractedItem],
+    url: str,
+    provenance: Provenance,
+    now: datetime,
+    counts: dict[str, int],
+) -> dict[str, int]:
+    """1 枚で複数施設を扱うお知らせページを、施設ごとに切り分けて取り込む（ADR 0010）。
+
+    ベネッセアートサイトのカレンダーは、地中美術館・ベネッセハウス・豊島美術館などの
+    休館日を 1 ページに並べている。S5 ではこのページを 1 施設に紐づけるしかなく、
+    他館の休館をその館の休館として公開してしまうため、情報源から外していた。
+    ここでは**告知が名指しした施設名**で割り当て、名指しが無いか決められない告知は捨てる。
+    """
+    spots = _covered_spots(ws, entry)
+    if not spots:
+        counts["skipped"] += 1
+        return counts
+    per_spot: dict[str, list[dict[str, Any]]] = {}
+    for item in items:
+        facility = item.fields.get("facility")
+        quote = facility.value if facility is not None and facility.ok else None
+        spot = match_facility(str(quote or ""), spots)
+        if spot is None:
+            counts["unattributed"] = counts.get("unattributed", 0) + 1
+            log.info("%s: 施設を決められない告知を捨てる（引用=%r）", url, quote)
+            continue
+        rows = _notices([item], url=url, provenance=provenance)
+        if not rows:
+            counts["skipped"] += 1
+            continue
+        per_spot.setdefault(spot.spot_id, []).extend(rows)
+    for spot_id, rows in per_spot.items():
+        content: dict[str, Any] = {
+            "spot_id": spot_id,
+            "notices": rows,
+            "notices_fetched_at": provenance.fetched_at.isoformat(),
+        }
+        result = store.upsert(
+            record_id_for(entry["id"], spot_id),
+            content,
+            now=now,
+            provenance=provenance.model_dump(mode="json"),
+            merge=merge_record,
+        )
+        counts[result] += 1
     return counts
 
 
@@ -299,19 +411,31 @@ def _matches_route(route: Any, label: str) -> bool:
 
 
 def finalize_records(ws: Workspace, *, now: datetime) -> dict[str, int]:
-    """期限の切れた告知を落とす。古い休業告知を出し続けないため。"""
-    counts = {"notices_dropped": 0, "records": 0}
+    """期限の切れた告知と、情報源から外した URL 由来の告知を落とす。
+
+    2 つめが要るのは、間違った情報源を外しても**記録に残った告知はページに出続ける**ためである。
+    ベネッセの共有お知らせページを 1 施設の notice として seed していた間に取り込んだ告知は、
+    他館の休業である可能性がある。seed を外したら、その URL 由来の告知も消す。
+    """
+    counts = {"notices_dropped": 0, "records": 0, "notices_unseeded": 0}
     today = jst_today(now)
     for entry in load_entries(ws):
         store = RecordStore(records_path(ws, entry["id"]))
         if not len(store):
             continue
+        seeded = {p["url"] for p in entry.get("pages", []) or []}
         changed = False
         for record in store.records.values():
             counts["records"] += 1
             notices = record.get("notices") or []
             kept = []
             for notice in notices:
+                source_url = (notice.get("evidence") or {}).get("source_url")
+                if source_url and source_url not in seeded:
+                    counts["notices_unseeded"] += 1
+                    changed = True
+                    log.info("%s: seed から外れた %s 由来の告知を落とす", entry["id"], source_url)
+                    continue
                 end = (notice.get("span") or {}).get("end")
                 if end and (today - date.fromisoformat(end)).days > NOTICE_KEEP_DAYS:
                     counts["notices_dropped"] += 1

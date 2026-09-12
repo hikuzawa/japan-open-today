@@ -1,0 +1,63 @@
+{
+  "ci": false,
+  "command": "extract",
+  "errors": [],
+  "extraction_metrics": {
+    "fields": {
+      "facility": {
+        "not_found": 6,
+        "notes": {},
+        "parsed": 12,
+        "quote_not_in_source": 0,
+        "total": 18,
+        "unparsed": 0
+      },
+      "reason": {
+        "not_found": 6,
+        "notes": {},
+        "parsed": 12,
+        "quote_not_in_source": 0,
+        "total": 18,
+        "unparsed": 0
+      },
+      "span": {
+        "not_found": 2,
+        "notes": {
+          "no_date_range": 4
+        },
+        "parsed": 12,
+        "quote_not_in_source": 0,
+        "total": 18,
+        "unparsed": 4
+      }
+    },
+    "flags": {},
+    "items": 18,
+    "pages": 2,
+    "summary_replaced": 0,
+    "truncated_pages": 0
+  },
+  "finished_at": "2026-09-12T11:23:03Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 2,
+    "input_tokens": 8893,
+    "output_tokens": 1349
+  },
+  "notes": [],
+  "service": "japan-open-today",
+  "stages": {
+    "extract": {
+      "items": 18,
+      "pages": 2
+    },
+    "ingest": {
+      "created": 2,
+      "skipped": 1,
+      "unattributed": 15,
+      "unchanged": 0,
+      "updated": 0
+    }
+  },
+  "started_at": "2026-09-12T11:22:33Z"
+}

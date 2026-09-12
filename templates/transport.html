@@ -20,10 +20,27 @@
         {% if row.route.duration_minutes.ok %}/ {{ t('transport.duration') }}
           {{ t('facts.minutes', n=row.route.duration_minutes.value) }}{% endif %}
       </span>
-      {% if row.route.timetable_url %}
-      <a class="secondary" href="{{ row.route.timetable_url }}" rel="noopener"
-         target="_blank">{{ t('transport.timetable') }}</a>
+      {% if row.route.fares %}
+      <span class="route-facts">
+        {% for fare in row.route.fares if fare.amount.ok %}
+        <span class="fee">{{ t('fee.' ~ fare.category) }} {{ fare.amount.value|money_l }}</span>
+        {% endfor %}
+      </span>
       {% endif %}
+      {% if row.route.service_days_quote %}
+      <span class="route-facts">{{ t('transport.service_days') }}
+        {{ t('facts.quote', text=row.route.service_days_quote) }}</span>
+      {% endif %}
+      <span class="actions">
+        {% if row.route.timetable_url %}
+        <a class="secondary" href="{{ row.route.timetable_url }}" rel="noopener"
+           target="_blank">{{ t('transport.timetable') }}</a>
+        {% endif %}
+        {% if row.route.fare_url %}
+        <a class="secondary" href="{{ row.route.fare_url }}" rel="noopener"
+           target="_blank">{{ t('transport.fares') }}</a>
+        {% endif %}
+      </span>
       {{ ui.reasons(row.verdict, locale) }}
     </li>
     {% endfor %}

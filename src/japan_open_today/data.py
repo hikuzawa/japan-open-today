@@ -127,6 +127,15 @@ class Dataset:
         spots: list[Spot] = []
         operators: list[TransportOperator] = []
         routes: list[Route] = []
+        # 共有ページ（covers を持つ情報源）の告知。施設を持つ情報源とは別のファイルに入る
+        shared_notices: dict[str, list[dict[str, Any]]] = {}
+        for entry in entries:
+            if not entry.get("covers"):
+                continue
+            for record in load_records(ws, entry["id"]):
+                spot_id = record.get("spot_id")
+                if spot_id:
+                    shared_notices.setdefault(spot_id, []).extend(record.get("notices") or [])
         for entry in entries:
             stored = {
                 r.get("spot_id") or r.get("route_id"): r for r in load_records(ws, entry["id"])
@@ -134,9 +143,18 @@ class Dataset:
             spot = spot_from_entry(entry)
             if spot is not None:
                 record = stored.get(spot.spot_id)
-                spots.append(
-                    Spot.model_validate({**spot.model_dump(), **record}) if record else spot
-                )
+                payload = {**spot.model_dump(), **record} if record else spot.model_dump()
+                extra = shared_notices.get(spot.spot_id) or []
+                if extra:
+                    # 引用で重複を落とす（同じ告知が自館のページと共有ページの両方に出る）
+                    seen = {
+                        (n.get("evidence") or {}).get("quote") for n in payload.get("notices") or []
+                    }
+                    payload["notices"] = [
+                        *(payload.get("notices") or []),
+                        *(n for n in extra if (n.get("evidence") or {}).get("quote") not in seen),
+                    ]
+                spots.append(Spot.model_validate(payload))
             operator = operator_from_entry(entry)
             if operator is not None:
                 operators.append(operator)

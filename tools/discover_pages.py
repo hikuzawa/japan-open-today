@@ -125,8 +125,15 @@ def _hosts(entry: dict[str, Any]) -> set[str]:
     return set(entry.get("allow_hosts") or [])
 
 
-def _candidates(entry: dict[str, Any], raw: RawCache) -> list[tuple[str, str, str, str]]:
-    """(kind, url, label, found_on) の候補。巡回済みの HTML からリンクを集める。"""
+def _candidates(
+    entry: dict[str, Any], raw: RawCache, shared_urls: frozenset[str] = frozenset()
+) -> list[tuple[str, str, str, str]]:
+    """(kind, url, label, found_on) の候補。巡回済みの HTML からリンクを集める。
+
+    `shared_urls` は他の情報源が既に seed している URL。1 枚で複数施設を扱うページなので、
+    1 施設の seed には**しない**（ADR 0010）。ベネッセの /news/ を 3 施設に seed した結果、
+    李禹煥美術館と家プロジェクトの休館が豊島美術館の休館として公開されていた。
+    """
     hosts = _hosts(entry)
     have = {p["kind"] for p in entry.get("pages", []) or []}
     seen_urls = {p["url"] for p in entry.get("pages", []) or []}
@@ -141,6 +148,8 @@ def _candidates(entry: dict[str, Any], raw: RawCache) -> list[tuple[str, str, st
                 continue
             if link.url in seen_urls or ARTICLE_LIKE.search(link.url):
                 continue
+            if link.url in shared_urls:
+                continue  # 他の施設も使っているページ。共有ページとして別に扱う
             if any(LABEL_EXCLUDE.search(lb) for lb in link.labelled()):
                 continue
             # 同じページが複数のラベルで張られていることがある。全部を手がかりにする
@@ -276,7 +285,8 @@ def main() -> int:
 
     ws = Workspace.open(Path.cwd())
     raw = RawCache(ws.raw_dir)
-    entries = [e for e in load_entries(ws) if e.get("policy") == "crawl" and e.get("spot")]
+    all_entries = load_entries(ws)
+    entries = [e for e in all_entries if e.get("policy") == "crawl" and e.get("spot")]
     if args.only:
         wanted = {s.strip() for s in args.only.split(",") if s.strip()}
         entries = [e for e in entries if e["id"] in wanted]
@@ -290,7 +300,13 @@ def main() -> int:
                 existing_kinds=sorted({p["kind"] for p in entry.get("pages", []) or []}),
             )
             have = set(result.existing_kinds)
-            for kind, url, label, found_on in _candidates(entry, raw):
+            shared = frozenset(
+                p["url"]
+                for other in all_entries
+                if other["id"] != entry["id"]
+                for p in other.get("pages", []) or []
+            )
+            for kind, url, label, found_on in _candidates(entry, raw, shared):
                 proposal = Proposal(
                     source_id=entry["id"], kind=kind, url=url, label=label, found_on=found_on
                 )

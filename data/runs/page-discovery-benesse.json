@@ -1,0 +1,93 @@
+{
+  "discovered_at": "2026-09-12T20:24:26.607787+09:00",
+  "requests": 7,
+  "results": [
+    {
+      "source_id": "kagawa-chichu",
+      "name": "地中美術館",
+      "existing_kinds": [
+        "spot_detail",
+        "spot_fees"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-chichu",
+          "kind": "spot_fees",
+          "url": "https://benesse-artsite.jp/access/",
+          "label": "アクセス",
+          "found_on": "https://benesse-artsite.jp/art/chichu.html",
+          "verified": false,
+          "detail": "spot_fees はすでに seed がある: ラベルは spot_access だが中身は spot_fees: 0 15:20 18:00 20:15 高 四国汽船(TEL:087-821-5100) [料金(フェリー)] 大人680円/小人340円 [料金(高速船)] 大人1,590円/小"
+        },
+        {
+          "source_id": "kagawa-chichu",
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/naoshima/benessehouse.html",
+          "label": "ベネッセハウス周辺のアクセス",
+          "found_on": "https://benesse-artsite.jp/art/chichu.html",
+          "verified": false,
+          "detail": "どの種別の中身も見つからない（本文 966 字）"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-benesse-house",
+      "name": "ベネッセハウス ミュージアム",
+      "existing_kinds": [
+        "spot_detail",
+        "spot_fees"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-benesse-house",
+          "kind": "spot_fees",
+          "url": "https://benesse-artsite.jp/access/",
+          "label": "アクセス",
+          "found_on": "https://benesse-artsite.jp/art/benessehouse-museum.html",
+          "verified": false,
+          "detail": "spot_fees はすでに seed がある: ラベルは spot_access だが中身は spot_fees: 0 15:20 18:00 20:15 高 四国汽船(TEL:087-821-5100) [料金(フェリー)] 大人680円/小人340円 [料金(高速船)] 大人1,590円/小"
+        },
+        {
+          "source_id": "kagawa-benesse-house",
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/naoshima/benessehouse.html",
+          "label": "ベネッセハウス周辺のアクセス",
+          "found_on": "https://benesse-artsite.jp/art/benessehouse-museum.html",
+          "verified": false,
+          "detail": "どの種別の中身も見つからない（本文 966 字）"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-teshima-art",
+      "name": "豊島美術館",
+      "existing_kinds": [
+        "spot_detail",
+        "spot_fees"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-teshima-art",
+          "kind": "spot_fees",
+          "url": "https://benesse-artsite.jp/access/",
+          "label": "アクセス",
+          "found_on": "https://benesse-artsite.jp/art/teshima-artmuseum.html",
+          "verified": false,
+          "detail": "spot_fees はすでに seed がある: ラベルは spot_access だが中身は spot_fees: 0 15:20 18:00 20:15 高 四国汽船(TEL:087-821-5100) [料金(フェリー)] 大人680円/小人340円 [料金(高速船)] 大人1,590円/小"
+        },
+        {
+          "source_id": "kagawa-teshima-art",
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/naoshima/benessehouse.html",
+          "label": "ベネッセハウス周辺のアクセス",
+          "found_on": "https://benesse-artsite.jp/art/teshima-artmuseum.html",
+          "verified": false,
+          "detail": "どの種別の中身も見つからない（本文 966 字）"
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

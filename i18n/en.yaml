@@ -51,7 +51,7 @@ reason:
   conflicting: The rules and the notice disagree
   stale_source: The official page has not been fetched recently
   holiday_unknown: Public holidays for that year are unknown
-  no_data: Opening hours and closing days could not be obtained from the official page
+  no_data: Hours and closures could not be obtained from the official page
 facts:
   heading: Facts
   address: Address
@@ -85,6 +85,8 @@ transport:
   last: Last
   duration: Journey
   timetable: Timetable (external)
+  fares: Fares (external)
+  service_days: Service days
 affiliate:
   heading: Stays and experiences
   preparing: Coming soon

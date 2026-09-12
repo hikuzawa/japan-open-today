@@ -3,7 +3,7 @@
   "command": "crawl",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-09-12T11:29:39Z",
+  "finished_at": "2026-09-12T11:22:27Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -14,15 +14,14 @@
   "service": "japan-open-today",
   "stages": {
     "crawl": {
-      "changed": 3,
+      "changed": 1,
       "errors": 0,
-      "fetched": 4,
-      "new_seeds": 3,
-      "not_modified": 1,
-      "requests": 8,
-      "unchanged": 2,
+      "fetched": 2,
+      "not_modified": 0,
+      "requests": 3,
+      "unchanged": 1,
       "workers": 6
     }
   },
-  "started_at": "2026-09-12T11:29:24Z"
+  "started_at": "2026-09-12T11:22:20Z"
 }

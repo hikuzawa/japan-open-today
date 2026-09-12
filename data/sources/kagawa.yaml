@@ -200,12 +200,11 @@ sources:
         kind: spot_detail
       - url: https://benesse-artsite.jp/general-information.html
         kind: spot_fees  # 発見（S6）: こちら
-      - url: https://benesse-artsite.jp/news/
-        kind: notice  # 発見（S6）: ニュース
     allow_hosts: [benesse-artsite.jp]
     max_pages: 10
     spot:
       spot_id: chichu
+      aliases: ["地中美術館"]  # 共有ページの告知の割り当てに使う（表示には使わない）
       area: naoshima
       category: museum
       names:
@@ -230,12 +229,11 @@ sources:
         kind: spot_detail
       - url: https://benesse-artsite.jp/general-information.html
         kind: spot_fees  # 発見（S6）: こちら
-      - url: https://benesse-artsite.jp/news/
-        kind: notice  # 発見（S6）: ニュース
     allow_hosts: [benesse-artsite.jp]
     max_pages: 10
     spot:
       spot_id: benesse-house
+      aliases: ["ベネッセハウス ミュージアム", "ベネッセハウス ミュージアム／パーク", "ベネッセハウス"]  # 共有ページの告知の割り当てに使う（表示には使わない）
       area: naoshima
       category: museum
       names:
@@ -260,12 +258,11 @@ sources:
         kind: spot_detail
       - url: https://benesse-artsite.jp/general-information.html
         kind: spot_fees  # 発見（S6）: こちら
-      - url: https://benesse-artsite.jp/news/
-        kind: notice  # 発見（S6）: ニュース
     allow_hosts: [benesse-artsite.jp]
     max_pages: 10
     spot:
       spot_id: teshima-art
+      aliases: ["豊島美術館"]  # 共有ページの告知の割り当てに使う（表示には使わない）
       area: teshima
       category: museum
       names:
@@ -276,6 +273,30 @@ sources:
       commons_category: Teshima Art Museum
 
   # --- 小豆島 -------------------------------------------------------------
+  # ベネッセアートサイト直島の共有お知らせページ（S6 優先度2）。
+  # /news/ と /calendar/ には地中美術館・ベネッセハウス・豊島美術館など複数館の休館が並ぶ。
+  # 1 施設の notice として seed すると他館の休業をその館の休業として公開してしまうため、
+  # 施設を持たない情報源として切り出し、告知が名指しした施設名で割り当てる（kind: shared_notice）。
+  # covers に無い館（李禹煥美術館など）の告知は、名指しが一致しないので捨てられる。
+  - id: kagawa-benesse-shared
+    name: ベネッセアートサイト直島（複数館の共有お知らせ）
+    operator: 株式会社ベネッセコーポレーション・公益財団法人福武財団
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "「ベネッセアートサイト直島」は、直島・犬島（香川県）、豊島（岡山県）を舞台に株式会社ベネッセコーポレーションと公益財団法人 福武財団が展開しているアート活動の総体です。"
+      url: https://benesse-artsite.jp/about/
+      checked_on: 2026-09-12
+    policy: crawl
+    official_url: https://benesse-artsite.jp/
+    covers: [chichu, benesse-house, teshima-art]
+    pages:
+      - url: https://benesse-artsite.jp/news/
+        kind: shared_notice
+      - url: https://benesse-artsite.jp/calendar/
+        kind: shared_notice  # リンク「開館カレンダー」から確定（推測していない）
+    allow_hosts: [benesse-artsite.jp]
+    max_pages: 10
+
   - id: kagawa-kankakei
     name: 寒霞渓
     operator: 小豆島総合開発株式会社（寒霞渓ロープウェイ）
@@ -408,7 +429,9 @@ sources:
     pages:
       - url: https://ferry.co.jp/news/
         kind: notice
-      - url: https://ferry.co.jp/ticket/cat/ticket_takamatsu-shodoshima/
+      # /ticket/cat/... はセット券の案内で、区間の時刻・運賃が無い。
+      # 航路ページ（リンク「高松ー小豆島フェリー」から確定）を seed する
+      - url: https://ferry.co.jp/home/takamatsu-shodoshima/
         kind: timetable
     allow_hosts: [ferry.co.jp]
     max_pages: 8
@@ -424,7 +447,8 @@ sources:
         - route_id: takamatsu-shodoshima
           from_node: 高松港
           to_node: 小豆島（坂手港）
-          timetable_url: https://ferry.co.jp/ticket/cat/ticket_takamatsu-shodoshima/
+          timetable_url: https://ferry.co.jp/home/takamatsu-shodoshima/
+          fare_url: https://ferry.co.jp/home/takamatsu-shodoshima/
           names:
             ja: {text: 高松〜小豆島（坂手）, source: ja}
             en: {text: Takamatsu - Shodoshima (Sakate), source: glossary}
@@ -441,9 +465,12 @@ sources:
     policy: crawl
     official_url: https://www.kotoden.co.jp/
     pages:
+      # /frame/train.html はフレームの目次。中の実ページ（time/ と fare/）も辿ったが、
+      # どちらも PDF（時刻表・三角運賃表）へのリンク集で、HTML に事実が無い。
+      # 第1フェーズは PDF を見送るので、時刻表と運賃は公式ページへのリンクで返す（ADR 0001）
       - url: https://www.kotoden.co.jp/frame/train.html
         kind: timetable
-    allow_hosts: [www.kotoden.co.jp]
+    allow_hosts: [www.kotoden.co.jp, kotoden.co.jp]
     max_pages: 8
     transport:
       operator_id: kotoden
@@ -457,6 +484,7 @@ sources:
           from_node: 高松築港
           to_node: 琴電琴平
           timetable_url: https://www.kotoden.co.jp/frame/train.html
+          fare_url: http://www.kotoden.co.jp/publichtm/kotoden/fare/index.htm
           names:
             ja: {text: 琴平線, source: ja}
             en: {text: Kotohira Line, source: glossary}
@@ -475,8 +503,9 @@ sources:
     pages:
       - url: https://www.shodoshima-olive-bus.com/dia/
         kind: timetable
-      - url: https://www.shodoshima-olive-bus.com/tickets/
-        kind: spot_fees
+      # /tickets/ は回数券・1日乗車券のページで区間の運賃ではないので外した。
+      # /fare/ も辿ったが、区間ごとの運賃は PDF で、HTML には「小児は大人の半額」しか無い。
+      # 運賃は公式の運賃表ページへのリンクで返す（ADR 0001。PDF は第1フェーズでは見送り）
     allow_hosts: [www.shodoshima-olive-bus.com]
     max_pages: 8
     transport:
@@ -491,6 +520,7 @@ sources:
           from_node: 坂手港
           to_node: 土庄港
           timetable_url: https://www.shodoshima-olive-bus.com/dia/
+          fare_url: https://www.shodoshima-olive-bus.com/fare/
           names:
             ja: {text: 坂手線, source: ja}
             en: {text: Sakate Line, source: glossary}
@@ -509,6 +539,8 @@ sources:
     pages:
       - url: https://shikokukisen.com/takamatsu-miyanoura-ferry-unko/
         kind: timetable
+      - url: https://shikokukisen.com/takamatsu-miyanoura/
+        kind: route_fares  # リンク「運賃／時刻表」から確定。航路ごとの運賃が載る
       - url: https://shikokukisen.com/news/
         kind: notice
     allow_hosts: [www.shikokukisen.com, shikokukisen.com]
@@ -526,6 +558,7 @@ sources:
           from_node: 高松港
           to_node: 直島（宮浦港）
           timetable_url: https://shikokukisen.com/takamatsu-miyanoura-ferry-unko/
+          fare_url: https://shikokukisen.com/takamatsu-miyanoura/
           names:
             ja: {text: 高松〜直島（宮浦）, source: ja}
             en: {text: Takamatsu - Naoshima (Miyanoura), source: glossary}

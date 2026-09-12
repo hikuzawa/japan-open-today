@@ -299,10 +299,10 @@
       "fields": [
         "first_departure",
         "last_departure",
-        "duration_minutes"
+        "duration_minutes",
+        "fares"
       ],
       "missing": [
-        "fares",
         "service_days"
       ]
     }
