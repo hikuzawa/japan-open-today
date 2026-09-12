@@ -30,8 +30,10 @@ from urllib.parse import urlparse
 from sitemill.settings import Workspace
 
 from japan_open_today.data import Dataset, load_entries
+from tools.collect_spots import CLOCK, _own_facility
 
-CLOCK = re.compile(r"\d{1,2}\s*[:時]\s*\d{0,2}|24\s*時間|終日")
+# 「参拝自由」のように時間の定めが無いと明示している書き方も、営業時間の根拠になる
+ALWAYS_OPEN = re.compile(r"参拝自由|拝観自由|入[園館場]自由|見学自由|24\s*時間|終日|常時開放")
 
 
 def main() -> int:
@@ -55,9 +57,12 @@ def main() -> int:
         if cand is None:
             continue
         hours = (cand.get("info") or {}).get("営業時間", "")
-        if not CLOCK.search(hours) or cand["url"] in seeded:
+        # 施設の一部（宝物館・売店・レストラン）の時間しか載っていないページは足さない。
+        # 足すと、屋島寺の「宝物館9:30~16:30」が境内の開門時間として公開される
+        own = _own_facility(hours, spot.name("ja"))
+        if not (CLOCK.search(own) or ALWAYS_OPEN.search(own)) or cand["url"] in seeded:
             continue
-        want.append((spot.source_id, cand["url"], " ".join(hours.split())[:60]))
+        want.append((spot.source_id, cand["url"], " ".join(own.split())[:60]))
 
     print(f"== 観光協会のページを営業時間の情報源に足す: {len(want)} 件 ==")
     for source_id, url, hours in want:

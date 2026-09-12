@@ -390,11 +390,13 @@ sources:
     pages:
       - url: https://www.konpira.or.jp/
         kind: spot_detail
-    allow_hosts: [www.konpira.or.jp]
+      - url: https://www.my-kagawa.jp/point/75
+        kind: spot_hours  # 観光協会の基本情報に営業時間あり: 参拝時間 6:00~18:00 表書院・高橋由一館・宝物館 9:00~17:00(入館は16:30まで)
+    allow_hosts: [www.konpira.or.jp, www.my-kagawa.jp]
     max_pages: 8
     spot:
       spot_id: konpira
-      spot_type: open_air  # 境内は無料で、参拝時間の定めの記載が公式ページに無い
+      spot_type: gated  # 施設自身の営業時間/有料の記載あり: 参拝時間 6:00~18:00
       area: kotohira
       category: shrine_temple
       names:
@@ -817,13 +819,13 @@ sources:
     pages:
       - url: http://www.88shikokuhenro.jp/84yashimaji/
         kind: spot_detail
-      - url: https://www.my-kagawa.jp/point/280
-        kind: spot_hours  # 観光協会の基本情報に営業時間あり: 宝物館9:30~16:30 納経の受付時間は7:00~17:00
+      # 除外: 観光協会の営業時間は「宝物館9:30~16:30 納経7:00~17:00」で、
+      #       境内（参拝自由）の時間ではない。施設の一部の時間は採らない（ADR 0011）
     allow_hosts: [www.88shikokuhenro.jp, www.my-kagawa.jp]
     max_pages: 8
     spot:
       spot_id: 88shikokuhenro
-      spot_type: gated  # 営業時間または料金の記載あり（観光協会の一覧）
+      spot_type: open_air  # 時間・料金は施設の一部のもの（宝物館9:30~16:30 納経の受付時間は7:00~17:00）
       area: takamatsu
       category: shrine_temple
       names:
@@ -1390,7 +1392,7 @@ sources:
     max_pages: 8
     spot:
       spot_id: higashikagawa
-      spot_type: gated  # 営業時間または料金の記載あり（観光協会の一覧）
+      spot_type: open_air  # 時間・料金は施設の一部のもの（ボランティアガイドは無料。 傷害保険は参加者ご自身で加入してください。）
       area: higashikagawa
       category: castle
       names:

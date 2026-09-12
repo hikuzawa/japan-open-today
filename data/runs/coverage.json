@@ -1,5 +1,5 @@
 {
-  "today": "2026-09-12",
+  "today": "2026-09-13",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -235,24 +235,24 @@
     {
       "spot_id": "konpira",
       "name": "金刀比羅宮",
-      "spot_type": "open_air",
+      "spot_type": "gated",
       "settled": true,
       "fields": [
+        "hours",
+        "closures",
         "address",
         "phone",
         "reservation_required"
       ],
       "missing": [
-        "hours",
-        "closures",
         "fees"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 7
+        "open": 7
       }
     },
     {
@@ -494,21 +494,21 @@
     {
       "spot_id": "88shikokuhenro",
       "name": "屋島寺",
-      "spot_type": "gated",
-      "settled": false,
+      "spot_type": "open_air",
+      "settled": true,
       "fields": [
-        "hours",
-        "closures",
-        "fees",
         "address",
         "phone"
       ],
       "missing": [
+        "hours",
+        "closures",
+        "fees",
         "reservation_required"
       ],
       "today": "unknown",
       "today_reasons": [
-        "irregular_closed"
+        "no_data"
       ],
       "week": {
         "unknown": 7
@@ -552,13 +552,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -645,13 +645,13 @@
       "missing": [
         "fees"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -691,13 +691,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 3,
-        "closed": 4
+        "closed": 4,
+        "open": 3
       }
     },
     {
@@ -714,13 +714,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -1008,8 +1008,8 @@
     {
       "spot_id": "higashikagawa",
       "name": "引田城跡（城山）",
-      "spot_type": "gated",
-      "settled": false,
+      "spot_type": "open_air",
+      "settled": true,
       "fields": [
         "address",
         "phone",
@@ -1631,13 +1631,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -2293,30 +2293,30 @@
   ],
   "by_type": {
     "gated": {
-      "total": 93,
+      "total": 92,
       "hours": 87
     },
     "open_air": {
-      "total": 3,
-      "settled": 3
+      "total": 4,
+      "settled": 4
     },
     "untyped": 0
   },
   "field_counts": {
     "hours": 87,
     "closures": 67,
-    "fees": 49,
+    "fees": 48,
     "address": 96,
     "phone": 94,
     "reservation_required": 31
   },
   "states": {
-    "open": 77,
-    "unknown": 17,
-    "closed": 2
+    "open": 75,
+    "unknown": 16,
+    "closed": 5
   },
   "unknown_reasons": {
     "no_data": 13,
-    "irregular_closed": 4
+    "irregular_closed": 3
   }
 }

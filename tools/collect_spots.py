@@ -64,6 +64,16 @@ SKIP_RULES: tuple[tuple[str, re.Pattern[str]], ...] = (
 # 基本情報の見出し
 INFO_KEYS = ("住所", "電話番号", "営業時間", "定休日", "料金", "アクセス", "駐車場")
 FEE_AMOUNT = re.compile(r"\d[\d,]*\s*円|無料")
+# 型の判定に使うのは**有料の金額**だけ。「無料」はゲートが無いことの証拠なので、
+# これで gated にすると、引田城跡（城山）やフラワーパーク浦島が有料施設になる
+PAID_AMOUNT = re.compile(r"\d[\d,]*\s*円")
+# 施設の一部（宝物館・駐車場・売店）の時間や料金。**施設そのものの時間ではない**。
+# 屋島寺は「宝物館9:30~16:30」だけが載っていて、境内は参拝自由である
+_PAREN = re.compile(r"[（(][^）)]*[）)]")
+SUB_FACILITY = re.compile(
+    r"宝物館|霊宝館|資料館|駐車場|売店|物産|カフェ|レストラン|食堂|喫茶|"
+    r"納経|御朱印|ボランティアガイド|貸自転車|ロッカー|プール|温水"
+)
 CLOCK = re.compile(r"\d{1,2}\s*[:時]\s*\d{0,2}|24\s*時間|終日")
 # 宿の印。名前に「ホテル」「旅館」が無い宿がある（「トレスタ白山」）
 CHECK_IN = re.compile(r"チェックイン|チェックアウト|IN\s*1[0-9]:|素泊")
@@ -204,12 +214,51 @@ def classify(client: PoliteClient, cand: Candidate) -> None:
         cand.spot_type = "unknown"
         cand.reason = "基本情報の表が読めない（別の情報源が要る）"
         return
-    if CLOCK.search(hours) or FEE_AMOUNT.search(fee):
+    _decide_gate(cand, hours, fee)
+
+
+def _own_facility(text: str, name: str = "") -> str:
+    """施設の一部（宝物館・駐車場・売店）について書かれた部分を落とす。
+
+    残った文字列に時刻や金額があれば、それは**施設そのもの**のものである。
+    落とさないと、宝物館だけ有料の寺が「ゲートのある施設」になり、境内が参拝自由でも
+    「不明」と出てしまう（屋島寺・瀬戸大橋の実例）。
+
+    ただし、その施設自身が「ギャラリー」「資料館」であれば、それは一部ではなく本体なので
+    落とさない（施設名に同じ語が入っているかで見る）。
+    """
+    text = _PAREN.sub(
+        lambda m: "" if SUB_FACILITY.search(m.group(0)) and m.group(0) not in name else m.group(0),
+        text or "",
+    )
+    kept: list[str] = []
+    for part in re.split(r"[、。,\n]|\s{2,}", text):
+        part = part.strip()
+        if not part:
+            continue
+        hit = SUB_FACILITY.search(part)
+        # 落とすのは「宝物館9:30~16:30」のように**その一部について書かれた**断片だけ。
+        # 語が後ろに出てくるだけの断片（「9:00~17:30 ほか売店あり」）は残す
+        if hit and hit.start() <= 6 and hit.group(0) not in name:
+            continue
+        kept.append(part)
+    return " ".join(kept)
+
+
+def _decide_gate(cand: Candidate, hours: str, fee: str) -> None:
+    """ゲートのある施設か、屋外の場所か（ADR 0011）。"""
+    own_hours = _own_facility(hours, cand.name)
+    own_fee = _own_facility(fee, cand.name)
+    if CLOCK.search(own_hours) or PAID_AMOUNT.search(own_fee):
         cand.spot_type = "gated"
-        cand.reason = f"営業時間/料金の記載あり: {(hours or fee)[:60]}"
-    else:
+        cand.reason = f"施設自身の営業時間/有料の記載あり: {(own_hours or own_fee)[:60]}"
+        return
+    if own_hours != hours or own_fee != fee:
         cand.spot_type = "open_air"
-        cand.reason = "営業時間・料金の記載が無い"
+        cand.reason = f"時間・料金は施設の一部のもの（{(hours or fee)[:40]}）"
+        return
+    cand.spot_type = "open_air"
+    cand.reason = "営業時間・有料の記載が無い"
 
 
 def redecide_from_info(cand: Candidate) -> bool:
@@ -232,11 +281,8 @@ def redecide_from_info(cand: Candidate) -> bool:
         cand.spot_type, cand.reason = "skip", "lodging（チェックイン時刻の記載）"
     elif not cand.info:
         cand.spot_type, cand.reason = "unknown", "基本情報の表が読めない（別の情報源が要る）"
-    elif CLOCK.search(hours) or FEE_AMOUNT.search(fee):
-        cand.spot_type = "gated"
-        cand.reason = f"営業時間/料金の記載あり: {(hours or fee)[:60]}"
     else:
-        cand.spot_type, cand.reason = "open_air", "営業時間・料金の記載が無い"
+        _decide_gate(cand, hours, fee)
     return (cand.spot_type, cand.reason) != before
 
 

@@ -159,3 +159,35 @@ def test_sports_venues_and_outlets_are_out_of_scope() -> None:
         "国営讃岐まんのう公園",
     ):
         assert _skip_reason(name, "") is None, name
+
+
+def test_a_sub_facilitys_hours_do_not_make_a_place_gated() -> None:
+    """屋島寺に載っているのは「宝物館9:30~16:30」だけ。境内は参拝自由で、ゲートは無い。
+
+    施設の一部の時間・料金を施設のものと見なすと、無料で入れる場所が
+    「時間が取れない有料施設」になり、ページが「不明」のままになる（ADR 0011）。
+    """
+    from tools.collect_spots import Candidate, redecide_from_info
+
+    def decide(name: str, hours: str, fee: str) -> Candidate:
+        cand = Candidate(
+            point_id="1",
+            name=name,
+            url="https://example.jp/1",
+            area="高松市周辺",
+            spot_type="gated",
+            info={"営業時間": hours, "料金": fee},
+        )
+        redecide_from_info(cand)
+        return cand
+
+    assert decide("屋島寺", "宝物館9:30~16:30", "宝物館入館 大人500円").spot_type == "open_air"
+    # 「無料」はゲートが無いことの証拠。これで有料施設にしてはいけない
+    assert decide("フラワーパーク浦島", "", "無料").spot_type == "open_air"
+    assert decide("引田城跡", "", "ボランティアガイドは無料").spot_type == "open_air"
+    # 施設自身の時間・有料の記載はそのまま gated
+    assert decide("栗林公園", "7:00~17:00", "大人 410円").spot_type == "gated"
+    assert decide("善通寺", "境内の開門時間 本堂 7:00~17:00", "").spot_type == "gated"
+    assert (
+        decide("ゴールドタワー", "【展望台】平日 10:00~18:00", "大人1,500円").spot_type == "gated"
+    )
