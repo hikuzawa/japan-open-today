@@ -1,8 +1,4 @@
-"""sitemill の Service 実装。データ・スキーマ・ページ構成はこちらが持つ（sitemill ADR 0006）。
-
-ページ生成（`pages`）は S5 で入れる。ここまでで揃うのは「何を巡回し、何を抽出し、
-どうレコードにするか」まで。
-"""
+"""sitemill の Service 実装。データ・スキーマ・ページ構成はこちらが持つ（sitemill ADR 0006）。"""
 
 from __future__ import annotations
 
@@ -69,10 +65,14 @@ class JapanOpenTodayService:
         return finalize_records(ws, now=now)
 
     def pages(self, ws: Workspace, *, now: datetime) -> list[Page]:
-        raise NotImplementedError("ページ生成は S5 で実装する")
+        from japan_open_today import pages as page_builder
+
+        return page_builder.build_pages(ws, Dataset.load(ws), now=now)
 
     def search_index(self, ws: Workspace) -> Any:
-        return None
+        from japan_open_today import pages as page_builder
+
+        return page_builder.search_index(ws, Dataset.load(ws))
 
     def redirects(self, ws: Workspace) -> list[Redirect]:
         return []
@@ -91,14 +91,21 @@ class JapanOpenTodayService:
         return out
 
     def pii_policy(self, ws: Workspace) -> Any:
-        """施設の公式電話は公開情報なので、公開前の個人情報検査では許可する。"""
-        from sitemill.build.pii import allow_also, default_jp_gov_policy
+        """施設の公式電話は公開情報なので、公開前の個人情報検査では許可する。
 
-        phones = [
-            spot.phone.value
-            for spot in Dataset.load(ws).spots
-            if spot.phone.ok and spot.phone.value
-        ]
+        電話番号は `phone` に入るとは限らず、所在地の原文に混ざっていることがある
+        （金刀比羅宮の実例）。施設が自分の公式ページに載せている代表番号なので、
+        `phone` と `address` の両方から拾って許可する。第三者の番号は載せない設計なので、
+        ここで許可するのは施設自身の連絡先だけ。
+        """
+        from sitemill.build.pii import PHONE_RE, allow_also, default_jp_gov_policy
+
+        phones: list[str] = []
+        for spot in Dataset.load(ws).spots:
+            for field in (spot.phone, spot.address):
+                for text in (field.value, field.quote):
+                    if text:
+                        phones.extend(PHONE_RE.findall(str(text)))
         return allow_also(default_jp_gov_policy(), phones=phones)
 
     def review_candidates(self, ws: Workspace) -> list[dict[str, Any]]:

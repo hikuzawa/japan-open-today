@@ -163,6 +163,12 @@ sources:
   # 運営主体の根拠は benesse-artsite.jp/about/ の 1 文から取っている。施設ページ本体には無く、
   # サイト全体の「〜とは」のページにある（最初の収集では法人名の空白でパターンが外れて拾えず、
   # レビュー行列に入れていた。ADR 0009 追記）。
+  #
+  # 開館カレンダー（/calendar/）とお知らせ（/news/）は**複数施設の告知が 1 ページに混在する**ため
+  # seed に入れていない。1 ページを 1 施設に帰属させると、別の施設の臨時休館をこの施設のものとして
+  # 出してしまう（実際に /calendar/ には地中美術館・きんざ・直島新美術館の休館が並んでいた）。
+  # 共有ページから施設ごとに切り分ける抽出は S6 で入れる。それまで開館時間・休館日・料金は
+  # 各施設のページから取る（3 施設とも施設ページに記載がある）。
   - id: kagawa-chichu
     name: 地中美術館
     operator: 株式会社ベネッセコーポレーション・公益財団法人福武財団
@@ -176,10 +182,6 @@ sources:
     pages:
       - url: https://benesse-artsite.jp/art/chichu.html
         kind: spot_detail
-      - url: https://benesse-artsite.jp/calendar/
-        kind: spot_hours
-      - url: https://benesse-artsite.jp/news/
-        kind: notice
     allow_hosts: [benesse-artsite.jp]
     max_pages: 10
     spot:
@@ -206,10 +208,6 @@ sources:
     pages:
       - url: https://benesse-artsite.jp/art/benessehouse-museum.html
         kind: spot_detail
-      - url: https://benesse-artsite.jp/calendar/
-        kind: spot_hours
-      - url: https://benesse-artsite.jp/news/
-        kind: notice
     allow_hosts: [benesse-artsite.jp]
     max_pages: 10
     spot:
@@ -236,10 +234,6 @@ sources:
     pages:
       - url: https://benesse-artsite.jp/art/teshima-artmuseum.html
         kind: spot_detail
-      - url: https://benesse-artsite.jp/calendar/
-        kind: spot_hours
-      - url: https://benesse-artsite.jp/news/
-        kind: notice
     allow_hosts: [benesse-artsite.jp]
     max_pages: 10
     spot:

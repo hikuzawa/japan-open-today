@@ -21,6 +21,9 @@ sitemill の 2 つ目の利用者。香川県の観光施設と交通につい�
 ## コマンド（このディレクトリで実行）
 - `uv sync` / `uv run pytest` / `uv run ruff check src tests`
 - `uv run sitemill discover|crawl|extract|heal|build|run|eval` / `uv run sitemill deploy --dry-run`
+- `uv run python -m tools.sync_assets` 採用画像を `static/assets/` に複写（extract のあと build の前）
+- `uv run python -m tools.report_coverage` 項目の充足率と判定の内訳（unknown の理由）を数える
+- `uv run python -m tools.resolve_commons` / `tools.collect_sources` / `tools.probe_assets` 情報源と画像の調査
 - 生成物の確認は `dist/` の HTML をブラウザペインで直接開くか、`uv run python -m http.server -d dist 8000`
 
 ## 守ること

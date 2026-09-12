@@ -1,0 +1,323 @@
+{
+  "today": "2026-09-12",
+  "spots": [
+    {
+      "spot_id": "ritsurin",
+      "name": "栗林公園",
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "shikokumura",
+      "name": "四国村ミウゼアム",
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "missing": [
+        "address",
+        "phone"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "yashima",
+      "name": "屋島",
+      "fields": [
+        "hours",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "closures",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "kmuseum",
+      "name": "香川県立ミュージアム",
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "tamamo",
+      "name": "高松城跡 玉藻公園",
+      "fields": [
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "hours"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "chichu",
+      "name": "地中美術館",
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "fees"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "benesse-house",
+      "name": "ベネッセハウス ミュージアム",
+      "fields": [
+        "hours",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "closures",
+        "fees"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "teshima-art",
+      "name": "豊島美術館",
+      "fields": [
+        "hours",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "closures",
+        "fees"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "kankakei",
+      "name": "寒霞渓",
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "24hitomi",
+      "name": "二十四の瞳映画村",
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "konpira",
+      "name": "金刀比羅宮",
+      "fields": [
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "chichibugahama",
+      "name": "父母ヶ浜",
+      "fields": [
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    }
+  ],
+  "routes": [
+    {
+      "route_id": "takamatsu-shodoshima",
+      "operator": "jumbo-ferry",
+      "fields": [],
+      "missing": [
+        "first_departure",
+        "last_departure",
+        "duration_minutes",
+        "fares",
+        "service_days"
+      ]
+    },
+    {
+      "route_id": "kotohira-line",
+      "operator": "kotoden",
+      "fields": [],
+      "missing": [
+        "first_departure",
+        "last_departure",
+        "duration_minutes",
+        "fares",
+        "service_days"
+      ]
+    },
+    {
+      "route_id": "sakate-line",
+      "operator": "olive-bus",
+      "fields": [],
+      "missing": [
+        "first_departure",
+        "last_departure",
+        "duration_minutes",
+        "fares",
+        "service_days"
+      ]
+    },
+    {
+      "route_id": "takamatsu-miyanoura",
+      "operator": "shikokukisen",
+      "fields": [
+        "first_departure",
+        "last_departure",
+        "duration_minutes"
+      ],
+      "missing": [
+        "fares",
+        "service_days"
+      ]
+    }
+  ],
+  "field_counts": {
+    "hours": 5,
+    "closures": 3,
+    "fees": 3,
+    "reservation_required": 7,
+    "address": 9,
+    "phone": 9
+  },
+  "states": {
+    "unknown": 7,
+    "open": 5
+  },
+  "unknown_reasons": {
+    "no_data": 7
+  }
+}

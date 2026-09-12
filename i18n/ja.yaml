@@ -2,7 +2,120 @@
 # 施設名や紹介文はデータとして持つ（出典と取得日時を添える。ADR 0002・0005）。
 site:
   name_short: 今日行ける日本
+  tagline: 香川の施設と交通が、今日どうなっているか
+nav:
+  today: 今日の状況
+  transport: 交通
+  about: 運営者情報
+  data: データについて
+  home: トップ
+  skip: 本文へ
+home:
+  heading: 香川、今日行けるところ
+  lead: 公式サイトから毎日取得した開館時間・休館日・臨時休業から、その日の状況を計算しています。
+  open_count: 開いている
+  unknown_count: 不明
+  closed_count: 休み
+  spots_count: 掲載施設
+  by_area: エリアから探す
+state:
+  open: 開いています
+  closed: 休みです
+  unknown: 不明です
+  open_short: 開
+  closed_short: 休
+  unknown_short: "?"
+verdict:
+  heading: "{date}の状況"
+  last_entry: "入館は {time} まで"
+  week: これから 7 日間
+  why: この判定の根拠
+  unknown_lead: この日の状況を確定できません。公式ページでご確認ください。
+  no_time: 時間の指定なし（常時開放）
+reason:
+  regular_hours: 公式ページの開館時間から
+  always_open: 公式ページに時間の指定がない（常時開放）
+  weekly_closed: 毎週の休館日
+  nth_weekday_closed: 第 n 曜日の休館日
+  annual_closed: 年間の休館期間
+  date_closed: 特定日の休館
+  holiday_open_exception: 休館日だが祝日のため開館
+  substitute_closed: 祝日の振替で休館
+  substitute_ambiguous: 祝日が続き、振替の扱いが原文から決められない
+  irregular_closed: 不定休
+  not_in_service: この日は運行しないダイヤ
+  special_closure_notice: 臨時休業の告知
+  special_open_notice: 臨時開館の告知
+  conflicting: 規則と告知が食い違っている
+  stale_source: 公式ページの取得が途切れている（情報が古い）
+  holiday_unknown: その年の祝日が分からない
+  no_data: 開館時間・休館日を公式ページから取得できていない
+facts:
+  heading: 事実
+  address: 所在地
+  phone: 電話
+  fee: 料金
+  reservation: 予約
+  visit_minutes: 所要時間
+  minutes: "約 {n} 分"
+  quote: "原文: {text}"
+  missing: 記載なし
+  official: 公式ページ（外部）
+  map: 地図で見る（外部）
+  social: 公式アカウント
+reservation:
+  "yes": 要予約
+  "no": 予約不要
+  partial: 一部要予約
+  unknown: 不明
+fee:
+  adult: 大人
+  child: 小学生以下
+  senior: 65歳以上
+area:
+  spots: このエリアの施設
+transport:
+  heading: 交通
+  lead: 島へ渡る船と、島を動く鉄道・バス。時刻表は事業者の公式ページでご確認ください。
+  first: 始発
+  last: 終発
+  duration: 所要
+  timetable: 時刻表（外部）
+affiliate:
+  heading: 宿・体験
+  preparing: 準備中
 asset:
   credit: "{author}（{license}）"
   credit_source: 出典ページ（Wikimedia Commons）
   fetched: "取得: {when}"
+trust:
+  title: この情報について
+  updated: 最終更新
+  timezone: （日本時間）
+  count: データ件数
+  count_value: "{count} 件"
+  sources: 一次情報
+  sources_default: 各施設の公式ページ
+  fetched: "（取得: {when}）"
+  operator: 運営者
+  contact: 連絡先
+  details: 詳細
+about:
+  heading: 運営者情報
+  operator: 運営者
+  disclaimer_title: 免責
+  disclaimer: >-
+    本サイトは各施設・交通事業者の公式ページから開館時間・休館日・料金などを機械的に取得し、
+    一次情報へのリンクとともに掲載しています。公式サイトの説明文は転載していません。
+    「今日行けるか」の判定は取得時点の情報からの計算で、確定できない場合は「不明」と表示します。
+    お出かけの前に必ず公式ページでご確認ください。
+data:
+  heading: データについて
+  lead: どの情報をどこから取っているかの一覧です。
+  sources: 情報源
+  operator_evidence: 運営主体の根拠
+  photos: 写真のライセンス
+  photo_none: 写真は採用していません
+notfound:
+  heading: ページが見つかりません
+  back: トップへ

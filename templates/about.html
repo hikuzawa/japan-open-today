@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ t('about.heading') }}</h1>
+<dl class="fact-list">
+  <dt>{{ t('about.operator') }}</dt><dd>{{ site.operator.name }}</dd>
+  <dt>{{ t('trust.contact') }}</dt><dd>{{ site.operator.contact }}</dd>
+</dl>
+<h2 class="section-head">{{ t('about.disclaimer_title') }}</h2>
+<p>{{ t('about.disclaimer') }}</p>
+{% if locale.code != 'ja' %}<p class="note" lang="ja">運営者・免責</p>{% endif %}
+{% endblock %}

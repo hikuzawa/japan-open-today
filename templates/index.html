@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ t('home.heading') }}</h1>
+<p class="lead">{{ t('home.lead') }}</p>
+{{ ui.stat_strip([
+  {"value": counts.open, "label": t('home.open_count')},
+  {"value": counts.unknown, "label": t('home.unknown_count')},
+  {"value": counts.closed, "label": t('home.closed_count')},
+  {"value": spot_total, "label": t('home.spots_count')},
+]) }}
+<p class="asof">{{ t('verdict.heading', date=today|date_short_l) }}</p>
+<h2 class="section-head">{{ t('home.by_area') }}</h2>
+<nav class="chips" aria-label="{{ t('home.by_area') }}">
+  {% for a in areas %}
+  <a class="chip" href="{{ locale.url_path('areas/' ~ a.slug ~ '/') }}">{{ a.name(locale.code) }}</a>
+  {% endfor %}
+</nav>
+<ul class="cards">
+  {% for row in rows %}{{ ui.spot_card(row, locale) }}{% endfor %}
+</ul>
+{% endblock %}

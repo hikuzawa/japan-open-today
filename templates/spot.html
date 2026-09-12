@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<nav class="breadcrumb"><a href="{{ locale.url_path('') }}">{{ t('nav.home') }}</a> /
+  <a href="{{ locale.url_path('areas/' ~ spot.area ~ '/') }}">{{ area.name(locale.code) }}</a></nav>
+<h1>{{ spot.name(locale.code) }}</h1>
+{{ ui.verdict_line(verdict, locale) }}
+{% if verdict.state.value == 'unknown' %}<p class="lead">{{ t('verdict.unknown_lead') }}</p>{% endif %}
+<p class="actions">{{ ui.primary_link(spot.official_url, t('facts.official')) }}
+{% if map.link_url %}<a class="secondary" href="{{ map.link_url }}" rel="noopener"
+   target="_blank">{{ t('facts.map') }}</a>{% endif %}</p>
+{{ ui.reasons(verdict, locale) }}
+{{ ui.week_strip(week, locale) }}
+{% if photo %}
+{{ sm.photo_figure(photo, locale, '/static/assets/' ~ photo.asset_id ~ photo.local_path.suffix) }}
+{% endif %}
+<section class="facts">
+  <h2 class="section-head">{{ t('facts.heading') }}</h2>
+  <dl class="fact-list">
+    {% if spot.address.ok %}<dt>{{ t('facts.address') }}</dt><dd>{{ spot.address.value }}</dd>{% endif %}
+    {% if spot.phone.ok %}<dt>{{ t('facts.phone') }}</dt><dd>{{ spot.phone.value }}</dd>{% endif %}
+    {% if fees %}
+    <dt>{{ t('facts.fee') }}</dt>
+    <dd>
+      {% for fee in fees if fee.amount.ok %}
+      <span class="fee">{{ t('fee.' ~ fee.category) }} {{ fee.amount.value|money_l }}</span>
+      {% endfor %}
+    </dd>
+    {% endif %}
+    <dt>{{ t('facts.reservation') }}</dt>
+    <dd>{{ t('reservation.' ~ spot.reservation_required) }}</dd>
+    {% if spot.visit_minutes.ok %}
+    <dt>{{ t('facts.visit_minutes') }}</dt><dd>{{ t('facts.minutes', n=spot.visit_minutes.value) }}</dd>
+    {% endif %}
+  </dl>
+</section>
+{% if spot.social %}
+<section class="social">
+  <h2 class="section-head">{{ t('facts.social') }}</h2>
+  <ul class="links">
+    {% for name, url in spot.social.items() %}
+    <li><a href="{{ url }}" rel="noopener nofollow" target="_blank">{{ name }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+<section class="affiliate">
+  <h2 class="section-head">{{ t('affiliate.heading') }}</h2>
+  <p class="preparing">{{ t('affiliate.preparing') }}</p>
+</section>
+{% endblock %}

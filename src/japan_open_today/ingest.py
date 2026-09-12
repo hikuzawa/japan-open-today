@@ -9,6 +9,7 @@
 from __future__ import annotations
 
 import logging
+import re
 from collections.abc import Sequence
 from datetime import date, datetime
 from typing import Any
@@ -45,7 +46,7 @@ def _spot_content(
     if hours is not None and hours.ok:
         periods = []
         for period in hours.value:  # type: ignore[union-attr]
-            dumped = period.model_dump()
+            dumped = period.model_dump(mode="json")
             dumped["evidence"] = _evidence(url, hours.quote, provenance).model_dump(mode="json")
             periods.append(dumped)
         content["hours"] = periods
@@ -54,7 +55,7 @@ def _spot_content(
     if closures is not None and closures.ok:
         rules = []
         for rule in closures.value:  # type: ignore[union-attr]
-            dumped = rule.model_dump()
+            dumped = rule.model_dump(mode="json")
             dumped["evidence"] = _evidence(url, closures.quote, provenance).model_dump(mode="json")
             rules.append(dumped)
         content["closures"] = rules
@@ -193,8 +194,108 @@ def ingest_items(
             counts[result] += 1
         return counts
 
+    if kind == "timetable":
+        routes = routes_from_entry(entry)
+        if not routes:
+            counts["skipped"] += 1
+            return counts
+        for content in _route_contents(items, routes, url=url, provenance=provenance):
+            result = store.upsert(
+                record_id_for(source.id, content["route_id"]),
+                content,
+                now=now,
+                provenance=provenance.model_dump(mode="json"),
+                merge=merge_record,
+            )
+            counts[result] += 1
+        if not counts["created"] and not counts["updated"]:
+            counts["skipped"] += 1
+        return counts
+
     counts["skipped"] += len(items) or 1
     return counts
+
+
+def _route_contents(
+    items: Sequence[ExtractedItem],
+    routes: Sequence[Any],
+    *,
+    url: str,
+    provenance: Provenance,
+) -> list[dict[str, Any]]:
+    """時刻表ページの抽出結果を、YAML に書いた航路・路線に割り当てる。
+
+    ページには複数の航路が並ぶ（「高松港―宮浦港」「宇野港―本村」など）。**原文の航路名と
+    起終点の地名が一致したものだけ**に割り当てる。どれとも一致しない行は捨てる。
+    地名が合わないものを「たぶんこれ」で当てると、別の航路の時刻を出してしまう。
+    """
+    out: list[dict[str, Any]] = []
+    for route in routes:
+        matched = None
+        for item in items:
+            label = item.value("route_label") or ""
+            if label and _matches_route(route, label):
+                matched = item
+                break
+        if matched is None:
+            continue
+        content: dict[str, Any] = {"route_id": route.route_id}
+        for field_name, target in (
+            ("first_departure", "first_departure"),
+            ("last_departure", "last_departure"),
+            ("duration_minutes", "duration_minutes"),
+        ):
+            fv = matched.fields.get(field_name)
+            if fv is not None and fv.ok:
+                content[target] = fv.model_dump(mode="json")
+        fares = []
+        for field_name, category in (("fare_adult", "adult"), ("fare_child", "child")):
+            fv = matched.fields.get(field_name)
+            if fv is not None and fv.ok:
+                fares.append(
+                    Fee(category=category, amount=fv).model_dump(mode="json")  # type: ignore[arg-type]
+                )
+        if fares:
+            content["fares"] = fares
+        days = matched.fields.get("service_days")
+        if days is not None and days.ok:
+            content["service_days"] = days.value.model_dump(mode="json")  # type: ignore[union-attr]
+            content["service_days_quote"] = days.quote
+        content["evidence"] = Evidence(
+            quote=matched.value("route_label"),
+            source_url=url,
+            fetched_at=provenance.fetched_at,
+        ).model_dump(mode="json")
+        content["_page_kind"] = "timetable"
+        out.append(content)
+    return out
+
+
+_BRACKETS = re.compile(r"[（）()［］\[\]・／/]+")
+
+
+def _tokens(node: str) -> list[str]:
+    """「直島（宮浦港）」→ ["直島", "宮浦"]。括弧と「港」「駅」の有無を無視する。"""
+    parts = _BRACKETS.split(node.replace("港", "").replace("駅", ""))
+    return [p.strip() for p in parts if p.strip()]
+
+
+def _matches_route(route: Any, label: str) -> bool:
+    """原文の航路名・路線名が、この航路のものか。
+
+    起終点の地名で照合する（「高松港―宮浦港(直島)」と「高松港」「直島（宮浦港）」）。
+    起終点が書かれていない路線名だけの表記（「坂手線」）は、YAML の路線名との一致で見る。
+    どちらにも当てはまらない行は捨てる。「たぶんこれ」で当てると別の航路の時刻を出してしまう。
+    """
+    stripped = label.replace("港", "").replace("駅", "")
+    ends = [n for n in (route.from_node, route.to_node) if n]
+    if ends and all(any(tok in stripped for tok in _tokens(node)) for node in ends):
+        return True
+    for name in route.names.values():
+        text = getattr(name, "text", None) or (name.get("text") if isinstance(name, dict) else None)
+        if text and text.replace("港", "").replace("駅", "") in stripped:
+            return True
+    return False
 
 
 def finalize_records(ws: Workspace, *, now: datetime) -> dict[str, int]:

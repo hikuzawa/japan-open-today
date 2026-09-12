@@ -1,7 +1,125 @@
 # Screen wording (English). Facility names and descriptions are data, not wording.
 site:
   name_short: Japan Open Today
+  tagline: What is open in Kagawa today
+nav:
+  today: Today
+  transport: Transport
+  about: About
+  data: Data
+  home: Home
+  skip: Skip to content
+home:
+  heading: Kagawa, open today
+  lead: >-
+    Opening hours, closing days and temporary closures are fetched from official sites every day,
+    and the status for each day is computed from them.
+  open_count: Open
+  unknown_count: Unknown
+  closed_count: Closed
+  spots_count: Places listed
+  by_area: Browse by area
+state:
+  open: Open
+  closed: Closed
+  unknown: Unknown
+  open_short: Open
+  closed_short: Shut
+  unknown_short: "?"
+verdict:
+  heading: "Status on {date}"
+  last_entry: "Last entry {time}"
+  week: Next 7 days
+  why: Why we say this
+  unknown_lead: We cannot confirm the status for this day. Please check the official page.
+  no_time: No fixed hours (always accessible)
+reason:
+  regular_hours: From the opening hours on the official page
+  always_open: The official page states no fixed hours
+  weekly_closed: Weekly closing day
+  nth_weekday_closed: Closed on specific weeks of the month
+  annual_closed: Annual closing period
+  date_closed: Closed on a specific date
+  holiday_open_exception: Normally closed, but open because it is a public holiday
+  substitute_closed: Closed in lieu of a public holiday
+  substitute_ambiguous: >-
+    Public holidays run consecutively and the source does not say where the closure moves
+  irregular_closed: Irregular closing days
+  not_in_service: Not running on this day
+  special_closure_notice: Temporary closure notice
+  special_open_notice: Temporary opening notice
+  conflicting: The rules and the notice disagree
+  stale_source: The official page has not been fetched recently
+  holiday_unknown: Public holidays for that year are unknown
+  no_data: Opening hours and closing days could not be obtained from the official page
+facts:
+  heading: Facts
+  address: Address
+  phone: Phone
+  fee: Admission
+  reservation: Booking
+  visit_minutes: Time needed
+  minutes: "about {n} min"
+  quote: "Source text: {text}"
+  missing: Not stated
+  official: Official page (external)
+  map: Open in Maps (external)
+  social: Official accounts
+reservation:
+  "yes": Booking required
+  "no": No booking needed
+  partial: Booking required for part of it
+  unknown: Unknown
+fee:
+  adult: Adult
+  child: Children
+  senior: Seniors
+area:
+  spots: Places in this area
+transport:
+  heading: Transport
+  lead: >-
+    Ferries to the islands, and trains and buses on them. Check the operator's official page for
+    full timetables.
+  first: First
+  last: Last
+  duration: Journey
+  timetable: Timetable (external)
+affiliate:
+  heading: Stays and experiences
+  preparing: Coming soon
 asset:
   credit: "{author} ({license})"
   credit_source: Source page (Wikimedia Commons)
   fetched: "Fetched {when}"
+trust:
+  title: About this information
+  updated: Last updated
+  timezone: (JST)
+  count: Records
+  count_value: "{count} records"
+  sources: Primary sources
+  sources_default: Official pages of each facility
+  fetched: "(fetched {when})"
+  operator: Operator
+  contact: Contact
+  details: details
+about:
+  heading: About
+  operator: Operator
+  disclaimer_title: Disclaimer
+  disclaimer: >-
+    This site collects opening hours, closing days and admission fees from the official pages of
+    each facility and transport operator, and links back to them. We do not reproduce their
+    descriptive text. The verdict for each day is computed from the information as fetched; where it
+    cannot be confirmed we say "unknown". Please check the official page before you travel.
+data:
+  heading: Data
+  lead: Where each piece of information comes from.
+  sources: Sources
+  operator_evidence: Evidence of who runs the place
+  photos: Photo licences
+  photo_none: No photo adopted
+notfound:
+  heading: Page not found
+  back: Go to the home page

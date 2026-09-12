@@ -1,0 +1,105 @@
+{# 表示の部品。事実は構造化データから、文言はカタログから（ADR 0005）。 #}
+
+{# 判定のしるし。色だけに意味を持たせない（文字も出す） #}
+{% macro state_badge(verdict, locale, short=false) %}
+<span class="badge badge-{{ verdict.state.value }}">
+  {{ t_in(locale, 'state.' ~ verdict.state.value ~ ('_short' if short else '')) }}
+</span>
+{% endmacro %}
+
+{# 日付を明記した断定＋時間帯。「今日」だけの表記は使わない（ADR 0004） #}
+{% macro verdict_line(verdict, locale) %}
+<p class="verdict verdict-{{ verdict.state.value }}">
+  <strong class="verdict-date">{{ fmt_date_short(verdict.day, locale) }}</strong>
+  <span class="verdict-state">{{ t_in(locale, 'state.' ~ verdict.state.value) }}</span>
+  {% if verdict.periods %}
+  <span class="verdict-hours">
+    {% for r in verdict.periods %}
+    <time>{{ fmt_time(r.start, locale) }}–{{ fmt_time(r.end, locale) }}</time>{% if not loop.last %} / {% endif %}
+    {% endfor %}
+  </span>
+  {% for r in verdict.periods if r.last_entry %}
+  <span class="verdict-note">{{ t_in(locale, 'verdict.last_entry', time=fmt_time(r.last_entry, locale)) }}</span>
+  {% endfor %}
+  {% elif verdict.codes and 'always_open' in verdict.codes %}
+  <span class="verdict-hours">{{ t_in(locale, 'verdict.no_time') }}</span>
+  {% endif %}
+</p>
+{% endmacro %}
+
+{# 根拠。原文の引用と一次情報 URL と取得日時を必ず添える（ADR 0004） #}
+{% macro reasons(verdict, locale) %}
+<details class="why" {% if verdict.state.value == 'unknown' %}open{% endif %}>
+  <summary>{{ t_in(locale, 'verdict.why') }}</summary>
+  <ul class="reason-list">
+    {% for r in verdict.reasons %}
+    <li>
+      <span class="reason-code">{{ t_in(locale, 'reason.' ~ r.code.value) }}</span>
+      {% set label = t_in(locale, 'reason.' ~ r.code.value) %}
+      {% if r.detail and r.detail != label %}<span class="reason-detail">{{ r.detail }}</span>{% endif %}
+      {% if r.quote %}<span class="reason-quote">{{ t_in(locale, 'facts.quote', text=r.quote) }}</span>{% endif %}
+      {% if r.source_url %}
+      <a class="reason-src" href="{{ r.source_url }}" rel="noopener" target="_blank">{{ t_in(locale, 'facts.official') }}</a>
+      {% endif %}
+      {% if r.fetched_at %}<span class="reason-when">{{ t_in(locale, 'trust.fetched', when=fmt_datetime(r.fetched_at, locale)) }}</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</details>
+{% endmacro %}
+
+{# 7 日分の帯。数日後に見ても事実として読める（ADR 0004） #}
+{% macro week_strip(week, locale) %}
+<section class="week" aria-label="{{ t_in(locale, 'verdict.week') }}">
+  <h2 class="section-head">{{ t_in(locale, 'verdict.week') }}</h2>
+  <ol class="week-list">
+    {% for v in week %}
+    <li class="week-day week-{{ v.state.value }}">
+      <span class="week-date">{{ fmt_date_short(v.day, locale) }}</span>
+      <span class="week-state">{{ t_in(locale, 'state.' ~ v.state.value ~ '_short') }}</span>
+      {% if v.periods %}
+      <span class="week-hours">{{ fmt_time(v.periods[0].start, locale) }}–{{ fmt_time(v.periods[0].end, locale) }}</span>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endmacro %}
+
+{# 数字の帯（ADR 0007）。値が無い項目は出さない #}
+{% macro stat_strip(items) %}
+<ul class="stats">
+  {% for item in items if item.value is not none %}
+  <li class="stat">
+    <span class="stat-value">{{ item.value }}</span>
+    <span class="stat-label">{{ item.label }}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}
+
+{% macro spot_card(row, locale) %}
+<li class="card">
+  <a class="card-link" href="{{ row.url }}">
+    {% if row.photo %}
+    <img class="card-photo" src="/static/assets/{{ row.photo.asset_id }}{{ row.photo.local_path.suffix }}"
+         alt="" data-sitemill-asset="{{ row.photo.asset_id }}" loading="lazy" decoding="async" width="480" height="320">
+    {% endif %}
+    <span class="card-body">
+      <span class="card-head">
+        <span class="card-name">{{ row.name }}</span>
+        {{ state_badge(row.verdict, locale, short=true) }}
+      </span>
+      <span class="card-meta">{{ row.area.name(locale.code) }}</span>
+      {% if row.verdict.periods %}
+      <span class="card-hours">{{ fmt_time(row.verdict.periods[0].start, locale) }}–{{ fmt_time(row.verdict.periods[0].end, locale) }}</span>
+      {% endif %}
+    </span>
+  </a>
+</li>
+{% endmacro %}
+
+{# 一次情報への主ボタン。常に主導線（ADR 0007） #}
+{% macro primary_link(url, label) %}
+<a class="primary" href="{{ url }}" rel="noopener" target="_blank">{{ label }}<span aria-hidden="true"> ↗</span></a>
+{% endmacro %}

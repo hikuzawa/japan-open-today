@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ t('transport.heading') }}</h1>
+<p class="lead">{{ t('transport.lead') }}</p>
+<p class="asof">{{ t('verdict.heading', date=today|date_short_l) }}</p>
+{% for group in operators %}
+<section class="operator">
+  <h2 class="section-head">{{ group.operator.name(locale.code) }}</h2>
+  <p class="actions">{{ ui.primary_link(group.operator.official_url, t('facts.official')) }}</p>
+  <ul class="routes">
+    {% for row in group.routes %}
+    <li class="route">
+      <span class="route-name">{{ row.route.name(locale.code) }}</span>
+      {{ ui.state_badge(row.verdict, locale, short=true) }}
+      <span class="route-facts">
+        {% if row.route.first_departure.ok %}{{ t('transport.first') }}
+          {{ row.route.first_departure.value }}{% endif %}
+        {% if row.route.last_departure.ok %}/ {{ t('transport.last') }}
+          {{ row.route.last_departure.value }}{% endif %}
+        {% if row.route.duration_minutes.ok %}/ {{ t('transport.duration') }}
+          {{ t('facts.minutes', n=row.route.duration_minutes.value) }}{% endif %}
+      </span>
+      {% if row.route.timetable_url %}
+      <a class="secondary" href="{{ row.route.timetable_url }}" rel="noopener"
+         target="_blank">{{ t('transport.timetable') }}</a>
+      {% endif %}
+      {{ ui.reasons(row.verdict, locale) }}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+{% endblock %}

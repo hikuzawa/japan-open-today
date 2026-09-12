@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ t('data.heading') }}</h1>
+<p class="lead">{{ t('data.lead') }}</p>
+<h2 class="section-head">{{ t('data.sources') }}</h2>
+<div class="scroll-x">
+<table class="data-table">
+  <thead><tr><th>{{ t('facts.official') }}</th><th>{{ t('data.operator_evidence') }}</th></tr></thead>
+  <tbody>
+    {% for s in sources %}
+    <tr>
+      <td><a href="{{ s.official_url }}" rel="noopener" target="_blank">{{ s.name }}</a></td>
+      <td>{% if s.operator_evidence %}<span class="quote">{{ s.operator_evidence.quote }}</span>
+        <a href="{{ s.operator_evidence.url }}" rel="noopener" target="_blank">&#8599;</a>{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+<h2 class="section-head">{{ t('data.photos') }}</h2>
+<ul class="links">
+  {% for spot in spots %}
+  <li>{{ spot.name(locale.code) }}:
+    {% if assets.get(spot.spot_id) %}
+    {% for a in assets[spot.spot_id] %}
+    <a href="{{ a.page_url }}" rel="noopener nofollow"
+       target="_blank">{{ a.license.short_label }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
+    {% else %}{{ t('data.photo_none') }}{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

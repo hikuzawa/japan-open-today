@@ -1,7 +1,119 @@
 # 畫面文字（繁體中文）。設施名稱與介紹屬於資料，不放在這裡。
 site:
   name_short: 今天能去的日本
+  tagline: 香川的設施與交通，今天的狀況
+nav:
+  today: 今天
+  transport: 交通
+  about: 營運者資訊
+  data: 資料說明
+  home: 首頁
+  skip: 跳至內容
+home:
+  heading: 香川，今天能去的地方
+  lead: 每天從官方網站取得開館時間、休館日與臨時休館，並據此計算每一天的狀況。
+  open_count: 有開
+  unknown_count: 不明
+  closed_count: 休息
+  spots_count: 收錄設施
+  by_area: 依地區瀏覽
+state:
+  open: 有開
+  closed: 休息
+  unknown: 不明
+  open_short: 開
+  closed_short: 休
+  unknown_short: "?"
+verdict:
+  heading: "{date} 的狀況"
+  last_entry: "最後入館 {time}"
+  week: 未來 7 天
+  why: 判斷的依據
+  unknown_lead: 無法確定這一天的狀況，請查看官方網頁。
+  no_time: 未指定時間（隨時開放）
+reason:
+  regular_hours: 依官方網頁的開館時間
+  always_open: 官方網頁未指定時間（隨時開放）
+  weekly_closed: 每週固定休館
+  nth_weekday_closed: 每月特定週次休館
+  annual_closed: 年度休館期間
+  date_closed: 特定日期休館
+  holiday_open_exception: 原為休館日，但因逢國定假日開館
+  substitute_closed: 因假日而順延休館
+  substitute_ambiguous: 假日連續，原文未說明休館如何順延
+  irregular_closed: 不定期休館
+  not_in_service: 這一天不營運
+  special_closure_notice: 臨時休館公告
+  special_open_notice: 臨時開館公告
+  conflicting: 規則與公告不一致
+  stale_source: 官方網頁已有一段時間未能取得
+  holiday_unknown: 該年度的國定假日不明
+  no_data: 無法從官方網頁取得開館時間與休館日
+facts:
+  heading: 事實
+  address: 地址
+  phone: 電話
+  fee: 費用
+  reservation: 預約
+  visit_minutes: 所需時間
+  minutes: "約 {n} 分鐘"
+  quote: "原文: {text}"
+  missing: 未記載
+  official: 官方網頁（外部）
+  map: 在地圖上查看（外部）
+  social: 官方帳號
+reservation:
+  "yes": 需預約
+  "no": 不需預約
+  partial: 部分需預約
+  unknown: 不明
+fee:
+  adult: 成人
+  child: 小學生以下
+  senior: 65 歲以上
+area:
+  spots: 這個地區的設施
+transport:
+  heading: 交通
+  lead: 前往島嶼的船班，以及島上的鐵路與巴士。完整時刻表請查看業者官方網頁。
+  first: 首班
+  last: 末班
+  duration: 所需
+  timetable: 時刻表（外部）
+affiliate:
+  heading: 住宿與體驗
+  preparing: 準備中
 asset:
   credit: "{author}（{license}）"
   credit_source: 來源頁面（Wikimedia Commons）
   fetched: "擷取: {when}"
+trust:
+  title: 關於這些資訊
+  updated: 最後更新
+  timezone: （日本時間）
+  count: 資料筆數
+  count_value: "{count} 筆"
+  sources: 一手資訊
+  sources_default: 各設施的官方網頁
+  fetched: "（擷取: {when}）"
+  operator: 營運者
+  contact: 聯絡方式
+  details: 詳細
+about:
+  heading: 營運者資訊
+  operator: 營運者
+  disclaimer_title: 免責聲明
+  disclaimer: >-
+    本網站從各設施與交通業者的官方網頁機械性取得開館時間、休館日與費用等資訊，並附上一手資訊的連結。
+    我們不轉載官方網頁的說明文字。每一天的判斷是依取得時的資訊計算而成，無法確定時會顯示「不明」。
+    出發前請務必查看官方網頁。
+data:
+  heading: 資料說明
+  lead: 各項資訊的來源一覽。
+  sources: 資訊來源
+  operator_evidence: 營運主體的依據
+  photos: 照片授權
+  photo_none: 沒有採用照片
+notfound:
+  heading: 找不到頁面
+  back: 回到首頁
