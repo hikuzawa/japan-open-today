@@ -56,6 +56,10 @@ SKIP_RULES: tuple[tuple[str, re.Pattern[str]], ...] = (
     ("experience", re.compile(r"体験|教室|ツアー|レンタサイクル|貸自転車")),
     ("lodging", re.compile(r"ホテル|旅館|民宿|ゲストハウス|コテージ|キャンプ|宿泊")),
     ("event", re.compile(r"まつり|祭り|フェス|花火|イベント")),
+    # 競技・運動の施設。旅行者の「今日行けるか」の対象ではない（ADR 0011）。
+    # 「運動公園」は公園として訪れる場所なので除かない
+    ("sports", re.compile(r"ゴルフ|カントリークラブ|体育館|球場|テニス|野球|武道館|競技場")),
+    ("shop", re.compile(r"アウトレット|工場直売|ファクトリーショップ")),
 )
 # 基本情報の見出し
 INFO_KEYS = ("住所", "電話番号", "営業時間", "定休日", "料金", "アクセス", "駐車場")
@@ -217,6 +221,11 @@ def redecide_from_info(cand: Candidate) -> bool:
     if cand.spot_type not in ("gated", "open_air"):
         return False
     before = (cand.spot_type, cand.reason)
+    # 名前だけで分かる対象外（ゴルフ場・アウトレットなど）はここでも落とせる
+    by_name = _skip_reason(cand.name, "")
+    if by_name:
+        cand.spot_type, cand.reason = "skip", by_name
+        return (cand.spot_type, cand.reason) != before
     hours = cand.info.get("営業時間", "")
     fee = cand.info.get("料金", "")
     if CHECK_IN.search(hours + " " + fee):

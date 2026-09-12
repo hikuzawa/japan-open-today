@@ -144,3 +144,18 @@ def test_stored_rows_can_be_redecided_without_fetching_again() -> None:
     )
     assert redecide_from_info(skipped) is False
     assert skipped.spot_type == "skip"
+
+
+def test_sports_venues_and_outlets_are_out_of_scope() -> None:
+    """ゴルフ場・体育館・アウトレットは旅行者の「今日行けるか」の対象ではない（ADR 0011）。"""
+    assert _skip_reason("志度カントリークラブ", "") == "sports"
+    assert _skip_reason("さぬき市津田総合体育館", "") == "sports"
+    assert _skip_reason("手袋のアウトレット", "") == "shop"
+    # 公園・美術館・水族館は対象のまま
+    for name in (
+        "津田の松原",
+        "日本ドルフィンセンター",
+        "猪熊弦一郎現代美術館",
+        "国営讃岐まんのう公園",
+    ):
+        assert _skip_reason(name, "") is None, name
