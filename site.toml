@@ -1,0 +1,50 @@
+# サイト設定。秘密情報は書かない（.env に置く）。
+[site]
+id = "japan-open-today"
+name = "Japan Open Today"
+# 基準 URL はここ 1 か所だけで差し替える。canonical / hreflang / sitemap / robots はここから決まる。
+# 当面は Cloudflare Pages の既定ホスト（仮）。japan-open-today.com を取得したらこの 1 行を差し替える。
+# CI は配置前に、生成物がこの値を指していることを検査する（--expect-base）。
+base_url = "https://japan-open-today.pages.dev"
+service = "japan_open_today.service:service"
+# 基準言語。英語・繁体字を含む一覧は sitemill の i18n を実装したとき [[locales]] として足す（ADR 0005、S1）
+language = "ja"
+description = "香川県の観光施設と交通について、今日・今週の開館状況と運航状況を、公式サイトの原文から機械抽出した事実だけで提供します。"
+
+[operator]
+name = "準備中"
+contact = "準備中"
+
+[paths]
+data = "data"
+templates = "templates"
+static = "static"
+dist = "dist"
+fixtures = "tests/fixtures"
+
+[crawl]
+default_delay_seconds = 3.0
+jitter_seconds = 1.0
+timeout_seconds = 30.0
+max_pages_per_source = 40   # サイト全体の上限。各 source の max_pages がこれ以下なら source 側が優先
+max_workers = 6             # ホスト並列数（sitemill ADR 0013）。1 ホストあたりの間隔は並列でも縮まらない
+# 変化率に応じて巡回間隔を延ばす（相手サイトへの負荷を下げる）。下限は週 1 回（ADR 0007）
+adaptive_interval = true
+fresh_days = 7              # この日数内に変化があれば毎日
+slow_after_days = 28        # これ以上変化が無ければ最長間隔
+mid_interval_days = 3       # その中間
+max_interval_days = 7       # 最長（＝週 1 回）
+# お知らせ・運休告知は変化率に関わらず毎日取りに行く / 取得が途切れたら判定を「不明」に落とす閾値。
+# どちらも sitemill 側の実装が入ってから有効になる（ADR 0004・0007、S2）
+# always_daily_kinds = ["notice"]
+# stale_after_days = 14
+
+[llm]
+provider = "anthropic"
+model = "claude-haiku-4-5"
+max_input_chars = 60000
+max_output_tokens = 32000
+temperature = 0.0
+
+[analytics]
+provider = "cloudflare"

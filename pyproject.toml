@@ -1,0 +1,45 @@
+[project]
+name = "japan-open-today"
+version = "0.1.0"
+description = "地方を訪れる旅行者向けに、観光施設と交通の「今日・今週、行けるか」を多言語で提供するサイト（sitemill の 2 つ目の利用者）"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sitemill",
+]
+
+# サービス固有の CLI（発見・用語集の生成など）は S6 で追加する。
+# 巡回・抽出・生成・デプロイは sitemill の CLI をこのディレクトリで実行する。
+
+[tool.uv.sources]
+# 今フェーズは隣のディレクトリへの editable 依存（docs/adr/0008）。安定後に git タグ固定へ切り替える。
+sitemill = { path = "../sitemill", editable = true }
+
+[dependency-groups]
+dev = [
+    "pytest>=8.2",
+    "respx>=0.21",
+    "ruff>=0.6",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/japan_open_today"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.format]
+line-ending = "lf"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
