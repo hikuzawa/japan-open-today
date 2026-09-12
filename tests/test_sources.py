@@ -291,3 +291,62 @@ def test_the_same_place_is_not_listed_twice(ws: Workspace) -> None:
             assert not (name in other_name or other_name in name), (spot.spot_id, other_id)
         else:
             by_addr[addr] = (spot.spot_id, name)
+
+
+# --- 用語集（多言語の固定訳。ADR 0005） -------------------------------------
+
+
+def test_glossary_entries_declare_where_they_came_from(ws: Workspace) -> None:
+    """訳は必ず由来つきで持つ。由来の無い訳は、後から誰も確かめられない。"""
+    from japan_open_today.data import load_glossary
+
+    glossary = load_glossary(ws)
+    assert glossary, "用語集が空。多言語名が解決できていない"
+    for locale, table in glossary.items():
+        for ja_name, entry in table.items():
+            assert entry.text.strip(), (locale, ja_name)
+            assert entry.source in ("official", "glossary"), (locale, ja_name, entry.source)
+
+
+def test_translations_are_not_japanese_and_not_simplified(ws: Workspace) -> None:
+    """英語の欄に日本語、繁体字の欄に簡体字が入っていないこと。
+
+    実際に、中文ページから「四国水族馆」（簡体字）を、英語ページから繁体字の欄に
+    「TAKAMATSU ART MUSEUM」を入れかけた。字種で守る。
+    """
+    from japan_open_today.data import load_glossary
+
+    kana = re.compile(r"[ぁ-んァ-ヶ]")
+    simplified = re.compile(r"[馆术际标丰历产权义习书乐云价众优伟传伤]")
+    for locale, table in load_glossary(ws).items():
+        for ja_name, entry in table.items():
+            assert not kana.search(entry.text), (locale, ja_name, entry.text)
+            if locale == "zh-Hant":
+                assert not simplified.search(entry.text), (locale, ja_name, entry.text)
+
+
+def test_the_glossary_fills_only_the_gaps() -> None:
+    """公式表記が入っている施設は用語集で上書きしない（ADR 0005 の優先順）。"""
+    from japan_open_today.data import _fill_names
+    from japan_open_today.schema import LocalizedName
+
+    glossary = {
+        "en": {"栗林公園": LocalizedName(text="Ritsurin Park", source="glossary")},
+        "zh-Hant": {"栗林公園": LocalizedName(text="栗林公園", source="glossary")},
+    }
+    payload = {
+        "names": {
+            "ja": {"text": "栗林公園", "source": "ja"},
+            "en": {"text": "Ritsurin Garden", "source": "official"},
+        }
+    }
+    _fill_names(payload, glossary)
+    # 公式表記はそのまま、空いていた繁体字だけ埋まる
+    assert payload["names"]["en"]["text"] == "Ritsurin Garden"
+    assert payload["names"]["en"]["source"] == "official"
+    assert payload["names"]["zh-Hant"]["text"] == "栗林公園"
+    assert payload["names"]["zh-Hant"]["source"] == "glossary"
+    # 用語集に無い施設は日本語のまま（勝手な表記を作らない）
+    other = {"names": {"ja": {"text": "父母ヶ浜", "source": "ja"}}}
+    _fill_names(other, glossary)
+    assert set(other["names"]) == {"ja"}

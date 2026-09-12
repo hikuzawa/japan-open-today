@@ -1,0 +1,329 @@
+# en の固定訳（ADR 0005）。**公式の表記か、辿って確定した表記だけ**を入れる。
+# 推測のローマ字・訳は作らない。source は由来（official=施設の公式ページ、
+# glossary=Wikipedia の言語間リンクから確定）、url は根拠。凍結して差分で見る。
+# 生成: uv run python -m tools.resolve_names --apply
+names:
+  NAGARE:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: NAGARE
+    url: ''
+  かどや製油（株）今昔館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Kadoya Seiyu Konjaku-kan
+    url: ''
+  さぬきこどもの国:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Sanuki Children's Country
+    url: ''
+  しろとり動物園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Shiritori Zoo
+    url: ''
+  たかせ天然温泉:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Takase Natural Onsen
+    url: ''
+  つばさ山温泉:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Tsubasa Yama Onsen
+    url: ''
+  はくちょう温泉:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Hakucho Onsen
+    url: ''
+  ふれあいパークみの・天然いやだに温泉「大師の湯」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Daishi no Yu Onsen
+    url: ''
+  オリーブ温泉:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Olive Onsen
+    url: ''
+  オリーブ温泉島の宿:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Olive Onsen Shodo Island Inn
+    url: ''
+  ゴールドタワー:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Gold Tower
+    url: ''
+  サンポートホール高松（高松市文化芸術ホール）:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Sunport Hall Takamatsu
+    url: ''
+  サン・オリーブ温泉（道の駅「小豆島オリーブ公園」内）:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Shodoshima Olive Park
+    url: ''
+  ニューレオマワールド:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: New Reoma World
+    url: ''
+  フラワーパーク浦島:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Flower Park Urashima
+    url: ''
+  マルキン醤油記念館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Marukkin Soy Sauce Museum
+    url: ''
+  三木町総合運動公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Miki Town General Sports Park
+    url: ''
+  中津万象園・丸亀美術館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Marugame Museum of Art
+    url: ''
+  丸亀城:
+    checked_on: '2026-09-13'
+    note: Wikipedia 日本語版「丸亀城」の言語間リンク（en）
+    source: glossary
+    text: Marugame Castle
+    url: https://ja.wikipedia.org/wiki/%E4%B8%B8%E4%BA%80%E5%9F%8E
+  丸亀市猪熊弦一郎現代美術館:
+    checked_on: '2026-09-13'
+    note: Wikipedia 日本語版「丸亀市猪熊弦一郎現代美術館」の言語間リンク（en）
+    source: glossary
+    text: Marugame Genichiro-Inokuma Museum of Contemporary Art
+    url: https://ja.wikipedia.org/wiki/%E4%B8%B8%E4%BA%80%E5%B8%82%E7%8C%AA%E7%86%8A%E5%BC%A6%E4%B8%80%E9%83%8E%E7%8F%BE%E4%BB%A3%E7%BE%8E%E8%A1%93%E9%A4%A8
+  八栗寺:
+    checked_on: '2026-09-13'
+    note: Wikipedia 日本語版「八栗寺」の言語間リンク（en）
+    source: glossary
+    text: Yakuri-ji
+    url: https://ja.wikipedia.org/wiki/%E5%85%AB%E6%A0%97%E5%AF%BA
+  史跡高松城跡・玉藻公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Takamatsu Castle
+    url: ''
+  商工奨励館（栗林公園内）:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Shokokushorei Museum, Ritsurin Park
+    url: ''
+  四国水族館:
+    checked_on: '2026-09-13'
+    note: 公式サイトのenページ（og:title）
+    source: official
+    text: Shikoku Aquarium
+    url: https://shikoku-aquarium.jp/en/
+  大興寺:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Daiko-ji Temple
+    url: ''
+  天然温泉:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Marugame Natural Onsen
+    url: ''
+  小豆島温泉里枝の湯:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Shodoshima Onsen Rie no Yu
+    url: ''
+  屋島寺:
+    checked_on: '2026-09-13'
+    note: Wikipedia 日本語版「屋島寺」の言語間リンク（en）
+    source: glossary
+    text: Yashima-ji
+    url: https://ja.wikipedia.org/wiki/%E5%B1%8B%E5%B3%B6%E5%AF%BA
+  平賀源内旧邸:
+    checked_on: '2026-09-13'
+    note: 公式サイトのenページ（title）
+    source: official
+    text: Hiraga Gennai Memorial Museum
+    url: https://hiragagennai.com/english/index.html
+  引田城跡（城山）:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Hiketa Castle Ruins
+    url: ''
+  弥谷寺:
+    checked_on: '2026-09-13'
+    note: Wikipedia 日本語版「弥谷寺」の言語間リンク（de 版のラテン文字表記）
+    source: glossary
+    text: Iyadani-ji
+    url: https://ja.wikipedia.org/wiki/%E5%BC%A5%E8%B0%B7%E5%AF%BA
+  志度総合運動公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Shido Comprehensive Sports Park
+    url: ''
+  日本ドルフィンセンター:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Japan Dolphin Center
+    url: ''
+  旧金毘羅大芝居(金丸座):
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Kanamaru-za
+    url: ''
+  母神温泉:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Mogami Onsen
+    url: ''
+  水の資料館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Water Museum
+    url: ''
+  湯元小豆島温泉・塩の湯（島湯）:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Yumoto Shodoshima Onsen Shio no Yu
+    url: ''
+  瀬戸大橋:
+    checked_on: '2026-09-13'
+    note: Wikipedia 日本語版「瀬戸大橋」の言語間リンク（en）
+    source: glossary
+    text: Great Seto Bridge
+    url: https://ja.wikipedia.org/wiki/%E7%80%AC%E6%88%B8%E5%A4%A7%E6%A9%8B
+  瀬戸大橋タワー:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Seto Ohashi Tower
+    url: ''
+  灸まん美術館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Kyuuman Museum of Art
+    url: ''
+  男木島灯台・男木島灯台資料館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Ogi Island Lighthouse and Ogi Island Lighthouse Museum
+    url: ''
+  白峯寺:
+    checked_on: '2026-09-13'
+    note: Wikipedia 日本語版「白峯寺」の言語間リンク（en）
+    source: glossary
+    text: Shiromine-ji
+    url: https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B3%AF%E5%AF%BA
+  神恵院・観音寺:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Jinneiin and Kannon Temple
+    url: ''
+  総本山善通寺:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Zentsuji Temple
+    url: ''
+  與田寺:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Yoda Temple
+    url: ''
+  菊池寛記念館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Kikuchi Kan Memorial Museum
+    url: ''
+  讃岐おもちゃ美術館:
+    checked_on: '2026-09-13'
+    note: 公式サイトのenページ（og:title）
+    source: official
+    text: INFOMATION
+    url: https://npo-wahaha.net/stm/en/
+  郷照寺（第78番札所）:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Kyosho Temple
+    url: ''
+  雲辺寺ロープウェイ:
+    checked_on: '2026-09-13'
+    note: Wikipedia 日本語版「雲辺寺ロープウェイ」の言語間リンク（en）
+    source: glossary
+    text: Unpenji Ropeway
+    url: https://ja.wikipedia.org/wiki/%E9%9B%B2%E8%BE%BA%E5%AF%BA%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4
+  香川・高松ツーリストインフォメーション:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Takamatsu Tourist Information Center
+    url: ''
+  香川県立東山魁夷せとうち美術館:
+    checked_on: '2026-09-13'
+    note: 公式サイトのenページ（og:title）
+    source: official
+    text: Museum Guide（English）
+    url: https://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/english/kfvn.html
+  高松市塩江美術館（ホタルの里美術館）:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Takamatsu Shioe Museum of Art
+    url: ''
+  高松市美術館:
+    checked_on: '2026-09-13'
+    note: 公式サイトのenページ（title）
+    source: official
+    text: TAKAMATSU ART MUSEUM
+    url: https://www.city.takamatsu.kagawa.jp/museum/takamatsu/english/index.html
+  鬼ヶ島大洞窟:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: Onigashima Great Cave
+    url: ''

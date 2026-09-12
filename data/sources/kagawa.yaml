@@ -1892,7 +1892,7 @@ sources:
       area: sakaide
       category: other
       names:
-        ja: {text: "【宇多津町】南隆寺の坐禅会", source: ja}
+        ja: {text: "南隆寺の坐禅会", source: ja}
       map_query: "香川県綾歌郡宇多津町 【宇多津町】南隆寺の坐禅会"
 
   - id: kagawa-yakuyoke  # 観光協会のページを一次情報にした（ページに「【宇多津町】郷照寺（第78番札所）」が出てこない）
@@ -1916,7 +1916,7 @@ sources:
       area: sakaide
       category: shrine_temple
       names:
-        ja: {text: "【宇多津町】郷照寺（第78番札所）", source: ja}
+        ja: {text: "郷照寺（第78番札所）", source: ja}
       map_query: "香川県綾歌郡宇多津町 【宇多津町】郷照寺（第78番札所）"
 
   # 除外: kagawa-shiromineji-2941 — 【紅葉スポット】白峰寺 は kagawa-shiromineji と同じ場所
@@ -2115,7 +2115,7 @@ sources:
       area: kotohira
       category: other
       names:
-        ja: {text: "【施設見学】金陵の郷", source: ja}
+        ja: {text: "金陵の郷", source: ja}
       map_query: "香川県仲多度郡琴平町 【施設見学】金陵の郷"
 
   - id: kagawa-park-mino  # 観光協会のページを一次情報にした（ページに「ふれあいパークみの・天然いやだに温泉「大師の湯」」が出てこない）
@@ -2427,7 +2427,7 @@ sources:
       area: mitoyo
       category: museum
       names:
-        ja: {text: "【施設見学】水の資料館", source: ja}
+        ja: {text: "水の資料館", source: ja}
       map_query: "香川県三豊市 【施設見学】水の資料館"
 
   - id: kagawa-olive-pk  # 観光協会のページを一次情報にした（ページに「サン・オリーブ温泉（道の駅「小豆島オリーブ公園」内）」が出てこない）
@@ -2670,7 +2670,7 @@ sources:
       area: shodoshima
       category: museum
       names:
-        ja: {text: "【施設見学】マルキン醤油記念館", source: ja}
+        ja: {text: "マルキン醤油記念館", source: ja}
       map_query: "香川県小豆郡小豆島町 【施設見学】マルキン醤油記念館"
 
   - id: kagawa-p4337  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
@@ -2694,7 +2694,7 @@ sources:
       area: shodoshima
       category: other
       names:
-        ja: {text: "【施設見学】かどや製油（株）今昔館", source: ja}
+        ja: {text: "かどや製油（株）今昔館", source: ja}
       map_query: "香川県小豆郡土庄町 【施設見学】かどや製油（株）今昔館"
 
   - id: kagawa-morikuni  # 観光協会のページを一次情報にした（ページに「【施設見学】株式会社」が出てこない）
@@ -2718,5 +2718,5 @@ sources:
       area: shodoshima
       category: other
       names:
-        ja: {text: "【施設見学】株式会社", source: ja}
+        ja: {text: "株式会社", source: ja}
       map_query: "香川県小豆郡小豆島町 【施設見学】株式会社"

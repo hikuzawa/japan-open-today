@@ -17,7 +17,7 @@ from sitemill.settings import Workspace
 from sitemill.store.records import RecordStore
 
 from japan_open_today.areas import area
-from japan_open_today.schema import Route, Spot, TransportOperator
+from japan_open_today.schema import LocalizedName, Route, Spot, TransportOperator
 
 
 def load_entries(ws: Workspace) -> list[dict[str, Any]]:
@@ -35,6 +35,31 @@ def load_entries(ws: Workspace) -> list[dict[str, Any]]:
 
 def load_sources(ws: Workspace) -> list[Source]:
     return [Source.model_validate(e) for e in load_entries(ws)]
+
+
+def load_glossary(ws: Workspace) -> dict[str, dict[str, LocalizedName]]:
+    """`data/glossary/<locale>.yaml` の固定訳（ADR 0005）。日本語名から引く。
+
+    入れてよいのは**公式の表記か、辿って確定した表記**だけ。推測のローマ字は作らない。
+    由来は `source`（official / glossary）と `url` で区別し、凍結して差分でレビューする。
+    """
+    out: dict[str, dict[str, LocalizedName]] = {}
+    directory = ws.data_dir / "glossary"
+    if not directory.is_dir():
+        return out
+    for path in sorted(directory.glob("*.yaml")):
+        data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        names: dict[str, LocalizedName] = {}
+        for ja_name, row in (data.get("names") or {}).items():
+            if not isinstance(row, dict) or not (row.get("text") or "").strip():
+                continue
+            names[ja_name] = LocalizedName(
+                text=row["text"].strip(),
+                source=row.get("source", "glossary"),
+                evidence_url=row.get("url"),
+            )
+        out[path.stem] = names
+    return out
 
 
 def spot_from_entry(entry: dict[str, Any]) -> Spot | None:
@@ -94,6 +119,26 @@ def routes_from_entry(entry: dict[str, Any]) -> list[Route]:
     return out
 
 
+def _fill_names(payload: dict[str, Any], glossary: dict[str, dict[str, LocalizedName]]) -> None:
+    """その言語の表記が無い施設に、用語集の固定訳を当てる（ADR 0005）。
+
+    当てるのは**空いているところだけ**。公式表記が入っていればそれを残す。
+    用語集にも無ければ日本語のまま出す（推測の表記は作らない）。
+    """
+    names = payload.get("names") or {}
+    ja = names.get("ja")
+    ja_text = ja.get("text") if isinstance(ja, dict) else getattr(ja, "text", None)
+    if not ja_text:
+        return
+    for locale, table in glossary.items():
+        if names.get(locale):
+            continue
+        found = table.get(ja_text)
+        if found is not None:
+            names[locale] = found.model_dump()
+    payload["names"] = names
+
+
 def records_path(ws: Workspace, source_id: str) -> Path:
     return ws.records_dir / f"{source_id}.jsonl"
 
@@ -124,6 +169,7 @@ class Dataset:
         """YAML の枠に、レコードとして保存された事実を重ねて読む。"""
         entries = load_entries(ws)
         sources = [Source.model_validate(e) for e in entries]
+        glossary = load_glossary(ws)
         spots: list[Spot] = []
         operators: list[TransportOperator] = []
         routes: list[Route] = []
@@ -144,6 +190,7 @@ class Dataset:
             if spot is not None:
                 record = stored.get(spot.spot_id)
                 payload = {**spot.model_dump(), **record} if record else spot.model_dump()
+                _fill_names(payload, glossary)
                 extra = shared_notices.get(spot.spot_id) or []
                 if extra:
                     # 引用で重複を落とす（同じ告知が自館のページと共有ページの両方に出る）
