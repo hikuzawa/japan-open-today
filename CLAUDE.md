@@ -24,6 +24,9 @@ sitemill の 2 つ目の利用者。香川県の観光施設と交通につい�
 - `uv run python -m tools.sync_assets` 採用画像を `static/assets/` に複写（extract のあと build の前）
 - `uv run python -m tools.report_coverage` 項目の充足率と判定の内訳（unknown の理由）を数える
 - `uv run python -m tools.resolve_commons` / `tools.collect_sources` / `tools.probe_assets` 情報源と画像の調査
+- `uv run python -m tools.collect_spots --enumerate --classify` 県の一覧から施設を数え上げて型を判定 →
+  `tools.seed_spots --apply` で情報源にする → `tools.retype_spots` / `tools.add_listing_hours` で補正
+- `uv run python -m tools.resolve_names --apply` / `tools.translate_names --apply` 多言語名の確定（ADR 0005）
 - 生成物の確認は `dist/` の HTML をブラウザペインで直接開くか、`uv run python -m http.server -d dist 8000`
 
 ## 守ること
@@ -56,7 +59,9 @@ sitemill の 2 つ目の利用者。香川県の観光施設と交通につい�
 
 ### 多言語
 - 事実は構造化データからロケール別に描画する。描画時に LLM を使わない（ビルドは再現する）
-- 施設名は「公式が提供する表記 → 用語集の固定訳 → 日本語表記のまま」の順。ローマ字化した推測名は作らない
+- 施設名は「公式が提供する表記 → 用語集の固定訳 → 日本語表記のまま」の順。ローマ字化した推測名は作らない。
+  訳の確定は `tools/resolve_names.py`（公式ページ → 自治体・観光協会 → Wikipedia の言語間リンク）と
+  `tools/translate_names.py`（固定訳）で行い、`data/glossary/<locale>.yaml` に由来つきで凍結する（ADR 0005 追記）
 - 表示名は `site.toml` の `name`（正式名 Japan Open Today）に固定し、各言語の短い表記は
   `i18n/<locale>.yaml` の `site.name_short`（日本語=今日行ける日本 / 繁体字=今天能去的日本）で差し替える
 - 全ページに hreflang を相互に付ける。`x-default` は日本語
