@@ -61,6 +61,8 @@ SKIP_RULES: tuple[tuple[str, re.Pattern[str]], ...] = (
 INFO_KEYS = ("住所", "電話番号", "営業時間", "定休日", "料金", "アクセス", "駐車場")
 FEE_AMOUNT = re.compile(r"\d[\d,]*\s*円|無料")
 CLOCK = re.compile(r"\d{1,2}\s*[:時]\s*\d{0,2}|24\s*時間|終日")
+# 宿の印。名前に「ホテル」「旅館」が無い宿がある（「トレスタ白山」）
+CHECK_IN = re.compile(r"チェックイン|チェックアウト|IN\s*1[0-9]:|素泊")
 
 
 @dataclass
@@ -185,6 +187,17 @@ def classify(client: PoliteClient, cand: Candidate) -> None:
         return
     hours = cand.info.get("営業時間", "")
     fee = cand.info.get("料金", "")
+    if CHECK_IN.search(hours + " " + fee):
+        # 「チェックイン15:00」は宿。名前だけでは分からない（「トレスタ白山」など）
+        cand.spot_type = "skip"
+        cand.reason = "lodging（チェックイン時刻の記載）"
+        return
+    if not cand.info:
+        # 基本情報の表が無いページ。屋外だからではなく**読めていない**ので unknown にする。
+        # 新屋島水族館がこれで、営業時間が無いページから open_air と決めていた
+        cand.spot_type = "unknown"
+        cand.reason = "基本情報の表が読めない（別の情報源が要る）"
+        return
     if CLOCK.search(hours) or FEE_AMOUNT.search(fee):
         cand.spot_type = "gated"
         cand.reason = f"営業時間/料金の記載あり: {(hours or fee)[:60]}"

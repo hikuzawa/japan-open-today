@@ -219,6 +219,14 @@ def build_seed(client: PoliteClient, cand: dict[str, Any]) -> Seed:
     return seed
 
 
+def _map_query(seed: Seed) -> str:
+    """地図の検索語。郵便番号は落として「市町＋施設名」にする。"""
+    address = seed.info.get("住所", "")
+    address = re.sub(r"〒?\d{3}-?\d{4}", "", address).strip()
+    city = re.search(r"香川県[^\s0-9０-９]{2,8}?[市町]", address)
+    return f"{city.group(0) if city else '香川県'} {seed.name}".strip()
+
+
 def _yaml_block(seed: Seed, source_id: str) -> str:
     q = seed.operator_quote.replace('"', "'")
     lines = [
@@ -244,7 +252,7 @@ def _yaml_block(seed: Seed, source_id: str) -> str:
         f"      category: {seed.category}",
         "      names:",
         f"        ja: {{text: {seed.name}, source: ja}}",
-        f"      map_query: {seed.info.get('住所', '').split(' ')[0]} {seed.name}",
+        f"      map_query: {_map_query(seed)}",
     ]
     return "\n".join(lines) + "\n"
 

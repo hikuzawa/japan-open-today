@@ -79,3 +79,19 @@ def test_the_operator_name_is_taken_from_the_quote() -> None:
     assert _operator_name("公益財団法人 福武財団 が運営しています") == "公益財団法人 福武財団"
     assert _operator_name("指定管理者: 株式会社さぬき") == "株式会社さぬき"
     assert _operator_name("Copyright City of Takamatsu").startswith("Copyright")
+
+
+def test_a_check_in_time_means_lodging_even_without_the_word_hotel() -> None:
+    """「トレスタ白山」のように、名前からは宿と分からない宿がある。"""
+    from tools.collect_spots import CHECK_IN
+
+    assert CHECK_IN.search("宿泊はチェックイン15:00、チェックアウト10:00")
+    assert not CHECK_IN.search("9:00~17:00(入館は16:30まで)")
+
+
+def test_a_page_without_the_info_table_is_unknown_not_open_air() -> None:
+    """表が読めないのは「屋外だから」ではない。読めていないだけなので unknown にする。
+
+    新屋島水族館がこれで、営業時間の無いページから open_air と決めてしまっていた。
+    """
+    assert _info_table("説明だけのページ。基本情報の表が無い。") == {}
