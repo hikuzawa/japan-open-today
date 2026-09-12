@@ -1,6 +1,6 @@
 {
-  "discovered_at": "2026-09-12T19:42:00.872873+09:00",
-  "requests": 11,
+  "discovered_at": "2026-09-12T23:10:35.087871+09:00",
+  "requests": 102,
   "results": [
     {
       "source_id": "kagawa-ritsurin",
@@ -90,7 +90,6 @@
       "source_id": "kagawa-chichu",
       "name": "地中美術館",
       "existing_kinds": [
-        "notice",
         "spot_detail",
         "spot_fees"
       ],
@@ -120,7 +119,6 @@
       "source_id": "kagawa-benesse-house",
       "name": "ベネッセハウス ミュージアム",
       "existing_kinds": [
-        "notice",
         "spot_detail",
         "spot_fees"
       ],
@@ -150,7 +148,6 @@
       "source_id": "kagawa-teshima-art",
       "name": "豊島美術館",
       "existing_kinds": [
-        "notice",
         "spot_detail",
         "spot_fees"
       ],
@@ -182,7 +179,8 @@
       "existing_kinds": [
         "notice",
         "spot_access",
-        "spot_detail"
+        "spot_detail",
+        "spot_hours"
       ],
       "proposals": [],
       "notes": [
@@ -218,6 +216,1585 @@
       "name": "父母ヶ浜",
       "existing_kinds": [
         "spot_access",
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-sanuki",
+      "name": "さぬきこどもの国",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-sionoe",
+      "name": "しおのえふじかわ牧場",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-npo-wahaha",
+      "name": "讃岐おもちゃ美術館",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-npo-wahaha",
+          "kind": "spot_hours",
+          "url": "https://npo-wahaha.net/stm/info/",
+          "label": "ご利用案内",
+          "found_on": "https://npo-wahaha.net/stm/",
+          "verified": true,
+          "detail": "支える人 よくあるご質問 アクセス ショップ・カフェ INFO ご利用案内 TOP ご利用案内 開館時間 10:00~16:00(最終入館15:30) 休館日 毎週木曜日 ※木曜日"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-taka-spo",
+      "name": "はくちょう温泉",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-town",
+      "name": "三木町ウォーキングセンター",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-town-375",
+      "name": "三木町総合運動公園",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-town-375",
+          "kind": "spot_access",
+          "url": "https://www.town.miki.lg.jp/life/list.php?list.php?hdnSKBN=B&hdnCat=112",
+          "label": "防災・防犯・交通安全",
+          "found_on": "https://www.town.miki.lg.jp/life/dtl.php?hdnKey=4191",
+          "verified": false,
+          "detail": "どの種別の中身も見つからない（本文 942 字）"
+        },
+        {
+          "source_id": "kagawa-town-375",
+          "kind": "notice",
+          "url": "https://www.town.miki.lg.jp/life/dtl.php?hdnKey=1001&hdnSKBN=A",
+          "label": "役場への行き方",
+          "found_on": "https://www.town.miki.lg.jp/life/dtl.php?hdnKey=4191",
+          "verified": true,
+          "detail": "ラベルは spot_access だが中身は notice: ホーム 公共交通機関時刻表・アクセス方法 政策課 : 2013/04/02 車 高松市内から約25分 主要道 国道11号バイパス、さぬき東街道、長尾街道 高速道路"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-onigasima",
+      "name": "鬼ヶ島大洞窟",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-takamatsujyo",
+      "name": "史跡高松城跡・玉藻公園",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-pref",
+      "name": "香川県庁舎（本館）",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-88shikokuhenro",
+      "name": "屋島寺",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-kenminhall",
+      "name": "レクザムホール",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-kenminhall",
+          "kind": "spot_fees",
+          "url": "http://www.kenminhall.com/visitors/ticket/",
+          "label": "チケットの ご案内",
+          "found_on": "http://www.kenminhall.com/",
+          "verified": true,
+          "detail": ":30開演(開場は各回の30分前) ◆会場:レクザムホール(香川県県民ホール)・大ホール ◆料金:<全席指定>一般 3,300円 ※1歳以上有料。1歳未満のお子様は、保護者1名につ"
+        },
+        {
+          "source_id": "kagawa-kenminhall",
+          "kind": "notice",
+          "url": "http://www.kenminhall.com/visitors/ticket/howto",
+          "label": "チケットのご購入",
+          "found_on": "http://www.kenminhall.com/",
+          "verified": true,
+          "detail": "ラベルは spot_fees だが中身は notice: 協TEL:087-839-2043 ミヨシヤ楽器店TEL:0877-25-1234 マリンウェーブ(三豊)TEL:0875-56-5111 オオサカヤ観音寺本店TEL:087"
+        },
+        {
+          "source_id": "kagawa-kenminhall",
+          "kind": "spot_fees",
+          "url": "http://www.kenminhall.com/visitors/access/",
+          "label": " アクセス  Access ",
+          "found_on": "http://www.kenminhall.com/",
+          "verified": false,
+          "detail": "spot_fees はすでに seed がある: ラベルは spot_access だが中身は spot_fees: DF:334KB)■駐輪場のご案内(PDF:165KB) 香川県玉藻町駐車場 駐車台数 333台 駐車料金 25分100円 時間 24時間営業 ↓↓駐車場の空き状況はこちらから↓↓"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-p2463",
+      "name": "男木島灯台・男木島灯台資料館",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-takamatsu-orne",
+      "name": "香川・高松ツーリストインフォメーション",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-yashima-navi",
+      "name": "屋島山上",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-p2939",
+      "name": "【紅葉スポット】屋島",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-sunport-hall",
+      "name": "サンポートホール高松（高松市文化芸術ホール）",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-yakuriji",
+      "name": "八栗寺",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-shikokumura-276",
+      "name": "四国村ミウゼアム（四国民家博物館）",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-pref-252",
+      "name": "香川県庁舎（東館）",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-sakurashop",
+      "name": "ジョージ",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-sakurashop",
+          "kind": "spot_hours",
+          "url": "https://www.sakurashop.co.jp/news",
+          "label": "News",
+          "found_on": "https://www.sakurashop.co.jp/visit/george-nakashima-memorial-gallery",
+          "verified": true,
+          "detail": "ラベルは notice だが中身は spot_hours: 川県高松市牟礼町大町1132-1 Tel:087-870-1020 / Fax:087-845-2829 開館時間:10:00 - 17:00(入場 16:30 迄) 休館日:日曜"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-ha-art",
+      "name": "歯ART美術館",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-ha-art",
+          "kind": "spot_access",
+          "url": "http://ha-art.com/access/index.html",
+          "label": "アクセス",
+          "found_on": "http://ha-art.com/index.html",
+          "verified": true,
+          "detail": "AX 087-871-0667 ■志度インターから、約20分 ■高松自動車道高松東ICから、約30分 ■琴電八栗駅からタクシーで、約15分 ※最寄り駅は琴"
+        },
+        {
+          "source_id": "kagawa-ha-art",
+          "kind": "spot_fees",
+          "url": "http://ha-art.com/information/index.html",
+          "label": "利用案内 Information",
+          "found_on": "http://ha-art.com/index.html",
+          "verified": true,
+          "detail": "ラベルは spot_hours だが中身は spot_fees: めの臨時休館有り) ■2026年8月・9月 営業日カレンダー 入館料 個人 団体10人以上 大人(18歳以上) 600円 300円 中高生 200円 100円 小学生以下 無料 無"
+        },
+        {
+          "source_id": "kagawa-ha-art",
+          "kind": "spot_access",
+          "url": "http://ha-art.com/information/links.html",
+          "label": "Link集",
+          "found_on": "http://ha-art.com/index.html",
+          "verified": false,
+          "detail": "spot_access はすでに seed がある: ラベルは notice だが中身は spot_access: http://www.silkroom.co.jp/ 六車和紀 『むぐ’s Gallery』 http://www.geocities.jp/mgrm051"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-nagarestudio",
+      "name": "NAGARE",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-kawashima-af",
+      "name": "川島猛アートファクトリー",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-kawashima-af",
+          "kind": "spot_hours",
+          "url": "https://kawashima-af.com/opening-information/",
+          "label": "開館ご案内",
+          "found_on": "https://kawashima-af.com/",
+          "verified": true,
+          "detail": "は事前予約のみの受付となります。 年末年始来館予約の最終受付は12月第2土曜日16:00までとなります。 開館時間:10時〜16時 受付場所:6階美術館受付カウンター 団体事前予約"
+        },
+        {
+          "source_id": "kagawa-kawashima-af",
+          "kind": "notice",
+          "url": "https://kawashima-af.com/info/",
+          "label": "お知らせ-活動報告",
+          "found_on": "https://kawashima-af.com/",
+          "verified": true,
+          "detail": "ation 田中勝次コラージュワークショップ 2026年8月8日 イベント告知 講師 田中勝次 日時 8月22日(土)午後12時30分~3時 場所 川島猛アートフ"
+        },
+        {
+          "source_id": "kagawa-kawashima-af",
+          "kind": "spot_access",
+          "url": "https://kawashima-af.com/access/",
+          "label": "アクセス",
+          "found_on": "https://kawashima-af.com/",
+          "verified": false,
+          "detail": "どの種別の中身も見つからない（本文 587 字）"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-city",
+      "name": "菊池寛記念館",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-city",
+          "kind": "notice",
+          "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kikuchikan/kikuti_up2.html",
+          "label": "休館及び事務所移転のお知らせ",
+          "found_on": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kikuchikan/index.html",
+          "verified": true,
+          "detail": "寛記念館 休館及び事務所移転のお知らせ 更新日:2026年1月7日 サンクリスタル高松のリニューアルに伴い、令和7年5月7日(水曜日)~令和9年秋頃まで休館いたしま"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-city-284",
+      "name": "高松市美術館",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-city-284",
+          "kind": "spot_hours",
+          "url": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/info/access.html",
+          "label": "アクセス",
+          "found_on": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/index.html",
+          "verified": true,
+          "detail": "ラベルは spot_access だが中身は spot_hours: はございませんので、サンポート高松港湾第3駐車場(外部サイト) をご利用ください。 ※予約はできません。 利用時間 :午前7時30分~午後11時(午後11時~午前7時30分の時間帯"
+        },
+        {
+          "source_id": "kagawa-city-284",
+          "kind": "spot_access",
+          "url": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/info/index.html",
+          "label": "ご利用案内",
+          "found_on": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/index.html",
+          "verified": true,
+          "detail": "ラベルは spot_hours だが中身は spot_access: ト ご利用案内 ご利用案内 ご利用案内 アクセス/駐車場 館内マップ お得な観覧券等 高松市美術館サポートショップ 小さなお子様連れの方へ・バリア"
+        },
+        {
+          "source_id": "kagawa-city-284",
+          "kind": "spot_fees",
+          "url": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/info/ticket.html",
+          "label": "お得な観覧券",
+          "found_on": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/index.html",
+          "verified": true,
+          "detail": "典(観覧料2割引)を提供します。 詳細はこちら お得情報 ●美術館の日 毎年8月第1土曜日を美術館の日とし、観覧料を無料としております。 ●高松市美術館サポートショップ 高松市美術"
+        },
+        {
+          "source_id": "kagawa-city-284",
+          "kind": "notice",
+          "url": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/allNewsList.html",
+          "label": "新着情報一覧",
+          "found_on": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/index.html",
+          "verified": true,
+          "detail": "高松市美術館公式サイト 新着一覧 新着一覧 2026年9月10日【共催事業】サンポートホール高松デビューリサイタル15回開催記念リサイタル 2026年8月21日高"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-city-440",
+      "name": "「ナガレバチ」／流政之作（高松市美術館）",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-kenminhall-435",
+      "name": "「21世紀に贈るメッセージ」／猪熊弦一郎作",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-p443",
+      "name": "高松市塩江美術館（ホタルの里美術館）",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-kinashi-bonsai",
+      "name": "鬼無植木盆栽センター",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-p447",
+      "name": "商工奨励館（栗林公園内）",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-j-dc2",
+      "name": "日本ドルフィンセンター",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-j-dc2",
+          "kind": "spot_hours",
+          "url": "https://www.j-dc2.net/access/",
+          "label": "アクセス",
+          "found_on": "https://www.j-dc2.net/",
+          "verified": true,
+          "detail": "ラベルは spot_access だが中身は spot_hours: 〒769-2402 香川県さぬき市津田町鶴羽1520-130 TEL 0879-23-7623 (お電話での受付時間 9:00~17:00) FAX 0879-23-7628 概要"
+        },
+        {
+          "source_id": "kagawa-j-dc2",
+          "kind": "notice",
+          "url": "https://www.j-dc2.net/top/過去のお知らせ/",
+          "label": "過去のお知らせ",
+          "found_on": "https://www.j-dc2.net/",
+          "verified": false,
+          "detail": "「過去のお知らせ」は告知。通常のspot_hoursとしては採らない"
+        },
+        {
+          "source_id": "kagawa-j-dc2",
+          "kind": "notice",
+          "url": "https://www.j-dc2.net/top/過去のお知らせ/過去のお知らせ-2022年以前/",
+          "label": "過去のお知らせ　2022年以前",
+          "found_on": "https://www.j-dc2.net/",
+          "verified": false,
+          "detail": "「過去のお知らせ　2022年以前」は告知。通常のspot_hoursとしては採らない"
+        },
+        {
+          "source_id": "kagawa-j-dc2",
+          "kind": "spot_hours",
+          "url": "https://www.j-dc2.net/アクセス/周辺情報-遊ぶ-食べる/",
+          "label": "周辺情報 遊ぶ　食べる",
+          "found_on": "https://www.j-dc2.net/",
+          "verified": false,
+          "detail": "spot_hours はすでに seed がある: ラベルは spot_access だが中身は spot_hours: 〒769-2402 香川県さぬき市津田町鶴羽1520-130 TEL 0879-23-7623 (お電話での受付時間 9:00~17:00) FAX 0879-23-7628 概要"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-souyu",
+      "name": "つばさ山温泉",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-souyu",
+          "kind": "notice",
+          "url": "https://www.souyu.co.jp/shisetsu-news/tsubasayama/info/260915tsubasayama.php",
+          "label": "9/15(火)臨時休館のお知らせ",
+          "found_on": "https://www.souyu.co.jp/shisetsu/tsubasayama",
+          "verified": true,
+          "detail": "お知らせ HOME つばさ山温泉 お知らせ 2026.09.019/15(火)臨時休館のお知らせ 平素よりつばさ山温泉をご利用いただき、誠にありがとうございます。"
+        },
+        {
+          "source_id": "kagawa-souyu",
+          "kind": "notice",
+          "url": "https://www.souyu.co.jp/shisetsu-news/tsubasayama/cp/260807tsubasayama.php",
+          "label": "8/31(月)まで生ビールフェア開催中！",
+          "found_on": "https://www.souyu.co.jp/shisetsu/tsubasayama",
+          "verified": false,
+          "detail": "notice はすでに seed がある: お知らせ HOME つばさ山温泉 お知らせ 2026.08.078/31(月)まで生ビールフェア開催中! 平素より、つばさ山温泉をご利用いただき、誠にありがとうご"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-shirotorizoo",
+      "name": "しろとり動物園",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-saltlake-hiketa",
+      "name": "フィッシュフック（安戸池釣場）",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-sanukicity-sportspark",
+      "name": "志度総合運動公園",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-hiragagennai",
+      "name": "平賀源内旧邸",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-hiragagennai",
+          "kind": "spot_hours",
+          "url": "https://hiragagennai.com/access/index.html",
+          "label": "利用案内&交通案内",
+          "found_on": "https://hiragagennai.com/aboutus/index.html",
+          "verified": true,
+          "detail": "源内旧邸 087-894-5513 FAX: 087-894-5513 メールアドレス 開館時間 1平賀源内記念館 9:00~17:00 (※最終入館受付16:30) 休館日:月曜"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-higashikagawa",
+      "name": "引田城跡（城山）",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-tanokuchiyakushi",
+      "name": "田ノ口薬師（東照寺）",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-yodaji",
+      "name": "與田寺",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-goldtower",
+      "name": "ゴールドタワー",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-newreomaworld",
+      "name": "ニューレオマワールド",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-ooedoonsen",
+      "name": "天然温泉",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-p344",
+      "name": "善通寺市民プール",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-e-mikado",
+      "name": "エピアみかど",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-e-mikado",
+          "kind": "spot_fees",
+          "url": "http://e-mikado.jp/pages/55?detail=1&b_id=265&r_id=463",
+          "label": "大川山県営キャンプ場利用料金値上げについて",
+          "found_on": "http://e-mikado.jp/",
+          "verified": true,
+          "detail": "値上げについて 2025-04-06 今年度より大川山県営キャンプ場の利用料金が 変更となります。 大人(個人)260円 → 270円 大人(団体)150円 → 160円 児童(個"
+        },
+        {
+          "source_id": "kagawa-e-mikado",
+          "kind": "spot_hours",
+          "url": "http://e-mikado.jp/pages/55?detail=1&b_id=265&r_id=440",
+          "label": "レストランみかど　営業時間変更のお知らせ",
+          "found_on": "http://e-mikado.jp/",
+          "verified": false,
+          "detail": "「レストランみかど　営業時間変更のお知らせ」は告知。通常のspot_hoursとしては採らない"
+        },
+        {
+          "source_id": "kagawa-e-mikado",
+          "kind": "notice",
+          "url": "https://e-mikado.jp/pages/55?detail=1&b_id=327&r_id=234&date=2026-9-07",
+          "label": "レストラン営業時間変更",
+          "found_on": "http://e-mikado.jp/",
+          "verified": true,
+          "detail": "ラベルは spot_hours だが中身は notice: ベントカレンダー 一覧へ戻る レストラン営業時間変更 2026-09-07 当サイトでは利便性や品質向上のため、Cookieを使用することを推奨しています。 利用する場合は"
+        },
+        {
+          "source_id": "kagawa-e-mikado",
+          "kind": "notice",
+          "url": "http://e-mikado.jp/pages/14/",
+          "label": "アクセスマップ",
+          "found_on": "http://e-mikado.jp/",
+          "verified": false,
+          "detail": "notice はすでに seed がある: ラベルは spot_access だが中身は notice: 0203 香川県仲多度郡まんのう町川東2355-1 Tel:0877-56-0015 Fax:0877-56-0016 ●高松空港から車で約30分 ●高速高松自動車道 善通寺IC"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-town-94",
+      "name": "サン・スポーツランド仲南",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-town-94",
+          "kind": "notice",
+          "url": "https://www.town.manno.lg.jp/life/1/13/",
+          "label": "交通",
+          "found_on": "https://www.town.manno.lg.jp/site/shisetsuzyoho/1672.html",
+          "verified": true,
+          "detail": "ラベルは spot_access だが中身は notice: 、掲載されている情報はありません。 公共交通 2026年2月27日更新令和7年度まんのう町地域公共交通活性化協議会 2025年6月19日更新高齢者運転免許自主返納支"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-e-mikado-90",
+      "name": "健康ふれあいの里",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-e-mikado-90",
+          "kind": "notice",
+          "url": "http://e-mikado.jp/pages/14/",
+          "label": "アクセスマップ",
+          "found_on": "http://e-mikado.jp/publics/index/21/",
+          "verified": true,
+          "detail": "ラベルは spot_access だが中身は notice: 0203 香川県仲多度郡まんのう町川東2355-1 Tel:0877-56-0015 Fax:0877-56-0016 ●高松空港から車で約30分 ●高速高松自動車道 善通寺IC"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-konpirakabuki",
+      "name": "旧金毘羅大芝居(金丸座)",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-city-117",
+      "name": "丸亀城",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-city-117",
+          "kind": "notice",
+          "url": "https://www.city.marugame.lg.jp/site/castle/list11-21.html",
+          "label": "お知らせ・イベント",
+          "found_on": "https://www.city.marugame.lg.jp/site/castle/",
+          "verified": true,
+          "detail": "本文 お知らせ 2026年8月26日更新指定管理者の募集について(史跡丸亀城跡城内施設) 2026年7月30日更新丸亀城城泊の新プラン"
+        },
+        {
+          "source_id": "kagawa-city-117",
+          "kind": "notice",
+          "url": "https://www.city.marugame.lg.jp/site/castle/index-2.html",
+          "label": "新着情報の一覧",
+          "found_on": "https://www.city.marugame.lg.jp/site/castle/",
+          "verified": false,
+          "detail": "notice はすでに seed がある: 本文 2026年8月26日更新指定管理者の募集について(史跡丸亀城跡城内施設) 2026年8月13日更新丸亀城管理室だより"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-zentsuji",
+      "name": "総本山善通寺",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-shikoku-aquarium",
+      "name": "四国水族館",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-shikoku-aquarium",
+          "kind": "notice",
+          "url": "http://shikoku-aquarium.jp/information/",
+          "label": "館内のご案内",
+          "found_on": "http://shikoku-aquarium.jp/",
+          "verified": false,
+          "detail": "どの種別の中身も見つからない（本文 1121 字）"
+        },
+        {
+          "source_id": "kagawa-shikoku-aquarium",
+          "kind": "spot_hours",
+          "url": "http://shikoku-aquarium.jp/ticket/",
+          "label": "料金・チケット",
+          "found_on": "http://shikoku-aquarium.jp/",
+          "verified": true,
+          "detail": "ラベルは spot_fees だが中身は spot_hours: お申込み・ご相談はこちら 0877-49-4590 四国水族館 団体受付 香川県綾歌郡宇多津町浜一番丁4 受付時間 9:00〜17:00(休館日を除く) 学校団体 学校行事でご来館"
+        },
+        {
+          "source_id": "kagawa-shikoku-aquarium",
+          "kind": "spot_fees",
+          "url": "http://shikoku-aquarium.jp/access/",
+          "label": "アクセス",
+          "found_on": "http://shikoku-aquarium.jp/",
+          "verified": true,
+          "detail": "ラベルは spot_access だが中身は spot_fees: (直営駐車場) 駐車場名 総台数 (身障者用) 料金 四国水族館 駐車場 駐車場空き状況 223台 (5台) 600円 ※車両全長5m、車高2.3mを超える車両はご利用いただけませ"
+        },
+        {
+          "source_id": "kagawa-shikoku-aquarium",
+          "kind": "spot_access",
+          "url": "http://shikoku-aquarium.jp/information/setouchi.html",
+          "label": "瀬戸内海エリア",
+          "found_on": "http://shikoku-aquarium.jp/",
+          "verified": true,
+          "detail": "ラベルは notice だが中身は spot_access: 代表されるように、海岸線が入り組み、山々から流れる河川が栄養分を運び込みます。このため、プランクトンが豊富で、牡蠣や真珠・鯛などの養殖が盛んに行われています。また"
+        },
+        {
+          "source_id": "kagawa-shikoku-aquarium",
+          "kind": "spot_fees",
+          "url": "http://shikoku-aquarium.jp/ticket/otokudeshikoku.html",
+          "label": "おトクdeシコク",
+          "found_on": "http://shikoku-aquarium.jp/",
+          "verified": false,
+          "detail": "spot_fees はすでに seed がある: ゼント 入館から1週間以内有効 丸亀市蓬莱町56-1 パブリックプラザ丸亀 平成レンタカー 丸亀駅前店 レンタカー料金500円OFF 入館から1週間以内有効 丸亀市浜町29 丸亀市"
+        },
+        {
+          "source_id": "kagawa-shikoku-aquarium",
+          "kind": "notice",
+          "url": "http://shikoku-aquarium.jp/special/blog/archive/542/",
+          "label": "    2023.01.26  しゅこくん、防犯・交通安全啓発キャンペーンに参加",
+          "found_on": "http://shikoku-aquarium.jp/",
+          "verified": true,
+          "detail": "ラベルは spot_access だが中身は notice: 成長を記録。 ここは 生きもののための 水族館 2023.01.26 しゅこくん、防犯・交通安全啓発キャンペーンに参加! しゅこくんです。 2023年1月17日("
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-pref-156",
+      "name": "香川県立東山魁夷せとうち美術館",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-pref-156",
+          "kind": "spot_hours",
+          "url": "http://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/information.html",
+          "label": "ご利用案内",
+          "found_on": "http://www.pref.kagawa.lg.jp/higashiyama/",
+          "verified": true,
+          "detail": "ツイート ページID:7914 公開日:2026年6月30日 ここから本文です。 ご利用案内 開館時間 午前9時から午後5時まで(入館は午後4時30分まで) 休館日 月曜日(休日の"
+        },
+        {
+          "source_id": "kagawa-pref-156",
+          "kind": "spot_fees",
+          "url": "http://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/access.html",
+          "label": "交通アクセス",
+          "found_on": "http://www.pref.kagawa.lg.jp/higashiyama/",
+          "verified": true,
+          "detail": "ラベルは spot_access だが中身は spot_fees: バス・乗合タクシー料金 JR坂出駅前から東山魁夷せとうち美術館まで バス(2023年10月1日から改定) 片道400円(大人一名あたり) 乗合タクシー(2026年4月1日から改定)"
+        },
+        {
+          "source_id": "kagawa-pref-156",
+          "kind": "notice",
+          "url": "http://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/list1.html",
+          "label": "新着情報・トピックス一覧",
+          "found_on": "http://www.pref.kagawa.lg.jp/higashiyama/",
+          "verified": true,
+          "detail": "ツイート ページID:18040 公開日:2023年3月2日 ここから本文です。 新着情報一覧 第3期テーマ作品展「風景とは何か―魁夷の風景、私達の風景」"
+        },
+        {
+          "source_id": "kagawa-pref-156",
+          "kind": "spot_fees",
+          "url": "https://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/access.html",
+          "label": "交通アクセスのページ",
+          "found_on": "http://www.pref.kagawa.lg.jp/higashiyama/",
+          "verified": false,
+          "detail": "spot_fees はすでに seed がある: ラベルは spot_access だが中身は spot_fees: バス・乗合タクシー料金 JR坂出駅前から東山魁夷せとうち美術館まで バス(2023年10月1日から改定) 片道400円(大人一名あたり) 乗合タクシー(2026年4月1日から改定)"
+        },
+        {
+          "source_id": "kagawa-pref-156",
+          "kind": "notice",
+          "url": "https://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/list1.html",
+          "label": "新着情報 Topics",
+          "found_on": "http://www.pref.kagawa.lg.jp/higashiyama/",
+          "verified": false,
+          "detail": "notice はすでに seed がある: ツイート ページID:18040 公開日:2023年3月2日 ここから本文です。 新着情報一覧 第3期テーマ作品展「風景とは何か―魁夷の風景、私達の風景」"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-bansyouen",
+      "name": "中津万象園・丸亀美術館",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-bansyouen",
+          "kind": "spot_fees",
+          "url": "http://www.bansyouen.com/about",
+          "label": "庭園のご案内 料金・アクセス",
+          "found_on": "http://www.bansyouen.com/",
+          "verified": true,
+          "detail": ".jp/ 料金について 個人 庭園 (庭園・陶器館) 絵画館 (常設展) 庭園 + 絵画館セット券 大人 800円 (障がい者手帳をお持ちの方500円) 500円 1,300円 小"
+        },
+        {
+          "source_id": "kagawa-bansyouen",
+          "kind": "spot_fees",
+          "url": "http://www.bansyouen.com/about/",
+          "label": "料金・アクセス",
+          "found_on": "http://www.bansyouen.com/",
+          "verified": false,
+          "detail": "spot_fees はすでに seed がある: .jp/ 料金について 個人 庭園 (庭園・陶器館) 絵画館 (常設展) 庭園 + 絵画館セット券 大人 800円 (障がい者手帳をお持ちの方500円) 500円 1,300円 小"
+        },
+        {
+          "source_id": "kagawa-bansyouen",
+          "kind": "notice",
+          "url": "http://www.bansyouen.com/info/",
+          "label": "新着情報・展示案内一覧",
+          "found_on": "http://www.bansyouen.com/",
+          "verified": true,
+          "detail": "丸亀美術館 絵画館 展示替えに伴う休館のお知らせ(令和8年9月14日~18日) 2026年9月3日 丸亀美術館 絵画館 展示替えに伴う休館のお知らせ 平素は中津万象"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-p2788",
+      "name": "恋人の聖地",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-shiromineji",
+      "name": "白峯寺",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-setoohashitower",
+      "name": "瀬戸大橋タワー",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-setoohashitower",
+          "kind": "spot_hours",
+          "url": "https://www.setoohashitower.com/index.html",
+          "label": "営業時間・料金",
+          "found_on": "https://www.setoohashitower.com/index.html#content4-4",
+          "verified": true,
+          "detail": "から瀬戸大橋を見ながら、パフェやドリンク、人気の台湾カステラをお楽しみください! Follow me! 営業時間 午前9:00~午後5:00 (入場4:20まで) 月曜定休 (祝日"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-p494",
+      "name": "【宇多津町】南隆寺の坐禅会",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-yakuyoke",
+      "name": "【宇多津町】郷照寺（第78番札所）",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-shiromineji-2941",
+      "name": "【紅葉スポット】白峯寺",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-kyougokuann",
+      "name": "京極庵",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-mimoca",
+      "name": "丸亀市猪熊弦一郎現代美術館",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-kyuman",
+      "name": "灸まん美術館",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-kyuman",
+          "kind": "spot_hours",
+          "url": "https://kyuman.art/guide/",
+          "label": "利用案内",
+          "found_on": "https://kyuman.art/",
+          "verified": true,
+          "detail": "利用案内 休館日 毎週火曜日・水曜日・年末年始 ※ 和田邦坊画業館は、展示替え期間中は閉室いたします 開館時間 9:00-17:00 (画業館の入館・カフェのラストオーダーは16:"
+        },
+        {
+          "source_id": "kagawa-kyuman",
+          "kind": "notice",
+          "url": "https://kyuman.art/access/",
+          "label": "交通アクセス",
+          "found_on": "https://kyuman.art/",
+          "verified": true,
+          "detail": "ラベルは spot_access だが中身は notice: 5-0052 香川県善通寺市大麻町338 Tel・Fax 0877-75-3000 Googleマップで開く ※各駅前にタクシー乗り場があります。 ※無料駐車場(約40台)あ"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-p3639",
+      "name": "家中舎",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-zentsuji-mandegan",
+      "name": "株式会社まんでがん",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-p3920",
+      "name": "リモベヤ",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-jb-honshi",
+      "name": "瀬戸大橋",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-nishino-kinryo",
+      "name": "【施設見学】金陵の郷",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-park-mino",
+      "name": "ふれあいパークみの・天然いやだに温泉「大師の湯」",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-kotohiki-kairo",
+      "name": "琴弾廻廊",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-kotohiki-kairo",
+          "kind": "spot_fees",
+          "url": "https://kotohiki-kairo.co.jp/info/",
+          "label": "施設案内・ご利用料金",
+          "found_on": "https://kotohiki-kairo.co.jp/",
+          "verified": true,
+          "detail": "us 施設案内・ご利用料金 温泉料金のご案内About Fee 入湯料 平日 土日祝他 大人(中学生以上) 950円 1,100円 小学生 550円 650円 幼児(未就学児) 3"
+        },
+        {
+          "source_id": "kagawa-kotohiki-kairo",
+          "kind": "notice",
+          "url": "https://kotohiki-kairo.co.jp/access/",
+          "label": "アクセス",
+          "found_on": "https://kotohiki-kairo.co.jp/",
+          "verified": true,
+          "detail": "ラベルは spot_access だが中身は notice: 〒768-0062 香川県観音寺市有明町6-6 TEL 0875-24-4567 温泉/宿泊 11:00-23:00(受付 22:00まで) 食事 11:00-15:00("
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-park-mino-380",
+      "name": "コスモランドみの",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-takaradanosato",
+      "name": "たからだの里「環の湯」",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-p144",
+      "name": "フラワーパーク浦島",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-livemax-resort",
+      "name": "母神温泉",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-livemax-resort",
+          "kind": "spot_fees",
+          "url": "https://www.livemax-resort.com/kagawa/kanonji/access/",
+          "label": "アクセス ACCESS",
+          "found_on": "https://www.livemax-resort.com/kagawa/kanonji/hotspring/",
+          "verified": true,
+          "detail": "ラベルは spot_access だが中身は spot_fees: 1号線経由で約6分 高松自動車道→さぬき豊中IC→国道11号線経由で約20分 駐車場 駐車場 80台 料金 無料"
+        },
+        {
+          "source_id": "kagawa-livemax-resort",
+          "kind": "spot_fees",
+          "url": "https://www.livemax-resort.com/kagawa/kanonji/information/",
+          "label": "ご利用案内",
+          "found_on": "https://www.livemax-resort.com/kagawa/kanonji/hotspring/",
+          "verified": false,
+          "detail": "spot_fees はすでに seed がある: ラベルは spot_hours だが中身は spot_fees: ラン優先となります。 チェックアウト時刻を過ぎてのご利用は、延泊料金を頂戴します。 11:00~12:00のご利用は、1,000円(1名)となります。 12:00以降は当日の空室が"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-souyu-135",
+      "name": "たかせ天然温泉",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-souyu-135",
+          "kind": "spot_hours",
+          "url": "https://www.souyu.co.jp/shisetsu-news/takase/info/1524.php",
+          "label": "202608お盆期間中の営業案内",
+          "found_on": "https://www.souyu.co.jp/shisetsu/takase",
+          "verified": true,
+          "detail": "8/12の水曜サービスデーは開催いたしません。 皆様のご来店を心よりお待ちしております! ♨️ 温浴施設 営業時間: 10:00 〜 23:00 最終受付(札止め): 22:30 "
+        },
+        {
+          "source_id": "kagawa-souyu-135",
+          "kind": "notice",
+          "url": "https://www.souyu.co.jp/shisetsu-news/takase/info/8closed.php",
+          "label": "8月の定休日のご案内",
+          "found_on": "https://www.souyu.co.jp/shisetsu/takase",
+          "verified": true,
+          "detail": "お知らせ HOME たかせ天然温泉 お知らせ 2026.07.258月の定休日のご案内 【8月休館日(定休日)のお知らせ】 いつも「たかせ天然温泉」をご愛顧いただ"
+        },
+        {
+          "source_id": "kagawa-souyu-135",
+          "kind": "spot_fees",
+          "url": "http://www.souyu.co.jp/shisetsu-news/takase/",
+          "label": "一覧はこちら",
+          "found_on": "https://www.souyu.co.jp/shisetsu/takase",
+          "verified": true,
+          "detail": "ラベルは notice だが中身は spot_fees: います。日頃の感謝を込めて、期間限定で大変お得な回数券セールを実施いたします!〇特典内容:大人回数券 10枚綴り【通常 6,400 円】を、期間中のみ 【5,800 円】で販売!通"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-shikoku-cable",
+      "name": "雲辺寺ロープウェイ",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-shikoku-cable",
+          "kind": "notice",
+          "url": "https://www.shikoku-cable.co.jp/unpenji/news",
+          "label": "お知らせ",
+          "found_on": "https://www.shikoku-cable.co.jp/unpenji/",
+          "verified": false,
+          "detail": "「お知らせ」は告知。通常のspot_hoursとしては採らない"
+        },
+        {
+          "source_id": "kagawa-shikoku-cable",
+          "kind": "spot_fees",
+          "url": "https://www.shikoku-cable.co.jp/unpenji/price",
+          "label": "料金",
+          "found_on": "https://www.shikoku-cable.co.jp/unpenji/",
+          "verified": true,
+          "detail": "ギャラリー 雲辺寺ロープウェイ料金案内 普通運賃 ※ 表は横にスクロールできます 区分 往復 片道 大人 2,200円 1,200円 中・高校生 1,650円 900円 小学生 1"
+        },
+        {
+          "source_id": "kagawa-shikoku-cable",
+          "kind": "spot_access",
+          "url": "https://www.shikoku-cable.co.jp/unpenji/timetable",
+          "label": "時刻表",
+          "found_on": "https://www.shikoku-cable.co.jp/unpenji/",
+          "verified": true,
+          "detail": "ラベルは spot_hours だが中身は spot_access: り最終 運行間隔 3月~11月 7:40 17:20 20分ごと (毎時00・20・40分) 12月~2月 8:00 17:20 20分ごと (毎時00・20"
+        },
+        {
+          "source_id": "kagawa-shikoku-cable",
+          "kind": "notice",
+          "url": "https://www.shikoku-cable.co.jp/unpenji/access",
+          "label": "アクセス",
+          "found_on": "https://www.shikoku-cable.co.jp/unpenji/",
+          "verified": true,
+          "detail": "ラベルは spot_access だが中身は notice: 用の場合は、名称「雲辺寺ロープウェイ山麓駅」または電話番号「0875-54-4968」で検索してください。 県道8号線・五郷から山麓駅までの林道は、落石等に御注意下さい。 県道"
+        },
+        {
+          "source_id": "kagawa-shikoku-cable",
+          "kind": "notice",
+          "url": "https://www.shikoku-cable.co.jp/yakuri/news",
+          "label": "お知らせ",
+          "found_on": "https://www.shikoku-cable.co.jp/unpenji/",
+          "verified": false,
+          "detail": "notice はすでに seed がある: 八栗ケーブルの魅力 ギャラリー お知らせ 2025年12月12日 年末年始の運行時間のお知らせ 八栗寺参拝客多客の為、年末年始の八栗ケーブルの運行時間を下記の通"
+        },
+        {
+          "source_id": "kagawa-shikoku-cable",
+          "kind": "spot_fees",
+          "url": "https://www.shikoku-cable.co.jp/yakuri/price",
+          "label": "料金",
+          "found_on": "https://www.shikoku-cable.co.jp/unpenji/",
+          "verified": false,
+          "detail": "spot_fees はすでに seed がある: 八栗ケーブル料金案内 普通運賃 ※ 表は横にスクロールできます 区分 往復 上り 下り 大人(中学生以上) 1,000円 600円 500円 小学生 500円 300円 250円 "
+        },
+        {
+          "source_id": "kagawa-shikoku-cable",
+          "kind": "spot_access",
+          "url": "https://www.shikoku-cable.co.jp/yakuri/timetable",
+          "label": "時刻表",
+          "found_on": "https://www.shikoku-cable.co.jp/unpenji/",
+          "verified": false,
+          "detail": "spot_access はすでに seed がある: ラベルは spot_hours だが中身は spot_access: 始発 下り最終 運行間隔 毎日 7:30 17:15 15分ごと (毎時00・15・30・45分) 毎月1日 5:00 17:15 15分ごと (毎時00・1"
+        },
+        {
+          "source_id": "kagawa-shikoku-cable",
+          "kind": "spot_access",
+          "url": "https://www.shikoku-cable.co.jp/yakuri/access",
+          "label": "アクセス",
+          "found_on": "https://www.shikoku-cable.co.jp/unpenji/",
+          "verified": false,
+          "detail": "spot_access はすでに seed がある: )845-2218 FAX:(087)845-4172 お車でのアクセス カーナビ等ご利用の場合は、 名称「八栗ケーブル登山口駅」または 電話番号「087-8"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-p130",
+      "name": "弥谷寺",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-shikoku88-6869",
+      "name": "神恵院・観音寺",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-komatsuoji",
+      "name": "大興寺",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-komatsuoji",
+          "kind": "notice",
+          "url": "http://www.komatsuoji.com/access.html",
+          "label": "      所在地、および各交通機関によるアクセスをご案内します。  ",
+          "found_on": "http://www.komatsuoji.com/",
+          "verified": true,
+          "detail": "ラベルは spot_access だが中身は notice: 】 〒768-0101 香川県三豊市山本町辻4209 電話:0875-63-2341 【四国八十八ヶ所 第六十七番札所 小松尾山 不動光院 大興寺】 〒768-0101 香川県"
+        },
+        {
+          "source_id": "kagawa-komatsuoji",
+          "kind": "notice",
+          "url": "http://www.komatsuoji.com/news.html",
+          "label": "お知らせ一覧",
+          "found_on": "http://www.komatsuoji.com/",
+          "verified": false,
+          "detail": "notice はすでに seed がある: 】 〒768-0101 香川県三豊市山本町辻4209 電話:0875-63-2341 【四国八十八ヶ所 第六十七番札所 小松尾山 不動光院 大興寺】 〒768-0101 香川県"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-mizupark",
+      "name": "【施設見学】水の資料館",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-olive-pk",
+      "name": "サン・オリーブ温泉（道の駅「小豆島オリーブ公園」内）",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-manten-shodoshima",
+      "name": "オリーブ温泉",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-p309",
+      "name": "銚子渓・お猿の国",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-shimahaku-shimameshi-shimayu",
+      "name": "湯元小豆島温泉・塩の湯（島湯）",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-shimayado",
+      "name": "小豆島温泉里枝の湯",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-olive-pk-357",
+      "name": "小豆島オートビレッジYOSHIDAふるさと交流館・吉田温泉",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-kokuminshukusha",
+      "name": "オリーブ温泉島の宿",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-bgf",
+      "name": "小豆島町内海B&G海洋センター",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-kankakei-2937",
+      "name": "【紅葉スポット】寒霞渓",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-p3832",
+      "name": "京宝亭",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-marukin",
+      "name": "【施設見学】マルキン醤油記念館",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-p4337",
+      "name": "【施設見学】かどや製油（株）今昔館",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-morikuni",
+      "name": "【施設見学】株式会社",
+      "existing_kinds": [
         "spot_detail"
       ],
       "proposals": [],

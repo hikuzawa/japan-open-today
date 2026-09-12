@@ -7,7 +7,9 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
+from urllib.parse import urlparse
 
 import pytest
 import yaml
@@ -48,7 +50,9 @@ def test_crawlable_sources_have_evidence_and_an_official_operator(ws: Workspace)
             continue
         assert source.operator_evidence is not None, source.id
         assert source.operator_evidence.quote.strip(), source.id
-        assert source.operator_evidence.url.startswith("https://"), source.id
+        # http のみの公式サイトは実際にある（地元の施設・古い自治体ページ）。
+        # 求めるのは「根拠の在りかが URL として書かれていること」
+        assert source.operator_evidence.url.startswith(("https://", "http://")), source.id
         assert source.operator_evidence.checked_on is not None, source.id
         assert source.operator_kind in allowed, (source.id, source.operator_kind)
 
@@ -96,7 +100,8 @@ def test_seed_hosts_are_allowed(entries: list[dict]) -> None:
         if not hosts:
             continue
         for page in entry.get("pages", []) or []:
-            assert any(f"//{h}/" in page["url"] for h in hosts), (entry["id"], page["url"])
+            host = urlparse(page["url"]).netloc
+            assert host in hosts, (entry["id"], page["url"])
 
 
 def test_notice_pages_exist_for_spots_that_can_have_them(entries: list[dict]) -> None:
@@ -119,14 +124,25 @@ def test_spots_and_routes_load(ws: Workspace) -> None:
     assert len({s.spot_id for s in ds.spots}) == len(ds.spots)
 
 
-def test_every_spot_has_three_language_names(ws: Workspace) -> None:
-    """英語・繁体字が無いページは日本語のまま出す。推測のローマ字は作らない（ADR 0005）。"""
-    for spot in Dataset.load(ws).spots:
+def test_spot_names_are_japanese_or_an_evidenced_translation(ws: Workspace) -> None:
+    """日本語名は必ずある。英語・繁体字は**公式表記か用語集があるときだけ**入れる（ADR 0005）。
+
+    推測のローマ字は作らないので、訳が無い施設は日本語のまま出る。ここでは
+    「訳が入っているなら出どころが宣言されている」ことだけを求める。
+    """
+    spots = Dataset.load(ws).spots
+    for spot in spots:
         assert spot.names.get("ja"), spot.spot_id
+        assert spot.names["ja"].text.strip(), spot.spot_id
         for locale in ("en", "zh-Hant"):
             entry = spot.names.get(locale)
-            assert entry is not None and entry.text.strip(), (spot.spot_id, locale)
+            if entry is None:
+                continue
+            assert entry.text.strip(), (spot.spot_id, locale)
             assert entry.source in ("official", "glossary", "ja"), (spot.spot_id, locale)
+    # 訳の無い施設が増えたことを見えるようにする（用語集を埋める作業の目安）
+    translated = [s for s in spots if s.names.get("en")]
+    assert translated, "英語名が 1 件も無いのは設定の取りこぼし"
 
 
 def test_commons_categories_are_resolved_not_guessed(ws: Workspace) -> None:
@@ -234,3 +250,44 @@ def test_islands_win_over_the_municipality_they_sit_in() -> None:
     # 県外・空文字は決めない（推測しない）
     assert area_for_address("岡山県玉野市") is None
     assert area_for_address("") is None
+
+
+# --- 同じ場所を 2 回入れない -------------------------------------------------
+
+
+def _norm_name(name: str) -> str:
+    """「【紅葉スポット】寒霞渓」→「寒霞渓」。テーマ別の一覧は同じ場所を別名で載せる。"""
+    name = re.sub(r"^【[^】]*】", "", name or "")
+    return re.sub(r"[（(][^）)]*[）)]", "", name).strip()
+
+
+def _addr_key(address: str) -> str:
+    address = re.sub(r"〒?\d{3}-?\d{4}", "", address or "")
+    address = address.translate(str.maketrans("０１２３４５６７８９", "0123456789"))
+    return re.sub(r"[丁目番地号の\-ー－\s]", "", address)[:24]
+
+
+def test_the_same_place_is_not_listed_twice(ws: Workspace) -> None:
+    """観光協会の一覧は同じ場所をテーマ別に何度も載せる（「【紅葉スポット】寒霞渓」）。
+
+    そのまま収録すると、同じ施設のページが 2 つでき、判定も 2 回数えられる。
+    名前が同じもの、住所が同じで名前が包含関係にあるものは 1 件にする。
+    """
+    spots = Dataset.load(ws).spots
+    by_name: dict[str, str] = {}
+    for spot in spots:
+        key = _norm_name(spot.name("ja"))
+        assert key not in by_name, (spot.spot_id, by_name.get(key))
+        by_name[key] = spot.spot_id
+    by_addr: dict[str, tuple[str, str]] = {}
+    for spot in spots:
+        addr = _addr_key(spot.address.value or spot.address.quote or "")
+        if not addr:
+            continue
+        found = by_addr.get(addr)
+        name = _norm_name(spot.name("ja"))
+        if found is not None:
+            other_id, other_name = found
+            assert not (name in other_name or other_name in name), (spot.spot_id, other_id)
+        else:
+            by_addr[addr] = (spot.spot_id, name)

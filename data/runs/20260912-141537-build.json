@@ -1,0 +1,22 @@
+{
+  "ci": false,
+  "command": "build",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-09-12T14:15:39Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "japan-open-today",
+  "stages": {
+    "build": {
+      "files": 342,
+      "pages": 334
+    }
+  },
+  "started_at": "2026-09-12T14:15:37Z"
+}

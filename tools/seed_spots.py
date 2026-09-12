@@ -98,6 +98,18 @@ class Seed:
     info: dict[str, str] = field(default_factory=dict)
 
 
+def _plain_name(name: str) -> str:
+    """「【紅葉スポット】寒霞渓」→「寒霞渓」。テーマ別の重複を見つけるために使う。"""
+    name = re.sub(r"^【[^】]*】", "", name or "")
+    return re.sub(r"[（(][^）)]*[）)]", "", name).strip()
+
+
+def _normalise(url: str) -> str:
+    """パスが空の URL に「/」を足す。`http://example.com` のままだとホストの照合に落ちる。"""
+    parsed = urlparse(url)
+    return url + "/" if parsed.netloc and not parsed.path else url
+
+
 def _plain(html: str) -> str:
     return " ".join(page_text(html).split())
 
@@ -216,8 +228,8 @@ def build_seed(client: PoliteClient, cand: dict[str, Any]) -> Seed:
     seed = Seed(
         point_id=cand["point_id"],
         name=cand["name"],
-        source_url=official or cand["url"],
-        official_url=official or cand["url"],
+        source_url=_normalise(official or cand["url"]),
+        official_url=_normalise(official or cand["url"]),
         info=cand.get("info") or {},
     )
     address = seed.info.get("住所", "")
@@ -301,50 +313,15 @@ def _yaml_block(seed: Seed, source_id: str) -> str:
     return "\n".join(lines) + "\n"
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--inventory", type=Path, default=Path("data/runs/kagawa-inventory.json"))
-    parser.add_argument("--out", type=Path, default=Path("data/runs/spot-seeds.json"))
-    parser.add_argument("--limit", type=int, default=0)
-    parser.add_argument("--apply", action="store_true", help="kagawa.yaml に追記する")
-    args = parser.parse_args()
-
-    ws = Workspace.open(Path.cwd())
-    inventory = json.loads(args.inventory.read_text(encoding="utf-8"))
-    entries = load_entries(ws)
-    have_ids = {e["id"] for e in entries}
-    # 重複の判定は **URL と施設名** で行う。ホストで見ると、1 つのホストに多数の施設が
-    # 乗っているサイト（観光協会・ベネッセ）でまるごと弾かれる
-    have_urls = {p["url"] for e in entries for p in (e.get("pages") or [])}
-    have_urls |= {e.get("official_url", "") for e in entries}
-    have_names = {
-        (e.get("spot") or {}).get("names", {}).get("ja", {}).get("text", "")
-        for e in entries
-        if e.get("spot")
-    }
-    have_names |= {n for e in entries for n in ((e.get("spot") or {}).get("aliases") or [])}
-
-    todo = [c for c in inventory["candidates"] if c.get("spot_type") == "gated"]
-    if args.limit:
-        todo = todo[: args.limit]
-    print(f"== ゲートのある施設 {len(todo)} 件を情報源にする ==")
-
-    seeds: list[Seed] = []
-    ua = f"{ws.site.user_agent} spot seeding"
-    with PoliteClient(ua, default_delay=3.0, jitter=1.0, timeout=30.0) as client:
-        for n, cand in enumerate(todo, 1):
-            seed = build_seed(client, cand)
-            if seed.source_url in have_urls:
-                seed.ok = False
-                seed.note = f"すでに収録済みの URL（{seed.source_url}）"
-            elif seed.name in have_names:
-                seed.ok = False
-                seed.note = f"すでに収録済みの施設（{seed.name}）"
-            seeds.append(seed)
-            mark = "OK " if seed.ok else "NG "
-            print(f"  {n:3}/{len(todo)} {mark}{seed.name[:20]:22} {seed.area:14} {seed.note[:44]}")
-        requests = client.request_count
-
+def _write(
+    args: argparse.Namespace,
+    ws: Workspace,
+    seeds: list[Seed],
+    requests: int,
+    have_ids: set[str],
+    have_spot_ids: set[str],
+) -> int:
+    """結果を書き出し、`--apply` なら kagawa.yaml に追記する。"""
     ok = [s for s in seeds if s.ok]
     pending = [s for s in seeds if s.policy == "pending"]
     args.out.parent.mkdir(parents=True, exist_ok=True)
@@ -364,25 +341,96 @@ def main() -> int:
         newline="\n",
     )
     print(f"\n採用 {len(ok)} 件 / レビュー待ち {len(pending)} 件 / {requests} リクエスト")
-
-    if args.apply and ok:
-        path = ws.sources_dir / "kagawa.yaml"
-        text = path.read_text(encoding="utf-8")
-        blocks = ["", "  # --- S6-3 ①: ゲートのある施設（観光協会の一覧から。ADR 0011）"]
-        used = set(have_ids)
-        for seed in ok:
-            source_id = f"kagawa-{seed.spot_id}"
-            suffix = 2
-            while source_id in used:
-                source_id = f"kagawa-{seed.spot_id}-{suffix}"
-                suffix += 1
-            used.add(source_id)
-            blocks.append(_yaml_block(seed, source_id))
-        path.write_text(text.rstrip() + "\n" + "\n".join(blocks), encoding="utf-8")
-        print(f"kagawa.yaml に {len(ok)} 件を追記した")
-    elif args.apply:
+    if not args.apply:
+        print("--apply を付けると kagawa.yaml に追記する")
+        return 0
+    if not ok:
         print("追記するものが無い")
+        return 0
+
+    path = ws.sources_dir / "kagawa.yaml"
+    text = path.read_text(encoding="utf-8")
+    blocks = ["", "  # --- S6-3 ①: ゲートのある施設（観光協会の一覧から。ADR 0011）"]
+    used_ids = set(have_ids)
+    used_spots = set(have_spot_ids)
+    for seed in ok:
+        # spot_id は記録の鍵で、URL にも出る。**必ず一意にする**。
+        # 同じホストに複数の施設が乗っていると、ホスト名から作った識別子が衝突する
+        if seed.spot_id in used_spots:
+            seed.spot_id = f"{seed.spot_id}-{seed.point_id}"
+        used_spots.add(seed.spot_id)
+        source_id = f"kagawa-{seed.spot_id}"
+        suffix = 2
+        while source_id in used_ids:
+            source_id = f"kagawa-{seed.spot_id}-{suffix}"
+            suffix += 1
+        used_ids.add(source_id)
+        blocks.append(_yaml_block(seed, source_id))
+    path.write_text(text.rstrip() + "\n" + "\n".join(blocks), encoding="utf-8")
+    print(f"kagawa.yaml に {len(ok)} 件を追記した")
     return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--inventory", type=Path, default=Path("data/runs/kagawa-inventory.json"))
+    parser.add_argument("--out", type=Path, default=Path("data/runs/spot-seeds.json"))
+    parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument("--apply", action="store_true", help="kagawa.yaml に追記する")
+    parser.add_argument(
+        "--from-saved",
+        action="store_true",
+        help="保存済みの spot-seeds.json から書き出す（取得し直さない）",
+    )
+    args = parser.parse_args()
+
+    ws = Workspace.open(Path.cwd())
+    inventory = json.loads(args.inventory.read_text(encoding="utf-8"))
+    entries = load_entries(ws)
+    have_ids = {e["id"] for e in entries}
+    # 重複の判定は **URL と施設名** で行う。ホストで見ると、1 つのホストに多数の施設が
+    # 乗っているサイト（観光協会・ベネッセ）でまるごと弾かれる
+    have_urls = {p["url"] for e in entries for p in (e.get("pages") or [])}
+    have_urls |= {e.get("official_url", "") for e in entries}
+    have_names = {
+        (e.get("spot") or {}).get("names", {}).get("ja", {}).get("text", "")
+        for e in entries
+        if e.get("spot")
+    }
+    have_names |= {n for e in entries for n in ((e.get("spot") or {}).get("aliases") or [])}
+    # テーマ別の一覧は同じ場所を別名で載せる（「【紅葉スポット】寒霞渓」）。
+    # 【…】と（…）を外した名前でも重複を見る
+    have_names |= {_plain_name(n) for n in have_names if n}
+    have_spot_ids = {(e.get("spot") or {}).get("spot_id", "") for e in entries if e.get("spot")}
+
+    todo = [c for c in inventory["candidates"] if c.get("spot_type") == "gated"]
+    if args.limit:
+        todo = todo[: args.limit]
+    print(f"== ゲートのある施設 {len(todo)} 件を情報源にする ==")
+
+    seeds: list[Seed] = []
+    if args.from_saved:
+        saved = json.loads(args.out.read_text(encoding="utf-8"))
+        seeds = [Seed(**row) for row in saved["seeds"]]
+        print(f"保存済みの {len(seeds)} 件から書き出す（取得しない）")
+        return _write(args, ws, seeds, 0, have_ids, have_spot_ids)
+
+    ua = f"{ws.site.user_agent} spot seeding"
+    with PoliteClient(ua, default_delay=3.0, jitter=1.0, timeout=30.0) as client:
+        for n, cand in enumerate(todo, 1):
+            seed = build_seed(client, cand)
+            if seed.source_url in have_urls:
+                seed.ok = False
+                seed.note = f"すでに収録済みの URL（{seed.source_url}）"
+            elif seed.name in have_names or _plain_name(seed.name) in have_names:
+                seed.ok = False
+                seed.note = f"すでに収録済みの施設（{seed.name}）"
+            seeds.append(seed)
+            mark = "OK " if seed.ok else "NG "
+            print(f"  {n:3}/{len(todo)} {mark}{seed.name[:20]:22} {seed.area:14} {seed.note[:44]}")
+        requests = client.request_count
+
+    return _write(args, ws, seeds, requests, have_ids, have_spot_ids)
 
 
 if __name__ == "__main__":

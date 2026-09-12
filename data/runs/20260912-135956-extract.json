@@ -1,0 +1,141 @@
+{
+  "ci": false,
+  "command": "extract",
+  "errors": [],
+  "extraction_metrics": {
+    "fields": {
+      "address": {
+        "not_found": 8,
+        "notes": {},
+        "parsed": 83,
+        "quote_not_in_source": 0,
+        "total": 91,
+        "unparsed": 0
+      },
+      "closures": {
+        "not_found": 27,
+        "notes": {
+          "always_open": 14,
+          "irregular": 3,
+          "no_closure_rule": 8,
+          "quote_not_in_source": 2
+        },
+        "parsed": 54,
+        "quote_not_in_source": 2,
+        "total": 91,
+        "unparsed": 8
+      },
+      "fee_adult": {
+        "not_found": 46,
+        "notes": {
+          "free": 7,
+          "multiple": 4,
+          "no_number": 1,
+          "not_an_individual_fee": 1,
+          "quote_not_in_source": 2
+        },
+        "parsed": 37,
+        "quote_not_in_source": 2,
+        "total": 91,
+        "unparsed": 6
+      },
+      "fee_child": {
+        "not_found": 58,
+        "notes": {
+          "free": 6,
+          "no_number": 2,
+          "quote_not_in_source": 4,
+          "range": 1
+        },
+        "parsed": 26,
+        "quote_not_in_source": 4,
+        "total": 91,
+        "unparsed": 3
+      },
+      "fee_senior": {
+        "not_found": 82,
+        "notes": {
+          "free": 1,
+          "no_number": 1,
+          "quote_not_in_source": 1
+        },
+        "parsed": 7,
+        "quote_not_in_source": 1,
+        "total": 91,
+        "unparsed": 1
+      },
+      "hours": {
+        "not_found": 19,
+        "notes": {
+          "no_time_range": 2,
+          "quote_not_in_source": 2
+        },
+        "parsed": 68,
+        "quote_not_in_source": 2,
+        "total": 91,
+        "unparsed": 2
+      },
+      "phone": {
+        "not_found": 7,
+        "notes": {
+          "quote_not_in_source": 1
+        },
+        "parsed": 83,
+        "quote_not_in_source": 1,
+        "total": 91,
+        "unparsed": 0
+      },
+      "reservation_note": {
+        "not_found": 75,
+        "notes": {
+          "quote_not_in_source": 4
+        },
+        "parsed": 12,
+        "quote_not_in_source": 4,
+        "total": 91,
+        "unparsed": 0
+      },
+      "visit_minutes": {
+        "not_found": 79,
+        "notes": {
+          "approx": 9,
+          "quote_not_in_source": 1
+        },
+        "parsed": 11,
+        "quote_not_in_source": 1,
+        "total": 91,
+        "unparsed": 0
+      }
+    },
+    "flags": {
+      "summary_truncated": 3,
+      "summary_verbatim_overlap": 5
+    },
+    "items": 91,
+    "pages": 91,
+    "summary_replaced": 5,
+    "truncated_pages": 0
+  },
+  "finished_at": "2026-09-12T14:01:47Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 91,
+    "input_tokens": 312687,
+    "output_tokens": 24775
+  },
+  "notes": [],
+  "service": "japan-open-today",
+  "stages": {
+    "extract": {
+      "items": 91,
+      "pages": 91
+    },
+    "ingest": {
+      "created": 91,
+      "skipped": 0,
+      "unchanged": 0,
+      "updated": 0
+    }
+  },
+  "started_at": "2026-09-12T13:59:56Z"
+}
