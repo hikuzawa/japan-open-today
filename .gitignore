@@ -10,5 +10,11 @@ __pycache__/
 dist/
 data/raw/
 data/llm_cache/
+# 画像の実体はローカルキャッシュ（sitemill ADR 0020）。provenance の assets.json はコミットする
+data/assets/**/*.jpg
+data/assets/**/*.jpeg
+data/assets/**/*.png
+data/assets/**/*.webp
+data/assets/**/*.gif
 logs/
 *.log

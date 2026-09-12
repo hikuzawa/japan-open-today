@@ -1,3 +1,7 @@
 # Screen wording (English). Facility names and descriptions are data, not wording.
 site:
   name_short: Japan Open Today
+asset:
+  credit: "{author} ({license})"
+  credit_source: Source page (Wikimedia Commons)
+  fetched: "Fetched {when}"

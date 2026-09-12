@@ -1,0 +1,710 @@
+{
+  "probed_at": "2026-09-12T17:29:58.363613+09:00",
+  "requests": 91,
+  "maps_key_present": false,
+  "terms": [
+    {
+      "site": "kagawa-pref",
+      "url": "https://www.pref.kagawa.lg.jp/kocho/koho/kohosonota/about.html",
+      "result": "不採用",
+      "detail": "利用を制限する表記あり（非営利|改変禁止|継承\\s*4\\.0|転載を?禁|無断転載|All Rights Reserved）",
+      "license": null
+    },
+    {
+      "site": "kagawa-kanko",
+      "url": "https://www.my-kagawa.jp/",
+      "result": "規約ページのリンクが見つからない"
+    },
+    {
+      "site": "takamatsu",
+      "url": "https://www.city.takamatsu.kagawa.jp/homepage/thissite.html",
+      "result": "不採用",
+      "detail": "利用を制限する表記あり（非営利|改変禁止|継承\\s*4\\.0|転載を?禁|無断転載|All Rights Reserved）",
+      "license": null
+    },
+    {
+      "site": "shodoshima",
+      "url": "https://shodoshima.or.jp/",
+      "result": "規約ページのリンクが見つからない"
+    },
+    {
+      "site": "mitoyo",
+      "url": "https://www.mitoyo-kanko.com/",
+      "result": "規約ページのリンクが見つからない"
+    }
+  ],
+  "spots": [
+    {
+      "spot_id": "ritsurin",
+      "name": "栗林公園",
+      "adopted": [
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Ritsurin_pano_956.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Ritsurin_pano_956.jpg",
+          "author": "Photos of Japan",
+          "license": "CC0-1.0",
+          "licenses_found": [
+            "CC0-1.0"
+          ],
+          "reason": "whitelist:CC0-1.0",
+          "credit_text": "Ritsurin pano 956.jpg by Photos of Japan（CC0 1.0（パブリックドメイン提供））/ Wikimedia Commons",
+          "asset_id": "1831bab539443a11",
+          "byte_size": 159816
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:51-RITSURI-KOEN-Takamatsu-7037.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/51-RITSURI-KOEN-Takamatsu-7037.jpg",
+          "author": "Bigjap",
+          "license": "CC-BY-4.0",
+          "licenses_found": [
+            "CC-BY-4.0"
+          ],
+          "reason": "whitelist:CC-BY-4.0",
+          "credit_text": "51-RITSURI-KOEN-Takamatsu-7037.jpg by Bigjap（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））/ Wikimedia Commons",
+          "asset_id": "5e1de93b921a774c",
+          "byte_size": 675074
+        }
+      ],
+      "rejected": [
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Ritsurin.JPG",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Ritsurin.JPG",
+          "author": "Leela Soden",
+          "license": null,
+          "licenses_found": [
+            "GFDL",
+            "CC BY-SA（継承）",
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承））",
+          "credit_text": "Ritsurin.JPG by Leela Soden（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Tokiwa-bashi_Bridge,_Takamatsu.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Tokiwa-bashi_Bridge%2C_Takamatsu.jpg",
+          "author": "ラハール",
+          "license": null,
+          "licenses_found": [
+            "パブリックドメイン表示"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（パブリックドメイン表示）",
+          "credit_text": "Tokiwa-bashi Bridge, Takamatsu.jpg by ラハール（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Photo_du_Gun%27o-chi.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Photo_du_Gun%27o-chi.jpg",
+          "author": "Azagal258",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Photo du Gun'o-chi.jpg by Azagal258（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Ritsurin_Garden_-_2020_04_1.ogg",
+          "image_url": null,
+          "author": "Nesnad",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Ritsurin Garden - 2020 04 1.ogg by Nesnad（ライセンス未確認（不採用））/ Wikimedia Commons"
+        }
+      ],
+      "sns": {
+        "instagram": "https://www.instagram.com/udonken_kagawa",
+        "x": "https://twitter.com/UdonkenKanko"
+      },
+      "map_embed": false,
+      "map_link": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B7%9D%E7%9C%8C%E9%AB%98%E6%9D%BE%E5%B8%82%E6%A0%97%E6%9E%97%E7%94%BA+%E6%A0%97%E6%9E%97%E5%85%AC%E5%9C%92",
+      "notes": []
+    },
+    {
+      "spot_id": "tamamo",
+      "name": "高松城跡 玉藻公園",
+      "adopted": [],
+      "rejected": [
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Below_Takamatsu_Castle.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Below_Takamatsu_Castle.jpg",
+          "author": "Edo-period artist",
+          "license": null,
+          "licenses_found": [
+            "パブリックドメイン表示"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（パブリックドメイン表示）",
+          "credit_text": "Below Takamatsu Castle.jpg by Edo-period artist（ライセンス未確認（不採用））/ Wikimedia Commons"
+        }
+      ],
+      "sns": {},
+      "map_embed": false,
+      "map_link": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B7%9D%E7%9C%8C%E9%AB%98%E6%9D%BE%E5%B8%82%E7%8E%89%E8%97%BB%E7%94%BA+%E7%8E%89%E8%97%BB%E5%85%AC%E5%9C%92",
+      "notes": [
+        "公式サイトを取得できない（status=0）"
+      ]
+    },
+    {
+      "spot_id": "shikokumura",
+      "name": "四国村ミウゼアム",
+      "adopted": [],
+      "rejected": [],
+      "sns": {
+        "instagram": "https://www.instagram.com/shikoku_mura"
+      },
+      "map_embed": false,
+      "map_link": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B7%9D%E7%9C%8C%E9%AB%98%E6%9D%BE%E5%B8%82%E5%B1%8B%E5%B3%B6%E4%B8%AD%E7%94%BA+%E5%9B%9B%E5%9B%BD%E6%9D%91",
+      "notes": [
+        "Commons: カテゴリを取得できない（status=404 HTTP 404）（https://commons.wikimedia.org/wiki/Category:Shikoku_Mura）"
+      ]
+    },
+    {
+      "spot_id": "yashima",
+      "name": "屋島",
+      "adopted": [],
+      "rejected": [],
+      "sns": {
+        "instagram": "https://www.instagram.com/udonken_kagawa",
+        "x": "https://twitter.com/UdonkenKanko"
+      },
+      "map_embed": false,
+      "map_link": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B7%9D%E7%9C%8C%E9%AB%98%E6%9D%BE%E5%B8%82+%E5%B1%8B%E5%B3%B6",
+      "notes": [
+        "Commons: カテゴリにファイルが無い（https://commons.wikimedia.org/wiki/Category:Yashima）"
+      ]
+    },
+    {
+      "spot_id": "kmuseum",
+      "name": "香川県立ミュージアム",
+      "adopted": [],
+      "rejected": [],
+      "sns": {
+        "x": "https://twitter.com/share"
+      },
+      "map_embed": false,
+      "map_link": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B7%9D%E7%9C%8C%E9%AB%98%E6%9D%BE%E5%B8%82%E7%8E%89%E8%97%BB%E7%94%BA+%E9%A6%99%E5%B7%9D%E7%9C%8C%E7%AB%8B%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0",
+      "notes": [
+        "Commons: カテゴリを取得できない（status=404 HTTP 404）（https://commons.wikimedia.org/wiki/Category:Kagawa_Museum）"
+      ]
+    },
+    {
+      "spot_id": "chichu",
+      "name": "地中美術館",
+      "adopted": [
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Chichu_Art_Museum_Cafe_2025.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Chichu_Art_Museum_Cafe_2025.jpg",
+          "author": "Fotointheworld",
+          "license": "CC-BY-4.0",
+          "licenses_found": [
+            "CC-BY-4.0"
+          ],
+          "reason": "whitelist:CC-BY-4.0",
+          "credit_text": "Chichu Art Museum Cafe 2025.jpg by Fotointheworld（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））/ Wikimedia Commons",
+          "asset_id": "9cc57ac763b3c3b9",
+          "byte_size": 409807
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Chichu_Art_Museum_exterior_open_space_2025.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Chichu_Art_Museum_exterior_open_space_2025.jpg",
+          "author": "Fotointheworld",
+          "license": "CC-BY-4.0",
+          "licenses_found": [
+            "CC-BY-4.0"
+          ],
+          "reason": "whitelist:CC-BY-4.0",
+          "credit_text": "Chichu Art Museum exterior open space 2025.jpg by Fotointheworld（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））/ Wikimedia Commons",
+          "asset_id": "e02f66cc56e54f3e",
+          "byte_size": 561246
+        }
+      ],
+      "rejected": [
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Chichu_art_museum01s2560.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Chichu_art_museum01s2560.jpg",
+          "author": "663highland",
+          "license": null,
+          "licenses_found": [
+            "GFDL",
+            "CC BY-SA（継承）",
+            "判定できない表記"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承）、判定できない表記）",
+          "credit_text": "Chichu art museum01s2560.jpg by 663highland（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:150505_Chichu_Art_Museum_Naoshima_Island_Kagawa_pref_Japan01s3.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/150505_Chichu_Art_Museum_Naoshima_Island_Kagawa_pref_Japan01s3.jpg",
+          "author": "663highland",
+          "license": null,
+          "licenses_found": [
+            "GFDL",
+            "CC BY-SA（継承）",
+            "判定できない表記"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承）、判定できない表記）",
+          "credit_text": "150505 Chichu Art Museum Naoshima Island Kagawa pref Japan01s3.jpg by 663highland（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Chichu_Art_Museum_garden_(26179612794).jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Chichu_Art_Museum_garden_%2826179612794%29.jpg",
+          "author": "KimonBerlin",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Chichu Art Museum garden (26179612794).jpg by KimonBerlin（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Chichu_Art_Museum_garden_(26512409560).jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Chichu_Art_Museum_garden_%2826512409560%29.jpg",
+          "author": "KimonBerlin",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Chichu Art Museum garden (26512409560).jpg by KimonBerlin（ライセンス未確認（不採用））/ Wikimedia Commons"
+        }
+      ],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UCQGVCd9p9rXO8_W1U1iL5nQ",
+        "instagram": "https://www.instagram.com/benesse_artsite",
+        "x": "https://twitter.com/benesse_artsite"
+      },
+      "map_embed": false,
+      "map_link": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B7%9D%E7%9C%8C%E9%A6%99%E5%B7%9D%E9%83%A1%E7%9B%B4%E5%B3%B6%E7%94%BA+%E5%9C%B0%E4%B8%AD%E7%BE%8E%E8%A1%93%E9%A4%A8",
+      "notes": []
+    },
+    {
+      "spot_id": "benesse-house",
+      "name": "ベネッセハウス ミュージアム",
+      "adopted": [
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Benesse_House_Beach_2025.JPG",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Benesse_House_Beach_2025.JPG",
+          "author": "Fotointheworld",
+          "license": "CC-BY-4.0",
+          "licenses_found": [
+            "CC-BY-4.0"
+          ],
+          "reason": "whitelist:CC-BY-4.0",
+          "credit_text": "Benesse House Beach 2025.JPG by Fotointheworld（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））/ Wikimedia Commons",
+          "asset_id": "95e759ec15561df0",
+          "byte_size": 419173
+        }
+      ],
+      "rejected": [
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Benesse_Art_House_(6900628038).jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Benesse_Art_House_%286900628038%29.jpg",
+          "author": "KimonBerlin",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Benesse Art House (6900628038).jpg by KimonBerlin（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:150505_Benesse_House_Museum_Naoshima_Kagawa_pref_Japan01b3s5.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/150505_Benesse_House_Museum_Naoshima_Kagawa_pref_Japan01b3s5.jpg",
+          "author": "663highland",
+          "license": null,
+          "licenses_found": [
+            "GFDL",
+            "CC BY-SA（継承）",
+            "判定できない表記"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承）、判定できない表記）",
+          "credit_text": "150505 Benesse House Museum Naoshima Kagawa pref Japan01b3s5.jpg by 663highland（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:150505_Benesse_House_Oval_Naoshima_Kagawa_pref_Japan02s3.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/150505_Benesse_House_Oval_Naoshima_Kagawa_pref_Japan02s3.jpg",
+          "author": "663highland",
+          "license": null,
+          "licenses_found": [
+            "GFDL",
+            "CC BY-SA（継承）",
+            "判定できない表記"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承）、判定できない表記）",
+          "credit_text": "150505 Benesse House Oval Naoshima Kagawa pref Japan02s3.jpg by 663highland（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Benesse_Art_Museum.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Benesse_Art_Museum.jpg",
+          "author": "Renate Hano",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Benesse Art Museum.jpg by Renate Hano（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Benesse_house03s3872.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Benesse_house03s3872.jpg",
+          "author": "663highland",
+          "license": null,
+          "licenses_found": [
+            "GFDL",
+            "CC BY-SA（継承）",
+            "判定できない表記"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承）、判定できない表記）",
+          "credit_text": "Benesse house03s3872.jpg by 663highland（ライセンス未確認（不採用））/ Wikimedia Commons"
+        }
+      ],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UCQGVCd9p9rXO8_W1U1iL5nQ",
+        "instagram": "https://www.instagram.com/benesse_artsite",
+        "x": "https://twitter.com/benesse_artsite"
+      },
+      "map_embed": false,
+      "map_link": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B7%9D%E7%9C%8C%E9%A6%99%E5%B7%9D%E9%83%A1%E7%9B%B4%E5%B3%B6%E7%94%BA+%E3%83%99%E3%83%8D%E3%83%83%E3%82%BB%E3%83%8F%E3%82%A6%E3%82%B9",
+      "notes": []
+    },
+    {
+      "spot_id": "naoshima-sento",
+      "name": "直島銭湯 I♥湯",
+      "adopted": [],
+      "rejected": [],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UCQGVCd9p9rXO8_W1U1iL5nQ",
+        "instagram": "https://www.instagram.com/benesse_artsite",
+        "x": "https://twitter.com/benesse_artsite"
+      },
+      "map_embed": false,
+      "map_link": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B7%9D%E7%9C%8C%E9%A6%99%E5%B7%9D%E9%83%A1%E7%9B%B4%E5%B3%B6%E7%94%BA+%E7%9B%B4%E5%B3%B6%E9%8A%AD%E6%B9%AF",
+      "notes": [
+        "Commons: カテゴリを取得できない（status=404 HTTP 404）（https://commons.wikimedia.org/wiki/Category:Naoshima_Sento_I_Love_Yu）"
+      ]
+    },
+    {
+      "spot_id": "teshima-art",
+      "name": "豊島美術館",
+      "adopted": [],
+      "rejected": [
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Teshima_Museum_Ryue_Nishizawa_Rei_Naito_1.JPG",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Teshima_Museum_Ryue_Nishizawa_Rei_Naito_1.JPG",
+          "author": "Epiq",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Teshima Museum Ryue Nishizawa Rei Naito 1.JPG by Epiq（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_the_Teshima_Art_Museum.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Exterior_of_the_Teshima_Art_Museum.jpg",
+          "author": "Bea Phi",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Exterior of the Teshima Art Museum.jpg by Bea Phi（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Teshima_Art_Museum_(8797572559).jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Teshima_Art_Museum_%288797572559%29.jpg",
+          "author": "KimonBerlin",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Teshima Art Museum (8797572559).jpg by KimonBerlin（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Teshima_Art_Museum_(8808148270).jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Teshima_Art_Museum_%288808148270%29.jpg",
+          "author": "KimonBerlin",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Teshima Art Museum (8808148270).jpg by KimonBerlin（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Teshima_Art_Museum_(8808158244).jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Teshima_Art_Museum_%288808158244%29.jpg",
+          "author": "KimonBerlin",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Teshima Art Museum (8808158244).jpg by KimonBerlin（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Teshima_Art_Museum_(8808173754).jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Teshima_Art_Museum_%288808173754%29.jpg",
+          "author": "KimonBerlin",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Teshima Art Museum (8808173754).jpg by KimonBerlin（ライセンス未確認（不採用））/ Wikimedia Commons"
+        }
+      ],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UCQGVCd9p9rXO8_W1U1iL5nQ",
+        "instagram": "https://www.instagram.com/benesse_artsite",
+        "x": "https://twitter.com/benesse_artsite"
+      },
+      "map_embed": false,
+      "map_link": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B7%9D%E7%9C%8C%E5%B0%8F%E8%B1%86%E9%83%A1%E5%9C%9F%E5%BA%84%E7%94%BA%E8%B1%8A%E5%B3%B6+%E8%B1%8A%E5%B3%B6%E7%BE%8E%E8%A1%93%E9%A4%A8",
+      "notes": []
+    },
+    {
+      "spot_id": "kankakei",
+      "name": "寒霞渓",
+      "adopted": [],
+      "rejected": [
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:201211Kankakei_Shodoshima_Kagawa_pref_Japan08s3.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/201211Kankakei_Shodoshima_Kagawa_pref_Japan08s3.jpg",
+          "author": "663highland",
+          "license": null,
+          "licenses_found": [
+            "GFDL",
+            "CC BY-SA（継承）",
+            "判定できない表記"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承）、判定できない表記）",
+          "credit_text": "201211Kankakei Shodoshima Kagawa pref Japan08s3.jpg by 663highland（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:201211Kankakei_Shodoshima_Kagawa_pref_Japan01s3.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/201211Kankakei_Shodoshima_Kagawa_pref_Japan01s3.jpg",
+          "author": "663highland",
+          "license": null,
+          "licenses_found": [
+            "GFDL",
+            "CC BY-SA（継承）",
+            "判定できない表記"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承）、判定できない表記）",
+          "credit_text": "201211Kankakei Shodoshima Kagawa pref Japan01s3.jpg by 663highland（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:201211Kankakei_Shodoshima_Kagawa_pref_Japan02s3.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/201211Kankakei_Shodoshima_Kagawa_pref_Japan02s3.jpg",
+          "author": "663highland",
+          "license": null,
+          "licenses_found": [
+            "GFDL",
+            "CC BY-SA（継承）",
+            "判定できない表記"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承）、判定できない表記）",
+          "credit_text": "201211Kankakei Shodoshima Kagawa pref Japan02s3.jpg by 663highland（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:201211Kankakei_Shodoshima_Kagawa_pref_Japan03s3.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/201211Kankakei_Shodoshima_Kagawa_pref_Japan03s3.jpg",
+          "author": "663highland",
+          "license": null,
+          "licenses_found": [
+            "GFDL",
+            "CC BY-SA（継承）",
+            "判定できない表記"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承）、判定できない表記）",
+          "credit_text": "201211Kankakei Shodoshima Kagawa pref Japan03s3.jpg by 663highland（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:201211Kankakei_Shodoshima_Kagawa_pref_Japan05n.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/201211Kankakei_Shodoshima_Kagawa_pref_Japan05n.jpg",
+          "author": "663highland",
+          "license": null,
+          "licenses_found": [
+            "GFDL",
+            "CC BY-SA（継承）",
+            "判定できない表記"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承）、判定できない表記）",
+          "credit_text": "201211Kankakei Shodoshima Kagawa pref Japan05n.jpg by 663highland（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:201211Kankakei_Shodoshima_Kagawa_pref_Japan07s3.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/201211Kankakei_Shodoshima_Kagawa_pref_Japan07s3.jpg",
+          "author": "663highland",
+          "license": null,
+          "licenses_found": [
+            "GFDL",
+            "CC BY-SA（継承）",
+            "判定できない表記"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承）、判定できない表記）",
+          "credit_text": "201211Kankakei Shodoshima Kagawa pref Japan07s3.jpg by 663highland（ライセンス未確認（不採用））/ Wikimedia Commons"
+        }
+      ],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UCL0DRHW1DQd9hVzTogMwICQ",
+        "instagram": "https://www.instagram.com/kankakei_ropeway",
+        "x": "https://twitter.com/KankakeiRopeway"
+      },
+      "map_embed": false,
+      "map_link": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B7%9D%E7%9C%8C%E5%B0%8F%E8%B1%86%E9%83%A1%E5%B0%8F%E8%B1%86%E5%B3%B6%E7%94%BA+%E5%AF%92%E9%9C%9E%E6%B8%93",
+      "notes": []
+    },
+    {
+      "spot_id": "24hitomi",
+      "name": "二十四の瞳映画村",
+      "adopted": [],
+      "rejected": [],
+      "sns": {
+        "instagram": "https://www.instagram.com/24hitomi_eigamura",
+        "x": "https://twitter.com/intent"
+      },
+      "map_embed": false,
+      "map_link": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B7%9D%E7%9C%8C%E5%B0%8F%E8%B1%86%E9%83%A1%E5%B0%8F%E8%B1%86%E5%B3%B6%E7%94%BA%E7%94%B0%E6%B5%A6+%E4%BA%8C%E5%8D%81%E5%9B%9B%E3%81%AE%E7%9E%B3%E6%98%A0%E7%94%BB%E6%9D%91",
+      "notes": [
+        "Commons: カテゴリを取得できない（status=404 HTTP 404）（https://commons.wikimedia.org/wiki/Category:Nijushi_no_Hitomi_Eigamura）"
+      ]
+    },
+    {
+      "spot_id": "konpira",
+      "name": "金刀比羅宮",
+      "adopted": [],
+      "rejected": [],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UC0iepI_flVcY9n7y3VAYyKA",
+        "instagram": "https://www.instagram.com/kotohiranomiya",
+        "x": "https://twitter.com/kotohiranomiya"
+      },
+      "map_embed": false,
+      "map_link": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B7%9D%E7%9C%8C%E4%BB%B2%E5%A4%9A%E5%BA%A6%E9%83%A1%E7%90%B4%E5%B9%B3%E7%94%BA+%E9%87%91%E5%88%80%E6%AF%94%E7%BE%85%E5%AE%AE",
+      "notes": [
+        "Commons: カテゴリにファイルが無い（https://commons.wikimedia.org/wiki/Category:Kotohira-gu）"
+      ]
+    },
+    {
+      "spot_id": "chichibugahama",
+      "name": "父母ヶ浜",
+      "adopted": [],
+      "rejected": [
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Titibugahama_01.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Titibugahama_01.jpg",
+          "author": "Dokudami",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Titibugahama 01.jpg by Dokudami（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Titibugahama_02.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Titibugahama_02.jpg",
+          "author": "Dokudami",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Titibugahama 02.jpg by Dokudami（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Titibugahama_03.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Titibugahama_03.jpg",
+          "author": "Dokudami",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Titibugahama 03.jpg by Dokudami（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Titibugahama_04.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Titibugahama_04.jpg",
+          "author": "Dokudami",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Titibugahama 04.jpg by Dokudami（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Titibugahama_20200404_03.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Titibugahama_20200404_03.jpg",
+          "author": "Dokudami",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Titibugahama 20200404 03.jpg by Dokudami（ライセンス未確認（不採用））/ Wikimedia Commons"
+        },
+        {
+          "route": "commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Titibugahama_20200407_01.jpg",
+          "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Titibugahama_20200407_01.jpg",
+          "author": "Dokudami",
+          "license": null,
+          "licenses_found": [
+            "CC BY-SA（継承）"
+          ],
+          "reason": "ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+          "credit_text": "Titibugahama 20200407 01.jpg by Dokudami（ライセンス未確認（不採用））/ Wikimedia Commons"
+        }
+      ],
+      "sns": {
+        "youtube": "https://www.youtube.com/channel/UCcNpMZYWUnTNePHU0IO38pQ",
+        "instagram": "https://instagram.com/seasonal_stand"
+      },
+      "map_embed": false,
+      "map_link": "https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E5%B7%9D%E7%9C%8C%E4%B8%89%E8%B1%8A%E5%B8%82%E4%BB%81%E5%B0%BE%E7%94%BA+%E7%88%B6%E6%AF%8D%E3%83%B6%E6%B5%9C",
+      "notes": []
+    }
+  ]
+}

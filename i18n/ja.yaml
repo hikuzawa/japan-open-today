@@ -2,3 +2,7 @@
 # 施設名や紹介文はデータとして持つ（出典と取得日時を添える。ADR 0002・0005）。
 site:
   name_short: 今日行ける日本
+asset:
+  credit: "{author}（{license}）"
+  credit_source: 出典ページ（Wikimedia Commons）
+  fetched: "取得: {when}"

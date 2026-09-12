@@ -1,0 +1,55 @@
+{
+  "assets": [
+    {
+      "alt_text": "栗林公園",
+      "asset_id": "1831bab539443a11",
+      "author": "Photos of Japan",
+      "byte_size": 159816,
+      "content_type": "image/jpeg",
+      "credit_text": "Ritsurin pano 956.jpg by Photos of Japan（CC0 1.0（パブリックドメイン提供））/ Wikimedia Commons",
+      "fetched_at": "2026-09-12T08:33:28+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-12T08:33:28Z",
+        "credit_text": "出典: Ritsurin pano 956.jpg / Wikimedia Commons（CC0 1.0（パブリックドメイン提供））",
+        "evidence_text": "ass=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/zero/1.0/deed.en\">CC0 1.0 Univ",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Ritsurin_pano_956.jpg",
+        "license_id": "CC0-1.0",
+        "reason": "whitelist:CC0-1.0"
+      },
+      "local_path": "1831bab539443a11.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ritsurin_pano_956.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Ritsurin_pano_956.jpg/1280px-Ritsurin_pano_956.jpg",
+      "tags": [
+        "takamatsu"
+      ]
+    },
+    {
+      "alt_text": "栗林公園",
+      "asset_id": "5e1de93b921a774c",
+      "author": null,
+      "byte_size": 675074,
+      "content_type": "image/jpeg",
+      "credit_text": "51-RITSURI-KOEN-Takamatsu-7037.jpg by Bigjap（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-12T08:27:12+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-12T08:27:12Z",
+        "credit_text": "出典: 51-RITSURI-KOEN-Takamatsu-7037.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/4.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/4.0/deed.en\">Attribution 4.0 I",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:51-RITSURI-KOEN-Takamatsu-7037.jpg",
+        "license_id": "CC-BY-4.0",
+        "reason": "whitelist:CC-BY-4.0"
+      },
+      "local_path": "5e1de93b921a774c.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:51-RITSURI-KOEN-Takamatsu-7037.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/51-RITSURI-KOEN-Takamatsu-7037.jpg/1280px-51-RITSURI-KOEN-Takamatsu-7037.jpg",
+      "tags": [
+        "takamatsu"
+      ]
+    }
+  ],
+  "source_id": "ritsurin"
+}

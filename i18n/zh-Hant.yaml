@@ -1,3 +1,7 @@
 # 畫面文字（繁體中文）。設施名稱與介紹屬於資料，不放在這裡。
 site:
   name_short: 今天能去的日本
+asset:
+  credit: "{author}（{license}）"
+  credit_source: 來源頁面（Wikimedia Commons）
+  fetched: "擷取: {when}"
