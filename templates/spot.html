@@ -4,12 +4,22 @@
   <a href="{{ locale.url_path('areas/' ~ spot.area ~ '/') }}">{{ area.name(locale.code) }}</a></nav>
 <h1>{{ spot.name(locale.code) }}</h1>
 {{ ui.verdict_line(verdict, locale) }}
-{% if verdict.state.value == 'unknown' %}<p class="lead">{{ t('verdict.unknown_lead') }}</p>{% endif %}
+{% if verdict.state.value == 'unknown' %}
+{# 不明のときは、利用者がやるべき次の一手（公式ページを見る）を最も大きく出す #}
+<div class="unknown-box">
+  <p class="unknown-lead">{{ t('verdict.unknown_lead') }}</p>
+  <p class="actions actions-block">{{ ui.primary_link(spot.official_url, t('facts.official')) }}</p>
+  {{ ui.reasons(verdict, locale) }}
+</div>
+{% else %}
 <p class="actions">{{ ui.primary_link(spot.official_url, t('facts.official')) }}
 {% if map.link_url %}<a class="secondary" href="{{ map.link_url }}" rel="noopener"
    target="_blank">{{ t('facts.map') }}</a>{% endif %}</p>
 {{ ui.reasons(verdict, locale) }}
+{% endif %}
+{% if not week_all_unknown %}
 {{ ui.week_strip(week, locale) }}
+{% endif %}
 {% if photo %}
 {{ sm.photo_figure(photo, locale, '/static/assets/' ~ photo.asset_id ~ photo.local_path.suffix) }}
 {% endif %}
@@ -31,8 +41,22 @@
     {% if spot.visit_minutes.ok %}
     <dt>{{ t('facts.visit_minutes') }}</dt><dd>{{ t('facts.minutes', n=spot.visit_minutes.value) }}</dd>
     {% endif %}
+    {% if verdict.state.value == 'unknown' and map.link_url %}
+    <dt>{{ t('facts.map') }}</dt>
+    <dd><a href="{{ map.link_url }}" rel="noopener" target="_blank">{{ t('facts.map') }}</a></dd>
+    {% endif %}
   </dl>
 </section>
+{% if nearby %}
+{# 不明でも、近くで開いていると分かっている施設があれば行き先を変えられる #}
+<section class="nearby">
+  <h2 class="section-head">{{ t('nearby.heading') }}</h2>
+  <p class="lead">{{ t('nearby.lead', date=today|date_short_l) }}</p>
+  <ul class="cards">
+    {% for row in nearby %}{{ ui.spot_card(row, locale) }}{% endfor %}
+  </ul>
+</section>
+{% endif %}
 {% if spot.social %}
 <section class="social">
   <h2 class="section-head">{{ t('facts.social') }}</h2>

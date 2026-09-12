@@ -123,3 +123,6 @@ data:
 notfound:
   heading: Page not found
   back: Go to the home page
+nearby:
+  heading: Open nearby
+  lead: "Places near here confirmed open on {date}."

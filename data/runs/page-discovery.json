@@ -1,0 +1,229 @@
+{
+  "discovered_at": "2026-09-12T19:42:00.872873+09:00",
+  "requests": 11,
+  "results": [
+    {
+      "source_id": "kagawa-ritsurin",
+      "name": "栗林公園",
+      "existing_kinds": [
+        "notice",
+        "spot_access",
+        "spot_detail",
+        "spot_fees",
+        "spot_hours"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-shikokumura",
+      "name": "四国村ミウゼアム",
+      "existing_kinds": [
+        "notice",
+        "spot_access",
+        "spot_detail",
+        "spot_hours"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-yashima",
+      "name": "屋島",
+      "existing_kinds": [
+        "spot_access",
+        "spot_detail"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-yashima",
+          "kind": "spot_access",
+          "url": "https://www.my-kagawa.jp/feature/information/transportation",
+          "label": "香川県内交通アクセス",
+          "found_on": "https://www.my-kagawa.jp/access",
+          "verified": false,
+          "detail": "spot_access はすでに seed がある: ラベルは notice だが中身は spot_access: 通手段 公共交通機関として鉄道(JR、ことでん)や定期船(フェリー、連絡船、高速艇)が運行(航)されており、レンタカーやレンタサイクルについては、県内各地に営業所やレ"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-kmuseum",
+      "name": "香川県立ミュージアム",
+      "existing_kinds": [
+        "notice",
+        "spot_detail",
+        "spot_fees"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-kmuseum",
+          "kind": "spot_access",
+          "url": "https://www.pref.kagawa.lg.jp/kmuseum/kmuseum/riyou/koutsuu.html",
+          "label": "交通アクセス",
+          "found_on": "https://www.pref.kagawa.lg.jp/kmuseum/kmuseum/riyou/kfvn.html",
+          "verified": false,
+          "detail": "取得できない（status=404）"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-tamamo",
+      "name": "高松城跡 玉藻公園",
+      "existing_kinds": [
+        "notice",
+        "spot_access",
+        "spot_detail",
+        "spot_hours"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-chichu",
+      "name": "地中美術館",
+      "existing_kinds": [
+        "notice",
+        "spot_detail",
+        "spot_fees"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-chichu",
+          "kind": "spot_fees",
+          "url": "https://benesse-artsite.jp/access/",
+          "label": "アクセス",
+          "found_on": "https://benesse-artsite.jp/art/chichu.html",
+          "verified": false,
+          "detail": "spot_fees はすでに seed がある: ラベルは spot_access だが中身は spot_fees: 0 15:20 18:00 20:15 高 四国汽船(TEL:087-821-5100) [料金(フェリー)] 大人680円/小人340円 [料金(高速船)] 大人1,590円/小"
+        },
+        {
+          "source_id": "kagawa-chichu",
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/naoshima/benessehouse.html",
+          "label": "ベネッセハウス周辺のアクセス",
+          "found_on": "https://benesse-artsite.jp/art/chichu.html",
+          "verified": false,
+          "detail": "どの種別の中身も見つからない（本文 966 字）"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-benesse-house",
+      "name": "ベネッセハウス ミュージアム",
+      "existing_kinds": [
+        "notice",
+        "spot_detail",
+        "spot_fees"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-benesse-house",
+          "kind": "spot_fees",
+          "url": "https://benesse-artsite.jp/access/",
+          "label": "アクセス",
+          "found_on": "https://benesse-artsite.jp/art/benessehouse-museum.html",
+          "verified": false,
+          "detail": "spot_fees はすでに seed がある: ラベルは spot_access だが中身は spot_fees: 0 15:20 18:00 20:15 高 四国汽船(TEL:087-821-5100) [料金(フェリー)] 大人680円/小人340円 [料金(高速船)] 大人1,590円/小"
+        },
+        {
+          "source_id": "kagawa-benesse-house",
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/naoshima/benessehouse.html",
+          "label": "ベネッセハウス周辺のアクセス",
+          "found_on": "https://benesse-artsite.jp/art/benessehouse-museum.html",
+          "verified": false,
+          "detail": "どの種別の中身も見つからない（本文 966 字）"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-teshima-art",
+      "name": "豊島美術館",
+      "existing_kinds": [
+        "notice",
+        "spot_detail",
+        "spot_fees"
+      ],
+      "proposals": [
+        {
+          "source_id": "kagawa-teshima-art",
+          "kind": "spot_fees",
+          "url": "https://benesse-artsite.jp/access/",
+          "label": "アクセス",
+          "found_on": "https://benesse-artsite.jp/art/teshima-artmuseum.html",
+          "verified": false,
+          "detail": "spot_fees はすでに seed がある: ラベルは spot_access だが中身は spot_fees: 0 15:20 18:00 20:15 高 四国汽船(TEL:087-821-5100) [料金(フェリー)] 大人680円/小人340円 [料金(高速船)] 大人1,590円/小"
+        },
+        {
+          "source_id": "kagawa-teshima-art",
+          "kind": "spot_access",
+          "url": "https://benesse-artsite.jp/access/naoshima/benessehouse.html",
+          "label": "ベネッセハウス周辺のアクセス",
+          "found_on": "https://benesse-artsite.jp/art/teshima-artmuseum.html",
+          "verified": false,
+          "detail": "どの種別の中身も見つからない（本文 966 字）"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "source_id": "kagawa-kankakei",
+      "name": "寒霞渓",
+      "existing_kinds": [
+        "notice",
+        "spot_access",
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-24hitomi",
+      "name": "二十四の瞳映画村",
+      "existing_kinds": [
+        "spot_access",
+        "spot_detail",
+        "spot_fees"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-konpira",
+      "name": "金刀比羅宮",
+      "existing_kinds": [
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    },
+    {
+      "source_id": "kagawa-chichibugahama",
+      "name": "父母ヶ浜",
+      "existing_kinds": [
+        "spot_access",
+        "spot_detail"
+      ],
+      "proposals": [],
+      "notes": [
+        "候補のリンクが無い"
+      ]
+    }
+  ]
+}

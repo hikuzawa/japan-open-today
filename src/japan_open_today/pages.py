@@ -206,6 +206,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
         for spot in ds.spots:
             rel = spot.path()
             verdict = verdicts[spot.spot_id]
+            nearby = _nearby_open(ws, ds, spot, locale, verdicts, assets)
             pages.append(
                 Page(
                     meta=PageMeta(
@@ -233,6 +234,10 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                             language=locale.code,
                         ),
                         "area": area(spot.area),
+                        "nearby": nearby,
+                        "week_all_unknown": all(
+                            v.state is DayState.unknown for v in weeks[spot.spot_id]
+                        ),
                     },
                     trust=_trust(ws, now=now, sources=_spot_sources(spot), count=None or 1),
                 )
@@ -321,6 +326,35 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
         )
     )
     return pages
+
+
+def _nearby_open(
+    ws: Workspace,
+    ds: Dataset,
+    spot: Spot,
+    locale: LocaleConfig,
+    verdicts: dict[str, DayVerdict],
+    assets: dict[str, list[Asset]],
+    limit: int = 3,
+) -> list[dict[str, Any]]:
+    """その日「開いていると分かっている」近くの施設（ADR 0003 追記）。
+
+    不明のページに次の一手を置くために使う。同じエリアを優先し、足りなければ他のエリアから足す。
+    **判定が open のものだけ**を出す。不明の施設を並べても、不明が増えるだけで役に立たない。
+    """
+
+    def pick(spots: list[Spot]) -> list[Spot]:
+        return [
+            s
+            for s in spots
+            if s.spot_id != spot.spot_id and verdicts[s.spot_id].state is DayState.open
+        ]
+
+    chosen = pick(ds.spots_in(spot.area))
+    if len(chosen) < limit:
+        others = [s for s in pick(ds.spots) if s.area != spot.area]
+        chosen = [*chosen, *others]
+    return [_spot_row(ws, s, locale, verdicts[s.spot_id], assets) for s in chosen[:limit]]
 
 
 def _spot_row(

@@ -115,3 +115,36 @@ def test_weeks_differ_between_spots_with_and_without_rules(ws: Workspace) -> Non
     assert len({v.state for v in week}) > 1
     week = spot_week(without[0], page_builder.jst_today(NOW))
     assert {v.state for v in week} == {DayState.unknown}
+
+
+def test_unknown_pages_offer_nearby_open_spots(built: list) -> None:
+    """「不明」だけのページは価値が無い。行き先を変えられる材料を必ず置く（ADR 0003 追記）。"""
+    unknown_pages = [
+        p
+        for p in built
+        if p.meta.path.startswith("spots/") and p.context["verdict"].state is DayState.unknown
+    ]
+    assert unknown_pages, "不明の施設が無いので、この検査が意味を持たない"
+    for page in unknown_pages:
+        nearby = page.context["nearby"]
+        assert nearby, page.meta.path
+        # 並べるのは「開いていると分かっている」施設だけ。不明を並べても不明が増えるだけ
+        assert all(row["verdict"].state is DayState.open for row in nearby), page.meta.path
+        assert all(row["spot"].spot_id != page.context["spot"].spot_id for row in nearby)
+
+
+def test_all_unknown_weeks_hide_the_strip(built: list) -> None:
+    """7 日すべて不明なら帯を出さない（同じ「?」が 7 個並ぶだけで情報がない）。"""
+    for page in built:
+        if not page.meta.path.startswith("spots/"):
+            continue
+        week = page.context["week"]
+        expected = all(v.state is DayState.unknown for v in week)
+        assert page.context["week_all_unknown"] is expected, page.meta.path
+
+
+def test_known_spots_do_not_need_nearby_but_may_have_it(built: list) -> None:
+    """開いている施設のページでも近隣を出してよいが、自分は含めない。"""
+    for page in built:
+        for row in page.context.get("nearby") or []:
+            assert row["spot"].spot_id != page.context["spot"].spot_id

@@ -119,3 +119,6 @@ data:
 notfound:
   heading: ページが見つかりません
   back: トップへ
+nearby:
+  heading: 近くで開いている施設
+  lead: "{date}に開いていると確認できた、近くの施設です。"

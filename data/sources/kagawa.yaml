@@ -27,6 +27,12 @@ sources:
         kind: spot_detail
       - url: https://www.my-kagawa.jp/ritsuringarden/news/category:information
         kind: notice
+      - url: https://www.my-kagawa.jp/access
+        kind: spot_access  # 発見（S6）: 交通
+      - url: https://www.my-kagawa.jp/ritsuringarden/feature/ritsuringarden/guide
+        kind: spot_hours  # 発見（S6）: 利用案内
+      - url: https://www.my-kagawa.jp/ritsuringarden/feature/ritsuringarden/access
+        kind: spot_fees  # 発見（S6）: アクセス
     allow_hosts: [www.my-kagawa.jp]
     max_pages: 8
     spot:
@@ -57,6 +63,8 @@ sources:
         kind: spot_hours
       - url: https://www.shikokumura.or.jp/news/
         kind: notice
+      - url: https://www.shikokumura.or.jp/access/
+        kind: spot_access  # 発見（S6）: アクセス
     allow_hosts: [www.shikokumura.or.jp]
     max_pages: 10
     spot:
@@ -83,6 +91,8 @@ sources:
     pages:
       - url: https://www.my-kagawa.jp/point/29
         kind: spot_detail
+      - url: https://www.my-kagawa.jp/access
+        kind: spot_access  # 発見（S6）: 交通
     allow_hosts: [www.my-kagawa.jp]
     max_pages: 4
     spot:
@@ -109,6 +119,10 @@ sources:
     pages:
       - url: https://www.pref.kagawa.lg.jp/kmuseum/
         kind: spot_detail
+      - url: https://www.pref.kagawa.lg.jp/cgi-bin/page/list.php?tpl_type=2&dept_code=&page_type=4&tpl_id=&dir=%2Fkmuseum%2F&link_page_id=15840
+        kind: notice  # 発見（S6）: お知らせ・新着情報一覧を見る
+      - url: https://www.pref.kagawa.lg.jp/kmuseum/kmuseum/riyou/kfvn.html
+        kind: spot_fees  # 発見（S6）: 香川県立ミュージアム休館日のお知らせ
     allow_hosts: [www.pref.kagawa.lg.jp]
     max_pages: 6
     spot:
@@ -142,6 +156,8 @@ sources:
         kind: spot_hours
       - url: https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/park/tamamo/bunzai201806.html
         kind: spot_access
+      - url: https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/park/tamamo/bunzai2018122.html
+        kind: notice  # 発見（S6）: 披雲閣耐震補強工事に伴う利用制限のお知らせ
     allow_hosts: [www.city.takamatsu.kagawa.jp]
     max_pages: 8
     external_links:
@@ -182,6 +198,10 @@ sources:
     pages:
       - url: https://benesse-artsite.jp/art/chichu.html
         kind: spot_detail
+      - url: https://benesse-artsite.jp/general-information.html
+        kind: spot_fees  # 発見（S6）: こちら
+      - url: https://benesse-artsite.jp/news/
+        kind: notice  # 発見（S6）: ニュース
     allow_hosts: [benesse-artsite.jp]
     max_pages: 10
     spot:
@@ -208,6 +228,10 @@ sources:
     pages:
       - url: https://benesse-artsite.jp/art/benessehouse-museum.html
         kind: spot_detail
+      - url: https://benesse-artsite.jp/general-information.html
+        kind: spot_fees  # 発見（S6）: こちら
+      - url: https://benesse-artsite.jp/news/
+        kind: notice  # 発見（S6）: ニュース
     allow_hosts: [benesse-artsite.jp]
     max_pages: 10
     spot:
@@ -234,6 +258,10 @@ sources:
     pages:
       - url: https://benesse-artsite.jp/art/teshima-artmuseum.html
         kind: spot_detail
+      - url: https://benesse-artsite.jp/general-information.html
+        kind: spot_fees  # 発見（S6）: こちら
+      - url: https://benesse-artsite.jp/news/
+        kind: notice  # 発見（S6）: ニュース
     allow_hosts: [benesse-artsite.jp]
     max_pages: 10
     spot:

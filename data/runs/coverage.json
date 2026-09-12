@@ -4,21 +4,22 @@
     {
       "spot_id": "ritsurin",
       "name": "栗林公園",
-      "fields": [],
-      "missing": [
+      "fields": [
         "hours",
-        "closures",
         "fees",
         "address",
         "phone",
         "reservation_required"
       ],
-      "today": "unknown",
+      "missing": [
+        "closures"
+      ],
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 7
+        "open": 7
       }
     },
     {
@@ -28,12 +29,11 @@
         "hours",
         "closures",
         "fees",
+        "address",
+        "phone",
         "reservation_required"
       ],
-      "missing": [
-        "address",
-        "phone"
-      ],
+      "missing": [],
       "today": "open",
       "today_reasons": [
         "regular_hours"
@@ -67,21 +67,23 @@
     {
       "spot_id": "kmuseum",
       "name": "香川県立ミュージアム",
-      "fields": [],
-      "missing": [
+      "fields": [
         "hours",
         "closures",
-        "fees",
         "address",
-        "phone",
+        "phone"
+      ],
+      "missing": [
+        "fees",
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 7
+        "open": 5,
+        "closed": 2
       }
     },
     {
@@ -306,18 +308,18 @@
     }
   ],
   "field_counts": {
-    "hours": 5,
-    "closures": 3,
-    "fees": 3,
-    "reservation_required": 7,
-    "address": 9,
-    "phone": 9
+    "hours": 7,
+    "fees": 4,
+    "address": 12,
+    "phone": 12,
+    "reservation_required": 8,
+    "closures": 4
   },
   "states": {
-    "unknown": 7,
-    "open": 5
+    "open": 7,
+    "unknown": 5
   },
   "unknown_reasons": {
-    "no_data": 7
+    "no_data": 5
   }
 }

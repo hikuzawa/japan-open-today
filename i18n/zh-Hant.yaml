@@ -117,3 +117,6 @@ data:
 notfound:
   heading: 找不到頁面
   back: 回到首頁
+nearby:
+  heading: 附近有開的設施
+  lead: "已確認在 {date} 有開的附近設施。"

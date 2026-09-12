@@ -173,3 +173,11 @@ img { max-width: 100%; height: auto; }
 .trust-sources { margin: 0; padding-left: 1.2em; }
 .disclaimer, .copyright { font-size: 0.9rem; color: var(--ink-2); }
 .foot-nav { display: flex; flex-wrap: wrap; gap: 16px; margin: 12px 0; }
+
+/* 不明のページ（ADR 0003 追記）。次の一手（公式ページ）を最も大きく出す */
+.unknown-box { background: var(--warn-100); border: 2px solid var(--warn); border-radius: var(--radius);
+  padding: 14px; margin: 12px 0 20px; }
+.unknown-lead { color: var(--ink); font-weight: 700; margin-bottom: 12px; }
+.actions-block .primary { width: 100%; justify-content: center; font-size: 1.15rem; min-height: 56px; }
+.unknown-box .why { background: transparent; border-color: var(--warn); }
+.nearby { margin-top: 32px; }
