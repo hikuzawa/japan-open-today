@@ -264,13 +264,18 @@ def _map_query(seed: Seed) -> str:
     return f"{city.group(0) if city else '香川県'} {seed.name}".strip()
 
 
+def _yq(value: str) -> str:
+    """YAML の値として安全に書く。施設名にコロンや # が入ると構文が壊れる。"""
+    return '"' + (value or "").replace("\\", "").replace('"', "'") + '"'
+
+
 def _yaml_block(seed: Seed, source_id: str) -> str:
     q = seed.operator_quote.replace('"', "'")
     note = f"  # {seed.note}" if seed.note else ""
     lines = [
         f"  - id: {source_id}{note}",
-        f"    name: {seed.name}",
-        f"    operator: {seed.operator}",
+        f"    name: {_yq(seed.name)}",
+        f"    operator: {_yq(seed.operator)}",
         f"    operator_kind: {seed.operator_kind}",
         "    operator_evidence:",
         f'      quote: "{q}"',
@@ -290,8 +295,8 @@ def _yaml_block(seed: Seed, source_id: str) -> str:
         f"      area: {seed.area}",
         f"      category: {seed.category}",
         "      names:",
-        f"        ja: {{text: {seed.name}, source: ja}}",
-        f"      map_query: {_map_query(seed)}",
+        f"        ja: {{text: {_yq(seed.name)}, source: ja}}",
+        f"      map_query: {_yq(_map_query(seed))}",
     ]
     return "\n".join(lines) + "\n"
 
