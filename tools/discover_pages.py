@@ -23,8 +23,10 @@ from __future__ import annotations
 import argparse
 import json
 import re
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
+from threading import Lock
 from typing import Any
 
 from sitemill.clock import jst_now
@@ -99,6 +101,28 @@ OFFICE_HOURS = re.compile(r"開庁時間|執務時間|窓口(?:の)?時間")
 FEE_CONTEXT = re.compile(r"入[園館場]料|観覧料|拝観料|利用料|料金|大人|小人|中学生|高校生")
 CONTEXT_WINDOW = 60
 MAX_CANDIDATES_PER_KIND = 2
+
+
+class _Budget:
+    """総リクエスト数の上限。上限 0 は無制限。
+
+    情報源が増えると候補の取得だけで数百リクエストになるため、走らせる前に上限を置く。
+    """
+
+    def __init__(self, limit: int) -> None:
+        # 「上限なし」と「使い切った」を同じ 0 で表すと区別できないので、旗を分けて持つ
+        self._unlimited = limit <= 0
+        self._left = limit
+        self._lock = Lock()
+
+    def take(self) -> bool:
+        if self._unlimited:
+            return True
+        with self._lock:
+            if self._left <= 0:
+                return False
+            self._left -= 1
+            return True
 
 
 @dataclass
@@ -281,6 +305,8 @@ def main() -> int:
     parser.add_argument("--apply", action="store_true", help="kagawa.yaml に足す")
     parser.add_argument("--out", type=Path, default=Path("data/runs/page-discovery.json"))
     parser.add_argument("--only", default="", help="情報源 id をカンマ区切りで絞る")
+    parser.add_argument("--workers", type=int, default=6, help="並列数（ホストごとの間隔は守る）")
+    parser.add_argument("--max-requests", type=int, default=0, help="総リクエスト数の上限")
     args = parser.parse_args()
 
     ws = Workspace.open(Path.cwd())
@@ -291,9 +317,11 @@ def main() -> int:
         wanted = {s.strip() for s in args.only.split(",") if s.strip()}
         entries = [e for e in entries if e["id"] in wanted]
     results: list[SourceResult] = []
+    budget = _Budget(max(0, args.max_requests))
     ua = f"{ws.site.user_agent} page discovery"
     with PoliteClient(ua, default_delay=3.0, jitter=1.0, timeout=30.0) as client:
-        for entry in entries:
+
+        def run_entry(entry: dict[str, Any]) -> SourceResult:
             result = SourceResult(
                 source_id=entry["id"],
                 name=entry["name"],
@@ -310,13 +338,16 @@ def main() -> int:
                 proposal = Proposal(
                     source_id=entry["id"], kind=kind, url=url, label=label, found_on=found_on
                 )
+                if not budget.take():
+                    proposal.detail = "リクエスト上限に達したので確かめていない"
+                    result.proposals.append(proposal)
+                    break
                 verify(client, proposal, have=have)
                 if proposal.verified:
                     have.add(proposal.kind)  # 同じ種別を 2 つ足さない
                 result.proposals.append(proposal)
             if not result.proposals:
                 result.notes.append("候補のリンクが無い")
-            results.append(result)
             ok = sum(1 for p in result.proposals if p.verified)
             print(
                 f"{result.source_id:24} 既存 {','.join(result.existing_kinds) or '-':34}"
@@ -327,6 +358,14 @@ def main() -> int:
                 mark = "OK " if p.verified else "NG "
                 print(f"    {mark}{p.kind:12} {p.label[:20]:22} {p.url[:70]}")
                 print(f"        {p.detail[:100]}")
+            return result
+
+        # 情報源ごとに並列化する。ホストごとの間隔は PoliteClient が守る（巡回と同じ考え方）
+        if args.workers > 1 and len(entries) > 1:
+            with ThreadPoolExecutor(max_workers=args.workers) as pool:
+                results = list(pool.map(run_entry, entries))
+        else:
+            results = [run_entry(entry) for entry in entries]
         requests = client.request_count
 
     proposals = [p for r in results for p in r.proposals]

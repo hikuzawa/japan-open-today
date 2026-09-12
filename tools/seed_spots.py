@@ -58,18 +58,22 @@ OPERATOR_PATTERNS = (
     re.compile(r"(?:主催|事務局|管理)[：:\s][^。\n]{0,60}"),
 )
 ABOUT_LINK = re.compile(r"会社概要|運営|概要|について|組織|財団|about|company|profile")
+# 上から順に見る。「公園」は「園」で終わるので、庭園より先に park を見る
 CATEGORY_RULES: tuple[tuple[str, re.Pattern[str]], ...] = (
     ("museum", re.compile(r"美術館|博物館|資料館|記念館|展示館|水族館|文書館|ミュージアム")),
-    ("shrine_temple", re.compile(r"神社|神宮|大社|寺|院|宮$|札所")),
+    ("shrine_temple", re.compile(r"神社|神宮|大社|寺$|寺院|観音$|宮$|札所")),
     ("castle", re.compile(r"城$|城跡|城址|陣屋")),
-    ("garden", re.compile(r"庭園|園$")),
+    ("park", re.compile(r"公園|広場|ビーチ|浜$|湖$|池$|滝$")),
+    ("garden", re.compile(r"庭園|植物園|花園")),
     ("onsen", re.compile(r"温泉|湯$|スパ")),
     ("viewpoint", re.compile(r"展望|タワー|山$|峠|岬|灯台|ロープウェイ")),
-    ("park", re.compile(r"公園|広場|ビーチ|浜$|湖|池$|滝")),
 )
 # ホストの種類から運営主体の種別を当てる（引用が取れたときだけ使う）
+# 市町のサイトは lg.jp のほかに city.<市>.kagawa.jp / town.<町>.kagawa.jp の形もある
+# （高松市は city.takamatsu.kagawa.jp、琴平町は town.kotohira.kagawa.jp）
 KIND_BY_HOST = (
-    (re.compile(r"pref\.kagawa\.lg\.jp$"), "prefecture"),
+    (re.compile(r"pref\.kagawa(?:\.lg)?\.jp$"), "prefecture"),
+    (re.compile(r"(?:^|\.)(?:city|town)\.[^.]+\.(?:kagawa\.)?(?:lg\.)?jp$"), "municipality"),
     (re.compile(r"\.lg\.jp$"), "municipality"),
     (re.compile(r"my-kagawa\.jp$"), "tourism_association"),
 )

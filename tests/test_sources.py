@@ -189,3 +189,48 @@ def test_open_air_places_do_not_claim_to_be_always_open(ws: Workspace) -> None:
             if period.always_open:
                 quote = (period.evidence.quote if period.evidence else None) or ""
                 assert quote, f"{spot.spot_id}: 根拠の引用なしに always_open にしている"
+
+
+# --- エリアの割り当て -------------------------------------------------------
+
+
+def test_every_kagawa_municipality_belongs_to_an_area() -> None:
+    """香川の 8 市 9 町はすべてどこかのエリアに入る。入らないと住所から決められない。"""
+    from japan_open_today.areas import AREAS, area_for_address
+
+    cities = (
+        "高松市",
+        "丸亀市",
+        "坂出市",
+        "善通寺市",
+        "観音寺市",
+        "さぬき市",
+        "東かがわ市",
+        "三豊市",
+        "土庄町",
+        "小豆島町",
+        "三木町",
+        "直島町",
+        "宇多津町",
+        "綾川町",
+        "琴平町",
+        "多度津町",
+        "まんのう町",
+    )
+    assigned = {m for a in AREAS for m in a.municipalities}
+    assert set(cities) == assigned, set(cities) ^ assigned
+    for city in cities:
+        assert area_for_address(f"香川県{city}中央1-1") is not None, city
+
+
+def test_islands_win_over_the_municipality_they_sit_in() -> None:
+    """豊島は土庄町にある。市町を先に見ると小豆島に入ってしまう。"""
+    from japan_open_today.areas import area_for_address
+
+    assert area_for_address("香川県小豆郡土庄町豊島家浦") == "teshima"
+    assert area_for_address("香川県小豆郡土庄町甲") == "shodoshima"
+    assert area_for_address("香川県高松市女木町") == "megijima"
+    assert area_for_address("香川県高松市屋島山上") == "takamatsu"
+    # 県外・空文字は決めない（推測しない）
+    assert area_for_address("岡山県玉野市") is None
+    assert area_for_address("") is None

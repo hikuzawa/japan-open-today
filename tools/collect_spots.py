@@ -50,10 +50,11 @@ RESULTS = ".searchResult"  # 検索結果のブロック（代表スポットの
 
 # 第 1 フェーズの対象外（ADR 0011）。理由を残す
 SKIP_RULES: tuple[tuple[str, re.Pattern[str]], ...] = (
-    ("restaurant", re.compile(r"うどん|そば|ラーメン|レストラン|食堂|カフェ|喫茶|居酒屋|酒蔵")),
-    ("shop", re.compile(r"直売所|物産|土産|売店|ショップ|マーケット|商店")),
-    ("experience", re.compile(r"体験|教室|ツアー|工房見学|クルーズ|レンタサイクル")),
-    ("lodging", re.compile(r"ホテル|旅館|民宿|ゲストハウス|コテージ|キャンプ場|宿泊")),
+    ("restaurant", re.compile(r"うどん|そば|ラーメン|レストラン|食堂|喫茶|居酒屋|酒蔵|グルメ")),
+    # 「ワークショップ」は美術館の催しなので除外語にしない（実測で猪熊弦一郎美術館が落ちた）
+    ("shop", re.compile(r"直売所|物産館|土産|売店|(?<!ワーク)ショップ|マーケット|商店")),
+    ("experience", re.compile(r"体験|教室|ツアー|レンタサイクル|貸自転車")),
+    ("lodging", re.compile(r"ホテル|旅館|民宿|ゲストハウス|コテージ|キャンプ|宿泊")),
     ("event", re.compile(r"まつり|祭り|フェス|花火|イベント")),
 )
 # 基本情報の見出し
@@ -142,7 +143,16 @@ def _info_table(text: str) -> dict[str, str]:
 
 
 def _skip_reason(name: str, text: str) -> str | None:
-    head = name + " " + text[:400]
+    """対象外の型か（ADR 0011）。判定に使うのは**名前と分類の見出しだけ**。
+
+    本文で見ると落ちる。美術館のページには「体験コーナー」「カフェ」が普通に出てくるので、
+    本文に「体験」があるだけで除くと、収録すべき施設が消える（実測で最初の 109 件のうち
+    いくつも誤って除かれた）。ページの先頭はエリア名と分類の見出しなので、そこだけを見る。
+    """
+    # ページは「エリア名 分類 施設名 …本文」の順に並ぶので、**施設名より前**と施設名だけを見る。
+    # 本文まで見ると、美術館の「体験コーナー」「ワークショップ」で除かれてしまう
+    at = text.find(name) if name else -1
+    head = name + " " + (text[:at] if at > 0 else text[:60])
     for reason, pattern in SKIP_RULES:
         if pattern.search(head):
             return reason
@@ -183,11 +193,39 @@ def classify(client: PoliteClient, cand: Candidate) -> None:
         cand.reason = "営業時間・料金の記載が無い"
 
 
+def _save(out: Path, cands: list[Candidate], requests: int, partial: list[str]) -> dict[str, int]:
+    """結果を書き出す。途中でも呼べるようにしてある（数百件の取得をやり直さないため）。"""
+    by_type: dict[str, int] = {}
+    for cand in cands:
+        key = cand.spot_type or "未判定"
+        by_type[key] = by_type.get(key, 0) + 1
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(
+        json.dumps(
+            {
+                "collected_at": jst_now().isoformat(),
+                "requests": requests,
+                "by_type": by_type,
+                "partial": partial,
+                "candidates": [asdict(c) for c in cands],
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+        newline="\n",
+    )
+    return by_type
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--enumerate", action="store_true", help="一覧を数え上げる")
     parser.add_argument("--classify", action="store_true", help="詳細ページで型を決める")
     parser.add_argument("--limit", type=int, default=0, help="型の判定を先頭 N 件に絞る")
+    parser.add_argument(
+        "--recheck", default="", help="この型のものを再判定する（例: skip,unknown）"
+    )
     parser.add_argument("--out", type=Path, default=Path("data/runs/kagawa-inventory.json"))
     args = parser.parse_args()
 
@@ -207,36 +245,21 @@ def main() -> int:
             for line in partial:
                 print(f"  ! 取りきれず: {line}")
         if args.classify:
-            todo = [c for c in cands if not c.spot_type]
+            todo = [c for c in cands if not c.spot_type or c.spot_type in args.recheck.split(",")]
             if args.limit:
                 todo = todo[: args.limit]
             print(f"== 型の判定（{len(todo)} 件）==")
             for n, cand in enumerate(todo, 1):
+                cand.spot_type = ""
                 classify(client, cand)
-                print(
-                    f"  {n:3}/{len(todo)} {cand.spot_type:9} {cand.name[:22]:24} {cand.reason[:50]}"
-                )
+                head = f"  {n:3}/{len(todo)} {cand.spot_type:9} {cand.name[:22]:24}"
+                print(f"{head} {cand.reason[:50]}", flush=True)
+                if n % 25 == 0:
+                    # 途中で止まっても捨てない（数百件の取得をやり直さないため）
+                    _save(args.out, cands, client.request_count, [])
         requests = client.request_count
 
-    by_type: dict[str, int] = {}
-    for cand in cands:
-        by_type[cand.spot_type or "未判定"] = by_type.get(cand.spot_type or "未判定", 0) + 1
-    args.out.parent.mkdir(parents=True, exist_ok=True)
-    args.out.write_text(
-        json.dumps(
-            {
-                "collected_at": jst_now().isoformat(),
-                "requests": requests,
-                "by_type": by_type,
-                "partial": partial,
-                "candidates": [asdict(c) for c in cands],
-            },
-            ensure_ascii=False,
-            indent=2,
-        ),
-        encoding="utf-8",
-        newline="\n",
-    )
+    by_type = _save(args.out, cands, requests, partial)
     print("\n== 型ごとの件数 ==")
     for key, n in sorted(by_type.items(), key=lambda kv: -kv[1]):
         print(f"  {key:9} {n:4}")
