@@ -1,0 +1,1014 @@
+{
+  "resolved_at": "2026-09-13T07:28:26.325105+09:00",
+  "requests": 0,
+  "matched": [
+    {
+      "spot_id": "bansyouen",
+      "ja": "中津万象園・丸亀美術館",
+      "locale": "en",
+      "text": "Nakazu Banshoen Garden and Marugame Museum of Art",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10114",
+      "address": "丸亀市中津町25-1 Open 9:30 a.m.–5 p.m. (last entry 4:30 p.m.)"
+    },
+    {
+      "spot_id": "city-117",
+      "ja": "丸亀城",
+      "locale": "en",
+      "text": "Marugame Castle",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10084",
+      "address": ""
+    },
+    {
+      "spot_id": "kankakei",
+      "ja": "寒霞渓",
+      "locale": "en",
+      "text": "Kankakei Gorge",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10122",
+      "address": ""
+    },
+    {
+      "spot_id": "kawashima-af",
+      "ja": "川島猛アートファクトリー",
+      "locale": "en",
+      "text": "Takeshi Kawashima Art Factory",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10111",
+      "address": ""
+    },
+    {
+      "spot_id": "nishino-kinryo",
+      "ja": "金陵の郷",
+      "locale": "en",
+      "text": "Kinryo Sake Museum",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10115",
+      "address": ""
+    },
+    {
+      "spot_id": "olive-pk",
+      "ja": "サン・オリーブ温泉（道の駅「小豆島オリーブ公園」内）",
+      "locale": "en",
+      "text": "Shodoshima Olive Park Roadside Station",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10085",
+      "address": "小豆島町西村甲1941-1 Open 8:30 a.m.–5 p.m."
+    },
+    {
+      "spot_id": "sakurashop",
+      "ja": "ジョージ",
+      "locale": "en",
+      "text": "George Nakashima Memorial Gallery",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10109",
+      "address": "高松市牟礼町大町1132-1 Open 10 a.m.–5 p.m. (last entry 4:30 p.m.)"
+    },
+    {
+      "spot_id": "shikokumura",
+      "ja": "四国村ミウゼアム",
+      "locale": "en",
+      "text": "Shikoku Mura (Shikoku Folk House Museum)",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10101",
+      "address": ""
+    },
+    {
+      "spot_id": "zentsuji",
+      "ja": "総本山善通寺",
+      "locale": "en",
+      "text": "Zentsuji Temple",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10094",
+      "address": ""
+    },
+    {
+      "spot_id": "bansyouen",
+      "ja": "中津万象園・丸亀美術館",
+      "locale": "zh-Hant",
+      "text": "中津萬象園・丸龜美術館",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10114",
+      "address": "丸亀市中津町25-1"
+    },
+    {
+      "spot_id": "city-117",
+      "ja": "丸亀城",
+      "locale": "zh-Hant",
+      "text": "丸龜城",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10084",
+      "address": "丸亀市一番丁"
+    },
+    {
+      "spot_id": "kankakei",
+      "ja": "寒霞渓",
+      "locale": "zh-Hant",
+      "text": "寒霞溪",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10122",
+      "address": "小豆島町神懸通乙168（山頂駅）神懸通乙327-1（こううん駅）"
+    },
+    {
+      "spot_id": "kawashima-af",
+      "ja": "川島猛アートファクトリー",
+      "locale": "zh-Hant",
+      "text": "川島猛藝術工場",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10111",
+      "address": "高松市亀水町1411"
+    },
+    {
+      "spot_id": "nishino-kinryo",
+      "ja": "金陵の郷",
+      "locale": "zh-Hant",
+      "text": "金陵之鄉",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10115",
+      "address": "琴平町623"
+    },
+    {
+      "spot_id": "olive-pk",
+      "ja": "サン・オリーブ温泉（道の駅「小豆島オリーブ公園」内）",
+      "locale": "zh-Hant",
+      "text": "道之驛 小豆島橄欖公園",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10085",
+      "address": "小豆島町西村甲1941-1"
+    },
+    {
+      "spot_id": "sakurashop",
+      "ja": "ジョージ",
+      "locale": "zh-Hant",
+      "text": "George Katsutoshi Nakashima紀念館",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10109",
+      "address": "高松市牟礼町大町1132-1"
+    },
+    {
+      "spot_id": "shikokumura",
+      "ja": "四国村ミウゼアム",
+      "locale": "zh-Hant",
+      "text": "四國村",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10101",
+      "address": "高松市屋島中町91"
+    },
+    {
+      "spot_id": "zentsuji",
+      "ja": "総本山善通寺",
+      "locale": "zh-Hant",
+      "text": "總本山善通寺",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10094",
+      "address": "善通寺市善通寺町3-3-1"
+    }
+  ],
+  "unmatched": [
+    "zh-Hant/10077 栗林公園 / 香川県高松市栗林町１丁目２０番１６号",
+    "zh-Hant/10078 金刀比羅宮 / 琴平町892-1",
+    "zh-Hant/10079 直島 / ",
+    "zh-Hant/10081 瀨戶大橋紀念公園 / 坂出市番の州緑町6-13",
+    "zh-Hant/10083 高松盆栽的故鄉: 「21世紀に贈るメッセージ」／猪熊弦一郎作 と漢字が合わない",
+    "zh-Hant/10086 天使的散步道 / 土庄町銀波浦",
+    "zh-Hant/10087 錢形砂繪（琴彈公園）: 琴弾廻廊 と漢字が合わない",
+    "zh-Hant/10088 大窪寺 / ",
+    "zh-Hant/10089 讃州井筒屋敷: 引田城跡（城山） と漢字が合わない",
+    "zh-Hant/10090 父母之濱 / 三豊市仁尾町仁尾乙203‐3",
+    "zh-Hant/10091 國營讚岐滿濃公園 / まんのう町吉野4243-12",
+    "zh-Hant/10093 高松城跡 玉藻公園 / 高松市玉藻町2番1号",
+    "zh-Hant/10096 瀨戶內國際藝術祭 / ",
+    "zh-Hant/10098 丸龜市豬熊弦一郎現代美術館 / ",
+    "zh-Hant/10099 香川縣立東山魁夷瀨戶內美術館 / ",
+    "zh-Hant/10100 舊金毘羅大劇場（金丸座） / 琴平町乙１２４１",
+    "zh-Hant/10103 香川縣廳（縣政府）東館: 香川県庁舎（本館） と漢字が合わない",
+    "zh-Hant/10104 高松中央商店街 / ",
+    "zh-Hant/10105 高松商店街周邊區域 / ",
+    "zh-Hant/10106 佛生山 / ",
+    "zh-Hant/10107 參拜空海所走過的88座寺院 / ",
+    "zh-Hant/10112 豐島 / ",
+    "zh-Hant/10113 陽光海港(Sun Port)高松（高松港周邊區域） / ",
+    "zh-Hant/10116 女木島 / 高松市女木町",
+    "zh-Hant/10117 男木島 / ",
+    "zh-Hant/10118 栗島 / ",
+    "zh-Hant/10119 本島 / ",
+    "zh-Hant/10120 小豆島 / ",
+    "zh-Hant/10121 二十四瞳電影村 / 小豆島町田浦甲931",
+    "zh-Hant/10123 醬油之鄉 / ",
+    "zh-Hant/10124 參拜小豆島靈場八十八所 / ",
+    "zh-Hant/10125 迷宮之城・MeiPAM（妖怪美術館） / 土庄町甲405",
+    "zh-Hant/10126 小豆島素麵 / ",
+    "zh-Hant/10127 和果子三盆糖木模體驗 / ",
+    "zh-Hant/10128 高屋神社 / 観音寺市高屋町2800",
+    "zh-Hant/10129 香川縣立博物館: 「21世紀に贈るメッセージ」／猪熊弦一郎作 と漢字が合わない",
+    "zh-Hant/10130 引田 / ",
+    "zh-Hant/10131 團扇之港美術館 / 丸亀市港町307-15",
+    "zh-Hant/10132 烏龍麵店巡禮 / ",
+    "zh-Hant/10133 體驗製作烏龍麵 / ",
+    "zh-Hant/10134 觀光列車・四國中央千年物語 / ",
+    "zh-Hant/10135 採草莓 / ",
+    "zh-Hant/10136 跳島須知 / ",
+    "zh-Hant/10178 四國水族館 / ",
+    "en/10077 Ritsurin Garden: 繁体字側で施設が決まっていない",
+    "en/10078 Kotohiragu Shrine: 繁体字側で施設が決まっていない",
+    "en/10079 Naoshima Island: 繁体字側で施設が決まっていない",
+    "en/10081 Seto Ohashi Commemorative Park: 繁体字側で施設が決まっていない",
+    "en/10083 Takamatsu Bonsai Center: 繁体字側で施設が決まっていない",
+    "en/10086 Angel Road: 繁体字側で施設が決まっていない",
+    "en/10087 Zenigata Sand Coin (Kotohiki Park): 繁体字側で施設が決まっていない",
+    "en/10090 Chichibugahama Beach: 繁体字側で施設が決まっていない",
+    "en/10091 Sanuki Manno Park: 繁体字側で施設が決まっていない",
+    "en/10093 Tamamo Park, Historic Site of Takamatsu Castle: 繁体字側で施設が決まっていない",
+    "en/10096 Setouchi Triennale: 繁体字側で施設が決まっていない",
+    "en/10098 Marugame Genichiro-Inokuma Museum of Contemporary Art: 繁体字側で施設が決まっていない",
+    "en/10099 Kagawa Prefectural Higashiyama Kaii Setouchi Art Museum: 繁体字側で施設が決まっていない",
+    "en/10100 Konpira Grand Theater (Kanamaruza): 繁体字側で施設が決まっていない",
+    "en/10103 Kagawa Prefectural Government Office East Building: 繁体字側で施設が決まっていない",
+    "en/10104 Central Takamatsu Shopping Arcades by Day: 繁体字側で施設が決まっていない",
+    "en/10105 Central Takamatsu Shopping Arcades by Night: 繁体字側で施設が決まっていない",
+    "en/10106 Busshozan Town: 繁体字側で施設が決まっていない",
+    "en/10107 Shikoku Henro Pilgrimage: 繁体字側で施設が決まっていない",
+    "en/10112 Teshima Island: 繁体字側で施設が決まっていない",
+    "en/10113 Sunport Takamatsu (Takamatsu Port Area): 繁体字側で施設が決まっていない",
+    "en/10116 Megijima Island: 繁体字側で施設が決まっていない",
+    "en/10117 Ogijima Island: 繁体字側で施設が決まっていない",
+    "en/10118 Awashima Island: 繁体字側で施設が決まっていない",
+    "en/10119 Honjima Island: 繁体字側で施設が決まっていない",
+    "en/10120 Shodoshima Island: 繁体字側で施設が決まっていない",
+    "en/10121 Twenty-Four Eyes Movie Studio: 繁体字側で施設が決まっていない",
+    "en/10123 Soy Sauce Village: 繁体字側で施設が決まっていない",
+    "en/10124 Shodoshima 88 Temple Pilgrimage: 繁体字側で施設が決まっていない",
+    "en/10125 Meiro no Machi and MeiPAM: 繁体字側で施設が決まっていない",
+    "en/10126 Shodoshima Somen Noodles: 繁体字側で施設が決まっていない",
+    "en/10127 Wasanbon Sugar Confectionary Making: 繁体字側で施設が決まっていない",
+    "en/10128 Takayajinja Shrine: 繁体字側で施設が決まっていない",
+    "en/10129 The Kagawa Museum: 繁体字側で施設が決まっていない",
+    "en/10130 Hiketa Town: 繁体字側で施設が決まっていない",
+    "en/10131 Uchiwa no Minato Fan Museum: 繁体字側で施設が決まっていない",
+    "en/10132 Udon Noodle Shop Hopping: 繁体字側で施設が決まっていない",
+    "en/10133 Udon Noodle Making: 繁体字側で施設が決まっていない",
+    "en/10134 Sightseeing Train: Shikoku Mannaka Sennen Monogatari: 繁体字側で施設が決まっていない",
+    "en/10135 Strawberry Picking: 繁体字側で施設が決まっていない",
+    "en/10136 Tips for Island Travel: 繁体字側で施設が決まっていない",
+    "en/10137 Islands of the Seto Inland Sea: 繁体字側で施設が決まっていない",
+    "en/10177 Anpanman Train: 繁体字側で施設が決まっていない",
+    "en/10178 Shikoku Aquarium: 繁体字側で施設が決まっていない",
+    "en yashima: 候補が複数（Mt. Yashima / Mt. Yashima Night View）",
+    "zh-Hant yashima: 候補が複数（屋島 / 屋島夜景）"
+  ],
+  "entries": [
+    {
+      "number": "10078",
+      "locale": "en",
+      "name": "Kotohiragu Shrine",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10078"
+    },
+    {
+      "number": "10090",
+      "locale": "en",
+      "name": "Chichibugahama Beach",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10090"
+    },
+    {
+      "number": "10120",
+      "locale": "en",
+      "name": "Shodoshima Island",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10120"
+    },
+    {
+      "number": "10077",
+      "locale": "en",
+      "name": "Ritsurin Garden",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10077"
+    },
+    {
+      "number": "10103",
+      "locale": "en",
+      "name": "Kagawa Prefectural Government Office East Building",
+      "address": "香川県高松市番町4-1-10 Open 8:30 a.m.–5:15 p.m.",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10103"
+    },
+    {
+      "number": "10093",
+      "locale": "en",
+      "name": "Tamamo Park, Historic Site of Takamatsu Castle",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10093"
+    },
+    {
+      "number": "10079",
+      "locale": "en",
+      "name": "Naoshima Island",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10079"
+    },
+    {
+      "number": "10100",
+      "locale": "en",
+      "name": "Konpira Grand Theater (Kanamaruza)",
+      "address": "琴平町乙１２４１ Open 9 a.m.–5 p.m.",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10100"
+    },
+    {
+      "number": "10104",
+      "locale": "en",
+      "name": "Central Takamatsu Shopping Arcades by Day",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10104"
+    },
+    {
+      "number": "10177",
+      "locale": "en",
+      "name": "Anpanman Train",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10177"
+    },
+    {
+      "number": "10112",
+      "locale": "en",
+      "name": "Teshima Island",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10112"
+    },
+    {
+      "number": "10083",
+      "locale": "en",
+      "name": "Takamatsu Bonsai Center",
+      "address": "高松市国分寺町国分353-1 Open 8:30 a.m.–5 p.m.",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10083"
+    },
+    {
+      "number": "10123",
+      "locale": "en",
+      "name": "Soy Sauce Village",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10123"
+    },
+    {
+      "number": "10109",
+      "locale": "en",
+      "name": "George Nakashima Memorial Gallery",
+      "address": "高松市牟礼町大町1132-1 Open 10 a.m.–5 p.m. (last entry 4:30 p.m.)",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10109"
+    },
+    {
+      "number": "10117",
+      "locale": "en",
+      "name": "Ogijima Island",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10117"
+    },
+    {
+      "number": "10086",
+      "locale": "en",
+      "name": "Angel Road",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10086"
+    },
+    {
+      "number": "10087",
+      "locale": "en",
+      "name": "Zenigata Sand Coin (Kotohiki Park)",
+      "address": "観音寺市有明町 Open －",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10087"
+    },
+    {
+      "number": "10080",
+      "locale": "en",
+      "name": "Mt. Yashima",
+      "address": "高松市屋島山上 Open Summit parking lot: 6:30 a.m.–10 p.m.",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10080"
+    },
+    {
+      "number": "10106",
+      "locale": "en",
+      "name": "Busshozan Town",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10106"
+    },
+    {
+      "number": "10134",
+      "locale": "en",
+      "name": "Sightseeing Train: Shikoku Mannaka Sennen Monogatari",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10134"
+    },
+    {
+      "number": "10128",
+      "locale": "en",
+      "name": "Takayajinja Shrine",
+      "address": "観音寺市高屋町2800 Open Open all hours Admission",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10128"
+    },
+    {
+      "number": "10130",
+      "locale": "en",
+      "name": "Hiketa Town",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10130"
+    },
+    {
+      "number": "10084",
+      "locale": "en",
+      "name": "Marugame Castle",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10084"
+    },
+    {
+      "number": "10124",
+      "locale": "en",
+      "name": "Shodoshima 88 Temple Pilgrimage",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10124"
+    },
+    {
+      "number": "10116",
+      "locale": "en",
+      "name": "Megijima Island",
+      "address": "高松市女木町 Admission",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10116"
+    },
+    {
+      "number": "10102",
+      "locale": "en",
+      "name": "Mt. Yashima Night View",
+      "address": "高松市屋島山上 Open Mt. Yashima Drive Way: 6:30 a.m.–10 p.m.",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10102"
+    },
+    {
+      "number": "10132",
+      "locale": "en",
+      "name": "Udon Noodle Shop Hopping",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10132"
+    },
+    {
+      "number": "10127",
+      "locale": "en",
+      "name": "Wasanbon Sugar Confectionary Making",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10127"
+    },
+    {
+      "number": "10105",
+      "locale": "en",
+      "name": "Central Takamatsu Shopping Arcades by Night",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10105"
+    },
+    {
+      "number": "10113",
+      "locale": "en",
+      "name": "Sunport Takamatsu (Takamatsu Port Area)",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10113"
+    },
+    {
+      "number": "10094",
+      "locale": "en",
+      "name": "Zentsuji Temple",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10094"
+    },
+    {
+      "number": "10133",
+      "locale": "en",
+      "name": "Udon Noodle Making",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10133"
+    },
+    {
+      "number": "10085",
+      "locale": "en",
+      "name": "Shodoshima Olive Park Roadside Station",
+      "address": "小豆島町西村甲1941-1 Open 8:30 a.m.–5 p.m.",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10085"
+    },
+    {
+      "number": "10081",
+      "locale": "en",
+      "name": "Seto Ohashi Commemorative Park",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10081"
+    },
+    {
+      "number": "10101",
+      "locale": "en",
+      "name": "Shikoku Mura (Shikoku Folk House Museum)",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10101"
+    },
+    {
+      "number": "10122",
+      "locale": "en",
+      "name": "Kankakei Gorge",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10122"
+    },
+    {
+      "number": "10111",
+      "locale": "en",
+      "name": "Takeshi Kawashima Art Factory",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10111"
+    },
+    {
+      "number": "10131",
+      "locale": "en",
+      "name": "Uchiwa no Minato Fan Museum",
+      "address": "丸亀市港町307-15 Open 9:30 a.m.–5 p.m. (last entry 4:30 p.m.)",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10131"
+    },
+    {
+      "number": "10121",
+      "locale": "en",
+      "name": "Twenty-Four Eyes Movie Studio",
+      "address": "小豆島町田浦甲931 Open 9 a.m.–5 p.m.",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10121"
+    },
+    {
+      "number": "10126",
+      "locale": "en",
+      "name": "Shodoshima Somen Noodles",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10126"
+    },
+    {
+      "number": "10137",
+      "locale": "en",
+      "name": "Islands of the Seto Inland Sea",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10137"
+    },
+    {
+      "number": "10091",
+      "locale": "en",
+      "name": "Sanuki Manno Park",
+      "address": "まんのう町吉野4243-12 Open 9:30 a.m.–5 p.m. (varies by season)",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10091"
+    },
+    {
+      "number": "10118",
+      "locale": "en",
+      "name": "Awashima Island",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10118"
+    },
+    {
+      "number": "10178",
+      "locale": "en",
+      "name": "Shikoku Aquarium",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10178"
+    },
+    {
+      "number": "10099",
+      "locale": "en",
+      "name": "Kagawa Prefectural Higashiyama Kaii Setouchi Art Museum",
+      "address": "坂出市沙弥島字南通224-13 Open 9 a.m.–5 p.m. (last entry 4:30 p.m.)",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10099"
+    },
+    {
+      "number": "10115",
+      "locale": "en",
+      "name": "Kinryo Sake Museum",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10115"
+    },
+    {
+      "number": "10114",
+      "locale": "en",
+      "name": "Nakazu Banshoen Garden and Marugame Museum of Art",
+      "address": "丸亀市中津町25-1 Open 9:30 a.m.–5 p.m. (last entry 4:30 p.m.)",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10114"
+    },
+    {
+      "number": "10125",
+      "locale": "en",
+      "name": "Meiro no Machi and MeiPAM",
+      "address": "土庄町甲405 Open 10 a.m.–6 p.m. (last entry 4 p.m.)",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10125"
+    },
+    {
+      "number": "10129",
+      "locale": "en",
+      "name": "The Kagawa Museum",
+      "address": "高松市玉藻町５番５号 Open 9 a.m.–5 p.m. (last entry 4:30 p.m.)",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10129"
+    },
+    {
+      "number": "10119",
+      "locale": "en",
+      "name": "Honjima Island",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10119"
+    },
+    {
+      "number": "10096",
+      "locale": "en",
+      "name": "Setouchi Triennale",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10096"
+    },
+    {
+      "number": "10098",
+      "locale": "en",
+      "name": "Marugame Genichiro-Inokuma Museum of Contemporary Art",
+      "address": "丸亀市浜町80-1 Open 10 a.m.–6 p.m. (last entry 5:30 p.m.)",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10098"
+    },
+    {
+      "number": "10107",
+      "locale": "en",
+      "name": "Shikoku Henro Pilgrimage",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10107"
+    },
+    {
+      "number": "10135",
+      "locale": "en",
+      "name": "Strawberry Picking",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10135"
+    },
+    {
+      "number": "10136",
+      "locale": "en",
+      "name": "Tips for Island Travel",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10136"
+    },
+    {
+      "number": "10078",
+      "locale": "zh-Hant",
+      "name": "金刀比羅宮",
+      "address": "琴平町892-1",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10078"
+    },
+    {
+      "number": "10120",
+      "locale": "zh-Hant",
+      "name": "小豆島",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10120"
+    },
+    {
+      "number": "10122",
+      "locale": "zh-Hant",
+      "name": "寒霞溪",
+      "address": "小豆島町神懸通乙168（山頂駅）神懸通乙327-1（こううん駅）",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10122"
+    },
+    {
+      "number": "10134",
+      "locale": "zh-Hant",
+      "name": "觀光列車・四國中央千年物語",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10134"
+    },
+    {
+      "number": "10128",
+      "locale": "zh-Hant",
+      "name": "高屋神社",
+      "address": "観音寺市高屋町2800",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10128"
+    },
+    {
+      "number": "10085",
+      "locale": "zh-Hant",
+      "name": "道之驛 小豆島橄欖公園",
+      "address": "小豆島町西村甲1941-1",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10085"
+    },
+    {
+      "number": "10079",
+      "locale": "zh-Hant",
+      "name": "直島",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10079"
+    },
+    {
+      "number": "10104",
+      "locale": "zh-Hant",
+      "name": "高松中央商店街",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10104"
+    },
+    {
+      "number": "10077",
+      "locale": "zh-Hant",
+      "name": "栗林公園",
+      "address": "香川県高松市栗林町１丁目２０番１６号",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10077"
+    },
+    {
+      "number": "10084",
+      "locale": "zh-Hant",
+      "name": "丸龜城",
+      "address": "丸亀市一番丁",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10084"
+    },
+    {
+      "number": "10102",
+      "locale": "zh-Hant",
+      "name": "屋島夜景",
+      "address": "高松市屋島山上",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10102"
+    },
+    {
+      "number": "10123",
+      "locale": "zh-Hant",
+      "name": "醬油之鄉",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10123"
+    },
+    {
+      "number": "10117",
+      "locale": "zh-Hant",
+      "name": "男木島",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10117"
+    },
+    {
+      "number": "10121",
+      "locale": "zh-Hant",
+      "name": "二十四瞳電影村",
+      "address": "小豆島町田浦甲931",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10121"
+    },
+    {
+      "number": "10086",
+      "locale": "zh-Hant",
+      "name": "天使的散步道",
+      "address": "土庄町銀波浦",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10086"
+    },
+    {
+      "number": "10081",
+      "locale": "zh-Hant",
+      "name": "瀨戶大橋紀念公園",
+      "address": "坂出市番の州緑町6-13",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10081"
+    },
+    {
+      "number": "10103",
+      "locale": "zh-Hant",
+      "name": "香川縣廳（縣政府）東館",
+      "address": "香川県高松市番町4-1-10",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10103"
+    },
+    {
+      "number": "10125",
+      "locale": "zh-Hant",
+      "name": "迷宮之城・MeiPAM（妖怪美術館）",
+      "address": "土庄町甲405",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10125"
+    },
+    {
+      "number": "10090",
+      "locale": "zh-Hant",
+      "name": "父母之濱",
+      "address": "三豊市仁尾町仁尾乙203‐3",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10090"
+    },
+    {
+      "number": "10094",
+      "locale": "zh-Hant",
+      "name": "總本山善通寺",
+      "address": "善通寺市善通寺町3-3-1",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10094"
+    },
+    {
+      "number": "10115",
+      "locale": "zh-Hant",
+      "name": "金陵之鄉",
+      "address": "琴平町623",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10115"
+    },
+    {
+      "number": "10088",
+      "locale": "zh-Hant",
+      "name": "大窪寺",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10088"
+    },
+    {
+      "number": "10113",
+      "locale": "zh-Hant",
+      "name": "陽光海港(Sun Port)高松（高松港周邊區域）",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10113"
+    },
+    {
+      "number": "10100",
+      "locale": "zh-Hant",
+      "name": "舊金毘羅大劇場（金丸座）",
+      "address": "琴平町乙１２４１",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10100"
+    },
+    {
+      "number": "10178",
+      "locale": "zh-Hant",
+      "name": "四國水族館",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10178"
+    },
+    {
+      "number": "10116",
+      "locale": "zh-Hant",
+      "name": "女木島",
+      "address": "高松市女木町",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10116"
+    },
+    {
+      "number": "10087",
+      "locale": "zh-Hant",
+      "name": "錢形砂繪（琴彈公園）",
+      "address": "観音寺市有明町",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10087"
+    },
+    {
+      "number": "10091",
+      "locale": "zh-Hant",
+      "name": "國營讚岐滿濃公園",
+      "address": "まんのう町吉野4243-12",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10091"
+    },
+    {
+      "number": "10093",
+      "locale": "zh-Hant",
+      "name": "高松城跡 玉藻公園",
+      "address": "高松市玉藻町2番1号",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10093"
+    },
+    {
+      "number": "10101",
+      "locale": "zh-Hant",
+      "name": "四國村",
+      "address": "高松市屋島中町91",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10101"
+    },
+    {
+      "number": "10080",
+      "locale": "zh-Hant",
+      "name": "屋島",
+      "address": "高松市屋島山上",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10080"
+    },
+    {
+      "number": "10112",
+      "locale": "zh-Hant",
+      "name": "豐島",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10112"
+    },
+    {
+      "number": "10114",
+      "locale": "zh-Hant",
+      "name": "中津萬象園・丸龜美術館",
+      "address": "丸亀市中津町25-1",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10114"
+    },
+    {
+      "number": "10133",
+      "locale": "zh-Hant",
+      "name": "體驗製作烏龍麵",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10133"
+    },
+    {
+      "number": "10089",
+      "locale": "zh-Hant",
+      "name": "讃州井筒屋敷",
+      "address": "香川県東かがわ市引田2163",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10089"
+    },
+    {
+      "number": "10099",
+      "locale": "zh-Hant",
+      "name": "香川縣立東山魁夷瀨戶內美術館",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10099"
+    },
+    {
+      "number": "10130",
+      "locale": "zh-Hant",
+      "name": "引田",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10130"
+    },
+    {
+      "number": "10135",
+      "locale": "zh-Hant",
+      "name": "採草莓",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10135"
+    },
+    {
+      "number": "10129",
+      "locale": "zh-Hant",
+      "name": "香川縣立博物館",
+      "address": "高松市玉藻町５番５号",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10129"
+    },
+    {
+      "number": "10119",
+      "locale": "zh-Hant",
+      "name": "本島",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10119"
+    },
+    {
+      "number": "10098",
+      "locale": "zh-Hant",
+      "name": "丸龜市豬熊弦一郎現代美術館",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10098"
+    },
+    {
+      "number": "10132",
+      "locale": "zh-Hant",
+      "name": "烏龍麵店巡禮",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10132"
+    },
+    {
+      "number": "10105",
+      "locale": "zh-Hant",
+      "name": "高松商店街周邊區域",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10105"
+    },
+    {
+      "number": "10126",
+      "locale": "zh-Hant",
+      "name": "小豆島素麵",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10126"
+    },
+    {
+      "number": "10136",
+      "locale": "zh-Hant",
+      "name": "跳島須知",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10136"
+    },
+    {
+      "number": "10106",
+      "locale": "zh-Hant",
+      "name": "佛生山",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10106"
+    },
+    {
+      "number": "10083",
+      "locale": "zh-Hant",
+      "name": "高松盆栽的故鄉",
+      "address": "高松市国分寺町国分353-1",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10083"
+    },
+    {
+      "number": "10111",
+      "locale": "zh-Hant",
+      "name": "川島猛藝術工場",
+      "address": "高松市亀水町1411",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10111"
+    },
+    {
+      "number": "10124",
+      "locale": "zh-Hant",
+      "name": "參拜小豆島靈場八十八所",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10124"
+    },
+    {
+      "number": "10127",
+      "locale": "zh-Hant",
+      "name": "和果子三盆糖木模體驗",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10127"
+    },
+    {
+      "number": "10107",
+      "locale": "zh-Hant",
+      "name": "參拜空海所走過的88座寺院",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10107"
+    },
+    {
+      "number": "10118",
+      "locale": "zh-Hant",
+      "name": "栗島",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10118"
+    },
+    {
+      "number": "10131",
+      "locale": "zh-Hant",
+      "name": "團扇之港美術館",
+      "address": "丸亀市港町307-15",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10131"
+    },
+    {
+      "number": "10096",
+      "locale": "zh-Hant",
+      "name": "瀨戶內國際藝術祭",
+      "address": "",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10096"
+    },
+    {
+      "number": "10109",
+      "locale": "zh-Hant",
+      "name": "George Katsutoshi Nakashima紀念館",
+      "address": "高松市牟礼町大町1132-1",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10109"
+    }
+  ]
+}

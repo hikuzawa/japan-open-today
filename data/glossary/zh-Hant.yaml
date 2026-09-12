@@ -77,10 +77,16 @@ names:
     url: ''
   サン・オリーブ温泉（道の駅「小豆島オリーブ公園」内）:
     checked_on: '2026-09-13'
-    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
-    source: glossary
-    text: 小豆島橄欖公園
-    url: ''
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: 道之驛 小豆島橄欖公園
+    url: https://www.my-kagawa.jp/zh-TW/see-and-do/10085
+  ジョージ:
+    checked_on: '2026-09-13'
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: George Katsutoshi Nakashima紀念館
+    url: https://www.my-kagawa.jp/zh-TW/see-and-do/10109
   ニューレオマワールド:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -107,16 +113,16 @@ names:
     url: ''
   中津万象園・丸亀美術館:
     checked_on: '2026-09-13'
-    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
-    source: glossary
-    text: 丸龜萬象園·丸龜美術館
-    url: ''
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: 中津萬象園・丸龜美術館
+    url: https://www.my-kagawa.jp/zh-TW/see-and-do/10114
   丸亀城:
     checked_on: '2026-09-13'
-    note: Wikipedia 日本語版「丸亀城」の言語間リンク（zh）
-    source: glossary
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
     text: 丸龜城
-    url: https://ja.wikipedia.org/wiki/%E4%B8%B8%E4%BA%80%E5%9F%8E
+    url: https://www.my-kagawa.jp/zh-TW/see-and-do/10084
   丸亀市猪熊弦一郎現代美術館:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -159,6 +165,12 @@ names:
     source: glossary
     text: 善通寺市民游泳池
     url: ''
+  四国村ミウゼアム:
+    checked_on: '2026-09-13'
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: 四國村
+    url: https://www.my-kagawa.jp/zh-TW/see-and-do/10101
   四国水族館:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -177,6 +189,12 @@ names:
     source: glossary
     text: 丸龜天然溫泉
     url: ''
+  寒霞渓:
+    checked_on: '2026-09-13'
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: 寒霞溪
+    url: https://www.my-kagawa.jp/zh-TW/see-and-do/10122
   小豆島オートビレッジYOSHIDAふるさと交流館・吉田温泉:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -195,6 +213,12 @@ names:
     source: glossary
     text: 屋島寺
     url: ''
+  川島猛アートファクトリー:
+    checked_on: '2026-09-13'
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: 川島猛藝術工場
+    url: https://www.my-kagawa.jp/zh-TW/see-and-do/10111
   平賀源内旧邸:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -293,10 +317,10 @@ names:
     url: ''
   総本山善通寺:
     checked_on: '2026-09-13'
-    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
-    source: glossary
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
     text: 總本山善通寺
-    url: ''
+    url: https://www.my-kagawa.jp/zh-TW/see-and-do/10094
   與田寺:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -323,10 +347,10 @@ names:
     url: ''
   金陵の郷:
     checked_on: '2026-09-13'
-    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
-    source: glossary
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
     text: 金陵之鄉
-    url: ''
+    url: https://www.my-kagawa.jp/zh-TW/see-and-do/10115
   雲辺寺ロープウェイ:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）

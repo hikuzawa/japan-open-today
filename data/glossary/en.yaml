@@ -77,10 +77,16 @@ names:
     url: ''
   サン・オリーブ温泉（道の駅「小豆島オリーブ公園」内）:
     checked_on: '2026-09-13'
-    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
-    source: glossary
-    text: Shodoshima Olive Park
-    url: ''
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: Shodoshima Olive Park Roadside Station
+    url: https://www.my-kagawa.jp/en/see-and-do/10085
+  ジョージ:
+    checked_on: '2026-09-13'
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: George Nakashima Memorial Gallery
+    url: https://www.my-kagawa.jp/en/see-and-do/10109
   ニューレオマワールド:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -107,16 +113,16 @@ names:
     url: ''
   中津万象園・丸亀美術館:
     checked_on: '2026-09-13'
-    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
-    source: glossary
-    text: Marugame Museum of Art
-    url: ''
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: Nakazu Banshoen Garden and Marugame Museum of Art
+    url: https://www.my-kagawa.jp/en/see-and-do/10114
   丸亀城:
     checked_on: '2026-09-13'
-    note: Wikipedia 日本語版「丸亀城」の言語間リンク（en）
-    source: glossary
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
     text: Marugame Castle
-    url: https://ja.wikipedia.org/wiki/%E4%B8%B8%E4%BA%80%E5%9F%8E
+    url: https://www.my-kagawa.jp/en/see-and-do/10084
   丸亀市猪熊弦一郎現代美術館:
     checked_on: '2026-09-13'
     note: Wikipedia 日本語版「丸亀市猪熊弦一郎現代美術館」の言語間リンク（en）
@@ -141,6 +147,12 @@ names:
     source: glossary
     text: Shokokushorei Museum, Ritsurin Park
     url: ''
+  四国村ミウゼアム:
+    checked_on: '2026-09-13'
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: Shikoku Mura (Shikoku Folk House Museum)
+    url: https://www.my-kagawa.jp/en/see-and-do/10101
   四国水族館:
     checked_on: '2026-09-13'
     note: 公式サイトのenページ（og:title）
@@ -159,6 +171,12 @@ names:
     source: glossary
     text: Marugame Natural Onsen
     url: ''
+  寒霞渓:
+    checked_on: '2026-09-13'
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: Kankakei Gorge
+    url: https://www.my-kagawa.jp/en/see-and-do/10122
   小豆島温泉里枝の湯:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -171,6 +189,12 @@ names:
     source: glossary
     text: Yashima-ji
     url: https://ja.wikipedia.org/wiki/%E5%B1%8B%E5%B3%B6%E5%AF%BA
+  川島猛アートファクトリー:
+    checked_on: '2026-09-13'
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: Takeshi Kawashima Art Factory
+    url: https://www.my-kagawa.jp/en/see-and-do/10111
   平賀源内旧邸:
     checked_on: '2026-09-13'
     note: 公式サイトのenページ（title）
@@ -263,10 +287,10 @@ names:
     url: ''
   総本山善通寺:
     checked_on: '2026-09-13'
-    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
-    source: glossary
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
     text: Zentsuji Temple
-    url: ''
+    url: https://www.my-kagawa.jp/en/see-and-do/10094
   與田寺:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -291,6 +315,12 @@ names:
     source: glossary
     text: Kyosho Temple
     url: ''
+  金陵の郷:
+    checked_on: '2026-09-13'
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: Kinryo Sake Museum
+    url: https://www.my-kagawa.jp/en/see-and-do/10115
   雲辺寺ロープウェイ:
     checked_on: '2026-09-13'
     note: Wikipedia 日本語版「雲辺寺ロープウェイ」の言語間リンク（en）
