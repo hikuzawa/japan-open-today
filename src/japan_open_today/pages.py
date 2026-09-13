@@ -13,6 +13,7 @@ from sitemill.assets import Asset, AssetStore
 from sitemill.clock import jst_today
 from sitemill.embeds.maps import maps_place_embed
 from sitemill.i18n import LocaleConfig
+from sitemill.i18n.catalog import Catalog, load_catalogs
 from sitemill.jpcal import HolidayCalendar
 from sitemill.models import OperatorInfo, Page, PageMeta, SourceLink, TrustSignals
 from sitemill.openstatus import DayState, DayVerdict
@@ -121,12 +122,35 @@ def _summary(verdicts: list[DayVerdict]) -> dict[str, int]:
     return counts
 
 
+
+def _wording(ws: Workspace) -> dict[str, Catalog]:
+    """画面の文言カタログ。`<head>` の文言（説明文・ページ名）もここから採る。
+
+    `site.toml` の `description` は 1 つしか持てないので、そのままだと英語ページと
+    繁体字ページに日本語の説明文が出る。検索結果に出るのはこの文で、台湾や英語圏の
+    利用者が読むのもこの文なので、ロケール別のカタログから採る（ADR 0005）。
+    """
+    return load_catalogs(
+        ws.i18n_dir,
+        [loc.code for loc in ws.site.locales],
+        default_code=ws.site.default_locale.code,
+    )
+
+
+def _say(words: dict[str, Catalog], locale: LocaleConfig, key: str, default: str = "") -> str:
+    catalog = words.get(locale.code)
+    if catalog is None or not catalog.has(key):
+        return default
+    return catalog.get(key)
+
+
 def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
     today = jst_today(now)
     holidays = HolidayCalendar.load(ws.data_dir / "reference" / "syukujitsu.csv")
     stale_after = ws.site.crawl.stale_after_days
     assets = _assets(ws)
     locales = _locales(ws)
+    words = _wording(ws)
 
     verdicts = {
         s.spot_id: spot_verdict(s, today, holidays=holidays, stale_after_days=stale_after)
@@ -155,8 +179,11 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
         pages.append(
             Page(
                 meta=PageMeta(
-                    title=ws.site.name,
-                    description=ws.site.description,
+                    # トップの <title> は「<タグライン> | <サイト名>」。サイト名を 2 回
+                    # 並べても検索結果で情報が増えない（英語版が「Japan Open Today | Japan
+                    # Open Today」になっていた）
+                    title=_say(words, locale, "site.tagline", ws.site.name),
+                    description=_say(words, locale, "site.description", ws.site.description),
                     path=_path(locale, ""),
                     locale=locale.code,
                     alternates=_alternates(ws, ""),
@@ -186,7 +213,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 Page(
                     meta=PageMeta(
                         title=a.name(locale.code),
-                        description=ws.site.description,
+                        description=_say(words, locale, "site.description", ws.site.description),
                         path=_path(locale, rel),
                         locale=locale.code,
                         alternates=_alternates(ws, rel),
@@ -220,7 +247,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 Page(
                     meta=PageMeta(
                         title=spot.name(locale.code),
-                        description=ws.site.description,
+                        description=_say(words, locale, "site.description", ws.site.description),
                         path=_path(locale, rel),
                         locale=locale.code,
                         alternates=_alternates(ws, rel),
@@ -259,8 +286,8 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
         pages.append(
             Page(
                 meta=PageMeta(
-                    title="Transport",
-                    description=ws.site.description,
+                    title=_say(words, locale, "nav.transport", "Transport"),
+                    description=_say(words, locale, "site.description", ws.site.description),
                     path=_path(locale, rel),
                     locale=locale.code,
                     alternates=_alternates(ws, rel),
@@ -293,15 +320,15 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
         )
 
         # --- 運営者情報・データについて ---------------------------------
-        for rel, template, title in (
-            ("about/", "about.html", "About"),
-            ("data/", "data.html", "Data"),
+        for rel, template, key, title in (
+            ("about/", "about.html", "nav.about", "About"),
+            ("data/", "data.html", "nav.data", "Data"),
         ):
             pages.append(
                 Page(
                     meta=PageMeta(
-                        title=title,
-                        description=ws.site.description,
+                        title=_say(words, locale, key, title),
+                        description=_say(words, locale, "site.description", ws.site.description),
                         path=_path(locale, rel),
                         locale=locale.code,
                         alternates=_alternates(ws, rel),

@@ -2,8 +2,8 @@
 # akiya-atlas の pipeline.yml と同じ骨格。違いは次の 3 点:
 #   - heal と ad-check は無い（このサービスは heal フックを持たず、広告はまだ「準備中」表示のみ）
 #   - build の前に画像を用意する。写真の実体は git 管理外（sitemill ADR 0020）なので、
-#     キャッシュが切れた実行機には無い。出典から取り直し（fetch_assets。内容が変わっていたら
-#     採らない）、static/ へ複写する（sync_assets）
+#     キャッシュが切れた実行機には無い。出典から取り直し（fetch_assets。バイト列が変わって
+#     いたら説明ページからライセンスを判定し直す）、static/ へ複写する（sync_assets）
 #   - 公開 URL の検査に hreflang を含める（3 言語。1 言語でも欠けると別サイト扱いになる）
 # 設計（akiya-atlas と同じ）:
 #   - Cloudflare の Secrets が未設定でも crawl → extract → build までは必ず動く。
@@ -97,7 +97,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: uv run sitemill extract
 
-      - name: 画像の実体を用意（無いものだけ出典から取り直す。内容が変わっていたら採らない）
+      - name: 画像の実体を用意（無いものだけ取り直す。内容が変わっていたら判定からやり直す）
         working-directory: japan-open-today
         run: uv run python -m tools.fetch_assets
 
@@ -138,7 +138,8 @@ jobs:
         run: |
           git config user.name "sitemill-bot"
           git config user.email "sitemill-bot@users.noreply.github.com"
-          git add data/state data/records data/runs
+          # data/assets は provenance（assets.json）だけをコミットする。画像の実体は .gitignore
+          git add data/state data/records data/runs data/assets
           git diff --cached --quiet || git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ) の巡回・抽出結果"
           # 人の作業が同時に main へ push されると拒否される。origin/main を取り込み直して最大 3 回まで
           # 再試行し、data ファイル自体が競合したら諦める（巡回状態と記録は次回の巡回で再生成される）

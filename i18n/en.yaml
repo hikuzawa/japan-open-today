@@ -2,6 +2,7 @@
 site:
   name_short: Japan Open Today
   tagline: What is open in Kagawa today
+  description: Opening days and hours for museums, gardens, shrines and ferries in Kagawa, Japan, for today and the next seven days. Every fact is taken from the official page and quoted.
 nav:
   today: Today
   transport: Transport

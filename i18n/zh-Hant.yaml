@@ -2,6 +2,7 @@
 site:
   name_short: 今天能去的日本
   tagline: 香川的設施與交通，今天的狀況
+  description: 香川縣的觀光設施與交通，今天與未來一週是否有開、幾點開門。所有事實都取自官方網頁，並附上原文引用。
 nav:
   today: 今天
   transport: 交通
