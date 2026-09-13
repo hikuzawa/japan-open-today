@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "高山航空公園",
+      "asset_id": "17bbe8dad739cd64",
+      "author": "Toto-tarou",
+      "byte_size": 120112,
+      "content_type": "image/jpeg",
+      "credit_text": "T-2 hikouki.jpg by Toto-tarou（クリエイティブ・コモンズ 表示-継承 3.0（CC BY-SA 3.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T20:18:24+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T20:18:24Z",
+        "credit_text": "出典: T-2 hikouki.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示-継承 3.0（CC BY-SA 3.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by-sa/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by-sa/3.0/deed.en\">Attribution-Sh",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:T-2_hikouki.jpg",
+        "license_id": "CC-BY-SA-3.0",
+        "reason": "whitelist:CC-BY-SA-3.0"
+      },
+      "local_path": "17bbe8dad739cd64.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:T-2_hikouki.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/T-2_hikouki.jpg/1280px-T-2_hikouki.jpg",
+      "tags": [
+        "sakaide"
+      ]
+    }
+  ],
+  "source_id": "town-8"
+}

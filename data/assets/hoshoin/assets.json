@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "宝生院のシンパク",
+      "asset_id": "c60575d0957b86ca",
+      "author": "Asturio Cantabrio",
+      "byte_size": 370698,
+      "content_type": "image/jpeg",
+      "credit_text": "Hosho-in Tonosho shinpaku ac (1).jpg by Asturio Cantabrio（クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T20:17:52+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T20:17:52Z",
+        "credit_text": "出典: Hosho-in Tonosho shinpaku ac (1).jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by-sa/4.0/deed.en\" class=\"extiw\" title=\"creativecommons:by-sa/4.0/deed.en\">Attribution-Sh",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Hosho-in_Tonosho_shinpaku_ac_(1).jpg",
+        "license_id": "CC-BY-SA-4.0",
+        "reason": "whitelist:CC-BY-SA-4.0"
+      },
+      "local_path": "c60575d0957b86ca.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hosho-in_Tonosho_shinpaku_ac_(1).jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Hosho-in_Tonosho_shinpaku_ac_%281%29.jpg/1280px-Hosho-in_Tonosho_shinpaku_ac_%281%29.jpg",
+      "tags": [
+        "shodoshima"
+      ]
+    }
+  ],
+  "source_id": "hoshoin"
+}

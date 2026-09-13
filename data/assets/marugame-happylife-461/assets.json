@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "小手島",
+      "asset_id": "2af088baac73925a",
+      "author": "LT sfm",
+      "byte_size": 146154,
+      "content_type": "image/jpeg",
+      "credit_text": "Hiroshima Island from Oteshima Island.jpg by LT sfm（クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T20:18:59+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T20:18:59Z",
+        "credit_text": "出典: Hiroshima Island from Oteshima Island.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by-sa/4.0/deed.en\" class=\"extiw\" title=\"creativecommons:by-sa/4.0/deed.en\">Attribution-Sh",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Hiroshima_Island_from_Oteshima_Island.jpg",
+        "license_id": "CC-BY-SA-4.0",
+        "reason": "whitelist:CC-BY-SA-4.0"
+      },
+      "local_path": "2af088baac73925a.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hiroshima_Island_from_Oteshima_Island.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Hiroshima_Island_from_Oteshima_Island.jpg/1280px-Hiroshima_Island_from_Oteshima_Island.jpg",
+      "tags": [
+        "marugame"
+      ]
+    }
+  ],
+  "source_id": "marugame-happylife-461"
+}

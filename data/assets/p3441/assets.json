@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "粟井神社",
+      "asset_id": "f410452f10f430ce",
+      "author": "Dokudami",
+      "byte_size": 269557,
+      "content_type": "image/jpeg",
+      "credit_text": "Awaizinnzya 12.jpg by Dokudami（クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T20:17:45+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T20:17:45Z",
+        "credit_text": "出典: Awaizinnzya 12.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by-sa/4.0/deed.en\" class=\"extiw\" title=\"creativecommons:by-sa/4.0/deed.en\">Attribution-Sh",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Awaizinnzya_12.jpg",
+        "license_id": "CC-BY-SA-4.0",
+        "reason": "whitelist:CC-BY-SA-4.0"
+      },
+      "local_path": "f410452f10f430ce.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Awaizinnzya_12.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Awaizinnzya_12.jpg/1280px-Awaizinnzya_12.jpg",
+      "tags": [
+        "mitoyo"
+      ]
+    }
+  ],
+  "source_id": "p3441"
+}

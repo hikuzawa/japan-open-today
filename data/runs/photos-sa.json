@@ -1,0 +1,272 @@
+{
+  "collected_at": "2026-09-14T05:19:00.942418+09:00",
+  "requests": 72,
+  "rows": [
+    {
+      "spot_id": "chichibugahama",
+      "name": "父母ヶ浜",
+      "category": "Chichibugahama",
+      "asset_id": "3c347735578ca7e9",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Titibugahama_01.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "sanuki",
+      "name": "さぬきこどもの国",
+      "category": "Sanuki Kodomonokuni",
+      "asset_id": "13a5e917d49182e0",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Sanuki_Kodomonokuni_003.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "shirotorizoo",
+      "name": "しろとり動物園",
+      "category": "Shirotori Zoo",
+      "asset_id": "a341f5c9dce644d9",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Shirotori_Zoo_01.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "newreomaworld",
+      "name": "ニューレオマワールド",
+      "category": "New Reoma World",
+      "asset_id": "4770d2b239948c6f",
+      "license": "クリエイティブ・コモンズ 表示-継承 3.0（CC BY-SA 3.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Reoma_World_1.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "shikoku-aquarium",
+      "name": "四国水族館",
+      "category": "Shikoku Aquarium",
+      "asset_id": "189fb37d33052dc0",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Aulostomus_chinensis_Shikoku.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "shikoku-cable",
+      "name": "雲辺寺ロープウェイ",
+      "category": "Unpenji Ropeway",
+      "asset_id": "07a028f80e8cb8d7",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Unpenji_20201112_02.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "city-474",
+      "name": "大島",
+      "category": "Oshima",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 1,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:%27At_Oshima_(return_from_whale_fishing)%27_(Japan)_RMG_PT2096.tiff: 取得できない: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/%27At_Oshima_%28return_from_whale_fishing%29%27_%28Japan%29_RMG_PT2096.tiff/1280px-%27At_Oshima_%28return_from_whale_fishing%29%27_%28Japan%29_RMG_PT2096.tiff（status=400 HTTP 400）"
+      ]
+    },
+    {
+      "spot_id": "sanuki-ichinomiyaji",
+      "name": "一宮寺",
+      "category": "Ichinomiyaji",
+      "asset_id": "4745536a8aa64591",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ichinomiya-ji_Plan.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "tadotsu-kanko",
+      "name": "佐柳島",
+      "category": "Sanagijima",
+      "asset_id": "94bb090592e32acd",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Row_of_houses_in_Sanagishima.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "mitoyo-kanko",
+      "name": "紫雲出山",
+      "category": "Mount Shiude",
+      "asset_id": "d114422b77b6bbd3",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Siudeyama_02.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "p133",
+      "name": "荘内半島",
+      "category": "Shonai Peninsula",
+      "asset_id": "b76d4cde03b9c5b5",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Maruyamajima_takumacho.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "kanonji-kanko-477",
+      "name": "伊吹島",
+      "category": "Ibukijima",
+      "asset_id": "9ac8cb8a2108eed3",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Ariakehama20210313_1.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "p3441",
+      "name": "粟井神社",
+      "category": "Awai-jinja",
+      "asset_id": "f410452f10f430ce",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Awaizinnzya_12.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "hoshoin",
+      "name": "宝生院のシンパク",
+      "category": "Hosho-in-no-Shinpaku",
+      "asset_id": "c60575d0957b86ca",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hosho-in_Tonosho_shinpaku_ac_(1).jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "p312",
+      "name": "平和の群像",
+      "category": "Statue of People in Peace",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 0,
+      "note": "カテゴリを取得できない（status=404 HTTP 404）",
+      "rejected": []
+    },
+    {
+      "spot_id": "pref-279",
+      "name": "瀬戸内海歴史民俗資料館",
+      "category": "Seto Inland Sea Folk History Museum",
+      "asset_id": "687e0e4974351c79",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gosikidai31.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "88shikokuhenro-245",
+      "name": "根香寺",
+      "category": "Negoroji (Takamatsu)",
+      "asset_id": "376385b42b64efe6",
+      "license": "クリエイティブ・コモンズ 表示-継承 3.0（CC BY-SA 3.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Aominezan_Negoroji_02.JPG",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "iwaseo",
+      "name": "石清尾八幡宮",
+      "category": "Iwaseo Hachiman-gū",
+      "asset_id": "bb2fb53786c70b50",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:A%E4%B8%8A%E6%8B%9D%E6%AE%BF.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "town-8",
+      "name": "高山航空公園",
+      "category": "Takayama Kouku Park",
+      "asset_id": "17bbe8dad739cd64",
+      "license": "クリエイティブ・コモンズ 表示-継承 3.0（CC BY-SA 3.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:T-2_hikouki.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "city-334",
+      "name": "旧善通寺偕行社",
+      "category": "Former Zentsuji Kaikosha",
+      "asset_id": "d30c88804f9e09cb",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Former_Zentsuji_Kaikosha_ac_(1).jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "tadotsu-kanko-242",
+      "name": "道隆寺",
+      "category": "Doryuji",
+      "asset_id": "8909ab58a19310af",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Doryu-ji,_Auxiliary_Kamo-Inari_Shrine.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "sakaide-kankou-463",
+      "name": "岩黒島",
+      "category": "Iwakurojima",
+      "asset_id": "d3f0d16ba7f17a30",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Atago_Shrine-01.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "sakaide-kankou-462",
+      "name": "櫃石島",
+      "category": "Hitsuishijima",
+      "asset_id": "8df6245804947690",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:170319_Tatsuchinouranimashimasujinja_Shimotsui_Kurashiki_Okayama_pref_Japan04n.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "marugame-happylife-461",
+      "name": "小手島",
+      "category": "Oteshima",
+      "asset_id": "2af088baac73925a",
+      "license": "クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hiroshima_Island_from_Oteshima_Island.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    }
+  ]
+}

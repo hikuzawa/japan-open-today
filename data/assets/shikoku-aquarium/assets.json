@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "四国水族館",
+      "asset_id": "189fb37d33052dc0",
+      "author": "Totti",
+      "byte_size": 246966,
+      "content_type": "image/jpeg",
+      "credit_text": "Aulostomus chinensis Shikoku.jpg by Totti（クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T20:16:49+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T20:16:49Z",
+        "credit_text": "出典: Aulostomus chinensis Shikoku.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by-sa/4.0/deed.en\" class=\"extiw\" title=\"creativecommons:by-sa/4.0/deed.en\">Attribution-Sh",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Aulostomus_chinensis_Shikoku.jpg",
+        "license_id": "CC-BY-SA-4.0",
+        "reason": "whitelist:CC-BY-SA-4.0"
+      },
+      "local_path": "189fb37d33052dc0.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Aulostomus_chinensis_Shikoku.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Aulostomus_chinensis_Shikoku.jpg/1280px-Aulostomus_chinensis_Shikoku.jpg",
+      "tags": [
+        "sakaide"
+      ]
+    }
+  ],
+  "source_id": "shikoku-aquarium"
+}
