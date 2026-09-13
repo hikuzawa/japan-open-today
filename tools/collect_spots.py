@@ -44,6 +44,7 @@ LIST_URL = (
 )
 # 1 回の検索で返るのは 20 件。並び順を変えると別の 20 件が見えるので、両方を取る
 SORTS = ("access", "name")
+MAX_PAGES = 12  # 1 ページ 20 件。最大の組み合わせ（73 件）でも 4 ページで足りる
 AREAS = {1: "高松市周辺", 2: "香川県東部", 3: "香川県中部", 4: "香川県西部", 5: "島"}
 CATEGORIES = (14, 15, 16, 17, 49, 50)  # 検索フォームの大分類
 RESULTS = ".searchResult"  # 検索結果のブロック（代表スポットのリンクを混ぜない）
@@ -52,15 +53,36 @@ RESULTS = ".searchResult"  # 検索結果のブロック（代表スポットの
 SKIP_RULES: tuple[tuple[str, re.Pattern[str]], ...] = (
     ("restaurant", re.compile(r"うどん|そば|ラーメン|レストラン|食堂|喫茶|居酒屋|酒蔵|グルメ")),
     # 「ワークショップ」は美術館の催しなので除外語にしない（実測で猪熊弦一郎美術館が落ちた）
-    ("shop", re.compile(r"直売所|物産館|土産|売店|(?<!ワーク)ショップ|マーケット|商店")),
-    ("experience", re.compile(r"体験|教室|ツアー|レンタサイクル|貸自転車")),
+    (
+        "shop",
+        re.compile(r"直売所|物産館|物産市|物産センター|土産|売店|(?<!ワーク)ショップ|マーケット|商店"),
+    ),
+    ("experience", re.compile(r"体験|教室|ツアー|レンタサイクル|貸自転車|地曳網|地引網")),
     ("lodging", re.compile(r"ホテル|旅館|民宿|ゲストハウス|コテージ|キャンプ|宿泊")),
-    ("event", re.compile(r"まつり|祭り|フェス|花火|イベント")),
+    # 催し。**その日限りの出し物**であって、訪ねる場所ではない
+    ("event", re.compile(r"まつり|祭り|フェス|花火|イベント|巡回展|企画展|特別展|展覧会")),
     # 競技・運動の施設。旅行者の「今日行けるか」の対象ではない（ADR 0011）。
     # 「運動公園」は公園として訪れる場所なので除かない
-    ("sports", re.compile(r"ゴルフ|カントリークラブ|体育館|球場|テニス|野球|武道館|競技場")),
+    ("sports", re.compile(r"ゴルフ|カントリークラブ|体育館|球場|テニス|野球|武道館|競技場|弓道")),
     ("shop", re.compile(r"アウトレット|工場直売|ファクトリーショップ")),
+    # 高速道路の休憩施設。高速に乗っている人しか寄れないので、行き先にはならない
+    # （道の駅は市町・第三セクターの観光施設なので対象に含める）
+    ("highway", re.compile(r"パーキングエリア|サービスエリア|ハイウェイオアシス")),
 )
+# 名前の頭に付く【…】が催し物・体験の名札になっている（「【施設見学】瀬戸大橋記念館」）。
+# 中身が地名なら施設（「【宇多津町】道の駅」）なので、括弧の中の語で見分ける
+BRACKET_PROGRAM = re.compile(r"^【[^】]*(?:体験|見学|学習|ツアー|教室|講座)[^】]*】")
+# 名前に入っていれば「訪ねる場所」だと分かる語。一覧の分類による除外を覆す（`_skip_reason`）。
+# 温泉は入れない（日帰り入浴と旅館の大浴場が名前では見分けられない）。
+# 島も入れない（島そのものは別の項目として一覧に出ており、島名を含むキャンプ場が増えるだけ）
+KEEP_BY_NAME = re.compile(
+    r"美術館|博物館|資料館|記念館|文学館|科学館|民俗館|展示館|郷土館|水族館|動物園|植物園|"
+    r"公園|庭園|神社|神宮|大社|八幡|寺|院|城|城跡|城址|古墳|遺跡|史跡|"
+    r"展望|灯台|海水浴|海岸|海浜|砂浜|渓谷|渓|滝|峡|山頂|山上|池|ダム|湖|"
+    r"道の駅|天文台|プラネタリウム|図書館|文化会館|ホール|ギャラリー|会館"
+)
+# 複数の場所を並べた名前。区切り記号で見る
+COMPOUND = re.compile(r"[・、/／]")
 # 基本情報の見出し
 INFO_KEYS = ("住所", "電話番号", "営業時間", "定休日", "料金", "アクセス", "駐車場")
 FEE_AMOUNT = re.compile(r"\d[\d,]*\s*円|無料")
@@ -89,6 +111,9 @@ class Candidate:
     reason: str = ""
     info: dict[str, str] = field(default_factory=dict)
     official_url: str | None = None
+    # ページの「エリア名 分類 施設名」の部分。対象外かの判定に使う。**保存しておく**と、
+    # 規則を直したときに数百ページを取得し直さずに決め直せる（`--redecide`）
+    head: str = ""
 
 
 def _entries(html: str, base: str) -> list[tuple[str, str, str]]:
@@ -116,8 +141,20 @@ def _entries(html: str, base: str) -> list[tuple[str, str, str]]:
     return out
 
 
+def _paged(url: str, page: int) -> str:
+    """検索の URL に、一覧のページ送りが使う `page:N` を足す。"""
+    return url.replace("/point/list?", f"/point/list/page:{page}?", 1)
+
+
 def enumerate_spots(client: PoliteClient) -> tuple[list[Candidate], list[str]]:
-    """エリア × 大分類で数え上げる。返り値は (候補, 取りきれなかった組み合わせ)。"""
+    """エリア × 大分類で数え上げる。返り値は (候補, 取りきれなかった組み合わせ)。
+
+    1 ページは 20 件で、2 ページ目からは検索結果のパスに `page:N` が付く（一覧のページ送りを
+    見て確かめた）。**サイト自身が出すページ送りのリンクは 404 を返す**（`/attraction/digest/
+    list/page:2/...` に書き換わり、絞り込みの条件も `area_l[0]` の形に変わってしまう）ので、
+    こちらは検索が通っているパスに `page:N` だけを足して辿り、結果の中身で確かめる
+    （「N 件ありました」が同じで、前のページと違う id が返ること）。
+    """
     found: dict[str, Candidate] = {}
     partial: list[str] = []
     for area, area_name in AREAS.items():
@@ -125,20 +162,34 @@ def enumerate_spots(client: PoliteClient) -> tuple[list[Candidate], list[str]]:
             total = 0
             got: set[str] = set()
             for sort in SORTS:
-                r = client.get(LIST_URL.format(area=area, category=category, sort=sort))
-                if not r.ok:
-                    print(f"  {area_name}/{category}/{sort}: 取得できない（status={r.status}）")
-                    continue
-                reported = re.search(r"([\d,]+)\s*件ありました", page_text(r.text))
-                total = max(total, int(reported.group(1).replace(",", "")) if reported else 0)
-                for pid, name, url in _entries(r.text, BASE):
-                    got.add(pid)
-                    if pid not in found:
-                        found[pid] = Candidate(point_id=pid, name=name, url=url, area=area_name)
+                base_url = LIST_URL.format(area=area, category=category, sort=sort)
+                page = 1
+                while True:
+                    url = base_url if page == 1 else _paged(base_url, page)
+                    r = client.get(url)
+                    if not r.ok:
+                        if page == 1:
+                            print(f"  {area_name}/{category}/{sort}: 取得できない（{r.status}）")
+                        break
+                    reported = re.search(r"([\d,]+)\s*件ありました", page_text(r.text))
+                    total = max(total, int(reported.group(1).replace(",", "")) if reported else 0)
+                    fresh = 0
+                    for pid, name, url_ in _entries(r.text, BASE):
+                        if pid not in got:
+                            fresh += 1
+                        got.add(pid)
+                        if pid not in found:
+                            found[pid] = Candidate(
+                                point_id=pid, name=name, url=url_, area=area_name
+                            )
+                    # 新しい id が 1 件も無ければ、そのページ送りは効いていない（同じ結果か空）
+                    if fresh == 0 or len(got) >= total or page >= MAX_PAGES:
+                        break
+                    page += 1
             if total > len(got):
                 # 取りきれていないことを記録する（推測で埋めない）
                 partial.append(f"{area_name}/大分類{category}: {total} 件のうち {len(got)} 件")
-            print(f"  {area_name}/大分類{category}: {total:4} 件 → {len(got):3} 件取得")
+            print(f"  {area_name}/大分類{category}: {total:4} 件 → {len(got):3} 件取得", flush=True)
     return list(found.values()), partial
 
 
@@ -158,21 +209,56 @@ def _info_table(text: str) -> dict[str, str]:
     return out
 
 
-def _skip_reason(name: str, text: str) -> str | None:
-    """対象外の型か（ADR 0011）。判定に使うのは**名前と分類の見出しだけ**。
+def page_head(name: str, text: str) -> str:
+    """ページの「エリア名 分類 施設名」の部分。対象外かの判定はここだけを見る。
 
-    本文で見ると落ちる。美術館のページには「体験コーナー」「カフェ」が普通に出てくるので、
-    本文に「体験」があるだけで除くと、収録すべき施設が消える（実測で最初の 109 件のうち
-    いくつも誤って除かれた）。ページの先頭はエリア名と分類の見出しなので、そこだけを見る。
+    本文まで見ると落ちる。美術館のページには「体験コーナー」「カフェ」が普通に出てくるので、
+    本文に「体験」があるだけで除くと、収録すべき施設が消える。
     """
-    # ページは「エリア名 分類 施設名 …本文」の順に並ぶので、**施設名より前**と施設名だけを見る。
-    # 本文まで見ると、美術館の「体験コーナー」「ワークショップ」で除かれてしまう
     at = text.find(name) if name else -1
-    head = name + " " + (text[:at] if at > 0 else text[:60])
-    for reason, pattern in SKIP_RULES:
-        if pattern.search(head):
-            return reason
-    return None
+    return name + " " + (text[:at] if at > 0 else text[:60])
+
+
+def _skip_reason(name: str, head: str) -> str | None:
+    """対象外の型か（ADR 0011）。**名前が決め、分類の見出しは提案するだけ**。
+
+    一覧の分類は観光協会の都合で付いていて、施設の素性とは別のことがある。分類だけで
+    除くと、収録すべき施設が消えた（実測。285 件の見直しで見つかった）:
+
+    - 讃岐漆芸美術館・天体望遠鏡博物館・平賀源内記念館 → 分類が「体験」
+    - さぬき空港公園・県立亀鶴公園・国営讃岐まんのう公園 → 分類が「キャンプ場」
+    - せとしるべ（高松港玉藻防波堤灯台）・やしまーる → 分類が「グルメ」
+    - 道の駅 → 分類が「物産・土産」
+
+    そこで、**名前に施設の語（美術館・公園・灯台…）があれば、分類による除外を覆す**。
+    名前自身が対象外だと言っているもの（【ものづくり体験】、ホテル、キャンプ場、うどん）は
+    そのまま除く。名前に両方あるとき（「一の宮公園・海水浴場・キャンプ場」）は、
+    訪ねる場所としての側面があるので残す。
+    """
+    if BRACKET_PROGRAM.search(name):
+        return "experience"  # 名前の頭に「【施設見学】」と書いてある。施設ではなく催し
+    out_at = min(
+        (m.start() for _, pat in SKIP_RULES if (m := pat.search(name)) is not None),
+        default=-1,
+    )
+    by_name = next((reason for reason, pat in SKIP_RULES if pat.search(name)), None)
+    keep_at = KEEP_BY_NAME.search(name)
+    if by_name:
+        # 施設の語と対象外の語が両方ある名前は、**どちらがその場所の素性か**で決める。
+        #   - 施設の語が頭にある（「道の駅「たからだの里さいた」（物産館）」）→ 施設
+        #   - 区切り記号で場所を並べている（「一の宮公園・一の宮海岸海水浴場・キャンプ場」）→ 施設
+        #   - どちらでもない（「奥の湯公園キャンプ場」「男木島灯台キャンプ場」）→ 末尾の語が素性
+        #   - 対象外の語が頭にある（「物産市「道の駅・ことひき」」は道の駅の中の売店。
+        #     道の駅そのものは別の項目として一覧にある）→ 対象外
+        # 体験・催しは**場所ではなく出し物**なので、どの形でも残さない
+        head_first = keep_at is not None and keep_at.start() < out_at
+        if head_first and by_name not in ("experience", "event"):
+            if keep_at.start() == 0 or COMPOUND.search(name[keep_at.end() : out_at]):
+                return None
+        return by_name
+    if keep_at is not None:
+        return None  # 名前が施設だと言っている。分類（見出し）では除かない
+    return next((reason for reason, pat in SKIP_RULES if pat.search(head or name)), None)
 
 
 def classify(client: PoliteClient, cand: Candidate) -> None:
@@ -196,7 +282,8 @@ def classify(client: PoliteClient, cand: Candidate) -> None:
             if href.startswith("http") and "my-kagawa.jp" not in href:
                 cand.official_url = href
                 break
-    skip = _skip_reason(cand.name, text)
+    cand.head = page_head(cand.name, text)
+    skip = _skip_reason(cand.name, cand.head)
     if skip:
         cand.spot_type = "skip"
         cand.reason = skip
@@ -264,14 +351,14 @@ def _decide_gate(cand: Candidate, hours: str, fee: str) -> None:
 def redecide_from_info(cand: Candidate) -> bool:
     """保存済みの基本情報だけで型を決め直す（取得し直さない）。変わったら True。
 
-    判定の規則を直したあと、数百件を取得し直さずに反映するために使う。ページ本文が要る判定
-    （対象外の型・名前の照合）はここでは行えないので、`gated` と `open_air` だけを見る。
+    判定の規則を直したあと、数百件を取得し直さずに反映するために使う。`head`（エリア名と
+    分類の見出し）を保存してあるものは、対象外かの判定もやり直せる。保存が無い古い記録は
+    `gated` と `open_air` だけを見る（`--classify --recheck skip` で取り直せば `head` が付く）。
     """
-    if cand.spot_type not in ("gated", "open_air"):
+    if cand.spot_type not in ("gated", "open_air") and not (cand.head and cand.spot_type == "skip"):
         return False
     before = (cand.spot_type, cand.reason)
-    # 名前だけで分かる対象外（ゴルフ場・アウトレットなど）はここでも落とせる
-    by_name = _skip_reason(cand.name, "")
+    by_name = _skip_reason(cand.name, cand.head)
     if by_name:
         cand.spot_type, cand.reason = "skip", by_name
         return (cand.spot_type, cand.reason) != before
@@ -344,8 +431,13 @@ def main() -> int:
         partial: list[str] = list(stored.get("partial", []))
         if args.enumerate or not cands:
             print("== 一覧の数え上げ ==")
-            cands, partial = enumerate_spots(client)
-            print(f"  合計 {len(cands)} 件（重複を除く）")
+            fresh, partial = enumerate_spots(client)
+            # 数え上げ直しても**判定済みのものは捨てない**（数百件の取得をやり直さないため）。
+            # 新しく見つかった id だけを足す
+            known = {c.point_id: c for c in cands}
+            added = [c for c in fresh if c.point_id not in known]
+            cands = list(known.values()) + added
+            print(f"  合計 {len(cands)} 件（うち今回新しく見つかった {len(added)} 件）")
             for line in partial:
                 print(f"  ! 取りきれず: {line}")
         if args.classify:

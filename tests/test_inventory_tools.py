@@ -191,3 +191,51 @@ def test_a_sub_facilitys_hours_do_not_make_a_place_gated() -> None:
     assert (
         decide("ゴールドタワー", "【展望台】平日 10:00~18:00", "大人1,500円").spot_type == "gated"
     )
+
+
+def test_the_name_overrides_the_listing_category() -> None:
+    """一覧の分類は観光協会の都合で付いている。名前が施設だと言っていれば、分類では除かない。
+
+    285 件の見直しで実際に見つかった取りこぼし（S7 後の ③）。分類だけで除いていたため、
+    美術館・博物館・記念館・公園・灯台・道の駅がまとめて対象外になっていた。
+    """
+    keep = [
+        ("讃岐漆芸美術館", "香川県中部 体験 讃岐漆芸美術館"),
+        ("天体望遠鏡博物館", "香川県東部 体験 天体望遠鏡博物館"),
+        ("平賀源内記念館", "香川県東部 体験 平賀源内記念館"),
+        ("さぬき空港公園", "高松市周辺 キャンプ場 さぬき空港公園"),
+        ("県立亀鶴公園", "香川県東部 キャンプ場 県立亀鶴公園"),
+        ("せとしるべ（高松港玉藻防波堤灯台）", "高松市周辺 グルメ せとしるべ"),
+        ("道の駅「ながお」", "香川県東部 物産・土産 道の駅「ながお」"),
+    ]
+    for name, head in keep:
+        assert _skip_reason(name, head) is None, name
+
+
+def test_the_name_still_decides_when_it_says_out_of_scope() -> None:
+    """名前自身が対象外だと言っているものは、施設の語が入っていても除く。"""
+    assert _skip_reason("【ものづくり体験】讃岐漆芸美術館", "体験") == "experience"
+    assert _skip_reason("城舟体験（史跡高松城跡・玉藻公園）", "体験") == "experience"
+    # 区切りの無い複合名は、末尾の語がその場所の素性
+    assert _skip_reason("奥の湯公園キャンプ場", "キャンプ場") == "lodging"
+    assert _skip_reason("女木島（松原）キャンプ場", "キャンプ場") == "lodging"
+    # 温泉は名前では日帰り入浴と旅館の大浴場を見分けられないので、施設の語に入れない
+    assert _skip_reason("小豆島温泉オリーブの湯（小豆島国際ホテル）", "温泉") == "lodging"
+
+
+def test_places_listed_together_in_one_name_are_kept() -> None:
+    """区切り記号で場所を並べた名前は、訪ねる場所としての側面があるので残す。"""
+    assert _skip_reason("一の宮公園・一の宮海岸海水浴場・キャンプ場", "キャンプ場") is None
+    assert _skip_reason("道の駅「滝宮」・綾川町うどん会館", "うどん") is None
+
+
+def test_which_word_is_the_places_identity_decides() -> None:
+    """施設の語と対象外の語が両方ある名前は、どちらが素性かで決める。"""
+    # 施設の語が頭にある → 施設（売店は道の駅の一部）
+    assert _skip_reason("道の駅「たからだの里さいた」（物産館）", "物産") is None
+    # 対象外の語が頭にある → 対象外（道の駅そのものは別の項目として一覧にある）
+    assert _skip_reason("物産市「道の駅・ことひき」", "物産") == "shop"
+    # どちらでもない → 末尾の語が素性
+    assert _skip_reason("男木島灯台キャンプ場", "キャンプ場") == "lodging"
+    # 高速道路の休憩施設は、高速に乗っている人しか寄れないので行き先にならない
+    assert _skip_reason("府中湖パーキングエリア（下り）", "グルメ") == "highway"
