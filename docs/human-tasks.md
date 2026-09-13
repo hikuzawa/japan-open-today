@@ -30,7 +30,12 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
    素の URL、`i18n/<locale>.yaml` の `contact.url` に言語別の prefill 付き URL を入れて配置済み。
    スクリプトプロパティの値（API キー・GitHub トークン）は Apps Script 側にだけあり、
    このリポジトリには無い。
-9. 公開後: **Google Search Console** の登録（メタタグ方式なら `GOOGLE_SITE_VERIFICATION`、ファイル方式なら `verification/` に置く）。
+9. ~~公開後: **Google Search Console** の登録~~ → 完了（2026-09-13、ドメインプロパティ）。
+   検索パフォーマンスとインデックス状況の取り込みも入った（sitemill ADR 0023）。
+   - サービスアカウント `sitemill-search-console@japan-open-today.iam.gserviceaccount.com` を
+     両プロパティに「制限付き」で追加済み
+   - 鍵は `.env` と GitHub Secrets の `GOOGLE_SEARCH_CONSOLE_KEY`（JSON を base64 にした 1 行）
+   - 日次パイプラインが取り込み、週次まとめ（`weekly.yml`）が Issue に出す
 10. ~~公開後: **www と pages.dev から apex への 301**~~ → 完了（2026-09-13、Bulk Redirects）。
 
 ## 収益化のために必要

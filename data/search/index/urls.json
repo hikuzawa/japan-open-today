@@ -1,0 +1,389 @@
+{
+  "checked_at": "2026-09-14T06:31:16.515764+09:00",
+  "urls": {
+    "https://japan-open-today.com/": {
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-09-13T09:18:51Z",
+      "google_canonical": "https://japan-open-today.com/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/areas/higashikagawa/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/areas/kotohira/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/areas/marugame/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/areas/megijima/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/areas/mitoyo/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/areas/naoshima/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/areas/sakaide/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/areas/sanuki/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/areas/shodoshima/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/areas/takamatsu/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/areas/teshima/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/kotohira/konpira/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/megijima/onigasima/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/megijima/p2463/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/mitoyo/chichibugahama/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/naoshima/benesse-house/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/naoshima/chichu/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/sanuki/j-dc2/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/sanuki/town-375/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/shodoshima/24hitomi/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/shodoshima/kankakei/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/88shikokuhenro/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/city-284/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/city/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/ha-art/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/kawashima-af/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/kenminhall/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/kinashi-bonsai/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/kmuseum/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/nagarestudio/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/npo-wahaha/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/p443/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/p447/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/pref/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/ritsurin/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/sakurashop/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/sanuki/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/shikokumura/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/sionoe/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/sunport-hall/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/taka-spo/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/takamatsu-orne/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/takamatsujyo/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/tamamo/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/yakuriji/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/takamatsu/yashima/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "URL is unknown to Google",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    },
+    "https://japan-open-today.com/spots/teshima/teshima-art/": {
+      "verdict": "NEUTRAL",
+      "coverage_state": "Discovered - currently not indexed",
+      "last_crawl": "",
+      "google_canonical": "",
+      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "checked_on": "2026-09-14"
+    }
+  }
+}

@@ -60,7 +60,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: hikuzawa/sitemill # public。既定の github.token で checkout できる
-          ref: v0.3.0 # タグ固定。sitemill の main の変更は自動では入らない
+          ref: v0.4.0 # タグ固定。sitemill の main の変更は自動では入らない
           path: sitemill
 
       - name: Install uv
@@ -127,6 +127,15 @@ jobs:
         continue-on-error: true
         run: uv run python -m tools.report_coverage
 
+      - name: Search Console の取り込み（検索パフォーマンス・サイトマップ・URL 検査。ADR 0023）
+        if: inputs.mode != 'deploy-only'
+        working-directory: japan-open-today
+        env:
+          GOOGLE_SEARCH_CONSOLE_KEY: ${{ secrets.GOOGLE_SEARCH_CONSOLE_KEY }}
+        # 鍵が無い間は取り込みを飛ばす（パイプライン全体は止めない）
+        continue-on-error: true
+        run: uv run sitemill search fetch
+
       - name: Eval (fixture、劣化検知)
         if: inputs.mode != 'deploy-only'
         working-directory: japan-open-today
@@ -142,7 +151,7 @@ jobs:
           git config user.name "sitemill-bot"
           git config user.email "sitemill-bot@users.noreply.github.com"
           # data/assets は provenance（assets.json）だけをコミットする。画像の実体は .gitignore
-          git add data/state data/records data/runs data/assets
+          git add data/state data/records data/runs data/assets data/search
           git diff --cached --quiet || git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ) の巡回・抽出結果"
           # 人の作業が同時に main へ push されると拒否される。origin/main を取り込み直して最大 3 回まで
           # 再試行し、data ファイル自体が競合したら諦める（巡回状態と記録は次回の巡回で再生成される）

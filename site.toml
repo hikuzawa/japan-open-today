@@ -77,3 +77,11 @@ temperature = 0.0
 
 [analytics]
 provider = "cloudflare"
+
+# Search Console の取り込み（sitemill ADR 0023）。ドメインプロパティなので sc-domain:。
+# 鍵は .env の GOOGLE_SEARCH_CONSOLE_KEY（サービスアカウントの JSON を base64 にした 1 行）
+[search_console]
+property = "sc-domain:japan-open-today.com"
+inspect_per_day = 200   # 891 ページを 5 日で一巡する（Google の割り当ては 2,000 件/日）
+refresh_days = 5        # Search Console の数字は 2〜3 日遅れて確定する
+

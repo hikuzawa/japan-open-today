@@ -1,0 +1,68 @@
+# 週次のまとめ: 検索の状況（Search Console）と、直近 7 日の日次パイプラインの結果を Issue に出す。
+# 目的は「検索から見つかり始めているか」「費用と時間が想定内か」を、人が毎日ログを見なくても
+# 判断できる形にすること。相手サイトには一切アクセスしない（data/ に貯めた記録と Google の API だけ）。
+name: weekly
+
+on:
+  schedule:
+    - cron: "31 21 * * 0" # 月曜 06:31 JST（日曜 21:31 UTC）。akiya-atlas の週次（06:17）と重ねない
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "さかのぼる日数"
+        type: string
+        default: "7"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout japan-open-today
+        uses: actions/checkout@v4
+        with:
+          path: japan-open-today
+
+      - name: Checkout sitemill (path 依存の隣に置く。sitemill ADR 0006)
+        uses: actions/checkout@v4
+        with:
+          repository: hikuzawa/sitemill
+          ref: v0.4.0 # タグ固定。sitemill の main の変更は自動では入らない
+          path: sitemill
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Sync
+        working-directory: japan-open-today
+        run: uv sync --frozen
+
+      - name: まとめを作る
+        working-directory: japan-open-today
+        env:
+          GOOGLE_SEARCH_CONSOLE_KEY: ${{ secrets.GOOGLE_SEARCH_CONSOLE_KEY }}
+        run: |
+          # 検索の状況。取り込んだ記録だけを読むので、鍵が無くても（0 件として）出る
+          uv run sitemill search report --days "${{ inputs.days || 7 }}" > summary.md
+          {
+            echo ""
+            echo "## 掲載の状況"
+            echo ""
+            echo '```'
+            uv run python -m tools.report_coverage | head -20
+            echo '```'
+          } >> summary.md
+          cat summary.md
+
+      - name: Issue に投稿する
+        working-directory: japan-open-today
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh issue create --title "週次まとめ $(date -u +%Y-%m-%d)" --body-file summary.md
