@@ -1,0 +1,579 @@
+{
+  "collected_at": "2026-09-13T23:18:56.674031+09:00",
+  "requests": 227,
+  "rows": [
+    {
+      "spot_id": "chichibugahama",
+      "name": "父母ヶ浜",
+      "category": "Chichibugahama",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 7,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Titibugahama_01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Titibugahama_02.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Titibugahama_03.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Titibugahama_04.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Titibugahama_20200404_03.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Titibugahama_20200407_01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Titibugahama_20200407_02.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "sanuki",
+      "name": "さぬきこどもの国",
+      "category": "Sanuki Kodomonokuni",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Sanuki_Kodomonokuni_003.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Sanuki_Kodomonokuni_004.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Sanuki_Kodomonokuni_005.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Sanuki_Kodomonokuni_006.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Sanuki_Kodomonokuni_007.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Sanuki_Kodomonokuni_008.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Sanuki_Kodomonokuni_009.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Sanuki_Kodomonokuni_010.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "yakuriji",
+      "name": "八栗寺",
+      "category": "Yakuriji",
+      "asset_id": "c576007243f05bea",
+      "license": "CC0 1.0（パブリックドメイン提供）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gokenzan_06.jpg",
+      "tried": 2,
+      "note": "",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Daisiokazisui20220103_1.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "shirotorizoo",
+      "name": "しろとり動物園",
+      "category": "Shirotori Zoo",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 6,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Shirotori_Zoo_01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Shirotori_Zoo_02.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Shirotori_Zoo_03.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Shirotori_Zoo_04.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Shirotori_Zoo_05.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Shirotori_Zoo_06.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "newreomaworld",
+      "name": "ニューレオマワールド",
+      "category": "New Reoma World",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Reoma_World_1.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Reoma_World_2.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Reoma_World_3.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Reoma_World_4.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Reoma_World_5.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Reoma_World_6.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:%E3%82%B2%E3%83%B3%E3%82%AD%E3%82%AB%E3%83%95%E3%82%A7%E3%83%86%E3%83%A9%E3%82%B9_%E3%81%8A%E5%8C%96%E3%81%91%E5%B1%8B%E6%95%B7_(13539600745).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:%E7%84%A1%E6%96%99%E4%BC%91%E6%86%A9%E6%89%80_%E3%82%84%E3%81%99%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%E9%A4%A8_(13539623365).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "shikoku-aquarium",
+      "name": "四国水族館",
+      "category": "Shikoku Aquarium",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Aulostomus_chinensis_Shikoku.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Cynoglossus_abbreviatus_Shikoku_1.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Cynoglossus_abbreviatus_Shikoku_2.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Dendrophyllia_cribrosa_Shikoku.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Pentaceros_japonicus_Shikoku_Aquarium.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Roa_haraguchiae_Shikoku.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Shikoku_Aquarium_Dolphin_show.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Shikoku_Aquarium_Samekage1.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "shiromineji",
+      "name": "白峯寺",
+      "category": "Shiromineji",
+      "asset_id": "c130b3b4c487af74",
+      "license": "CC0 1.0（パブリックドメイン提供）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kusya_20240625_1.jpg",
+      "tried": 2,
+      "note": "",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Goyadake01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "shikoku-cable",
+      "name": "雲辺寺ロープウェイ",
+      "category": "Unpenji Ropeway",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 7,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Unpenji_20201112_02.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Unpenji_ropeway.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Unpenjirp_20201129_1.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Unpenjirp_20201129_2.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Unpenjirp_20201129_3.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:UnpenjiRW_01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:UnpenjiRW_02.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "p130",
+      "name": "弥谷寺",
+      "category": "Iyadaniji",
+      "asset_id": "88fefffbca2dd601",
+      "license": "CC0 1.0（パブリックドメイン提供）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Hatiouin_01a.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "city-474",
+      "name": "大島",
+      "category": "Oshima",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 1,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:%27At_Oshima_(return_from_whale_fishing)%27_(Japan)_RMG_PT2096.tiff: 取得できない: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/%27At_Oshima_%28return_from_whale_fishing%29%27_%28Japan%29_RMG_PT2096.tiff/1280px-%27At_Oshima_%28return_from_whale_fishing%29%27_%28Japan%29_RMG_PT2096.tiff（status=400 HTTP 400）"
+      ]
+    },
+    {
+      "spot_id": "sanuki-ichinomiyaji",
+      "name": "一宮寺",
+      "category": "Ichinomiyaji",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Ichinomiya-ji_Plan.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Ichinomiyaji_01.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Ichinomiyaji_02.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Ichinomiyaji_03.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Ichinomiyaji_06.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Itinomiya_gotyou_01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Itinomiya01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Itinomiyaji_05.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "sanuki-kanko",
+      "name": "大窪寺",
+      "category": "Okubo-ji",
+      "asset_id": "ae884f946e564c23",
+      "license": "CC0 1.0（パブリックドメイン提供）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Henromiti_8801.jpg",
+      "tried": 2,
+      "note": "",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Gisenbou20220103_1.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "shidoji",
+      "name": "志度寺",
+      "category": "Shidoji",
+      "asset_id": "11e694a8d8040b1b",
+      "license": "パブリックドメイン（著作権の保護期間が満了・権利者が放棄）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Juichimen_Kannon_(Shidoji_Sanuki).jpg",
+      "tried": 2,
+      "note": "",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Hirara_Gennai_grave_in_Shido.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）"
+      ]
+    },
+    {
+      "spot_id": "nagaoji",
+      "name": "長尾寺",
+      "category": "Nagaoji",
+      "asset_id": "9f454aceae57f8e3",
+      "license": "CC0 1.0（パブリックドメイン提供）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Nagaoji_20260221_1.jpg",
+      "tried": 7,
+      "note": "",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Gyokusenzi.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Nagaoji_04.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Nagaoji_06.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Nagaoji_07.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Nagaoji_20201020_01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Nagaoji_20230415_1.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "tadotsu-kanko",
+      "name": "佐柳島",
+      "category": "Sanagijima",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Row_of_houses_in_Sanagishima.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Sanagi_Island_seen_from_the_sea.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Sanagihonnura_port_waitingroom.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Sanagijima_honura.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Sanagishima_Island_Aerial_photograph.1992.jpg: ホワイトリストに無いライセンスのみ（判定できない表記）",
+        "https://commons.wikimedia.org/wiki/File:Sanagishima_port.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Sanagishima_simplified_post_office.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Sanahijima_honura_osima.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "mitoyo-kanko",
+      "name": "紫雲出山",
+      "category": "Mount Shiude",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 4,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Siudeyama_02.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Siudeyama01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Siundeyama_20200407_01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Siundeyama11.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "p133",
+      "name": "荘内半島",
+      "category": "Shonai Peninsula",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 4,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Maruyamajima_takumacho.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Nio01.jpg: ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Syounaihantou01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:%E8%8D%98%E5%86%85%E5%8D%8A%E5%B3%B6_(296453853).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "kanonji-kanko-477",
+      "name": "伊吹島",
+      "category": "Ibukijima",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Ariakehama20210313_1.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Ibuki_-_Kan%27onji_Route_osm.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Ibuki_Community_Center_ac_(1).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Ibuki_Community_Center_ac_(2).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Ibuki_Island_stone_wall_ac_(1).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Ibuki_Island_stone_wall_ac_(2).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Ibuki_Island_stone_wall_ac_(3).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Ibuki_Island_townscape_ac_(1).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "p3441",
+      "name": "粟井神社",
+      "category": "Awai-jinja",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Awaizinnzya_12.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Awaizinzya_01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Awaizinzya_02.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Awaizinzya_03.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Awaizinzya_04.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Awaizinzya_05.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Awaizinzya_11.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Awaizinzya_13.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "hoshoin",
+      "name": "宝生院のシンパク",
+      "category": "Hosho-in-no-Shinpaku",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Hosho-in_Tonosho_shinpaku_ac_(1).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hosho-in_Tonosho_shinpaku_ac_(2).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hosho-in_Tonosho_shinpaku_ac_(3).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hosho-in_Tonosho_shinpaku_ac_(4).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hosho-in_Tonosho_shinpaku_ac_(5).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hosho-in_Tonosho_shinpaku_ac_(6).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hosho-in_Tonosho_shinpaku_ac_(7).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hosho-in_Tonosho_shinpaku_ac_(8).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "p312",
+      "name": "平和の群像",
+      "category": "Statue of People in Peace",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 0,
+      "note": "カテゴリを取得できない（status=404 HTTP 404）",
+      "rejected": []
+    },
+    {
+      "spot_id": "pref-279",
+      "name": "瀬戸内海歴史民俗資料館",
+      "category": "Seto Inland Sea Folk History Museum",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 3,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Gosikidai31.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Gosikidai32.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Japan_Goshikidai_%E7%80%AC%E6%88%B8%E5%86%85%E6%B5%B7%E6%AD%B4%E5%8F%B2%E6%B0%91%E4%BF%97%E8%B3%87%E6%96%99%E9%A4%A8%EF%BC%88%EF%BC%91%EF%BC%89.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "88shikokuhenro-245",
+      "name": "根香寺",
+      "category": "Negoroji (Takamatsu)",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Aominezan_Negoroji_02.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Aominezan_Negoroji_03.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Aominezan_Negoroji_04.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Henromiti_41.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Henromiti_82.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Henromiti_82a.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Japan_Goshikidai_%E6%A0%B9%E9%A6%99%E5%AF%BA%E3%81%AE%E3%80%8C%E3%82%AB%E3%82%A8%E3%83%87%E3%80%8D.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Negoro-ji_Takamatsu_Plan.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "iwaseo",
+      "name": "石清尾八幡宮",
+      "category": "Iwaseo Hachiman-gū",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:A%E4%B8%8A%E6%8B%9D%E6%AE%BF.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:A%E4%B8%8B%E6%8B%9D%E6%AE%BF.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:A%E5%BE%A1%E6%9C%AC%E6%AE%BF.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:A%E7%B5%B5%E9%A6%AC%E5%A0%82.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:A%E9%9A%8F%E8%BA%AB%E9%96%80%E3%81%A8%E5%A4%AA%E9%BC%93%E6%A9%8B.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:B%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:B%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:B%E9%AB%98%E8%89%AF%E7%A5%9E%E7%A4%BE.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "town-8",
+      "name": "高山航空公園",
+      "category": "Takayama Kouku Park",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 6,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:T-2_hikouki.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Takayama_Park_1.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Takayama_Park_2.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Takayama_Park_3.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Takayama_Park_5.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Takayama_Park_6.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "kagawa-konzouji",
+      "name": "金倉寺",
+      "category": "Konzōji (Zentsuji)",
+      "asset_id": "48cea594fcecd569",
+      "license": "パブリックドメイン（著作権の保護期間が満了・権利者が放棄）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Chisho_Daishi_(Konzoji_Zentsuji).jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "city-334",
+      "name": "旧善通寺偕行社",
+      "category": "Former Zentsuji Kaikosha",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Former_Zentsuji_Kaikosha_ac_(1).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Former_Zentsuji_Kaikosha_ac_(2).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Former_Zentsuji_Kaikosha_ac_(3).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Former_Zentsuji_Kaikosha_ac_(4).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Former_Zentsuji_Kaikosha_ac_(5).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Former_Zentsuji_Kaikosha_ac_(6).jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:%E6%97%A7%E5%96%84%E9%80%9A%E5%AF%BA%E5%81%95%E8%A1%8C%E7%A4%BE1.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:%E6%97%A7%E5%96%84%E9%80%9A%E5%AF%BA%E5%81%95%E8%A1%8C%E7%A4%BE2.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "ogijima",
+      "name": "男木島",
+      "category": "Ogijima",
+      "asset_id": "1ef0cf4d3da1a329",
+      "license": "パブリックドメイン（著作権の保護期間が満了・権利者が放棄）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:A_cat_overlooking_the_village.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "tadotsu-kanko-242",
+      "name": "道隆寺",
+      "category": "Doryuji",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Doryu-ji,_Auxiliary_Kamo-Inari_Shrine.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Doryu-ji,_Auxiliary_My%C5%8Dken-g%C5%AB_Shrine_001.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Doryu-ji,_Bell_Tower_001.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Doryu-ji,_Guchi-Kiki-Jizo_001.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Doryu-ji,_Modori-Kannon_001.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Doryuji_02.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Doryuji_03.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Doryuji_Plan.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "town-104",
+      "name": "満濃池",
+      "category": "Mannoike",
+      "asset_id": "afb391dcb8a9544b",
+      "license": "CC0 1.0（パブリックドメイン提供）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Mannnouike_20250807_3.jpg",
+      "tried": 6,
+      "note": "",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Daisenzan01a.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Kangai_sisetu_isan_sekihi.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Kannnozi03.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Kannnozinzya02.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Kannozi%C9%A8.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    },
+    {
+      "spot_id": "sakaide-kankou-463",
+      "name": "岩黒島",
+      "category": "Iwakurojima",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Atago_Shrine-01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Daitengu_Shrine-01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Ebisu_Shrine-01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hatsuta_Shrine-01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Iwaguro-ev.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）",
+        "https://commons.wikimedia.org/wiki/File:Iwakuro_assembly_hall-01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Iwakuro_Island_2019.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Iwakuro-jima_Island.jpg: ホワイトリストに無いライセンスのみ（判定できない表記）"
+      ]
+    },
+    {
+      "spot_id": "koyamaji",
+      "name": "甲山寺",
+      "category": "Koyamaji",
+      "asset_id": "bf6edeefcd6e923d",
+      "license": "CC0 1.0（パブリックドメイン提供）",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Asanozizou_20250411_1.jpg",
+      "tried": 1,
+      "note": "",
+      "rejected": []
+    },
+    {
+      "spot_id": "sakaide-kankou-462",
+      "name": "櫃石島",
+      "category": "Hitsuishijima",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 8,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:170319_Tatsuchinouranimashimasujinja_Shimotsui_Kurashiki_Okayama_pref_Japan04n.jpg: ホワイトリストに無いライセンスのみ（GFDL、CC BY-SA（継承）、判定できない表記）",
+        "https://commons.wikimedia.org/wiki/File:Hitsuishi_Bus_Stop-01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hitsuishi_Bus_Stop-02.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hitsuishi_Community_center-01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hitsuishi_Ebisu_Shrine-01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hitsuishi_Elementary_school-01.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hitsuishi_Island_2019.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Hitsuishi_Island_2025.JPG: ホワイトリストに無いライセンスのみ（CC BY-SA（継承）、GFDL）"
+      ]
+    },
+    {
+      "spot_id": "marugame-happylife-461",
+      "name": "小手島",
+      "category": "Oteshima",
+      "asset_id": "",
+      "license": "",
+      "page_url": "",
+      "tried": 5,
+      "note": "判定を通る画像が無かった",
+      "rejected": [
+        "https://commons.wikimedia.org/wiki/File:Hiroshima_Island_from_Oteshima_Island.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Koteshima_Island,_Kagawa_Aerial_photograph.1992.jpg: ホワイトリストに無いライセンスのみ（判定できない表記）",
+        "https://commons.wikimedia.org/wiki/File:Oteshima_Elementary_and_Junior_High_School.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Tamatsushima_Shrine_in_Oteshima_Island.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））",
+        "https://commons.wikimedia.org/wiki/File:Trick_art_of_a_fishing_boat.jpg: ホワイトリストに無いライセンスのみ（CC BY-SA（継承））"
+      ]
+    }
+  ]
+}

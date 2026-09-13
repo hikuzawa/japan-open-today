@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "満濃池",
+      "asset_id": "afb391dcb8a9544b",
+      "author": "Araiyasushige",
+      "byte_size": 235085,
+      "content_type": "image/jpeg",
+      "credit_text": "Mannnouike 20250807 3.jpg by Araiyasushige（CC0 1.0（パブリックドメイン提供））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T14:17:26+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T14:17:26Z",
+        "credit_text": "出典: Mannnouike 20250807 3.jpg / Wikimedia Commons（CC0 1.0（パブリックドメイン提供））",
+        "evidence_text": "ass=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/zero/1.0/deed.en\">CC0 1.0 Univ",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Mannnouike_20250807_3.jpg",
+        "license_id": "CC0-1.0",
+        "reason": "whitelist:CC0-1.0"
+      },
+      "local_path": "afb391dcb8a9544b.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Mannnouike_20250807_3.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Mannnouike_20250807_3.jpg/1280px-Mannnouike_20250807_3.jpg",
+      "tags": [
+        "kotohira"
+      ]
+    }
+  ],
+  "source_id": "town-104"
+}
