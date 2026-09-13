@@ -609,6 +609,7 @@ sources:
       names:
         ja: {text: "さぬきこどもの国", source: ja}
       map_query: "香川県高松市 さぬきこどもの国"
+      commons_category: "Sanuki Kodomonokuni"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-sionoe  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "しおのえふじかわ牧場"
@@ -806,6 +807,7 @@ sources:
       names:
         ja: {text: "屋島寺", source: ja}
       map_query: "香川県高松市 屋島寺"
+      commons_category: "Yashimaji"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-kenminhall
     name: "レクザムホール"
@@ -934,6 +936,7 @@ sources:
       names:
         ja: {text: "八栗寺", source: ja}
       map_query: "香川県高松市 八栗寺"
+      commons_category: "Yakuriji"  # Wikipedia 記事のリンクから確定
 
   # 除外: kagawa-shikokumura-276 — 四国村ミウゼアム（四国民家博物館）は kagawa-shikokumura と同じ施設
   # 除外: kagawa-pref-252 — 香川県立図書館（分館）は本館（kagawa-pref）と同じ住所・同じ施設
@@ -1247,6 +1250,7 @@ sources:
       names:
         ja: {text: "しろとり動物園", source: ja}
       map_query: "香川県東かがわ市 しろとり動物園"
+      commons_category: "Shirotori Zoo"  # Wikipedia 記事のリンクから確定
   - id: kagawa-sanukicity-sportspark  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "志度総合運動公園"
     operator: "公益社団法人香川県観光協会"
@@ -1370,6 +1374,7 @@ sources:
       names:
         ja: {text: "與田寺", source: ja}
       map_query: "香川県東かがわ市 與田寺"
+      commons_category: "Yodaji"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-goldtower  # 観光協会のページを一次情報にした（ページに「ゴールドタワー」が出てこない）
     name: "ゴールドタワー"
@@ -1394,6 +1399,7 @@ sources:
       names:
         ja: {text: "ゴールドタワー", source: ja}
       map_query: "香川県綾歌郡宇多津町 ゴールドタワー"
+      commons_category: "Gold Tower (Japan)"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-newreomaworld  # 観光協会のページを一次情報にした（ページに「ニューレオマワールド」が出てこない）
     name: "ニューレオマワールド"
@@ -1418,6 +1424,7 @@ sources:
       names:
         ja: {text: "ニューレオマワールド", source: ja}
       map_query: "香川県丸亀市 ニューレオマワールド"
+      commons_category: "New Reoma World"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-ooedoonsen  # 観光協会のページを一次情報にした（ページに「天然温泉」が出てこない）
     name: "天然温泉"
@@ -1550,6 +1557,7 @@ sources:
       names:
         ja: {text: "丸亀城", source: ja}
       map_query: "香川県丸亀市 丸亀城"
+      commons_category: "Marugame Castle"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-zentsuji  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "総本山善通寺"
@@ -1608,6 +1616,7 @@ sources:
       names:
         ja: {text: "四国水族館", source: ja}
       map_query: "香川県綾歌郡宇多津町 四国水族館"
+      commons_category: "Shikoku Aquarium"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-pref-156
     name: "香川県立東山魁夷せとうち美術館"
@@ -1666,6 +1675,7 @@ sources:
       names:
         ja: {text: "中津万象園・丸亀美術館", source: ja}
       map_query: "香川県丸亀市 中津万象園・丸亀美術館"
+      commons_category: "Nakatsu Banshoen Marugame Museum of Art"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-p2788  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
     name: "恋人の聖地"
@@ -1714,6 +1724,7 @@ sources:
       names:
         ja: {text: "白峯寺", source: ja}
       map_query: "香川県坂出市 白峯寺"
+      commons_category: "Shiromineji"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-setoohashitower
     name: "瀬戸大橋タワー"
@@ -1812,6 +1823,7 @@ sources:
       names:
         ja: {text: "丸亀市猪熊弦一郎現代美術館", source: ja}
       map_query: "香川県丸亀市 丸亀市猪熊弦一郎現代美術館"
+      commons_category: "Marugame Genichiro-Inokuma Museum of Contemporary Art"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-kyuman
     name: "灸まん美術館"
@@ -1911,6 +1923,7 @@ sources:
       names:
         ja: {text: "瀬戸大橋", source: ja}
       map_query: "香川県坂出市 瀬戸大橋"
+      commons_category: "Great Seto Bridge"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-nishino-kinryo  # 観光協会のページを一次情報にした（ページに「【施設見学】金陵の郷」が出てこない）
     name: "【施設見学】金陵の郷"
@@ -2147,6 +2160,7 @@ sources:
       names:
         ja: {text: "雲辺寺ロープウェイ", source: ja}
       map_query: "香川県観音寺市 雲辺寺ロープウェイ"
+      commons_category: "Unpenji Ropeway"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-p130  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
     name: "弥谷寺"
@@ -2171,6 +2185,7 @@ sources:
       names:
         ja: {text: "弥谷寺", source: ja}
       map_query: "香川県三豊市 弥谷寺"
+      commons_category: "Iyadaniji"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-shikoku88-6869  # 観光協会のページを一次情報にした（取得できない（status=403））
     name: "神恵院・観音寺"
@@ -2533,6 +2548,7 @@ sources:
       names:
         ja: {text: "サンポート高松", source: ja}
       map_query: "香川県高松市 サンポート高松"
+      commons_category: "Sunport-Takamatsu"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-city-474
     name: "大島"
@@ -2557,6 +2573,7 @@ sources:
       names:
         ja: {text: "大島", source: ja}
       map_query: "香川県高松市 大島"
+      commons_category: "Oshima"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-naoshima
     name: "直島"
@@ -2581,6 +2598,7 @@ sources:
       names:
         ja: {text: "直島", source: ja}
       map_query: "香川県香川郡直島町 直島"
+      commons_category: "Naoshima, Kagawa"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-p429  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
     name: "桃太郎神社（熊野権現）"
@@ -2678,6 +2696,7 @@ sources:
       names:
         ja: {text: "一宮寺", source: ja}
       map_query: "香川県高松市 一宮寺"
+      commons_category: "Ichinomiyaji"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-sanukikokubunji  # 観光協会のページを一次情報にした（ページに「国分寺」が出てこない）
     name: "国分寺"
@@ -2726,6 +2745,7 @@ sources:
       names:
         ja: {text: "女木島", source: ja}
       map_query: "香川県高松市 女木島"
+      commons_category: "Megijima"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-p3271  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
     name: "岩部八幡神社のイチョウ"
@@ -2892,6 +2912,7 @@ sources:
       names:
         ja: {text: "大窪寺", source: ja}
       map_query: "香川県さぬき市 大窪寺"
+      commons_category: "Okubo-ji"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-shirotori-jinja  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "白鳥神社"
@@ -2964,6 +2985,7 @@ sources:
       names:
         ja: {text: "志度寺", source: ja}
       map_query: "香川県さぬき市 志度寺"
+      commons_category: "Shidoji"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-p43  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
     name: "水主神社"
@@ -3060,6 +3082,7 @@ sources:
       names:
         ja: {text: "長尾寺", source: ja}
       map_query: "香川県さぬき市 長尾寺"
+      commons_category: "Nagaoji"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-p425  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
     name: "山上公園"
@@ -3132,6 +3155,7 @@ sources:
       names:
         ja: {text: "こんぴら温泉郷", source: ja}
       map_query: "香川県仲多度郡琴平町 こんぴら温泉郷"
+      commons_category: "Konpira Onsenkyo"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-love-marugame  # 観光協会のページを一次情報にした（ページに「飯野山（讃岐富士）」が出てこない）
     name: "飯野山（讃岐富士）"
@@ -3180,6 +3204,7 @@ sources:
       names:
         ja: {text: "五色台", source: ja}
       map_query: "香川県高松市 五色台"
+      commons_category: "Goshikidai"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-p317  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
     name: "【宇多津町】青の山頂展望台"
@@ -3300,6 +3325,7 @@ sources:
       names:
         ja: {text: "与島", source: ja}
       map_query: "香川県坂出市 与島"
+      commons_category: "Yoshima"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-tadotsu-kanko  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "佐柳島"
@@ -3324,6 +3350,7 @@ sources:
       names:
         ja: {text: "佐柳島", source: ja}
       map_query: "香川県仲多度郡多度津町 佐柳島"
+      commons_category: "Sanagijima"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-shusshakaji  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "出釋迦寺"
@@ -3371,6 +3398,7 @@ sources:
       names:
         ja: {text: "有明浜", source: ja}
       map_query: "香川県観音寺市 有明浜"
+      commons_category: "Ariakehama"  # Wikipedia 記事のリンクから確定
   - id: kagawa-kanonji-kanko  # 観光協会のページを一次情報にした（ページに「銭形砂絵（琴弾公園内）」が出てこない）
     name: "銭形砂絵（琴弾公園内）"
     operator: "公益社団法人香川県観光協会"
@@ -3442,6 +3470,7 @@ sources:
       names:
         ja: {text: "紫雲出山", source: ja}
       map_query: "香川県三豊市 紫雲出山"
+      commons_category: "Mount Shiude"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-mitoyo-kanko-143
     name: "不動の滝"
@@ -3538,6 +3567,7 @@ sources:
       names:
         ja: {text: "荘内半島", source: ja}
       map_query: "香川県三豊市 荘内半島"
+      commons_category: "Shonai Peninsula"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-mitoyo-kanko-457
     name: "志々島"
@@ -3562,6 +3592,7 @@ sources:
       names:
         ja: {text: "志々島", source: ja}
       map_query: "香川県三豊市 志々島"
+      commons_category: "Shishijima (Kagawa)"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-city-55
     name: "琴弾八幡宮"
@@ -3586,6 +3617,7 @@ sources:
       names:
         ja: {text: "琴弾八幡宮", source: ja}
       map_query: "香川県観音寺市 琴弾八幡宮"
+      commons_category: "Kotohiki-hachiman-gū"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-kanonji-kanko-477
     name: "伊吹島"
@@ -3610,6 +3642,7 @@ sources:
       names:
         ja: {text: "伊吹島", source: ja}
       map_query: "香川県観音寺市 伊吹島"
+      commons_category: "Ibukijima"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-mitoyo-kanko-131
     name: "鴨之越・丸山島"
@@ -3658,6 +3691,7 @@ sources:
       names:
         ja: {text: "粟井神社", source: ja}
       map_query: "香川県観音寺市 粟井神社"
+      commons_category: "Awai-jinja"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-shippouzan  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "本山寺"
@@ -3778,6 +3812,7 @@ sources:
       names:
         ja: {text: "萩原寺", source: ja}
       map_query: "香川県観音寺市 萩原寺"
+      commons_category: "Hagiwaraji"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-city-67  # 観光協会のページを一次情報にした（ページに「豊稔池堰堤（アーチダム）」が出てこない）
     name: "豊稔池堰堤（アーチダム）"
@@ -3898,6 +3933,7 @@ sources:
       names:
         ja: {text: "宝生院のシンパク", source: ja}
       map_query: "香川県小豆郡土庄町 宝生院のシンパク"
+      commons_category: "Hosho-in-no-Shinpaku"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-town-486  # 観光協会のページを一次情報にした（ページに「大坂城石垣石丁場跡（小豆島石丁場跡）「天狗岩丁場」」が出てこない）
     name: "大坂城石垣石丁場跡（小豆島石丁場跡）「天狗岩丁場」"
@@ -4018,6 +4054,7 @@ sources:
       names:
         ja: {text: "迷路のまち", source: ja}
       map_query: "香川県小豆郡土庄町 迷路のまち"
+      commons_category: "Meiro-no-machi (Tonosho)"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-p308  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
     name: "高見山展望台"
@@ -4090,6 +4127,7 @@ sources:
       names:
         ja: {text: "平和の群像", source: ja}
       map_query: "香川県小豆郡土庄町 平和の群像"
+      commons_category: "Statue of People in Peace"  # Wikipedia 記事のリンクから確定
 
   # --- S6-3 ①: ゲートのある施設（観光協会の一覧から。ADR 0011）
   - id: kagawa-sanuki-airport-park
@@ -4189,6 +4227,7 @@ sources:
       names:
         ja: {text: "公渕森林公園", source: ja}
       map_query: "香川県高松市 公渕森林公園"
+      commons_category: "Kinbuchi forest park"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-mure-aji-park  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "城岬公園"
@@ -4261,6 +4300,7 @@ sources:
       names:
         ja: {text: "瀬戸内海歴史民俗資料館", source: ja}
       map_query: "香川県高松市 瀬戸内海歴史民俗資料館"
+      commons_category: "Seto Inland Sea Folk History Museum"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-city-507
     name: "高松市香南歴史民俗郷土館"
@@ -5232,6 +5272,7 @@ sources:
       names:
         ja: {text: "根香寺", source: ja}
       map_query: "香川県高松市 根香寺"
+      commons_category: "Negoroji (Takamatsu)"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-iwaseo  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "石清尾八幡宮"
@@ -5256,6 +5297,7 @@ sources:
       names:
         ja: {text: "石清尾八幡宮", source: ja}
       map_query: "香川県高松市 石清尾八幡宮"
+      commons_category: "Iwaseo Hachiman-gū"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-city-505
     name: "高松市歴史資料館"
@@ -5376,6 +5418,7 @@ sources:
       names:
         ja: {text: "高山航空公園", source: ja}
       map_query: "香川県綾歌郡綾川町 高山航空公園"
+      commons_category: "Takayama Kouku Park"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-city-335
     name: "鉢伏ふれあい公園"
@@ -5424,6 +5467,7 @@ sources:
       names:
         ja: {text: "瀬戸内海国立公園", source: ja}
       map_query: "香川県坂出市 瀬戸内海国立公園"
+      commons_category: "Setonaikai National Park"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-shioiri-onsen-2360  # 観光協会のページを一次情報にした（ページに「塩入ふるさと研修館」が出てこない）
     name: "塩入ふるさと研修館"
@@ -5568,6 +5612,7 @@ sources:
       names:
         ja: {text: "塩飽勤番所跡", source: ja}
       map_query: "香川県丸亀市 塩飽勤番所跡"
+      commons_category: "Shiwaku-kinbansho"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-kagawa-konzouji  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "金倉寺"
@@ -5592,6 +5637,7 @@ sources:
       names:
         ja: {text: "金倉寺", source: ja}
       map_query: "香川県善通寺市 金倉寺"
+      commons_category: "Konzōji (Zentsuji)"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-city-334
     name: "旧善通寺偕行社"
@@ -5616,6 +5662,7 @@ sources:
       names:
         ja: {text: "旧善通寺偕行社", source: ja}
       map_query: "香川県善通寺市 旧善通寺偕行社"
+      commons_category: "Former Zentsuji Kaikosha"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-city-160
     name: "香風園"
@@ -5640,6 +5687,7 @@ sources:
       names:
         ja: {text: "香風園", source: ja}
       map_query: "香川県坂出市 香風園"
+      commons_category: "Kouhuuen"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-p2970  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
     name: "鎌田共済会郷土博物館"
@@ -5664,6 +5712,7 @@ sources:
       names:
         ja: {text: "鎌田共済会郷土博物館", source: ja}
       map_query: "香川県坂出市 鎌田共済会郷土博物館"
+      commons_category: "Kamada Benefit Society Museum of Local History"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-setoohhashi-2353  # 観光協会のページを一次情報にした（ページに「瀬戸大橋記念館（かがわこどもの駅）」が出てこない）
     name: "瀬戸大橋記念館（かがわこどもの駅）"
@@ -5832,6 +5881,7 @@ sources:
       names:
         ja: {text: "国営讃岐まんのう公園", source: ja}
       map_query: "香川県仲多度郡まんのう町 国営讃岐まんのう公園"
+      commons_category: "Sanuki Mannou National Park"  # Wikipedia 記事のリンクから確定
 
   # --- S6-3 ①: ゲートのある施設（観光協会の一覧から。ADR 0011）
   - id: kagawa-p121  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
@@ -6025,6 +6075,7 @@ sources:
       names:
         ja: {text: "瀬戸大橋記念公園", source: ja}
       map_query: "香川県坂出市 瀬戸大橋記念公園"
+      commons_category: "Great Seto Bridge Memorial Park"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-tadotsu-kanko-243  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "桃陵公園"
@@ -6121,6 +6172,7 @@ sources:
       names:
         ja: {text: "朝日山森林公園", source: ja}
       map_query: "香川県三豊市 朝日山森林公園"
+      commons_category: "Asahiyama Shinrin Park"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-mizupark-4344
     name: "香川用水記念公園"
@@ -6313,6 +6365,7 @@ sources:
       names:
         ja: {text: "男木島", source: ja}
       map_query: "香川県高松市 男木島"
+      commons_category: "Ogijima"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-mikicho-kanko  # 観光協会のページを一次情報にした（ページに「獄山」が出てこない）
     name: "獄山"
@@ -6481,6 +6534,7 @@ sources:
       names:
         ja: {text: "道隆寺", source: ja}
       map_query: "香川県仲多度郡多度津町 道隆寺"
+      commons_category: "Doryuji"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-mandaraji  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "曼荼羅寺"
@@ -6553,6 +6607,7 @@ sources:
       names:
         ja: {text: "満濃池", source: ja}
       map_query: "香川県仲多度郡まんのう町 満濃池"
+      commons_category: "Mannoike"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-kotohirakankou-2576
     name: "琴平公園"
@@ -6649,6 +6704,7 @@ sources:
       names:
         ja: {text: "鞘橋", source: ja}
       map_query: "香川県仲多度郡琴平町 鞘橋"
+      commons_category: "Saya-bridge, Kotohira"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-marugame-happylife-460  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "手島"
@@ -6769,6 +6825,7 @@ sources:
       names:
         ja: {text: "高見島", source: ja}
       map_query: "香川県仲多度郡多度津町 高見島"
+      commons_category: "Takamijima"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-kotohirakankou-80
     name: "大センダン"
@@ -6817,6 +6874,7 @@ sources:
       names:
         ja: {text: "岩黒島", source: ja}
       map_query: "香川県坂出市 岩黒島"
+      commons_category: "Iwakurojima"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-marugame-happylife-458  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "牛島"
@@ -6865,6 +6923,7 @@ sources:
       names:
         ja: {text: "甲山寺", source: ja}
       map_query: "香川県善通寺市 甲山寺"
+      commons_category: "Koyamaji"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-city-158
     name: "城山"
@@ -6937,6 +6996,7 @@ sources:
       names:
         ja: {text: "櫃石島", source: ja}
       map_query: "香川県坂出市 櫃石島"
+      commons_category: "Hitsuishijima"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-city-178
     name: "府中湖"
@@ -6985,6 +7045,7 @@ sources:
       names:
         ja: {text: "小手島", source: ja}
       map_query: "香川県丸亀市 小手島"
+      commons_category: "Oteshima"  # Wikipedia 記事のリンクから確定
 
   - id: kagawa-city-496
     name: "沙弥島"

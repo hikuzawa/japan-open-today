@@ -1,6 +1,6 @@
 {
-  "resolved_at": "2026-09-12T18:09:01.023742+09:00",
-  "requests": 34,
+  "resolved_at": "2026-09-13T22:35:07.272019+09:00",
+  "requests": 672,
   "rows": [
     {
       "spot_id": "ritsurin",
@@ -157,6 +157,3234 @@
         "https://ja.wikipedia.org/wiki/%E7%88%B6%E6%AF%8D%E3%83%B6%E6%B5%9C"
       ],
       "note": ""
+    },
+    {
+      "spot_id": "sanuki",
+      "name": "さぬきこどもの国",
+      "category": "Sanuki Kodomonokuni",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Sanuki_Kodomonokuni",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://www.sanuki.or.jp/",
+        "https://ja.wikipedia.org/wiki/%E3%81%95%E3%81%AC%E3%81%8D%E3%81%93%E3%81%A9%E3%82%82%E3%81%AE%E5%9B%BD"
+      ],
+      "note": "公式サイト: 取得できない（status=0 robots.txt を取得できないため今回は巡回しない）"
+    },
+    {
+      "spot_id": "sionoe",
+      "name": "しおのえふじかわ牧場",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.sionoe.com/",
+        "https://ja.wikipedia.org/wiki/%E3%81%97%E3%81%8A%E3%81%AE%E3%81%88%E3%81%B5%E3%81%98%E3%81%8B%E3%82%8F%E7%89%A7%E5%A0%B4"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "npo-wahaha",
+      "name": "讃岐おもちゃ美術館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://npo-wahaha.net/stm/",
+        "https://ja.wikipedia.org/wiki/%E8%AE%83%E5%B2%90%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%BE%8E%E8%A1%93%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "taka-spo",
+      "name": "はくちょう温泉",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.taka-spo.or.jp/hak1.html",
+        "https://ja.wikipedia.org/wiki/%E3%81%AF%E3%81%8F%E3%81%A1%E3%82%87%E3%81%86%E6%B8%A9%E6%B3%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "town-375",
+      "name": "三木町総合運動公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.town.miki.lg.jp/life/dtl.php?hdnKey=4191",
+        "https://ja.wikipedia.org/wiki/%E4%B8%89%E6%9C%A8%E7%94%BA%E7%B7%8F%E5%90%88%E9%81%8B%E5%8B%95%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "onigasima",
+      "name": "鬼ヶ島大洞窟",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.onigasima.jp/%E8%A6%B3%E3%82%8B",
+        "https://ja.wikipedia.org/wiki/%E9%AC%BC%E3%83%B6%E5%B3%B6%E5%A4%A7%E6%B4%9E%E7%AA%9F"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "takamatsujyo",
+      "name": "史跡高松城跡・玉藻公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.takamatsujyo.com/",
+        "https://ja.wikipedia.org/wiki/%E5%8F%B2%E8%B7%A1%E9%AB%98%E6%9D%BE%E5%9F%8E%E8%B7%A1%E3%83%BB%E7%8E%89%E8%97%BB%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "pref",
+      "name": "香川県庁舎（本館）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.pref.kagawa.lg.jp/",
+        "https://ja.wikipedia.org/wiki/%E9%A6%99%E5%B7%9D%E7%9C%8C%E5%BA%81%E8%88%8E%EF%BC%88%E6%9C%AC%E9%A4%A8%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "88shikokuhenro",
+      "name": "屋島寺",
+      "category": "Yashimaji",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Yashimaji",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://www.88shikokuhenro.jp/84yashimaji/",
+        "https://ja.wikipedia.org/wiki/%E5%B1%8B%E5%B3%B6%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "kenminhall",
+      "name": "レクザムホール",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.kenminhall.com/",
+        "https://ja.wikipedia.org/wiki/%E3%83%AC%E3%82%AF%E3%82%B6%E3%83%A0%E3%83%9B%E3%83%BC%E3%83%AB"
+      ],
+      "note": "Wikipedia: 見出しが施設名と違う（香川県県民ホール）"
+    },
+    {
+      "spot_id": "p2463",
+      "name": "男木島灯台・男木島灯台資料館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/2463",
+        "https://ja.wikipedia.org/wiki/%E7%94%B7%E6%9C%A8%E5%B3%B6%E7%81%AF%E5%8F%B0%E3%83%BB%E7%94%B7%E6%9C%A8%E5%B3%B6%E7%81%AF%E5%8F%B0%E8%B3%87%E6%96%99%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "takamatsu-orne",
+      "name": "香川・高松ツーリストインフォメーション",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://takamatsu-orne.jp/shop/detail/2011400000?tenant_cd=2011400000",
+        "https://ja.wikipedia.org/wiki/%E9%A6%99%E5%B7%9D%E3%83%BB%E9%AB%98%E6%9D%BE%E3%83%84%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%88%E3%82%A4%E3%83%B3%E3%83%95%E3%82%A9%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "sunport-hall",
+      "name": "サンポートホール高松（高松市文化芸術ホール）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.sunport-hall.jp/",
+        "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%83%9B%E3%83%BC%E3%83%AB%E9%AB%98%E6%9D%BE%EF%BC%88%E9%AB%98%E6%9D%BE%E5%B8%82%E6%96%87%E5%8C%96%E8%8A%B8%E8%A1%93%E3%83%9B%E3%83%BC%E3%83%AB%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "yakuriji",
+      "name": "八栗寺",
+      "category": "Yakuriji",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Yakuriji",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://yakuriji.jp/",
+        "https://ja.wikipedia.org/wiki/%E5%85%AB%E6%A0%97%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "sakurashop",
+      "name": "ジョージ",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.sakurashop.co.jp/visit/george-nakashima-memorial-gallery",
+        "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%83%BC%E3%82%B8"
+      ],
+      "note": "Wikipedia: 本文に「香川」が出てこない"
+    },
+    {
+      "spot_id": "ha-art",
+      "name": "歯ART美術館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://ha-art.com/index.html",
+        "https://ja.wikipedia.org/wiki/%E6%AD%AFART%E7%BE%8E%E8%A1%93%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "nagarestudio",
+      "name": "NAGARE",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://nagarestudio.jp/#1",
+        "https://ja.wikipedia.org/wiki/NAGARE"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "kawashima-af",
+      "name": "川島猛アートファクトリー",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://kawashima-af.com/",
+        "https://ja.wikipedia.org/wiki/%E5%B7%9D%E5%B3%B6%E7%8C%9B%E3%82%A2%E3%83%BC%E3%83%88%E3%83%95%E3%82%A1%E3%82%AF%E3%83%88%E3%83%AA%E3%83%BC"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city",
+      "name": "菊池寛記念館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kikuchikan/index.html",
+        "https://ja.wikipedia.org/wiki/%E8%8F%8A%E6%B1%A0%E5%AF%9B%E8%A8%98%E5%BF%B5%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-284",
+      "name": "高松市美術館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/index.html",
+        "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%9D%BE%E5%B8%82%E7%BE%8E%E8%A1%93%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 本文に所在地の市町（0027高松市）が出てこない"
+    },
+    {
+      "spot_id": "p443",
+      "name": "高松市塩江美術館（ホタルの里美術館）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/443",
+        "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%9D%BE%E5%B8%82%E5%A1%A9%E6%B1%9F%E7%BE%8E%E8%A1%93%E9%A4%A8%EF%BC%88%E3%83%9B%E3%82%BF%E3%83%AB%E3%81%AE%E9%87%8C%E7%BE%8E%E8%A1%93%E9%A4%A8%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "kinashi-bonsai",
+      "name": "鬼無植木盆栽センター",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.kinashi-bonsai.com/",
+        "https://ja.wikipedia.org/wiki/%E9%AC%BC%E7%84%A1%E6%A4%8D%E6%9C%A8%E7%9B%86%E6%A0%BD%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p447",
+      "name": "商工奨励館（栗林公園内）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/447",
+        "https://ja.wikipedia.org/wiki/%E5%95%86%E5%B7%A5%E5%A5%A8%E5%8A%B1%E9%A4%A8%EF%BC%88%E6%A0%97%E6%9E%97%E5%85%AC%E5%9C%92%E5%86%85%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "j-dc2",
+      "name": "日本ドルフィンセンター",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.j-dc2.net/",
+        "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%83%89%E3%83%AB%E3%83%95%E3%82%A3%E3%83%B3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "souyu",
+      "name": "つばさ山温泉",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.souyu.co.jp/shisetsu/tsubasayama",
+        "https://ja.wikipedia.org/wiki/%E3%81%A4%E3%81%B0%E3%81%95%E5%B1%B1%E6%B8%A9%E6%B3%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "shirotorizoo",
+      "name": "しろとり動物園",
+      "category": "Shirotori Zoo",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Shirotori_Zoo",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://shirotorizoo.com/",
+        "https://ja.wikipedia.org/wiki/%E3%81%97%E3%82%8D%E3%81%A8%E3%82%8A%E5%8B%95%E7%89%A9%E5%9C%92"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "sanukicity-sportspark",
+      "name": "志度総合運動公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://sanukicity-sportspark.com/about/shido/",
+        "https://ja.wikipedia.org/wiki/%E5%BF%97%E5%BA%A6%E7%B7%8F%E5%90%88%E9%81%8B%E5%8B%95%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "hiragagennai",
+      "name": "平賀源内旧邸",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://hiragagennai.com/aboutus/index.html",
+        "https://ja.wikipedia.org/wiki/%E5%B9%B3%E8%B3%80%E6%BA%90%E5%86%85%E6%97%A7%E9%82%B8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "higashikagawa",
+      "name": "引田城跡（城山）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://higashikagawa.net/sightseeing/hiketajo",
+        "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%B0%E5%9F%8E%E8%B7%A1%EF%BC%88%E5%9F%8E%E5%B1%B1%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "tanokuchiyakushi",
+      "name": "田ノ口薬師（東照寺）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.tanokuchiyakushi.com/",
+        "https://ja.wikipedia.org/wiki/%E7%94%B0%E3%83%8E%E5%8F%A3%E8%96%AC%E5%B8%AB%EF%BC%88%E6%9D%B1%E7%85%A7%E5%AF%BA%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "yodaji",
+      "name": "與田寺",
+      "category": "Yodaji",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Yodaji",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://yodaji.com/",
+        "https://ja.wikipedia.org/wiki/%E8%88%87%E7%94%B0%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "goldtower",
+      "name": "ゴールドタワー",
+      "category": "Gold Tower (Japan)",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Gold_Tower_(Japan)",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://goldtower.co.jp/",
+        "https://ja.wikipedia.org/wiki/%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89%E3%82%BF%E3%83%AF%E3%83%BC"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "newreomaworld",
+      "name": "ニューレオマワールド",
+      "category": "New Reoma World",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:New_Reoma_World",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://www.newreomaworld.com/",
+        "https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%AC%E3%82%AA%E3%83%9E%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "ooedoonsen",
+      "name": "天然温泉",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.ooedoonsen.jp/reomanomori/",
+        "https://ja.wikipedia.org/wiki/%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "e-mikado",
+      "name": "エピアみかど",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://e-mikado.jp/",
+        "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%94%E3%82%A2%E3%81%BF%E3%81%8B%E3%81%A9"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "e-mikado-90",
+      "name": "健康ふれあいの里",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://e-mikado.jp/publics/index/21/",
+        "https://ja.wikipedia.org/wiki/%E5%81%A5%E5%BA%B7%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E3%81%AE%E9%87%8C"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "konpirakabuki",
+      "name": "旧金毘羅大芝居(金丸座)",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.konpirakabuki.jp/",
+        "https://ja.wikipedia.org/wiki/%E6%97%A7%E9%87%91%E6%AF%98%E7%BE%85%E5%A4%A7%E8%8A%9D%E5%B1%85%28%E9%87%91%E4%B8%B8%E5%BA%A7%29"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-117",
+      "name": "丸亀城",
+      "category": "Marugame Castle",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Marugame_Castle",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.city.marugame.lg.jp/site/castle/",
+        "https://ja.wikipedia.org/wiki/%E4%B8%B8%E4%BA%80%E5%9F%8E"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "zentsuji",
+      "name": "総本山善通寺",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.zentsuji.com/",
+        "https://ja.wikipedia.org/wiki/%E7%B7%8F%E6%9C%AC%E5%B1%B1%E5%96%84%E9%80%9A%E5%AF%BA"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "shikoku-aquarium",
+      "name": "四国水族館",
+      "category": "Shikoku Aquarium",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Shikoku_Aquarium",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://shikoku-aquarium.jp/",
+        "https://ja.wikipedia.org/wiki/%E5%9B%9B%E5%9B%BD%E6%B0%B4%E6%97%8F%E9%A4%A8"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "pref-156",
+      "name": "香川県立東山魁夷せとうち美術館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.pref.kagawa.lg.jp/higashiyama/",
+        "https://ja.wikipedia.org/wiki/%E9%A6%99%E5%B7%9D%E7%9C%8C%E7%AB%8B%E6%9D%B1%E5%B1%B1%E9%AD%81%E5%A4%B7%E3%81%9B%E3%81%A8%E3%81%86%E3%81%A1%E7%BE%8E%E8%A1%93%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 本文に所在地の市町（高松市）が出てこない"
+    },
+    {
+      "spot_id": "bansyouen",
+      "name": "中津万象園・丸亀美術館",
+      "category": "Nakatsu Banshoen Marugame Museum of Art",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Nakatsu_Banshoen_Marugame_Museum_of_Art",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://www.bansyouen.com/",
+        "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%B4%A5%E4%B8%87%E8%B1%A1%E5%9C%92%E3%83%BB%E4%B8%B8%E4%BA%80%E7%BE%8E%E8%A1%93%E9%A4%A8"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "p2788",
+      "name": "恋人の聖地",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/2788",
+        "https://ja.wikipedia.org/wiki/%E6%81%8B%E4%BA%BA%E3%81%AE%E8%81%96%E5%9C%B0"
+      ],
+      "note": "Wikipedia: 本文に「香川」が出てこない"
+    },
+    {
+      "spot_id": "shiromineji",
+      "name": "白峯寺",
+      "category": "Shiromineji",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Shiromineji",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.shiromineji.com/",
+        "https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B3%AF%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "setoohashitower",
+      "name": "瀬戸大橋タワー",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.setoohashitower.com/index.html#content4-4",
+        "https://ja.wikipedia.org/wiki/%E7%80%AC%E6%88%B8%E5%A4%A7%E6%A9%8B%E3%82%BF%E3%83%AF%E3%83%BC"
+      ],
+      "note": "Wikipedia: 見出しが施設名と違う（瀬戸大橋記念公園）"
+    },
+    {
+      "spot_id": "yakuyoke",
+      "name": "郷照寺（第78番札所）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://yakuyoke.org/",
+        "https://ja.wikipedia.org/wiki/%E9%83%B7%E7%85%A7%E5%AF%BA%EF%BC%88%E7%AC%AC78%E7%95%AA%E6%9C%AD%E6%89%80%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "kyougokuann",
+      "name": "京極庵",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.kyougokuann.com/",
+        "https://ja.wikipedia.org/wiki/%E4%BA%AC%E6%A5%B5%E5%BA%B5"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "mimoca",
+      "name": "丸亀市猪熊弦一郎現代美術館",
+      "category": "Marugame Genichiro-Inokuma Museum of Contemporary Art",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Marugame_Genichiro-Inokuma_Museum_of_Contemporary_Art",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.mimoca.jp/",
+        "https://ja.wikipedia.org/wiki/%E4%B8%B8%E4%BA%80%E5%B8%82%E7%8C%AA%E7%86%8A%E5%BC%A6%E4%B8%80%E9%83%8E%E7%8F%BE%E4%BB%A3%E7%BE%8E%E8%A1%93%E9%A4%A8"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "kyuman",
+      "name": "灸まん美術館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://kyuman.art/",
+        "https://ja.wikipedia.org/wiki/%E7%81%B8%E3%81%BE%E3%82%93%E7%BE%8E%E8%A1%93%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p3639",
+      "name": "家中舎",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/3639",
+        "https://ja.wikipedia.org/wiki/%E5%AE%B6%E4%B8%AD%E8%88%8E"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p3920",
+      "name": "リモベヤ",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/3920",
+        "https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%A2%E3%83%99%E3%83%A4"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "jb-honshi",
+      "name": "瀬戸大橋",
+      "category": "Great Seto Bridge",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Great_Seto_Bridge",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://www.jb-honshi.co.jp/seto-ohashi/taikan/top.html",
+        "https://ja.wikipedia.org/wiki/%E7%80%AC%E6%88%B8%E5%A4%A7%E6%A9%8B"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "nishino-kinryo",
+      "name": "金陵の郷",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.nishino-kinryo.co.jp/museum/",
+        "https://ja.wikipedia.org/wiki/%E9%87%91%E9%99%B5%E3%81%AE%E9%83%B7"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "park-mino",
+      "name": "ふれあいパークみの・天然いやだに温泉「大師の湯」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.park-mino.info/facility/daishinoyu/",
+        "https://ja.wikipedia.org/wiki/%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E3%83%91%E3%83%BC%E3%82%AF%E3%81%BF%E3%81%AE%E3%83%BB%E5%A4%A9%E7%84%B6%E3%81%84%E3%82%84%E3%81%A0%E3%81%AB%E6%B8%A9%E6%B3%89%E3%80%8C%E5%A4%A7%E5%B8%AB%E3%81%AE%E6%B9%AF%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "kotohiki-kairo",
+      "name": "琴弾廻廊",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://kotohiki-kairo.co.jp/",
+        "https://ja.wikipedia.org/wiki/%E7%90%B4%E5%BC%BE%E5%BB%BB%E5%BB%8A"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "park-mino-380",
+      "name": "コスモランドみの",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.park-mino.info/facility/cosumo_land.php",
+        "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%B9%E3%83%A2%E3%83%A9%E3%83%B3%E3%83%89%E3%81%BF%E3%81%AE"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "takaradanosato",
+      "name": "たからだの里「環の湯」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://takaradanosato.co.jp/event_cate/tamakinoyu/",
+        "https://ja.wikipedia.org/wiki/%E3%81%9F%E3%81%8B%E3%82%89%E3%81%A0%E3%81%AE%E9%87%8C%E3%80%8C%E7%92%B0%E3%81%AE%E6%B9%AF%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p144",
+      "name": "フラワーパーク浦島",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/144",
+        "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC%E3%83%91%E3%83%BC%E3%82%AF%E6%B5%A6%E5%B3%B6"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "livemax-resort",
+      "name": "母神温泉",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.livemax-resort.com/kagawa/kanonji/hotspring/",
+        "https://ja.wikipedia.org/wiki/%E6%AF%8D%E7%A5%9E%E6%B8%A9%E6%B3%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "souyu-135",
+      "name": "たかせ天然温泉",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.souyu.co.jp/shisetsu/takase",
+        "https://ja.wikipedia.org/wiki/%E3%81%9F%E3%81%8B%E3%81%9B%E5%A4%A9%E7%84%B6%E6%B8%A9%E6%B3%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "shikoku-cable",
+      "name": "雲辺寺ロープウェイ",
+      "category": "Unpenji Ropeway",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Unpenji_Ropeway",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.shikoku-cable.co.jp/unpenji/",
+        "https://ja.wikipedia.org/wiki/%E9%9B%B2%E8%BE%BA%E5%AF%BA%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%82%A4"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "p130",
+      "name": "弥谷寺",
+      "category": "Iyadaniji",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Iyadaniji",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.my-kagawa.jp/point/130",
+        "https://ja.wikipedia.org/wiki/%E5%BC%A5%E8%B0%B7%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "shikoku88-6869",
+      "name": "神恵院・観音寺",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.shikoku88-6869.com/",
+        "https://ja.wikipedia.org/wiki/%E7%A5%9E%E6%81%B5%E9%99%A2%E3%83%BB%E8%A6%B3%E9%9F%B3%E5%AF%BA"
+      ],
+      "note": "公式サイト: 取得できない（status=403 HTTP 403） / Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "komatsuoji",
+      "name": "大興寺",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.komatsuoji.com/",
+        "https://ja.wikipedia.org/wiki/%E5%A4%A7%E8%88%88%E5%AF%BA"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "mizupark",
+      "name": "水の資料館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.mizupark.com/modules/mizu/index.php?content_id=3",
+        "https://ja.wikipedia.org/wiki/%E6%B0%B4%E3%81%AE%E8%B3%87%E6%96%99%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "olive-pk",
+      "name": "サン・オリーブ温泉（道の駅「小豆島オリーブ公園」内）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.olive-pk.jp/map/sunolive.html#onsen",
+        "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%B3%E3%83%BB%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E6%B8%A9%E6%B3%89%EF%BC%88%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E5%B0%8F%E8%B1%86%E5%B3%B6%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E5%85%AC%E5%9C%92%E3%80%8D%E5%86%85%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "manten-shodoshima",
+      "name": "オリーブ温泉",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.manten-shodoshima.com/",
+        "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E6%B8%A9%E6%B3%89"
+      ],
+      "note": "Wikipedia: 本文に所在地の市町（小豆郡土庄町）が出てこない"
+    },
+    {
+      "spot_id": "p309",
+      "name": "銚子渓・お猿の国",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://osaru-no-kuni.sakura.ne.jp/",
+        "https://ja.wikipedia.org/wiki/%E9%8A%9A%E5%AD%90%E6%B8%93%E3%83%BB%E3%81%8A%E7%8C%BF%E3%81%AE%E5%9B%BD"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "shimahaku-shimameshi-shimayu",
+      "name": "湯元小豆島温泉・塩の湯（島湯）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://shimahaku-shimameshi-shimayu.jp/",
+        "https://ja.wikipedia.org/wiki/%E6%B9%AF%E5%85%83%E5%B0%8F%E8%B1%86%E5%B3%B6%E6%B8%A9%E6%B3%89%E3%83%BB%E5%A1%A9%E3%81%AE%E6%B9%AF%EF%BC%88%E5%B3%B6%E6%B9%AF%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "shimayado",
+      "name": "小豆島温泉里枝の湯",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://shimayado.mari.co.jp/?_ga=2.11466932.1230189341.1598488554-1552227900.1598488554",
+        "https://ja.wikipedia.org/wiki/%E5%B0%8F%E8%B1%86%E5%B3%B6%E6%B8%A9%E6%B3%89%E9%87%8C%E6%9E%9D%E3%81%AE%E6%B9%AF"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "olive-pk-357",
+      "name": "小豆島オートビレッジYOSHIDAふるさと交流館・吉田温泉",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.olive-pk.jp/accomm/auto.html",
+        "https://ja.wikipedia.org/wiki/%E5%B0%8F%E8%B1%86%E5%B3%B6%E3%82%AA%E3%83%BC%E3%83%88%E3%83%93%E3%83%AC%E3%83%83%E3%82%B8YOSHIDA%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E4%BA%A4%E6%B5%81%E9%A4%A8%E3%83%BB%E5%90%89%E7%94%B0%E6%B8%A9%E6%B3%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p3832",
+      "name": "京宝亭",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/3832",
+        "https://ja.wikipedia.org/wiki/%E4%BA%AC%E5%AE%9D%E4%BA%AD"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "marukin",
+      "name": "マルキン醤油記念館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://marukin.moritakk.com/kinenkan/",
+        "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%AB%E3%82%AD%E3%83%B3%E9%86%A4%E6%B2%B9%E8%A8%98%E5%BF%B5%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 見出しが施設名と違う（醤の郷）"
+    },
+    {
+      "spot_id": "p4337",
+      "name": "かどや製油（株）今昔館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/4337",
+        "https://ja.wikipedia.org/wiki/%E3%81%8B%E3%81%A9%E3%82%84%E8%A3%BD%E6%B2%B9%EF%BC%88%E6%A0%AA%EF%BC%89%E4%BB%8A%E6%98%94%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "shionoe",
+      "name": "塩江温泉郷",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://shionoe.jp/",
+        "https://ja.wikipedia.org/wiki/%E5%A1%A9%E6%B1%9F%E6%B8%A9%E6%B3%89%E9%83%B7"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p2852",
+      "name": "竹居観音岬・竹居観音寺（四国最北端）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/2852",
+        "https://ja.wikipedia.org/wiki/%E7%AB%B9%E5%B1%85%E8%A6%B3%E9%9F%B3%E5%B2%AC%E3%83%BB%E7%AB%B9%E5%B1%85%E8%A6%B3%E9%9F%B3%E5%AF%BA%EF%BC%88%E5%9B%9B%E5%9B%BD%E6%9C%80%E5%8C%97%E7%AB%AF%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "takamatsu",
+      "name": "サンポート高松",
+      "category": "Sunport-Takamatsu",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Sunport-Takamatsu",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://takamatsu.or.jp/event/",
+        "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E9%AB%98%E6%9D%BE"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "city-474",
+      "name": "大島",
+      "category": "Oshima",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Oshima",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/keikaku/sonota/oshima/index.html",
+        "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "naoshima",
+      "name": "直島",
+      "category": "Naoshima, Kagawa",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Naoshima,_Kagawa",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://www.naoshima.net/",
+        "https://ja.wikipedia.org/wiki/%E7%9B%B4%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "p429",
+      "name": "桃太郎神社（熊野権現）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/429",
+        "https://ja.wikipedia.org/wiki/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%A5%9E%E7%A4%BE%EF%BC%88%E7%86%8A%E9%87%8E%E6%A8%A9%E7%8F%BE%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "yashima-navi",
+      "name": "屋島山上",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.yashima-navi.jp/jp/travel/entry-110.html",
+        "https://ja.wikipedia.org/wiki/%E5%B1%8B%E5%B3%B6%E5%B1%B1%E4%B8%8A"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "tamurajinja",
+      "name": "さぬき七福神",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://tamurajinja.com/7fuku",
+        "https://ja.wikipedia.org/wiki/%E3%81%95%E3%81%AC%E3%81%8D%E4%B8%83%E7%A6%8F%E7%A5%9E"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "sanuki-ichinomiyaji",
+      "name": "一宮寺",
+      "category": "Ichinomiyaji",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Ichinomiyaji",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://www.sanuki-ichinomiyaji.or.jp/",
+        "https://ja.wikipedia.org/wiki/%E4%B8%80%E5%AE%AE%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "sanukikokubunji",
+      "name": "国分寺",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://sanukikokubunji.jp/",
+        "https://ja.wikipedia.org/wiki/%E5%9B%BD%E5%88%86%E5%AF%BA"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "onigasima-472",
+      "name": "女木島",
+      "category": "Megijima",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Megijima",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://www.onigasima.jp/",
+        "https://ja.wikipedia.org/wiki/%E5%A5%B3%E6%9C%A8%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "p3271",
+      "name": "岩部八幡神社のイチョウ",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/3271",
+        "https://ja.wikipedia.org/wiki/%E5%B2%A9%E9%83%A8%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p281",
+      "name": "「TIME",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/281",
+        "https://ja.wikipedia.org/wiki/%E3%80%8CTIME"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "town-446",
+      "name": "直島町役場",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.town.naoshima.lg.jp/",
+        "https://ja.wikipedia.org/wiki/%E7%9B%B4%E5%B3%B6%E7%94%BA%E5%BD%B9%E5%A0%B4"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p27",
+      "name": "田の浦海岸",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/27",
+        "https://ja.wikipedia.org/wiki/%E7%94%B0%E3%81%AE%E6%B5%A6%E6%B5%B7%E5%B2%B8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p39",
+      "name": "ふるさと海岸（東かがわ市）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/39",
+        "https://ja.wikipedia.org/wiki/%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E6%B5%B7%E5%B2%B8%EF%BC%88%E6%9D%B1%E3%81%8B%E3%81%8C%E3%82%8F%E5%B8%82%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p44",
+      "name": "山田海岸",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/44",
+        "https://ja.wikipedia.org/wiki/%E5%B1%B1%E7%94%B0%E6%B5%B7%E5%B2%B8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "sanuki-kanko",
+      "name": "大窪寺",
+      "category": "Okubo-ji",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Okubo-ji",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://sanuki-kanko.jp/sightseeing/temple/post-510.html",
+        "https://ja.wikipedia.org/wiki/%E5%A4%A7%E7%AA%AA%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "shirotori-jinja",
+      "name": "白鳥神社",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.shirotori-jinja.jp/",
+        "https://ja.wikipedia.org/wiki/%E7%99%BD%E9%B3%A5%E7%A5%9E%E7%A4%BE"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "p18",
+      "name": "大坂峠展望台",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/18",
+        "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%9D%82%E5%B3%A0%E5%B1%95%E6%9C%9B%E5%8F%B0"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "shidoji",
+      "name": "志度寺",
+      "category": "Shidoji",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Shidoji",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://shidoji.or.jp/",
+        "https://ja.wikipedia.org/wiki/%E5%BF%97%E5%BA%A6%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "p43",
+      "name": "水主神社",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/43",
+        "https://ja.wikipedia.org/wiki/%E6%B0%B4%E4%B8%BB%E7%A5%9E%E7%A4%BE"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "p20",
+      "name": "絹島・丸亀島",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/20",
+        "https://ja.wikipedia.org/wiki/%E7%B5%B9%E5%B3%B6%E3%83%BB%E4%B8%B8%E4%BA%80%E5%B3%B6"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p35",
+      "name": "引田のまち並み",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/35",
+        "https://ja.wikipedia.org/wiki/%E5%BC%95%E7%94%B0%E3%81%AE%E3%81%BE%E3%81%A1%E4%B8%A6%E3%81%BF"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "nagaoji",
+      "name": "長尾寺",
+      "category": "Nagaoji",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Nagaoji",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://nagaoji.com/",
+        "https://ja.wikipedia.org/wiki/%E9%95%B7%E5%B0%BE%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "p425",
+      "name": "山上公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/425",
+        "https://ja.wikipedia.org/wiki/%E5%B1%B1%E4%B8%8A%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p424",
+      "name": "雨滝山",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/424",
+        "https://ja.wikipedia.org/wiki/%E9%9B%A8%E6%BB%9D%E5%B1%B1"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "kotohirakankou",
+      "name": "こんぴら温泉郷",
+      "category": "Konpira Onsenkyo",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Konpira_Onsenkyo",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.kotohirakankou.jp/",
+        "https://ja.wikipedia.org/wiki/%E3%81%93%E3%82%93%E3%81%B4%E3%82%89%E6%B8%A9%E6%B3%89%E9%83%B7"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "love-marugame",
+      "name": "飯野山（讃岐富士）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.love-marugame.jp/spot/925",
+        "https://ja.wikipedia.org/wiki/%E9%A3%AF%E9%87%8E%E5%B1%B1%EF%BC%88%E8%AE%83%E5%B2%90%E5%AF%8C%E5%A3%AB%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-161",
+      "name": "五色台",
+      "category": "Goshikidai",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Goshikidai",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/gosikidai-plateau.html",
+        "https://ja.wikipedia.org/wiki/%E4%BA%94%E8%89%B2%E5%8F%B0"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "p317",
+      "name": "【宇多津町】青の山頂展望台",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/317",
+        "https://ja.wikipedia.org/wiki/%E3%80%90%E5%AE%87%E5%A4%9A%E6%B4%A5%E7%94%BA%E3%80%91%E9%9D%92%E3%81%AE%E5%B1%B1%E9%A0%82%E5%B1%95%E6%9C%9B%E5%8F%B0"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "town-421",
+      "name": "三霞洞渓谷",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.town.manno.lg.jp/site/miryoku-hasshin/5310.html",
+        "https://ja.wikipedia.org/wiki/%E4%B8%89%E9%9C%9E%E6%B4%9E%E6%B8%93%E8%B0%B7"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "co-machi-no-ie",
+      "name": "【宇多津町】宇多津",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.co-machi-no-ie.jp/",
+        "https://ja.wikipedia.org/wiki/%E3%80%90%E5%AE%87%E5%A4%9A%E6%B4%A5%E7%94%BA%E3%80%91%E5%AE%87%E5%A4%9A%E6%B4%A5"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p431",
+      "name": "こんぴらの句碑群",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/431",
+        "https://ja.wikipedia.org/wiki/%E3%81%93%E3%82%93%E3%81%B4%E3%82%89%E3%81%AE%E5%8F%A5%E7%A2%91%E7%BE%A4"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "sakaide-kankou",
+      "name": "与島",
+      "category": "Yoshima",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Yoshima",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://sakaide-kankou.com/spots/829/",
+        "https://ja.wikipedia.org/wiki/%E4%B8%8E%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "tadotsu-kanko",
+      "name": "佐柳島",
+      "category": "Sanagijima",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Sanagijima",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.tadotsu-kanko.jp/sightseeing/entry-39.html",
+        "https://ja.wikipedia.org/wiki/%E4%BD%90%E6%9F%B3%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "shusshakaji",
+      "name": "出釋迦寺",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://shusshakaji.com/",
+        "https://ja.wikipedia.org/wiki/%E5%87%BA%E9%87%8B%E8%BF%A6%E5%AF%BA"
+      ],
+      "note": "Wikipedia: 見出しが施設名と違う（出釈迦寺）"
+    },
+    {
+      "spot_id": "p46",
+      "name": "有明浜",
+      "category": "Ariakehama",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Ariakehama",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.my-kagawa.jp/point/46",
+        "https://ja.wikipedia.org/wiki/%E6%9C%89%E6%98%8E%E6%B5%9C"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "kanonji-kanko",
+      "name": "銭形砂絵（琴弾公園内）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://kanonji-kanko.jp/zengata-sandpainting/",
+        "https://ja.wikipedia.org/wiki/%E9%8A%AD%E5%BD%A2%E7%A0%82%E7%B5%B5%EF%BC%88%E7%90%B4%E5%BC%BE%E5%85%AC%E5%9C%92%E5%86%85%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "kanonji-kanko-4483",
+      "name": "高屋神社【天空の鳥居】",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://kanonji-kanko.jp/takaya-shrine/",
+        "https://ja.wikipedia.org/wiki/%E9%AB%98%E5%B1%8B%E7%A5%9E%E7%A4%BE%E3%80%90%E5%A4%A9%E7%A9%BA%E3%81%AE%E9%B3%A5%E5%B1%85%E3%80%91"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "mitoyo-kanko",
+      "name": "紫雲出山",
+      "category": "Mount Shiude",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Mount_Shiude",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.mitoyo-kanko.com/mt-shiude/",
+        "https://ja.wikipedia.org/wiki/%E7%B4%AB%E9%9B%B2%E5%87%BA%E5%B1%B1"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "mitoyo-kanko-143",
+      "name": "不動の滝",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.mitoyo-kanko.com/facility/fudonotaki-country-park/",
+        "https://ja.wikipedia.org/wiki/%E4%B8%8D%E5%8B%95%E3%81%AE%E6%BB%9D"
+      ],
+      "note": "Wikipedia: 本文に「香川」が出てこない"
+    },
+    {
+      "spot_id": "kanonji-kanko-54",
+      "name": "名勝",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://kanonji-kanko.jp/kotohiki-park/",
+        "https://ja.wikipedia.org/wiki/%E5%90%8D%E5%8B%9D"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "mitoyo-kanko-128",
+      "name": "粟島",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.mitoyo-kanko.com/awashimaisland/",
+        "https://ja.wikipedia.org/wiki/%E7%B2%9F%E5%B3%B6"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "p133",
+      "name": "荘内半島",
+      "category": "Shonai Peninsula",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Shonai_Peninsula",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.my-kagawa.jp/point/133",
+        "https://ja.wikipedia.org/wiki/%E8%8D%98%E5%86%85%E5%8D%8A%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "mitoyo-kanko-457",
+      "name": "志々島",
+      "category": "Shishijima (Kagawa)",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Shishijima_(Kagawa)",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.mitoyo-kanko.com/shishijimaisland/",
+        "https://ja.wikipedia.org/wiki/%E5%BF%97%E3%80%85%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "city-55",
+      "name": "琴弾八幡宮",
+      "category": "Kotohiki-hachiman-gū",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Kotohiki-hachiman-g%C5%AB",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.city.kanonji.kagawa.jp/soshiki/21/13939.html",
+        "https://ja.wikipedia.org/wiki/%E7%90%B4%E5%BC%BE%E5%85%AB%E5%B9%A1%E5%AE%AE"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "kanonji-kanko-477",
+      "name": "伊吹島",
+      "category": "Ibukijima",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Ibukijima",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://kanonji-kanko.jp/ibukijima/",
+        "https://ja.wikipedia.org/wiki/%E4%BC%8A%E5%90%B9%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "mitoyo-kanko-131",
+      "name": "鴨之越・丸山島",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.mitoyo-kanko.com/facility/kamonokoshi/",
+        "https://ja.wikipedia.org/wiki/%E9%B4%A8%E4%B9%8B%E8%B6%8A%E3%83%BB%E4%B8%B8%E5%B1%B1%E5%B3%B6"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p3441",
+      "name": "粟井神社",
+      "category": "Awai-jinja",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Awai-jinja",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.my-kagawa.jp/point/3441",
+        "https://ja.wikipedia.org/wiki/%E7%B2%9F%E4%BA%95%E7%A5%9E%E7%A4%BE"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "shippouzan",
+      "name": "本山寺",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://motoyamaji.wixsite.com/shippouzan",
+        "https://ja.wikipedia.org/wiki/%E6%9C%AC%E5%B1%B1%E5%AF%BA"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "city-2938",
+      "name": "【紅葉スポット】法泉寺",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.kanonji.kagawa.jp/soshiki/21/341.html",
+        "https://ja.wikipedia.org/wiki/%E3%80%90%E7%B4%85%E8%91%89%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88%E3%80%91%E6%B3%95%E6%B3%89%E5%AF%BA"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "ichiyaan",
+      "name": "一夜庵",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.ichiyaan.com/",
+        "https://ja.wikipedia.org/wiki/%E4%B8%80%E5%A4%9C%E5%BA%B5"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-426",
+      "name": "塔重山公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.mitoyo.lg.jp/bunka/midokoro/3/2965.html",
+        "https://ja.wikipedia.org/wiki/%E5%A1%94%E9%87%8D%E5%B1%B1%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "kanonji-kanko-65",
+      "name": "萩原寺",
+      "category": "Hagiwaraji",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Hagiwaraji",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://kanonji-kanko.jp/hagiwaraji/",
+        "https://ja.wikipedia.org/wiki/%E8%90%A9%E5%8E%9F%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "city-67",
+      "name": "豊稔池堰堤（アーチダム）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.city.kanonji.kagawa.jp/soshiki/21/334.html",
+        "https://ja.wikipedia.org/wiki/%E8%B1%8A%E7%A8%94%E6%B1%A0%E5%A0%B0%E5%A0%A4%EF%BC%88%E3%82%A2%E3%83%BC%E3%83%81%E3%83%80%E3%83%A0%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p484",
+      "name": "イサム・ノグチ遊具彫刻",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/484",
+        "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%B5%E3%83%A0%E3%83%BB%E3%83%8E%E3%82%B0%E3%83%81%E9%81%8A%E5%85%B7%E5%BD%AB%E5%88%BB"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "town-306",
+      "name": "エンジェルロード（天使の散歩道）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.town.tonosho.kagawa.jp/kanko/sightseeing/575.html",
+        "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%AB%E3%83%AD%E3%83%BC%E3%83%89%EF%BC%88%E5%A4%A9%E4%BD%BF%E3%81%AE%E6%95%A3%E6%AD%A9%E9%81%93%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p217",
+      "name": "美しの原高原",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/217",
+        "https://ja.wikipedia.org/wiki/%E7%BE%8E%E3%81%97%E3%81%AE%E5%8E%9F%E9%AB%98%E5%8E%9F"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "hoshoin",
+      "name": "宝生院のシンパク",
+      "category": "Hosho-in-no-Shinpaku",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Hosho-in-no-Shinpaku",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://hoshoin.jp/",
+        "https://ja.wikipedia.org/wiki/%E5%AE%9D%E7%94%9F%E9%99%A2%E3%81%AE%E3%82%B7%E3%83%B3%E3%83%91%E3%82%AF"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "town-486",
+      "name": "大坂城石垣石丁場跡（小豆島石丁場跡）「天狗岩丁場」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.town.shodoshima.lg.jp/gyousei/kakuka/shogaigakushuka/2/1/2701.html",
+        "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%9D%82%E5%9F%8E%E7%9F%B3%E5%9E%A3%E7%9F%B3%E4%B8%81%E5%A0%B4%E8%B7%A1%EF%BC%88%E5%B0%8F%E8%B1%86%E5%B3%B6%E7%9F%B3%E4%B8%81%E5%A0%B4%E8%B7%A1%EF%BC%89%E3%80%8C%E5%A4%A9%E7%8B%97%E5%B2%A9%E4%B8%81%E5%A0%B4%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p3309",
+      "name": "屋形崎夕陽の丘",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/3309",
+        "https://ja.wikipedia.org/wiki/%E5%B1%8B%E5%BD%A2%E5%B4%8E%E5%A4%95%E9%99%BD%E3%81%AE%E4%B8%98"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "town-485",
+      "name": "小瀬の重岩",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.town.tonosho.kagawa.jp/kanko/sightseeing/1909.html",
+        "https://ja.wikipedia.org/wiki/%E5%B0%8F%E7%80%AC%E3%81%AE%E9%87%8D%E5%B2%A9"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "pref-469",
+      "name": "沖之島",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.pref.kagawa.lg.jp/documents/8266/p05-06.pdf",
+        "https://ja.wikipedia.org/wiki/%E6%B2%96%E4%B9%8B%E5%B3%B6"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "tonosho-shokokai",
+      "name": "迷路のまち",
+      "category": "Meiro-no-machi (Tonosho)",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Meiro-no-machi_(Tonosho)",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://tonosho-shokokai.com/meiro/",
+        "https://ja.wikipedia.org/wiki/%E8%BF%B7%E8%B7%AF%E3%81%AE%E3%81%BE%E3%81%A1"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "p308",
+      "name": "高見山展望台",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/308",
+        "https://ja.wikipedia.org/wiki/%E9%AB%98%E8%A6%8B%E5%B1%B1%E5%B1%95%E6%9C%9B%E5%8F%B0"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "teshima-navi",
+      "name": "豊島",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://teshima-navi.jp/",
+        "https://ja.wikipedia.org/wiki/%E8%B1%8A%E5%B3%B6"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "p312",
+      "name": "平和の群像",
+      "category": "Statue of People in Peace",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Statue_of_People_in_Peace",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.my-kagawa.jp/point/312",
+        "https://ja.wikipedia.org/wiki/%E5%B9%B3%E5%92%8C%E3%81%AE%E7%BE%A4%E5%83%8F"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "sanuki-airport-park",
+      "name": "さぬき空港公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://sanuki-airport-park.com/",
+        "https://ja.wikipedia.org/wiki/%E3%81%95%E3%81%AC%E3%81%8D%E7%A9%BA%E6%B8%AF%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "p2636",
+      "name": "あじ竜王山公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/2636",
+        "https://ja.wikipedia.org/wiki/%E3%81%82%E3%81%98%E7%AB%9C%E7%8E%8B%E5%B1%B1%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "mineyama-park",
+      "name": "峰山公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.mineyama-park.com/",
+        "https://ja.wikipedia.org/wiki/%E5%B3%B0%E5%B1%B1%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "kinbuchi-shinrin",
+      "name": "公渕森林公園",
+      "category": "Kinbuchi forest park",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Kinbuchi_forest_park",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://kinbuchi-shinrin.jp/",
+        "https://ja.wikipedia.org/wiki/%E5%85%AC%E6%B8%95%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "mure-aji-park",
+      "name": "城岬公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://mure-aji-park.com/%E9%AB%98%E6%9D%BE%E5%B8%82%E7%AB%8B-%E5%9F%8E%E5%B2%AC%E5%85%AC%E5%9C%92/",
+        "https://ja.wikipedia.org/wiki/%E5%9F%8E%E5%B2%AC%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "yashima-navi-4144",
+      "name": "高松市屋島山上交流拠点施設「やしまーる」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.yashima-navi.jp/jp/yashimaru/",
+        "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%9D%BE%E5%B8%82%E5%B1%8B%E5%B3%B6%E5%B1%B1%E4%B8%8A%E4%BA%A4%E6%B5%81%E6%8B%A0%E7%82%B9%E6%96%BD%E8%A8%AD%E3%80%8C%E3%82%84%E3%81%97%E3%81%BE%E3%83%BC%E3%82%8B%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "pref-279",
+      "name": "瀬戸内海歴史民俗資料館",
+      "category": "Seto Inland Sea Folk History Museum",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Seto_Inland_Sea_Folk_History_Museum",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.pref.kagawa.lg.jp/setorekishi/",
+        "https://ja.wikipedia.org/wiki/%E7%80%AC%E6%88%B8%E5%86%85%E6%B5%B7%E6%AD%B4%E5%8F%B2%E6%B0%91%E4%BF%97%E8%B3%87%E6%96%99%E9%A4%A8"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "city-507",
+      "name": "高松市香南歴史民俗郷土館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kounanrekishi/index.html",
+        "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%9D%BE%E5%B8%82%E9%A6%99%E5%8D%97%E6%AD%B4%E5%8F%B2%E6%B0%91%E4%BF%97%E9%83%B7%E5%9C%9F%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "michi-no-eki",
+      "name": "道の駅「しおのえ」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.michi-no-eki.jp/stations/views/19635",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E3%81%97%E3%81%8A%E3%81%AE%E3%81%88%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "souyu-296",
+      "name": "道の駅「香南楽湯」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.souyu.co.jp/shisetsu/kounanrakuyu",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E9%A6%99%E5%8D%97%E6%A5%BD%E6%B9%AF%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "genpei-mure",
+      "name": "道の駅「源平の里むれ」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.genpei-mure.jp/",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E6%BA%90%E5%B9%B3%E3%81%AE%E9%87%8C%E3%82%80%E3%82%8C%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "karokaro",
+      "name": "讃岐漆芸美術館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://karokaro.ashita-sanuki.jp/",
+        "https://ja.wikipedia.org/wiki/%E8%AE%83%E5%B2%90%E6%BC%86%E8%8A%B8%E7%BE%8E%E8%A1%93%E9%A4%A8"
+      ],
+      "note": "公式サイト: 取得できない（status=0 robots.txt により拒否） / Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-283",
+      "name": "高松市石の民俗資料館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/ishimin/index.html",
+        "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%9D%BE%E5%B8%82%E7%9F%B3%E3%81%AE%E6%B0%91%E4%BF%97%E8%B3%87%E6%96%99%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-211",
+      "name": "みろく自然公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5864.html",
+        "https://ja.wikipedia.org/wiki/%E3%81%BF%E3%82%8D%E3%81%8F%E8%87%AA%E7%84%B6%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "city-208",
+      "name": "道の駅「ながお」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/1/5852.html",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E3%81%AA%E3%81%8C%E3%81%8A%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p30",
+      "name": "東かがわ手袋ギャラリー",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/30",
+        "https://ja.wikipedia.org/wiki/%E6%9D%B1%E3%81%8B%E3%81%8C%E3%82%8F%E6%89%8B%E8%A2%8B%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "sanuki-sa",
+      "name": "道の駅「津田の松原」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.sanuki-sa.jp/station/",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E6%B4%A5%E7%94%B0%E3%81%AE%E6%9D%BE%E5%8E%9F%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-209",
+      "name": "道の駅「みろく」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/1/5855.html",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E3%81%BF%E3%82%8D%E3%81%8F%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "hiragagennai-205",
+      "name": "平賀源内記念館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://hiragagennai.com/",
+        "https://ja.wikipedia.org/wiki/%E5%B9%B3%E8%B3%80%E6%BA%90%E5%86%85%E8%A8%98%E5%BF%B5%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-216",
+      "name": "雨滝自然科学館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sanuki.lg.jp/kanko-bunka-sports/sanukishinoshisetsu/bunkashisetsu/5695.html",
+        "https://ja.wikipedia.org/wiki/%E9%9B%A8%E6%BB%9D%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "telescope-museum",
+      "name": "天体望遠鏡博物館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.telescope-museum.com/",
+        "https://ja.wikipedia.org/wiki/%E5%A4%A9%E4%BD%93%E6%9C%9B%E9%81%A0%E9%8F%A1%E5%8D%9A%E7%89%A9%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "tebukurokumiai",
+      "name": "香川のてぶくろ資料館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.tebukurokumiai.jp/museum/",
+        "https://ja.wikipedia.org/wiki/%E9%A6%99%E5%B7%9D%E3%81%AE%E3%81%A6%E3%81%B6%E3%81%8F%E3%82%8D%E8%B3%87%E6%96%99%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "sanuki-191",
+      "name": "さぬき市歴史民俗資料館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.sanuki.ne.jp/rekimin/",
+        "https://ja.wikipedia.org/wiki/%E3%81%95%E3%81%AC%E3%81%8D%E5%B8%82%E6%AD%B4%E5%8F%B2%E6%B0%91%E4%BF%97%E8%B3%87%E6%96%99%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "utazu-umihotaru",
+      "name": "【宇多津町】道の駅",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://utazu-umihotaru.jp/",
+        "https://ja.wikipedia.org/wiki/%E3%80%90%E5%AE%87%E5%A4%9A%E6%B4%A5%E7%94%BA%E3%80%91%E9%81%93%E3%81%AE%E9%A7%85"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-339",
+      "name": "「善通寺五岳の里」市民集いの丘公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.zentsuji.kagawa.jp/site/gogaku/",
+        "https://ja.wikipedia.org/wiki/%E3%80%8C%E5%96%84%E9%80%9A%E5%AF%BA%E4%BA%94%E5%B2%B3%E3%81%AE%E9%87%8C%E3%80%8D%E5%B8%82%E6%B0%91%E9%9B%86%E3%81%84%E3%81%AE%E4%B8%98%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p4",
+      "name": "柏原渓谷",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/4",
+        "https://ja.wikipedia.org/wiki/%E6%9F%8F%E5%8E%9F%E6%B8%93%E8%B0%B7"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "town-338",
+      "name": "かりんの丘公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.town.manno.lg.jp/site/miryoku-hasshin/5662.html",
+        "https://ja.wikipedia.org/wiki/%E3%81%8B%E3%82%8A%E3%82%93%E3%81%AE%E4%B8%98%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "mod",
+      "name": "乃木館（陸上自衛隊善通寺駐屯地資料館）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.mod.go.jp/gsdf/mae/14b/14bhp/nogi/nogisan.html",
+        "https://ja.wikipedia.org/wiki/%E4%B9%83%E6%9C%A8%E9%A4%A8%EF%BC%88%E9%99%B8%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A%E5%96%84%E9%80%9A%E5%AF%BA%E9%A7%90%E5%B1%AF%E5%9C%B0%E8%B3%87%E6%96%99%E9%A4%A8%EF%BC%89"
+      ],
+      "note": "公式サイト: 取得できない（status=403 HTTP 403） / Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p13",
+      "name": "道の駅「滝宮」・綾川町うどん会館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/13",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E6%BB%9D%E5%AE%AE%E3%80%8D%E3%83%BB%E7%B6%BE%E5%B7%9D%E7%94%BA%E3%81%86%E3%81%A9%E3%82%93%E4%BC%9A%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "setoohhashi-181",
+      "name": "道の駅「瀬戸大橋記念公園」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.setoohhashi.com/",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E7%80%AC%E6%88%B8%E5%A4%A7%E6%A9%8B%E8%A8%98%E5%BF%B5%E5%85%AC%E5%9C%92%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "shioiri-onsen",
+      "name": "道の駅「空の夢もみの木パーク」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.shioiri-onsen.jp/",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E7%A9%BA%E3%81%AE%E5%A4%A2%E3%82%82%E3%81%BF%E3%81%AE%E6%9C%A8%E3%83%91%E3%83%BC%E3%82%AF%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "e-mikado-105",
+      "name": "道の駅「ことなみ」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://e-mikado.jp/",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E3%81%93%E3%81%A8%E3%81%AA%E3%81%BF%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "mannou-mori",
+      "name": "森林の館（満濃池森林公園内）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://mannou-mori.com/",
+        "https://ja.wikipedia.org/wiki/%E6%A3%AE%E6%9E%97%E3%81%AE%E9%A4%A8%EF%BC%88%E6%BA%80%E6%BF%83%E6%B1%A0%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92%E5%86%85%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "town-490",
+      "name": "まんのう天文台",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.town.manno.lg.jp/site/mannotenmondai/",
+        "https://ja.wikipedia.org/wiki/%E3%81%BE%E3%82%93%E3%81%AE%E3%81%86%E5%A4%A9%E6%96%87%E5%8F%B0"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "park-mino-147",
+      "name": "道の駅「ふれあいパークみの」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.park-mino.info/",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E3%83%91%E3%83%BC%E3%82%AF%E3%81%BF%E3%81%AE%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "mitoyo-kanko-129",
+      "name": "粟島海洋記念館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.mitoyo-kanko.com/facility/awashimamuseum/",
+        "https://ja.wikipedia.org/wiki/%E7%B2%9F%E5%B3%B6%E6%B5%B7%E6%B4%8B%E8%A8%98%E5%BF%B5%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "michinoeki-kotohiki",
+      "name": "道の駅「ことひき」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://michinoeki-kotohiki.com/",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E3%81%93%E3%81%A8%E3%81%B2%E3%81%8D%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "takaradanosato-449",
+      "name": "道の駅「たからだの里さいた」（物産館）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://takaradanosato.co.jp/",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E3%81%9F%E3%81%8B%E3%82%89%E3%81%A0%E3%81%AE%E9%87%8C%E3%81%95%E3%81%84%E3%81%9F%E3%80%8D%EF%BC%88%E7%89%A9%E7%94%A3%E9%A4%A8%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-61",
+      "name": "観音寺市ちょうさ会館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.kanonji.kagawa.jp/soshiki/21/327.html",
+        "https://ja.wikipedia.org/wiki/%E8%A6%B3%E9%9F%B3%E5%AF%BA%E5%B8%82%E3%81%A1%E3%82%87%E3%81%86%E3%81%95%E4%BC%9A%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "mitoyocs",
+      "name": "三豊市文化会館マリンウェーブ",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://mitoyocs.jp/marinewave/",
+        "https://ja.wikipedia.org/wiki/%E4%B8%89%E8%B1%8A%E5%B8%82%E6%96%87%E5%8C%96%E4%BC%9A%E9%A4%A8%E3%83%9E%E3%83%AA%E3%83%B3%E3%82%A6%E3%82%A7%E3%83%BC%E3%83%96"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-148",
+      "name": "宗吉かわらの里展示館（宗吉瓦窯跡史跡公園）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.mitoyo.lg.jp/kakuka/kyouikuiinkai/shogai/3_1/1_1/2697.html",
+        "https://ja.wikipedia.org/wiki/%E5%AE%97%E5%90%89%E3%81%8B%E3%82%8F%E3%82%89%E3%81%AE%E9%87%8C%E5%B1%95%E7%A4%BA%E9%A4%A8%EF%BC%88%E5%AE%97%E5%90%89%E7%93%A6%E7%AA%AF%E8%B7%A1%E5%8F%B2%E8%B7%A1%E5%85%AC%E5%9C%92%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "olive-pk-239",
+      "name": "道の駅「小豆島オリーブ公園」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.olive-pk.jp/",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E5%B0%8F%E8%B1%86%E5%B3%B6%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E5%85%AC%E5%9C%92%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "town-314",
+      "name": "道の駅・みなとオアシス「大坂城残石記念公園」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.town.tonosho.kagawa.jp/gyosei/soshiki/shogai/4/505.html",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%83%BB%E3%81%BF%E3%81%AA%E3%81%A8%E3%82%AA%E3%82%A2%E3%82%B7%E3%82%B9%E3%80%8C%E5%A4%A7%E5%9D%82%E5%9F%8E%E6%AE%8B%E7%9F%B3%E8%A8%98%E5%BF%B5%E5%85%AC%E5%9C%92%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p398",
+      "name": "田井浜海水浴場・キャンプ場",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/398",
+        "https://ja.wikipedia.org/wiki/%E7%94%B0%E4%BA%95%E6%B5%9C%E6%B5%B7%E6%B0%B4%E6%B5%B4%E5%A0%B4%E3%83%BB%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "souyu-353",
+      "name": "香南楽湯",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.souyu.co.jp/shisetsu/kounanrakuyu",
+        "https://ja.wikipedia.org/wiki/%E9%A6%99%E5%8D%97%E6%A5%BD%E6%B9%AF"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p3010",
+      "name": "純愛の聖地庵治・観光交流館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/3010",
+        "https://ja.wikipedia.org/wiki/%E7%B4%94%E6%84%9B%E3%81%AE%E8%81%96%E5%9C%B0%E5%BA%B5%E6%B2%BB%E3%83%BB%E8%A6%B3%E5%85%89%E4%BA%A4%E6%B5%81%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "88shikokuhenro-245",
+      "name": "根香寺",
+      "category": "Negoroji (Takamatsu)",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Negoroji_(Takamatsu)",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://www.88shikokuhenro.jp/82negoroji/",
+        "https://ja.wikipedia.org/wiki/%E6%A0%B9%E9%A6%99%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "iwaseo",
+      "name": "石清尾八幡宮",
+      "category": "Iwaseo Hachiman-gū",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Iwaseo_Hachiman-g%C5%AB",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://iwaseo.com/",
+        "https://ja.wikipedia.org/wiki/%E7%9F%B3%E6%B8%85%E5%B0%BE%E5%85%AB%E5%B9%A1%E5%AE%AE"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "city-505",
+      "name": "高松市歴史資料館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.city.takamatsu.kagawa.jp/23506.html",
+        "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%9D%BE%E5%B8%82%E6%AD%B4%E5%8F%B2%E8%B3%87%E6%96%99%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-506",
+      "name": "高松市讃岐国分寺跡資料館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/sanuki.html",
+        "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%9D%BE%E5%B8%82%E8%AE%83%E5%B2%90%E5%9B%BD%E5%88%86%E5%AF%BA%E8%B7%A1%E8%B3%87%E6%96%99%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "sanukicity-sportspark-204",
+      "name": "長尾総合公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://sanukicity-sportspark.com/about/nagao/",
+        "https://ja.wikipedia.org/wiki/%E9%95%B7%E5%B0%BE%E7%B7%8F%E5%90%88%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "sanukicity-sportspark-198",
+      "name": "津田総合公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://sanukicity-sportspark.com/about/tsuda/",
+        "https://ja.wikipedia.org/wiki/%E6%B4%A5%E7%94%B0%E7%B7%8F%E5%90%88%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "town-8",
+      "name": "高山航空公園",
+      "category": "Takayama Kouku Park",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Takayama_Kouku_Park",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.town.ayagawa.lg.jp/docs/2011071300140/",
+        "https://ja.wikipedia.org/wiki/%E9%AB%98%E5%B1%B1%E8%88%AA%E7%A9%BA%E5%85%AC%E5%9C%92"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "city-335",
+      "name": "鉢伏ふれあい公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.zentsuji.kagawa.jp/soshiki/53/parkindex.html",
+        "https://ja.wikipedia.org/wiki/%E9%89%A2%E4%BC%8F%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "goshikivc",
+      "name": "瀬戸内海国立公園",
+      "category": "Setonaikai National Park",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Setonaikai_National_Park",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://goshikivc.jp/",
+        "https://ja.wikipedia.org/wiki/%E7%80%AC%E6%88%B8%E5%86%85%E6%B5%B7%E5%9B%BD%E7%AB%8B%E5%85%AC%E5%9C%92"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "shioiri-onsen-2360",
+      "name": "塩入ふるさと研修館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.shioiri-onsen.jp/stay/",
+        "https://ja.wikipedia.org/wiki/%E5%A1%A9%E5%85%A5%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E7%A0%94%E4%BF%AE%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "shioiri-onsen-96",
+      "name": "塩入温泉",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.shioiri-onsen.jp/",
+        "https://ja.wikipedia.org/wiki/%E5%A1%A9%E5%85%A5%E6%B8%A9%E6%B3%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "mannou-mori-89",
+      "name": "香川県満濃池森林公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://mannou-mori.com/",
+        "https://ja.wikipedia.org/wiki/%E9%A6%99%E5%B7%9D%E7%9C%8C%E6%BA%80%E6%BF%83%E6%B1%A0%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "konpira-76",
+      "name": "金刀比羅宮・書院",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.konpira.or.jp/",
+        "https://ja.wikipedia.org/wiki/%E9%87%91%E5%88%80%E6%AF%94%E7%BE%85%E5%AE%AE%E3%83%BB%E6%9B%B8%E9%99%A2"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "marugame-happylife",
+      "name": "笠島集落",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.marugame-happylife.jp/islands/info/entry-79.html",
+        "https://ja.wikipedia.org/wiki/%E7%AC%A0%E5%B3%B6%E9%9B%86%E8%90%BD"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "marugame-happylife-112",
+      "name": "塩飽勤番所跡",
+      "category": "Shiwaku-kinbansho",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Shiwaku-kinbansho",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.marugame-happylife.jp/islands/info/entry-77.html",
+        "https://ja.wikipedia.org/wiki/%E5%A1%A9%E9%A3%BD%E5%8B%A4%E7%95%AA%E6%89%80%E8%B7%A1"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "kagawa-konzouji",
+      "name": "金倉寺",
+      "category": "Konzōji (Zentsuji)",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Konz%C5%8Dji_(Zentsuji)",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.kagawa-konzouji.or.jp/",
+        "https://ja.wikipedia.org/wiki/%E9%87%91%E5%80%89%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "city-334",
+      "name": "旧善通寺偕行社",
+      "category": "Former Zentsuji Kaikosha",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Former_Zentsuji_Kaikosha",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://www.city.zentsuji.kagawa.jp/soshiki/50/kaikousya.html",
+        "https://ja.wikipedia.org/wiki/%E6%97%A7%E5%96%84%E9%80%9A%E5%AF%BA%E5%81%95%E8%A1%8C%E7%A4%BE"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "city-160",
+      "name": "香風園",
+      "category": "Kouhuuen",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Kouhuuen",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.city.sakaide.lg.jp/soshiki/tosiseibi/kouhuuen.html",
+        "https://ja.wikipedia.org/wiki/%E9%A6%99%E9%A2%A8%E5%9C%92"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "p2970",
+      "name": "鎌田共済会郷土博物館",
+      "category": "Kamada Benefit Society Museum of Local History",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Kamada_Benefit_Society_Museum_of_Local_History",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.my-kagawa.jp/point/2970",
+        "https://ja.wikipedia.org/wiki/%E9%8E%8C%E7%94%B0%E5%85%B1%E6%B8%88%E4%BC%9A%E9%83%B7%E5%9C%9F%E5%8D%9A%E7%89%A9%E9%A4%A8"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "setoohhashi-2353",
+      "name": "瀬戸大橋記念館（かがわこどもの駅）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.setoohhashi.com/",
+        "https://ja.wikipedia.org/wiki/%E7%80%AC%E6%88%B8%E5%A4%A7%E6%A9%8B%E8%A8%98%E5%BF%B5%E9%A4%A8%EF%BC%88%E3%81%8B%E3%81%8C%E3%82%8F%E3%81%93%E3%81%A9%E3%82%82%E3%81%AE%E9%A7%85%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p3214",
+      "name": "尾ノ瀬山展望台",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/3214",
+        "https://ja.wikipedia.org/wiki/%E5%B0%BE%E3%83%8E%E7%80%AC%E5%B1%B1%E5%B1%95%E6%9C%9B%E5%8F%B0"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-155",
+      "name": "坂出市塩業資料館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/engyou-musium.html",
+        "https://ja.wikipedia.org/wiki/%E5%9D%82%E5%87%BA%E5%B8%82%E5%A1%A9%E6%A5%AD%E8%B3%87%E6%96%99%E9%A4%A8"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "kotohirakankou-77",
+      "name": "琴平町歴史民俗資料館",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.kotohirakankou.jp/spot/see/entry-113.html",
+        "https://ja.wikipedia.org/wiki/%E7%90%B4%E5%B9%B3%E7%94%BA%E6%AD%B4%E5%8F%B2%E6%B0%91%E4%BF%97%E8%B3%87%E6%96%99%E9%A4%A8"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "kotohira",
+      "name": "琴平海洋博物館（海の科学館）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.kotohira.kaiyohakubutukan.or.jp/",
+        "https://ja.wikipedia.org/wiki/%E7%90%B4%E5%B9%B3%E6%B5%B7%E6%B4%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%EF%BC%88%E6%B5%B7%E3%81%AE%E7%A7%91%E5%AD%A6%E9%A4%A8%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "marugame-happylife-379",
+      "name": "丸亀市手島自然教育センター",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.marugame-happylife.jp/islands/info/entry-139.html",
+        "https://ja.wikipedia.org/wiki/%E4%B8%B8%E4%BA%80%E5%B8%82%E6%89%8B%E5%B3%B6%E8%87%AA%E7%84%B6%E6%95%99%E8%82%B2%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "sanukimannopark",
+      "name": "国営讃岐まんのう公園",
+      "category": "Sanuki Mannou National Park",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Sanuki_Mannou_National_Park",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://sanukimannopark.jp/event",
+        "https://ja.wikipedia.org/wiki/%E5%9B%BD%E5%96%B6%E8%AE%83%E5%B2%90%E3%81%BE%E3%82%93%E3%81%AE%E3%81%86%E5%85%AC%E5%9C%92"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "p121",
+      "name": "虹の滝",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/121",
+        "https://ja.wikipedia.org/wiki/%E8%99%B9%E3%81%AE%E6%BB%9D"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "p304",
+      "name": "せとしるべ（高松港玉藻防波堤灯台）",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/304",
+        "https://ja.wikipedia.org/wiki/%E3%81%9B%E3%81%A8%E3%81%97%E3%82%8B%E3%81%B9%EF%BC%88%E9%AB%98%E6%9D%BE%E6%B8%AF%E7%8E%89%E8%97%BB%E9%98%B2%E6%B3%A2%E5%A0%A4%E7%81%AF%E5%8F%B0%EF%BC%89"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-2484",
+      "name": "古代山城屋嶋城",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.city.takamatsu.kagawa.jp/4727.html",
+        "https://ja.wikipedia.org/wiki/%E5%8F%A4%E4%BB%A3%E5%B1%B1%E5%9F%8E%E5%B1%8B%E5%B6%8B%E5%9F%8E"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-199",
+      "name": "津田の松原・琴林公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5865.html",
+        "https://ja.wikipedia.org/wiki/%E6%B4%A5%E7%94%B0%E3%81%AE%E6%9D%BE%E5%8E%9F%E3%83%BB%E7%90%B4%E6%9E%97%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-183",
+      "name": "大串自然公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5863.html",
+        "https://ja.wikipedia.org/wiki/%E5%A4%A7%E4%B8%B2%E8%87%AA%E7%84%B6%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "city-187",
+      "name": "県立亀鶴公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5862.html",
+        "https://ja.wikipedia.org/wiki/%E7%9C%8C%E7%AB%8B%E4%BA%80%E9%B6%B4%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "ikoinomori",
+      "name": "大滝大川県立自然公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.ikoinomori.jp/index.html",
+        "https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%BB%9D%E5%A4%A7%E5%B7%9D%E7%9C%8C%E7%AB%8B%E8%87%AA%E7%84%B6%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "setoohhashi",
+      "name": "瀬戸大橋記念公園",
+      "category": "Great Seto Bridge Memorial Park",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Great_Seto_Bridge_Memorial_Park",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://www.setoohhashi.com/",
+        "https://ja.wikipedia.org/wiki/%E7%80%AC%E6%88%B8%E5%A4%A7%E6%A9%8B%E8%A8%98%E5%BF%B5%E5%85%AC%E5%9C%92"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "tadotsu-kanko-243",
+      "name": "桃陵公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "http://www.tadotsu-kanko.jp/sightseeing/entry-29.html",
+        "https://ja.wikipedia.org/wiki/%E6%A1%83%E9%99%B5%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "town",
+      "name": "ほたる見公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.town.manno.lg.jp/site/miryoku-hasshin/5665.html",
+        "https://ja.wikipedia.org/wiki/%E3%81%BB%E3%81%9F%E3%82%8B%E8%A6%8B%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-47",
+      "name": "一の宮公園・一の宮海岸海水浴場・キャンプ場",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.kanonji.kagawa.jp/soshiki/21/329.html",
+        "https://ja.wikipedia.org/wiki/%E4%B8%80%E3%81%AE%E5%AE%AE%E5%85%AC%E5%9C%92%E3%83%BB%E4%B8%80%E3%81%AE%E5%AE%AE%E6%B5%B7%E5%B2%B8%E6%B5%B7%E6%B0%B4%E6%B5%B4%E5%A0%B4%E3%83%BB%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "mitoyo-kanko-127",
+      "name": "朝日山森林公園",
+      "category": "Asahiyama Shinrin Park",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Asahiyama_Shinrin_Park",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.mitoyo-kanko.com/facility/mtasahishinrinpark/",
+        "https://ja.wikipedia.org/wiki/%E6%9C%9D%E6%97%A5%E5%B1%B1%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9C%92"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "mizupark-4344",
+      "name": "香川用水記念公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.mizupark.com/",
+        "https://ja.wikipedia.org/wiki/%E9%A6%99%E5%B7%9D%E7%94%A8%E6%B0%B4%E8%A8%98%E5%BF%B5%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "mitoyo-kanko-141",
+      "name": "戸川ダム公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.mitoyo-kanko.com/facility/togawadam/",
+        "https://ja.wikipedia.org/wiki/%E6%88%B8%E5%B7%9D%E3%83%80%E3%83%A0%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "michitoyo-oh",
+      "name": "道の駅「とよはま」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://michitoyo-oh.com/",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%80%8C%E3%81%A8%E3%82%88%E3%81%AF%E3%81%BE%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "town-310",
+      "name": "土渕海峡・フレトピア公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.town.tonosho.kagawa.jp/kanko/sightseeing/581.html",
+        "https://ja.wikipedia.org/wiki/%E5%9C%9F%E6%B8%95%E6%B5%B7%E5%B3%A1%E3%83%BB%E3%83%95%E3%83%AC%E3%83%88%E3%83%94%E3%82%A2%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "shodoshima",
+      "name": "道の駅・海の駅「小豆島ふるさと村」",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.shodoshima.jp/",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%83%BB%E6%B5%B7%E3%81%AE%E9%A7%85%E3%80%8C%E5%B0%8F%E8%B1%86%E5%B3%B6%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E6%9D%91%E3%80%8D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p287",
+      "name": "玉藻防波堤",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/287",
+        "https://ja.wikipedia.org/wiki/%E7%8E%89%E8%97%BB%E9%98%B2%E6%B3%A2%E5%A0%A4"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p122",
+      "name": "白山",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/122",
+        "https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B1%B1"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "ogijima",
+      "name": "男木島",
+      "category": "Ogijima",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Ogijima",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://ogijima.site/",
+        "https://ja.wikipedia.org/wiki/%E7%94%B7%E6%9C%A8%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "mikicho-kanko",
+      "name": "獄山",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://mikicho-kanko.com/topics/748.html",
+        "https://ja.wikipedia.org/wiki/%E7%8D%84%E5%B1%B1"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p120",
+      "name": "高仙山山頂",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/120",
+        "https://ja.wikipedia.org/wiki/%E9%AB%98%E4%BB%99%E5%B1%B1%E5%B1%B1%E9%A0%82"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p422",
+      "name": "生子山公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/422",
+        "https://ja.wikipedia.org/wiki/%E7%94%9F%E5%AD%90%E5%B1%B1%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-175",
+      "name": "常盤公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/tokiwa-park.html",
+        "https://ja.wikipedia.org/wiki/%E5%B8%B8%E7%9B%A4%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "city-157",
+      "name": "鎌田池公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sakaide.lg.jp/map/kamadaikekouen.html",
+        "https://ja.wikipedia.org/wiki/%E9%8E%8C%E7%94%B0%E6%B1%A0%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "town-9",
+      "name": "滝宮公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.town.ayagawa.lg.jp/docs/2017121900032/",
+        "https://ja.wikipedia.org/wiki/%E6%BB%9D%E5%AE%AE%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "tadotsu-kanko-242",
+      "name": "道隆寺",
+      "category": "Doryuji",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Doryuji",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://www.tadotsu-kanko.jp/sightseeing/entry-31.html",
+        "https://ja.wikipedia.org/wiki/%E9%81%93%E9%9A%86%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "mandaraji",
+      "name": "曼荼羅寺",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.mandaraji.jp/",
+        "https://ja.wikipedia.org/wiki/%E6%9B%BC%E8%8D%BC%E7%BE%85%E5%AF%BA"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "takinomiyatenmangu",
+      "name": "滝宮天満宮",
+      "category": "Shintō",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Shintō",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "http://www.takinomiyatenmangu.com/",
+        "https://ja.wikipedia.org/wiki/%E6%BB%9D%E5%AE%AE%E5%A4%A9%E6%BA%80%E5%AE%AE"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "town-104",
+      "name": "満濃池",
+      "category": "Mannoike",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Mannoike",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.town.manno.lg.jp/site/bunkazai/4740.html",
+        "https://ja.wikipedia.org/wiki/%E6%BA%80%E6%BF%83%E6%B1%A0"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "kotohirakankou-2576",
+      "name": "琴平公園",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.kotohirakankou.jp/spot/see/entry-110.html",
+        "https://ja.wikipedia.org/wiki/%E7%90%B4%E5%B9%B3%E5%85%AC%E5%9C%92"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "marugame-happylife-115",
+      "name": "本島",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.marugame-happylife.jp/islands/about/honshima/",
+        "https://ja.wikipedia.org/wiki/%E6%9C%AC%E5%B3%B6"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "marugame-happylife-459",
+      "name": "広島",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.marugame-happylife.jp/islands/about/hiroshima/",
+        "https://ja.wikipedia.org/wiki/%E5%BA%83%E5%B3%B6"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "kotohirakankou-79",
+      "name": "鞘橋",
+      "category": "Saya-bridge, Kotohira",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Saya-bridge,_Kotohira",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.kotohirakankou.jp/spot/see/entry-109.html",
+        "https://ja.wikipedia.org/wiki/%E9%9E%98%E6%A9%8B"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "marugame-happylife-460",
+      "name": "手島",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.marugame-happylife.jp/islands/about/teshima/",
+        "https://ja.wikipedia.org/wiki/%E6%89%8B%E5%B3%B6"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "city-502",
+      "name": "西行法師の道",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/6persons-saigyou-syoukai.html",
+        "https://ja.wikipedia.org/wiki/%E8%A5%BF%E8%A1%8C%E6%B3%95%E5%B8%AB%E3%81%AE%E9%81%93"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-3696",
+      "name": "太助灯籠",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.marugame.lg.jp/page/3067.html",
+        "https://ja.wikipedia.org/wiki/%E5%A4%AA%E5%8A%A9%E7%81%AF%E7%B1%A0"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p71",
+      "name": "牛屋口",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/71",
+        "https://ja.wikipedia.org/wiki/%E7%89%9B%E5%B1%8B%E5%8F%A3"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "tadotsu-kanko-479",
+      "name": "高見島",
+      "category": "Takamijima",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Takamijima",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.tadotsu-kanko.jp/sightseeing/entry-38.html",
+        "https://ja.wikipedia.org/wiki/%E9%AB%98%E8%A6%8B%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "kotohirakankou-80",
+      "name": "大センダン",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.kotohirakankou.jp/spot/see/entry-116.html",
+        "https://ja.wikipedia.org/wiki/%E5%A4%A7%E3%82%BB%E3%83%B3%E3%83%80%E3%83%B3"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "sakaide-kankou-463",
+      "name": "岩黒島",
+      "category": "Iwakurojima",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Iwakurojima",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://sakaide-kankou.com/spots/3615/",
+        "https://ja.wikipedia.org/wiki/%E5%B2%A9%E9%BB%92%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "marugame-happylife-458",
+      "name": "牛島",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.marugame-happylife.jp/islands/about/ushijima/",
+        "https://ja.wikipedia.org/wiki/%E7%89%9B%E5%B3%B6"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "koyamaji",
+      "name": "甲山寺",
+      "category": "Koyamaji",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Koyamaji",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://koyamaji.or.jp/",
+        "https://ja.wikipedia.org/wiki/%E7%94%B2%E5%B1%B1%E5%AF%BA"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "city-158",
+      "name": "城山",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/kiyama.html",
+        "https://ja.wikipedia.org/wiki/%E5%9F%8E%E5%B1%B1"
+      ],
+      "note": "Wikipedia: 本文に「香川」が出てこない"
+    },
+    {
+      "spot_id": "city-500",
+      "name": "城山不動の滝",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/fudounotaki.html",
+        "https://ja.wikipedia.org/wiki/%E5%9F%8E%E5%B1%B1%E4%B8%8D%E5%8B%95%E3%81%AE%E6%BB%9D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "sakaide-kankou-462",
+      "name": "櫃石島",
+      "category": "Hitsuishijima",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Hitsuishijima",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://sakaide-kankou.com/spots/3608/",
+        "https://ja.wikipedia.org/wiki/%E6%AB%83%E7%9F%B3%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "city-178",
+      "name": "府中湖",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/hutyuuko.html",
+        "https://ja.wikipedia.org/wiki/%E5%BA%9C%E4%B8%AD%E6%B9%96"
+      ],
+      "note": "Wikipedia: 見出しが施設名と違う（府中ダム）"
+    },
+    {
+      "spot_id": "marugame-happylife-461",
+      "name": "小手島",
+      "category": "Oteshima",
+      "category_url": "https://commons.wikimedia.org/wiki/Category:Oteshima",
+      "resolved_from": "wikipedia",
+      "tried": [
+        "https://www.marugame-happylife.jp/islands/about/oteshima/",
+        "https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%89%8B%E5%B3%B6"
+      ],
+      "note": ""
+    },
+    {
+      "spot_id": "city-496",
+      "name": "沙弥島",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/syamijima.html",
+        "https://ja.wikipedia.org/wiki/%E6%B2%99%E5%BC%A5%E5%B3%B6"
+      ],
+      "note": "Wikipedia: コモンズへのリンクが無い"
+    },
+    {
+      "spot_id": "town-3006",
+      "name": "木戸の馬蹄石",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.town.manno.lg.jp/site/bunkazai/1704.html",
+        "https://ja.wikipedia.org/wiki/%E6%9C%A8%E6%88%B8%E3%81%AE%E9%A6%AC%E8%B9%84%E7%9F%B3"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "88shikokuhenro-174",
+      "name": "天皇寺",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://88shikokuhenro.jp/79tennoji/",
+        "https://ja.wikipedia.org/wiki/%E5%A4%A9%E7%9A%87%E5%AF%BA"
+      ],
+      "note": "Wikipedia: 曖昧さ回避のページ"
+    },
+    {
+      "spot_id": "shorinjikempo",
+      "name": "金剛禅総本山少林寺",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.shorinjikempo.or.jp/religious/",
+        "https://ja.wikipedia.org/wiki/%E9%87%91%E5%89%9B%E7%A6%85%E7%B7%8F%E6%9C%AC%E5%B1%B1%E5%B0%91%E6%9E%97%E5%AF%BA"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p81",
+      "name": "富士見町の並び燈籠",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/81",
+        "https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%A3%AB%E8%A6%8B%E7%94%BA%E3%81%AE%E4%B8%A6%E3%81%B3%E7%87%88%E7%B1%A0"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "p3007",
+      "name": "小橋滝",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.my-kagawa.jp/point/3007",
+        "https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%A9%8B%E6%BB%9D"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
+    },
+    {
+      "spot_id": "city-64",
+      "name": "豊浜八幡神社",
+      "category": "",
+      "category_url": "",
+      "resolved_from": "none",
+      "tried": [
+        "https://www.city.kanonji.kagawa.jp/soshiki/21/14031.html",
+        "https://ja.wikipedia.org/wiki/%E8%B1%8A%E6%B5%9C%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE"
+      ],
+      "note": "Wikipedia: 記事が無い（status=404）"
     }
   ]
 }
