@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{# プライバシーポリシー。3 言語とも同じ内容を出す（英語・繁体字の利用者が読むのはこのページで、
+   アフィリエイトの審査でも求められる）。書いてあるのは実際にしていることだけにする #}
+{% block content %}
+<h1>{{ t('privacy.heading') }}</h1>
+<p class="lead">{{ t('privacy.lead') }}</p>
+
+<h2 class="section-head">{{ t('privacy.form_title') }}</h2>
+<ul class="links">
+  <li>{{ t('privacy.form_what') }}</li>
+  <li>{{ t('privacy.form_ai') }}</li>
+  <li>{{ t('privacy.form_issue') }}</li>
+  <li>{{ t('privacy.form_keep') }}</li>
+</ul>
+
+<h2 class="section-head">{{ t('privacy.site_title') }}</h2>
+<ul class="links">
+  <li>{{ t('privacy.cookies') }}</li>
+  {% if analytics %}<li>{{ t('privacy.analytics') }}</li>{% endif %}
+  <li>{{ t('privacy.maps') if has_maps else t('privacy.maps_link_only') }}</li>
+  <li>{{ t('privacy.ads_live') if ads_live else t('privacy.ads_none') }}</li>
+</ul>
+
+<h2 class="section-head">{{ t('privacy.contact_title') }}</h2>
+<p>
+  {{ t('privacy.contact') }}
+  {%- if site.operator.contact.startswith("http") %}
+  <a href="{{ site.operator.contact }}" rel="noopener" target="_blank">{{ t('trust.contact_link') }}</a>
+  {%- else %} {{ site.operator.contact }}{% endif %}
+</p>
+<p class="links"><a href="{{ locale.url_path('about/') }}">{{ t('nav.about') }}</a></p>
+{% endblock %}

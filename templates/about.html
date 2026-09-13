@@ -1,11 +1,45 @@
 {% extends "base.html" %}
+{# 運営者情報。文言は i18n/<locale>.yaml から引く（事実は構造化データ、文言はカタログ。ADR 0005）。
+   運営者名は site.toml の [operator] name を 3 言語共通で出す。役割の語（運営者 / Operator /
+   營運者）はカタログ側にあるので、名前に「運営」を足すと重なる #}
 {% block content %}
 <h1>{{ t('about.heading') }}</h1>
+<p class="lead">{{ t('about.lead') }}</p>
+
+<h2 class="section-head">{{ t('about.how_title') }}</h2>
+<ul class="links">
+  <li>{{ t('about.how_source') }}</li>
+  <li>{{ t('about.how_verdict') }}</li>
+  <li>{{ t('about.how_quote') }}</li>
+  <li>{{ t('about.how_stale') }}</li>
+</ul>
+
+<h2 class="section-head">{{ t('about.operator_title') }}</h2>
 <dl class="fact-list">
   <dt>{{ t('about.operator') }}</dt><dd>{{ site.operator.name }}</dd>
-  <dt>{{ t('trust.contact') }}</dt><dd>{{ site.operator.contact }}</dd>
+  <dt>{{ t('trust.contact') }}</dt>
+  <dd>
+    {%- if site.operator.contact.startswith("http") -%}
+    <a href="{{ site.operator.contact }}" rel="noopener" target="_blank">{{ t('trust.contact_link') }}</a>
+    {%- else -%}{{ site.operator.contact }}{%- endif -%}
+  </dd>
 </dl>
+<p class="note">{{ t('about.contact_note') }}</p>
+
+<h2 class="section-head">{{ t('about.bot_title') }}</h2>
+<p>{{ t('about.bot_text') }}</p>
+<pre class="scroll-x"><code>{{ user_agent }}</code></pre>
+
+<h2 class="section-head">{{ t('about.ads_title') }}</h2>
+{# 契約が済んで広告を出すときは about.ads_live に差し替える（ADR 0006・akiya-atlas ADR 0010）。
+   「まだ無い」ことを明記しておき、出したその日に開示文へ変える #}
+<p>{{ t('about.ads_live') if ads_live else t('about.ads_none') }}</p>
+
 <h2 class="section-head">{{ t('about.disclaimer_title') }}</h2>
 <p>{{ t('about.disclaimer') }}</p>
-{% if locale.code != 'ja' %}<p class="note" lang="ja">運営者・免責</p>{% endif %}
+
+<p class="links">
+  <a href="{{ locale.url_path('data/') }}">{{ t('about.data_link') }}</a>
+  <a href="{{ locale.url_path('privacy/') }}">{{ t('nav.privacy') }}</a>
+</p>
 {% endblock %}

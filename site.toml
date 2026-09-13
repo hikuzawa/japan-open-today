@@ -32,7 +32,12 @@ path = "zh-hant"
 label = "繁體中文"
 
 [operator]
-name = "準備中"
+# 3 言語共通の 1 つの名前にする。役割の語（運営者 / Operator / 營運者）は i18n の
+# trust.operator にあるので、名前に「運営」を足すと日本語ページで重なる。
+# sitemill の [operator] name はロケール別に持てない（ADR 0016）
+name = "Japan Open Today"
+# 連絡先は Google フォーム（tools/contact_form/ の setup() で作る）。
+# フォームができるまでは「準備中」のまま。ダミーの URL は置かない
 contact = "準備中"
 
 [paths]

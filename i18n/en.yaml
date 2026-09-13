@@ -4,6 +4,7 @@ site:
   tagline: What is open in Kagawa today
   description: Opening days and hours for museums, gardens, shrines and ferries in Kagawa, Japan, for today and the next seven days. Every fact is taken from the official page and quoted.
 nav:
+  privacy: Privacy
   today: Today
   transport: Transport
   about: About
@@ -111,14 +112,83 @@ trust:
   contact: Contact
   details: details
 about:
-  heading: About
+  heading: About this site
+  lead: >-
+    Whether the museums, gardens, shrines and ferries of Kagawa are open today and this week, based
+    only on what their official pages say. We do not book or arrange anything for you.
+  how_title: How this site is made
+  how_source: >-
+    Opening hours, closing days and fees are fetched daily from the official pages of each facility
+    and transport operator, and from the prefecture, the municipalities and the tourism
+    associations. We do not reproduce their descriptive text.
+  how_verdict: >-
+    Each day is shown as open, closed or unknown. When there is not enough to go on, or the sources
+    disagree, we say unknown and send you to the official page rather than guess.
+  how_quote: >-
+    Times and figures are taken from the wording of the official page by machine. Every verdict
+    carries the quoted wording, the link to the source and the time it was fetched.
+  how_stale: >-
+    If we have not been able to fetch a facility's official page for 14 days, we fall back to
+    unknown even on a day the rules say it should be open.
+  operator_title: Operator
   operator: Operator
+  contact_note: >-
+    Corrections to what we publish, messages from facilities and operators, and requests to stop
+    crawling a site are all welcome through the contact below. How we handle what you send is set
+    out in the privacy policy.
+  bot_title: About our crawler
+  bot_text: >-
+    This site fetches pages with the User-Agent below. It respects robots.txt and leaves several
+    seconds between requests to the same site. If you would like us to stop crawling your site,
+    please tell us through the contact above.
+  ads_title: Advertising
+  ads_none: >-
+    We currently carry no advertising or affiliate links. If we do, the placement will say so, and
+    it will not affect which places we list or the order they appear in.
+  ads_live: >-
+    Some placements carry advertising (affiliate links). Each is labelled as advertising, and we may
+    be paid when you book through one. It does not affect which places we list or their order.
+  data_link: Where the data comes from
   disclaimer_title: Disclaimer
   disclaimer: >-
     This site collects opening hours, closing days and admission fees from the official pages of
     each facility and transport operator, and links back to them. We do not reproduce their
     descriptive text. The verdict for each day is computed from the information as fetched; where it
     cannot be confirmed we say "unknown". Please check the official page before you travel.
+privacy:
+  heading: Privacy policy
+  lead: What we hold when you write to us, and which outside services this site uses.
+  form_title: What the contact form collects
+  form_what: >-
+    What you enter in the contact form (name, email address, category, message, reply language and
+    the time of sending) is stored through Google Forms in the operator's Google spreadsheet, and
+    used to answer you and to keep a record of that answer.
+  form_ai: >-
+    Classifying your message and drafting the automatic reply use AI (Claude, by Anthropic), so the
+    message is sent to Anthropic's API. The automatic reply says so.
+  form_issue: >-
+    Where we need to act on a message, such as a correction, we copy part of it and the URL it
+    concerns into the operator's private task tracker (a GitHub issue). Your name and email address
+    are not copied.
+  form_keep: >-
+    We keep what you send as a record for a period after the matter is closed, and do not pass it to
+    third parties except as required by law. Ask through the same form if you want it deleted.
+  site_title: Browsing this site
+  cookies: The site itself does not use cookies.
+  analytics: >-
+    We use Cloudflare Web Analytics to see how the site is used. It sets no cookies and collects
+    nothing that identifies you: the page URL, the referrer, an approximate region, the browser and
+    how long the page took to load.
+  maps: >-
+    Pages with a map embed Google Maps. Loading the map contacts Google, and Google's privacy policy
+    applies to that.
+  maps_link_only: >-
+    Maps are linked to Google Maps rather than embedded, so opening a page does not contact Google.
+  ads_none: We carry no advertising or affiliate links.
+  ads_live: >-
+    Some placements carry advertising (affiliate links); the advertiser's network may set cookies.
+  contact_title: Contact
+  contact: "Questions about this policy are welcome here:"
 data:
   heading: Data
   lead: Where each piece of information comes from.

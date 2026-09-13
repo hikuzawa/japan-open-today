@@ -323,6 +323,9 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
         for rel, template, key, title in (
             ("about/", "about.html", "nav.about", "About"),
             ("data/", "data.html", "nav.data", "Data"),
+            # プライバシーポリシー。実際にしていること（フォーム・AI・解析・地図の埋め込み）を
+            # 3 言語で出す。アフィリエイトの審査でも求められる
+            ("privacy/", "privacy.html", "nav.privacy", "Privacy"),
         ):
             pages.append(
                 Page(
@@ -343,6 +346,13 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         "spots": ds.spots,
                         "assets": assets,
                         "holidays": holidays,
+                        "user_agent": ws.site.user_agent,
+                        # 地図を埋め込むのは鍵があるときだけ。無いときは外部リンクなので、
+                        # プライバシーポリシーの書き方も変わる
+                        "has_maps": bool(ws.secrets.google_maps_embed_key),
+                        "analytics": bool(ws.secrets.cf_web_analytics_token),
+                        # 広告はまだ 1 枠も出していない（ADR 0006）。出す日にここが True になる
+                        "ads_live": False,
                     },
                     trust=_trust(ws, now=now, sources=all_sources, count=len(ds.spots)),
                 )

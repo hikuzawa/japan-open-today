@@ -50,9 +50,16 @@ def test_crawl_is_polite(site: SiteConfig) -> None:
     assert site.crawl.max_interval_days <= 7
 
 
-def test_operator_is_not_yet_published(site: SiteConfig) -> None:
-    """運営者名が決まるまでは「準備中」。決めたらこのテストを実際の値に直す（human-tasks 8）。"""
-    assert site.operator.name == "準備中"
+def test_the_operator_name_is_one_string_for_all_three_locales(site: SiteConfig) -> None:
+    """運営者名は 3 言語共通の 1 つにする（2026-09-13 決定）。
+
+    信頼ブロックの見出しが「運営者 / Operator / 營運者」とロケール別に出るので、名前の側に
+    「運営」を足すと日本語ページで重なる。sitemill の `[operator] name` はロケール別に
+    持てないので、和文を混ぜると英語・繁体字のページに日本語が 1 語残る。
+    """
+    assert site.operator.name == "Japan Open Today"
+    # 連絡先はフォームができるまで「準備中」。ダミーの URL は置かない（ADR 0006）
+    assert site.operator.contact == "準備中" or site.operator.contact.startswith("https://")
 
 
 def test_three_locales_with_japanese_at_the_root(site: SiteConfig) -> None:
