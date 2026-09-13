@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "塩飽勤番所跡",
+      "asset_id": "10b1340f4185d2a2",
+      "author": "663highland",
+      "byte_size": 319127,
+      "content_type": "image/jpeg",
+      "credit_text": "Shiwaku-kinbansho03s3200.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:52:29+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:52:29Z",
+        "credit_text": "出典: Shiwaku-kinbansho03s3200.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Shiwaku-kinbansho03s3200.jpg",
+        "license_id": "CC-BY-2.5",
+        "reason": "whitelist:CC-BY-2.5"
+      },
+      "local_path": "10b1340f4185d2a2.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Shiwaku-kinbansho03s3200.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Shiwaku-kinbansho03s3200.jpg/1280px-Shiwaku-kinbansho03s3200.jpg",
+      "tags": [
+        "marugame"
+      ]
+    }
+  ],
+  "source_id": "marugame-happylife-112"
+}

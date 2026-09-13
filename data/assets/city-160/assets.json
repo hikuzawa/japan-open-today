@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "香風園",
+      "asset_id": "42e3b2a84bae3385",
+      "author": "663highland",
+      "byte_size": 370942,
+      "content_type": "image/jpeg",
+      "credit_text": "Kofuen Sakaide01s3200.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:53:20+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:53:20Z",
+        "credit_text": "出典: Kofuen Sakaide01s3200.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Kofuen_Sakaide01s3200.jpg",
+        "license_id": "CC-BY-2.5",
+        "reason": "whitelist:CC-BY-2.5"
+      },
+      "local_path": "42e3b2a84bae3385.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kofuen_Sakaide01s3200.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Kofuen_Sakaide01s3200.jpg/1280px-Kofuen_Sakaide01s3200.jpg",
+      "tags": [
+        "sakaide"
+      ]
+    }
+  ],
+  "source_id": "city-160"
+}

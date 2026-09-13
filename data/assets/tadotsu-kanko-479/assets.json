@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "高見島",
+      "asset_id": "b5fecaa3b9dc3bc3",
+      "author": "Bakkai",
+      "byte_size": 262407,
+      "content_type": "image/jpeg",
+      "credit_text": "Takamijima.jpg by Bakkai（クリエイティブ・コモンズ 表示 3.0（CC BY 3.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:54:58+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:54:58Z",
+        "credit_text": "出典: Takamijima.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 3.0（CC BY 3.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/3.0/deed.en\">Attribution 3.0 U",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Takamijima.jpg",
+        "license_id": "CC-BY-3.0",
+        "reason": "whitelist:CC-BY-3.0"
+      },
+      "local_path": "b5fecaa3b9dc3bc3.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Takamijima.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Takamijima.jpg/1280px-Takamijima.jpg",
+      "tags": [
+        "marugame"
+      ]
+    }
+  ],
+  "source_id": "tadotsu-kanko-479"
+}

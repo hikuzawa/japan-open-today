@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "ゴールドタワー",
+      "asset_id": "c81441f991b1576a",
+      "author": "おにく",
+      "byte_size": 649076,
+      "content_type": "image/jpeg",
+      "credit_text": "Gold Tower and Red plum blossom.jpg by おにく（CC0 1.0（パブリックドメイン提供））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:39:35+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:39:35Z",
+        "credit_text": "出典: Gold Tower and Red plum blossom.jpg / Wikimedia Commons（CC0 1.0（パブリックドメイン提供））",
+        "evidence_text": "ass=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/zero/1.0/deed.en\">CC0 1.0 Univ",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Gold_Tower_and_Red_plum_blossom.jpg",
+        "license_id": "CC0-1.0",
+        "reason": "whitelist:CC0-1.0"
+      },
+      "local_path": "c81441f991b1576a.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Gold_Tower_and_Red_plum_blossom.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Gold_Tower_and_Red_plum_blossom.jpg/1280px-Gold_Tower_and_Red_plum_blossom.jpg",
+      "tags": [
+        "sakaide"
+      ]
+    }
+  ],
+  "source_id": "goldtower"
+}

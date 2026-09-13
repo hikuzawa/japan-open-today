@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "サンポート高松",
+      "asset_id": "a417c031b2c373b6",
+      "author": "Pagemoral",
+      "byte_size": 344084,
+      "content_type": "image/jpeg",
+      "credit_text": "Sunport-takamatsu.jpg by Pagemoral（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:44:54+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:44:54Z",
+        "credit_text": "出典: Sunport-takamatsu.jpg / Wikimedia Commons（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））",
+        "evidence_text": "icensetpl\" style=\"display:none\"> Public domain Public domain <span class=\"licensetpl",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Sunport-takamatsu.jpg",
+        "license_id": "public-domain",
+        "reason": "whitelist:public-domain"
+      },
+      "local_path": "a417c031b2c373b6.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Sunport-takamatsu.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Sunport-takamatsu.jpg/1280px-Sunport-takamatsu.jpg",
+      "tags": [
+        "takamatsu"
+      ]
+    }
+  ],
+  "source_id": "takamatsu"
+}

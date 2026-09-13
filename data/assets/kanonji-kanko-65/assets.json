@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "萩原寺",
+      "asset_id": "25db87aee4c95f3d",
+      "author": "Goryeo-Dynasty artist",
+      "byte_size": 797603,
+      "content_type": "image/jpeg",
+      "credit_text": "Amitabha (Hagiwaraji Kanonji).jpg by Goryeo-Dynasty artist（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:49:53+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:49:53Z",
+        "credit_text": "出典: Amitabha (Hagiwaraji Kanonji).jpg / Wikimedia Commons（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））",
+        "evidence_text": "icensetpl\" style=\"display:none\"> Public domain Public domain <span class=\"licensetpl",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Amitabha_(Hagiwaraji_Kanonji).jpg",
+        "license_id": "public-domain",
+        "reason": "whitelist:public-domain"
+      },
+      "local_path": "25db87aee4c95f3d.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Amitabha_(Hagiwaraji_Kanonji).jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Amitabha_%28Hagiwaraji_Kanonji%29.jpg/1280px-Amitabha_%28Hagiwaraji_Kanonji%29.jpg",
+      "tags": [
+        "mitoyo"
+      ]
+    }
+  ],
+  "source_id": "kanonji-kanko-65"
+}

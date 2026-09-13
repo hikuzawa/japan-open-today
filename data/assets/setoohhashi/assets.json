@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "瀬戸大橋記念公園",
+      "asset_id": "be42b3e3d7521748",
+      "author": "DVMG",
+      "byte_size": 171590,
+      "content_type": "image/jpeg",
+      "credit_text": "Bannosumidoricho - panoramio (1).jpg by DVMG（クリエイティブ・コモンズ 表示 3.0（CC BY 3.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:53:47+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:53:47Z",
+        "credit_text": "出典: Bannosumidoricho - panoramio (1).jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 3.0（CC BY 3.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/3.0/deed.en\">Attribution 3.0 U",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Bannosumidoricho_-_panoramio_(1).jpg",
+        "license_id": "CC-BY-3.0",
+        "reason": "whitelist:CC-BY-3.0"
+      },
+      "local_path": "be42b3e3d7521748.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Bannosumidoricho_-_panoramio_(1).jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Bannosumidoricho_-_panoramio_%281%29.jpg/1280px-Bannosumidoricho_-_panoramio_%281%29.jpg",
+      "tags": [
+        "sakaide"
+      ]
+    }
+  ],
+  "source_id": "setoohhashi"
+}

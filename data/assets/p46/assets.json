@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "有明浜",
+      "asset_id": "2cda16edb0389521",
+      "author": "kwakkun ( talk )",
+      "byte_size": 218110,
+      "content_type": "image/jpeg",
+      "credit_text": "Kotohiki park ariakehama.jpg by kwakkun ( talk )（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:47:17+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:47:17Z",
+        "credit_text": "出典: Kotohiki park ariakehama.jpg / Wikimedia Commons（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））",
+        "evidence_text": "icensetpl\" style=\"display:none\"> Public domain Public domain <span class=\"licensetpl",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Kotohiki_park_ariakehama.jpg",
+        "license_id": "public-domain",
+        "reason": "whitelist:public-domain"
+      },
+      "local_path": "2cda16edb0389521.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kotohiki_park_ariakehama.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Kotohiki_park_ariakehama.jpg/1280px-Kotohiki_park_ariakehama.jpg",
+      "tags": [
+        "mitoyo"
+      ]
+    }
+  ],
+  "source_id": "p46"
+}

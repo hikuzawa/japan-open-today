@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "国営讃岐まんのう公園",
+      "asset_id": "4398b3b90c910ca2",
+      "author": "osami",
+      "byte_size": 341339,
+      "content_type": "image/jpeg",
+      "credit_text": "Manoukpark Open space with grass201505.jpg by osami（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:53:37+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:53:37Z",
+        "credit_text": "出典: Manoukpark Open space with grass201505.jpg / Wikimedia Commons（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））",
+        "evidence_text": "icensetpl\" style=\"display:none\"> Public domain Public domain <span class=\"licensetpl",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Manoukpark_Open_space_with_grass201505.jpg",
+        "license_id": "public-domain",
+        "reason": "whitelist:public-domain"
+      },
+      "local_path": "4398b3b90c910ca2.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Manoukpark_Open_space_with_grass201505.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Manoukpark_Open_space_with_grass201505.jpg/1280px-Manoukpark_Open_space_with_grass201505.jpg",
+      "tags": [
+        "kotohira"
+      ]
+    }
+  ],
+  "source_id": "sanukimannopark"
+}

@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "鞘橋",
+      "asset_id": "5972acdae5fe4a68",
+      "author": "663highland",
+      "byte_size": 413992,
+      "content_type": "image/jpeg",
+      "credit_text": "Saya-bridge Kotohira Kagawa pref01s3s4500.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:54:51+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:54:51Z",
+        "credit_text": "出典: Saya-bridge Kotohira Kagawa pref01s3s4500.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Saya-bridge_Kotohira_Kagawa_pref01s3s4500.jpg",
+        "license_id": "CC-BY-2.5",
+        "reason": "whitelist:CC-BY-2.5"
+      },
+      "local_path": "5972acdae5fe4a68.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Saya-bridge_Kotohira_Kagawa_pref01s3s4500.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Saya-bridge_Kotohira_Kagawa_pref01s3s4500.jpg/1280px-Saya-bridge_Kotohira_Kagawa_pref01s3s4500.jpg",
+      "tags": [
+        "kotohira"
+      ]
+    }
+  ],
+  "source_id": "kotohirakankou-79"
+}

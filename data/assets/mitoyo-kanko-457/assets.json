@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "志々島",
+      "asset_id": "607a4f717085e1cd",
+      "author": "Bakkai",
+      "byte_size": 238842,
+      "content_type": "image/jpeg",
+      "credit_text": "Awashima and Shishijima.jpg by Bakkai（クリエイティブ・コモンズ 表示 3.0（CC BY 3.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:48:10+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:48:10Z",
+        "credit_text": "出典: Awashima and Shishijima.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 3.0（CC BY 3.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/3.0/deed.en\">Attribution 3.0 U",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Awashima_and_Shishijima.jpg",
+        "license_id": "CC-BY-3.0",
+        "reason": "whitelist:CC-BY-3.0"
+      },
+      "local_path": "607a4f717085e1cd.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Awashima_and_Shishijima.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Awashima_and_Shishijima.jpg/1280px-Awashima_and_Shishijima.jpg",
+      "tags": [
+        "mitoyo"
+      ]
+    }
+  ],
+  "source_id": "mitoyo-kanko-457"
+}

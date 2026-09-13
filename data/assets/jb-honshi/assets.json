@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "瀬戸大橋",
+      "asset_id": "45c8ff011318c13b",
+      "author": "r18 INO (PACHIMO)",
+      "byte_size": 207816,
+      "content_type": "image/jpeg",
+      "credit_text": "青の山山頂展望台からの瀬戸大橋 - panoramio.jpg by r18 INO (PACHIMO)（クリエイティブ・コモンズ 表示 3.0（CC BY 3.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:43:48+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:43:48Z",
+        "credit_text": "出典: 青の山山頂展望台からの瀬戸大橋 - panoramio.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 3.0（CC BY 3.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/3.0/deed.en\">Attribution 3.0 U",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:%E9%9D%92%E3%81%AE%E5%B1%B1%E5%B1%B1%E9%A0%82%E5%B1%95%E6%9C%9B%E5%8F%B0%E3%81%8B%E3%82%89%E3%81%AE%E7%80%AC%E6%88%B8%E5%A4%A7%E6%A9%8B_-_panoramio.jpg",
+        "license_id": "CC-BY-3.0",
+        "reason": "whitelist:CC-BY-3.0"
+      },
+      "local_path": "45c8ff011318c13b.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:%E9%9D%92%E3%81%AE%E5%B1%B1%E5%B1%B1%E9%A0%82%E5%B1%95%E6%9C%9B%E5%8F%B0%E3%81%8B%E3%82%89%E3%81%AE%E7%80%AC%E6%88%B8%E5%A4%A7%E6%A9%8B_-_panoramio.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/%E9%9D%92%E3%81%AE%E5%B1%B1%E5%B1%B1%E9%A0%82%E5%B1%95%E6%9C%9B%E5%8F%B0%E3%81%8B%E3%82%89%E3%81%AE%E7%80%AC%E6%88%B8%E5%A4%A7%E6%A9%8B_-_panoramio.jpg/1280px-%E9%9D%92%E3%81%AE%E5%B1%B1%E5%B1%B1%E9%A0%82%E5%B1%95%E6%9C%9B%E5%8F%B0%E3%81%8B%E3%82%89%E3%81%AE%E7%80%AC%E6%88%B8%E5%A4%A7%E6%A9%8B_-_panoramio.jpg",
+      "tags": [
+        "sakaide"
+      ]
+    }
+  ],
+  "source_id": "jb-honshi"
+}

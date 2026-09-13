@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "五色台",
+      "asset_id": "1e0083597fdef3b4",
+      "author": "Batholith",
+      "byte_size": 156203,
+      "content_type": "image/jpeg",
+      "credit_text": "Goshikidai Relief Map, SRTM-1.jpg by Batholith（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:46:11+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:46:11Z",
+        "credit_text": "出典: Goshikidai Relief Map, SRTM-1.jpg / Wikimedia Commons（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））",
+        "evidence_text": "icensetpl\" style=\"display:none\"> Public domain Public domain <span class=\"licensetpl",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Goshikidai_Relief_Map,_SRTM-1.jpg",
+        "license_id": "public-domain",
+        "reason": "whitelist:public-domain"
+      },
+      "local_path": "1e0083597fdef3b4.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Goshikidai_Relief_Map,_SRTM-1.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Goshikidai_Relief_Map%2C_SRTM-1.jpg/1280px-Goshikidai_Relief_Map%2C_SRTM-1.jpg",
+      "tags": [
+        "takamatsu"
+      ]
+    }
+  ],
+  "source_id": "city-161"
+}

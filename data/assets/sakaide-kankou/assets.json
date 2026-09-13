@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "与島",
+      "asset_id": "5ded38fb96bb821b",
+      "author": "hiroaki",
+      "byte_size": 543911,
+      "content_type": "image/jpeg",
+      "credit_text": "An alley in Yoshima island (22120765944).jpg by hiroaki（クリエイティブ・コモンズ 表示 2.0（CC BY 2.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:46:24+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:46:24Z",
+        "credit_text": "出典: An alley in Yoshima island (22120765944).jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.0（CC BY 2.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.0/deed.en\">Attribution 2.0 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:An_alley_in_Yoshima_island_(22120765944).jpg",
+        "license_id": "CC-BY-2.0",
+        "reason": "whitelist:CC-BY-2.0"
+      },
+      "local_path": "5ded38fb96bb821b.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:An_alley_in_Yoshima_island_(22120765944).jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/An_alley_in_Yoshima_island_%2822120765944%29.jpg/1280px-An_alley_in_Yoshima_island_%2822120765944%29.jpg",
+      "tags": [
+        "sakaide"
+      ]
+    }
+  ],
+  "source_id": "sakaide-kankou"
+}

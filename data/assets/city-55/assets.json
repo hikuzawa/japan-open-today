@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "琴弾八幡宮",
+      "asset_id": "ad1c9ece949ad0d0",
+      "author": "Kamakura-period painter",
+      "byte_size": 280909,
+      "content_type": "image/jpeg",
+      "credit_text": "Kotobiki-no-miya e-engi (Kanonji).jpg by Kamakura-period painter（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:48:37+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:48:37Z",
+        "credit_text": "出典: Kotobiki-no-miya e-engi (Kanonji).jpg / Wikimedia Commons（パブリックドメイン（著作権の保護期間が満了・権利者が放棄））",
+        "evidence_text": "icensetpl\" style=\"display:none\"> Public domain Public domain <span class=\"licensetpl",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Kotobiki-no-miya_e-engi_(Kanonji).jpg",
+        "license_id": "public-domain",
+        "reason": "whitelist:public-domain"
+      },
+      "local_path": "ad1c9ece949ad0d0.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kotobiki-no-miya_e-engi_(Kanonji).jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Kotobiki-no-miya_e-engi_%28Kanonji%29.jpg/1280px-Kotobiki-no-miya_e-engi_%28Kanonji%29.jpg",
+      "tags": [
+        "mitoyo"
+      ]
+    }
+  ],
+  "source_id": "city-55"
+}

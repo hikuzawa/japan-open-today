@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "こんぴら温泉郷",
+      "asset_id": "337200f13cd315a8",
+      "author": "663highland",
+      "byte_size": 327660,
+      "content_type": "image/jpeg",
+      "credit_text": "Kotohira-kadan07n4200.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:45:55+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:45:55Z",
+        "credit_text": "出典: Kotohira-kadan07n4200.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Kotohira-kadan07n4200.jpg",
+        "license_id": "CC-BY-2.5",
+        "reason": "whitelist:CC-BY-2.5"
+      },
+      "local_path": "337200f13cd315a8.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kotohira-kadan07n4200.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Kotohira-kadan07n4200.jpg/1280px-Kotohira-kadan07n4200.jpg",
+      "tags": [
+        "kotohira"
+      ]
+    }
+  ],
+  "source_id": "kotohirakankou"
+}

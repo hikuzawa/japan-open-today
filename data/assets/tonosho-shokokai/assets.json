@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "alt_text": "迷路のまち",
+      "asset_id": "d3cd520bdc012121",
+      "author": "663highland",
+      "byte_size": 536290,
+      "content_type": "image/jpeg",
+      "credit_text": "Meiro-no-machi Tonosho Kagawa pref Japan02s3.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T13:50:33+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-13T13:50:33Z",
+        "credit_text": "出典: Meiro-no-machi Tonosho Kagawa pref Japan02s3.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Meiro-no-machi_Tonosho_Kagawa_pref_Japan02s3.jpg",
+        "license_id": "CC-BY-2.5",
+        "reason": "whitelist:CC-BY-2.5"
+      },
+      "local_path": "d3cd520bdc012121.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Meiro-no-machi_Tonosho_Kagawa_pref_Japan02s3.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Meiro-no-machi_Tonosho_Kagawa_pref_Japan02s3.jpg/1280px-Meiro-no-machi_Tonosho_Kagawa_pref_Japan02s3.jpg",
+      "tags": [
+        "shodoshima"
+      ]
+    }
+  ],
+  "source_id": "tonosho-shokokai"
+}
