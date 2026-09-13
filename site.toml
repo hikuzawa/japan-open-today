@@ -3,9 +3,11 @@
 id = "japan-open-today"
 name = "Japan Open Today"
 # 基準 URL はここ 1 か所だけで差し替える。canonical / hreflang / sitemap / robots はここから決まる。
-# 当面は Cloudflare Pages の既定ホスト（仮）。japan-open-today.com を取得したらこの 1 行を差し替える。
-# CI は配置前に、生成物がこの値を指していることを検査する（--expect-base）。
-base_url = "https://japan-open-today.pages.dev"
+# 本番ドメイン（2026-09-13 切替）。Cloudflare のカスタムドメインは apex と www の両方を持ち、
+# www と japan-open-today.pages.dev は Bulk Redirects で apex へ 301 する。
+# CI は配置前に、生成物がこの値を指していることを検査する（--expect-base）。変えるときは
+# .github/workflows/pipeline.yml の --expect-base も一緒に変える。
+base_url = "https://japan-open-today.com"
 service = "japan_open_today.service:service"
 # 基準言語。各言語の URL 接頭辞は下の [[locales]]（ADR 0005）
 language = "ja"

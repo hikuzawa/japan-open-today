@@ -115,8 +115,7 @@ jobs:
       - name: 公開 URL の検査（canonical / og:url / hreflang / sitemap / robots が base_url を指す）
         working-directory: japan-open-today
         # 本番ドメインを固定する。site.toml の base_url を変えるときはここも一緒に変える
-        # （japan-open-today.com のカスタムドメインを Pages に設定したあとで切り替える）
-        run: uv run python .github/scripts/check_public_urls.py --expect-base https://japan-open-today.pages.dev
+        run: uv run python .github/scripts/check_public_urls.py --expect-base https://japan-open-today.com
 
       - name: 充足率のレポート（営業時間・判定の内訳。ログに残すだけで、失敗させない）
         if: inputs.mode != 'deploy-only'

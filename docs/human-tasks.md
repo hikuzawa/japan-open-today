@@ -11,13 +11,10 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 2. ~~**GitHub リポジトリ**を作成し push する~~ → S0 で作成済み（private: `hikuzawa/japan-open-today`）。
 
 ## 公開までに必要
-3. ~~**ドメイン `japan-open-today.com`** を取得する~~ → 取得済み（2026-09-13）。
-   **残っている作業**: Cloudflare Pages プロジェクト `japan-open-today` の
-   Custom domains にこのドメインを追加する（CI が初回の deploy でプロジェクトを作る）。
-   設定が済んだら AI 側が `site.toml` の `base_url` と
-   `.github/workflows/pipeline.yml` の `--expect-base` を同時に差し替える
-   （canonical / hreflang / sitemap / robots はそこから決まる）。それまでは
-   既定ホスト `japan-open-today.pages.dev` を本番として検査する。
+3. ~~**ドメイン `japan-open-today.com`** を取得し、Pages のカスタムドメイン（apex と www）と
+   Bulk Redirects（www と pages.dev → apex、301）を設定する~~ → 完了（2026-09-13）。
+   `site.toml` の `base_url` と `.github/workflows/pipeline.yml` の `--expect-base` は
+   `https://japan-open-today.com` に切り替え済み。
 4. **Cloudflare アカウント**と API トークン（Account > Cloudflare Pages: Edit）・アカウント ID。
    akiya-atlas で発行済みのものを流用できる。Pages プロジェクト `japan-open-today` は CI が「無ければ作成」する。
    **注意**: `japan-open-today.pages.dev` が第三者に使われている場合、既定ホストは
@@ -25,13 +22,14 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 5. **GitHub Secrets** を `hikuzawa/japan-open-today` に登録する（下表）。
 6. **Cloudflare Web Analytics** を有効にしてビーコントークンを取得し、`CF_WEB_ANALYTICS_TOKEN` に入れる
    （無くても動く。計測タグが出ないだけ）。
-7. **Google Maps Platform**: Maps Embed API を有効にし、HTTP リファラで公開ホストに制限したキーを
-   `GOOGLE_MAPS_EMBED_KEY` に入れる（無い間は地図は外部リンクにフォールバックする）。
+7. ~~**Google Maps Platform**: Maps Embed API を有効にし、HTTP リファラで公開ホストに制限したキーを
+   `GOOGLE_MAPS_EMBED_KEY` に入れる~~ → 完了（2026-09-13）。リファラ制限に
+   `japan-open-today.com` と `japan-open-today.pages.dev` の両方が入っている。
+   ホストを増やすときはここも足す（足さないと地図が外部リンクに落ちる）。
 8. **運営者名と連絡手段**を決め、`site.toml` の `[operator]` に書く（現在は「準備中」）。全ページのフッターと `/about/` に出る。
    連絡手段は akiya-atlas の `tools/contact_form/`（Apps Script でフォームを作る）と同じ方式が使える。
 9. 公開後: **Google Search Console** の登録（メタタグ方式なら `GOOGLE_SITE_VERIFICATION`、ファイル方式なら `verification/` に置く）。
-10. 公開後: **www と pages.dev から apex への 301**。Pages の `_redirects` はドメイン単位のリダイレクトに非対応なので、
-    Cloudflare ダッシュボードのアカウントレベル「Bulk Redirects」で行う（手順は akiya-atlas の `docs/human-tasks.md` 9 と同じ）。
+10. ~~公開後: **www と pages.dev から apex への 301**~~ → 完了（2026-09-13、Bulk Redirects）。
 
 ## 収益化のために必要
 11. **アフィリエイトの申込み**（審査に日数がかかるので早めに）。
