@@ -216,6 +216,9 @@ def test_the_name_still_decides_when_it_says_out_of_scope() -> None:
     """名前自身が対象外だと言っているものは、施設の語が入っていても除く。"""
     assert _skip_reason("【ものづくり体験】讃岐漆芸美術館", "体験") == "experience"
     assert _skip_reason("城舟体験（史跡高松城跡・玉藻公園）", "体験") == "experience"
+    # 「見学」「学習」は催しではなく施設を訪ねること。観光協会は博物館もこの形で載せている
+    assert _skip_reason("【施設見学】マルキン醤油記念館", "体験") is None
+    assert _skip_reason("【産業学習】観音寺市豊浜郷土資料館", "体験") is None
     # 区切りの無い複合名は、末尾の語がその場所の素性
     assert _skip_reason("奥の湯公園キャンプ場", "キャンプ場") == "lodging"
     assert _skip_reason("女木島（松原）キャンプ場", "キャンプ場") == "lodging"
