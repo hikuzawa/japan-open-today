@@ -26,8 +26,13 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
    `GOOGLE_MAPS_EMBED_KEY` に入れる~~ → 完了（2026-09-13）。リファラ制限に
    `japan-open-today.com` と `japan-open-today.pages.dev` の両方が入っている。
    ホストを増やすときはここも足す（足さないと地図が外部リンクに落ちる）。
-8. **運営者名と連絡手段**を決め、`site.toml` の `[operator]` に書く（現在は「準備中」）。全ページのフッターと `/about/` に出る。
-   連絡手段は akiya-atlas の `tools/contact_form/`（Apps Script でフォームを作る）と同じ方式が使える。
+8. **連絡先フォームを作る**（運営者名は `Japan Open Today` に決定済み、`site.toml` に記入済み）。
+   `tools/contact_form/README.md` の手順で Apps Script プロジェクトを作り、スクリプトプロパティを入れて
+   `setup()` を実行する。実行ログに出る次の 2 つを AI に渡す:
+   - フォームの回答用 URL → `site.toml` の `[operator] contact`
+   - prefill（ja / en / zh-Hant）の URL → `i18n/<locale>.yaml` の `contact.url`
+     （各言語のページから「返信の言語」が埋まった状態で開く）
+   **akiya-atlas のフォームとは別に作る**（分類も返信文も別のサービスのもので、Issue の宛先も違う）。
 9. 公開後: **Google Search Console** の登録（メタタグ方式なら `GOOGLE_SITE_VERIFICATION`、ファイル方式なら `verification/` に置く）。
 10. ~~公開後: **www と pages.dev から apex への 301**~~ → 完了（2026-09-13、Bulk Redirects）。
 

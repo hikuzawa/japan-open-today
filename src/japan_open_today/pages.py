@@ -61,13 +61,23 @@ def _assets(ws: Workspace) -> dict[str, list[Asset]]:
     return out
 
 
-def _trust(ws: Workspace, *, now: datetime, sources: list[SourceLink], count: int) -> TrustSignals:
+def _trust(
+    ws: Workspace,
+    *,
+    now: datetime,
+    sources: list[SourceLink],
+    count: int,
+    contact: str = "",
+) -> TrustSignals:
     return TrustSignals(
         updated_at=now,
         sources=sources,
         operator=OperatorInfo(
             name=ws.site.operator.name,
-            contact=ws.site.operator.contact,
+            # 連絡先はロケールごとに差し替えられる。お問い合わせフォームは 1 つだが、
+            # 「返信の言語」を埋めた prefill 付きの URL を言語ごとに持つ
+            # （tools/contact_form の setup() が出力する）。無ければ site.toml の 1 本
+            contact=contact or ws.site.operator.contact,
             contact_label=ws.site.operator.contact_label,
         ),
         record_count=count,
@@ -122,7 +132,6 @@ def _summary(verdicts: list[DayVerdict]) -> dict[str, int]:
     return counts
 
 
-
 def _wording(ws: Workspace) -> dict[str, Catalog]:
     """画面の文言カタログ。`<head>` の文言（説明文・ページ名）もここから採る。
 
@@ -171,6 +180,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
     pages: list[Page] = []
 
     for locale in locales:
+        contact = _say(words, locale, "contact.url")
         # --- トップ -----------------------------------------------------
         rows = [
             _spot_row(ws, spot, locale, verdicts[spot.spot_id], assets)
@@ -199,7 +209,9 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                     "areas": [a for a in AREAS if a.slug in ds.spots_by_area],
                     "spot_total": len(ds.spots),
                 },
-                trust=_trust(ws, now=now, sources=all_sources, count=len(ds.spots)),
+                trust=_trust(
+                    ws, now=now, sources=all_sources, count=len(ds.spots), contact=contact
+                ),
             )
         )
 
@@ -234,6 +246,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         now=now,
                         sources=[SourceLink(label=s.name("ja"), url=s.official_url) for s in spots],
                         count=len(spots),
+                        contact=contact,
                     ),
                 )
             )
@@ -277,7 +290,9 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                             v.state is DayState.unknown for v in weeks[spot.spot_id]
                         ),
                     },
-                    trust=_trust(ws, now=now, sources=_spot_sources(spot), count=None or 1),
+                    trust=_trust(
+                        ws, now=now, sources=_spot_sources(spot), count=1, contact=contact
+                    ),
                 )
             )
 
@@ -315,6 +330,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         SourceLink(label=op.name("ja"), url=op.official_url) for op in ds.operators
                     ],
                     count=len(ds.routes),
+                    contact=contact,
                 ),
             )
         )
@@ -354,7 +370,9 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         # 広告はまだ 1 枠も出していない（ADR 0006）。出す日にここが True になる
                         "ads_live": False,
                     },
-                    trust=_trust(ws, now=now, sources=all_sources, count=len(ds.spots)),
+                    trust=_trust(
+                        ws, now=now, sources=all_sources, count=len(ds.spots), contact=contact
+                    ),
                 )
             )
 
@@ -466,10 +484,7 @@ def no_hours_stated(spot: Spot) -> bool:
     告知（臨時の立入禁止など）があるときは、その告知を出すほうが先なのでこの表示はしない。
     """
     return (
-        spot.spot_type == "open_air"
-        and not spot.hours
-        and not spot.closures
-        and not spot.notices
+        spot.spot_type == "open_air" and not spot.hours and not spot.closures and not spot.notices
     )
 
 

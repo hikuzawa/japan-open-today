@@ -17,6 +17,8 @@ sitemill の 2 つ目の利用者。香川県の観光施設と交通につい�
 - `site.toml` サイト設定。基準 URL はここ 1 か所だけで差し替える
 - `.github/workflows/` 日次パイプライン（pipeline.yml, 05:00 JST）と push ごとの検査（checks.yml）。
   sitemill はタグ固定（現在 `v0.2.0`）。上げるときは 2 本の `ref:` を揃える
+- `tools/contact_form/` 連絡先フォーム（Google フォーム + Apps Script + AI 自動返信、3 言語）。
+  akiya-atlas とは**別のインスタンス**にする（種別も返信文も別。Issue の宛先も違う）
 - `docs/adr/` 設計判断、`docs/human-tasks.md` 人間側で必要な作業
 - `tests/fixtures/html/` 保存済み HTML（出典 URL と取得日を `SOURCES.md` に記す）、`tests/fixtures/eval/` 抽出精度の計測ケース
 
