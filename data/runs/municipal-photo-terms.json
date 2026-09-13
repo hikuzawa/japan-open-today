@@ -1,0 +1,196 @@
+{
+  "probed_at": "2026-09-14T08:07:00.883767+09:00",
+  "requests": 44,
+  "hosts": 15,
+  "adopted": 0,
+  "rows": [
+    {
+      "host": "www.city.kanonji.kagawa.jp",
+      "name": "",
+      "top": "https://www.city.kanonji.kagawa.jp/",
+      "pages": [
+        {
+          "label": "このサイトについて",
+          "url": "https://www.city.kanonji.kagawa.jp/site/userguide/",
+          "result": "不採用",
+          "why": "利用を制限する表記あり（非営利|改変禁止|転載を?禁|無断転載|All Rights Reserved）"
+        },
+        {
+          "label": "リンク・著作権・免責事項",
+          "url": "https://www.city.kanonji.kagawa.jp/site/userguide/4007.html",
+          "result": "不採用",
+          "why": "利用を制限する表記あり（非営利|改変禁止|転載を?禁|無断転載|All Rights Reserved）"
+        }
+      ],
+      "adopted": 0,
+      "note": ""
+    },
+    {
+      "host": "www.city.marugame.lg.jp",
+      "name": "",
+      "top": "https://www.city.marugame.lg.jp/",
+      "pages": [
+        {
+          "label": "リンク・著作権・ 免責事項",
+          "url": "https://www.city.marugame.lg.jp/site/userguide/1451.html",
+          "result": "不採用",
+          "why": "利用に人の判断が必要（「審査」の記載）"
+        }
+      ],
+      "adopted": 0,
+      "note": ""
+    },
+    {
+      "host": "www.city.mitoyo.lg.jp",
+      "name": "",
+      "top": "https://www.city.mitoyo.lg.jp/",
+      "pages": [
+        {
+          "label": "このサイトについて",
+          "url": "https://www.city.mitoyo.lg.jp/about_site.html",
+          "result": "不採用",
+          "why": "利用を制限する表記あり（非営利|改変禁止|転載を?禁|無断転載|All Rights Reserved）"
+        }
+      ],
+      "adopted": 0,
+      "note": ""
+    },
+    {
+      "host": "www.city.sakaide.lg.jp",
+      "name": "",
+      "top": "https://www.city.sakaide.lg.jp/",
+      "pages": [
+        {
+          "label": "免責事項",
+          "url": "https://www.city.sakaide.lg.jp/site/userguide/copyright.html",
+          "result": "不採用",
+          "why": "利用に人の判断が必要（「申請」の記載）"
+        }
+      ],
+      "adopted": 0,
+      "note": ""
+    },
+    {
+      "host": "www.city.sanuki.lg.jp",
+      "name": "",
+      "top": "https://www.city.sanuki.lg.jp/",
+      "pages": [],
+      "adopted": 0,
+      "note": "トップに無し。サイトマップから探した"
+    },
+    {
+      "host": "www.city.takamatsu.kagawa.jp",
+      "name": "",
+      "top": "https://www.city.takamatsu.kagawa.jp/",
+      "pages": [
+        {
+          "label": "このサイトについて",
+          "url": "https://www.city.takamatsu.kagawa.jp/homepage/thissite.html",
+          "result": "不採用",
+          "why": "利用を制限する表記あり（非営利|改変禁止|転載を?禁|無断転載|All Rights Reserved）"
+        }
+      ],
+      "adopted": 0,
+      "note": ""
+    },
+    {
+      "host": "www.city.zentsuji.kagawa.jp",
+      "name": "",
+      "top": "https://www.city.zentsuji.kagawa.jp/",
+      "pages": [
+        {
+          "label": "リンク・著作権・免責事項",
+          "url": "https://www.city.zentsuji.kagawa.jp/site/hajimetenokatahe/menseki.html",
+          "result": "不採用",
+          "why": "利用に人の判断が必要（「申請」の記載）"
+        }
+      ],
+      "adopted": 0,
+      "note": ""
+    },
+    {
+      "host": "www.my-kagawa.jp",
+      "name": "",
+      "top": "https://www.my-kagawa.jp/",
+      "pages": [],
+      "adopted": 0,
+      "note": "トップに無し。サイトマップから探した"
+    },
+    {
+      "host": "www.pref.kagawa.lg.jp",
+      "name": "",
+      "top": "https://www.pref.kagawa.lg.jp/",
+      "pages": [
+        {
+          "label": "このサイトについて",
+          "url": "https://www.pref.kagawa.lg.jp/kocho/koho/kohosonota/about.html",
+          "result": "不採用",
+          "why": "利用を制限する表記あり（非営利|改変禁止|転載を?禁|無断転載|All Rights Reserved）"
+        }
+      ],
+      "adopted": 0,
+      "note": ""
+    },
+    {
+      "host": "www.town.ayagawa.lg.jp",
+      "name": "",
+      "top": "https://www.town.ayagawa.lg.jp/",
+      "pages": [],
+      "adopted": 0,
+      "note": "規約・素材らしいリンクが見つからない（トップとサイトマップ）"
+    },
+    {
+      "host": "www.town.manno.lg.jp",
+      "name": "",
+      "top": "https://www.town.manno.lg.jp/",
+      "pages": [],
+      "adopted": 0,
+      "note": "トップに無し。サイトマップから探した"
+    },
+    {
+      "host": "www.town.miki.lg.jp",
+      "name": "",
+      "top": "https://www.town.miki.lg.jp/",
+      "pages": [],
+      "adopted": 0,
+      "note": "規約・素材らしいリンクが見つからない（トップとサイトマップ）"
+    },
+    {
+      "host": "www.town.naoshima.lg.jp",
+      "name": "",
+      "top": "https://www.town.naoshima.lg.jp/",
+      "pages": [
+        {
+          "label": "このサイトについて",
+          "url": "https://www.town.naoshima.lg.jp/aboutweb/",
+          "result": "不採用",
+          "why": "利用に人の判断が必要（「申請」の記載）"
+        },
+        {
+          "label": "免責について",
+          "url": "https://www.town.naoshima.lg.jp/aboutweb/menseki.html",
+          "result": "不採用",
+          "why": "利用に人の判断が必要（「申請」の記載）"
+        }
+      ],
+      "adopted": 0,
+      "note": ""
+    },
+    {
+      "host": "www.town.shodoshima.lg.jp",
+      "name": "",
+      "top": "https://www.town.shodoshima.lg.jp/",
+      "pages": [],
+      "adopted": 0,
+      "note": "規約・素材らしいリンクが見つからない（トップとサイトマップ）"
+    },
+    {
+      "host": "www.town.tonosho.kagawa.jp",
+      "name": "",
+      "top": "https://www.town.tonosho.kagawa.jp/",
+      "pages": [],
+      "adopted": 0,
+      "note": "規約・素材らしいリンクが見つからない（トップとサイトマップ）"
+    }
+  ]
+}
