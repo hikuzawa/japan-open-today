@@ -101,7 +101,13 @@ asset:
   credit: "{author}（{license}）"
   credit_source: 出典ページ（Wikimedia Commons）
   fetched: "取得: {when}"
+# お問い合わせフォーム。「返信の言語」を埋めた prefill 付きの URL
+# （tools/contact_form の setup() が出力したもの。利用者は言語を選ばずに済む）
+contact:
+  url: https://docs.google.com/forms/d/e/1FAIpQLSeYdEXZi2Ng3vVkGnHJyJco7fQWKoyc3YeVxGOTb4u-5wXW5A/viewform?usp=pp_url&entry.1474011792=%E6%97%A5%E6%9C%AC%E8%AA%9E
+
 trust:
+  contact_link: お問い合わせフォーム
   title: この情報について
   updated: 最終更新
   timezone: （日本時間）

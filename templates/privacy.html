@@ -24,9 +24,9 @@
 <h2 class="section-head">{{ t('privacy.contact_title') }}</h2>
 <p>
   {{ t('privacy.contact') }}
-  {%- if site.operator.contact.startswith("http") %}
-  <a href="{{ site.operator.contact }}" rel="noopener" target="_blank">{{ t('trust.contact_link') }}</a>
-  {%- else %} {{ site.operator.contact }}{% endif %}
+  {%- if contact.startswith("http") %}
+  <a href="{{ contact }}" rel="noopener" target="_blank">{{ t('trust.contact_link') }}</a>
+  {%- else %} {{ contact }}{% endif %}
 </p>
 <p class="links"><a href="{{ locale.url_path('about/') }}">{{ t('nav.about') }}</a></p>
 {% endblock %}

@@ -58,8 +58,26 @@ def test_the_operator_name_is_one_string_for_all_three_locales(site: SiteConfig)
     持てないので、和文を混ぜると英語・繁体字のページに日本語が 1 語残る。
     """
     assert site.operator.name == "Japan Open Today"
-    # 連絡先はフォームができるまで「準備中」。ダミーの URL は置かない（ADR 0006）
-    assert site.operator.contact == "準備中" or site.operator.contact.startswith("https://")
+    # 連絡先は Google フォーム。ダミーの URL は置かない（ADR 0006）
+    assert site.operator.contact.startswith("https://docs.google.com/forms/")
+
+
+def test_each_locale_opens_the_form_in_its_own_language() -> None:
+    """各言語のページからは「返信の言語」を埋めた prefill 付きの URL でフォームを開く。
+
+    利用者が言語を選ばずに済み、自動返信もその言語で返る（tools/contact_form）。
+    """
+    import yaml
+
+    seen = {}
+    for code in ("ja", "en", "zh-Hant"):
+        catalog = yaml.safe_load((ROOT / "i18n" / f"{code}.yaml").read_text(encoding="utf-8"))
+        url = catalog["contact"]["url"]
+        assert url.startswith("https://docs.google.com/forms/"), code
+        assert "usp=pp_url" in url and "entry." in url, code
+        assert catalog["trust"]["contact_link"], code  # リンクの文字列もロケール別
+        seen[code] = url
+    assert len(set(seen.values())) == 3  # 言語ごとに別の URL
 
 
 def test_three_locales_with_japanese_at_the_root(site: SiteConfig) -> None:

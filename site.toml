@@ -36,9 +36,12 @@ label = "繁體中文"
 # trust.operator にあるので、名前に「運営」を足すと日本語ページで重なる。
 # sitemill の [operator] name はロケール別に持てない（ADR 0016）
 name = "Japan Open Today"
-# 連絡先は Google フォーム（tools/contact_form/ の setup() で作る）。
-# フォームができるまでは「準備中」のまま。ダミーの URL は置かない
-contact = "準備中"
+# 連絡先は Google フォーム（tools/contact_form/ の setup() が作った）。
+# ここに置くのは素の URL。各言語のページは「返信の言語」を埋めた prefill 付きの URL を
+# i18n/<locale>.yaml の contact.url から使う（ADR 0005 の考え方と同じ）
+contact = "https://docs.google.com/forms/d/e/1FAIpQLSeYdEXZi2Ng3vVkGnHJyJco7fQWKoyc3YeVxGOTb4u-5wXW5A/viewform"
+# フッターと /about/ でこの URL に添える文字列。ロケール別は i18n の trust.contact_link
+contact_label = "お問い合わせフォーム"
 
 [paths]
 data = "data"

@@ -366,6 +366,8 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         "assets": assets,
                         "holidays": holidays,
                         "user_agent": ws.site.user_agent,
+                        # そのロケールの prefill 付き URL（無ければ site.toml の素の URL）
+                        "contact": contact or ws.site.operator.contact,
                         # 地図を埋め込むのは鍵があるときだけ。無いときは外部リンクなので、
                         # プライバシーポリシーの書き方も変わる
                         "has_maps": bool(ws.secrets.google_maps_embed_key),
