@@ -19,6 +19,7 @@ from sitemill.models import OperatorInfo, Page, PageMeta, SourceLink, TrustSigna
 from sitemill.openstatus import DayState, DayVerdict
 from sitemill.settings import Workspace
 
+from japan_open_today import affiliates
 from japan_open_today.areas import AREAS, area
 from japan_open_today.data import Dataset
 from japan_open_today.schema import Spot
@@ -240,6 +241,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                             _spot_row(ws, s, locale, verdicts[s.spot_id], assets) for s in spots
                         ],
                         "counts": _summary([verdicts[s.spot_id] for s in spots]),
+                        "offers": affiliates.offers_for("area-stay"),
                     },
                     trust=_trust(
                         ws,
@@ -286,6 +288,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         "nearby": nearby,
                         "closures_label": _closures_label(spot),
                         "no_hours_stated": no_hours_stated(spot),
+                        "offers": affiliates.offers_for("spot-tickets"),
                         "week_all_unknown": all(
                             v.state is DayState.unknown for v in weeks[spot.spot_id]
                         ),
@@ -375,6 +378,27 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                     ),
                 )
             )
+
+    # 広告の転送ページ（ADR 0012）。契約前は案件が 0 件なので 1 枚も出ない。
+    # ロケールごとに 1 枚出す（英語の利用者に日本語の転送ページを見せない）
+    locale_pairs = tuple((lc.code, lc.path) for lc in locales)
+    for target in affiliates.go_targets(locale_pairs):
+        locale = ws.site.locale(target.locale)
+        rel = f"go/{target.offer.id}/{target.placement.id}/"
+        pages.append(
+            Page(
+                meta=PageMeta(
+                    title=_say(words, locale, "affiliate.go_heading", "広告"),
+                    description="",
+                    path=_path(locale, rel),
+                    locale=locale.code,
+                    noindex=True,  # sitemap にも出さない
+                ),
+                template="go.html",
+                context={"today": today, "offer": target.offer},
+                trust=_trust(ws, now=now, sources=all_sources, count=len(ds.spots)),
+            )
+        )
 
     # 404 は既定ロケールだけ（noindex なので各言語版は要らない）
     default = ws.site.default_locale

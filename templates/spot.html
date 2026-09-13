@@ -3,6 +3,8 @@
 <nav class="breadcrumb"><a href="{{ locale.url_path('') }}">{{ t('nav.home') }}</a> /
   <a href="{{ locale.url_path('areas/' ~ spot.area ~ '/') }}">{{ area.name(locale.code) }}</a></nav>
 <h1>{{ spot.name(locale.code) }}</h1>
+{# 広告表記は本文の冒頭・最初の広告リンクより前に出す（ADR 0012）。案件が無ければ何も出ない #}
+{{ ui.ad_notice(offers, locale) }}
 {% if no_hours_stated %}
 {# 屋外で時間の定めが無い場所（ADR 0011）。「不明」ではなく、定めが無いことをそのまま出す #}
 <div class="open-air-box">
@@ -100,6 +102,7 @@
 {% endif %}
 <section class="affiliate">
   <h2 class="section-head">{{ t('affiliate.heading') }}</h2>
-  <p class="preparing">{{ t('affiliate.preparing') }}</p>
+  {% if offers %}{{ ui.offer_slot(offers, 'spot-tickets', locale) }}
+  {% else %}<p class="preparing">{{ t('affiliate.preparing') }}</p>{% endif %}
 </section>
 {% endblock %}

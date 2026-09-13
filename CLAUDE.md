@@ -27,6 +27,7 @@ sitemill の 2 つ目の利用者。香川県の観光施設と交通につい�
 - `uv run sitemill discover|crawl|extract|heal|build|run|eval` / `uv run sitemill deploy --dry-run`
 - `uv run python -m tools.fetch_assets` 実体の無い採用画像を出典から取り直す（内容が変わっていたら採らない）
 - `uv run python -m tools.sync_assets` 採用画像を `static/assets/` に複写（extract のあと build の前）
+- `uv run japan-open-today ad-check` 広告掲載の検査（ADR 0012）／ `ad-urls` 届け出用の掲載 URL
 - `uv run python .github/scripts/check_public_urls.py` 公開 URL の検査（canonical / og:url / hreflang / sitemap / robots が `base_url` を指すか）
 - `uv run python -m tools.report_coverage` 項目の充足率と判定の内訳（unknown の理由）を数える
 - `uv run python -m tools.resolve_commons` / `tools.collect_sources` / `tools.probe_assets` 情報源と画像の調査
@@ -80,7 +81,10 @@ sitemill の 2 つ目の利用者。香川県の観光施設と交通につい�
 
 ### サイト全体
 - すべてのページに信頼シグナル（更新日時・一次情報リンク・運営者・件数）を出す。欠けるとビルドが失敗する
-- アフィリエイトは契約が済むまで CTA を「準備中」にする。ダミーリンクは置かない
+- アフィリエイトは契約が済むまで CTA を「準備中」にする。ダミーリンクは置かない。
+  契約後は必ず `<ロケール>/go/<案件>/<枠>/` の転送ページ経由にし、広告表記を本文の冒頭に出す。
+  掲載場所と ASP 規約は `src/japan_open_today/affiliates.py` のデータで決まり、
+  欠ければ `ad-check` がビルドを止める（ADR 0012）
 - 秘密情報は `.env` にだけ置く（手で書く。パスワードマネージャーや環境変数を探索しない）。
   鍵が無ければ止めて「.env に何を書くか」を提示する
 - `.env.example` にはプレースホルダー（空の値）だけを置く。値を書いた時点でコミット前フックが止める

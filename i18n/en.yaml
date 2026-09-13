@@ -95,6 +95,12 @@ transport:
 affiliate:
   heading: Stays and experiences
   preparing: Coming soon
+  tag: Ad
+  notice: "Advertising: this page contains affiliate links. We may be paid when you book through one. It does not affect which places we list or the order they appear in."
+  open: "See {label}"
+  go_heading: Taking you to the advertiser
+  go_lead: 'Moving to "{name}" by {advertiser}. If nothing happens in a few seconds, use the button below.'
+  go_note: The destination is run by a different company. Please check its own terms, prices and privacy notice.
 asset:
   credit: "{author} ({license})"
   credit_source: Source page (Wikimedia Commons)

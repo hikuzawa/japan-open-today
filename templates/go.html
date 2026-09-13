@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{# 広告の転送ページ（ADR 0012）。<ロケール>/go/<案件>/<枠>/ で 1 枠につき 1 枚生成する。
+   ここを 1 枚挟むことで計測ビーコンが 1 回動き、どのページのどの枠から押されたかが数えられる。
+   noindex（sitemap にも出ない）。JavaScript を切っていてもボタンで進める #}
+{% block content %}
+<h1>{{ t('affiliate.go_heading') }}</h1>
+{{ ui.ad_notice([offer], locale) }}
+<p class="lead">{{ t('affiliate.go_lead', advertiser=offer.advertiser, name=offer.name or offer.label) }}</p>
+<p class="offer-cta">
+  <a class="btn-ad" id="go-link" href="{{ offer.url }}" rel="sponsored nofollow noopener">{{ t('affiliate.open', label=offer.label) }}<span aria-hidden="true"> ↗</span></a>
+  <span class="ad-tag" aria-hidden="true">{{ t('affiliate.tag') }}</span>
+</p>
+<p class="note">{{ t('affiliate.go_note') }}</p>
+<p class="links"><a href="{{ locale.url_path('') }}">{{ t('nav.home') }}</a></p>
+<script>
+// 計測（Cloudflare Web Analytics）は読み込み完了の 100〜200 ミリ秒後に /cdn-cgi/rum へ送られる。
+// 先に離れると 1 クリックが数えられないので、その通信が出たのを見てから転送する。
+// ビーコンが無い・遮られた環境でも止まらないよう、上限 1.5 秒で打ち切る。
+(function () {
+  var a = document.getElementById("go-link");
+  if (!a) return;
+  var left = false;
+  var go = function () {
+    if (left) return;
+    left = true;
+    window.location.replace(a.href);
+  };
+  var sent = function () {
+    var list = window.performance ? performance.getEntriesByType("resource") : [];
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].name.indexOf("/cdn-cgi/rum") !== -1) return true;
+    }
+    return false;
+  };
+  try {
+    var obs = new PerformanceObserver(function () {
+      if (sent()) {
+        obs.disconnect();
+        window.setTimeout(go, 50);
+      }
+    });
+    obs.observe({ type: "resource", buffered: true });
+  } catch (e) {
+    // PerformanceObserver が使えない環境。下の打ち切りに任せる
+  }
+  window.setTimeout(go, 1500);
+})();
+</script>
+{% endblock %}

@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>{{ area.name(locale.code) }}</h1>
+{{ ui.ad_notice(offers, locale) }}
 {{ ui.stat_strip([
   {"value": counts.open, "label": t('home.open_count')},
   {"value": counts.unknown, "label": t('home.unknown_count')},
@@ -11,4 +12,9 @@
 <ul class="cards">
   {% for row in rows %}{{ ui.spot_card(row, locale) }}{% endfor %}
 </ul>
+<section class="affiliate">
+  <h2 class="section-head">{{ t('affiliate.heading') }}</h2>
+  {% if offers %}{{ ui.offer_slot(offers, 'area-stay', locale) }}
+  {% else %}<p class="preparing">{{ t('affiliate.preparing') }}</p>{% endif %}
+</section>
 {% endblock %}

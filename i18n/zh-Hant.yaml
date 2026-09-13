@@ -90,6 +90,12 @@ transport:
 affiliate:
   heading: 住宿與體驗
   preparing: 準備中
+  tag: 廣告
+  notice: 廣告：本頁含有聯盟行銷連結。透過連結完成預訂時本網站可能獲得報酬，但不影響我們收錄的地點與排列順序。
+  open: "查看{label}"
+  go_heading: 即將前往廣告主的網站
+  go_lead: "即將前往{advertiser}提供的「{name}」頁面。若數秒後仍未跳轉，請按下方按鈕。"
+  go_note: 前往的網站由其他業者經營。申請條件、費用與個人資料的處理方式，請以該網站的說明為準。
 asset:
   credit: "{author}（{license}）"
   credit_source: 來源頁面（Wikimedia Commons）

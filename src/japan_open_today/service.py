@@ -104,7 +104,13 @@ class JapanOpenTodayService:
         return page_builder.search_index(ws, Dataset.load(ws))
 
     def redirects(self, ws: Workspace) -> list[Redirect]:
-        return []
+        """/go/<案件> の 302（ADR 0012）。契約前は 0 件。
+
+        枠つきの `/go/<案件>/<枠>/` は転送ページ（HTML）なので `pages()` 側が出す。
+        """
+        from japan_open_today import affiliates
+
+        return affiliates.redirects()
 
     def eval_dir(self, ws: Workspace) -> Path | None:
         return ws.fixtures_dir / "eval"

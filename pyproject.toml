@@ -8,8 +8,9 @@ dependencies = [
     "sitemill",
 ]
 
-# サービス固有の CLI（発見・用語集の生成など）は S6 で追加する。
-# 巡回・抽出・生成・デプロイは sitemill の CLI をこのディレクトリで実行する。
+[project.scripts]
+# 広告掲載の検査（ADR 0012）。巡回・抽出・生成・配置は sitemill の CLI を使う
+japan-open-today = "japan_open_today.cli:main"
 
 [tool.uv.sources]
 # 今フェーズは隣のディレクトリへの editable 依存（docs/adr/0008）。安定後に git タグ固定へ切り替える。

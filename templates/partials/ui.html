@@ -103,3 +103,25 @@
 {% macro primary_link(url, label) %}
 <a class="primary" href="{{ url }}" rel="noopener" target="_blank">{{ label }}<span aria-hidden="true"> ↗</span></a>
 {% endmacro %}
+
+{# 広告表記（ADR 0012）。広告リンクのあるページの**本文の冒頭**に出す。
+   ready な案件が 1 件も無ければ何も出さない（表記だけが出るのも検査で落ちる） #}
+{% macro ad_notice(offers, locale) -%}
+{% if offers|selectattr("ready")|list %}<p class="ad-notice" data-ad-notice>{{ t_in(locale, 'affiliate.notice') }}</p>{% endif %}
+{%- endmacro %}
+
+{# 広告の枠（ADR 0012）。placement は affiliates.PLACEMENTS の id。offers が空なら何も出ない。
+   リンクは必ず <ロケール>/go/<案件>/<枠>/ の転送ページ経由にして、どの枠から押されたかを数える #}
+{% macro offer_slot(offers, placement, locale) -%}
+{% if offers %}
+<div class="offer-slot">
+  {% for o in offers %}
+  <p class="offer-cta">
+    <a class="btn-ad" href="{{ locale.url_path('go/' ~ o.id ~ '/' ~ placement ~ '/') }}"
+       rel="sponsored noopener" target="_blank">{{ t_in(locale, 'affiliate.open', label=o.label) }}<span aria-hidden="true"> ↗</span></a>
+    <span class="ad-tag" aria-hidden="true">{{ t_in(locale, 'affiliate.tag') }}</span>
+  </p>
+  {% endfor %}
+</div>
+{% endif %}
+{%- endmacro %}
