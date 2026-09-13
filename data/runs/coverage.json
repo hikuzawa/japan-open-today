@@ -374,30 +374,6 @@
       }
     },
     {
-      "spot_id": "town",
-      "name": "三木町ウォーキングセンター",
-      "spot_type": "gated",
-      "settled": true,
-      "fields": [
-        "hours",
-        "closures",
-        "address",
-        "phone"
-      ],
-      "missing": [
-        "fees",
-        "reservation_required"
-      ],
-      "today": "open",
-      "today_reasons": [
-        "regular_hours"
-      ],
-      "week": {
-        "open": 6,
-        "closed": 1
-      }
-    },
-    {
       "spot_id": "town-375",
       "name": "三木町総合運動公園",
       "spot_type": "gated",
@@ -771,29 +747,6 @@
       }
     },
     {
-      "spot_id": "kenminhall-435",
-      "name": "「21世紀に贈るメッセージ」／猪熊弦一郎作",
-      "spot_type": "gated",
-      "settled": true,
-      "fields": [
-        "hours",
-        "closures",
-        "address",
-        "phone"
-      ],
-      "missing": [
-        "fees",
-        "reservation_required"
-      ],
-      "today": "open",
-      "today_reasons": [
-        "regular_hours"
-      ],
-      "week": {
-        "open": 7
-      }
-    },
-    {
       "spot_id": "p443",
       "name": "高松市塩江美術館（ホタルの里美術館）",
       "spot_type": "gated",
@@ -933,29 +886,6 @@
       "week": {
         "open": 6,
         "closed": 1
-      }
-    },
-    {
-      "spot_id": "saltlake-hiketa",
-      "name": "フィッシュフック（安戸池釣場）",
-      "spot_type": "gated",
-      "settled": true,
-      "fields": [
-        "hours",
-        "address",
-        "phone"
-      ],
-      "missing": [
-        "closures",
-        "fees",
-        "reservation_required"
-      ],
-      "today": "open",
-      "today_reasons": [
-        "regular_hours"
-      ],
-      "week": {
-        "open": 7
       }
     },
     {
@@ -1145,29 +1075,6 @@
       }
     },
     {
-      "spot_id": "p344",
-      "name": "善通寺市民プール",
-      "spot_type": "gated",
-      "settled": true,
-      "fields": [
-        "hours",
-        "fees",
-        "address",
-        "phone"
-      ],
-      "missing": [
-        "closures",
-        "reservation_required"
-      ],
-      "today": "open",
-      "today_reasons": [
-        "regular_hours"
-      ],
-      "week": {
-        "open": 7
-      }
-    },
-    {
       "spot_id": "e-mikado",
       "name": "エピアみかど",
       "spot_type": "gated",
@@ -1181,30 +1088,6 @@
       "missing": [
         "fees",
         "reservation_required"
-      ],
-      "today": "open",
-      "today_reasons": [
-        "regular_hours"
-      ],
-      "week": {
-        "open": 6,
-        "closed": 1
-      }
-    },
-    {
-      "spot_id": "town-94",
-      "name": "サン・スポーツランド仲南",
-      "spot_type": "gated",
-      "settled": true,
-      "fields": [
-        "hours",
-        "closures",
-        "address",
-        "phone",
-        "reservation_required"
-      ],
-      "missing": [
-        "fees"
       ],
       "today": "open",
       "today_reasons": [
@@ -1452,29 +1335,6 @@
       }
     },
     {
-      "spot_id": "p494",
-      "name": "南隆寺の坐禅会",
-      "spot_type": "gated",
-      "settled": true,
-      "fields": [
-        "hours",
-        "fees",
-        "address",
-        "phone",
-        "reservation_required"
-      ],
-      "missing": [
-        "closures"
-      ],
-      "today": "open",
-      "today_reasons": [
-        "regular_hours"
-      ],
-      "week": {
-        "open": 7
-      }
-    },
-    {
       "spot_id": "yakuyoke",
       "name": "郷照寺（第78番札所）",
       "spot_type": "gated",
@@ -1590,30 +1450,6 @@
       ],
       "week": {
         "open": 7
-      }
-    },
-    {
-      "spot_id": "zentsuji-mandegan",
-      "name": "株式会社まんでがん",
-      "spot_type": "gated",
-      "settled": true,
-      "fields": [
-        "hours",
-        "closures",
-        "address",
-        "phone"
-      ],
-      "missing": [
-        "fees",
-        "reservation_required"
-      ],
-      "today": "open",
-      "today_reasons": [
-        "regular_hours"
-      ],
-      "week": {
-        "open": 6,
-        "closed": 1
       }
     },
     {
@@ -2103,53 +1939,6 @@
       }
     },
     {
-      "spot_id": "kokuminshukusha",
-      "name": "オリーブ温泉島の宿",
-      "spot_type": "gated",
-      "settled": true,
-      "fields": [
-        "hours",
-        "address",
-        "phone"
-      ],
-      "missing": [
-        "closures",
-        "fees",
-        "reservation_required"
-      ],
-      "today": "open",
-      "today_reasons": [
-        "regular_hours"
-      ],
-      "week": {
-        "open": 7
-      }
-    },
-    {
-      "spot_id": "bgf",
-      "name": "小豆島町内海B&G海洋センター",
-      "spot_type": "gated",
-      "settled": true,
-      "fields": [
-        "hours",
-        "closures",
-        "address",
-        "phone"
-      ],
-      "missing": [
-        "fees",
-        "reservation_required"
-      ],
-      "today": "open",
-      "today_reasons": [
-        "regular_hours"
-      ],
-      "week": {
-        "open": 6,
-        "closed": 1
-      }
-    },
-    {
       "spot_id": "p3832",
       "name": "京宝亭",
       "spot_type": "gated",
@@ -2214,29 +2003,6 @@
       ],
       "week": {
         "open": 7
-      }
-    },
-    {
-      "spot_id": "morikuni",
-      "name": "株式会社",
-      "spot_type": "gated",
-      "settled": true,
-      "fields": [
-        "hours",
-        "closures",
-        "fees",
-        "address",
-        "phone",
-        "reservation_required"
-      ],
-      "missing": [],
-      "today": "open",
-      "today_reasons": [
-        "regular_hours"
-      ],
-      "week": {
-        "open": 6,
-        "closed": 1
       }
     },
     {
@@ -2536,54 +2302,8 @@
       }
     },
     {
-      "spot_id": "p294",
-      "name": "「MATAKITENO」／流政之作（サンポート高松）",
-      "spot_type": "open_air",
-      "settled": true,
-      "fields": [
-        "address"
-      ],
-      "missing": [
-        "hours",
-        "closures",
-        "fees",
-        "phone",
-        "reservation_required"
-      ],
-      "today": "unknown",
-      "today_reasons": [
-        "no_data"
-      ],
-      "week": {
-        "unknown": 7
-      }
-    },
-    {
       "spot_id": "town-446",
       "name": "直島町役場",
-      "spot_type": "open_air",
-      "settled": true,
-      "fields": [
-        "address",
-        "phone"
-      ],
-      "missing": [
-        "hours",
-        "closures",
-        "fees",
-        "reservation_required"
-      ],
-      "today": "unknown",
-      "today_reasons": [
-        "no_data"
-      ],
-      "week": {
-        "unknown": 7
-      }
-    },
-    {
-      "spot_id": "p434",
-      "name": "「DAITEMMAI」／流政之作（JR高松駅）",
       "spot_type": "open_air",
       "settled": true,
       "fields": [
@@ -3133,98 +2853,6 @@
       }
     },
     {
-      "spot_id": "p436",
-      "name": "「またきまい」／流政之作（大崎山園地）",
-      "spot_type": "open_air",
-      "settled": true,
-      "fields": [
-        "address",
-        "phone"
-      ],
-      "missing": [
-        "hours",
-        "closures",
-        "fees",
-        "reservation_required"
-      ],
-      "today": "unknown",
-      "today_reasons": [
-        "no_data"
-      ],
-      "week": {
-        "unknown": 7
-      }
-    },
-    {
-      "spot_id": "setoohhashi",
-      "name": "「鬼屏風」／流政之作（瀬戸大橋記念公園）",
-      "spot_type": "open_air",
-      "settled": true,
-      "fields": [
-        "address",
-        "phone"
-      ],
-      "missing": [
-        "hours",
-        "closures",
-        "fees",
-        "reservation_required"
-      ],
-      "today": "unknown",
-      "today_reasons": [
-        "no_data"
-      ],
-      "week": {
-        "unknown": 7
-      }
-    },
-    {
-      "spot_id": "setoohhashi-439",
-      "name": "「どだま獅子」／流政之作（瀬戸大橋記念公園）",
-      "spot_type": "open_air",
-      "settled": true,
-      "fields": [
-        "address",
-        "phone"
-      ],
-      "missing": [
-        "hours",
-        "closures",
-        "fees",
-        "reservation_required"
-      ],
-      "today": "unknown",
-      "today_reasons": [
-        "no_data"
-      ],
-      "week": {
-        "unknown": 7
-      }
-    },
-    {
-      "spot_id": "setoohhashi-438",
-      "name": "「浜栗林」／流政之（1923～2018年）作（瀬戸大橋記念公園）",
-      "spot_type": "open_air",
-      "settled": true,
-      "fields": [
-        "address",
-        "phone"
-      ],
-      "missing": [
-        "hours",
-        "closures",
-        "fees",
-        "reservation_required"
-      ],
-      "today": "unknown",
-      "today_reasons": [
-        "no_data"
-      ],
-      "week": {
-        "unknown": 7
-      }
-    },
-    {
       "spot_id": "p46",
       "name": "有明浜",
       "spot_type": "open_air",
@@ -3236,29 +2864,6 @@
       "missing": [
         "hours",
         "closures",
-        "fees",
-        "reservation_required"
-      ],
-      "today": "unknown",
-      "today_reasons": [
-        "no_data"
-      ],
-      "week": {
-        "unknown": 7
-      }
-    },
-    {
-      "spot_id": "pacificgolf",
-      "name": "琴平カントリー倶楽部",
-      "spot_type": "open_air",
-      "settled": true,
-      "fields": [
-        "closures",
-        "address",
-        "phone"
-      ],
-      "missing": [
-        "hours",
         "fees",
         "reservation_required"
       ],
@@ -3960,6 +3565,2952 @@
       "week": {
         "unknown": 7
       }
+    },
+    {
+      "spot_id": "sanuki-airport-park",
+      "name": "さぬき空港公園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "p2636",
+      "name": "あじ竜王山公園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "mineyama-park",
+      "name": "峰山公園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "fees"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "kinbuchi-shinrin",
+      "name": "公渕森林公園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "fees"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "mure-aji-park",
+      "name": "城岬公園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "yashima-navi-4144",
+      "name": "高松市屋島山上交流拠点施設「やしまーる」",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "pref-279",
+      "name": "瀬戸内海歴史民俗資料館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours"
+      ],
+      "missing": [
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "city-507",
+      "name": "高松市香南歴史民俗郷土館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "michi-no-eki",
+      "name": "道の駅「しおのえ」",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "souyu-296",
+      "name": "道の駅「香南楽湯」",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "genpei-mure",
+      "name": "道の駅「源平の里むれ」",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "karokaro",
+      "name": "讃岐漆芸美術館",
+      "spot_type": "gated",
+      "settled": false,
+      "fields": [
+        "closures",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "hours",
+        "fees"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "city-283",
+      "name": "高松市石の民俗資料館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "city-211",
+      "name": "みろく自然公園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "fees"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "city-208",
+      "name": "道の駅「ながお」",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "address",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "p30",
+      "name": "東かがわ手袋ギャラリー",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "sanuki-sa",
+      "name": "道の駅「津田の松原」",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "city-209",
+      "name": "道の駅「みろく」",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "hiragagennai-205",
+      "name": "平賀源内記念館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 5,
+        "closed": 2
+      }
+    },
+    {
+      "spot_id": "city-216",
+      "name": "雨滝自然科学館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 4,
+        "closed": 3
+      }
+    },
+    {
+      "spot_id": "telescope-museum",
+      "name": "天体望遠鏡博物館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address"
+      ],
+      "missing": [
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "closed",
+      "today_reasons": [
+        "weekly_closed"
+      ],
+      "week": {
+        "closed": 2,
+        "open": 5
+      }
+    },
+    {
+      "spot_id": "tebukurokumiai",
+      "name": "香川のてぶくろ資料館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "sanuki-191",
+      "name": "さぬき市歴史民俗資料館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "utazu-umihotaru",
+      "name": "【宇多津町】道の駅",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "city-339",
+      "name": "「善通寺五岳の里」市民集いの丘公園",
+      "spot_type": "gated",
+      "settled": false,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "p4",
+      "name": "柏原渓谷",
+      "spot_type": "gated",
+      "settled": false,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "town-338",
+      "name": "かりんの丘公園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "mod",
+      "name": "乃木館（陸上自衛隊善通寺駐屯地資料館）",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "p13",
+      "name": "道の駅「滝宮」・綾川町うどん会館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "setoohhashi-181",
+      "name": "道の駅「瀬戸大橋記念公園」",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "shioiri-onsen",
+      "name": "道の駅「空の夢もみの木パーク」",
+      "spot_type": "gated",
+      "settled": false,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "irregular_closed"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "e-mikado-105",
+      "name": "道の駅「ことなみ」",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "mannou-mori",
+      "name": "森林の館（満濃池森林公園内）",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "town-490",
+      "name": "まんのう天文台",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "closures",
+        "fees"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 3,
+        "unknown": 4
+      }
+    },
+    {
+      "spot_id": "park-mino-147",
+      "name": "道の駅「ふれあいパークみの」",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "mitoyo-kanko-129",
+      "name": "粟島海洋記念館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "michinoeki-kotohiki",
+      "name": "道の駅「ことひき」",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "takaradanosato-449",
+      "name": "道の駅「たからだの里さいた」（物産館）",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "city-61",
+      "name": "観音寺市ちょうさ会館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "mitoyocs",
+      "name": "三豊市文化会館マリンウェーブ",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "city-148",
+      "name": "宗吉かわらの里展示館（宗吉瓦窯跡史跡公園）",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "closed",
+      "today_reasons": [
+        "weekly_closed"
+      ],
+      "week": {
+        "closed": 2,
+        "open": 5
+      }
+    },
+    {
+      "spot_id": "olive-pk-239",
+      "name": "道の駅「小豆島オリーブ公園」",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "fees"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "town-314",
+      "name": "道の駅・みなとオアシス「大坂城残石記念公園」",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "p398",
+      "name": "田井浜海水浴場・キャンプ場",
+      "spot_type": "gated",
+      "settled": false,
+      "fields": [
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "souyu-353",
+      "name": "香南楽湯",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "p3010",
+      "name": "純愛の聖地庵治・観光交流館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "88shikokuhenro-245",
+      "name": "根香寺",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "iwaseo",
+      "name": "石清尾八幡宮",
+      "spot_type": "gated",
+      "settled": false,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-505",
+      "name": "高松市歴史資料館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "city-506",
+      "name": "高松市讃岐国分寺跡資料館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "sanukicity-sportspark-204",
+      "name": "長尾総合公園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "sanukicity-sportspark-198",
+      "name": "津田総合公園",
+      "spot_type": "gated",
+      "settled": false,
+      "fields": [
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "town-8",
+      "name": "高山航空公園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "city-335",
+      "name": "鉢伏ふれあい公園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "goshikivc",
+      "name": "瀬戸内海国立公園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "shioiri-onsen-2360",
+      "name": "塩入ふるさと研修館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "shioiri-onsen-96",
+      "name": "塩入温泉",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "address",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "mannou-mori-89",
+      "name": "香川県満濃池森林公園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "konpira-76",
+      "name": "金刀比羅宮・書院",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "marugame-happylife",
+      "name": "笠島集落",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "closed",
+      "today_reasons": [
+        "annual_closed"
+      ],
+      "week": {
+        "closed": 7
+      }
+    },
+    {
+      "spot_id": "marugame-happylife-112",
+      "name": "塩飽勤番所跡",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "kagawa-konzouji",
+      "name": "金倉寺",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "city-334",
+      "name": "旧善通寺偕行社",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "fees"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "city-160",
+      "name": "香風園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address"
+      ],
+      "missing": [
+        "phone",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "p2970",
+      "name": "鎌田共済会郷土博物館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "setoohhashi-2353",
+      "name": "瀬戸大橋記念館（かがわこどもの駅）",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "p3214",
+      "name": "尾ノ瀬山展望台",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address"
+      ],
+      "missing": [
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "always_open"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "city-155",
+      "name": "坂出市塩業資料館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "kotohirakankou-77",
+      "name": "琴平町歴史民俗資料館",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "kotohira",
+      "name": "琴平海洋博物館（海の科学館）",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "marugame-happylife-379",
+      "name": "丸亀市手島自然教育センター",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "fees"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "sanukimannopark",
+      "name": "国営讃岐まんのう公園",
+      "spot_type": "gated",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "fees"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "p121",
+      "name": "虹の滝",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p304",
+      "name": "せとしるべ（高松港玉藻防波堤灯台）",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-2484",
+      "name": "古代山城屋嶋城",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-199",
+      "name": "津田の松原・琴林公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-183",
+      "name": "大串自然公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "address",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "city-187",
+      "name": "県立亀鶴公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "ikoinomori",
+      "name": "大滝大川県立自然公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "setoohhashi",
+      "name": "瀬戸大橋記念公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "tadotsu-kanko-243",
+      "name": "桃陵公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "closures",
+        "fees",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "town",
+      "name": "ほたる見公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 6,
+        "closed": 1
+      }
+    },
+    {
+      "spot_id": "city-47",
+      "name": "一の宮公園・一の宮海岸海水浴場・キャンプ場",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "mitoyo-kanko-127",
+      "name": "朝日山森林公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "mizupark-4344",
+      "name": "香川用水記念公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "mitoyo-kanko-141",
+      "name": "戸川ダム公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "michitoyo-oh",
+      "name": "道の駅「とよはま」",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 4,
+        "closed": 3
+      }
+    },
+    {
+      "spot_id": "town-310",
+      "name": "土渕海峡・フレトピア公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "shodoshima",
+      "name": "道の駅・海の駅「小豆島ふるさと村」",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "hours",
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "fees",
+        "reservation_required"
+      ],
+      "today": "open",
+      "today_reasons": [
+        "regular_hours"
+      ],
+      "week": {
+        "open": 7
+      }
+    },
+    {
+      "spot_id": "p287",
+      "name": "玉藻防波堤",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p122",
+      "name": "白山",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "ogijima",
+      "name": "男木島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "mikicho-kanko",
+      "name": "獄山",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p120",
+      "name": "高仙山山頂",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p422",
+      "name": "生子山公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-175",
+      "name": "常盤公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-157",
+      "name": "鎌田池公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "town-9",
+      "name": "滝宮公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "closures",
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "tadotsu-kanko-242",
+      "name": "道隆寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "mandaraji",
+      "name": "曼荼羅寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "takinomiyatenmangu",
+      "name": "滝宮天満宮",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "town-104",
+      "name": "満濃池",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "kotohirakankou-2576",
+      "name": "琴平公園",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "closures",
+        "address"
+      ],
+      "missing": [
+        "hours",
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "marugame-happylife-115",
+      "name": "本島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "marugame-happylife-459",
+      "name": "広島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "kotohirakankou-79",
+      "name": "鞘橋",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "marugame-happylife-460",
+      "name": "手島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-502",
+      "name": "西行法師の道",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-3696",
+      "name": "太助灯籠",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p71",
+      "name": "牛屋口",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "tadotsu-kanko-479",
+      "name": "高見島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "kotohirakankou-80",
+      "name": "大センダン",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "sakaide-kankou-463",
+      "name": "岩黒島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "marugame-happylife-458",
+      "name": "牛島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "koyamaji",
+      "name": "甲山寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-158",
+      "name": "城山",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-500",
+      "name": "城山不動の滝",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "sakaide-kankou-462",
+      "name": "櫃石島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-178",
+      "name": "府中湖",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "marugame-happylife-461",
+      "name": "小手島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-496",
+      "name": "沙弥島",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "address",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "town-3006",
+      "name": "木戸の馬蹄石",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "88shikokuhenro-174",
+      "name": "天皇寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "shorinjikempo",
+      "name": "金剛禅総本山少林寺",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "phone",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p81",
+      "name": "富士見町の並び燈籠",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "p3007",
+      "name": "小橋滝",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
+    },
+    {
+      "spot_id": "city-64",
+      "name": "豊浜八幡神社",
+      "spot_type": "open_air",
+      "settled": true,
+      "fields": [
+        "address",
+        "phone"
+      ],
+      "missing": [
+        "hours",
+        "closures",
+        "fees",
+        "reservation_required"
+      ],
+      "today": "unknown",
+      "today_reasons": [
+        "no_data"
+      ],
+      "week": {
+        "unknown": 7
+      }
     }
   ],
   "routes": [
@@ -4015,30 +6566,30 @@
   ],
   "by_type": {
     "gated": {
-      "total": 92,
-      "hours": 87
+      "total": 154,
+      "hours": 144
     },
     "open_air": {
-      "total": 79,
-      "settled": 78
+      "total": 127,
+      "settled": 126
     },
     "untyped": 0
   },
   "field_counts": {
-    "hours": 90,
-    "closures": 70,
-    "fees": 48,
-    "address": 164,
-    "phone": 160,
-    "reservation_required": 33
+    "hours": 151,
+    "closures": 134,
+    "fees": 74,
+    "address": 261,
+    "phone": 249,
+    "reservation_required": 50
   },
   "states": {
-    "open": 77,
-    "unknown": 89,
-    "closed": 5
+    "open": 133,
+    "unknown": 140,
+    "closed": 8
   },
   "unknown_reasons": {
-    "no_data": 86,
-    "irregular_closed": 3
+    "no_data": 136,
+    "irregular_closed": 4
   }
 }

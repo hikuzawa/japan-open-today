@@ -1,5 +1,5 @@
 {
-  "resolved_at": "2026-09-13T08:25:13.324088+09:00",
+  "resolved_at": "2026-09-13T19:45:31.915593+09:00",
   "requests": 0,
   "matched": [
     {
@@ -35,20 +35,20 @@
       "address": ""
     },
     {
+      "spot_id": "konpira-76",
+      "ja": "金刀比羅宮・書院",
+      "locale": "en",
+      "text": "Kotohiragu Shrine",
+      "url": "https://www.my-kagawa.jp/en/see-and-do/10078",
+      "address": ""
+    },
+    {
       "spot_id": "nishino-kinryo",
       "ja": "金陵の郷",
       "locale": "en",
       "text": "Kinryo Sake Museum",
       "url": "https://www.my-kagawa.jp/en/see-and-do/10115",
       "address": ""
-    },
-    {
-      "spot_id": "olive-pk",
-      "ja": "サン・オリーブ温泉（道の駅「小豆島オリーブ公園」内）",
-      "locale": "en",
-      "text": "Shodoshima Olive Park Roadside Station",
-      "url": "https://www.my-kagawa.jp/en/see-and-do/10085",
-      "address": "小豆島町西村甲1941-1 Open 8:30 a.m.–5 p.m."
     },
     {
       "spot_id": "sakurashop",
@@ -107,20 +107,20 @@
       "address": "高松市亀水町1411"
     },
     {
+      "spot_id": "konpira-76",
+      "ja": "金刀比羅宮・書院",
+      "locale": "zh-Hant",
+      "text": "金刀比羅宮",
+      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10078",
+      "address": "琴平町892-1"
+    },
+    {
       "spot_id": "nishino-kinryo",
       "ja": "金陵の郷",
       "locale": "zh-Hant",
       "text": "金陵之鄉",
       "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10115",
       "address": "琴平町623"
-    },
-    {
-      "spot_id": "olive-pk",
-      "ja": "サン・オリーブ温泉（道の駅「小豆島オリーブ公園」内）",
-      "locale": "zh-Hant",
-      "text": "道之驛 小豆島橄欖公園",
-      "url": "https://www.my-kagawa.jp/zh-TW/see-and-do/10085",
-      "address": "小豆島町西村甲1941-1"
     },
     {
       "spot_id": "sakurashop",
@@ -149,16 +149,16 @@
   ],
   "unmatched": [
     "zh-Hant/10077 栗林公園 / 香川県高松市栗林町１丁目２０番１６号",
-    "zh-Hant/10078 金刀比羅宮 / 琴平町892-1",
     "zh-Hant/10079 直島 / ",
     "zh-Hant/10081 瀨戶大橋紀念公園 / 坂出市番の州緑町6-13",
     "zh-Hant/10083 高松盆栽的故鄉 / 高松市国分寺町国分353-1",
+    "zh-Hant/10085 道之驛 小豆島橄欖公園 / 小豆島町西村甲1941-1",
     "zh-Hant/10086 天使的散步道 / 土庄町銀波浦",
     "zh-Hant/10087 錢形砂繪（琴彈公園） / 観音寺市有明町",
     "zh-Hant/10088 大窪寺 / ",
     "zh-Hant/10089 讃州井筒屋敷 / 香川県東かがわ市引田2163",
     "zh-Hant/10090 父母之濱 / 三豊市仁尾町仁尾乙203‐3",
-    "zh-Hant/10091 國營讚岐滿濃公園 / まんのう町吉野4243-12",
+    "zh-Hant/10091 國營讚岐滿濃公園: 国営讃岐まんのう公園 と漢字が合わない",
     "zh-Hant/10093 高松城跡 玉藻公園 / 高松市玉藻町2番1号",
     "zh-Hant/10096 瀨戶內國際藝術祭 / ",
     "zh-Hant/10098 丸龜市豬熊弦一郎現代美術館 / ",
@@ -193,10 +193,10 @@
     "zh-Hant/10136 跳島須知 / ",
     "zh-Hant/10178 四國水族館 / ",
     "en/10077 Ritsurin Garden: 繁体字側で施設が決まっていない",
-    "en/10078 Kotohiragu Shrine: 繁体字側で施設が決まっていない",
     "en/10079 Naoshima Island: 繁体字側で施設が決まっていない",
     "en/10081 Seto Ohashi Commemorative Park: 繁体字側で施設が決まっていない",
     "en/10083 Takamatsu Bonsai Center: 繁体字側で施設が決まっていない",
+    "en/10085 Shodoshima Olive Park Roadside Station: 繁体字側で施設が決まっていない",
     "en/10086 Angel Road: 繁体字側で施設が決まっていない",
     "en/10087 Zenigata Sand Coin (Kotohiki Park): 繁体字側で施設が決まっていない",
     "en/10090 Chichibugahama Beach: 繁体字側で施設が決まっていない",

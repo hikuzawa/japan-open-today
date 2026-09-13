@@ -21,12 +21,24 @@ names:
     source: glossary
     text: 瀨戶大橋紀念公園
     url: ''
+  「善通寺五岳の里」市民集いの丘公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 善通寺五岳之里市民聚集之丘公園
+    url: ''
   【宇多津町】宇多津:
     checked_on: '2026-09-13'
     note: Wikipedia 日本語版「宇多津町」の言語間リンク（zh）
     source: glossary
     text: 宇多津町
     url: https://ja.wikipedia.org/wiki/%E5%AE%87%E5%A4%9A%E6%B4%A5
+  【宇多津町】道の駅:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 宇多津町道路驛站
+    url: ''
   【宇多津町】青の山頂展望台:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -39,11 +51,23 @@ names:
     source: glossary
     text: 法泉寺
     url: ''
+  あじ竜王山公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 味龍王山公園
+    url: ''
   かどや製油（株）今昔館:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 角屋製油今昔館
+    url: ''
+  かりんの丘公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 花梨之丘公園
     url: ''
   こんぴら温泉郷:
     checked_on: '2026-09-13'
@@ -62,6 +86,18 @@ names:
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 讚岐七福神
+    url: ''
+  さぬき市歴史民俗資料館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 讚岐市歷史民俗資料館
+    url: ''
+  さぬき空港公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 讚岐空港公園
     url: ''
   しろとり動物園:
     checked_on: '2026-09-13'
@@ -98,6 +134,24 @@ names:
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 大師之湯溫泉
+    url: ''
+  ほたる見公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 螢火蟲觀賞公園
+    url: ''
+  まんのう天文台:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 滿濃天文台
+    url: ''
+  みろく自然公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 彌勒自然公園
     url: ''
   イサム・ノグチ遊具彫刻:
     checked_on: '2026-09-13'
@@ -171,6 +225,12 @@ names:
     source: glossary
     text: 丸金醬油紀念館
     url: ''
+  一の宮公園・一の宮海岸海水浴場・キャンプ場:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 一之宮公園、一之宮海岸海水浴場、露營場
+    url: ''
   一夜庵:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -188,6 +248,12 @@ names:
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 三木町綜合運動公園
+    url: ''
+  三豊市文化会館マリンウェーブ:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 三豊市文化會館Marine Wave
     url: ''
   三霞洞渓谷:
     checked_on: '2026-09-13'
@@ -213,11 +279,23 @@ names:
     source: official
     text: 丸龜城
     url: https://www.my-kagawa.jp/zh-TW/see-and-do/10084
+  丸亀市手島自然教育センター:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 丸龜市手島自然教育中心
+    url: ''
   丸亀市猪熊弦一郎現代美術館:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 丸龜市豬熊弦一郎當代美術館
+    url: ''
+  乃木館（陸上自衛隊善通寺駐屯地資料館）:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 乃木館
     url: ''
   五色台:
     checked_on: '2026-09-13'
@@ -243,11 +321,23 @@ names:
     source: glossary
     text: 八棗寺
     url: ''
+  公渕森林公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 公淵森林公園
+    url: ''
   出釋迦寺:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 出釋迦寺
+    url: ''
+  古代山城屋嶋城:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 山城屋島城
     url: ''
   史跡高松城跡・玉藻公園:
     checked_on: '2026-09-13'
@@ -285,11 +375,53 @@ names:
     source: glossary
     text: 國分寺
     url: ''
+  国営讃岐まんのう公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 國營讚岐滿濃公園
+    url: ''
+  土渕海峡・フレトピア公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 土渕海峽公園
+    url: ''
+  坂出市塩業資料館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 坂出市鹽業資料館
+    url: ''
+  城山不動の滝:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 城山不動瀑布公園
+    url: ''
+  城岬公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 城岬公園
+    url: ''
   塔重山公園:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 塔重山公園
+    url: ''
+  塩入ふるさと研修館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 鹽入故鄉研修館
+    url: ''
+  塩入温泉:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 鹽入溫泉
     url: ''
   塩江温泉郷:
     checked_on: '2026-09-13'
@@ -297,11 +429,23 @@ names:
     source: glossary
     text: 鹽江溫泉鄉
     url: ''
+  大串自然公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 大串自然公園
+    url: ''
   大坂峠展望台:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 大坂峠展望台
+    url: ''
+  大滝大川県立自然公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 大瀧大川縣立自然公園
     url: ''
   大窪寺:
     checked_on: '2026-09-13'
@@ -315,11 +459,23 @@ names:
     source: glossary
     text: 大興寺
     url: ''
+  天体望遠鏡博物館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 天體望遠鏡博物館
+    url: ''
   天然温泉:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 丸龜天然溫泉
+    url: ''
+  天皇寺:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 天皇寺
     url: ''
   女木島:
     checked_on: '2026-09-13'
@@ -327,12 +483,24 @@ names:
     source: glossary
     text: 女木島
     url: https://ja.wikipedia.org/wiki/%E5%A5%B3%E6%9C%A8%E5%B3%B6
+  宗吉かわらの里展示館（宗吉瓦窯跡史跡公園）:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 宗吉瓦之里展示館
+    url: ''
   寒霞渓:
     checked_on: '2026-09-13'
     note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
     source: official
     text: 寒霞溪
     url: https://www.my-kagawa.jp/zh-TW/see-and-do/10122
+  小橋滝:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 小橋瀑布公園
+    url: ''
   小豆島オートビレッジYOSHIDAふるさと交流館・吉田温泉:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -344,6 +512,12 @@ names:
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 小豆島溫泉里枝之湯
+    url: ''
+  尾ノ瀬山展望台:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 尾之瀨山展望台
     url: ''
   屋島寺:
     checked_on: '2026-09-13'
@@ -369,12 +543,24 @@ names:
     source: glossary
     text: 山田海岸
     url: ''
+  峰山公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 峰山公園
+    url: ''
   川島猛アートファクトリー:
     checked_on: '2026-09-13'
     note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
     source: official
     text: 川島猛藝術工場
     url: https://www.my-kagawa.jp/zh-TW/see-and-do/10111
+  常盤公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 常盤公園
+    url: ''
   平和の群像:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -386,6 +572,18 @@ names:
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 平賀源內舊宅
+    url: ''
+  平賀源内記念館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 平賀源內紀念館
+    url: ''
+  府中湖:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 府中湖公園
     url: ''
   引田城跡（城山）:
     checked_on: '2026-09-13'
@@ -411,11 +609,23 @@ names:
     source: glossary
     text: 志度綜合運動公園
     url: ''
+  戸川ダム公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 戶川大壩公園
+    url: ''
   日本ドルフィンセンター:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 日本海豚中心
+    url: ''
+  旧善通寺偕行社:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 舊善通寺偕行社
     url: ''
   旧金毘羅大芝居(金丸座):
     checked_on: '2026-09-13'
@@ -423,11 +633,23 @@ names:
     source: glossary
     text: 金丸座
     url: ''
+  曼荼羅寺:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 曼荼羅寺
+    url: ''
   有明浜:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 有明濱
+    url: ''
+  朝日山森林公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 朝日山森林公園
     url: ''
   本山寺:
     checked_on: '2026-09-13'
@@ -435,11 +657,47 @@ names:
     source: glossary
     text: 本山寺
     url: ''
+  東かがわ手袋ギャラリー:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 東香川手套美術館
+    url: ''
+  柏原渓谷:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 柏原溪谷
+    url: ''
+  根香寺:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 根香寺
+    url: ''
   桃太郎神社（熊野権現）:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 桃太郎神社
+    url: ''
+  桃陵公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 桃陵公園
+    url: ''
+  森林の館（満濃池森林公園内）:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 滿濃池森林公園
+    url: ''
+  櫃石島:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 櫃石島
     url: ''
   母神温泉:
     checked_on: '2026-09-13'
@@ -465,11 +723,59 @@ names:
     source: glossary
     text: 沖之島
     url: ''
+  沙弥島:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 沙彌島
+    url: ''
+  津田の松原・琴林公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 津田的松原·琴林公園
+    url: ''
+  津田総合公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 津田綜合公園
+    url: ''
   湯元小豆島温泉・塩の湯（島湯）:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 湯元小豆島溫泉·鹽之湯
+    url: ''
+  満濃池:
+    checked_on: '2026-09-13'
+    note: Wikipedia 日本語版「満濃池」の言語間リンク（zh）
+    source: glossary
+    text: 满浓池
+    url: https://ja.wikipedia.org/wiki/%E6%BA%80%E6%BF%83%E6%B1%A0
+  滝宮公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 滝宮公園
+    url: ''
+  滝宮天満宮:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 滝宮天滿宮
+    url: ''
+  瀬戸内海国立公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 瀨戶內海國立公園
+    url: ''
+  瀬戸内海歴史民俗資料館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 瀨戶內海歷史民俗資料館
     url: ''
   瀬戸大橋:
     checked_on: '2026-09-13'
@@ -483,11 +789,53 @@ names:
     source: glossary
     text: 瀨戶大橋塔
     url: ''
+  瀬戸大橋記念公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 瀨戶大橋紀念公園
+    url: ''
+  瀬戸大橋記念館（かがわこどもの駅）:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 瀨戶大橋紀念館
+    url: ''
   灸まん美術館:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 灸饅美術館
+    url: ''
+  獄山:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 獄山
+    url: ''
+  玉藻防波堤:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 玉藻防波堤
+    url: ''
+  琴平公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 琴平公園
+    url: ''
+  琴平海洋博物館（海の科学館）:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 琴平海洋博物館
+    url: ''
+  琴平町歴史民俗資料館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 琴平町歷史民俗資料館
     url: ''
   琴弾八幡宮:
     checked_on: '2026-09-13'
@@ -501,18 +849,48 @@ names:
     source: glossary
     text: 琴彈迴廊
     url: ''
+  生子山公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 生子山公園
+    url: ''
   田の浦海岸:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 田之浦海岸
     url: ''
+  田井浜海水浴場・キャンプ場:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 田井濱海水浴場・露營場
+    url: ''
+  甲山寺:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 甲山寺
+    url: ''
+  男木島:
+    checked_on: '2026-09-13'
+    note: Wikipedia 日本語版「男木島」の言語間リンク（zh）
+    source: glossary
+    text: 男木岛
+    url: https://ja.wikipedia.org/wiki/%E7%94%B7%E6%9C%A8%E5%B3%B6
   男木島灯台・男木島灯台資料館:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 男木島燈塔・男木島燈塔資料館
     url: ''
+  白山:
+    checked_on: '2026-09-13'
+    note: Wikipedia 日本語版「白山」の言語間リンク（zh）
+    source: glossary
+    text: 白山 (兩白山地)
+    url: https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B1%B1
   白峯寺:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -531,6 +909,18 @@ names:
     source: official
     text: 直島觀光旅遊網站 直島町觀光協會官方
     url: http://naoshima.net/zh_tw/
+  県立亀鶴公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 縣立龜鶴公園
+    url: ''
+  石清尾八幡宮:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 石清尾八幡宮
+    url: ''
   神恵院・観音寺:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -543,6 +933,12 @@ names:
     source: glossary
     text: 竹居觀音岬
     url: ''
+  笠島集落:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 笠島集落
+    url: ''
   粟井神社:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
@@ -554,6 +950,12 @@ names:
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 粟島
+    url: ''
+  粟島海洋記念館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 粟島海洋紀念館
     url: ''
   紫雲出山:
     checked_on: '2026-09-13'
@@ -585,11 +987,29 @@ names:
     source: glossary
     text: 萩原寺
     url: ''
+  虹の滝:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 虹之瀑布公園
+    url: ''
   讃岐おもちゃ美術館:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 讚岐玩具美術館
+    url: ''
+  讃岐漆芸美術館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 讚岐漆藝美術館
+    url: ''
+  豊浜八幡神社:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 豐濱八幡神社
     url: ''
   豊稔池堰堤（アーチダム）:
     checked_on: '2026-09-13'
@@ -597,11 +1017,131 @@ names:
     source: glossary
     text: 豐稔池堰堤
     url: ''
+  道の駅「ことなみ」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 言之驛
+    url: ''
+  道の駅「ことひき」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 言葉引道路驛站
+    url: ''
+  道の駅「しおのえ」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 鹽之江道路驛站
+    url: ''
+  道の駅「たからだの里さいた」（物産館）:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 寶田之里幸田道路驛站
+    url: ''
+  道の駅「とよはま」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 豐濱道路驛站
+    url: ''
+  道の駅「ながお」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 長尾道路驛站
+    url: ''
+  道の駅「みろく」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 彌勒道路驛站
+    url: ''
+  道の駅「小豆島オリーブ公園」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 小豆島橄欖公園
+    url: ''
+  道の駅「津田の松原」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 津田的松原道路驛站
+    url: ''
+  道の駅「源平の里むれ」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 源平之里牟禮道路驛站
+    url: ''
+  道の駅「滝宮」・綾川町うどん会館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 滝宮道路驛・綾川町烏冬會館
+    url: ''
+  道の駅「瀬戸大橋記念公園」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 瀨戶大橋紀念公園道路驛站
+    url: ''
+  道の駅「空の夢もみの木パーク」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 道路驛站「空之夢檜木公園」
+    url: ''
+  道の駅「香南楽湯」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 香南樂湯道路驛站
+    url: ''
+  道の駅・みなとオアシス「大坂城残石記念公園」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 大坂城殘石紀念公園 道之驛・港口綠洲
+    url: ''
+  道の駅・海の駅「小豆島ふるさと村」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 小豆島故鄉村道路驛站
+    url: ''
+  道隆寺:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 道隆寺
+    url: ''
   郷照寺（第78番札所）:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 鄉照寺
+    url: ''
+  金倉寺:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 金倉寺
+    url: ''
+  金刀比羅宮・書院:
+    checked_on: '2026-09-13'
+    note: 香川県観光協会の多言語サイトの表記（住所で突き合わせ）
+    source: official
+    text: 金刀比羅宮
+    url: https://www.my-kagawa.jp/zh-TW/see-and-do/10078
+  金剛禅総本山少林寺:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 金剛禪總本山少林寺
     url: ''
   金陵の郷:
     checked_on: '2026-09-13'
@@ -615,11 +1155,35 @@ names:
     source: glossary
     text: 錢形沙繪（琴彈公園內）
     url: ''
+  鎌田共済会郷土博物館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 鎌田共濟會鄉土博物館
+    url: ''
+  鎌田池公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 鎌田池公園
+    url: ''
   長尾寺:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 長尾寺
+    url: ''
+  長尾総合公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 長尾綜合公園
+    url: ''
+  雨滝自然科学館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 雨瀧自然科學館
     url: ''
   雲辺寺ロープウェイ:
     checked_on: '2026-09-13'
@@ -627,11 +1191,35 @@ names:
     source: glossary
     text: 雲邊寺纜車
     url: ''
+  鞘橋:
+    checked_on: '2026-09-13'
+    note: Wikipedia 日本語版「鞘橋」の言語間リンク（zh）
+    source: glossary
+    text: 鞘橋
+    url: https://ja.wikipedia.org/wiki/%E9%9E%98%E6%A9%8B
+  香南楽湯:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 香南樂湯
+    url: ''
+  香川のてぶくろ資料館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 香川手套資料館
+    url: ''
   香川・高松ツーリストインフォメーション:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 高松遊客資訊中心
+    url: ''
+  香川用水記念公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 香川用水紀念公園
     url: ''
   香川県庁舎（本館）:
     checked_on: '2026-09-13'
@@ -639,11 +1227,23 @@ names:
     source: glossary
     text: 香川縣廳舍（本館）
     url: ''
+  香川県満濃池森林公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 香川縣滿濃池森林公園
+    url: ''
   香川県立東山魁夷せとうち美術館:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 香川縣立東山魁夷瀨戶內美術館
+    url: ''
+  香風園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 香風園
     url: ''
   高屋神社【天空の鳥居】:
     checked_on: '2026-09-13'
@@ -651,17 +1251,53 @@ names:
     source: glossary
     text: 高屋神社
     url: ''
+  高山航空公園:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 高山航空公園
+    url: ''
   高松市塩江美術館（ホタルの里美術館）:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 高松市鹽江美術館
     url: ''
+  高松市屋島山上交流拠点施設「やしまーる」:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 屋島丸
+    url: ''
+  高松市歴史資料館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 高松市歷史資料館
+    url: ''
+  高松市石の民俗資料館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 高松市石的民俗資料館
+    url: ''
   高松市美術館:
     checked_on: '2026-09-13'
     note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
     source: glossary
     text: 高松市美術館
+    url: ''
+  高松市讃岐国分寺跡資料館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 高松市讚岐國分寺跡資料館
+    url: ''
+  高松市香南歴史民俗郷土館:
+    checked_on: '2026-09-13'
+    note: 固定訳（公式表記・Wikipedia が無いため claude-haiku-4-5 で作成。差分でレビューする）
+    source: glossary
+    text: 高松市香南歷史民俗鄉土館
     url: ''
   高見山展望台:
     checked_on: '2026-09-13'

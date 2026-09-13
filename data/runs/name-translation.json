@@ -1,434 +1,1136 @@
 {
-  "translated_at": "2026-09-13T08:33:23.717455+09:00",
+  "translated_at": "2026-09-13T20:07:22.080886+09:00",
   "model": "claude-haiku-4-5",
-  "input_tokens": 77349,
-  "output_tokens": 2128,
+  "input_tokens": 137823,
+  "output_tokens": 4561,
   "rows": [
     {
-      "ja": "塩江温泉郷",
+      "ja": "さぬき空港公園",
       "locale": "en",
-      "text": "Shioe Onsen",
-      "spot_id": "shionoe"
+      "text": "Sanuki Airport Park",
+      "spot_id": "sanuki-airport-park"
     },
     {
-      "ja": "塩江温泉郷",
+      "ja": "さぬき空港公園",
       "locale": "zh-Hant",
-      "text": "鹽江溫泉鄉",
-      "spot_id": "shionoe"
+      "text": "讚岐空港公園",
+      "spot_id": "sanuki-airport-park"
     },
     {
-      "ja": "竹居観音岬・竹居観音寺（四国最北端）",
+      "ja": "あじ竜王山公園",
       "locale": "en",
-      "text": "Takei Kannon Cape",
-      "spot_id": "p2852"
+      "text": "Aji Ryuozan Park",
+      "spot_id": "p2636"
     },
     {
-      "ja": "竹居観音岬・竹居観音寺（四国最北端）",
+      "ja": "あじ竜王山公園",
       "locale": "zh-Hant",
-      "text": "竹居觀音岬",
-      "spot_id": "p2852"
+      "text": "味龍王山公園",
+      "spot_id": "p2636"
     },
     {
-      "ja": "サンポート高松",
-      "locale": "zh-Hant",
-      "text": "Sunport高松",
-      "spot_id": "takamatsu"
-    },
-    {
-      "ja": "桃太郎神社（熊野権現）",
+      "ja": "峰山公園",
       "locale": "en",
-      "text": "Momotaro Shrine",
-      "spot_id": "p429"
+      "text": "Mineyama Park",
+      "spot_id": "mineyama-park"
     },
     {
-      "ja": "桃太郎神社（熊野権現）",
+      "ja": "峰山公園",
       "locale": "zh-Hant",
-      "text": "桃太郎神社",
-      "spot_id": "p429"
+      "text": "峰山公園",
+      "spot_id": "mineyama-park"
     },
     {
-      "ja": "屋島山上",
-      "locale": "zh-Hant",
-      "text": "屋島山上",
-      "spot_id": "yashima-navi"
-    },
-    {
-      "ja": "さぬき七福神",
-      "locale": "zh-Hant",
-      "text": "讚岐七福神",
-      "spot_id": "tamurajinja"
-    },
-    {
-      "ja": "一宮寺",
-      "locale": "zh-Hant",
-      "text": "一宮寺",
-      "spot_id": "sanuki-ichinomiyaji"
-    },
-    {
-      "ja": "国分寺",
+      "ja": "公渕森林公園",
       "locale": "en",
-      "text": "Kokubunji Temple",
-      "spot_id": "sanukikokubunji"
+      "text": "Koubuchi Forest Park",
+      "spot_id": "kinbuchi-shinrin"
     },
     {
-      "ja": "国分寺",
+      "ja": "公渕森林公園",
       "locale": "zh-Hant",
-      "text": "國分寺",
-      "spot_id": "sanukikokubunji"
+      "text": "公淵森林公園",
+      "spot_id": "kinbuchi-shinrin"
     },
     {
-      "ja": "「TIME",
+      "ja": "城岬公園",
       "locale": "en",
-      "text": "「TIME",
-      "spot_id": "p281"
+      "text": "Shiromine Park",
+      "spot_id": "mure-aji-park"
     },
     {
-      "ja": "「TIME",
+      "ja": "城岬公園",
       "locale": "zh-Hant",
-      "text": "「TIME",
-      "spot_id": "p281"
+      "text": "城岬公園",
+      "spot_id": "mure-aji-park"
     },
     {
-      "ja": "田の浦海岸",
-      "locale": "zh-Hant",
-      "text": "田之浦海岸",
-      "spot_id": "p27"
-    },
-    {
-      "ja": "ふるさと海岸（東かがわ市）",
+      "ja": "高松市屋島山上交流拠点施設「やしまーる」",
       "locale": "en",
-      "text": "Furusato Kaigan",
-      "spot_id": "p39"
+      "text": "Yashimaru",
+      "spot_id": "yashima-navi-4144"
     },
     {
-      "ja": "ふるさと海岸（東かがわ市）",
+      "ja": "高松市屋島山上交流拠点施設「やしまーる」",
       "locale": "zh-Hant",
-      "text": "故鄉海岸",
-      "spot_id": "p39"
+      "text": "屋島丸",
+      "spot_id": "yashima-navi-4144"
     },
     {
-      "ja": "山田海岸",
+      "ja": "瀬戸内海歴史民俗資料館",
       "locale": "zh-Hant",
-      "text": "山田海岸",
-      "spot_id": "p44"
+      "text": "瀨戶內海歷史民俗資料館",
+      "spot_id": "pref-279"
     },
     {
-      "ja": "大窪寺",
+      "ja": "高松市香南歴史民俗郷土館",
       "locale": "zh-Hant",
-      "text": "大窪寺",
-      "spot_id": "sanuki-kanko"
+      "text": "高松市香南歷史民俗鄉土館",
+      "spot_id": "city-507"
     },
     {
-      "ja": "白鳥神社",
+      "ja": "道の駅「しおのえ」",
       "locale": "en",
-      "text": "Shiratori Shrine",
-      "spot_id": "shirotori-jinja"
+      "text": "Shionoe Roadside Station",
+      "spot_id": "michi-no-eki"
     },
     {
-      "ja": "白鳥神社",
+      "ja": "道の駅「しおのえ」",
       "locale": "zh-Hant",
-      "text": "白鳥神社",
-      "spot_id": "shirotori-jinja"
+      "text": "鹽之江道路驛站",
+      "spot_id": "michi-no-eki"
     },
     {
-      "ja": "大坂峠展望台",
+      "ja": "道の駅「香南楽湯」",
       "locale": "en",
-      "text": "Osaka Pass Observation Deck",
-      "spot_id": "p18"
+      "text": "Konan Rakuyu Roadside Station",
+      "spot_id": "souyu-296"
     },
     {
-      "ja": "大坂峠展望台",
+      "ja": "道の駅「香南楽湯」",
       "locale": "zh-Hant",
-      "text": "大坂峠展望台",
-      "spot_id": "p18"
+      "text": "香南樂湯道路驛站",
+      "spot_id": "souyu-296"
     },
     {
-      "ja": "志度寺",
-      "locale": "zh-Hant",
-      "text": "志度寺",
-      "spot_id": "shidoji"
-    },
-    {
-      "ja": "水主神社",
+      "ja": "道の駅「源平の里むれ」",
       "locale": "en",
-      "text": "Suzu Shrine",
-      "spot_id": "p43"
+      "text": "Genpei no Sato Mure Roadside Station",
+      "spot_id": "genpei-mure"
     },
     {
-      "ja": "水主神社",
+      "ja": "道の駅「源平の里むれ」",
       "locale": "zh-Hant",
-      "text": "水主神社",
-      "spot_id": "p43"
+      "text": "源平之里牟禮道路驛站",
+      "spot_id": "genpei-mure"
     },
     {
-      "ja": "長尾寺",
-      "locale": "zh-Hant",
-      "text": "長尾寺",
-      "spot_id": "nagaoji"
-    },
-    {
-      "ja": "山上公園",
+      "ja": "讃岐漆芸美術館",
       "locale": "en",
-      "text": "Yamanoue Park",
-      "spot_id": "p425"
+      "text": "Sanuki Lacquerware Art Museum",
+      "spot_id": "karokaro"
     },
     {
-      "ja": "山上公園",
+      "ja": "讃岐漆芸美術館",
       "locale": "zh-Hant",
-      "text": "山上公園",
-      "spot_id": "p425"
+      "text": "讚岐漆藝美術館",
+      "spot_id": "karokaro"
     },
     {
-      "ja": "こんぴら温泉郷",
+      "ja": "高松市石の民俗資料館",
       "locale": "en",
-      "text": "Konpira Onsen",
-      "spot_id": "kotohirakankou"
+      "text": "Takamatsu Stone Folk Museum",
+      "spot_id": "city-283"
     },
     {
-      "ja": "五色台",
+      "ja": "高松市石の民俗資料館",
       "locale": "zh-Hant",
-      "text": "五色台",
-      "spot_id": "city-161"
+      "text": "高松市石的民俗資料館",
+      "spot_id": "city-283"
     },
     {
-      "ja": "【宇多津町】青の山頂展望台",
+      "ja": "みろく自然公園",
       "locale": "en",
-      "text": "Aonoyama Summit Viewpoint",
-      "spot_id": "p317"
+      "text": "Miroku Nature Park",
+      "spot_id": "city-211"
     },
     {
-      "ja": "【宇多津町】青の山頂展望台",
+      "ja": "みろく自然公園",
       "locale": "zh-Hant",
-      "text": "青之山頂展望台",
-      "spot_id": "p317"
+      "text": "彌勒自然公園",
+      "spot_id": "city-211"
     },
     {
-      "ja": "三霞洞渓谷",
-      "locale": "zh-Hant",
-      "text": "三霞洞溪谷",
-      "spot_id": "town-421"
-    },
-    {
-      "ja": "出釋迦寺",
+      "ja": "道の駅「ながお」",
       "locale": "en",
-      "text": "Shutsushakaji Temple",
-      "spot_id": "shusshakaji"
+      "text": "Nagao Roadside Station",
+      "spot_id": "city-208"
     },
     {
-      "ja": "出釋迦寺",
+      "ja": "道の駅「ながお」",
       "locale": "zh-Hant",
-      "text": "出釋迦寺",
-      "spot_id": "shusshakaji"
+      "text": "長尾道路驛站",
+      "spot_id": "city-208"
     },
     {
-      "ja": "「どだま獅子」／流政之作（瀬戸大橋記念公園）",
+      "ja": "東かがわ手袋ギャラリー",
       "locale": "en",
-      "text": "Seto Ohashi Memorial Park",
-      "spot_id": "setoohhashi-439"
+      "text": "Higashikagawa Glove Gallery",
+      "spot_id": "p30"
     },
     {
-      "ja": "「どだま獅子」／流政之作（瀬戸大橋記念公園）",
+      "ja": "東かがわ手袋ギャラリー",
+      "locale": "zh-Hant",
+      "text": "東香川手套美術館",
+      "spot_id": "p30"
+    },
+    {
+      "ja": "道の駅「津田の松原」",
+      "locale": "en",
+      "text": "Tsuda no Matsubara Roadside Station",
+      "spot_id": "sanuki-sa"
+    },
+    {
+      "ja": "道の駅「津田の松原」",
+      "locale": "zh-Hant",
+      "text": "津田的松原道路驛站",
+      "spot_id": "sanuki-sa"
+    },
+    {
+      "ja": "道の駅「みろく」",
+      "locale": "en",
+      "text": "Miroku Roadside Station",
+      "spot_id": "city-209"
+    },
+    {
+      "ja": "道の駅「みろく」",
+      "locale": "zh-Hant",
+      "text": "彌勒道路驛站",
+      "spot_id": "city-209"
+    },
+    {
+      "ja": "平賀源内記念館",
+      "locale": "en",
+      "text": "Hiraga Gennai Memorial Museum",
+      "spot_id": "hiragagennai-205"
+    },
+    {
+      "ja": "平賀源内記念館",
+      "locale": "zh-Hant",
+      "text": "平賀源內紀念館",
+      "spot_id": "hiragagennai-205"
+    },
+    {
+      "ja": "雨滝自然科学館",
+      "locale": "zh-Hant",
+      "text": "雨瀧自然科學館",
+      "spot_id": "city-216"
+    },
+    {
+      "ja": "天体望遠鏡博物館",
+      "locale": "en",
+      "text": "Astronomical Telescope Museum",
+      "spot_id": "telescope-museum"
+    },
+    {
+      "ja": "天体望遠鏡博物館",
+      "locale": "zh-Hant",
+      "text": "天體望遠鏡博物館",
+      "spot_id": "telescope-museum"
+    },
+    {
+      "ja": "香川のてぶくろ資料館",
+      "locale": "en",
+      "text": "Kagawa Tebukuro Museum",
+      "spot_id": "tebukurokumiai"
+    },
+    {
+      "ja": "香川のてぶくろ資料館",
+      "locale": "zh-Hant",
+      "text": "香川手套資料館",
+      "spot_id": "tebukurokumiai"
+    },
+    {
+      "ja": "さぬき市歴史民俗資料館",
+      "locale": "en",
+      "text": "Sanuki City Museum of History and Folklore",
+      "spot_id": "sanuki-191"
+    },
+    {
+      "ja": "さぬき市歴史民俗資料館",
+      "locale": "zh-Hant",
+      "text": "讚岐市歷史民俗資料館",
+      "spot_id": "sanuki-191"
+    },
+    {
+      "ja": "【宇多津町】道の駅",
+      "locale": "en",
+      "text": "Roadside Station Uta",
+      "spot_id": "utazu-umihotaru"
+    },
+    {
+      "ja": "【宇多津町】道の駅",
+      "locale": "zh-Hant",
+      "text": "宇多津町道路驛站",
+      "spot_id": "utazu-umihotaru"
+    },
+    {
+      "ja": "「善通寺五岳の里」市民集いの丘公園",
+      "locale": "en",
+      "text": "Zentsuji Gogaku no Sato Shimin Tsunoi no Oka Park",
+      "spot_id": "city-339"
+    },
+    {
+      "ja": "「善通寺五岳の里」市民集いの丘公園",
+      "locale": "zh-Hant",
+      "text": "善通寺五岳之里市民聚集之丘公園",
+      "spot_id": "city-339"
+    },
+    {
+      "ja": "柏原渓谷",
+      "locale": "zh-Hant",
+      "text": "柏原溪谷",
+      "spot_id": "p4"
+    },
+    {
+      "ja": "かりんの丘公園",
+      "locale": "en",
+      "text": "Karin no Oka Park",
+      "spot_id": "town-338"
+    },
+    {
+      "ja": "かりんの丘公園",
+      "locale": "zh-Hant",
+      "text": "花梨之丘公園",
+      "spot_id": "town-338"
+    },
+    {
+      "ja": "乃木館（陸上自衛隊善通寺駐屯地資料館）",
+      "locale": "en",
+      "text": "Nogi Museum",
+      "spot_id": "mod"
+    },
+    {
+      "ja": "乃木館（陸上自衛隊善通寺駐屯地資料館）",
+      "locale": "zh-Hant",
+      "text": "乃木館",
+      "spot_id": "mod"
+    },
+    {
+      "ja": "道の駅「滝宮」・綾川町うどん会館",
+      "locale": "en",
+      "text": "Takimiya Roadside Station・Ayagawa Town Udon Hall",
+      "spot_id": "p13"
+    },
+    {
+      "ja": "道の駅「滝宮」・綾川町うどん会館",
+      "locale": "zh-Hant",
+      "text": "滝宮道路驛・綾川町烏冬會館",
+      "spot_id": "p13"
+    },
+    {
+      "ja": "道の駅「瀬戸大橋記念公園」",
+      "locale": "en",
+      "text": "Seto Ohashi Memorial Park Roadside Station",
+      "spot_id": "setoohhashi-181"
+    },
+    {
+      "ja": "道の駅「瀬戸大橋記念公園」",
+      "locale": "zh-Hant",
+      "text": "瀨戶大橋紀念公園道路驛站",
+      "spot_id": "setoohhashi-181"
+    },
+    {
+      "ja": "道の駅「空の夢もみの木パーク」",
+      "locale": "en",
+      "text": "Roadside Station Sora no Yume Momino Ki Park",
+      "spot_id": "shioiri-onsen"
+    },
+    {
+      "ja": "道の駅「空の夢もみの木パーク」",
+      "locale": "zh-Hant",
+      "text": "道路驛站「空之夢檜木公園」",
+      "spot_id": "shioiri-onsen"
+    },
+    {
+      "ja": "道の駅「ことなみ」",
+      "locale": "en",
+      "text": "Kotonamiroadside Station",
+      "spot_id": "e-mikado-105"
+    },
+    {
+      "ja": "道の駅「ことなみ」",
+      "locale": "zh-Hant",
+      "text": "言之驛",
+      "spot_id": "e-mikado-105"
+    },
+    {
+      "ja": "森林の館（満濃池森林公園内）",
+      "locale": "en",
+      "text": "Mano Pond Forest Park",
+      "spot_id": "mannou-mori"
+    },
+    {
+      "ja": "森林の館（満濃池森林公園内）",
+      "locale": "zh-Hant",
+      "text": "滿濃池森林公園",
+      "spot_id": "mannou-mori"
+    },
+    {
+      "ja": "まんのう天文台",
+      "locale": "en",
+      "text": "Mannou Astronomical Observatory",
+      "spot_id": "town-490"
+    },
+    {
+      "ja": "まんのう天文台",
+      "locale": "zh-Hant",
+      "text": "滿濃天文台",
+      "spot_id": "town-490"
+    },
+    {
+      "ja": "道の駅「ふれあいパークみの」",
+      "locale": "en",
+      "text": "Fureaipaku Mino Roadside Station",
+      "spot_id": "park-mino-147"
+    },
+    {
+      "ja": "粟島海洋記念館",
+      "locale": "en",
+      "text": "Awashima Marine Memorial Museum",
+      "spot_id": "mitoyo-kanko-129"
+    },
+    {
+      "ja": "粟島海洋記念館",
+      "locale": "zh-Hant",
+      "text": "粟島海洋紀念館",
+      "spot_id": "mitoyo-kanko-129"
+    },
+    {
+      "ja": "道の駅「ことひき」",
+      "locale": "zh-Hant",
+      "text": "言葉引道路驛站",
+      "spot_id": "michinoeki-kotohiki"
+    },
+    {
+      "ja": "道の駅「たからだの里さいた」（物産館）",
+      "locale": "en",
+      "text": "Takaradano Sato Saita Roadside Station",
+      "spot_id": "takaradanosato-449"
+    },
+    {
+      "ja": "道の駅「たからだの里さいた」（物産館）",
+      "locale": "zh-Hant",
+      "text": "寶田之里幸田道路驛站",
+      "spot_id": "takaradanosato-449"
+    },
+    {
+      "ja": "三豊市文化会館マリンウェーブ",
+      "locale": "en",
+      "text": "Mitoyo Cultural Hall Marine Wave",
+      "spot_id": "mitoyocs"
+    },
+    {
+      "ja": "三豊市文化会館マリンウェーブ",
+      "locale": "zh-Hant",
+      "text": "三豊市文化會館Marine Wave",
+      "spot_id": "mitoyocs"
+    },
+    {
+      "ja": "宗吉かわらの里展示館（宗吉瓦窯跡史跡公園）",
+      "locale": "en",
+      "text": "Muneyoshi Kawara no Sato Museum",
+      "spot_id": "city-148"
+    },
+    {
+      "ja": "宗吉かわらの里展示館（宗吉瓦窯跡史跡公園）",
+      "locale": "zh-Hant",
+      "text": "宗吉瓦之里展示館",
+      "spot_id": "city-148"
+    },
+    {
+      "ja": "道の駅「小豆島オリーブ公園」",
+      "locale": "en",
+      "text": "Shodoshima Olive Roadside Station Park",
+      "spot_id": "olive-pk-239"
+    },
+    {
+      "ja": "道の駅「小豆島オリーブ公園」",
+      "locale": "zh-Hant",
+      "text": "小豆島橄欖公園",
+      "spot_id": "olive-pk-239"
+    },
+    {
+      "ja": "道の駅・みなとオアシス「大坂城残石記念公園」",
+      "locale": "zh-Hant",
+      "text": "大坂城殘石紀念公園 道之驛・港口綠洲",
+      "spot_id": "town-314"
+    },
+    {
+      "ja": "田井浜海水浴場・キャンプ場",
+      "locale": "en",
+      "text": "Taihama Beach and Campground",
+      "spot_id": "p398"
+    },
+    {
+      "ja": "田井浜海水浴場・キャンプ場",
+      "locale": "zh-Hant",
+      "text": "田井濱海水浴場・露營場",
+      "spot_id": "p398"
+    },
+    {
+      "ja": "香南楽湯",
+      "locale": "en",
+      "text": "Konan Rakuyu Onsen",
+      "spot_id": "souyu-353"
+    },
+    {
+      "ja": "香南楽湯",
+      "locale": "zh-Hant",
+      "text": "香南樂湯",
+      "spot_id": "souyu-353"
+    },
+    {
+      "ja": "根香寺",
+      "locale": "zh-Hant",
+      "text": "根香寺",
+      "spot_id": "88shikokuhenro-245"
+    },
+    {
+      "ja": "石清尾八幡宮",
+      "locale": "en",
+      "text": "Ishikiyoo Hachiman Shrine",
+      "spot_id": "iwaseo"
+    },
+    {
+      "ja": "石清尾八幡宮",
+      "locale": "zh-Hant",
+      "text": "石清尾八幡宮",
+      "spot_id": "iwaseo"
+    },
+    {
+      "ja": "高松市歴史資料館",
+      "locale": "en",
+      "text": "Takamatsu History Museum",
+      "spot_id": "city-505"
+    },
+    {
+      "ja": "高松市歴史資料館",
+      "locale": "zh-Hant",
+      "text": "高松市歷史資料館",
+      "spot_id": "city-505"
+    },
+    {
+      "ja": "高松市讃岐国分寺跡資料館",
+      "locale": "en",
+      "text": "Sanuki Kokubunji Temple Ruins Museum",
+      "spot_id": "city-506"
+    },
+    {
+      "ja": "高松市讃岐国分寺跡資料館",
+      "locale": "zh-Hant",
+      "text": "高松市讚岐國分寺跡資料館",
+      "spot_id": "city-506"
+    },
+    {
+      "ja": "長尾総合公園",
+      "locale": "en",
+      "text": "Nagao Park",
+      "spot_id": "sanukicity-sportspark-204"
+    },
+    {
+      "ja": "長尾総合公園",
+      "locale": "zh-Hant",
+      "text": "長尾綜合公園",
+      "spot_id": "sanukicity-sportspark-204"
+    },
+    {
+      "ja": "津田総合公園",
+      "locale": "en",
+      "text": "Tsuda Park",
+      "spot_id": "sanukicity-sportspark-198"
+    },
+    {
+      "ja": "津田総合公園",
+      "locale": "zh-Hant",
+      "text": "津田綜合公園",
+      "spot_id": "sanukicity-sportspark-198"
+    },
+    {
+      "ja": "高山航空公園",
+      "locale": "en",
+      "text": "Takayama Aviation Park",
+      "spot_id": "town-8"
+    },
+    {
+      "ja": "高山航空公園",
+      "locale": "zh-Hant",
+      "text": "高山航空公園",
+      "spot_id": "town-8"
+    },
+    {
+      "ja": "鉢伏ふれあい公園",
+      "locale": "en",
+      "text": "Hatibushi Fureai Park",
+      "spot_id": "city-335"
+    },
+    {
+      "ja": "瀬戸内海国立公園",
+      "locale": "zh-Hant",
+      "text": "瀨戶內海國立公園",
+      "spot_id": "goshikivc"
+    },
+    {
+      "ja": "塩入ふるさと研修館",
+      "locale": "zh-Hant",
+      "text": "鹽入故鄉研修館",
+      "spot_id": "shioiri-onsen-2360"
+    },
+    {
+      "ja": "塩入温泉",
+      "locale": "en",
+      "text": "Shioi Onsen",
+      "spot_id": "shioiri-onsen-96"
+    },
+    {
+      "ja": "塩入温泉",
+      "locale": "zh-Hant",
+      "text": "鹽入溫泉",
+      "spot_id": "shioiri-onsen-96"
+    },
+    {
+      "ja": "香川県満濃池森林公園",
+      "locale": "en",
+      "text": "Mano Pond Forest Park",
+      "spot_id": "mannou-mori-89"
+    },
+    {
+      "ja": "香川県満濃池森林公園",
+      "locale": "zh-Hant",
+      "text": "香川縣滿濃池森林公園",
+      "spot_id": "mannou-mori-89"
+    },
+    {
+      "ja": "笠島集落",
+      "locale": "zh-Hant",
+      "text": "笠島集落",
+      "spot_id": "marugame-happylife"
+    },
+    {
+      "ja": "金倉寺",
+      "locale": "zh-Hant",
+      "text": "金倉寺",
+      "spot_id": "kagawa-konzouji"
+    },
+    {
+      "ja": "旧善通寺偕行社",
+      "locale": "en",
+      "text": "Former Zentsuji Kaikosha",
+      "spot_id": "city-334"
+    },
+    {
+      "ja": "旧善通寺偕行社",
+      "locale": "zh-Hant",
+      "text": "舊善通寺偕行社",
+      "spot_id": "city-334"
+    },
+    {
+      "ja": "香風園",
+      "locale": "zh-Hant",
+      "text": "香風園",
+      "spot_id": "city-160"
+    },
+    {
+      "ja": "鎌田共済会郷土博物館",
+      "locale": "en",
+      "text": "Kamada Kyosaikai Local Museum",
+      "spot_id": "p2970"
+    },
+    {
+      "ja": "鎌田共済会郷土博物館",
+      "locale": "zh-Hant",
+      "text": "鎌田共濟會鄉土博物館",
+      "spot_id": "p2970"
+    },
+    {
+      "ja": "瀬戸大橋記念館（かがわこどもの駅）",
+      "locale": "en",
+      "text": "Seto Ohashi Bridge Memorial Museum",
+      "spot_id": "setoohhashi-2353"
+    },
+    {
+      "ja": "瀬戸大橋記念館（かがわこどもの駅）",
+      "locale": "zh-Hant",
+      "text": "瀨戶大橋紀念館",
+      "spot_id": "setoohhashi-2353"
+    },
+    {
+      "ja": "尾ノ瀬山展望台",
+      "locale": "en",
+      "text": "Onose Mountain Viewpoint",
+      "spot_id": "p3214"
+    },
+    {
+      "ja": "尾ノ瀬山展望台",
+      "locale": "zh-Hant",
+      "text": "尾之瀨山展望台",
+      "spot_id": "p3214"
+    },
+    {
+      "ja": "坂出市塩業資料館",
+      "locale": "en",
+      "text": "Sakaide Salt Industry Museum",
+      "spot_id": "city-155"
+    },
+    {
+      "ja": "坂出市塩業資料館",
+      "locale": "zh-Hant",
+      "text": "坂出市鹽業資料館",
+      "spot_id": "city-155"
+    },
+    {
+      "ja": "琴平町歴史民俗資料館",
+      "locale": "en",
+      "text": "Kotohira History and Folk Museum",
+      "spot_id": "kotohirakankou-77"
+    },
+    {
+      "ja": "琴平町歴史民俗資料館",
+      "locale": "zh-Hant",
+      "text": "琴平町歷史民俗資料館",
+      "spot_id": "kotohirakankou-77"
+    },
+    {
+      "ja": "琴平海洋博物館（海の科学館）",
+      "locale": "en",
+      "text": "Kotohira Maritime Museum",
+      "spot_id": "kotohira"
+    },
+    {
+      "ja": "琴平海洋博物館（海の科学館）",
+      "locale": "zh-Hant",
+      "text": "琴平海洋博物館",
+      "spot_id": "kotohira"
+    },
+    {
+      "ja": "丸亀市手島自然教育センター",
+      "locale": "en",
+      "text": "Teshima Nature Education Center",
+      "spot_id": "marugame-happylife-379"
+    },
+    {
+      "ja": "丸亀市手島自然教育センター",
+      "locale": "zh-Hant",
+      "text": "丸龜市手島自然教育中心",
+      "spot_id": "marugame-happylife-379"
+    },
+    {
+      "ja": "国営讃岐まんのう公園",
+      "locale": "en",
+      "text": "Mano National Government Park",
+      "spot_id": "sanukimannopark"
+    },
+    {
+      "ja": "国営讃岐まんのう公園",
+      "locale": "zh-Hant",
+      "text": "國營讚岐滿濃公園",
+      "spot_id": "sanukimannopark"
+    },
+    {
+      "ja": "虹の滝",
+      "locale": "en",
+      "text": "Niji no Taki Park",
+      "spot_id": "p121"
+    },
+    {
+      "ja": "虹の滝",
+      "locale": "zh-Hant",
+      "text": "虹之瀑布公園",
+      "spot_id": "p121"
+    },
+    {
+      "ja": "せとしるべ（高松港玉藻防波堤灯台）",
+      "locale": "en",
+      "text": "Seto Shirube (Takamatsu Port Tamamo Breakwater Lighthouse)",
+      "spot_id": "p304"
+    },
+    {
+      "ja": "古代山城屋嶋城",
+      "locale": "en",
+      "text": "Yamashiro Castle",
+      "spot_id": "city-2484"
+    },
+    {
+      "ja": "古代山城屋嶋城",
+      "locale": "zh-Hant",
+      "text": "山城屋島城",
+      "spot_id": "city-2484"
+    },
+    {
+      "ja": "津田の松原・琴林公園",
+      "locale": "en",
+      "text": "Tsuda no Matsubara Kinrin Park",
+      "spot_id": "city-199"
+    },
+    {
+      "ja": "津田の松原・琴林公園",
+      "locale": "zh-Hant",
+      "text": "津田的松原·琴林公園",
+      "spot_id": "city-199"
+    },
+    {
+      "ja": "大串自然公園",
+      "locale": "en",
+      "text": "Ogusu Nature Park",
+      "spot_id": "city-183"
+    },
+    {
+      "ja": "大串自然公園",
+      "locale": "zh-Hant",
+      "text": "大串自然公園",
+      "spot_id": "city-183"
+    },
+    {
+      "ja": "県立亀鶴公園",
+      "locale": "en",
+      "text": "Kamesui Park",
+      "spot_id": "city-187"
+    },
+    {
+      "ja": "県立亀鶴公園",
+      "locale": "zh-Hant",
+      "text": "縣立龜鶴公園",
+      "spot_id": "city-187"
+    },
+    {
+      "ja": "大滝大川県立自然公園",
+      "locale": "zh-Hant",
+      "text": "大瀧大川縣立自然公園",
+      "spot_id": "ikoinomori"
+    },
+    {
+      "ja": "瀬戸大橋記念公園",
+      "locale": "en",
+      "text": "Seto Ohashi Bridge Memorial Park",
+      "spot_id": "setoohhashi"
+    },
+    {
+      "ja": "瀬戸大橋記念公園",
       "locale": "zh-Hant",
       "text": "瀨戶大橋紀念公園",
-      "spot_id": "setoohhashi-439"
+      "spot_id": "setoohhashi"
     },
     {
-      "ja": "有明浜",
+      "ja": "桃陵公園",
       "locale": "en",
-      "text": "Ariake Beach Park",
-      "spot_id": "p46"
+      "text": "Toro Park",
+      "spot_id": "tadotsu-kanko-243"
     },
     {
-      "ja": "有明浜",
+      "ja": "桃陵公園",
       "locale": "zh-Hant",
-      "text": "有明濱",
-      "spot_id": "p46"
+      "text": "桃陵公園",
+      "spot_id": "tadotsu-kanko-243"
     },
     {
-      "ja": "銭形砂絵（琴弾公園内）",
+      "ja": "ほたる見公園",
       "locale": "en",
-      "text": "Zenigata Sand Picture at Kotohiki Park",
-      "spot_id": "kanonji-kanko"
+      "text": "Hotaru-mi Park",
+      "spot_id": "town"
     },
     {
-      "ja": "銭形砂絵（琴弾公園内）",
+      "ja": "ほたる見公園",
       "locale": "zh-Hant",
-      "text": "錢形沙繪（琴彈公園內）",
-      "spot_id": "kanonji-kanko"
+      "text": "螢火蟲觀賞公園",
+      "spot_id": "town"
     },
     {
-      "ja": "高屋神社【天空の鳥居】",
+      "ja": "一の宮公園・一の宮海岸海水浴場・キャンプ場",
       "locale": "en",
-      "text": "Takaya Shrine",
-      "spot_id": "kanonji-kanko-4483"
+      "text": "Ichinomiya Park, Ichinomiya Beach, and Campground",
+      "spot_id": "city-47"
     },
     {
-      "ja": "高屋神社【天空の鳥居】",
+      "ja": "一の宮公園・一の宮海岸海水浴場・キャンプ場",
       "locale": "zh-Hant",
-      "text": "高屋神社",
-      "spot_id": "kanonji-kanko-4483"
+      "text": "一之宮公園、一之宮海岸海水浴場、露營場",
+      "spot_id": "city-47"
     },
     {
-      "ja": "紫雲出山",
+      "ja": "朝日山森林公園",
       "locale": "en",
-      "text": "Shiudezan",
-      "spot_id": "mitoyo-kanko"
+      "text": "Asahiyama Forest Park",
+      "spot_id": "mitoyo-kanko-127"
     },
     {
-      "ja": "紫雲出山",
+      "ja": "朝日山森林公園",
       "locale": "zh-Hant",
-      "text": "紫雲出山",
-      "spot_id": "mitoyo-kanko"
+      "text": "朝日山森林公園",
+      "spot_id": "mitoyo-kanko-127"
     },
     {
-      "ja": "不動の滝",
+      "ja": "香川用水記念公園",
       "locale": "en",
-      "text": "Fudo Waterfall Park",
-      "spot_id": "mitoyo-kanko-143"
+      "text": "Kagawa Water Supply Memorial Park",
+      "spot_id": "mizupark-4344"
     },
     {
-      "ja": "不動の滝",
+      "ja": "香川用水記念公園",
       "locale": "zh-Hant",
-      "text": "不動瀑布公園",
-      "spot_id": "mitoyo-kanko-143"
+      "text": "香川用水紀念公園",
+      "spot_id": "mizupark-4344"
     },
     {
-      "ja": "粟島",
-      "locale": "zh-Hant",
-      "text": "粟島",
-      "spot_id": "mitoyo-kanko-128"
-    },
-    {
-      "ja": "粟井神社",
+      "ja": "戸川ダム公園",
       "locale": "en",
-      "text": "Awai Shrine",
-      "spot_id": "p3441"
+      "text": "Togawa Dam Park",
+      "spot_id": "mitoyo-kanko-141"
     },
     {
-      "ja": "粟井神社",
+      "ja": "戸川ダム公園",
       "locale": "zh-Hant",
-      "text": "粟井神社",
-      "spot_id": "p3441"
+      "text": "戶川大壩公園",
+      "spot_id": "mitoyo-kanko-141"
     },
     {
-      "ja": "本山寺",
+      "ja": "道の駅「とよはま」",
       "locale": "en",
-      "text": "Motoyama Temple",
-      "spot_id": "shippouzan"
+      "text": "Toyohama Roadside Station",
+      "spot_id": "michitoyo-oh"
     },
     {
-      "ja": "本山寺",
+      "ja": "道の駅「とよはま」",
       "locale": "zh-Hant",
-      "text": "本山寺",
-      "spot_id": "shippouzan"
+      "text": "豐濱道路驛站",
+      "spot_id": "michitoyo-oh"
     },
     {
-      "ja": "【紅葉スポット】法泉寺",
+      "ja": "土渕海峡・フレトピア公園",
       "locale": "en",
-      "text": "Hosenji Temple",
-      "spot_id": "city-2938"
+      "text": "Tokoro Strait Park",
+      "spot_id": "town-310"
     },
     {
-      "ja": "【紅葉スポット】法泉寺",
+      "ja": "土渕海峡・フレトピア公園",
       "locale": "zh-Hant",
-      "text": "法泉寺",
-      "spot_id": "city-2938"
+      "text": "土渕海峽公園",
+      "spot_id": "town-310"
     },
     {
-      "ja": "一夜庵",
-      "locale": "zh-Hant",
-      "text": "一夜庵",
-      "spot_id": "ichiyaan"
-    },
-    {
-      "ja": "塔重山公園",
+      "ja": "道の駅・海の駅「小豆島ふるさと村」",
       "locale": "en",
-      "text": "Tashigeyama Park",
-      "spot_id": "city-426"
+      "text": "Shodoshima Furusato Village Roadside Station",
+      "spot_id": "shodoshima"
     },
     {
-      "ja": "塔重山公園",
+      "ja": "道の駅・海の駅「小豆島ふるさと村」",
       "locale": "zh-Hant",
-      "text": "塔重山公園",
-      "spot_id": "city-426"
+      "text": "小豆島故鄉村道路驛站",
+      "spot_id": "shodoshima"
     },
     {
-      "ja": "萩原寺",
+      "ja": "玉藻防波堤",
+      "locale": "zh-Hant",
+      "text": "玉藻防波堤",
+      "spot_id": "p287"
+    },
+    {
+      "ja": "獄山",
       "locale": "en",
-      "text": "Hagiwara Temple",
-      "spot_id": "kanonji-kanko-65"
+      "text": "Gokuyama Viewpoint",
+      "spot_id": "mikicho-kanko"
     },
     {
-      "ja": "萩原寺",
+      "ja": "獄山",
       "locale": "zh-Hant",
-      "text": "萩原寺",
-      "spot_id": "kanonji-kanko-65"
+      "text": "獄山",
+      "spot_id": "mikicho-kanko"
     },
     {
-      "ja": "豊稔池堰堤（アーチダム）",
+      "ja": "生子山公園",
       "locale": "en",
-      "text": "Toyotoshi Pond Arch Dam",
-      "spot_id": "city-67"
+      "text": "Ikuko-yama Park",
+      "spot_id": "p422"
     },
     {
-      "ja": "豊稔池堰堤（アーチダム）",
+      "ja": "生子山公園",
       "locale": "zh-Hant",
-      "text": "豐稔池堰堤",
-      "spot_id": "city-67"
+      "text": "生子山公園",
+      "spot_id": "p422"
     },
     {
-      "ja": "イサム・ノグチ遊具彫刻",
+      "ja": "常盤公園",
       "locale": "en",
-      "text": "Isamu Noguchi Playground Sculpture",
-      "spot_id": "p484"
+      "text": "Tokiwa Park",
+      "spot_id": "city-175"
     },
     {
-      "ja": "イサム・ノグチ遊具彫刻",
+      "ja": "常盤公園",
       "locale": "zh-Hant",
-      "text": "磯崎新遊具雕塑",
-      "spot_id": "p484"
+      "text": "常盤公園",
+      "spot_id": "city-175"
     },
     {
-      "ja": "エンジェルロード（天使の散歩道）",
+      "ja": "鎌田池公園",
       "locale": "en",
-      "text": "Angel Road",
-      "spot_id": "town-306"
+      "text": "Kamada Pond Park",
+      "spot_id": "city-157"
     },
     {
-      "ja": "エンジェルロード（天使の散歩道）",
+      "ja": "鎌田池公園",
       "locale": "zh-Hant",
-      "text": "天使之路",
-      "spot_id": "town-306"
+      "text": "鎌田池公園",
+      "spot_id": "city-157"
     },
     {
-      "ja": "美しの原高原",
+      "ja": "滝宮公園",
       "locale": "en",
-      "text": "Utsukushino Hara Highland",
-      "spot_id": "p217"
+      "text": "Takimiya Park",
+      "spot_id": "town-9"
     },
     {
-      "ja": "沖之島",
+      "ja": "滝宮公園",
       "locale": "zh-Hant",
-      "text": "沖之島",
-      "spot_id": "pref-469"
+      "text": "滝宮公園",
+      "spot_id": "town-9"
     },
     {
-      "ja": "高見山展望台",
+      "ja": "道隆寺",
+      "locale": "zh-Hant",
+      "text": "道隆寺",
+      "spot_id": "tadotsu-kanko-242"
+    },
+    {
+      "ja": "曼荼羅寺",
       "locale": "en",
-      "text": "Takamiyama Observation Deck",
-      "spot_id": "p308"
+      "text": "Mandara Temple",
+      "spot_id": "mandaraji"
     },
     {
-      "ja": "高見山展望台",
+      "ja": "曼荼羅寺",
       "locale": "zh-Hant",
-      "text": "高見山展望台",
-      "spot_id": "p308"
+      "text": "曼荼羅寺",
+      "spot_id": "mandaraji"
     },
     {
-      "ja": "平和の群像",
+      "ja": "滝宮天満宮",
+      "locale": "en",
+      "text": "Takimiya Tenmangu Shrine",
+      "spot_id": "takinomiyatenmangu"
+    },
+    {
+      "ja": "滝宮天満宮",
       "locale": "zh-Hant",
-      "text": "和平的群像",
-      "spot_id": "p312"
+      "text": "滝宮天滿宮",
+      "spot_id": "takinomiyatenmangu"
+    },
+    {
+      "ja": "琴平公園",
+      "locale": "en",
+      "text": "Kotohira Park",
+      "spot_id": "kotohirakankou-2576"
+    },
+    {
+      "ja": "琴平公園",
+      "locale": "zh-Hant",
+      "text": "琴平公園",
+      "spot_id": "kotohirakankou-2576"
+    },
+    {
+      "ja": "鞘橋",
+      "locale": "en",
+      "text": "Saya Bridge",
+      "spot_id": "kotohirakankou-79"
+    },
+    {
+      "ja": "甲山寺",
+      "locale": "zh-Hant",
+      "text": "甲山寺",
+      "spot_id": "koyamaji"
+    },
+    {
+      "ja": "城山不動の滝",
+      "locale": "en",
+      "text": "Shiroyama Fudo Waterfall Park",
+      "spot_id": "city-500"
+    },
+    {
+      "ja": "城山不動の滝",
+      "locale": "zh-Hant",
+      "text": "城山不動瀑布公園",
+      "spot_id": "city-500"
+    },
+    {
+      "ja": "櫃石島",
+      "locale": "zh-Hant",
+      "text": "櫃石島",
+      "spot_id": "sakaide-kankou-462"
+    },
+    {
+      "ja": "府中湖",
+      "locale": "en",
+      "text": "Fuchu Lake Park",
+      "spot_id": "city-178"
+    },
+    {
+      "ja": "府中湖",
+      "locale": "zh-Hant",
+      "text": "府中湖公園",
+      "spot_id": "city-178"
+    },
+    {
+      "ja": "沙弥島",
+      "locale": "zh-Hant",
+      "text": "沙彌島",
+      "spot_id": "city-496"
+    },
+    {
+      "ja": "天皇寺",
+      "locale": "en",
+      "text": "Tenno Temple",
+      "spot_id": "88shikokuhenro-174"
+    },
+    {
+      "ja": "天皇寺",
+      "locale": "zh-Hant",
+      "text": "天皇寺",
+      "spot_id": "88shikokuhenro-174"
+    },
+    {
+      "ja": "金剛禅総本山少林寺",
+      "locale": "en",
+      "text": "Kongo Zen Shorinji Temple",
+      "spot_id": "shorinjikempo"
+    },
+    {
+      "ja": "金剛禅総本山少林寺",
+      "locale": "zh-Hant",
+      "text": "金剛禪總本山少林寺",
+      "spot_id": "shorinjikempo"
+    },
+    {
+      "ja": "小橋滝",
+      "locale": "en",
+      "text": "Kobashi Falls Park",
+      "spot_id": "p3007"
+    },
+    {
+      "ja": "小橋滝",
+      "locale": "zh-Hant",
+      "text": "小橋瀑布公園",
+      "spot_id": "p3007"
+    },
+    {
+      "ja": "豊浜八幡神社",
+      "locale": "en",
+      "text": "Toyohama Hachiman Shrine",
+      "spot_id": "city-64"
+    },
+    {
+      "ja": "豊浜八幡神社",
+      "locale": "zh-Hant",
+      "text": "豐濱八幡神社",
+      "spot_id": "city-64"
     }
   ],
   "skipped": [
@@ -438,14 +1140,6 @@
     ],
     [
       "sionoe",
-      "zh-Hant"
-    ],
-    [
-      "town",
-      "en"
-    ],
-    [
-      "town",
       "zh-Hant"
     ],
     [
@@ -469,27 +1163,11 @@
       "zh-Hant"
     ],
     [
-      "kenminhall-435",
-      "en"
-    ],
-    [
-      "kenminhall-435",
-      "zh-Hant"
-    ],
-    [
       "kinashi-bonsai",
       "en"
     ],
     [
       "kinashi-bonsai",
-      "zh-Hant"
-    ],
-    [
-      "saltlake-hiketa",
-      "en"
-    ],
-    [
-      "saltlake-hiketa",
       "zh-Hant"
     ],
     [
@@ -501,23 +1179,11 @@
       "zh-Hant"
     ],
     [
-      "p344",
-      "en"
-    ],
-    [
       "e-mikado",
       "en"
     ],
     [
       "e-mikado",
-      "zh-Hant"
-    ],
-    [
-      "town-94",
-      "en"
-    ],
-    [
-      "town-94",
       "zh-Hant"
     ],
     [
@@ -534,14 +1200,6 @@
     ],
     [
       "p2788",
-      "zh-Hant"
-    ],
-    [
-      "p494",
-      "en"
-    ],
-    [
-      "p494",
       "zh-Hant"
     ],
     [
@@ -554,14 +1212,6 @@
     ],
     [
       "p3639",
-      "zh-Hant"
-    ],
-    [
-      "zentsuji-mandegan",
-      "en"
-    ],
-    [
-      "zentsuji-mandegan",
       "zh-Hant"
     ],
     [
@@ -605,24 +1255,8 @@
       "en"
     ],
     [
-      "bgf",
-      "en"
-    ],
-    [
-      "bgf",
-      "zh-Hant"
-    ],
-    [
       "p3832",
       "en"
-    ],
-    [
-      "morikuni",
-      "en"
-    ],
-    [
-      "morikuni",
-      "zh-Hant"
     ],
     [
       "city-474",
@@ -649,27 +1283,11 @@
       "zh-Hant"
     ],
     [
-      "p294",
-      "en"
-    ],
-    [
-      "p294",
-      "zh-Hant"
-    ],
-    [
       "town-446",
       "en"
     ],
     [
       "town-446",
-      "zh-Hant"
-    ],
-    [
-      "p434",
-      "en"
-    ],
-    [
-      "p434",
       "zh-Hant"
     ],
     [
@@ -738,38 +1356,6 @@
     ],
     [
       "tadotsu-kanko",
-      "zh-Hant"
-    ],
-    [
-      "p436",
-      "en"
-    ],
-    [
-      "p436",
-      "zh-Hant"
-    ],
-    [
-      "setoohhashi",
-      "en"
-    ],
-    [
-      "setoohhashi",
-      "zh-Hant"
-    ],
-    [
-      "setoohhashi-438",
-      "en"
-    ],
-    [
-      "setoohhashi-438",
-      "zh-Hant"
-    ],
-    [
-      "pacificgolf",
-      "en"
-    ],
-    [
-      "pacificgolf",
       "zh-Hant"
     ],
     [
@@ -867,6 +1453,202 @@
     [
       "p312",
       "en"
+    ],
+    [
+      "city-507",
+      "en"
+    ],
+    [
+      "city-216",
+      "en"
+    ],
+    [
+      "p4",
+      "en"
+    ],
+    [
+      "park-mino-147",
+      "zh-Hant"
+    ],
+    [
+      "city-61",
+      "en"
+    ],
+    [
+      "city-61",
+      "zh-Hant"
+    ],
+    [
+      "town-314",
+      "en"
+    ],
+    [
+      "p3010",
+      "en"
+    ],
+    [
+      "p3010",
+      "zh-Hant"
+    ],
+    [
+      "city-335",
+      "zh-Hant"
+    ],
+    [
+      "shioiri-onsen-2360",
+      "en"
+    ],
+    [
+      "marugame-happylife",
+      "en"
+    ],
+    [
+      "marugame-happylife-112",
+      "en"
+    ],
+    [
+      "marugame-happylife-112",
+      "zh-Hant"
+    ],
+    [
+      "city-160",
+      "en"
+    ],
+    [
+      "p304",
+      "zh-Hant"
+    ],
+    [
+      "p287",
+      "en"
+    ],
+    [
+      "p120",
+      "en"
+    ],
+    [
+      "p120",
+      "zh-Hant"
+    ],
+    [
+      "marugame-happylife-115",
+      "en"
+    ],
+    [
+      "marugame-happylife-115",
+      "zh-Hant"
+    ],
+    [
+      "marugame-happylife-459",
+      "en"
+    ],
+    [
+      "marugame-happylife-459",
+      "zh-Hant"
+    ],
+    [
+      "marugame-happylife-460",
+      "en"
+    ],
+    [
+      "marugame-happylife-460",
+      "zh-Hant"
+    ],
+    [
+      "city-502",
+      "en"
+    ],
+    [
+      "city-502",
+      "zh-Hant"
+    ],
+    [
+      "city-3696",
+      "en"
+    ],
+    [
+      "city-3696",
+      "zh-Hant"
+    ],
+    [
+      "p71",
+      "en"
+    ],
+    [
+      "p71",
+      "zh-Hant"
+    ],
+    [
+      "tadotsu-kanko-479",
+      "en"
+    ],
+    [
+      "tadotsu-kanko-479",
+      "zh-Hant"
+    ],
+    [
+      "kotohirakankou-80",
+      "en"
+    ],
+    [
+      "kotohirakankou-80",
+      "zh-Hant"
+    ],
+    [
+      "sakaide-kankou-463",
+      "en"
+    ],
+    [
+      "sakaide-kankou-463",
+      "zh-Hant"
+    ],
+    [
+      "marugame-happylife-458",
+      "en"
+    ],
+    [
+      "marugame-happylife-458",
+      "zh-Hant"
+    ],
+    [
+      "city-158",
+      "en"
+    ],
+    [
+      "city-158",
+      "zh-Hant"
+    ],
+    [
+      "sakaide-kankou-462",
+      "en"
+    ],
+    [
+      "marugame-happylife-461",
+      "en"
+    ],
+    [
+      "marugame-happylife-461",
+      "zh-Hant"
+    ],
+    [
+      "city-496",
+      "en"
+    ],
+    [
+      "town-3006",
+      "en"
+    ],
+    [
+      "town-3006",
+      "zh-Hant"
+    ],
+    [
+      "p81",
+      "en"
+    ],
+    [
+      "p81",
+      "zh-Hant"
     ]
   ]
 }

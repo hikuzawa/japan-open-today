@@ -4105,7 +4105,9 @@ sources:
     pages:
       - url: http://sanuki-airport-park.com/
         kind: spot_detail
-    allow_hosts: [sanuki-airport-park.com]
+      - url: https://www.my-kagawa.jp/point/262
+        kind: spot_hours  # 観光協会の基本情報に営業時間あり: 9:00~17:00(夏休み期間7月15日~8月31日は 一部8:30~19:00まで延長)
+    allow_hosts: [sanuki-airport-park.com, www.my-kagawa.jp]
     max_pages: 8
     spot:
       spot_id: sanuki-airport-park
@@ -4417,7 +4419,9 @@ sources:
     pages:
       - url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5864.html
         kind: spot_detail
-    allow_hosts: [www.city.sanuki.lg.jp]
+      - url: https://www.my-kagawa.jp/point/211
+        kind: spot_hours  # 観光協会の基本情報に営業時間あり: 無し(一部8:30~17:00)
+    allow_hosts: [www.city.sanuki.lg.jp, www.my-kagawa.jp]
     max_pages: 8
     spot:
       spot_id: city-211
@@ -4537,7 +4541,9 @@ sources:
     pages:
       - url: https://hiragagennai.com/
         kind: spot_detail
-    allow_hosts: [hiragagennai.com]
+      - url: https://www.my-kagawa.jp/point/205
+        kind: spot_hours  # 観光協会の基本情報に営業時間あり: 9:00~17:00
+    allow_hosts: [hiragagennai.com, www.my-kagawa.jp]
     max_pages: 8
     spot:
       spot_id: hiragagennai-205
@@ -4680,7 +4686,9 @@ sources:
     pages:
       - url: https://www.city.zentsuji.kagawa.jp/site/gogaku/
         kind: spot_detail
-    allow_hosts: [www.city.zentsuji.kagawa.jp]
+      - url: https://www.my-kagawa.jp/point/339
+        kind: spot_hours  # 観光協会の基本情報に営業時間あり: 4月~6月 9:00~17:00 7月~9月 9:00~18:00 10月~3月 9:00~17:00
+    allow_hosts: [www.city.zentsuji.kagawa.jp, www.my-kagawa.jp]
     max_pages: 8
     spot:
       spot_id: city-339
@@ -4728,7 +4736,9 @@ sources:
     pages:
       - url: https://www.town.manno.lg.jp/site/miryoku-hasshin/5662.html
         kind: spot_detail
-    allow_hosts: [www.town.manno.lg.jp]
+      - url: https://www.my-kagawa.jp/point/338
+        kind: spot_hours  # 観光協会の基本情報に営業時間あり: 有料公園施設 9:00~18:00
+    allow_hosts: [www.town.manno.lg.jp, www.my-kagawa.jp]
     max_pages: 8
     spot:
       spot_id: town-338
@@ -4968,7 +4978,9 @@ sources:
     pages:
       - url: https://michinoeki-kotohiki.com/
         kind: spot_detail
-    allow_hosts: [michinoeki-kotohiki.com]
+      - url: https://www.my-kagawa.jp/point/68
+        kind: spot_hours  # 観光協会の基本情報に営業時間あり: 9:00~17:00(コイン展示室は16:30まで)
+    allow_hosts: [michinoeki-kotohiki.com, www.my-kagawa.jp]
     max_pages: 8
     spot:
       spot_id: michinoeki-kotohiki
@@ -5208,7 +5220,9 @@ sources:
     pages:
       - url: http://www.88shikokuhenro.jp/82negoroji/
         kind: spot_detail
-    allow_hosts: [www.88shikokuhenro.jp]
+      - url: https://www.my-kagawa.jp/point/245
+        kind: spot_hours  # 観光協会の基本情報に営業時間あり: 参拝時間 7:00~17:00
+    allow_hosts: [www.88shikokuhenro.jp, www.my-kagawa.jp]
     max_pages: 8
     spot:
       spot_id: 88shikokuhenro-245
