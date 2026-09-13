@@ -1247,31 +1247,6 @@ sources:
       names:
         ja: {text: "しろとり動物園", source: ja}
       map_query: "香川県東かがわ市 しろとり動物園"
-
-  - id: kagawa-saltlake-hiketa  # 観光協会のページを一次情報にした（ページに「フィッシュフック（安戸池釣場）」が出てこない）
-    name: "フィッシュフック（安戸池釣場）"
-    operator: "公益社団法人香川県観光協会"
-    operator_kind: tourism_association
-    operator_evidence:
-      quote: "公益社団法人香川県観光協会"
-      url: https://www.my-kagawa.jp/organization
-      checked_on: 2026-09-12
-    policy: crawl
-    official_url: http://saltlake-hiketa.co.jp/
-    pages:
-      - url: https://www.my-kagawa.jp/point/38
-        kind: spot_detail
-    allow_hosts: [www.my-kagawa.jp]
-    max_pages: 8
-    spot:
-      spot_id: saltlake-hiketa
-      spot_type: gated  # 営業時間または料金の記載あり（観光協会の一覧）
-      area: higashikagawa
-      category: other
-      names:
-        ja: {text: "フィッシュフック（安戸池釣場）", source: ja}
-      map_query: "香川県東かがわ市 フィッシュフック（安戸池釣場）"
-
   - id: kagawa-sanukicity-sportspark  # 観光協会のページを一次情報にした（運営主体の記述が無い）
     name: "志度総合運動公園"
     operator: "公益社団法人香川県観光協会"
@@ -5843,3 +5818,1324 @@ sources:
       names:
         ja: {text: "国営讃岐まんのう公園", source: ja}
       map_query: "香川県仲多度郡まんのう町 国営讃岐まんのう公園"
+
+  # --- S6-3 ①: ゲートのある施設（観光協会の一覧から。ADR 0011）
+  - id: kagawa-p121  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
+    name: "虹の滝"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.my-kagawa.jp/point/121
+    pages:
+      - url: https://www.my-kagawa.jp/point/121
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: p121
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sanuki
+      category: park
+      names:
+        ja: {text: "虹の滝", source: ja}
+      map_query: "香川県木田郡三木町 虹の滝"
+
+  - id: kagawa-p304  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
+    name: "せとしるべ（高松港玉藻防波堤灯台）"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.my-kagawa.jp/point/304
+    pages:
+      - url: https://www.my-kagawa.jp/point/304
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: p304
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: takamatsu
+      category: viewpoint
+      names:
+        ja: {text: "せとしるべ（高松港玉藻防波堤灯台）", source: ja}
+      map_query: "香川県高松市 せとしるべ（高松港玉藻防波堤灯台）"
+
+  - id: kagawa-city-2484  # 自治体ドメインの一次情報（見出しを根拠にした）
+    name: "古代山城屋嶋城"
+    operator: "屋嶋城詳細へ｜高松市"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "屋嶋城詳細へ｜高松市"
+      url: https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunkazai/chosa/yashimajo/index.html
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: http://www.city.takamatsu.kagawa.jp/4727.html
+    pages:
+      - url: http://www.city.takamatsu.kagawa.jp/4727.html
+        kind: spot_detail
+    allow_hosts: [www.city.takamatsu.kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-2484
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: takamatsu
+      category: castle
+      names:
+        ja: {text: "古代山城屋嶋城", source: ja}
+      map_query: "香川県高松市 古代山城屋嶋城"
+
+  - id: kagawa-city-199  # 観光協会のページを一次情報にした（ページに「津田の松原・琴林公園」が出てこない）
+    name: "津田の松原・琴林公園"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5865.html
+    pages:
+      - url: https://www.my-kagawa.jp/point/199
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-199
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sanuki
+      category: park
+      names:
+        ja: {text: "津田の松原・琴林公園", source: ja}
+      map_query: "香川県さぬき市 津田の松原・琴林公園"
+
+  - id: kagawa-city-183
+    name: "大串自然公園"
+    operator: "株式会社さぬき市SA公社"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "株式会社さぬき市SA公社"
+      url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5863.html
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5863.html
+    pages:
+      - url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5863.html
+        kind: spot_detail
+    allow_hosts: [www.city.sanuki.lg.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-183
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sanuki
+      category: park
+      names:
+        ja: {text: "大串自然公園", source: ja}
+      map_query: "香川県さぬき市 大串自然公園"
+
+  - id: kagawa-city-187
+    name: "県立亀鶴公園"
+    operator: "情報公開・個人情報保護・行政不服審査"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "運営 情報公開・個人情報保護・行政不服審査 個人情報保護 個人情報の保護について 個人情報の保護について 更新日:2026年0"
+      url: https://www.city.sanuki.lg.jp/shisei/gyoseiunei/johokokaikojinjohohogogyoseifufukushinsa/1/5356.html
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5862.html
+    pages:
+      - url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5862.html
+        kind: spot_detail
+    allow_hosts: [www.city.sanuki.lg.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-187
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sanuki
+      category: park
+      names:
+        ja: {text: "県立亀鶴公園", source: ja}
+      map_query: "香川県さぬき市 県立亀鶴公園"
+
+  - id: kagawa-ikoinomori  # 観光協会のページを一次情報にした（ページに「大滝大川県立自然公園」が出てこない）
+    name: "大滝大川県立自然公園"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: http://www.ikoinomori.jp/index.html
+    pages:
+      - url: https://www.my-kagawa.jp/point/337
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: ikoinomori
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: takamatsu
+      category: park
+      names:
+        ja: {text: "大滝大川県立自然公園", source: ja}
+      map_query: "香川県高松市 大滝大川県立自然公園"
+
+  - id: kagawa-setoohhashi  # 観光協会のページを一次情報にした（ページに「瀬戸大橋記念公園」が出てこない）
+    name: "瀬戸大橋記念公園"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: http://www.setoohhashi.com/
+    pages:
+      - url: https://www.my-kagawa.jp/point/172
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: setoohhashi
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: park
+      names:
+        ja: {text: "瀬戸大橋記念公園", source: ja}
+      map_query: "香川県坂出市 瀬戸大橋記念公園"
+
+  - id: kagawa-tadotsu-kanko-243  # 観光協会のページを一次情報にした（運営主体の記述が無い）
+    name: "桃陵公園"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: http://www.tadotsu-kanko.jp/sightseeing/entry-29.html
+    pages:
+      - url: https://www.my-kagawa.jp/point/243
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: tadotsu-kanko-243
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: marugame
+      category: park
+      names:
+        ja: {text: "桃陵公園", source: ja}
+      map_query: "香川県仲多度郡多度津町 桃陵公園"
+
+  - id: kagawa-town  # 自治体ドメインの一次情報（見出しを根拠にした）
+    name: "ほたる見公園"
+    operator: "ほたる見公園について - Manno まんのう魅力発信ポータルサイト - まんのう町"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "ほたる見公園について - Manno まんのう魅力発信ポータルサイト - まんのう町"
+      url: https://www.town.manno.lg.jp/site/miryoku-hasshin/5665.html
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.town.manno.lg.jp/site/miryoku-hasshin/5665.html
+    pages:
+      - url: https://www.town.manno.lg.jp/site/miryoku-hasshin/5665.html
+        kind: spot_detail
+    allow_hosts: [www.town.manno.lg.jp]
+    max_pages: 8
+    spot:
+      spot_id: town
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: kotohira
+      category: park
+      names:
+        ja: {text: "ほたる見公園", source: ja}
+      map_query: "香川県仲多度郡まんのう町 ほたる見公園"
+
+  - id: kagawa-city-47  # 観光協会のページを一次情報にした（ページに「一の宮公園・一の宮海岸海水浴場・キャンプ場」が出てこない）
+    name: "一の宮公園・一の宮海岸海水浴場・キャンプ場"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.city.kanonji.kagawa.jp/soshiki/21/329.html
+    pages:
+      - url: https://www.my-kagawa.jp/point/47
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-47
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: mitoyo
+      category: park
+      names:
+        ja: {text: "一の宮公園・一の宮海岸海水浴場・キャンプ場", source: ja}
+      map_query: "香川県観音寺市 一の宮公園・一の宮海岸海水浴場・キャンプ場"
+
+  - id: kagawa-mitoyo-kanko-127
+    name: "朝日山森林公園"
+    operator: "三豊での観光をより便利に快適に楽しくでいただくため"
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています"
+      url: https://www.mitoyo-kanko.com/about-us/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.mitoyo-kanko.com/facility/mtasahishinrinpark/
+    pages:
+      - url: https://www.mitoyo-kanko.com/facility/mtasahishinrinpark/
+        kind: spot_detail
+    allow_hosts: [www.mitoyo-kanko.com]
+    max_pages: 8
+    spot:
+      spot_id: mitoyo-kanko-127
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: mitoyo
+      category: park
+      names:
+        ja: {text: "朝日山森林公園", source: ja}
+      map_query: "香川県三豊市 朝日山森林公園"
+
+  - id: kagawa-mizupark-4344
+    name: "香川用水記念公園"
+    operator: "公益財団法人 かがわ水と緑の財団"
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "公益財団法人 かがわ水と緑の財団"
+      url: https://www.mizupark.com/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.mizupark.com/
+    pages:
+      - url: https://www.mizupark.com/
+        kind: spot_detail
+    allow_hosts: [www.mizupark.com]
+    max_pages: 8
+    spot:
+      spot_id: mizupark-4344
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: mitoyo
+      category: park
+      names:
+        ja: {text: "香川用水記念公園", source: ja}
+      map_query: "香川県三豊市 香川用水記念公園"
+
+  - id: kagawa-mitoyo-kanko-141
+    name: "戸川ダム公園"
+    operator: "三豊での観光をより便利に快適に楽しくでいただくため"
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています"
+      url: https://www.mitoyo-kanko.com/about-us/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.mitoyo-kanko.com/facility/togawadam/
+    pages:
+      - url: https://www.mitoyo-kanko.com/facility/togawadam/
+        kind: spot_detail
+    allow_hosts: [www.mitoyo-kanko.com]
+    max_pages: 8
+    spot:
+      spot_id: mitoyo-kanko-141
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: mitoyo
+      category: park
+      names:
+        ja: {text: "戸川ダム公園", source: ja}
+      map_query: "香川県三豊市 戸川ダム公園"
+
+  - id: kagawa-michitoyo-oh  # 観光協会のページを一次情報にした（ページに「道の駅「とよはま」」が出てこない）
+    name: "道の駅「とよはま」"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://michitoyo-oh.com/
+    pages:
+      - url: https://www.my-kagawa.jp/point/69
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: michitoyo-oh
+      spot_type: open_air  # 時間・料金は施設の一部のもの（[売店] 9:00~17:00 [おーしゃん食堂] ランチ 11:00~15:0）
+      area: mitoyo
+      category: other
+      names:
+        ja: {text: "道の駅「とよはま」", source: ja}
+      map_query: "香川県観音寺市 道の駅「とよはま」"
+
+  - id: kagawa-town-310  # 観光協会のページを一次情報にした（ページに「土渕海峡・フレトピア公園」が出てこない）
+    name: "土渕海峡・フレトピア公園"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.town.tonosho.kagawa.jp/kanko/sightseeing/581.html
+    pages:
+      - url: https://www.my-kagawa.jp/point/310
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: town-310
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: shodoshima
+      category: park
+      names:
+        ja: {text: "土渕海峡・フレトピア公園", source: ja}
+      map_query: "香川県小豆郡土庄町 土渕海峡・フレトピア公園"
+
+  - id: kagawa-shodoshima  # 観光協会のページを一次情報にした（ページに「道の駅・海の駅「小豆島ふるさと村」」が出てこない）
+    name: "道の駅・海の駅「小豆島ふるさと村」"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.shodoshima.jp/
+    pages:
+      - url: https://www.my-kagawa.jp/point/238
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: shodoshima
+      spot_type: open_air  # 時間・料金は施設の一部のもの（売店 8:30~17:30※11月~2月は17:00まで 食事 10:00~15）
+      area: shodoshima
+      category: other
+      names:
+        ja: {text: "道の駅・海の駅「小豆島ふるさと村」", source: ja}
+      map_query: "香川県小豆郡小豆島町 道の駅・海の駅「小豆島ふるさと村」"
+
+  - id: kagawa-p287  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
+    name: "玉藻防波堤"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.my-kagawa.jp/point/287
+    pages:
+      - url: https://www.my-kagawa.jp/point/287
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: p287
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: takamatsu
+      category: other
+      names:
+        ja: {text: "玉藻防波堤", source: ja}
+      map_query: "香川県高松市 玉藻防波堤"
+
+  - id: kagawa-p122  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
+    name: "白山"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.my-kagawa.jp/point/122
+    pages:
+      - url: https://www.my-kagawa.jp/point/122
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: p122
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sanuki
+      category: viewpoint
+      names:
+        ja: {text: "白山", source: ja}
+      map_query: "香川県木田郡三木町 白山"
+
+  - id: kagawa-ogijima
+    name: "男木島"
+    operator: "男木島灯台近くの水仙郷の管理"
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "管理 男木島灯台近くの水仙郷の管理"
+      url: https://ogijima.site/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://ogijima.site/
+    pages:
+      - url: https://ogijima.site/
+        kind: spot_detail
+    allow_hosts: [ogijima.site]
+    max_pages: 8
+    spot:
+      spot_id: ogijima
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: takamatsu
+      category: other
+      names:
+        ja: {text: "男木島", source: ja}
+      map_query: "香川県高松市 男木島"
+
+  - id: kagawa-mikicho-kanko  # 観光協会のページを一次情報にした（ページに「獄山」が出てこない）
+    name: "獄山"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://mikicho-kanko.com/topics/748.html
+    pages:
+      - url: https://www.my-kagawa.jp/point/3325
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: mikicho-kanko
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sanuki
+      category: viewpoint
+      names:
+        ja: {text: "獄山", source: ja}
+      map_query: "香川県香川県木田郡三木町 獄山"
+
+  - id: kagawa-p120  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
+    name: "高仙山山頂"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.my-kagawa.jp/point/120
+    pages:
+      - url: https://www.my-kagawa.jp/point/120
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: p120
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sanuki
+      category: other
+      names:
+        ja: {text: "高仙山山頂", source: ja}
+      map_query: "香川県木田郡三木町 高仙山山頂"
+
+  - id: kagawa-p422  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
+    name: "生子山公園"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.my-kagawa.jp/point/422
+    pages:
+      - url: https://www.my-kagawa.jp/point/422
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: p422
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: park
+      names:
+        ja: {text: "生子山公園", source: ja}
+      map_query: "香川県綾歌郡綾川町 生子山公園"
+
+  - id: kagawa-city-175
+    name: "常盤公園"
+    operator: "情報公開・個人情報保護・監査"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
+      url: https://www.city.sakaide.lg.jp/life/4/27/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/tokiwa-park.html
+    pages:
+      - url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/tokiwa-park.html
+        kind: spot_detail
+    allow_hosts: [www.city.sakaide.lg.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-175
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: park
+      names:
+        ja: {text: "常盤公園", source: ja}
+      map_query: "香川県坂出市 常盤公園"
+
+  - id: kagawa-city-157
+    name: "鎌田池公園"
+    operator: "情報公開・個人情報保護・監査"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
+      url: https://www.city.sakaide.lg.jp/map/kamadaikekouen.html
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.city.sakaide.lg.jp/map/kamadaikekouen.html
+    pages:
+      - url: https://www.city.sakaide.lg.jp/map/kamadaikekouen.html
+        kind: spot_detail
+    allow_hosts: [www.city.sakaide.lg.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-157
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: park
+      names:
+        ja: {text: "鎌田池公園", source: ja}
+      map_query: "香川県坂出市 鎌田池公園"
+
+  - id: kagawa-town-9
+    name: "滝宮公園"
+    operator: "Copyright©2011 AYAGAWA All Rights Reserved."
+    operator_kind: municipality
+    operator_evidence:
+      quote: "Copyright©2011 AYAGAWA All Rights Reserved."
+      url: https://www.town.ayagawa.lg.jp/docs/2011070700033/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.town.ayagawa.lg.jp/docs/2017121900032/
+    pages:
+      - url: https://www.town.ayagawa.lg.jp/docs/2017121900032/
+        kind: spot_detail
+    allow_hosts: [www.town.ayagawa.lg.jp]
+    max_pages: 8
+    spot:
+      spot_id: town-9
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: park
+      names:
+        ja: {text: "滝宮公園", source: ja}
+      map_query: "香川県綾歌郡綾川町 滝宮公園"
+
+  - id: kagawa-tadotsu-kanko-242  # 観光協会のページを一次情報にした（運営主体の記述が無い）
+    name: "道隆寺"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: http://www.tadotsu-kanko.jp/sightseeing/entry-31.html
+    pages:
+      - url: https://www.my-kagawa.jp/point/242
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: tadotsu-kanko-242
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: marugame
+      category: shrine_temple
+      names:
+        ja: {text: "道隆寺", source: ja}
+      map_query: "香川県仲多度郡多度津町 道隆寺"
+
+  - id: kagawa-mandaraji  # 観光協会のページを一次情報にした（運営主体の記述が無い）
+    name: "曼荼羅寺"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.mandaraji.jp/
+    pages:
+      - url: https://www.my-kagawa.jp/point/333
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: mandaraji
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: marugame
+      category: shrine_temple
+      names:
+        ja: {text: "曼荼羅寺", source: ja}
+      map_query: "香川県善通寺市 曼荼羅寺"
+
+  - id: kagawa-takinomiyatenmangu  # 観光協会のページを一次情報にした（運営主体の記述が無い）
+    name: "滝宮天満宮"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: http://www.takinomiyatenmangu.com/
+    pages:
+      - url: https://www.my-kagawa.jp/point/3302
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: takinomiyatenmangu
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: shrine_temple
+      names:
+        ja: {text: "滝宮天満宮", source: ja}
+      map_query: "香川県綾歌郡綾川町 滝宮天満宮"
+
+  - id: kagawa-town-104
+    name: "満濃池"
+    operator: "事業者向け"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "運営 事業者向け 入札情報 契約・募集情報 現在地 トップページ > 分類でさがす > 町政 > 町の概要 本文 町の概要 ペ"
+      url: https://www.town.manno.lg.jp/life/4/24/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.town.manno.lg.jp/site/bunkazai/4740.html
+    pages:
+      - url: https://www.town.manno.lg.jp/site/bunkazai/4740.html
+        kind: spot_detail
+    allow_hosts: [www.town.manno.lg.jp]
+    max_pages: 8
+    spot:
+      spot_id: town-104
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: kotohira
+      category: park
+      names:
+        ja: {text: "満濃池", source: ja}
+      map_query: "香川県仲多度郡まんのう町 満濃池"
+
+  - id: kagawa-kotohirakankou-2576
+    name: "琴平公園"
+    operator: "一般社団法人こんぴら観光まちづくり協会"
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "一般社団法人こんぴら観光まちづくり協会"
+      url: https://www.kotohirakankou.jp/about/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.kotohirakankou.jp/spot/see/entry-110.html
+    pages:
+      - url: https://www.kotohirakankou.jp/spot/see/entry-110.html
+        kind: spot_detail
+    allow_hosts: [www.kotohirakankou.jp]
+    max_pages: 8
+    spot:
+      spot_id: kotohirakankou-2576
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: kotohira
+      category: park
+      names:
+        ja: {text: "琴平公園", source: ja}
+      map_query: "香川県仲多度郡琴平町 琴平公園"
+
+  - id: kagawa-marugame-happylife-115  # 観光協会のページを一次情報にした（運営主体の記述が無い）
+    name: "本島"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.marugame-happylife.jp/islands/about/honshima/
+    pages:
+      - url: https://www.my-kagawa.jp/point/115
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: marugame-happylife-115
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: marugame
+      category: other
+      names:
+        ja: {text: "本島", source: ja}
+      map_query: "香川県丸亀市 本島"
+
+  - id: kagawa-marugame-happylife-459  # 観光協会のページを一次情報にした（運営主体の記述が無い）
+    name: "広島"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.marugame-happylife.jp/islands/about/hiroshima/
+    pages:
+      - url: https://www.my-kagawa.jp/point/459
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: marugame-happylife-459
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: marugame
+      category: other
+      names:
+        ja: {text: "広島", source: ja}
+      map_query: "香川県丸亀市 広島"
+
+  - id: kagawa-kotohirakankou-79
+    name: "鞘橋"
+    operator: "一般社団法人こんぴら観光まちづくり協会"
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "一般社団法人こんぴら観光まちづくり協会"
+      url: https://www.kotohirakankou.jp/about/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.kotohirakankou.jp/spot/see/entry-109.html
+    pages:
+      - url: https://www.kotohirakankou.jp/spot/see/entry-109.html
+        kind: spot_detail
+    allow_hosts: [www.kotohirakankou.jp]
+    max_pages: 8
+    spot:
+      spot_id: kotohirakankou-79
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: kotohira
+      category: other
+      names:
+        ja: {text: "鞘橋", source: ja}
+      map_query: "香川県仲多度郡琴平町 鞘橋"
+
+  - id: kagawa-marugame-happylife-460  # 観光協会のページを一次情報にした（運営主体の記述が無い）
+    name: "手島"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.marugame-happylife.jp/islands/about/teshima/
+    pages:
+      - url: https://www.my-kagawa.jp/point/460
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: marugame-happylife-460
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: marugame
+      category: other
+      names:
+        ja: {text: "手島", source: ja}
+      map_query: "香川県丸亀市 手島"
+
+  - id: kagawa-city-502
+    name: "西行法師の道"
+    operator: "情報公開・個人情報保護・監査"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
+      url: https://www.city.sakaide.lg.jp/life/4/27/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/6persons-saigyou-syoukai.html
+    pages:
+      - url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/6persons-saigyou-syoukai.html
+        kind: spot_detail
+    allow_hosts: [www.city.sakaide.lg.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-502
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: other
+      names:
+        ja: {text: "西行法師の道", source: ja}
+      map_query: "香川県坂出市 西行法師の道"
+
+  - id: kagawa-city-3696
+    name: "太助灯籠"
+    operator: "指定管理者制度 移住定住 定住自立圏 平和事業 災害支援 SDGs 行政改革 市議会・選挙 市議会 選挙 市の財政 予算"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "指定管理者制度 移住定住 定住自立圏 平和事業 災害支援 SDGs 行政改革 市議会・選挙 市議会 選挙 市の財政 予算・財政 補"
+      url: https://www.city.marugame.lg.jp/life/6/25/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.city.marugame.lg.jp/page/3067.html
+    pages:
+      - url: https://www.city.marugame.lg.jp/page/3067.html
+        kind: spot_detail
+    allow_hosts: [www.city.marugame.lg.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-3696
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: marugame
+      category: other
+      names:
+        ja: {text: "太助灯籠", source: ja}
+      map_query: "香川県丸亀市 太助灯籠"
+
+  - id: kagawa-p71  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
+    name: "牛屋口"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.my-kagawa.jp/point/71
+    pages:
+      - url: https://www.my-kagawa.jp/point/71
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: p71
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: kotohira
+      category: other
+      names:
+        ja: {text: "牛屋口", source: ja}
+      map_query: "香川県仲多度郡琴平町 牛屋口"
+
+  - id: kagawa-tadotsu-kanko-479  # 観光協会のページを一次情報にした（運営主体の記述が無い）
+    name: "高見島"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.tadotsu-kanko.jp/sightseeing/entry-38.html
+    pages:
+      - url: https://www.my-kagawa.jp/point/479
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: tadotsu-kanko-479
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: marugame
+      category: other
+      names:
+        ja: {text: "高見島", source: ja}
+      map_query: "香川県仲多度郡多度津町 高見島"
+
+  - id: kagawa-kotohirakankou-80
+    name: "大センダン"
+    operator: "一般社団法人こんぴら観光まちづくり協会"
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "一般社団法人こんぴら観光まちづくり協会"
+      url: https://www.kotohirakankou.jp/about/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.kotohirakankou.jp/spot/see/entry-116.html
+    pages:
+      - url: https://www.kotohirakankou.jp/spot/see/entry-116.html
+        kind: spot_detail
+    allow_hosts: [www.kotohirakankou.jp]
+    max_pages: 8
+    spot:
+      spot_id: kotohirakankou-80
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: kotohira
+      category: other
+      names:
+        ja: {text: "大センダン", source: ja}
+      map_query: "香川県仲多度郡琴平町 大センダン"
+
+  - id: kagawa-sakaide-kankou-463
+    name: "岩黒島"
+    operator: "一般社団法人 坂出市観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "一般社団法人 坂出市観光協会"
+      url: https://sakaide-kankou.com/about
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://sakaide-kankou.com/spots/3615/
+    pages:
+      - url: https://sakaide-kankou.com/spots/3615/
+        kind: spot_detail
+    allow_hosts: [sakaide-kankou.com]
+    max_pages: 8
+    spot:
+      spot_id: sakaide-kankou-463
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: other
+      names:
+        ja: {text: "岩黒島", source: ja}
+      map_query: "香川県坂出市 岩黒島"
+
+  - id: kagawa-marugame-happylife-458  # 観光協会のページを一次情報にした（運営主体の記述が無い）
+    name: "牛島"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.marugame-happylife.jp/islands/about/ushijima/
+    pages:
+      - url: https://www.my-kagawa.jp/point/458
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: marugame-happylife-458
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: marugame
+      category: other
+      names:
+        ja: {text: "牛島", source: ja}
+      map_query: "香川県丸亀市 牛島"
+
+  - id: kagawa-koyamaji  # 観光協会のページを一次情報にした（運営主体の記述が無い）
+    name: "甲山寺"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://koyamaji.or.jp/
+    pages:
+      - url: https://www.my-kagawa.jp/point/325
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: koyamaji
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: marugame
+      category: shrine_temple
+      names:
+        ja: {text: "甲山寺", source: ja}
+      map_query: "香川県善通寺市 甲山寺"
+
+  - id: kagawa-city-158
+    name: "城山"
+    operator: "情報公開・個人情報保護・監査"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
+      url: https://www.city.sakaide.lg.jp/life/4/27/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/kiyama.html
+    pages:
+      - url: https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/kiyama.html
+        kind: spot_detail
+    allow_hosts: [www.city.sakaide.lg.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-158
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: viewpoint
+      names:
+        ja: {text: "城山", source: ja}
+      map_query: "香川県坂出市 城山"
+
+  - id: kagawa-city-500
+    name: "城山不動の滝"
+    operator: "情報公開・個人情報保護・監査"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
+      url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/fudounotaki.html
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/fudounotaki.html
+    pages:
+      - url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/fudounotaki.html
+        kind: spot_detail
+    allow_hosts: [www.city.sakaide.lg.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-500
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: park
+      names:
+        ja: {text: "城山不動の滝", source: ja}
+      map_query: "香川県坂出市 城山不動の滝"
+
+  - id: kagawa-sakaide-kankou-462
+    name: "櫃石島"
+    operator: "一般社団法人 坂出市観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "一般社団法人 坂出市観光協会"
+      url: https://sakaide-kankou.com/about
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://sakaide-kankou.com/spots/3608/
+    pages:
+      - url: https://sakaide-kankou.com/spots/3608/
+        kind: spot_detail
+    allow_hosts: [sakaide-kankou.com]
+    max_pages: 8
+    spot:
+      spot_id: sakaide-kankou-462
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: other
+      names:
+        ja: {text: "櫃石島", source: ja}
+      map_query: "香川県坂出市 櫃石島"
+
+  - id: kagawa-city-178
+    name: "府中湖"
+    operator: "情報公開・個人情報保護・監査"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
+      url: https://www.city.sakaide.lg.jp/life/4/27/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/hutyuuko.html
+    pages:
+      - url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/hutyuuko.html
+        kind: spot_detail
+    allow_hosts: [www.city.sakaide.lg.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-178
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: park
+      names:
+        ja: {text: "府中湖", source: ja}
+      map_query: "香川県坂出市 府中湖"
+
+  - id: kagawa-marugame-happylife-461  # 観光協会のページを一次情報にした（運営主体の記述が無い）
+    name: "小手島"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.marugame-happylife.jp/islands/about/oteshima/
+    pages:
+      - url: https://www.my-kagawa.jp/point/461
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: marugame-happylife-461
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: marugame
+      category: other
+      names:
+        ja: {text: "小手島", source: ja}
+      map_query: "香川県丸亀市 小手島"
+
+  - id: kagawa-city-496
+    name: "沙弥島"
+    operator: "情報公開・個人情報保護・監査"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
+      url: https://www.city.sakaide.lg.jp/life/4/27/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/syamijima.html
+    pages:
+      - url: https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/syamijima.html
+        kind: spot_detail
+    allow_hosts: [www.city.sakaide.lg.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-496
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: other
+      names:
+        ja: {text: "沙弥島", source: ja}
+      map_query: "香川県坂出市 沙弥島"
+
+  - id: kagawa-town-3006  # 観光協会のページを一次情報にした（ページに「木戸の馬蹄石」が出てこない）
+    name: "木戸の馬蹄石"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.town.manno.lg.jp/site/bunkazai/1704.html
+    pages:
+      - url: https://www.my-kagawa.jp/point/3006
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: town-3006
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: kotohira
+      category: other
+      names:
+        ja: {text: "木戸の馬蹄石", source: ja}
+      map_query: "香川県仲多度郡まんのう町 木戸の馬蹄石"
+
+  - id: kagawa-88shikokuhenro-174
+    name: "天皇寺"
+    operator: "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場"
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場出開帳"
+      url: https://88shikokuhenro.jp/osunahumi/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://88shikokuhenro.jp/79tennoji/
+    pages:
+      - url: https://88shikokuhenro.jp/79tennoji/
+        kind: spot_detail
+    allow_hosts: [88shikokuhenro.jp]
+    max_pages: 8
+    spot:
+      spot_id: 88shikokuhenro-174
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: sakaide
+      category: shrine_temple
+      names:
+        ja: {text: "天皇寺", source: ja}
+      map_query: "香川県坂出市 天皇寺"
+
+  - id: kagawa-shorinjikempo
+    name: "金剛禅総本山少林寺"
+    operator: "Copyright© SHORINJI KEMPO All rights reserved."
+    operator_kind: facility_official
+    operator_evidence:
+      quote: "Copyright© SHORINJI KEMPO All rights reserved."
+      url: https://kongozen.jp/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.shorinjikempo.or.jp/religious/
+    pages:
+      - url: https://www.shorinjikempo.or.jp/religious/
+        kind: spot_detail
+    allow_hosts: [www.shorinjikempo.or.jp]
+    max_pages: 8
+    spot:
+      spot_id: shorinjikempo
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: marugame
+      category: shrine_temple
+      names:
+        ja: {text: "金剛禅総本山少林寺", source: ja}
+      map_query: "香川県仲多度郡多度津町 金剛禅総本山少林寺"
+
+  - id: kagawa-p81  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
+    name: "富士見町の並び燈籠"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.my-kagawa.jp/point/81
+    pages:
+      - url: https://www.my-kagawa.jp/point/81
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: p81
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: kotohira
+      category: other
+      names:
+        ja: {text: "富士見町の並び燈籠", source: ja}
+      map_query: "香川県仲多度郡琴平町 富士見町の並び燈籠"
+
+  - id: kagawa-p3007  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
+    name: "小橋滝"
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
+    operator_evidence:
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.my-kagawa.jp/point/3007
+    pages:
+      - url: https://www.my-kagawa.jp/point/3007
+        kind: spot_detail
+    allow_hosts: [www.my-kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: p3007
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: kotohira
+      category: park
+      names:
+        ja: {text: "小橋滝", source: ja}
+      map_query: "香川県仲多度郡まんのう町 小橋滝"
+
+  - id: kagawa-city-64
+    name: "豊浜八幡神社"
+    operator: "新着情報"
+    operator_kind: municipality
+    operator_evidence:
+      quote: "運営 新着情報 2026年8月25日更新市議会提出議案の概要 2024年9月24日更新市議会提出議案の概要 2022年3月31"
+      url: https://www.city.kanonji.kagawa.jp/life/14/94/
+      checked_on: 2026-09-13
+    policy: crawl
+    official_url: https://www.city.kanonji.kagawa.jp/soshiki/21/14031.html
+    pages:
+      - url: https://www.city.kanonji.kagawa.jp/soshiki/21/14031.html
+        kind: spot_detail
+    allow_hosts: [www.city.kanonji.kagawa.jp]
+    max_pages: 8
+    spot:
+      spot_id: city-64
+      spot_type: open_air  # 営業時間・有料の記載が無い
+      area: mitoyo
+      category: shrine_temple
+      names:
+        ja: {text: "豊浜八幡神社", source: ja}
+      map_query: "香川県観音寺市 豊浜八幡神社"

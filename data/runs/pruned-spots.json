@@ -1,90 +1,10 @@
 {
-  "pruned_at": "2026-09-13T18:52:30.909876+09:00",
+  "pruned_at": "2026-09-13T19:23:50.656776+09:00",
   "dropped": [
     {
-      "id": "kagawa-bgf",
-      "name": "小豆島町内海B&G海洋センター",
-      "reason": "対象外（sports）"
-    },
-    {
-      "id": "kagawa-kenminhall-435",
-      "name": "「21世紀に贈るメッセージ」／猪熊弦一郎作",
-      "reason": "対象外（artwork）"
-    },
-    {
-      "id": "kagawa-kokuminshukusha",
-      "name": "オリーブ温泉島の宿",
-      "reason": "対象外（lodging）"
-    },
-    {
-      "id": "kagawa-morikuni",
-      "name": "【施設見学】株式会社",
-      "reason": "対象外（company）"
-    },
-    {
-      "id": "kagawa-p294",
-      "name": "「MATAKITENO」／流政之作（サンポート高松）",
-      "reason": "対象外（artwork）"
-    },
-    {
-      "id": "kagawa-p344",
-      "name": "善通寺市民プール",
-      "reason": "対象外（sports）"
-    },
-    {
-      "id": "kagawa-p434",
-      "name": "「DAITEMMAI」／流政之作（JR高松駅）",
-      "reason": "対象外（artwork）"
-    },
-    {
-      "id": "kagawa-p436",
-      "name": "「またきまい」／流政之作（大崎山園地）",
-      "reason": "対象外（artwork）"
-    },
-    {
-      "id": "kagawa-p494",
-      "name": "【宇多津町】南隆寺の坐禅会",
+      "id": "kagawa-saltlake-hiketa",
+      "name": "フィッシュフック（安戸池釣場）",
       "reason": "対象外（experience）"
-    },
-    {
-      "id": "kagawa-p91",
-      "name": "国営讃岐まんのう公園",
-      "reason": "重複（国営讃岐まんのう公園 は kagawa-sanukimannopark にもある）"
-    },
-    {
-      "id": "kagawa-pacificgolf",
-      "name": "琴平カントリー倶楽部",
-      "reason": "対象外（sports）"
-    },
-    {
-      "id": "kagawa-setoohhashi",
-      "name": "「鬼屏風」／流政之作（瀬戸大橋記念公園）",
-      "reason": "対象外（artwork）"
-    },
-    {
-      "id": "kagawa-setoohhashi-438",
-      "name": "「浜栗林」／流政之（1923～2018年）作（瀬戸大橋記念公園）",
-      "reason": "対象外（artwork）"
-    },
-    {
-      "id": "kagawa-setoohhashi-439",
-      "name": "「どだま獅子」／流政之作（瀬戸大橋記念公園）",
-      "reason": "対象外（artwork）"
-    },
-    {
-      "id": "kagawa-town",
-      "name": "三木町ウォーキングセンター",
-      "reason": "対象外（sports）"
-    },
-    {
-      "id": "kagawa-town-94",
-      "name": "サン・スポーツランド仲南",
-      "reason": "対象外（sports）"
-    },
-    {
-      "id": "kagawa-zentsuji-mandegan",
-      "name": "株式会社まんでがん",
-      "reason": "対象外（company）"
     }
   ]
 }
