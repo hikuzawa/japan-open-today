@@ -2,25 +2,25 @@
   "assets": [
     {
       "alt_text": "八栗寺",
-      "asset_id": "c576007243f05bea",
-      "author": "Araiyasushige",
-      "byte_size": 429342,
+      "asset_id": "fc547a2be532c6ab",
+      "author": "663highland",
+      "byte_size": 674716,
       "content_type": "image/jpeg",
-      "credit_text": "Gokenzan 06.jpg by Araiyasushige（CC0 1.0（パブリックドメイン提供））/ Wikimedia Commons",
-      "fetched_at": "2026-09-13T14:07:34+00:00",
+      "credit_text": "Zentsu-ji in Zentsu-ji City Kagawa pref10s3s4592.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T14:01:29+00:00",
       "license": {
         "allowed": true,
-        "checked_at": "2026-09-13T14:07:34Z",
-        "credit_text": "出典: Gokenzan 06.jpg / Wikimedia Commons（CC0 1.0（パブリックドメイン提供））",
-        "evidence_text": "ass=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/zero/1.0/deed.en\">CC0 1.0 Univ",
-        "evidence_url": "https://commons.wikimedia.org/wiki/File:Gokenzan_06.jpg",
-        "license_id": "CC0-1.0",
-        "reason": "whitelist:CC0-1.0"
+        "checked_at": "2026-09-13T14:01:29Z",
+        "credit_text": "出典: Zentsu-ji in Zentsu-ji City Kagawa pref10s3s4592.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg",
+        "license_id": "CC-BY-2.5",
+        "reason": "whitelist:CC-BY-2.5"
       },
-      "local_path": "c576007243f05bea.jpg",
+      "local_path": "fc547a2be532c6ab.jpg",
       "own_work": false,
-      "page_url": "https://commons.wikimedia.org/wiki/File:Gokenzan_06.jpg",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Gokenzan_06.jpg/1280px-Gokenzan_06.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg/1280px-Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg",
       "tags": [
         "takamatsu"
       ]

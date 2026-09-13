@@ -2,25 +2,25 @@
   "assets": [
     {
       "alt_text": "道隆寺",
-      "asset_id": "8909ab58a19310af",
-      "author": "Naokijp",
-      "byte_size": 417232,
+      "asset_id": "fc547a2be532c6ab",
+      "author": "663highland",
+      "byte_size": 674716,
       "content_type": "image/jpeg",
-      "credit_text": "Doryu-ji, Auxiliary Kamo-Inari Shrine.jpg by Naokijp（クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0））/ Wikimedia Commons",
-      "fetched_at": "2026-09-13T20:18:38+00:00",
+      "credit_text": "Zentsu-ji in Zentsu-ji City Kagawa pref10s3s4592.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T14:26:53+00:00",
       "license": {
         "allowed": true,
-        "checked_at": "2026-09-13T20:18:38Z",
-        "credit_text": "出典: Doryu-ji, Auxiliary Kamo-Inari Shrine.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示-継承 4.0 国際（CC BY-SA 4.0））",
-        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by-sa/4.0/deed.en\" class=\"extiw\" title=\"creativecommons:by-sa/4.0/deed.en\">Attribution-Sh",
-        "evidence_url": "https://commons.wikimedia.org/wiki/File:Doryu-ji,_Auxiliary_Kamo-Inari_Shrine.jpg",
-        "license_id": "CC-BY-SA-4.0",
-        "reason": "whitelist:CC-BY-SA-4.0"
+        "checked_at": "2026-09-13T14:26:53Z",
+        "credit_text": "出典: Zentsu-ji in Zentsu-ji City Kagawa pref10s3s4592.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg",
+        "license_id": "CC-BY-2.5",
+        "reason": "whitelist:CC-BY-2.5"
       },
-      "local_path": "8909ab58a19310af.jpg",
+      "local_path": "fc547a2be532c6ab.jpg",
       "own_work": false,
-      "page_url": "https://commons.wikimedia.org/wiki/File:Doryu-ji,_Auxiliary_Kamo-Inari_Shrine.jpg",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Doryu-ji%2C_Auxiliary_Kamo-Inari_Shrine.jpg/1280px-Doryu-ji%2C_Auxiliary_Kamo-Inari_Shrine.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg/1280px-Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg",
       "tags": [
         "marugame"
       ]
