@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-14T07:15:08.936447+09:00",
+  "checked_at": "2026-09-15T08:10:51.604044+09:00",
   "sitemaps": [
     {
       "path": "https://japan-open-today.com/sitemap.xml",
@@ -7,13 +7,13 @@
       "isPending": false,
       "isSitemapsIndex": false,
       "type": "sitemap",
-      "lastDownloaded": "2026-09-13T08:35:39.139Z",
+      "lastDownloaded": "2026-09-14T06:27:06.945Z",
       "warnings": "0",
       "errors": "0",
       "contents": [
         {
           "type": "web",
-          "submitted": "558",
+          "submitted": "891",
           "indexed": "0"
         }
       ]
