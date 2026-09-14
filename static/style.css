@@ -199,3 +199,16 @@ img { max-width: 100%; height: auto; }
 .route-warning {
   color: var(--warn);
 }
+
+/* サイト名の隣に出す扱い範囲。名前の一部に見えないよう、小さく落ち着いた色で */
+.brand-area {
+  font-size: 0.78rem;
+  font-weight: 500;
+  /* ヘッダーは濃紺なので、色を足さず不透明度で落とす（明暗どちらのテーマでも効く） */
+  color: inherit;
+  opacity: 0.75;
+  padding: 0.1em 0.45em;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  white-space: nowrap;
+}

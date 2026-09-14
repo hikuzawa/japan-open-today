@@ -33,7 +33,7 @@ state:
   closed: Closed
   unknown: Unknown
   open_short: Open
-  closed_short: Shut
+  closed_short: Closed
   unknown_short: "?"
 verdict:
   heading: "Status on {date}"
