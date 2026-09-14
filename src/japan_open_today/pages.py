@@ -126,11 +126,56 @@ def _spot_node(
     return node
 
 
-def _summary(verdicts: list[DayVerdict]) -> dict[str, int]:
-    counts = {"open": 0, "closed": 0, "unknown": 0}
-    for v in verdicts:
-        counts[v.state.value] += 1
+def _summary(spots: list[Spot], verdicts: dict[str, DayVerdict]) -> dict[str, int]:
+    """その日の内訳。「不明」を 2 つに割る。
+
+    屋外で時間の定めが無い場所（砂浜・境内）と、公式ページに記載が無い施設は、利用者に
+    とって意味が違う。前者は「いつでも行ける」に近く、後者は「分からない」。
+    まとめて「不明」と出すと、分からない施設が実態より多く見える（281 件中 138 → 18）。
+    """
+    counts = {"open": 0, "no_hours": 0, "unknown": 0, "closed": 0}
+    for spot in spots:
+        verdict = verdicts[spot.spot_id]
+        if verdict.state is DayState.unknown and no_hours_stated(spot):
+            counts["no_hours"] += 1
+        else:
+            counts[verdict.state.value] += 1
     return counts
+
+
+def _routes_for(ds: Dataset, area_slug: str, states: dict[str, Any]) -> list[dict[str, Any]]:
+    """そのエリアに来る航路・路線（`Route.areas` の宣言で決まる）。
+
+    島の施設を見ている人が、そこへ渡る船に辿り着けるようにする。無宣言の路線は出さない
+    （着発地の文字列から推測すると、別の島の船を出す）。
+    """
+    return [
+        {"route": r, "verdict": states[r.route_id]} for r in ds.routes if area_slug in r.areas
+    ]
+
+
+# トップに出す「今日開いている施設」の上限。全件はエリアページで見る
+TOP_OPEN = 24
+
+
+def _open_today(rows: list[Any], limit: int = TOP_OPEN) -> list[Any]:
+    """開いている施設を、エリアを順に回しながら拾う。
+
+    エリア順にそのまま切ると、先頭のエリアだけで埋まる（高松で 24 件）。
+    1 件ずつ回して混ぜると、島も県西部も入口に出る。
+    """
+    by_area: dict[str, list[Any]] = {}
+    for row in rows:
+        if row["verdict"].state is DayState.open:
+            by_area.setdefault(row["area"].slug, []).append(row)
+    out: list[Any] = []
+    while len(out) < limit and any(by_area.values()):
+        for slug in list(by_area):
+            if by_area[slug]:
+                out.append(by_area[slug].pop(0))
+            if len(out) >= limit:
+                break
+    return out
 
 
 def _wording(ws: Workspace) -> dict[str, Catalog]:
@@ -176,7 +221,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
         r.route_id: route_verdict(r, today, holidays=holidays, stale_after_days=stale_after)
         for r in ds.routes
     }
-    counts = _summary(list(verdicts.values()))
+    counts = _summary(ds.spots, verdicts)
     all_sources = [SourceLink(label=s.name("ja"), url=s.official_url) for s in ds.spots[:6]]
     pages: list[Page] = []
 
@@ -206,7 +251,8 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                 context={
                     "today": today,
                     "counts": counts,
-                    "rows": rows,
+                    # トップの問いは「今日どこへ行けるか」。答えから並べ、全件はエリアへ送る
+                    "rows": _open_today(rows),
                     "areas": [a for a in AREAS if a.slug in ds.spots_by_area],
                     "spot_total": len(ds.spots),
                 },
@@ -240,7 +286,8 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         "rows": [
                             _spot_row(ws, s, locale, verdicts[s.spot_id], assets) for s in spots
                         ],
-                        "counts": _summary([verdicts[s.spot_id] for s in spots]),
+                        "counts": _summary(spots, verdicts),
+                        "routes": _routes_for(ds, a.slug, route_states),
                         "offers": affiliates.offers_for("area-stay"),
                     },
                     trust=_trust(
@@ -289,6 +336,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         "closures_label": _closures_label(spot),
                         "no_hours_stated": no_hours_stated(spot),
                         "offers": affiliates.offers_for("spot-tickets"),
+                        "routes": _routes_for(ds, spot.area, route_states),
                         "week_all_unknown": all(
                             v.state is DayState.unknown for v in weeks[spot.spot_id]
                         ),

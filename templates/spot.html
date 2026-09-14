@@ -80,6 +80,7 @@
   </figure>
 </section>
 {% endif %}
+{% if routes %}{{ ui.route_links(routes, locale) }}{% endif %}
 {% if nearby %}
 {# 不明でも、近くで開いていると分かっている施設があれば行き先を変えられる #}
 <section class="nearby">

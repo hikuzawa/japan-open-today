@@ -20,6 +20,8 @@
     <a class="brand" href="{{ locale.url_path('') }}">
       <span class="brand-mark" aria-hidden="true">今</span>
       <span class="brand-name">{{ t('site.name_short') }}</span>
+      {# いま扱っている範囲。検索から施設ページに着いた人にも、ここだけは必ず見える #}
+      <span class="brand-area">{{ t('site.area') }}</span>
     </a>
     <nav class="site-nav" aria-label="{{ t('site.name_short') }}">
       <a href="{{ locale.url_path('transport/') }}">{{ t('nav.transport') }}</a>

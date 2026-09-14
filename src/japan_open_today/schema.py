@@ -170,6 +170,9 @@ class Route(BaseModel):
     service_days: DaySelector | None = None
     service_days_quote: str | None = None
     notices: list[SpecialNotice] = Field(default_factory=list)
+    # この航路・路線が結ぶエリア（`areas.py` の slug）。**宣言で持つ**。
+    # 着発地の文字列から推測すると、別の島の船を出してしまう（ADR 0009 の原則と同じ）
+    areas: list[str] = Field(default_factory=list)
     timetable_url: str | None = None
     # 運賃が PDF・フレーム内にあって値にできない航路のための一次情報リンク（ADR 0001）
     fare_url: str | None = None

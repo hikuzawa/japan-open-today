@@ -125,3 +125,24 @@
 </div>
 {% endif %}
 {%- endmacro %}
+
+{# そのエリアに来る航路・路線（ADR 0001）。島の施設を見ている人が船に辿り着けるようにする。
+   どのエリアに来るかは `Route.areas` の宣言で決まる（着発地の文字列から推測しない） #}
+{% macro route_links(routes, locale) %}
+<section class="routes-here">
+  <h2 class="section-head">{{ t_in(locale, 'transport.here') }}</h2>
+  <ul class="links">
+    {% for r in routes %}
+    <li>
+      <span class="route-name">{{ r.route.name(locale.code) }}</span>
+      {{ state_badge(r.verdict, locale, short=true) }}
+      {% if r.route.timetable_url %}
+      <a href="{{ r.route.timetable_url }}" rel="noopener"
+         target="_blank">{{ t_in(locale, 'transport.timetable') }}</a>
+      {% endif %}
+      <a href="{{ locale.url_path('transport/') }}">{{ t_in(locale, 'nav.transport') }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endmacro %}

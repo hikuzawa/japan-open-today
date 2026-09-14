@@ -1,5 +1,6 @@
 # 畫面文字（繁體中文）。設施名稱與介紹屬於資料，不放在這裡。
 site:
+  area: 香川縣
   name_short: 今天能去的日本
   tagline: 香川的設施與交通，今天的狀況
   description: 香川縣的觀光設施與交通，今天與未來一週是否有開、幾點開門。所有事實都取自官方網頁，並附上原文引用。
@@ -12,6 +13,12 @@ nav:
   home: 首頁
   skip: 跳至內容
 home:
+  counts_note_link: 判斷方式
+  no_hours_count: 無固定時間
+  counts_note: >-
+    「無固定時間」是沙灘、神社境內這類沒有關門時間的戶外場所。「不明」是官方網頁沒有記載、我們無法判斷的設施。
+  open_today: 今天有開的設施
+  see_all: 收錄的 {total} 處，可從下方的地區全部查看。
   heading: 香川，今天能去的地方
   lead: 每天從官方網站取得開館時間、休館日與臨時休館，並據此計算每一天的狀況。
   open_count: 有開
@@ -79,6 +86,7 @@ fee:
 area:
   spots: 這個地區的設施
 transport:
+  here: 前往這裡的船、鐵道與巴士
   service_days_unknown: 尚未能從官方網頁取得行駛日與停駛日。出發前請查看時刻表。
   heading: 交通
   lead: 前往島嶼的船班，以及島上的鐵路與巴士。完整時刻表請查看業者官方網頁。

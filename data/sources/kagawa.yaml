@@ -466,6 +466,7 @@ sources:
         zh-Hant: {text: Jumbo Ferry, source: glossary}
       routes:
         - route_id: takamatsu-shodoshima
+          areas: [takamatsu, shodoshima]  # 着発地のエリア（施設ページから船を辿れるようにする）
           from_node: 高松港
           to_node: 小豆島（坂手港）
           timetable_url: https://ferry.co.jp/home/takamatsu-shodoshima/
@@ -502,6 +503,7 @@ sources:
         zh-Hant: {text: 高松琴平電氣鐵道, source: glossary}
       routes:
         - route_id: kotohira-line
+          areas: [takamatsu, kotohira]  # 着発地のエリア（施設ページから船を辿れるようにする）
           from_node: 高松築港
           to_node: 琴電琴平
           timetable_url: https://www.kotoden.co.jp/frame/train.html
@@ -538,6 +540,7 @@ sources:
         zh-Hant: {text: 小豆島橄欖巴士, source: glossary}
       routes:
         - route_id: sakate-line
+          areas: [shodoshima]  # 着発地のエリア（施設ページから船を辿れるようにする）
           from_node: 坂手港
           to_node: 土庄港
           timetable_url: https://www.shodoshima-olive-bus.com/dia/
@@ -576,6 +579,7 @@ sources:
         zh-Hant: {text: 四國汽船, source: glossary}
       routes:
         - route_id: takamatsu-miyanoura
+          areas: [takamatsu, naoshima]  # 着発地のエリア（施設ページから船を辿れるようにする）
           from_node: 高松港
           to_node: 直島（宮浦港）
           timetable_url: https://shikokukisen.com/takamatsu-miyanoura-ferry-unko/
