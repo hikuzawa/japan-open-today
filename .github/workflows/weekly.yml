@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: hikuzawa/sitemill
-          ref: v0.4.1 # タグ固定。sitemill の main の変更は自動では入らない
+          ref: v0.5.0 # タグ固定。sitemill の main の変更は自動では入らない
           path: sitemill
 
       - name: Install uv
@@ -48,8 +48,11 @@ jobs:
           GOOGLE_SEARCH_CONSOLE_KEY: ${{ secrets.GOOGLE_SEARCH_CONSOLE_KEY }}
         run: |
           # 検索の状況。取り込んだ記録だけを読むので、鍵が無くても（0 件として）出る
-          uv run sitemill search report --days "${{ inputs.days || 7 }}" > summary.md
+          uv run sitemill --site japan-open-today search report --days "${{ inputs.days || 7 }}" > summary.md
           {
+            echo ""
+            # 日次パイプラインの実行時間・費用・heal・抽出の充足率の変化（akiya-atlas と同じ項目）
+            uv run sitemill --site japan-open-today runs report --days "${{ inputs.days || 7 }}" --source ci
             echo ""
             echo "## 掲載の状況"
             echo ""

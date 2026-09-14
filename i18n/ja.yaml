@@ -80,6 +80,7 @@ fee:
 area:
   spots: このエリアの施設
 transport:
+  service_days_unknown: 運航日・運休日は公式ページから取得できていません。出発前に時刻表でご確認ください。
   heading: 交通
   lead: 島へ渡る船と、島を動く鉄道・バス。時刻表は事業者の公式ページでご確認ください。
   first: 始発

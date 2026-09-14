@@ -194,3 +194,8 @@ img { max-width: 100%; height: auto; }
 .map-embed .sm-embed { margin: 0; }
 .map-embed iframe { width: 100%; border-radius: var(--radius); display: block; }
 .map-embed figcaption { margin-top: 6px; }
+
+/* 運航日が取れていない路線の注意書き。事実が欠けていることを目立たせる（ADR 0004） */
+.route-warning {
+  color: var(--warn);
+}

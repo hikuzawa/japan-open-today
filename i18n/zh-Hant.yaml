@@ -79,6 +79,7 @@ fee:
 area:
   spots: 這個地區的設施
 transport:
+  service_days_unknown: 尚未能從官方網頁取得行駛日與停駛日。出發前請查看時刻表。
   heading: 交通
   lead: 前往島嶼的船班，以及島上的鐵路與巴士。完整時刻表請查看業者官方網頁。
   first: 首班

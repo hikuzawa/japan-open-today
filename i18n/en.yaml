@@ -82,6 +82,7 @@ fee:
 area:
   spots: Places in this area
 transport:
+  service_days_unknown: We have not been able to read which days this runs. Please check the timetable before you travel.
   heading: Transport
   lead: >-
     Ferries to the islands, and trains and buses on them. Check the operator's official page for

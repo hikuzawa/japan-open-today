@@ -30,6 +30,10 @@
       {% if row.route.service_days_quote %}
       <span class="route-facts">{{ t('transport.service_days') }}
         {{ t('facts.quote', text=row.route.service_days_quote) }}</span>
+      {% else %}
+      {# 運航日が取れていないことを**書く**。始発・運賃だけが出ていると、
+         今日も動いていると読めてしまう（運休を見落とす形にしない。ADR 0004） #}
+      <span class="route-facts route-warning">{{ t('transport.service_days_unknown') }}</span>
       {% endif %}
       <span class="actions">
         {% if row.route.timetable_url %}
