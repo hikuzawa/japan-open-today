@@ -363,6 +363,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         "today": today,
                         "sources": ds.sources,
                         "spots": ds.spots,
+                        "routes": ds.routes,
                         "assets": assets,
                         "holidays": holidays,
                         "user_agent": ws.site.user_agent,

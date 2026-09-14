@@ -5,6 +5,8 @@
 {% block content %}
 <h1>{{ t('about.heading') }}</h1>
 <p class="lead">{{ t('about.lead') }}</p>
+{# いま扱っている範囲。「日本全体のサイトだと思って開いたら香川だけ」にしない #}
+<p class="coverage">{{ t('about.coverage', spots=spots|length, routes=routes|length) }}</p>
 
 <h2 class="section-head">{{ t('about.how_title') }}</h2>
 <ul class="links">

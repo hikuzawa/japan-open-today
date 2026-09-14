@@ -129,6 +129,10 @@ about:
   lead: >-
     Whether the museums, gardens, shrines and ferries of Kagawa are open today and this week, based
     only on what their official pages say. We do not book or arrange anything for you.
+  coverage: >-
+    For now this site covers Kagawa prefecture only — {spots} places and {routes} routes,
+    including the islands of the Seto Inland Sea. Other prefectures will follow with the
+    same machinery once the approach proves itself here; no date is fixed for any of them.
   how_title: How this site is made
   how_source: >-
     Opening hours, closing days and fees are fetched daily from the official pages of each facility
