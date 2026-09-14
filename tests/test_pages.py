@@ -197,3 +197,36 @@ def test_always_open_is_shown_as_a_fact_not_as_missing(built: list) -> None:
             assert page.context["closures_label"] == "closures.always_open", page.meta.path
         else:
             assert page.context["closures_label"] is None, page.meta.path
+
+
+def test_a_spot_without_a_photo_leaves_no_empty_frame(ws: Workspace) -> None:
+    """写真が無くても成立するデザインを保つ（ADR 0006）。
+
+    221 施設に写真が無い。空の枠や「写真なし」の板が出ていないことを、生成物で確かめる。
+    近くの施設のカードや地図には画像が出るので、**その施設自身の領域**（見出し〜事実の節）
+    だけを見る。
+    """
+    import re
+
+    from japan_open_today.pages import _assets
+
+    dist = ROOT / "dist"
+    if not (dist / "index.html").is_file():
+        pytest.skip("先に build が要る")
+    have = set(_assets(ws))
+    checked = 0
+    for spot in Dataset.load(ws).spots:
+        if spot.spot_id in have:
+            continue
+        path = dist / spot.path() / "index.html"
+        if not path.is_file():
+            continue
+        body = path.read_text(encoding="utf-8").split("<main", 1)[1].split("</main>")[0]
+        own = body.split("</h1>", 1)[1].split('class="facts"', 1)[0]
+        checked += 1
+        assert "sm-photo" not in own and "<img" not in own, spot.spot_id
+        assert not re.search(r"写真(なし|はありません)", own), spot.spot_id
+        assert not re.search(r"<(div|section|figure)[^>]*>\s*</(div|section|figure)>", own), (
+            spot.spot_id
+        )
+    assert checked > 100  # 点検が空回りしていないこと
