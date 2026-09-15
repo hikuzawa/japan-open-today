@@ -59,6 +59,33 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 19. 公開すると Actions のログ・週次まとめの Issue・失敗通知の Issue も読めるようになる。
     秘密はマスクされるが、巡回した URL・件数・費用・Search Console の数字は見える。
 
+## リポジトリを作り直して public にする（2026-09-16、履歴の書き換えの後始末）
+
+県の観光データベースの候補一覧 4 ファイル（サイトに載せていない 266 施設の連絡先を含む）を
+履歴から削除した。ただし **GitHub は書き換えで参照されなくなったコミットを SHA 指定では返し続ける**。
+Actions の実行記録 43 件のうち 41 件が旧 SHA を `head_sha` として公開するので、public にすると
+そこから 4 ファイルに辿れる。オブジェクトごと消すためにリポジトリを作り直す。
+
+順番（**Secrets の再登録まで済むまで日次パイプラインは失敗する**。次の 05:00 JST までに終える）:
+
+20. **（人）旧リポジトリを削除**する。Settings → General → Danger Zone → Delete this repository。
+    `gh` のトークンに `delete_repo` スコープが無いので、AI 側からは消せない。
+21. **（AI）空の public リポジトリを作り、書き換え後の履歴を push する**（`gh repo create` は既存スコープで足りる）。
+    説明文は `Kagawa spots and transport: is it open today? (sitemill service)`、Wiki と Discussions は無効。
+22. **（人）Secrets 5 本を再登録**する（下の表のコマンド。値は `.env` から。登録済みだったのは
+    `ANTHROPIC_API_KEY` / `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` /
+    `GOOGLE_MAPS_EMBED_KEY` / `GOOGLE_SEARCH_CONSOLE_KEY` の 5 本）。
+23. **（AI）ラベル 3 つ（`correction` / `facility` / `needs-human`）を作り直し、週次まとめ Issue を再投稿**する。
+24. **（人）Apps Script の GitHub トークンを確認**する。**fine-grained PAT はリポジトリを ID で覚えている**ので、
+    作り直すと同じ名前でも権限が切れる。その場合はトークンの対象リポジトリを選び直す。
+    Apps Script の `checkSetup()` で「GitHub: OK」が出れば通っている。
+25. **（人）`AutoReply.gs` を貼り替える**（16 番。公開前に必ず）。
+26. **（人）公開後の設定**（17・18 番）: Secret scanning と Push protection、fork PR の承認を厳しめに。
+
+作り直しで失われるもの: Actions の実行ログ、週次 Issue #1（本文は再投稿する）、リポジトリの作成日。
+失われないもの: 全コミット（書き換え後の履歴）、`data/` の記録、Cloudflare Pages（GitHub 連携ではなく
+API トークンで配置しているため無関係）、Search Console、フォームと自動返信。
+
 ## 任意・後で
 13. Street View を使う場合は Geocoding API の有効化（所在地から緯度経度を得るため）。
 14. 公式 SNS（YouTube / Instagram / X）の埋め込みを使う場合、Instagram と X は oEmbed の利用登録が要る。
