@@ -45,6 +45,20 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
     契約が済むまで CTA は「準備中」表示で、ダミーリンクは置かない（ADR 0006）。
 12. 各 ASP の掲載ルール（「広告」表記、ロゴの使用条件など）に合わせてテンプレートの文言を確認する。
 
+## リポジトリを public にするとき（2026-09-16 起票）
+15. **公開の実行**（Settings → General → Danger Zone → Change visibility）。
+    Actions の標準ランナーは public リポジトリでは分数の上限が無くなる。
+16. **お問い合わせフォームの再配置**（公開する前に）。Issue から問い合わせの原文を外す修正を
+    `tools/contact_form/AutoReply.gs` に入れた。**動いているのは Apps Script 側のコピー**なので、
+    リポジトリを直しただけでは反映されない。Apps Script エディタで `AutoReply.gs` の中身を
+    貼り替える（`setup()` の再実行は不要。`previewReply()` で分類と返信文だけ確かめられる）。
+    これをしないと、公開後の問い合わせの原文が公開 Issue に載る。
+17. **Settings → Code security**: Secret scanning と Push protection を有効化する（public なら無料）。
+18. **Settings → Actions → Fork pull request workflows**: 「Require approval for all outside
+    collaborators」にする。公開後は誰でも PR を出せて、`checks.yml` はその PR のコードを走らせる。
+19. 公開すると Actions のログ・週次まとめの Issue・失敗通知の Issue も読めるようになる。
+    秘密はマスクされるが、巡回した URL・件数・費用・Search Console の数字は見える。
+
 ## 任意・後で
 13. Street View を使う場合は Geocoding API の有効化（所在地から緯度経度を得るため）。
 14. 公式 SNS（YouTube / Instagram / X）の埋め込みを使う場合、Instagram と X は oEmbed の利用登録が要る。
