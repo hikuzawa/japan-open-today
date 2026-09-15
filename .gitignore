@@ -20,3 +20,8 @@ data/assets/**/*.webp
 data/assets/**/*.gif
 logs/
 *.log
+# 県の観光データベースから取った候補一覧（住所・電話・メール・備考の原文つき）。
+# サイトに載せていない施設の連絡先まで含むのでコミットしない（2026-09-16、履歴からも削除）。
+# 手元には残り、無ければ tools.collect_spots / tools.seed_spots で作り直せる
+data/runs/kagawa-inventory.json
+data/runs/spot-seeds*.json
