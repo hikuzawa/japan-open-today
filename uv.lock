@@ -990,7 +990,7 @@ wheels = [
 
 [[package]]
 name = "sitemill"
-version = "0.5.0"
+version = "0.6.0"
 source = { editable = "../sitemill" }
 dependencies = [
     { name = "anthropic" },
