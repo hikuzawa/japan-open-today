@@ -63,28 +63,27 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 
 県の観光データベースの候補一覧 4 ファイル（サイトに載せていない 266 施設の連絡先を含む）を
 履歴から削除した。ただし **GitHub は書き換えで参照されなくなったコミットを SHA 指定では返し続ける**。
-Actions の実行記録 43 件のうち 41 件が旧 SHA を `head_sha` として公開するので、public にすると
-そこから 4 ファイルに辿れる。オブジェクトごと消すためにリポジトリを作り直す。
+Actions の実行記録 43 件のうち 41 件が旧 SHA を `head_sha` として公開するので、そのまま public にすると
+そこから 4 ファイルに辿れる。旧リポジトリは**削除せず改名して private のまま残し**（Issue と実行ログを
+残すため。akiya-atlas と同じ）、同じ名前で新しく作って書き換え後の履歴だけを入れる。
 
-順番（**Secrets の再登録まで済むまで日次パイプラインは失敗する**。次の 05:00 JST までに終える）:
+20. **（人）`hikuzawa/japan-open-today` を `japan-open-today-archive` に改名**する（private のまま）。
+21. **（人）archive 側の Actions を無効化**する（Settings → Actions → General → Disable actions）。
+    忘れると archive の日次パイプラインが同じ Cloudflare Pages に**二重に配置**する。
+22. **（AI）新しい `hikuzawa/japan-open-today` を作り、書き換え後の履歴を push**。
+    ラベル 3 つ（`correction` / `facility` / `needs-human`）の再作成と、週次まとめ Issue の再投稿も。
+    **改名の直後は旧 URL が archive へ転送される**ので、新しいリポジトリを作る前に push しない。
+23. **（人）Secrets 5 本を再登録**する（下の表のコマンド。`ANTHROPIC_API_KEY` / `CLOUDFLARE_API_TOKEN` /
+    `CLOUDFLARE_ACCOUNT_ID` / `GOOGLE_MAPS_EMBED_KEY` / `GOOGLE_SEARCH_CONSOLE_KEY`）。
+24. **（AI）checks と pipeline を 1 本ずつ実行して確認**する。
+25. **（人）Apps Script の GitHub トークンを確認**する。**fine-grained PAT はリポジトリを ID で覚えている**ので、
+    同じ名前で作り直しても権限が切れる（archive 側を指したままになる）。対象リポジトリを選び直し、
+    `checkSetup()` で「GitHub: OK」を確かめる。
+26. **（人）`AutoReply.gs` を貼り替える**（16 番。公開前に必ず）。
+27. **（人）public 化と公開後の設定**（15・17・18 番）。
 
-20. **（人）旧リポジトリを削除**する。Settings → General → Danger Zone → Delete this repository。
-    `gh` のトークンに `delete_repo` スコープが無いので、AI 側からは消せない。
-21. **（AI）空の public リポジトリを作り、書き換え後の履歴を push する**（`gh repo create` は既存スコープで足りる）。
-    説明文は `Kagawa spots and transport: is it open today? (sitemill service)`、Wiki と Discussions は無効。
-22. **（人）Secrets 5 本を再登録**する（下の表のコマンド。値は `.env` から。登録済みだったのは
-    `ANTHROPIC_API_KEY` / `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` /
-    `GOOGLE_MAPS_EMBED_KEY` / `GOOGLE_SEARCH_CONSOLE_KEY` の 5 本）。
-23. **（AI）ラベル 3 つ（`correction` / `facility` / `needs-human`）を作り直し、週次まとめ Issue を再投稿**する。
-24. **（人）Apps Script の GitHub トークンを確認**する。**fine-grained PAT はリポジトリを ID で覚えている**ので、
-    作り直すと同じ名前でも権限が切れる。その場合はトークンの対象リポジトリを選び直す。
-    Apps Script の `checkSetup()` で「GitHub: OK」が出れば通っている。
-25. **（人）`AutoReply.gs` を貼り替える**（16 番。公開前に必ず）。
-26. **（人）公開後の設定**（17・18 番）: Secret scanning と Push protection、fork PR の承認を厳しめに。
-
-作り直しで失われるもの: Actions の実行ログ、週次 Issue #1（本文は再投稿する）、リポジトリの作成日。
-失われないもの: 全コミット（書き換え後の履歴）、`data/` の記録、Cloudflare Pages（GitHub 連携ではなく
-API トークンで配置しているため無関係）、Search Console、フォームと自動返信。
+archive は private のまま残す。**archive を public にすると同じ問題が再発する**（旧 SHA の実行記録と、
+参照されなくなったコミットがそのまま残っている）。
 
 ## 任意・後で
 13. Street View を使う場合は Geocoding API の有効化（所在地から緯度経度を得るため）。
