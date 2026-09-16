@@ -3,7 +3,7 @@
 <h1>{{ t('home.heading') }}</h1>
 <p class="lead">{{ t('home.lead') }}</p>
 {# 日付は数字の**前**に出す。何の日の数字か分からないまま読ませない #}
-<p class="asof">{{ t('verdict.heading', date=today|date_short_l) }}</p>
+<p class="asof" data-sitemill-volatile>{{ t('verdict.heading', date=today|date_short_l) }}</p>
 {{ ui.stat_strip([
   {"value": counts.open, "label": t('home.open_count')},
   {"value": counts.no_hours, "label": t('home.no_hours_count')},
@@ -15,7 +15,7 @@
   <a href="{{ locale.url_path('about/') }}">{{ t('home.counts_note_link') }}</a></p>
 
 <h2 class="section-head">{{ t('home.open_today') }}</h2>
-<ul class="cards">
+<ul class="cards" data-sitemill-volatile>
   {% for row in rows %}{{ ui.spot_card(row, locale) }}{% endfor %}
 </ul>
 <p class="note">{{ t('home.see_all', total=spot_total) }}</p>

@@ -8,7 +8,7 @@
 {% if no_hours_stated %}
 {# 屋外で時間の定めが無い場所（ADR 0011）。「不明」ではなく、定めが無いことをそのまま出す #}
 <div class="open-air-box">
-  <p class="verdict-date">{{ t('verdict.heading', date=today|date_short_l) }}</p>
+  <p class="verdict-date" data-sitemill-volatile>{{ t('verdict.heading', date=today|date_short_l) }}</p>
   <p class="open-air-lead">{{ t('open_air.lead') }}</p>
   <p>{{ t('open_air.no_notice') }}</p>
   <p class="note">{{ t('open_air.caution') }}</p>
@@ -83,7 +83,7 @@
 {% if routes %}{{ ui.route_links(routes, locale) }}{% endif %}
 {% if nearby %}
 {# 不明でも、近くで開いていると分かっている施設があれば行き先を変えられる #}
-<section class="nearby">
+<section class="nearby" data-sitemill-volatile>
   <h2 class="section-head">{{ t('nearby.heading') }}</h2>
   <p class="lead">{{ t('nearby.lead', date=today|date_short_l) }}</p>
   <ul class="cards">

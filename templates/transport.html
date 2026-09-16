@@ -2,7 +2,7 @@
 {% block content %}
 <h1>{{ t('transport.heading') }}</h1>
 <p class="lead">{{ t('transport.lead') }}</p>
-<p class="asof">{{ t('verdict.heading', date=today|date_short_l) }}</p>
+<p class="asof" data-sitemill-volatile>{{ t('verdict.heading', date=today|date_short_l) }}</p>
 {% for group in operators %}
 <section class="operator">
   <h2 class="section-head">{{ group.operator.name(locale.code) }}</h2>

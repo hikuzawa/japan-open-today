@@ -2,14 +2,14 @@
 
 {# 判定のしるし。色だけに意味を持たせない（文字も出す） #}
 {% macro state_badge(verdict, locale, short=false) %}
-<span class="badge badge-{{ verdict.state.value }}">
+<span class="badge badge-{{ verdict.state.value }}" data-sitemill-volatile>
   {{ t_in(locale, 'state.' ~ verdict.state.value ~ ('_short' if short else '')) }}
 </span>
 {% endmacro %}
 
 {# 日付を明記した断定＋時間帯。「今日」だけの表記は使わない（ADR 0004） #}
 {% macro verdict_line(verdict, locale) %}
-<p class="verdict verdict-{{ verdict.state.value }}">
+<p class="verdict verdict-{{ verdict.state.value }}" data-sitemill-volatile>
   <strong class="verdict-date">{{ fmt_date_short(verdict.day, locale) }}</strong>
   <span class="verdict-state">{{ t_in(locale, 'state.' ~ verdict.state.value) }}</span>
   {% if verdict.periods %}
@@ -29,7 +29,7 @@
 
 {# 根拠。原文の引用と一次情報 URL と取得日時を必ず添える（ADR 0004） #}
 {% macro reasons(verdict, locale) %}
-<details class="why" {% if verdict.state.value == 'unknown' %}open{% endif %}>
+<details class="why" data-sitemill-volatile {% if verdict.state.value == 'unknown' %}open{% endif %}>
   <summary>{{ t_in(locale, 'verdict.why') }}</summary>
   <ul class="reason-list">
     {% for r in verdict.reasons %}
@@ -50,7 +50,7 @@
 
 {# 7 日分の帯。数日後に見ても事実として読める（ADR 0004） #}
 {% macro week_strip(week, locale) %}
-<section class="week" aria-label="{{ t_in(locale, 'verdict.week') }}">
+<section class="week" data-sitemill-volatile aria-label="{{ t_in(locale, 'verdict.week') }}">
   <h2 class="section-head">{{ t_in(locale, 'verdict.week') }}</h2>
   <ol class="week-list">
     {% for v in week %}
@@ -68,7 +68,7 @@
 
 {# 数字の帯（ADR 0007）。値が無い項目は出さない #}
 {% macro stat_strip(items) %}
-<ul class="stats">
+<ul class="stats" data-sitemill-volatile>
   {% for item in items if item.value is not none %}
   <li class="stat">
     <span class="stat-value">{{ item.value }}</span>
@@ -92,7 +92,7 @@
       </span>
       <span class="card-meta">{{ row.area.name(locale.code) }}</span>
       {% if row.verdict.periods %}
-      <span class="card-hours">{{ fmt_time(row.verdict.periods[0].start, locale) }}–{{ fmt_time(row.verdict.periods[0].end, locale) }}</span>
+      <span class="card-hours" data-sitemill-volatile>{{ fmt_time(row.verdict.periods[0].start, locale) }}–{{ fmt_time(row.verdict.periods[0].end, locale) }}</span>
       {% endif %}
     </span>
   </a>

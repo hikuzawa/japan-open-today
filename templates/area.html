@@ -2,7 +2,7 @@
 {% block content %}
 <h1>{{ area.name(locale.code) }}</h1>
 {{ ui.ad_notice(offers, locale) }}
-<p class="asof">{{ t('verdict.heading', date=today|date_short_l) }}</p>
+<p class="asof" data-sitemill-volatile>{{ t('verdict.heading', date=today|date_short_l) }}</p>
 {{ ui.stat_strip([
   {"value": counts.open, "label": t('home.open_count')},
   {"value": counts.no_hours, "label": t('home.no_hours_count')},
