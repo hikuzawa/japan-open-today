@@ -2,25 +2,25 @@
   "assets": [
     {
       "alt_text": "根香寺",
-      "asset_id": "594dded87df400e5",
-      "author": "663highland",
-      "byte_size": 679417,
+      "asset_id": "376385b42b64efe6",
+      "author": "Reggaeman",
+      "byte_size": 423364,
       "content_type": "image/jpeg",
-      "credit_text": "Zentsu-ji in Zentsu-ji City Kagawa pref10s3s4592.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
-      "fetched_at": "2026-09-13T13:51:20+00:00",
+      "credit_text": "Aominezan Negoroji 02.JPG by Reggaeman（クリエイティブ・コモンズ 表示-継承 3.0（CC BY-SA 3.0））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T20:18:10+00:00",
       "license": {
         "allowed": true,
-        "checked_at": "2026-09-13T13:51:20Z",
-        "credit_text": "出典: Zentsu-ji in Zentsu-ji City Kagawa pref10s3s4592.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
-        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
-        "evidence_url": "https://commons.wikimedia.org/wiki/File:Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg",
-        "license_id": "CC-BY-2.5",
-        "reason": "whitelist:CC-BY-2.5"
+        "checked_at": "2026-09-13T20:18:10Z",
+        "credit_text": "出典: Aominezan Negoroji 02.JPG / Wikimedia Commons（クリエイティブ・コモンズ 表示-継承 3.0（CC BY-SA 3.0））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by-sa/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by-sa/3.0/deed.en\">Attribution-Sh",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Aominezan_Negoroji_02.JPG",
+        "license_id": "CC-BY-SA-3.0",
+        "reason": "whitelist:CC-BY-SA-3.0"
       },
-      "local_path": "594dded87df400e5.jpg",
+      "local_path": "376385b42b64efe6.jpg",
       "own_work": false,
-      "page_url": "https://commons.wikimedia.org/wiki/File:Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg/1280px-Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Aominezan_Negoroji_02.JPG",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Aominezan_Negoroji_02.JPG/1280px-Aominezan_Negoroji_02.JPG",
       "tags": [
         "takamatsu"
       ]

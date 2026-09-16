@@ -72,14 +72,19 @@ jobs:
         uses: actions/cache@v4
         with:
           # data/assets は provenance（assets.json）だけをコミットし、画像の実体は持たない。
-          # キャッシュに残っていれば取り直さずに済む（相手サイトへの負荷も減る）
+          # キャッシュに残っていれば取り直さずに済む（相手サイトへの負荷も減る）。
+          # **assets.json はキャッシュに入れない**。入れると、復元が checkout したばかりの
+          # コミット済みの assets.json を古い版で上書きし、それがそのままコミットされる。
+          # 2026-09-13 に直した「12 の寺に善通寺の写真」が、その夜の実行でこうして戻った。
+          # 鍵の接頭辞を v2 にしたのは、assets.json を含んだ古いキャッシュを二度と復元しないため
           path: |
             japan-open-today/data/raw
             japan-open-today/data/llm_cache
             japan-open-today/data/assets
-          key: japan-open-today-cache-${{ github.run_id }}
+            !japan-open-today/data/assets/**/assets.json
+          key: japan-open-today-cache-v2-${{ github.run_id }}
           restore-keys: |
-            japan-open-today-cache-
+            japan-open-today-cache-v2-
 
       - name: Sync
         working-directory: japan-open-today
@@ -104,6 +109,13 @@ jobs:
       - name: 採用画像を static/ へ複写
         working-directory: japan-open-today
         run: uv run python -m tools.sync_assets
+
+      # 1 枚の写真を 2 つ以上の場所に使っていたら止める（別の場所の写真は事実の取り違え）。
+      # 取り込み側にも歯止めはあるが、取り込み以外の経路（キャッシュの書き戻しなど）で戻ると
+      # 気づけなかった。配置の前に数え直す
+      - name: 写真の重複の検査（1 枚の写真は 1 つの場所にだけ）
+        working-directory: japan-open-today
+        run: uv run python -m tools.check_assets
 
       - name: Build
         working-directory: japan-open-today

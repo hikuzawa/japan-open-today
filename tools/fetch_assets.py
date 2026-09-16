@@ -39,9 +39,10 @@ def main() -> int:
     ws = Workspace.open(Path.cwd())
     root = ws.data_dir / "assets"
     policy = AssetPolicy()
+    # (画像, その画像を持つ場所の store)。id だけで store を引くと、同じ画像を複数の場所が
+    # 持っていたときに最後の場所しか更新されない（2026-09-16 に 12 か所で起きた）
     missing = []
     total = 0
-    store_of = {}
     for directory in sorted(p for p in root.iterdir() if p.is_dir()) if root.is_dir() else []:
         store = AssetStore(root, directory.name)
         for asset in store.load().values():
@@ -49,8 +50,7 @@ def main() -> int:
                 continue
             total += 1
             if not asset.local_path.is_file():
-                missing.append(asset)
-                store_of[asset.asset_id] = store
+                missing.append((asset, store))
     print(f"== 採用済み {total} 件 / 実体が無い {len(missing)} 件 ==")
     if args.check or not missing:
         return 0
@@ -58,7 +58,7 @@ def main() -> int:
     ok = changed = failed = 0
     ua = f"{ws.site.user_agent} asset refetch"
     with PoliteClient(ua, default_delay=2.0, jitter=0.5, timeout=30.0) as client:
-        for asset in missing:
+        for asset, store in missing:
             res = client.get(asset.source_url)
             if not res.ok:
                 failed += 1
@@ -72,7 +72,7 @@ def main() -> int:
             got = asset_id_for(res.content)
             if got != asset.asset_id:
                 # バイト列が変わっている。説明ページからライセンスを判定し直して登録し直す
-                if _rejudge(asset, store_of[asset.asset_id], policy, client=client):
+                if _rejudge(asset, store, policy, client=client):
                     ok += 1
                 else:
                     changed += 1

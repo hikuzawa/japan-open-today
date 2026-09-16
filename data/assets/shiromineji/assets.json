@@ -2,25 +2,25 @@
   "assets": [
     {
       "alt_text": "白峯寺",
-      "asset_id": "fc547a2be532c6ab",
-      "author": "663highland",
-      "byte_size": 674716,
+      "asset_id": "c130b3b4c487af74",
+      "author": "Araiyasushige",
+      "byte_size": 316764,
       "content_type": "image/jpeg",
-      "credit_text": "Zentsu-ji in Zentsu-ji City Kagawa pref10s3s4592.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
-      "fetched_at": "2026-09-16T10:24:43+00:00",
+      "credit_text": "Kusya 20240625 1.jpg by Araiyasushige（CC0 1.0（パブリックドメイン提供））/ Wikimedia Commons",
+      "fetched_at": "2026-09-13T14:09:13+00:00",
       "license": {
         "allowed": true,
-        "checked_at": "2026-09-16T10:24:43Z",
-        "credit_text": "出典: Zentsu-ji in Zentsu-ji City Kagawa pref10s3s4592.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
-        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
-        "evidence_url": "https://commons.wikimedia.org/wiki/File:Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg",
-        "license_id": "CC-BY-2.5",
-        "reason": "whitelist:CC-BY-2.5"
+        "checked_at": "2026-09-13T14:09:13Z",
+        "credit_text": "出典: Kusya 20240625 1.jpg / Wikimedia Commons（CC0 1.0（パブリックドメイン提供））",
+        "evidence_text": "ass=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/zero/1.0/deed.en\">CC0 1.0 Univ",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Kusya_20240625_1.jpg",
+        "license_id": "CC0-1.0",
+        "reason": "whitelist:CC0-1.0"
       },
-      "local_path": "fc547a2be532c6ab.jpg",
+      "local_path": "c130b3b4c487af74.jpg",
       "own_work": false,
-      "page_url": "https://commons.wikimedia.org/wiki/File:Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg/1280px-Zentsu-ji_in_Zentsu-ji_City_Kagawa_pref10s3s4592.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kusya_20240625_1.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Kusya_20240625_1.jpg/1280px-Kusya_20240625_1.jpg",
       "tags": [
         "sakaide"
       ]
