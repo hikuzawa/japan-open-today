@@ -2,6 +2,31 @@
   "assets": [
     {
       "alt_text": "金刀比羅宮",
+      "asset_id": "507ca08be3dd1701",
+      "author": "663highland",
+      "byte_size": 470737,
+      "content_type": "image/jpeg",
+      "credit_text": "Kotohira-gu07n4500.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
+      "fetched_at": "2026-09-16T10:22:49+00:00",
+      "license": {
+        "allowed": true,
+        "checked_at": "2026-09-16T10:22:49Z",
+        "credit_text": "出典: Kotohira-gu07n4500.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
+        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Kotohira-gu07n4500.jpg",
+        "license_id": "CC-BY-2.5",
+        "reason": "whitelist:CC-BY-2.5"
+      },
+      "local_path": "507ca08be3dd1701.jpg",
+      "own_work": false,
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kotohira-gu07n4500.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Kotohira-gu07n4500.jpg/1280px-Kotohira-gu07n4500.jpg",
+      "tags": [
+        "kotohira"
+      ]
+    },
+    {
+      "alt_text": "金刀比羅宮",
       "asset_id": "6d450d51802d88dd",
       "author": "Immanuelle",
       "byte_size": 469159,
@@ -46,31 +71,6 @@
       "own_work": false,
       "page_url": "https://commons.wikimedia.org/wiki/File:Daiko_in_Kotohira-g%C5%AB%27s_main_hall_(6453420061).jpg",
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Daiko_in_Kotohira-g%C5%AB%27s_main_hall_%286453420061%29.jpg/1280px-Daiko_in_Kotohira-g%C5%AB%27s_main_hall_%286453420061%29.jpg",
-      "tags": [
-        "kotohira"
-      ]
-    },
-    {
-      "alt_text": "金刀比羅宮",
-      "asset_id": "b146832216ce83ee",
-      "author": "663highland",
-      "byte_size": 470789,
-      "content_type": "image/jpeg",
-      "credit_text": "Kotohira-gu07n4500.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
-      "fetched_at": "2026-09-12T09:28:52+00:00",
-      "license": {
-        "allowed": true,
-        "checked_at": "2026-09-12T09:28:52Z",
-        "credit_text": "出典: Kotohira-gu07n4500.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
-        "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
-        "evidence_url": "https://commons.wikimedia.org/wiki/File:Kotohira-gu07n4500.jpg",
-        "license_id": "CC-BY-2.5",
-        "reason": "whitelist:CC-BY-2.5"
-      },
-      "local_path": "b146832216ce83ee.jpg",
-      "own_work": false,
-      "page_url": "https://commons.wikimedia.org/wiki/File:Kotohira-gu07n4500.jpg",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Kotohira-gu07n4500.jpg/1280px-Kotohira-gu07n4500.jpg",
       "tags": [
         "kotohira"
       ]
