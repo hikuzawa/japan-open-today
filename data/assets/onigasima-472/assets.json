@@ -2,22 +2,22 @@
   "assets": [
     {
       "alt_text": "女木島",
-      "asset_id": "0b51035c15348c39",
+      "asset_id": "645e103f196611ad",
       "author": "Nux-vomica 1007",
-      "byte_size": 73248,
+      "byte_size": 73265,
       "content_type": "image/png",
       "credit_text": "天保国絵図直島三ヶ島.svg by Nux-vomica 1007（CC0 1.0（パブリックドメイン提供））/ Wikimedia Commons",
-      "fetched_at": "2026-09-13T13:45:27+00:00",
+      "fetched_at": "2026-09-16T11:07:02+00:00",
       "license": {
         "allowed": true,
-        "checked_at": "2026-09-13T13:45:27Z",
+        "checked_at": "2026-09-16T11:07:02Z",
         "credit_text": "出典: 天保国絵図直島三ヶ島.svg / Wikimedia Commons（CC0 1.0（パブリックドメイン提供））",
         "evidence_text": "ass=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/zero/1.0/deed.en\">CC0 1.0 Univ",
         "evidence_url": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E4%BF%9D%E5%9B%BD%E7%B5%B5%E5%9B%B3%E7%9B%B4%E5%B3%B6%E4%B8%89%E3%83%B6%E5%B3%B6.svg",
         "license_id": "CC0-1.0",
         "reason": "whitelist:CC0-1.0"
       },
-      "local_path": "0b51035c15348c39.png",
+      "local_path": "645e103f196611ad.png",
       "own_work": false,
       "page_url": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E4%BF%9D%E5%9B%BD%E7%B5%B5%E5%9B%B3%E7%9B%B4%E5%B3%B6%E4%B8%89%E3%83%B6%E5%B3%B6.svg",
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/%E5%A4%A9%E4%BF%9D%E5%9B%BD%E7%B5%B5%E5%9B%B3%E7%9B%B4%E5%B3%B6%E4%B8%89%E3%83%B6%E5%B3%B6.svg/1280px-%E5%A4%A9%E4%BF%9D%E5%9B%BD%E7%B5%B5%E5%9B%B3%E7%9B%B4%E5%B3%B6%E4%B8%89%E3%83%B6%E5%B3%B6.svg.png",

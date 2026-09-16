@@ -2,22 +2,22 @@
   "assets": [
     {
       "alt_text": "ニューレオマワールド",
-      "asset_id": "4770d2b239948c6f",
+      "asset_id": "f7dc8deda9562a13",
       "author": "Wiki591801",
-      "byte_size": 285470,
+      "byte_size": 285522,
       "content_type": "image/jpeg",
       "credit_text": "Reoma World 1.jpg by Wiki591801（クリエイティブ・コモンズ 表示-継承 3.0（CC BY-SA 3.0））/ Wikimedia Commons",
-      "fetched_at": "2026-09-13T20:16:42+00:00",
+      "fetched_at": "2026-09-16T11:06:56+00:00",
       "license": {
         "allowed": true,
-        "checked_at": "2026-09-13T20:16:42Z",
+        "checked_at": "2026-09-16T11:06:56Z",
         "credit_text": "出典: Reoma World 1.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示-継承 3.0（CC BY-SA 3.0））",
         "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by-sa/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by-sa/3.0/deed.en\">Attribution-Sh",
         "evidence_url": "https://commons.wikimedia.org/wiki/File:Reoma_World_1.jpg",
         "license_id": "CC-BY-SA-3.0",
         "reason": "whitelist:CC-BY-SA-3.0"
       },
-      "local_path": "4770d2b239948c6f.jpg",
+      "local_path": "f7dc8deda9562a13.jpg",
       "own_work": false,
       "page_url": "https://commons.wikimedia.org/wiki/File:Reoma_World_1.jpg",
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Reoma_World_1.jpg/1280px-Reoma_World_1.jpg",

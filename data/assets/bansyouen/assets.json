@@ -2,22 +2,22 @@
   "assets": [
     {
       "alt_text": "中津万象園・丸亀美術館",
-      "asset_id": "d99805515870de34",
+      "asset_id": "6c778fe6d951f35f",
       "author": "663highland",
-      "byte_size": 392916,
+      "byte_size": 392968,
       "content_type": "image/jpeg",
       "credit_text": "Nakatsu-bansho-en Marugame Kagawa pref02o4592.jpg by 663highland（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））/ Wikimedia Commons",
-      "fetched_at": "2026-09-13T13:43:17+00:00",
+      "fetched_at": "2026-09-16T11:05:00+00:00",
       "license": {
         "allowed": true,
-        "checked_at": "2026-09-13T13:43:17Z",
+        "checked_at": "2026-09-16T11:05:00Z",
         "credit_text": "出典: Nakatsu-bansho-en Marugame Kagawa pref02o4592.jpg / Wikimedia Commons（クリエイティブ・コモンズ 表示 2.5（CC BY 2.5））",
         "evidence_text": "ns\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons <a href=\"//creativecommons.org/licenses/by/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.5/deed.en\">Attribution 2.5 G",
         "evidence_url": "https://commons.wikimedia.org/wiki/File:Nakatsu-bansho-en_Marugame_Kagawa_pref02o4592.jpg",
         "license_id": "CC-BY-2.5",
         "reason": "whitelist:CC-BY-2.5"
       },
-      "local_path": "d99805515870de34.jpg",
+      "local_path": "6c778fe6d951f35f.jpg",
       "own_work": false,
       "page_url": "https://commons.wikimedia.org/wiki/File:Nakatsu-bansho-en_Marugame_Kagawa_pref02o4592.jpg",
       "source_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Nakatsu-bansho-en_Marugame_Kagawa_pref02o4592.jpg/1280px-Nakatsu-bansho-en_Marugame_Kagawa_pref02o4592.jpg",
