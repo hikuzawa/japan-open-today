@@ -1,0 +1,903 @@
+{
+  "checked_at": "2026-09-17T12:44:14.651632+09:00",
+  "requests": 65,
+  "sources": [
+    {
+      "id": "kagawa-konpira",
+      "name": "金刀比羅宮",
+      "operator": "金刀比羅宮",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.konpira.or.jp/",
+      "old_evidence": {
+        "quote": "(C) KOTOHIRA-GU",
+        "url": "https://www.konpira.or.jp/",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.konpira.or.jp/",
+          "status": 200,
+          "final_url": "https://www.konpira.or.jp/",
+          "title": "金刀比羅宮",
+          "statements": [],
+          "tail": "を記念して神宮奉斎会が神前結婚式の次第を定めました。 翌34年(1901)3月3日、日比谷大神宮(後の東京大神宮)の神前において模擬結婚式が行われた後、同日同神宮において正式に初めての神前結婚式が行われました。 しだいに神前結婚式は一般にも行われるようになり、多くの神社はもとより、結婚式場にも神殿が設けられるようになりました。現在では、作法や次第も現代的に改良され、結婚指輪の交換といった洋風の儀礼も取り入れられています。 (参考:西牟田崇生編著「家庭の祭祀事典」、国書刊行会)"
+        },
+        {
+          "label": "お問い合わせフォーム",
+          "url": "https://www.konpira.or.jp/inquiries/confirmation2.php",
+          "status": 200,
+          "final_url": "https://www.konpira.or.jp/inquiries/confirmation2.php",
+          "title": "金刀比羅宮｜お問い合わせフォーム",
+          "statements": [],
+          "tail": "コメント欄 お問い合わせフォーム 〜 メールアドレス認証 《迷惑ロボット対策》 お手数ですが、次の質問の回答を入力してください。 回答: メールアドレスを入力して「送信」をクリックすると「お問い合わせフォーム」に進みます。 同時に、4桁のパスワードを記したメールが届きます。「お問い合わせフォーム」送信の際にそのパスワードが必要になります。 メールアドレス:"
+        },
+        {
+          "label": "博物館施設内での写真撮影の許可について",
+          "url": "https://www.konpira.or.jp/articles_2026/20260331_about-changes-to-the-rules/article.html",
+          "status": 200,
+          "final_url": "https://www.konpira.or.jp/articles_2026/20260331_about-changes-to-the-rules/article.html",
+          "title": "金刀比羅宮 | 博物館施設内での写真撮影の許可について",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "(C) KOTOHIRA-GU 31-Mar-2026 21:54"
+            }
+          ],
+          "tail": "施設内での写真撮影の許可について Tweet この度、金刀比羅宮博物館施設である宝物館、高橋由一館、および表書院における展示室内の写真撮影につきまして、これまで、展示室内の写真撮影は3月末までの期間限定で許可しておりましたが、4月以降も引き続き写真撮影をしていただけることとなりましたのでお知らせいたします。 金刀比羅宮の博物館施設 令和8年4月1日 金刀比羅宮 学芸課 上記「展示室内での撮影について」のPDF (C) KOTOHIRA-GU 31-Mar-2026 21:54"
+        },
+        {
+          "label": "お問い合わせフォーム",
+          "url": "https://www.konpira.or.jp/inquiries/confirmation2.php?address=priest",
+          "status": 200,
+          "final_url": "https://www.konpira.or.jp/inquiries/confirmation2.php?address=priest",
+          "title": "金刀比羅宮｜お問い合わせフォーム",
+          "statements": [],
+          "tail": "コメント欄 お問い合わせフォーム 〜 メールアドレス認証 《迷惑ロボット対策》 お手数ですが、次の質問の回答を入力してください。 回答: メールアドレスを入力して「送信」をクリックすると「お問い合わせフォーム」に進みます。 同時に、4桁のパスワードを記したメールが届きます。「お問い合わせフォーム」送信の際にそのパスワードが必要になります。 メールアドレス:"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-88shikokuhenro",
+      "name": "屋島寺",
+      "operator": "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場",
+      "operator_kind": "facility_official",
+      "official_url": "http://www.88shikokuhenro.jp/84yashimaji/",
+      "old_evidence": {
+        "quote": "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場出開帳",
+        "url": "https://88shikokuhenro.jp/osunahumi/",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://www.88shikokuhenro.jp/84yashimaji/",
+          "status": 200,
+          "final_url": "http://88shikokuhenro.jp/84yashimaji/",
+          "title": "南面山 千光院 屋島寺 – （一社）四国八十八ヶ所霊場会",
+          "statements": [],
+          "tail": "んこういん やしまじ) 宗派 真言宗御室派 本尊 十一面千手観世音菩薩 開基 鑑真和上 創建 天平勝宝年間(749〜756) 真言 おん ばさら たらま きりく アクセス情報 所在地 〒761-0111 香川県高松市屋島東町1808 電話 087-841-9418 駐車場 あり 宿坊 なし 公式HP なし 高松西インターチェンジから国道11号線南バイパス・国道11号線を東へ。マクドナルドのある交差点を左折しドライブウェイのゲートに着きます。 ⇒ 現在地からのルート案内はこちら"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://88shikokuhenro.jp/osunahumi/",
+          "status": 200,
+          "final_url": "https://88shikokuhenro.jp/osunahumi/",
+          "title": "お砂踏みについて – （一社）四国八十八ヶ所霊場会",
+          "statements": [],
+          "tail": " | 川崎大師平間寺 | 霊場会 | 出開帳本尊 2014年9月24日~10月8日 | 長野東急百貨店 | JTB | 軸装本尊 2014年12月6日~14日 | 福岡小倉井筒屋 | JTB | 軸装本尊 2015年2月11日~17日 | 栃木東武宇都宮百貨店 | JTB | 軸装本尊 上記の霊場会公式のお砂踏みをご希望の方は、下記の霊場会事務所までお問い合わせください。 (一社)四国八十八ヶ所霊場会 TEL:(0877) 56-5688 FAX:(0877) 56-5689"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-e-mikado-90",
+      "name": "健康ふれあいの里",
+      "operator": "37.5°C以上の発熱のある方",
+      "operator_kind": "facility_official",
+      "official_url": "http://e-mikado.jp/publics/index/21/",
+      "old_evidence": {
+        "quote": "管理 37.5°C以上の発熱のある方、咳や咽頭痛、嘔吐など症状のある方、体調に不安のある方などは当該施設のご利用をお控えくださ",
+        "url": "https://e-mikado.jp/pages/21/",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://e-mikado.jp/publics/index/21/",
+          "status": 200,
+          "final_url": "https://e-mikado.jp/pages/21/",
+          "title": "健康ふれあいの里｜香川 高松で日帰り温泉 宴会やキャンプを楽しむなら｜エピアみかど",
+          "statements": [],
+          "tail": "事前の体調管理 37.5°C以上の発熱のある方、咳や咽頭痛、嘔吐など症状のある方、体調に不安のある方などは当該施設のご利用をお控えください。 ●利用人数等規定 他家族との現地合流など大人数でのグループキャンプは状況に応じお断りさせていただく場合がございます。 当サイトでは利便性や品質向上のため、Cookieを使用することを推奨しています。 利用する場合は同意するを選択してください。同意をしない場合は、一部機能がご利用できません。 詳細はこちら 同意する 拒否する TOPへ戻る"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://e-mikado.jp/pages/21/",
+          "status": 200,
+          "final_url": "https://e-mikado.jp/pages/21/",
+          "title": "健康ふれあいの里｜香川 高松で日帰り温泉 宴会やキャンプを楽しむなら｜エピアみかど",
+          "statements": [],
+          "tail": "事前の体調管理 37.5°C以上の発熱のある方、咳や咽頭痛、嘔吐など症状のある方、体調に不安のある方などは当該施設のご利用をお控えください。 ●利用人数等規定 他家族との現地合流など大人数でのグループキャンプは状況に応じお断りさせていただく場合がございます。 当サイトでは利便性や品質向上のため、Cookieを使用することを推奨しています。 利用する場合は同意するを選択してください。同意をしない場合は、一部機能がご利用できません。 詳細はこちら 同意する 拒否する TOPへ戻る"
+        },
+        {
+          "label": "会社案内",
+          "url": "https://e-mikado.jp/pages/2/",
+          "status": 200,
+          "final_url": "https://e-mikado.jp/pages/2/",
+          "title": "会社案内｜香川 高松で日帰り温泉 宴会やキャンプを楽しむなら｜エピアみかど",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "> 会社案内 会社概要 ■会社名 | 一般財団法人 ことなみ振興公社 ■所在地 | 〒766-0203 香川"
+            }
+          ],
+          "tail": "0877-56-0001 ■FAX番号 | 0877-56-0016 ■代表者 | 代表理事 宮西 修 ■業務内容 | 公衆浴場、レストラン、貸会場、スポーツ施設、キャンプ場、宿泊施設の経営・運営 交通アクセス 香川県仲多度郡まんのう町川東2355-1 印刷 当サイトでは利便性や品質向上のため、Cookieを使用することを推奨しています。 利用する場合は同意するを選択してください。同意をしない場合は、一部機能がご利用できません。 詳細はこちら 同意する 拒否する TOPへ戻る"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://e-mikado.jp/pages/3/",
+          "status": 200,
+          "final_url": "https://e-mikado.jp/pages/3/",
+          "title": "お問い合わせ｜香川 高松で日帰り温泉 宴会やキャンプを楽しむなら｜エピアみかど",
+          "statements": [],
+          "tail": "は「個人情報保護方針」をお読みになり、同意のうえご記入ください。 ■電話番号欄には、必ず連絡の取れる電話番号(自宅もしくは携帯電話)をご入力ください。 ■回答に時間がかかる場合がありますので、お急ぎの方はお電話にてお問い合わせください。 お問い合わせフォーム 当サイトでは利便性や品質向上のため、Cookieを使用することを推奨しています。 利用する場合は同意するを選択してください。同意をしない場合は、一部機能がご利用できません。 詳細はこちら 同意する 拒否する TOPへ戻る"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-shikoku-cable",
+      "name": "雲辺寺ロープウェイ",
+      "operator": "© 2025 Shikoku. All Rights Reserved",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.shikoku-cable.co.jp/unpenji/",
+      "old_evidence": {
+        "quote": "© 2025 Shikoku. All Rights Reserved",
+        "url": "https://www.shikoku-cable.co.jp/unpenji/",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.shikoku-cable.co.jp/unpenji/",
+          "status": 200,
+          "final_url": "https://www.shikoku-cable.co.jp/unpenji/",
+          "title": "雲辺寺ロープウェイTOPページ - 四国ケーブルのケーブルカー・ロープウェイ",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "© 2025 Shikoku. All Rights Reserved"
+            }
+          ],
+          "tail": "です。 山頂には、四国霊場第66番札所「雲辺寺」があり、参拝のために訪れるお遍路さんの足としても喜ばれています。 詳しくはこちら PHOTO GALLERY ロープウェイや雲辺寺からの絶景をお楽しみください。 Loading... More 雲辺寺ロープウェイ お問い合わせ 〒769-1615 香川県観音寺市大野原町丸井1974-57 TEL:(0875)54-4968 FAX:(0875)54-4979 © 2025 Shikoku. All Rights Reserved"
+        },
+        {
+          "label": "会社概要",
+          "url": "https://www.shikoku-cable.co.jp/company/",
+          "status": 200,
+          "final_url": "https://www.shikoku-cable.co.jp/company/",
+          "title": "会社概要 - 四国ケーブルのケーブルカー・ロープウェイ",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "企業情報 社名 四国ケーブル株式会社 代表者 赤川 正樹 住所 〒761-0121"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "© 2025 Shikoku. All Rights Reserved"
+            }
+          ],
+          "tail": "ープウェイ開業 1987年 03月28日 雲辺寺ロープウェイ開業 08月01日 社名変更 四国ケーブル(株) 1992年 07月21日 太龍寺ロープウェイ開業 1999年 04月01日 箸蔵山ロープウェイ関連会社として独立 2001年 12月15日 スノーパーク雲辺寺開業 2020年 3月末日 スノーパーク雲辺寺閉業 07月23日 雲辺寺山頂公園リニューアルオープン 安全報告書 安全報告書(2024年度) © 2025 Shikoku. All Rights Reserved"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-komatsuoji",
+      "name": "大興寺",
+      "operator": "Copyright(c) 2018 Daikou-ji temple. All Rights Reserved.",
+      "operator_kind": "facility_official",
+      "official_url": "http://www.komatsuoji.com/",
+      "old_evidence": {
+        "quote": "Copyright(c) 2018 Daikou-ji temple. All Rights Reserved.",
+        "url": "http://www.komatsuoji.com",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://www.komatsuoji.com/",
+          "status": 200,
+          "final_url": "http://www.komatsuoji.com/",
+          "title": "小松尾山 不動光院 大興寺｜四国八十八ヶ所第六十七番札所",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright(c) 2018 Daikou-ji temple. All Rights Reserved."
+            }
+          ],
+          "tail": "文化財のご紹介をします。 当山で行われます御供養、御祈願についてご案内します。 当山の四季折々の姿をお届けして参ります。 本尊薬師瑠璃光如来様は、60年に一度の御開帳でございます。 当山へ参拝される方へ、お願いしたい事があります。ご一読ください。 所在地、および各交通機関によるアクセスをご案内します。 ホームページからのお問い合わせは、こちらから。 小松尾山大興寺 Copyright(c) 2018 Daikou-ji temple. All Rights Reserved."
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "http://www.komatsuoji.com",
+          "status": 200,
+          "final_url": "http://www.komatsuoji.com",
+          "title": "小松尾山 不動光院 大興寺｜四国八十八ヶ所第六十七番札所",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright(c) 2018 Daikou-ji temple. All Rights Reserved."
+            }
+          ],
+          "tail": "文化財のご紹介をします。 当山で行われます御供養、御祈願についてご案内します。 当山の四季折々の姿をお届けして参ります。 本尊薬師瑠璃光如来様は、60年に一度の御開帳でございます。 当山へ参拝される方へ、お願いしたい事があります。ご一読ください。 所在地、および各交通機関によるアクセスをご案内します。 ホームページからのお問い合わせは、こちらから。 小松尾山大興寺 Copyright(c) 2018 Daikou-ji temple. All Rights Reserved."
+        },
+        {
+          "label": "",
+          "url": "http://www.komatsuoji.com/about.html",
+          "status": 200,
+          "final_url": "http://www.komatsuoji.com/about.html",
+          "title": "小松尾山 不動光院 大興寺｜四国八十八ヶ所第六十七番札所",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright(c) 2018 Daikou-ji temple. All Rights Reserved."
+            }
+          ],
+          "tail": "番札所 小松尾山こまつおざん 不動光院ふどうこういん 大興寺だいこうじ 宗 派 真言宗善通寺派 本 尊 薬師如来(伝弘法大師作) 開 基 弘法大師 創 建 天平14年(742) 真 言 おん ころころ せんだり まとうぎ そわか 住 所 〒768-0101 香川県三豊市山本町辻4209 電 話 0875-63-2341 駐車場 普通20台・無料・終日 宿 坊 なし Copyright(c) 2018 Daikou-ji temple. All Rights Reserved."
+        },
+        {
+          "label": "ホームページからのお問い合わせは、こちらから。",
+          "url": "http://www.komatsuoji.com/otoi.html",
+          "status": 200,
+          "final_url": "http://www.komatsuoji.com/otoi.html",
+          "title": "小松尾山 不動光院 大興寺｜四国八十八ヶ所第六十七番札所",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright(c) 2018 Daikou-ji temple. All Rights Reserved."
+            }
+          ],
+          "tail": "光院 大興寺】 〒768-0101 香川県三豊市山本町辻4209 電話:0875-63-2341 【四国八十八ヶ所 第六十七番札所 小松尾山 不動光院 大興寺】 〒768-0101 香川県三豊市山本町辻4209 電話:0875-63-2341 お問い合わせ お問い合わせいただく際は、お手数ですが以下のフォームに必要事項をご記入の上、「送信」ボタンを押してください。 Copyright(c) 2018 Daikou-ji temple. All Rights Reserved."
+        }
+      ]
+    },
+    {
+      "id": "kagawa-takamatsu",
+      "name": "サンポート高松",
+      "operator": "事務局 荻生) カレンダー 2026年8月 月 火 水 木 金 土 日 « 6月 1 2 3 | 4 | 5 | 6 |",
+      "operator_kind": "facility_official",
+      "official_url": "https://takamatsu.or.jp/event/",
+      "old_evidence": {
+        "quote": "事務局 荻生) カレンダー 2026年8月 月 火 水 木 金 土 日 « 6月 1 2 3 | 4 | 5 | 6 | 7 8",
+        "url": "https://takamatsu.or.jp/event/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://takamatsu.or.jp/event/",
+          "status": 200,
+          "final_url": "https://takamatsu.or.jp/event/",
+          "title": "サンポート高松イベント情報 – 高松観光コンベンション・ビューロー",
+          "statements": [],
+          "tail": "悼式、夜通しリレーウォーク、がんについての講演、音楽演奏などがあります。 詳しくはこちら。 チラシ お問い合わせ先 TEL: 080-6392-2016(担当 事務局 荻生) カレンダー 2026年9月 月 火 水 木 金 土 日 « 9月 | 1 | 2 | 3 | 4 5 6 7 | 8 | 9 | 10 | 11 12 13 14 | 15 | 16 | 17 | 18 19 20 21 | 22 | 23 | 24 | 25 26 27 28 | 29 | 30 31"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://takamatsu.or.jp/contact/",
+          "status": 200,
+          "final_url": "https://takamatsu.or.jp/contact/",
+          "title": "お問い合わせ – 高松観光コンベンション・ビューロー",
+          "statements": [],
+          "tail": "環境、また迷惑メール対策等の設定により、お返事が届かない場合があります。「@takamatsu.or.jp」からのメール受信が可能な設定にしていただきますようお願いいたします。 ◎お客様からいただく個人情報は、お問い合わせ・ご質問への回答、情報提供のために使用させていただきます。 ◎お問い合わせの内容によっては、電子メール以外の方法で回答を差し上げる場合がございます。 ◎ご回答までに数日要する場合や、ご質問によってはお応えできかねる場合もございます。あらかじめご了承ください。"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-mitoyo-kanko",
+      "name": "紫雲出山",
+      "operator": "三豊での観光をより便利に快適に楽しくでいただくため",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.mitoyo-kanko.com/mt-shiude/",
+      "old_evidence": {
+        "quote": "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています",
+        "url": "https://www.mitoyo-kanko.com/about-us/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.mitoyo-kanko.com/mt-shiude/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/mt-shiude/",
+          "title": "紫雲出山（しうでやま）l 桜・紫陽花の名所 | 三豊市観光交流局",
+          "statements": [],
+          "tail": "できる方は車での移動が便利です。 ↓世界に誇る桜絶景動画↓ 周辺スポット その他の注意事項 (1)紫雲出山は国立公園に指定されているため、山一帯が火気厳禁です。山頂及び山頂駐車場でのバーベキュー・バーナー使用などは禁止されています。 (2)ドローン撮影については、イベント会場と同様の規制で桜シーズン期間中及び前後の来客が多い期間は、ドローンの使用が禁止されています。メディア・報道関係者の撮影につきましては、三豊市観光交流局(0875-56-5880)に事前申請をお願いします。"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.mitoyo-kanko.com/about-us/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/about-us/",
+          "title": "三豊市観光交流局について（概要） | 三豊市観光交流局",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "一般社団法人三豊市観光交流局について 団体概要 団体名 一般社団法人三豊市観"
+            },
+            {
+              "kind": "表の名称",
+              "quote": "団体名 一般社団法人三豊市観光交流局"
+            }
+          ],
+          "tail": "世紀経った今、年間約45万人が訪れる四国を代表する海岸となりました。 10年前の様子 米国ニューヨークタイムズ紙にも紹介された世界に誇る桜絶景[紫雲出山]瀬戸内海を一望できる四国随一の桜の名所として知られており、2019年には米国ニューヨークタイムズ紙にも取り上げられました。現在では、春だけで約4万人以上が訪れる市内屈指の観光地となっています。 次世代へこの美しい景観を残すため、年間を通じて桜の保全を行っています。 現在の様子 台風による倒木、老木化、病気などによる現在の様子"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-mitoyo-kanko-143",
+      "name": "不動の滝",
+      "operator": "三豊での観光をより便利に快適に楽しくでいただくため",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.mitoyo-kanko.com/facility/fudonotaki-country-park/",
+      "old_evidence": {
+        "quote": "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています",
+        "url": "https://www.mitoyo-kanko.com/about-us/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.mitoyo-kanko.com/facility/fudonotaki-country-park/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/facility/fudonotaki-country-park/",
+          "title": "不動の滝カントリーパーク | 三豊市観光交流局",
+          "statements": [],
+          "tail": "旬~4月上旬 紅葉の時期も美しい 桜と鯉のぼり 特徴 自然 穴場 住所 香川県三豊市豊中町岡本3567-6 電話番号 0875-62-5205(豊中コミュニティセンター) 営業時間 公園は年中開放(パットゴルフ場は毎週月曜日及び年末年始が休み) 定休日 年中無休 駐車場 60台 その他情報 【注意事項】 ・BBQは限定された場所のみ可(池の横の東屋とコミュニティセンター横駐車場) ・事前にコミュニティセンターにお声がけください。 ※状況により内容が変更している場合もあります。"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.mitoyo-kanko.com/about-us/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/about-us/",
+          "title": "三豊市観光交流局について（概要） | 三豊市観光交流局",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "一般社団法人三豊市観光交流局について 団体概要 団体名 一般社団法人三豊市観"
+            },
+            {
+              "kind": "表の名称",
+              "quote": "団体名 一般社団法人三豊市観光交流局"
+            }
+          ],
+          "tail": "世紀経った今、年間約45万人が訪れる四国を代表する海岸となりました。 10年前の様子 米国ニューヨークタイムズ紙にも紹介された世界に誇る桜絶景[紫雲出山]瀬戸内海を一望できる四国随一の桜の名所として知られており、2019年には米国ニューヨークタイムズ紙にも取り上げられました。現在では、春だけで約4万人以上が訪れる市内屈指の観光地となっています。 次世代へこの美しい景観を残すため、年間を通じて桜の保全を行っています。 現在の様子 台風による倒木、老木化、病気などによる現在の様子"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-mitoyo-kanko-128",
+      "name": "粟島",
+      "operator": "三豊での観光をより便利に快適に楽しくでいただくため",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.mitoyo-kanko.com/awashimaisland/",
+      "old_evidence": {
+        "quote": "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています",
+        "url": "https://www.mitoyo-kanko.com/about-us/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.mitoyo-kanko.com/awashimaisland/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/awashimaisland/",
+          "title": "瀬戸内・粟島 | 三豊市観光交流局",
+          "statements": [],
+          "tail": "ュニティバス時刻表 定期船時刻表 海上タクシー TEL 090-2827-3387(瀬戸内ボートクルージング・FUJIWARA) 宿泊情報 魅力あふれる宿が存在する三豊 そこでしか味わえない景色と体験に 誰しもが魅了されるはずです。 宿をみてみる グルメ 海岸沿いにカフェやかき氷店など おいしいお店が立ち並ぶ。 店をみてみる お土産 キュートな見た目が愛おしい。 三豊のおいしい・かわいいもの。 お土産をみて 体験 旅の思い出を染めてくれる みとよで体験できるもの 体験してみる"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.mitoyo-kanko.com/about-us/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/about-us/",
+          "title": "三豊市観光交流局について（概要） | 三豊市観光交流局",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "一般社団法人三豊市観光交流局について 団体概要 団体名 一般社団法人三豊市観"
+            },
+            {
+              "kind": "表の名称",
+              "quote": "団体名 一般社団法人三豊市観光交流局"
+            }
+          ],
+          "tail": "世紀経った今、年間約45万人が訪れる四国を代表する海岸となりました。 10年前の様子 米国ニューヨークタイムズ紙にも紹介された世界に誇る桜絶景[紫雲出山]瀬戸内海を一望できる四国随一の桜の名所として知られており、2019年には米国ニューヨークタイムズ紙にも取り上げられました。現在では、春だけで約4万人以上が訪れる市内屈指の観光地となっています。 次世代へこの美しい景観を残すため、年間を通じて桜の保全を行っています。 現在の様子 台風による倒木、老木化、病気などによる現在の様子"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-mitoyo-kanko-457",
+      "name": "志々島",
+      "operator": "三豊での観光をより便利に快適に楽しくでいただくため",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.mitoyo-kanko.com/shishijimaisland/",
+      "old_evidence": {
+        "quote": "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています",
+        "url": "https://www.mitoyo-kanko.com/about-us/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.mitoyo-kanko.com/shishijimaisland/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/shishijimaisland/",
+          "title": "瀬戸内・志々島 | 三豊市観光交流局",
+          "statements": [],
+          "tail": " 志々島港 徒歩3分 休憩所くすくす 徒歩20分 大楠 徒歩2分 楠の倉展望台 徒歩20分 やぎ 徒歩3分 休憩所くすくす 徒歩すぐ 志々島港 【天空の花畑コース】≪4月~6月のみ≫ 所要時間 約3時間30分 志々島港 徒歩3分 休憩所くすくす 徒歩20分 大楠 徒歩2分 楠の倉展望台 徒歩20分 天空の花畑 徒歩20分 やぎ 徒歩3分 休憩所くすくす 徒歩3分 志々島港 お問い合わせ 【三豊市観光交流局】 TEL:0875-56-5880(火曜休館) メールでのお問い合わせ"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.mitoyo-kanko.com/about-us/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/about-us/",
+          "title": "三豊市観光交流局について（概要） | 三豊市観光交流局",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "一般社団法人三豊市観光交流局について 団体概要 団体名 一般社団法人三豊市観"
+            },
+            {
+              "kind": "表の名称",
+              "quote": "団体名 一般社団法人三豊市観光交流局"
+            }
+          ],
+          "tail": "世紀経った今、年間約45万人が訪れる四国を代表する海岸となりました。 10年前の様子 米国ニューヨークタイムズ紙にも紹介された世界に誇る桜絶景[紫雲出山]瀬戸内海を一望できる四国随一の桜の名所として知られており、2019年には米国ニューヨークタイムズ紙にも取り上げられました。現在では、春だけで約4万人以上が訪れる市内屈指の観光地となっています。 次世代へこの美しい景観を残すため、年間を通じて桜の保全を行っています。 現在の様子 台風による倒木、老木化、病気などによる現在の様子"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-mitoyo-kanko-131",
+      "name": "鴨之越・丸山島",
+      "operator": "三豊での観光をより便利に快適に楽しくでいただくため",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.mitoyo-kanko.com/facility/kamonokoshi/",
+      "old_evidence": {
+        "quote": "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています",
+        "url": "https://www.mitoyo-kanko.com/about-us/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.mitoyo-kanko.com/facility/kamonokoshi/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/facility/kamonokoshi/",
+          "title": "鴨之越・丸山島 | 三豊市観光交流局",
+          "statements": [],
+          "tail": "よう。地元住民向けのスポットです。 弁天岩と沈む夕日。 瀬戸内海の青さが美しい。 特徴 自然 海と島 住所 香川県三豊市詫間町大浜鴨之越 電話番号 三豊市観光交流局(0875-56-5880) 駐車場 有(5台) 地元の方のご厚意でおかりしています。釣りなどによる長時間の駐車や、夜間の駐車は禁止です。ルールを守ってご利用ください。 その他情報 駐車場までの道が狭いため観光バスの乗り入れはおやめください。 路上駐車は地元の方のご迷惑となりますので短時間の駐車であっても禁止です。"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.mitoyo-kanko.com/about-us/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/about-us/",
+          "title": "三豊市観光交流局について（概要） | 三豊市観光交流局",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "一般社団法人三豊市観光交流局について 団体概要 団体名 一般社団法人三豊市観"
+            },
+            {
+              "kind": "表の名称",
+              "quote": "団体名 一般社団法人三豊市観光交流局"
+            }
+          ],
+          "tail": "世紀経った今、年間約45万人が訪れる四国を代表する海岸となりました。 10年前の様子 米国ニューヨークタイムズ紙にも紹介された世界に誇る桜絶景[紫雲出山]瀬戸内海を一望できる四国随一の桜の名所として知られており、2019年には米国ニューヨークタイムズ紙にも取り上げられました。現在では、春だけで約4万人以上が訪れる市内屈指の観光地となっています。 次世代へこの美しい景観を残すため、年間を通じて桜の保全を行っています。 現在の様子 台風による倒木、老木化、病気などによる現在の様子"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-hoshoin",
+      "name": "宝生院のシンパク",
+      "operator": "事務局 宝生院 香川県小豆郡土庄町上庄412 お問い合わせ 電話:0879-62-0682/FAX:0879-62-92",
+      "operator_kind": "facility_official",
+      "official_url": "https://hoshoin.jp/",
+      "old_evidence": {
+        "quote": "事務局 宝生院 香川県小豆郡土庄町上庄412 お問い合わせ 電話:0879-62-0682/FAX:0879-62-9272 「",
+        "url": "https://hoshoin.jp/shinpaku/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://hoshoin.jp/",
+          "status": 200,
+          "final_url": "https://hoshoin.jp/",
+          "title": "【公式】宝生院 高野山真言宗 小豆島霊場第五十四番札所 -樹齢1600年を超えるシンパク-",
+          "statements": [],
+          "tail": "覧ページへ 風と戯れ、 光と会話するシンパク。 瀬戸内、 一六〇〇年の刻。 国指定特別天然記念物として 昭和三〇年に指定された 樹齢一六〇〇年以上の巨樹です。 古墳時代に 第一五代応神天皇が 手植えされたものとして 今に語り継がれています。 learn more ABOUT 宝生院のこと WORSHIP ご参拝・ご祈祷 ACCESS アクセス GOODS 授与品・御守り OHENRO 小豆島霊場会 EVENT年中行事 FAQ良くある質問 LINKリンク集 learn more"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://hoshoin.jp/shinpaku/",
+          "status": 200,
+          "final_url": "https://hoshoin.jp/shinpaku/",
+          "title": "シンパク - 【公式】宝生院 高野山真言宗 小豆島霊場第五十四番札所 -樹齢1600年を超えるシンパク-",
+          "statements": [],
+          "tail": "約90名参加 平成29年7月29日~31日 シンパク写生コンクール開催 平成29年11月7日 駐車場を透水性コンクリートの改良工事の寄進をうける 平成29年12月 北山地区 シンパクしめ縄作り 平成30年10月7日 木道完成竣工式 約300名参加 平成30年12月2日 宝生院のシンパク保存会と有志 シンパクしめ縄作り 令和元年12月7日 宝生院のシンパク保存会と有志 シンパクしめ縄作り 令和元年12月5日 宝生院のシンパク保存会と有志 シンパクしめ縄作り learn more"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://hoshoin.jp/faq",
+          "status": 200,
+          "final_url": "https://hoshoin.jp/faq/",
+          "title": "よくある質問 - 【公式】宝生院 高野山真言宗 小豆島霊場第五十四番札所 -樹齢1600年を超えるシンパク-",
+          "statements": [],
+          "tail": "日までに予約をお願いいたします。 料金の目安は 5000円~10000円となります。 質 ワークショップに興味があるのですがどのようなものがありますか? 答 オリーブ腕輪念珠体験・お香作り体験が主にございますが色々と時期に応じて開催をしております。詳細はホームページやSNS等でご確認ください。 CONTACT USお問い合わせ 高野山真言宗 小豆島霊場第五十四番札所宝生院 〒761-4122 香川県小豆郡土庄町上庄412 TEL.0879-62-0682 learn more"
+        },
+        {
+          "label": "宝生院について",
+          "url": "https://hoshoin.jp/about",
+          "status": 200,
+          "final_url": "https://hoshoin.jp/about/",
+          "title": "宝生院について - 【公式】宝生院 高野山真言宗 小豆島霊場第五十四番札所 -樹齢1600年を超えるシンパク-",
+          "statements": [],
+          "tail": "に“虚しく往きて実ちて帰る”というものがありますが、そういう島にして行きたいと思っています。 宝生院 住職 髙橋 寿明 先祖・水子供養・ご祈祷について 祈祷は、厄除開運・家内安全・安産成就・病気平癒・進学成就・所願成就 等。永代供養も受付しております。 ANNUAL EVENTS年中行事 毎月24日 午前9時 地蔵大菩薩法要 2月15日 聴聞会(ちょうもんえ)開催 12月初旬 シンパクしめ縄 奉納 12月31日23時30分 年越し除夜の鐘 駐車場のご案内 learn more"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-sanuki-191",
+      "name": "さぬき市歴史民俗資料館",
+      "operator": "主催 さぬき市教育委員会 協力 さぬき市公文書館 会場 さぬき市歴史民俗資料館 期間 令和8年5月2日(土)~令和8年9",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.sanuki.ne.jp/rekimin/",
+      "old_evidence": {
+        "quote": "主催 さぬき市教育委員会 協力 さぬき市公文書館 会場 さぬき市歴史民俗資料館 期間 令和8年5月2日(土)~令和8年9月27",
+        "url": "https://www.sanuki.ne.jp/rekimin/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.sanuki.ne.jp/rekimin/",
+          "status": 200,
+          "final_url": "https://www.sanuki.ne.jp/rekimin/",
+          "title": "トップページ-さぬき市歴史民俗資料館",
+          "statements": [],
+          "tail": "1 メールアドレス sanukisirekimin@ma.pikara.ne.jp 緊急連絡先 さぬき市教育委員会 生涯学習課 電話0879-26-9974 FAX 0879-26-9975 入館時間 9:00~16:30分(閉館は17時) 休館日 毎週水曜日(祭日の場合は翌日)及び 年末年始12月29日から1月3日 資料館入館料 大人100円 小中学生50円 障害者手帳開示の方は無料ですが1人につき1名の付添人も無料となります。 伝習館はいつも無料です。 資料館近辺の文化財"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-mitoyo-kanko-129",
+      "name": "粟島海洋記念館",
+      "operator": "三豊での観光をより便利に快適に楽しくでいただくため",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.mitoyo-kanko.com/facility/awashimamuseum/",
+      "old_evidence": {
+        "quote": "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています",
+        "url": "https://www.mitoyo-kanko.com/about-us/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.mitoyo-kanko.com/facility/awashimamuseum/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/facility/awashimamuseum/",
+          "title": "粟島海洋記念館 | 三豊市観光交流局",
+          "statements": [],
+          "tail": "が誕生。ここから多くの外洋船員が巣立った。昭和62年に廃校になった後も大切に保存されている。大正9年に建築された木造2階建ての校舎跡には、昔の船舶機器や模型など多くの資料を展示。庭に設置された古い碇や艦鐘もノスタルジックだ。映画「機関車先生」のロケ地にも。 特徴 海と島 歴史・文化 住所 香川県三豊市詫間町粟島1541 電話番号 0875-84-7878 (ル・ポール粟島) 営業時間 9:00~16:00(入館は無料) 定休日 毎週火曜日(火曜日が祝日の場合は翌日)、年末年始"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.mitoyo-kanko.com/about-us/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/about-us/",
+          "title": "三豊市観光交流局について（概要） | 三豊市観光交流局",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "一般社団法人三豊市観光交流局について 団体概要 団体名 一般社団法人三豊市観"
+            },
+            {
+              "kind": "表の名称",
+              "quote": "団体名 一般社団法人三豊市観光交流局"
+            }
+          ],
+          "tail": "世紀経った今、年間約45万人が訪れる四国を代表する海岸となりました。 10年前の様子 米国ニューヨークタイムズ紙にも紹介された世界に誇る桜絶景[紫雲出山]瀬戸内海を一望できる四国随一の桜の名所として知られており、2019年には米国ニューヨークタイムズ紙にも取り上げられました。現在では、春だけで約4万人以上が訪れる市内屈指の観光地となっています。 次世代へこの美しい景観を残すため、年間を通じて桜の保全を行っています。 現在の様子 台風による倒木、老木化、病気などによる現在の様子"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-michinoeki-kotohiki",
+      "name": "道の駅「ことひき」",
+      "operator": "Copyright © 2021 MICHINOEKI PAGE TOP",
+      "operator_kind": "facility_official",
+      "official_url": "https://michinoeki-kotohiki.com/",
+      "old_evidence": {
+        "quote": "Copyright © 2021 MICHINOEKI PAGE TOP",
+        "url": "https://michinoeki-kotohiki.com/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://michinoeki-kotohiki.com/",
+          "status": 200,
+          "final_url": "https://michinoeki-kotohiki.com/",
+          "title": "道の駅ことひき",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2021 MICHINOEKI PAGE TOP"
+            }
+          ],
+          "tail": "ある、和洋のスイーツが楽しめるモダンな喫茶 WEBモールせとうち KOTOHIKI一覧 せとうちKOTOHIKI WEBショッピング 伊吹島産いりこをはじめ、新商品「いりこごはん」のほか、瀬戸内海の海産物をつかったお菓子や定番の「讃岐うどん」など、瀬戸の香り感じる郷土の味をお届けします。 ショッピングページへ ビュースポット 観音寺や周辺の是非訪れたいビュースポットを紹介します。 ビュースポットページへ Copyright © 2021 MICHINOEKI PAGE TOP"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-88shikokuhenro-245",
+      "name": "根香寺",
+      "operator": "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場",
+      "operator_kind": "facility_official",
+      "official_url": "http://www.88shikokuhenro.jp/82negoroji/",
+      "old_evidence": {
+        "quote": "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場出開帳",
+        "url": "https://88shikokuhenro.jp/osunahumi/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://www.88shikokuhenro.jp/82negoroji/",
+          "status": 200,
+          "final_url": "http://88shikokuhenro.jp/82negoroji/",
+          "title": "青峰山 千手院 根香寺 – （一社）四国八十八ヶ所霊場会",
+          "statements": [],
+          "tail": "山 千手院 根香寺 (あおみねさん せんじゅいん ねごろじ) 宗派 天台宗 本尊 千手観世音菩薩 開基 弘法大師、智証大師 創建 弘仁年間(810〜824) 真言 おん ばざらたらま きりく そわか アクセス情報 所在地 〒761-8004 香川県高松市中山町1506 電話 087-881-3329 駐車場 あり(無料) 宿坊 なし 公式HP なし 高松西インターチェンジから五色台方面へ、標識に沿って県道180号線を進むと山門前につきます。 ⇒ 現在地からのルート案内はこちら"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://88shikokuhenro.jp/osunahumi/",
+          "status": 200,
+          "final_url": "https://88shikokuhenro.jp/osunahumi/",
+          "title": "お砂踏みについて – （一社）四国八十八ヶ所霊場会",
+          "statements": [],
+          "tail": " | 川崎大師平間寺 | 霊場会 | 出開帳本尊 2014年9月24日~10月8日 | 長野東急百貨店 | JTB | 軸装本尊 2014年12月6日~14日 | 福岡小倉井筒屋 | JTB | 軸装本尊 2015年2月11日~17日 | 栃木東武宇都宮百貨店 | JTB | 軸装本尊 上記の霊場会公式のお砂踏みをご希望の方は、下記の霊場会事務所までお問い合わせください。 (一社)四国八十八ヶ所霊場会 TEL:(0877) 56-5688 FAX:(0877) 56-5689"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-mitoyo-kanko-127",
+      "name": "朝日山森林公園",
+      "operator": "三豊での観光をより便利に快適に楽しくでいただくため",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.mitoyo-kanko.com/facility/mtasahishinrinpark/",
+      "old_evidence": {
+        "quote": "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています",
+        "url": "https://www.mitoyo-kanko.com/about-us/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.mitoyo-kanko.com/facility/mtasahishinrinpark/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/facility/asahiyama-shinrin-park/",
+          "title": "朝日山森林公園 | 三豊市観光交流局",
+          "statements": [
+            {
+              "kind": "自治体",
+              "quote": "付:三豊市役所産業政策課 (TEL : 0875-73-3012、土日祝休館) 地 面:裸地の"
+            }
+          ],
+          "tail": "(三豊市産業政策課) 駐車場 約200台 その他情報 【キャンプ場情報】 所在地:香川県三豊市高瀬町・標高約212m 利用料:無料 (要予約・FAX可) 受 付:三豊市役所産業政策課 (TEL : 0875-73-3012、土日祝休館) 地 面:裸地の区画・フリーサイト(林間・山間) 炊事場:あり(屋根付き)、かまどあり トイレ:水洗式 身体障害者用トイレ:あり(入口ゲートの駐車場) その他:駐車場からサイトまで車両の横付け可能 ※状況により内容が変更している場合もあります。"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.mitoyo-kanko.com/about-us/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/about-us/",
+          "title": "三豊市観光交流局について（概要） | 三豊市観光交流局",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "一般社団法人三豊市観光交流局について 団体概要 団体名 一般社団法人三豊市観"
+            },
+            {
+              "kind": "表の名称",
+              "quote": "団体名 一般社団法人三豊市観光交流局"
+            }
+          ],
+          "tail": "世紀経った今、年間約45万人が訪れる四国を代表する海岸となりました。 10年前の様子 米国ニューヨークタイムズ紙にも紹介された世界に誇る桜絶景[紫雲出山]瀬戸内海を一望できる四国随一の桜の名所として知られており、2019年には米国ニューヨークタイムズ紙にも取り上げられました。現在では、春だけで約4万人以上が訪れる市内屈指の観光地となっています。 次世代へこの美しい景観を残すため、年間を通じて桜の保全を行っています。 現在の様子 台風による倒木、老木化、病気などによる現在の様子"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-mitoyo-kanko-141",
+      "name": "戸川ダム公園",
+      "operator": "三豊での観光をより便利に快適に楽しくでいただくため",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.mitoyo-kanko.com/facility/togawadam/",
+      "old_evidence": {
+        "quote": "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています",
+        "url": "https://www.mitoyo-kanko.com/about-us/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.mitoyo-kanko.com/facility/togawadam/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/facility/togawadam/",
+          "title": "戸川ダム公園 | 三豊市観光交流局",
+          "statements": [],
+          "tail": "なイベントが催される。 春には満開の桜、初夏には新緑、秋には紅葉、冬には雪景色に出会えることもある。 【例年の見頃】 3月下旬~4月上旬 特徴 自然 住所 香川県三豊市財田町財田上戸川 電話番号 0875-56-5880(三豊市観光交流局) 駐車場 120台。駐車場は道の駅たからだの里をご利用ください。 その他情報 【公園内での注意事項】 ・火気厳禁 ・BBQ禁止 ※道の駅内に車中泊場RVパーク(電源完備)があります。受付は、「環の湯」(TEL:0875-67-2614)へ。"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.mitoyo-kanko.com/about-us/",
+          "status": 200,
+          "final_url": "https://www.mitoyo-kanko.com/about-us/",
+          "title": "三豊市観光交流局について（概要） | 三豊市観光交流局",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "一般社団法人三豊市観光交流局について 団体概要 団体名 一般社団法人三豊市観"
+            },
+            {
+              "kind": "表の名称",
+              "quote": "団体名 一般社団法人三豊市観光交流局"
+            }
+          ],
+          "tail": "世紀経った今、年間約45万人が訪れる四国を代表する海岸となりました。 10年前の様子 米国ニューヨークタイムズ紙にも紹介された世界に誇る桜絶景[紫雲出山]瀬戸内海を一望できる四国随一の桜の名所として知られており、2019年には米国ニューヨークタイムズ紙にも取り上げられました。現在では、春だけで約4万人以上が訪れる市内屈指の観光地となっています。 次世代へこの美しい景観を残すため、年間を通じて桜の保全を行っています。 現在の様子 台風による倒木、老木化、病気などによる現在の様子"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-ogijima",
+      "name": "男木島",
+      "operator": "男木島灯台近くの水仙郷の管理",
+      "operator_kind": "facility_official",
+      "official_url": "https://ogijima.site/",
+      "old_evidence": {
+        "quote": "管理 男木島灯台近くの水仙郷の管理",
+        "url": "https://ogijima.site/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://ogijima.site/",
+          "status": 200,
+          "final_url": "https://ogijima.site/",
+          "title": "NPO法人男木島観光協会 – 瀬戸内にある全周約7kmの小さな島、男木島。迷路のように入り組んだ坂道と家々が独特の景観を生み出している島の観光協会です",
+          "statements": [],
+          "tail": "00 | 16:20 | 16:40 18:10 | 18:30 | 18:50 男木発時刻表 男木発 | 女木発 | 高松着 7:00 | 7:20 | 7:40 9:00 | 9:20 | 9:40 11:00 | 11:20 | 11:40 13:00 | 13:20 | 13:40 15:00 | 15:20 | 15:40 17:00 | 17:20 | 17:40 男木島の飲食・宿泊 男木島観光協会会員が運営している飲食や宿泊を提供している店舗・施設へのリンクです"
+        },
+        {
+          "label": "男木島観光協会",
+          "url": "https://ogijima.site/about/",
+          "status": 200,
+          "final_url": "https://ogijima.site/about/",
+          "title": "男木島観光協会について – NPO法人男木島観光協会",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "団体概要 特定非営利活動法人男木島観光協会 住所 〒760-0091 香川県高松市"
+            },
+            {
+              "kind": "法人名",
+              "quote": "男木町1925番地1 代表 福井 大和 特定非営利活動法人男木島観光協会定款 内閣府NPO法人ポータルサイト 特定非"
+            },
+            {
+              "kind": "法人名",
+              "quote": "4月 男木島観光協会設立 令和4年9月 特定非営利活動法人として認証 令和5年3月 航路標識協力団体に指定さ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "令和5年4月 任意団体男木島観光協会から特定非営利活動法人男木島観光協会へ活動を移行 ウェブサイトの著作権について 男木島観"
+            }
+          ],
+          "tail": "月 任意団体男木島観光協会から特定非営利活動法人男木島観光協会へ活動を移行 ウェブサイトの著作権について 男木島観光協会サイトの写真撮影は額賀順子が行っています。 男木島灯台しましま祭りでのイラストは橋下一将、動画は中川まりめの制作です。男木島灯台しましま祭りでの写真はそれぞれ著作者がいます。 男木島観光協会のサイトで使っている写真を利用する場合は必ずクレジットの表記をお願いいたします。非営利の場合は無料でご利用いただけます。営利利用の場合は男木島観光協会までご連絡ください。"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://ogijima.site/contact/",
+          "status": 200,
+          "final_url": "https://ogijima.site/contact/",
+          "title": "お問い合わせ – NPO法人男木島観光協会",
+          "statements": [],
+          "tail": "前によくある質問もご覧ください。 → よくある質問はこちら 灯台キャンプ場利用予約はそれぞれの専用フォームからお申し込みください。 男木島観光協会では現在パンフレットの送付は行っておりません。ご了承ください。 当協会はボランティアにより運営しており、いただいたすべてのお問い合わせにお返事することはお約束いたしかねます。あらかじめご了承ください。 特に下記に該当する場合は、返信を差し控えさせていただくことがございます。 よくある質問に記載のある内容 内容が不適切と判断される場合"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-88shikokuhenro-174",
+      "name": "天皇寺",
+      "operator": "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場",
+      "operator_kind": "facility_official",
+      "official_url": "https://88shikokuhenro.jp/79tennoji/",
+      "old_evidence": {
+        "quote": "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場出開帳",
+        "url": "https://88shikokuhenro.jp/osunahumi/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://88shikokuhenro.jp/79tennoji/",
+          "status": 200,
+          "final_url": "https://88shikokuhenro.jp/79tennoji/",
+          "title": "金華山 高照院 天皇寺 – （一社）四国八十八ヶ所霊場会",
+          "statements": [],
+          "tail": "基 行基菩薩 中興 弘法大師 創建 天平年間(729〜749) 真言 おんまか きゃろにきゃ そわか アクセス情報 所在地 〒762-0021 香川県坂出市西庄町天皇1713-2 電話 0877-46-3508 駐車場 あり ※境内内は普通車のみ。マイクロバス、大型バスは県道33号線を利用。 宿坊 なし 公式HP なし 坂出北インターチェンジから県道33号線を東へ向います。JR八十場駅を過ぎたところで、標識のある西庄町交差点を右折し参道へ。 ⇒ 現在地からのルート案内はこちら"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://88shikokuhenro.jp/osunahumi/",
+          "status": 200,
+          "final_url": "https://88shikokuhenro.jp/osunahumi/",
+          "title": "お砂踏みについて – （一社）四国八十八ヶ所霊場会",
+          "statements": [],
+          "tail": " | 川崎大師平間寺 | 霊場会 | 出開帳本尊 2014年9月24日~10月8日 | 長野東急百貨店 | JTB | 軸装本尊 2014年12月6日~14日 | 福岡小倉井筒屋 | JTB | 軸装本尊 2015年2月11日~17日 | 栃木東武宇都宮百貨店 | JTB | 軸装本尊 上記の霊場会公式のお砂踏みをご希望の方は、下記の霊場会事務所までお問い合わせください。 (一社)四国八十八ヶ所霊場会 TEL:(0877) 56-5688 FAX:(0877) 56-5689"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-shorinjikempo",
+      "name": "金剛禅総本山少林寺",
+      "operator": "Copyright© SHORINJI KEMPO All rights reserved.",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.shorinjikempo.or.jp/religious/",
+      "old_evidence": {
+        "quote": "Copyright© SHORINJI KEMPO All rights reserved.",
+        "url": "https://kongozen.jp/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.shorinjikempo.or.jp/religious/",
+          "status": 200,
+          "final_url": "https://kongozen.jp/",
+          "title": "金剛禅総本山少林寺 – 半ばは自己の幸せを、半ばは他人(ひと)の幸せを",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright© SHORINJI KEMPO All rights reserved."
+            }
+          ],
+          "tail": "のぞいてみませんか。 👉詳しく見る はじめるには NEWS 2026.09.01縁起 新着を更新しました 2026.08.01縁起 新着を更新しました 2026.07.01縁起 新着を更新しました 2026.06.01縁起 新着を更新しました 2026.05.27ブログページを開設しました »新着情報一覧 金剛禅総本山少林寺 〒764-8511 香川県仲多度郡多度津町本通3-1-48 Copyright© SHORINJI KEMPO All rights reserved."
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://kongozen.jp/",
+          "status": 200,
+          "final_url": "https://kongozen.jp/",
+          "title": "金剛禅総本山少林寺 – 半ばは自己の幸せを、半ばは他人(ひと)の幸せを",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright© SHORINJI KEMPO All rights reserved."
+            }
+          ],
+          "tail": "のぞいてみませんか。 👉詳しく見る はじめるには NEWS 2026.09.01縁起 新着を更新しました 2026.08.01縁起 新着を更新しました 2026.07.01縁起 新着を更新しました 2026.06.01縁起 新着を更新しました 2026.05.27ブログページを開設しました »新着情報一覧 金剛禅総本山少林寺 〒764-8511 香川県仲多度郡多度津町本通3-1-48 Copyright© SHORINJI KEMPO All rights reserved."
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://kongozen.jp/contact",
+          "status": 200,
+          "final_url": "https://kongozen.jp/contact",
+          "title": "お問い合わせ – 金剛禅総本山少林寺",
+          "statements": [],
+          "tail": "て 個性あふれる道院の数々 学校だけでは学びきれない、大切なこと 入門までの流れ 入門時に必要な費用について 復帰について アクセス お問い合わせ 金剛禅総本山少林寺 〒764-8511 香川県仲多度郡多度津町本通3-1-48 金剛禅総本山少林寺 > お問い合わせ お問い合わせ お電話でのお問い合わせ TEL 0877-33-1010 FAX 0877-56-6022 メールでのお問い合わせ * は必須項目となります。 資料請求はこちら ※少林寺拳法グループサイトに遷移します"
+        }
+      ]
+    }
+  ]
+}

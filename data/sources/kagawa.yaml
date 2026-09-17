@@ -379,12 +379,12 @@ sources:
   # --- 琴平 ---------------------------------------------------------------
   - id: kagawa-konpira
     name: 金刀比羅宮
-    operator: 金刀比羅宮
+    operator: "金刀比羅宮"
     operator_kind: facility_official
     operator_evidence:
       quote: "(C) KOTOHIRA-GU"
-      url: https://www.konpira.or.jp/
-      checked_on: 2026-09-12
+      url: https://www.konpira.or.jp/articles_2026/20260331_about-changes-to-the-rules/article.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.konpira.or.jp/
     pages:
@@ -690,12 +690,12 @@ sources:
       map_query: "香川県高松市 はくちょう温泉"
   - id: kagawa-town-375
     name: "三木町総合運動公園"
-    operator: "事務局 環境下水道課 Tel:087-891-3315 | 下水道係 環境保全係 清掃係/クリーンセンター 出納室 Te"
+    operator: "三木町"
     operator_kind: municipality
     operator_evidence:
-      quote: "事務局 環境下水道課 Tel:087-891-3315 | 下水道係 環境保全係 清掃係/クリーンセンター 出納室 Tel:08"
-      url: https://www.town.miki.lg.jp/soshiki/
-      checked_on: 2026-09-12
+      quote: "三木町役場 ｜ 〒761-0692 香川県木田郡三木町大字氷上310番地"
+      url: https://www.town.miki.lg.jp/life/dtl.php?hdnKey=4191
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.town.miki.lg.jp/life/dtl.php?hdnKey=4191
     pages:
@@ -788,12 +788,13 @@ sources:
 
   - id: kagawa-88shikokuhenro
     name: "屋島寺"
-    operator: "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場"
+    operator: "（一社）四国八十八ヶ所霊場会"
     operator_kind: facility_official
     operator_evidence:
-      quote: "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場出開帳"
-      url: https://88shikokuhenro.jp/osunahumi/
-      checked_on: 2026-09-12
+      quote: "南面山 千光院 屋島寺 – （一社）四国八十八ヶ所霊場会"
+      url: http://88shikokuhenro.jp/84yashimaji/
+      checked_on: 2026-09-17
+    operator_note: "寺に公式サイトは無い（ページに「公式HP なし」）。寺が加盟する霊場会のページ"
     policy: crawl
     official_url: http://www.88shikokuhenro.jp/84yashimaji/
     pages:
@@ -815,12 +816,12 @@ sources:
 
   - id: kagawa-kenminhall
     name: "レクザムホール"
-    operator: "指定管理者情報 指定管理者情報 2026年4月1日より指定管理者として第5期目がスタートいたしました"
+    operator: "Anabuki Enterprise CO.,LTD"
     operator_kind: municipality_affiliated
     operator_evidence:
-      quote: "指定管理者情報 指定管理者情報 2026年4月1日より指定管理者として第5期目がスタートいたしました"
+      quote: "指定管理者制度のもと、県民ホールの設置目的である「県民の文化振興を図ること」を念頭に管理運営を続けてまいりました"
       url: https://kenminhall.com/visitors/company/
-      checked_on: 2026-09-12
+      checked_on: 2026-09-17
     policy: crawl
     official_url: http://www.kenminhall.com/
     pages:
@@ -1207,12 +1208,12 @@ sources:
 
   - id: kagawa-souyu
     name: "つばさ山温泉"
-    operator: "指定管理者による運営受託](令和5年3月終了) 1月 佐賀ぽかぽか温泉(佐賀県佐賀市) 開業 12月 新川天然温泉Sam"
-    operator_kind: municipality_affiliated
+    operator: "創裕"
+    operator_kind: facility_official
     operator_evidence:
-      quote: "指定管理者による運営受託](令和5年3月終了) 1月 佐賀ぽかぽか温泉(佐賀県佐賀市) 開業 12月 新川天然温泉Sama Sam"
-      url: https://www.souyu.co.jp/company/
-      checked_on: 2026-09-12
+      quote: "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved."
+      url: https://www.souyu.co.jp/shisetsu/tsubasayama
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.souyu.co.jp/shisetsu/tsubasayama
     pages:
@@ -1484,12 +1485,12 @@ sources:
       map_query: "香川県仲多度郡まんのう町 エピアみかど"
   - id: kagawa-e-mikado-90
     name: "健康ふれあいの里"
-    operator: "37.5°C以上の発熱のある方"
+    operator: "一般財団法人 ことなみ振興公社"
     operator_kind: facility_official
     operator_evidence:
-      quote: "管理 37.5°C以上の発熱のある方、咳や咽頭痛、嘔吐など症状のある方、体調に不安のある方などは当該施設のご利用をお控えくださ"
-      url: https://e-mikado.jp/pages/21/
-      checked_on: 2026-09-12
+      quote: "■会社名 一般財団法人 ことなみ振興公社"
+      url: https://e-mikado.jp/pages/2/
+      checked_on: 2026-09-17
     policy: crawl
     official_url: http://e-mikado.jp/publics/index/21/
     pages:
@@ -1536,12 +1537,12 @@ sources:
 
   - id: kagawa-city-117
     name: "丸亀城"
-    operator: "指定管理者の募集について(史跡丸亀城跡城内施設) 2026年8月13日更新丸亀城管理室だより 2026年7月30日更新丸"
+    operator: "丸亀市"
     operator_kind: municipality
     operator_evidence:
-      quote: "指定管理者の募集について(史跡丸亀城跡城内施設) 2026年8月13日更新丸亀城管理室だより 2026年7月30日更新丸亀城城泊の"
+      quote: "Copyright Marugame City. All rights reserved."
       url: https://www.city.marugame.lg.jp/site/castle/
-      checked_on: 2026-09-12
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.marugame.lg.jp/site/castle/
     pages:
@@ -2107,12 +2108,12 @@ sources:
 
   - id: kagawa-souyu-135
     name: "たかせ天然温泉"
-    operator: "指定管理者による運営受託](令和5年3月終了) 1月 佐賀ぽかぽか温泉(佐賀県佐賀市) 開業 12月 新川天然温泉Sam"
-    operator_kind: municipality_affiliated
+    operator: "創裕"
+    operator_kind: facility_official
     operator_evidence:
-      quote: "指定管理者による運営受託](令和5年3月終了) 1月 佐賀ぽかぽか温泉(佐賀県佐賀市) 開業 12月 新川天然温泉Sama Sam"
-      url: https://www.souyu.co.jp/company/
-      checked_on: 2026-09-12
+      quote: "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved."
+      url: https://www.souyu.co.jp/shisetsu/takase
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.souyu.co.jp/shisetsu/takase
     pages:
@@ -2137,12 +2138,12 @@ sources:
 
   - id: kagawa-shikoku-cable
     name: "雲辺寺ロープウェイ"
-    operator: "© 2025 Shikoku. All Rights Reserved"
+    operator: "四国ケーブル株式会社"
     operator_kind: facility_official
     operator_evidence:
-      quote: "© 2025 Shikoku. All Rights Reserved"
-      url: https://www.shikoku-cable.co.jp/unpenji/
-      checked_on: 2026-09-12
+      quote: "社名 四国ケーブル株式会社"
+      url: https://www.shikoku-cable.co.jp/company/
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.shikoku-cable.co.jp/unpenji/
     pages:
@@ -2217,12 +2218,12 @@ sources:
 
   - id: kagawa-komatsuoji
     name: "大興寺"
-    operator: "Copyright(c) 2018 Daikou-ji temple. All Rights Reserved."
+    operator: "大興寺"
     operator_kind: facility_official
     operator_evidence:
       quote: "Copyright(c) 2018 Daikou-ji temple. All Rights Reserved."
-      url: http://www.komatsuoji.com
-      checked_on: 2026-09-12
+      url: http://www.komatsuoji.com/
+      checked_on: 2026-09-17
     policy: crawl
     official_url: http://www.komatsuoji.com/
     pages:
@@ -2531,12 +2532,12 @@ sources:
 
   - id: kagawa-takamatsu
     name: "サンポート高松"
-    operator: "事務局 荻生) カレンダー 2026年8月 月 火 水 木 金 土 日 « 6月 1 2 3 | 4 | 5 | 6 |"
-    operator_kind: facility_official
+    operator: "高松観光コンベンション・ビューロー"
+    operator_kind: tourism_association
     operator_evidence:
-      quote: "事務局 荻生) カレンダー 2026年8月 月 火 水 木 金 土 日 « 6月 1 2 3 | 4 | 5 | 6 | 7 8"
+      quote: "サンポート高松イベント情報 – 高松観光コンベンション・ビューロー"
       url: https://takamatsu.or.jp/event/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://takamatsu.or.jp/event/
     pages:
@@ -2556,12 +2557,12 @@ sources:
 
   - id: kagawa-city-474
     name: "大島"
-    operator: "指定管理者導入施設に対する評価結果の公表について 「第2期高松市MICE振興戦略(素案)」についてのパブリックコメント("
+    operator: "高松市"
     operator_kind: municipality
     operator_evidence:
-      quote: "指定管理者導入施設に対する評価結果の公表について 「第2期高松市MICE振興戦略(素案)」についてのパブリックコメント(意見募集)"
-      url: https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/keikaku/sonota/kyoso_guidelines.html
-      checked_on: 2026-09-13
+      quote: "Copyright © Takamatsu City, All rights reserved."
+      url: https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/keikaku/sonota/oshima/index.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/keikaku/sonota/oshima/index.html
     pages:
@@ -3187,12 +3188,12 @@ sources:
 
   - id: kagawa-city-161
     name: "五色台"
-    operator: "情報公開・個人情報保護・監査"
+    operator: "坂出市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
-      url: https://www.city.sakaide.lg.jp/life/4/27/
-      checked_on: 2026-09-13
+      quote: "Copyright (C) Sakaide City. All Rights Reserved."
+      url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/gosikidai-plateau.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/gosikidai-plateau.html
     pages:
@@ -3453,12 +3454,12 @@ sources:
 
   - id: kagawa-mitoyo-kanko
     name: "紫雲出山"
-    operator: "三豊での観光をより便利に快適に楽しくでいただくため"
-    operator_kind: facility_official
+    operator: "一般社団法人三豊市観光交流局"
+    operator_kind: tourism_association
     operator_evidence:
-      quote: "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています"
+      quote: "団体名 一般社団法人三豊市観光交流局"
       url: https://www.mitoyo-kanko.com/about-us/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.mitoyo-kanko.com/mt-shiude/
     pages:
@@ -3478,12 +3479,12 @@ sources:
 
   - id: kagawa-mitoyo-kanko-143
     name: "不動の滝"
-    operator: "三豊での観光をより便利に快適に楽しくでいただくため"
-    operator_kind: facility_official
+    operator: "一般社団法人三豊市観光交流局"
+    operator_kind: tourism_association
     operator_evidence:
-      quote: "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています"
+      quote: "団体名 一般社団法人三豊市観光交流局"
       url: https://www.mitoyo-kanko.com/about-us/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.mitoyo-kanko.com/facility/fudonotaki-country-park/
     pages:
@@ -3526,12 +3527,12 @@ sources:
 
   - id: kagawa-mitoyo-kanko-128
     name: "粟島"
-    operator: "三豊での観光をより便利に快適に楽しくでいただくため"
-    operator_kind: facility_official
+    operator: "一般社団法人三豊市観光交流局"
+    operator_kind: tourism_association
     operator_evidence:
-      quote: "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています"
+      quote: "団体名 一般社団法人三豊市観光交流局"
       url: https://www.mitoyo-kanko.com/about-us/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.mitoyo-kanko.com/awashimaisland/
     pages:
@@ -3575,12 +3576,12 @@ sources:
 
   - id: kagawa-mitoyo-kanko-457
     name: "志々島"
-    operator: "三豊での観光をより便利に快適に楽しくでいただくため"
-    operator_kind: facility_official
+    operator: "一般社団法人三豊市観光交流局"
+    operator_kind: tourism_association
     operator_evidence:
-      quote: "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています"
+      quote: "団体名 一般社団法人三豊市観光交流局"
       url: https://www.mitoyo-kanko.com/about-us/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.mitoyo-kanko.com/shishijimaisland/
     pages:
@@ -3600,12 +3601,12 @@ sources:
 
   - id: kagawa-city-55
     name: "琴弾八幡宮"
-    operator: "新着情報"
+    operator: "観音寺市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 新着情報 2026年8月25日更新市議会提出議案の概要 2024年9月24日更新市議会提出議案の概要 2022年3月31"
-      url: https://www.city.kanonji.kagawa.jp/life/14/94/
-      checked_on: 2026-09-13
+      quote: "Copyright © Kan-onji city. All Rights Reserved."
+      url: https://www.city.kanonji.kagawa.jp/soshiki/21/13939.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.kanonji.kagawa.jp/soshiki/21/13939.html
     pages:
@@ -3650,12 +3651,12 @@ sources:
 
   - id: kagawa-mitoyo-kanko-131
     name: "鴨之越・丸山島"
-    operator: "三豊での観光をより便利に快適に楽しくでいただくため"
-    operator_kind: facility_official
+    operator: "一般社団法人三豊市観光交流局"
+    operator_kind: tourism_association
     operator_evidence:
-      quote: "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています"
+      quote: "団体名 一般社団法人三豊市観光交流局"
       url: https://www.mitoyo-kanko.com/about-us/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.mitoyo-kanko.com/facility/kamonokoshi/
     pages:
@@ -3771,12 +3772,12 @@ sources:
 
   - id: kagawa-city-426
     name: "塔重山公園"
-    operator: "収集した個人情報は"
+    operator: "三豊市"
     operator_kind: municipality
     operator_evidence:
-      quote: "管理 収集した個人情報は、漏えい、滅失、改ざん等を防止するとともに、安全確保の措置を講じています"
-      url: https://www.city.mitoyo.lg.jp/about_site.html
-      checked_on: 2026-09-13
+      quote: "Copyright (c) 2020 Mitoyo city. All Rights Reserved."
+      url: https://www.city.mitoyo.lg.jp/bunka/midokoro/3/2965.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.mitoyo.lg.jp/bunka/midokoro/3/2965.html
     pages:
@@ -3916,12 +3917,12 @@ sources:
 
   - id: kagawa-hoshoin
     name: "宝生院のシンパク"
-    operator: "事務局 宝生院 香川県小豆郡土庄町上庄412 お問い合わせ 電話:0879-62-0682/FAX:0879-62-92"
+    operator: "宝生院"
     operator_kind: facility_official
     operator_evidence:
-      quote: "事務局 宝生院 香川県小豆郡土庄町上庄412 お問い合わせ 電話:0879-62-0682/FAX:0879-62-9272 「"
-      url: https://hoshoin.jp/shinpaku/
-      checked_on: 2026-09-13
+      quote: "【公式】宝生院 高野山真言宗 小豆島霊場第五十四番札所 -樹齢1600年を超えるシンパク-"
+      url: https://hoshoin.jp/
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://hoshoin.jp/
     pages:
@@ -4452,12 +4453,12 @@ sources:
 
   - id: kagawa-city-211
     name: "みろく自然公園"
-    operator: "情報公開・個人情報保護・行政不服審査"
+    operator: "さぬき市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・行政不服審査 個人情報保護 個人情報の保護について 個人情報の保護について 更新日:2026年0"
-      url: https://www.city.sanuki.lg.jp/shisei/gyoseiunei/johokokaikojinjohohogogyoseifufukushinsa/1/5356.html
-      checked_on: 2026-09-13
+      quote: "Copyright (c) 2026 Sanuki city. All Rights Reserved."
+      url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5864.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5864.html
     pages:
@@ -4478,12 +4479,12 @@ sources:
 
   - id: kagawa-city-208
     name: "道の駅「ながお」"
-    operator: "情報公開・個人情報保護・行政不服審査"
+    operator: "さぬき市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・行政不服審査 個人情報保護 個人情報の保護について 個人情報の保護について 更新日:2026年0"
-      url: https://www.city.sanuki.lg.jp/shisei/gyoseiunei/johokokaikojinjohohogogyoseifufukushinsa/1/5356.html
-      checked_on: 2026-09-13
+      quote: "Copyright (c) 2026 Sanuki city. All Rights Reserved."
+      url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/1/5852.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/1/5852.html
     pages:
@@ -4550,12 +4551,12 @@ sources:
 
   - id: kagawa-city-209
     name: "道の駅「みろく」"
-    operator: "情報公開・個人情報保護・行政不服審査"
+    operator: "さぬき市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・行政不服審査 個人情報保護 個人情報の保護について 個人情報の保護について 更新日:2026年0"
-      url: https://www.city.sanuki.lg.jp/shisei/gyoseiunei/johokokaikojinjohohogogyoseifufukushinsa/1/5356.html
-      checked_on: 2026-09-13
+      quote: "Copyright (c) 2026 Sanuki city. All Rights Reserved."
+      url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/1/5855.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/1/5855.html
     pages:
@@ -4600,12 +4601,12 @@ sources:
 
   - id: kagawa-city-216
     name: "雨滝自然科学館"
-    operator: "情報公開・個人情報保護・行政不服審査"
+    operator: "さぬき市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・行政不服審査 個人情報保護 個人情報の保護について 個人情報の保護について 更新日:2026年0"
-      url: https://www.city.sanuki.lg.jp/shisei/gyoseiunei/johokokaikojinjohohogogyoseifufukushinsa/1/5356.html
-      checked_on: 2026-09-13
+      quote: "Copyright (c) 2026 Sanuki city. All Rights Reserved."
+      url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/sanukishinoshisetsu/bunkashisetsu/5695.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/sanukishinoshisetsu/bunkashisetsu/5695.html
     pages:
@@ -4672,12 +4673,12 @@ sources:
 
   - id: kagawa-sanuki-191
     name: "さぬき市歴史民俗資料館"
-    operator: "主催 さぬき市教育委員会 協力 さぬき市公文書館 会場 さぬき市歴史民俗資料館 期間 令和8年5月2日(土)~令和8年9"
-    operator_kind: facility_official
+    operator: "さぬき市教育委員会"
+    operator_kind: municipality
     operator_evidence:
-      quote: "主催 さぬき市教育委員会 協力 さぬき市公文書館 会場 さぬき市歴史民俗資料館 期間 令和8年5月2日(土)~令和8年9月27"
+      quote: "緊急連絡先 さぬき市教育委員会 生涯学習課 電話0879-26-9974"
       url: https://www.sanuki.ne.jp/rekimin/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.sanuki.ne.jp/rekimin/
     pages:
@@ -4719,12 +4720,12 @@ sources:
 
   - id: kagawa-city-339
     name: "「善通寺五岳の里」市民集いの丘公園"
-    operator: "新着情報"
+    operator: "善通寺市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 新着情報 2026年8月21日更新令和8年度善通寺市職員採用試験1次試験の合格者について 2026年5月22日更新令和8"
-      url: https://www.city.zentsuji.kagawa.jp/life/3/22/
-      checked_on: 2026-09-13
+      quote: "Copyright Zentsuji-City All rights reserved."
+      url: https://www.city.zentsuji.kagawa.jp/site/gogaku/
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.zentsuji.kagawa.jp/site/gogaku/
     pages:
@@ -4939,12 +4940,12 @@ sources:
 
   - id: kagawa-town-490
     name: "まんのう天文台"
-    operator: "事業者向け"
+    operator: "まんのう町"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 事業者向け 入札情報 契約・募集情報 現在地 トップページ > 分類でさがす > 町政 > 町の概要 本文 町の概要 ペ"
-      url: https://www.town.manno.lg.jp/life/4/24/
-      checked_on: 2026-09-13
+      quote: "Copyright © Manno Town. All Rights Reserved."
+      url: https://www.town.manno.lg.jp/site/mannotenmondai/
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.town.manno.lg.jp/site/mannotenmondai/
     pages:
@@ -4987,12 +4988,12 @@ sources:
 
   - id: kagawa-mitoyo-kanko-129
     name: "粟島海洋記念館"
-    operator: "三豊での観光をより便利に快適に楽しくでいただくため"
-    operator_kind: facility_official
+    operator: "一般社団法人三豊市観光交流局"
+    operator_kind: tourism_association
     operator_evidence:
-      quote: "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています"
+      quote: "団体名 一般社団法人三豊市観光交流局"
       url: https://www.mitoyo-kanko.com/about-us/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.mitoyo-kanko.com/facility/awashimamuseum/
     pages:
@@ -5011,12 +5012,13 @@ sources:
 
   - id: kagawa-michinoeki-kotohiki
     name: "道の駅「ことひき」"
-    operator: "Copyright © 2021 MICHINOEKI PAGE TOP"
+    operator: "道の駅ことひき"
     operator_kind: facility_official
     operator_evidence:
-      quote: "Copyright © 2021 MICHINOEKI PAGE TOP"
-      url: https://michinoeki-kotohiki.com/
-      checked_on: 2026-09-13
+      quote: "ミュージアム&パーク 道の駅ことひき 住所 観音寺市有明町3-37"
+      url: https://michinoeki-kotohiki.com/access
+      checked_on: 2026-09-17
+    operator_note: "運営する法人名はサイトに無い。サイトは施設自身のもの（アクセスのページで施設を名乗る）"
     policy: crawl
     official_url: https://michinoeki-kotohiki.com/
     pages:
@@ -5061,12 +5063,12 @@ sources:
 
   - id: kagawa-city-61
     name: "観音寺市ちょうさ会館"
-    operator: "新着情報"
+    operator: "観音寺市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 新着情報 2026年8月25日更新市議会提出議案の概要 2024年9月24日更新市議会提出議案の概要 2022年3月31"
-      url: https://www.city.kanonji.kagawa.jp/life/14/94/
-      checked_on: 2026-09-13
+      quote: "Copyright © Kan-onji city. All Rights Reserved."
+      url: https://www.city.kanonji.kagawa.jp/soshiki/21/327.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.kanonji.kagawa.jp/soshiki/21/327.html
     pages:
@@ -5205,12 +5207,12 @@ sources:
 
   - id: kagawa-souyu-353
     name: "香南楽湯"
-    operator: "指定管理者による運営受託](令和5年3月終了) 1月 佐賀ぽかぽか温泉(佐賀県佐賀市) 開業 12月 新川天然温泉Sam"
-    operator_kind: municipality_affiliated
+    operator: "創裕"
+    operator_kind: facility_official
     operator_evidence:
-      quote: "指定管理者による運営受託](令和5年3月終了) 1月 佐賀ぽかぽか温泉(佐賀県佐賀市) 開業 12月 新川天然温泉Sama Sam"
-      url: https://www.souyu.co.jp/company/
-      checked_on: 2026-09-13
+      quote: "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved."
+      url: https://www.souyu.co.jp/shisetsu/kounanrakuyu
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.souyu.co.jp/shisetsu/kounanrakuyu
     pages:
@@ -5253,12 +5255,13 @@ sources:
 
   - id: kagawa-88shikokuhenro-245
     name: "根香寺"
-    operator: "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場"
+    operator: "（一社）四国八十八ヶ所霊場会"
     operator_kind: facility_official
     operator_evidence:
-      quote: "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場出開帳"
-      url: https://88shikokuhenro.jp/osunahumi/
-      checked_on: 2026-09-13
+      quote: "青峰山 千手院 根香寺 – （一社）四国八十八ヶ所霊場会"
+      url: http://88shikokuhenro.jp/82negoroji/
+      checked_on: 2026-09-17
+    operator_note: "寺に公式サイトは無い（ページに「公式HP なし」）。寺が加盟する霊場会のページ"
     policy: crawl
     official_url: http://www.88shikokuhenro.jp/82negoroji/
     pages:
@@ -5426,12 +5429,12 @@ sources:
 
   - id: kagawa-city-335
     name: "鉢伏ふれあい公園"
-    operator: "市政への参加"
+    operator: "善通寺市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 市政への参加 公共施設案内 地図でさがす 地図でさがす 現在地 ホーム > 分類でさがす > 市政・施設 > 公共施設案"
+      quote: "Copyright Zentsuji-City All rights reserved."
       url: https://www.city.zentsuji.kagawa.jp/soshiki/53/parkindex.html
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.zentsuji.kagawa.jp/soshiki/53/parkindex.html
     pages:
@@ -5645,12 +5648,12 @@ sources:
 
   - id: kagawa-city-334
     name: "旧善通寺偕行社"
-    operator: "新着情報"
+    operator: "善通寺市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 新着情報 2026年8月21日更新令和8年度善通寺市職員採用試験1次試験の合格者について 2026年5月22日更新令和8"
-      url: https://www.city.zentsuji.kagawa.jp/life/3/22/
-      checked_on: 2026-09-13
+      quote: "Copyright Zentsuji-City All rights reserved."
+      url: https://www.city.zentsuji.kagawa.jp/soshiki/50/kaikousya.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: http://www.city.zentsuji.kagawa.jp/soshiki/50/kaikousya.html
     pages:
@@ -5670,12 +5673,12 @@ sources:
 
   - id: kagawa-city-160
     name: "香風園"
-    operator: "情報公開・個人情報保護・監査"
+    operator: "坂出市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
-      url: https://www.city.sakaide.lg.jp/life/4/27/
-      checked_on: 2026-09-13
+      quote: "Copyright (C) Sakaide City. All Rights Reserved."
+      url: https://www.city.sakaide.lg.jp/soshiki/tosiseibi/kouhuuen.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sakaide.lg.jp/soshiki/tosiseibi/kouhuuen.html
     pages:
@@ -5768,12 +5771,12 @@ sources:
 
   - id: kagawa-city-155
     name: "坂出市塩業資料館"
-    operator: "情報公開・個人情報保護・監査"
+    operator: "坂出市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
-      url: https://www.city.sakaide.lg.jp/life/4/27/
-      checked_on: 2026-09-13
+      quote: "Copyright (C) Sakaide City. All Rights Reserved."
+      url: https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/engyou-musium.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/engyou-musium.html
     pages:
@@ -6010,12 +6013,12 @@ sources:
 
   - id: kagawa-city-187
     name: "県立亀鶴公園"
-    operator: "情報公開・個人情報保護・行政不服審査"
+    operator: "さぬき市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・行政不服審査 個人情報保護 個人情報の保護について 個人情報の保護について 更新日:2026年0"
-      url: https://www.city.sanuki.lg.jp/shisei/gyoseiunei/johokokaikojinjohohogogyoseifufukushinsa/1/5356.html
-      checked_on: 2026-09-13
+      quote: "Copyright (c) 2026 Sanuki city. All Rights Reserved."
+      url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5862.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5862.html
     pages:
@@ -6155,12 +6158,12 @@ sources:
 
   - id: kagawa-mitoyo-kanko-127
     name: "朝日山森林公園"
-    operator: "三豊での観光をより便利に快適に楽しくでいただくため"
-    operator_kind: facility_official
+    operator: "一般社団法人三豊市観光交流局"
+    operator_kind: tourism_association
     operator_evidence:
-      quote: "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています"
+      quote: "団体名 一般社団法人三豊市観光交流局"
       url: https://www.mitoyo-kanko.com/about-us/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.mitoyo-kanko.com/facility/mtasahishinrinpark/
     pages:
@@ -6204,12 +6207,12 @@ sources:
 
   - id: kagawa-mitoyo-kanko-141
     name: "戸川ダム公園"
-    operator: "三豊での観光をより便利に快適に楽しくでいただくため"
-    operator_kind: facility_official
+    operator: "一般社団法人三豊市観光交流局"
+    operator_kind: tourism_association
     operator_evidence:
-      quote: "運営 三豊での観光をより便利に快適に楽しくでいただくため、父母ヶ浜にて観光案内所を運営しています"
+      quote: "団体名 一般社団法人三豊市観光交流局"
       url: https://www.mitoyo-kanko.com/about-us/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.mitoyo-kanko.com/facility/togawadam/
     pages:
@@ -6348,12 +6351,12 @@ sources:
 
   - id: kagawa-ogijima
     name: "男木島"
-    operator: "男木島灯台近くの水仙郷の管理"
-    operator_kind: facility_official
+    operator: "特定非営利活動法人男木島観光協会"
+    operator_kind: tourism_association
     operator_evidence:
-      quote: "管理 男木島灯台近くの水仙郷の管理"
-      url: https://ogijima.site/
-      checked_on: 2026-09-13
+      quote: "団体概要 特定非営利活動法人男木島観光協会"
+      url: https://ogijima.site/about/
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://ogijima.site/
     pages:
@@ -6445,12 +6448,12 @@ sources:
 
   - id: kagawa-city-175
     name: "常盤公園"
-    operator: "情報公開・個人情報保護・監査"
+    operator: "坂出市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
-      url: https://www.city.sakaide.lg.jp/life/4/27/
-      checked_on: 2026-09-13
+      quote: "Copyright (C) Sakaide City. All Rights Reserved."
+      url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/tokiwa-park.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/tokiwa-park.html
     pages:
@@ -6469,12 +6472,12 @@ sources:
 
   - id: kagawa-city-157
     name: "鎌田池公園"
-    operator: "情報公開・個人情報保護・監査"
+    operator: "坂出市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
+      quote: "Copyright (C) Sakaide City. All Rights Reserved."
       url: https://www.city.sakaide.lg.jp/map/kamadaikekouen.html
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sakaide.lg.jp/map/kamadaikekouen.html
     pages:
@@ -6590,12 +6593,12 @@ sources:
 
   - id: kagawa-town-104
     name: "満濃池"
-    operator: "事業者向け"
+    operator: "まんのう町"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 事業者向け 入札情報 契約・募集情報 現在地 トップページ > 分類でさがす > 町政 > 町の概要 本文 町の概要 ペ"
-      url: https://www.town.manno.lg.jp/life/4/24/
-      checked_on: 2026-09-13
+      quote: "Copyright © Manno Town. All Rights Reserved."
+      url: https://www.town.manno.lg.jp/site/bunkazai/4740.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.town.manno.lg.jp/site/bunkazai/4740.html
     pages:
@@ -6736,12 +6739,12 @@ sources:
 
   - id: kagawa-city-502
     name: "西行法師の道"
-    operator: "情報公開・個人情報保護・監査"
+    operator: "坂出市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
-      url: https://www.city.sakaide.lg.jp/life/4/27/
-      checked_on: 2026-09-13
+      quote: "Copyright (C) Sakaide City. All Rights Reserved."
+      url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/6persons-saigyou-syoukai.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/6persons-saigyou-syoukai.html
     pages:
@@ -6760,12 +6763,12 @@ sources:
 
   - id: kagawa-city-3696
     name: "太助灯籠"
-    operator: "指定管理者制度 移住定住 定住自立圏 平和事業 災害支援 SDGs 行政改革 市議会・選挙 市議会 選挙 市の財政 予算"
+    operator: "丸亀市"
     operator_kind: municipality
     operator_evidence:
-      quote: "指定管理者制度 移住定住 定住自立圏 平和事業 災害支援 SDGs 行政改革 市議会・選挙 市議会 選挙 市の財政 予算・財政 補"
-      url: https://www.city.marugame.lg.jp/life/6/25/
-      checked_on: 2026-09-13
+      quote: "Copyright Marugame City. All rights reserved."
+      url: https://www.city.marugame.lg.jp/page/3067.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.marugame.lg.jp/page/3067.html
     pages:
@@ -6931,12 +6934,12 @@ sources:
 
   - id: kagawa-city-158
     name: "城山"
-    operator: "情報公開・個人情報保護・監査"
+    operator: "坂出市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
-      url: https://www.city.sakaide.lg.jp/life/4/27/
-      checked_on: 2026-09-13
+      quote: "Copyright (C) Sakaide City. All Rights Reserved."
+      url: https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/kiyama.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/kiyama.html
     pages:
@@ -6955,12 +6958,12 @@ sources:
 
   - id: kagawa-city-500
     name: "城山不動の滝"
-    operator: "情報公開・個人情報保護・監査"
+    operator: "坂出市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
+      quote: "Copyright (C) Sakaide City. All Rights Reserved."
       url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/fudounotaki.html
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/fudounotaki.html
     pages:
@@ -7004,12 +7007,12 @@ sources:
 
   - id: kagawa-city-178
     name: "府中湖"
-    operator: "情報公開・個人情報保護・監査"
+    operator: "坂出市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
-      url: https://www.city.sakaide.lg.jp/life/4/27/
-      checked_on: 2026-09-13
+      quote: "Copyright (C) Sakaide City. All Rights Reserved."
+      url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/hutyuuko.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sakaide.lg.jp/soshiki/sangyoukankou/hutyuuko.html
     pages:
@@ -7053,12 +7056,12 @@ sources:
 
   - id: kagawa-city-496
     name: "沙弥島"
-    operator: "情報公開・個人情報保護・監査"
+    operator: "坂出市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 情報公開・個人情報保護・監査 人事・職員募集 広報・広聴 市民参加 国際交流 市議会 まちづくり 地球温暖化対策 選挙"
-      url: https://www.city.sakaide.lg.jp/life/4/27/
-      checked_on: 2026-09-13
+      quote: "Copyright (C) Sakaide City. All Rights Reserved."
+      url: https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/syamijima.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/syamijima.html
     pages:
@@ -7101,12 +7104,13 @@ sources:
 
   - id: kagawa-88shikokuhenro-174
     name: "天皇寺"
-    operator: "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場"
+    operator: "（一社）四国八十八ヶ所霊場会"
     operator_kind: facility_official
     operator_evidence:
-      quote: "主催 | 実施形式 1937年5月5日~6月16日 | 南海本線助松驛(駅)・高野線金剛驛(駅) | 四國八十八ヶ所靈場出開帳"
-      url: https://88shikokuhenro.jp/osunahumi/
-      checked_on: 2026-09-13
+      quote: "金華山 高照院 天皇寺 – （一社）四国八十八ヶ所霊場会"
+      url: https://88shikokuhenro.jp/79tennoji/
+      checked_on: 2026-09-17
+    operator_note: "寺に公式サイトは無い（ページに「公式HP なし」）。寺が加盟する霊場会のページ"
     policy: crawl
     official_url: https://88shikokuhenro.jp/79tennoji/
     pages:
@@ -7125,12 +7129,12 @@ sources:
 
   - id: kagawa-shorinjikempo
     name: "金剛禅総本山少林寺"
-    operator: "Copyright© SHORINJI KEMPO All rights reserved."
+    operator: "金剛禅総本山少林寺"
     operator_kind: facility_official
     operator_evidence:
       quote: "Copyright© SHORINJI KEMPO All rights reserved."
       url: https://kongozen.jp/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.shorinjikempo.or.jp/religious/
     pages:
@@ -7197,12 +7201,12 @@ sources:
 
   - id: kagawa-city-64
     name: "豊浜八幡神社"
-    operator: "新着情報"
+    operator: "観音寺市"
     operator_kind: municipality
     operator_evidence:
-      quote: "運営 新着情報 2026年8月25日更新市議会提出議案の概要 2024年9月24日更新市議会提出議案の概要 2022年3月31"
-      url: https://www.city.kanonji.kagawa.jp/life/14/94/
-      checked_on: 2026-09-13
+      quote: "Copyright © Kan-onji city. All Rights Reserved."
+      url: https://www.city.kanonji.kagawa.jp/soshiki/21/14031.html
+      checked_on: 2026-09-17
     policy: crawl
     official_url: https://www.city.kanonji.kagawa.jp/soshiki/21/14031.html
     pages:
