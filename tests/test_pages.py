@@ -336,3 +336,31 @@ def test_an_nth_week_closing_rule_is_left_to_the_closure_rules() -> None:
     assert _NTH_WEEK_OPEN.search("第2・4水曜日 8:00頃~16:00頃")
     assert not _NTH_WEEK_OPEN.search("9:00~17:00（第3月曜休館）")
     assert not _NTH_WEEK_OPEN.search("毎月第1日曜日は休み")
+
+
+def test_only_notices_still_in_effect_are_shown(built: list) -> None:
+    """終わった告知は出さない。寒霞渓の告知は 2025 年のもの（年を読み直した）。"""
+    from datetime import date
+
+    from japan_open_today.data import Dataset as _Dataset
+
+    ws = Workspace.open(ROOT)
+    spots = {s.spot_id: s for s in _Dataset.load(ws).spots}
+    assert page_builder._current_notices(spots["kankakei"], date(2026, 9, 13)) == []
+    rows = page_builder._current_notices(spots["bansyouen"], date(2026, 9, 13))
+    assert [(r["start"].isoformat(), r["end"].isoformat()) for r in rows] == [
+        ("2026-09-14", "2026-09-18")
+    ]
+    assert page_builder._current_notices(spots["bansyouen"], date(2026, 9, 19)) == []
+
+
+def test_every_category_and_notice_kind_has_words_in_every_locale(ws: Workspace) -> None:
+    from sitemill.models.schedule import NoticeKind
+
+    words = page_builder._wording(ws)
+    categories = {s.category for s in Dataset.load(ws).spots} - {"other"}
+    for code, catalog in words.items():
+        for category in categories:
+            assert catalog.has(f"category.{category}"), (code, category)
+        for kind in NoticeKind:
+            assert catalog.has(f"notices.{kind.value}"), (code, kind)

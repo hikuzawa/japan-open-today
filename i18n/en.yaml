@@ -79,6 +79,7 @@ facts:
   map_attribution: Map data ©Google
   social: Official accounts
   hours: Opening hours
+  category: Type
 reservation:
   "yes": Booking required
   "no": No booking needed
@@ -226,6 +227,20 @@ data:
 notfound:
   heading: Page not found
   back: Go to the home page
+category:
+  museum: Museum
+  shrine_temple: Shrine or temple
+  park: Park
+  garden: Garden
+  viewpoint: Viewpoint
+  onsen: Hot spring
+  castle: Castle ruins
+notices:
+  heading: Official notices
+  closed: Temporarily closed
+  open: Special opening
+  schedule_change: Change of hours or service
+  period: "{start} – {end}"
 hours:
   day_join: ", "
   day_range: "{a}–{b}"

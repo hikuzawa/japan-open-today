@@ -77,6 +77,7 @@ facts:
   map_attribution: 地図データ ©Google
   social: 公式アカウント
   hours: 営業時間
+  category: 種類
 reservation:
   "yes": 要予約
   "no": 予約不要
@@ -221,6 +222,20 @@ data:
 notfound:
   heading: ページが見つかりません
   back: トップへ
+category:
+  museum: 美術館・博物館
+  shrine_temple: 寺社
+  park: 公園
+  garden: 庭園
+  viewpoint: 展望
+  onsen: 温泉
+  castle: 城跡
+notices:
+  heading: 公式のお知らせ
+  closed: 臨時休業・休館
+  open: 臨時開館
+  schedule_change: 時間・運行の変更
+  period: "{start}〜{end}"
 hours:
   day_join: "・"
   day_range: "{a}〜{b}"

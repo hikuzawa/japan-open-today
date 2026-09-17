@@ -189,6 +189,12 @@ img { max-width: 100%; height: auto; }
 .open-air-box .note { margin-bottom: 12px; }
 .fact-list .quote { display: block; color: var(--ink-2); font-size: 0.95rem; }
 .fact-list .hours { list-style: none; margin: 0; padding: 0; }
+.notice-list { list-style: none; margin: 0; padding: 0; }
+.notice { margin: 0 0 10px; }
+.notice strong { margin-right: 8px; }
+.notice-closed strong { color: var(--closed, #b42318); }
+.notice .notice-reason { display: block; }
+.notice .quote { display: block; color: var(--ink-2); font-size: 0.95rem; }
 .fact-list .hours-when { color: var(--ink-2); }
 .fact-list .note { display: block; color: var(--ink-2); font-size: 0.95rem; }
 

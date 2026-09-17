@@ -343,6 +343,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         "area_links": _area_links(ds, spot, locale),
                         "area_total": len(ds.spots_in(spot.area)),
                         "hours": _hours_display(spot, words, locale),
+                        "notices": _current_notices(spot, today),
                         "closures_label": _closures_label(spot),
                         "no_hours_stated": no_hours_stated(spot),
                         "offers": affiliates.offers_for("spot-tickets"),
@@ -519,6 +520,27 @@ def _area_links(
     others = [s for s in ds.spots_in(spot.area) if s.spot_id != spot.spot_id]
     others.sort(key=lambda s: (s.category != spot.category, s.name("ja"), s.spot_id))
     return [{"name": s.name(locale.code), "url": locale.url_path(s.path())} for s in others[:limit]]
+
+
+def _current_notices(spot: Spot, today: date) -> list[dict[str, Any]]:
+    """今日以降に効く告知（臨時休業・臨時開館・時間の変更）。終わった告知は出さない。
+
+    日付は告知の期間をそのまま出す（「明日から」のような相対表現にしない）。原文の引用を必ず添える。
+    """
+    rows = []
+    for notice in sorted(spot.notices, key=lambda n: (n.span.start, n.span.end)):
+        if notice.span.end < today:
+            continue
+        rows.append(
+            {
+                "kind": notice.kind.value,
+                "start": notice.span.start,
+                "end": notice.span.end,
+                "reason": notice.reason or "",
+                "quote": notice.evidence.quote if notice.evidence else "",
+            }
+        )
+    return rows
 
 
 def _hours_structurable(spot: Spot) -> bool:

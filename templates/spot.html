@@ -34,6 +34,26 @@
 {% if not week_all_unknown %}
 {{ ui.week_strip(week, locale) }}
 {% endif %}
+{% if notices %}
+{# 公式ページのお知らせ（臨時休業など）。期間は日付で書く。見出しは日本語で書いたものなので日本語のページだけ #}
+<section class="notices">
+  <h2 class="section-head">{{ t('notices.heading') }}</h2>
+  <ul class="notice-list">
+    {% for n in notices %}
+    <li class="notice notice-{{ n.kind }}">
+      <strong>{{ t('notices.' ~ n.kind) }}</strong>
+      {# 今年と違う年の告知は年まで書く（「1月12日」だけだと今年の話に読める） #}
+      {% set with_year = n.start.year != today.year or n.end.year != today.year %}
+      {% set s = fmt_date(n.start, locale) if with_year else fmt_date_short(n.start, locale) %}
+      {% set e = fmt_date(n.end, locale) if with_year else fmt_date_short(n.end, locale) %}
+      <span class="notice-when">{% if n.start == n.end %}{{ s }}{% else %}{{ t('notices.period', start=s, end=e) }}{% endif %}</span>
+      {% if locale.code == 'ja' and n.reason %}<span class="notice-reason">{{ n.reason }}</span>{% endif %}
+      {% if n.quote %}<span class="quote">{{ t('facts.quote', text=n.quote) }}</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
 {% if photo %}
 {{ sm.photo_figure(photo, locale, '/static/assets/' ~ photo.asset_id ~ photo.local_path.suffix) }}
 {% endif %}
@@ -58,6 +78,7 @@
       {% endfor %}
     </dd>
     {% endif %}
+    {% if spot.category != 'other' %}<dt>{{ t('facts.category') }}</dt><dd>{{ t('category.' ~ spot.category) }}</dd>{% endif %}
     {% if spot.address.ok %}<dt>{{ t('facts.address') }}</dt><dd>{{ spot.address.value }}</dd>{% endif %}
     {% if spot.phone.ok %}<dt>{{ t('facts.phone') }}</dt><dd>{{ spot.phone.value }}</dd>{% endif %}
     {% if fees %}
@@ -75,7 +96,9 @@
     </dd>
     {% endif %}
     <dt>{{ t('facts.reservation') }}</dt>
-    <dd>{{ t('reservation.' ~ spot.reservation_required) }}</dd>
+    <dd>{{ t('reservation.' ~ spot.reservation_required) }}
+      {% if spot.reservation_quote %}<span class="quote">{{ t('facts.quote', text=spot.reservation_quote) }}</span>{% endif %}
+    </dd>
     {% if spot.visit_minutes.ok %}
     <dt>{{ t('facts.visit_minutes') }}</dt><dd>{{ t('facts.minutes', n=spot.visit_minutes.value) }}</dd>
     {% endif %}
