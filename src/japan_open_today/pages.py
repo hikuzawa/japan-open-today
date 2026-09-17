@@ -6,6 +6,7 @@
 
 from __future__ import annotations
 
+import calendar
 from datetime import date, datetime, timedelta
 from typing import Any
 
@@ -14,6 +15,7 @@ from sitemill.clock import jst_today
 from sitemill.embeds.maps import maps_place_embed
 from sitemill.i18n import LocaleConfig
 from sitemill.i18n.catalog import Catalog, load_catalogs
+from sitemill.i18n.format import fmt_for, format_time, format_time_range
 from sitemill.jpcal import HolidayCalendar
 from sitemill.models import OperatorInfo, Page, PageMeta, SourceLink, TrustSignals
 from sitemill.openstatus import DayState, DayVerdict
@@ -23,11 +25,18 @@ from japan_open_today import affiliates
 from japan_open_today.areas import AREAS, area
 from japan_open_today.data import Dataset
 from japan_open_today.schema import Spot
-from japan_open_today.verdict import route_verdict, spot_verdict, spot_week
+from japan_open_today.verdict import (
+    hours_unrepresentable,
+    route_verdict,
+    spot_verdict,
+    spot_week,
+)
 
 WEEK_DAYS = 7
 # Google Maps が使う言語コード。ロケール名とは違う（繁体字は zh-TW）
 MAPS_LANGUAGE = {"ja": "ja", "en": "en", "zh-Hant": "zh-TW"}
+# 施設ページに出す「同じエリアのほかの施設」の数（固定のリンク。クロールの経路にする）
+AREA_LINKS = 6
 
 
 def _locales(ws: Workspace) -> list[LocaleConfig]:
@@ -149,9 +158,7 @@ def _routes_for(ds: Dataset, area_slug: str, states: dict[str, Any]) -> list[dic
     島の施設を見ている人が、そこへ渡る船に辿り着けるようにする。無宣言の路線は出さない
     （着発地の文字列から推測すると、別の島の船を出す）。
     """
-    return [
-        {"route": r, "verdict": states[r.route_id]} for r in ds.routes if area_slug in r.areas
-    ]
+    return [{"route": r, "verdict": states[r.route_id]} for r in ds.routes if area_slug in r.areas]
 
 
 # トップに出す「今日開いている施設」の上限。全件はエリアページで見る
@@ -333,6 +340,9 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         ),
                         "area": area(spot.area),
                         "nearby": nearby,
+                        "area_links": _area_links(ds, spot, locale),
+                        "area_total": len(ds.spots_in(spot.area)),
+                        "hours": _hours_display(spot, words, locale),
                         "closures_label": _closures_label(spot),
                         "no_hours_stated": no_hours_stated(spot),
                         "offers": affiliates.offers_for("spot-tickets"),
@@ -496,6 +506,126 @@ def _nearby_open(
         others = [s for s in pick(ds.spots) if s.area != spot.area]
         chosen = [*chosen, *others]
     return [_spot_row(ws, s, locale, verdicts[s.spot_id], assets) for s in chosen[:limit]]
+
+
+def _area_links(
+    ds: Dataset, spot: Spot, locale: LocaleConfig, limit: int = AREA_LINKS
+) -> list[dict[str, str]]:
+    """同じエリアのほかの施設への**固定の**リンク（その日の判定に左右されない）。
+
+    「近くで開いている施設」は今日開いている所だけなので、日によって変わり、空の日もある。
+    クロールの経路としては安定しないので、別に置く。同じ種類を先に、あとは日本語名の順。
+    """
+    others = [s for s in ds.spots_in(spot.area) if s.spot_id != spot.spot_id]
+    others.sort(key=lambda s: (s.category != spot.category, s.name("ja"), s.spot_id))
+    return [{"name": s.name(locale.code), "url": locale.url_path(s.path())} for s in others[:limit]]
+
+
+def _hours_structurable(spot: Spot) -> bool:
+    """規則を条件つきの時刻として出してよいか。
+
+    1 つの期間に時間帯が複数あると、どの時間帯がいつのものかが構造化データから消えている
+    （栗林公園は月ごとの 12 通りが 1 つの期間にある）。同じ条件の期間が並ぶと、どちらが何の
+    時間か分からない（金刀比羅宮の「参拝時間」と「宝物館」）。そういう施設は原文だけを出す。
+
+    「第 2・4 水曜日」のような第 n 週の指定は、曜日の選び方で表せず「毎週水曜」に落ちている
+    （木太町の盆栽の施設）。原文に第 n 週があれば、構造化した行は出さない。
+    """
+    if hours_unrepresentable(spot):
+        return False
+    keys = []
+    for p in spot.hours:
+        if not p.always_open and len(p.ranges) != 1:
+            return False
+        season = p.season
+        keys.append(
+            (
+                p.days.weekdays,
+                p.days.include_holidays,
+                p.days.exclude_holidays,
+                (season.start_month, season.start_day, season.end_month, season.end_day)
+                if season
+                else None,
+            )
+        )
+    return len(keys) == len(set(keys))
+
+
+def _hours_display(spot: Spot, words: dict[str, Catalog], locale: LocaleConfig) -> dict | None:
+    """通常の営業時間（規則）。日付で変わらない事実として、事実の表に出す。
+
+    今日の判定と週の帯は日付から決まる表示なので、規則そのものは別に書く。原文の引用は必ず添える。
+    """
+    if not spot.hours:
+        return None
+    fmt = fmt_for(locale.code)
+
+    def say(key: str, **params: object) -> str:
+        catalog = words.get(locale.code)
+        return catalog.get(key, **params) if catalog is not None else key
+
+    def month_day(month: int, day: int, *, end: bool = False) -> str:
+        mon = fmt.months[month - 1][:3] if fmt.months else str(month)
+        # 「〜6月」は月末まで。読み取りは 31 日として持っているので、6 月 31 日と出さない
+        if end and day >= calendar.monthrange(2024, month)[1]:
+            return say("hours.month_end", m=month, mon=mon)
+        return say("hours.month_day", m=month, d=day, mon=mon)
+
+    def weekdays(days: tuple[int, ...]) -> str:
+        runs: list[list[int]] = []
+        for d in sorted(days):
+            if runs and d == runs[-1][-1] + 1:
+                runs[-1].append(d)
+            else:
+                runs.append([d])
+        parts = [
+            say("hours.day_range", a=fmt.weekdays[r[0]], b=fmt.weekdays[r[-1]])
+            if len(r) >= 3
+            else say("hours.day_join").join(fmt.weekdays[d] for d in r)
+            for r in runs
+        ]
+        return say("hours.day_join").join(parts)
+
+    lines: list[dict[str, str]] = []
+    if _hours_structurable(spot):
+        periods = sorted(
+            spot.hours,
+            key=lambda p: (p.season.start_month, p.season.start_day) if p.season else (0, 0),
+        )
+        for p in periods:
+            condition = []
+            if p.season:
+                condition.append(
+                    say(
+                        "hours.season",
+                        start=month_day(p.season.start_month, p.season.start_day),
+                        end=month_day(p.season.end_month, p.season.end_day, end=True),
+                    )
+                )
+            days = []
+            if p.days.weekdays:
+                days.append(weekdays(p.days.weekdays))
+            if p.days.include_holidays:
+                days.append(say("hours.holidays"))
+            if days:
+                condition.append(say("hours.day_join").join(days))
+            if p.days.exclude_holidays:
+                condition.append(say("hours.except_holidays"))
+            if p.always_open:
+                time_text = say("hours.always_open")
+            else:
+                r = p.ranges[0]
+                time_text = format_time_range(r.start, r.end, locale.code)
+                if r.last_entry:
+                    last = format_time(r.last_entry, locale.code)
+                    time_text += say("hours.last_entry", time=last)
+            lines.append({"condition": " ".join(condition), "time": time_text})
+    quotes: list[str] = []
+    for p in spot.hours:
+        quote = " ".join((p.evidence.quote or "").split()) if p.evidence else ""
+        if quote and quote not in quotes:
+            quotes.append(quote)
+    return {"lines": lines, "quotes": quotes}
 
 
 def _spot_row(

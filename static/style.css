@@ -188,6 +188,9 @@ img { max-width: 100%; height: auto; }
 .open-air-lead { font-size: 1.25rem; font-weight: 700; margin-bottom: 8px; }
 .open-air-box .note { margin-bottom: 12px; }
 .fact-list .quote { display: block; color: var(--ink-2); font-size: 0.95rem; }
+.fact-list .hours { list-style: none; margin: 0; padding: 0; }
+.fact-list .hours-when { color: var(--ink-2); }
+.fact-list .note { display: block; color: var(--ink-2); font-size: 0.95rem; }
 
 /* 地図の埋め込み（ADR 0006 の経路④）。鍵が無いときは出ない */
 .map-embed { margin-top: 24px; }

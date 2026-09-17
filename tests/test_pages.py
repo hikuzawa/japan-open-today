@@ -230,3 +230,109 @@ def test_a_spot_without_a_photo_leaves_no_empty_frame(ws: Workspace) -> None:
             spot.spot_id
         )
     assert checked > 100  # 点検が空回りしていないこと
+
+
+# --- 通常の営業時間と、同じエリアの施設（日付で変わらない本文） ---------------
+
+
+def _spot_page(built: list, path: str):
+    return next(p for p in built if p.meta.path == path)
+
+
+def test_regular_hours_are_shown_as_facts_with_the_original_wording(built: list) -> None:
+    """今日の判定と週の帯は日付で変わる。規則そのものは事実として別に出す。"""
+    for prefix, season in (("", "3月21日〜10月20日"), ("en/", "21 Mar – 20 Oct")):
+        page = _spot_page(built, f"{prefix}spots/shodoshima/kankakei/index.html")
+        hours = page.context["hours"]
+        assert hours["lines"][0]["condition"] == season
+        assert hours["lines"][0]["time"] == "08:30–17:00"
+        assert hours["quotes"] and "8:30~17:00" in hours["quotes"][0]
+
+
+def test_hours_that_cannot_be_broken_down_show_only_the_original(built: list) -> None:
+    """構造化データからは何の時間か読み取れないものは、行にせず原文だけを出す。"""
+    for spot in ("kotohira/konpira", "takamatsu/ritsurin"):
+        pages = [p for p in built if p.meta.path.endswith(f"spots/{spot}/index.html")]
+        assert pages, spot
+        for page in pages:
+            assert page.context["hours"]["lines"] == [], page.meta.path
+            assert page.context["hours"]["quotes"], page.meta.path
+
+
+def test_an_nth_week_rule_is_not_flattened_into_every_week(ws: Workspace) -> None:
+    """「第2・4水曜日」は曜日の選び方で表せず、データでは「毎週水曜」になっている。行にしない。"""
+    spot = next(s for s in Dataset.load(ws).spots if s.spot_id == "kinashi-bonsai")
+    assert not page_builder._hours_structurable(spot)
+
+
+def test_a_season_ending_at_month_end_is_not_shown_as_the_31st(ws: Workspace) -> None:
+    """「〜6月」は 6 月 31 日として読まれている。表示は「6月末」にする。"""
+    from datetime import time
+
+    from sitemill.models.schedule import AnnualSpan, DaySelector, Evidence, HoursPeriod, TimeRange
+
+    ds = Dataset.load(ws)
+    base = next(s for s in ds.spots if s.hours)
+    spot = base.model_copy(
+        update={
+            "hours": [
+                HoursPeriod(
+                    ranges=[TimeRange(start=time(9), end=time(17))],
+                    days=DaySelector(),
+                    season=AnnualSpan(start_month=4, start_day=1, end_month=6, end_day=31),
+                    evidence=Evidence(quote="4月~6月 9:00~17:00"),
+                )
+            ]
+        }
+    )
+    words = page_builder._wording(ws)
+    locales = {loc.code: loc for loc in ws.site.locale_list}
+    ja = page_builder._hours_display(spot, words, locales["ja"])
+    en = page_builder._hours_display(spot, words, locales["en"])
+    assert ja["lines"][0]["condition"] == "4月1日〜6月末"
+    assert en["lines"][0]["condition"] == "1 Apr – end of Jun"
+
+
+def test_every_spot_links_to_other_places_in_its_area(ws: Workspace, built: list) -> None:
+    """今日の判定に左右されない、同じエリアへの固定のリンク。クロールの経路にする。"""
+    ds = Dataset.load(ws)
+    for page in built:
+        if "/spots/" not in f"/{page.meta.path}" or page.template != "spot.html":
+            continue
+        spot = page.context["spot"]
+        links = page.context["area_links"]
+        others = len(ds.spots_in(spot.area)) - 1
+        assert len(links) == min(others, page_builder.AREA_LINKS), page.meta.path
+        assert all(spot.path() not in link["url"] for link in links), page.meta.path
+
+
+def test_area_links_do_not_change_with_the_date(ws: Workspace) -> None:
+    """日によって変わると、lastmod を毎日進めてしまう（sitemill ADR 0025）。"""
+    ds = Dataset.load(ws)
+    one = page_builder.build_pages(ws, ds, now=NOW)
+    two = page_builder.build_pages(ws, ds, now=datetime(2026, 9, 20, 21, 10, tzinfo=UTC))
+    links_one = {p.meta.path: p.context.get("area_links") for p in one if p.template == "spot.html"}
+    links_two = {p.meta.path: p.context.get("area_links") for p in two if p.template == "spot.html"}
+    assert links_one == links_two
+
+
+def test_an_nth_week_opening_rule_is_not_judged_as_every_week(ws: Workspace) -> None:
+    """原文「第2・4水曜日」がデータでは毎週水曜。第 3 水曜を「開館」と断定しない。"""
+    from datetime import date
+
+    from sitemill.jpcal import HolidayCalendar
+
+    spot = next(s for s in Dataset.load(ws).spots if s.spot_id == "kinashi-bonsai")
+    holidays = HolidayCalendar.load(ws.data_dir / "reference" / "syukujitsu.csv")
+    verdict = spot_verdict(spot, date(2026, 9, 16), holidays=holidays, stale_after_days=10**6)
+    assert verdict.state is DayState.unknown
+    assert verdict.has(ReasonCode.rule_unsupported)
+
+
+def test_an_nth_week_closing_rule_is_left_to_the_closure_rules() -> None:
+    """「第3月曜休館」は休館日の規則で表せる。開館の規則の歯止めには当てない。"""
+    from japan_open_today.verdict import _NTH_WEEK_OPEN
+
+    assert _NTH_WEEK_OPEN.search("第2・4水曜日 8:00頃~16:00頃")
+    assert not _NTH_WEEK_OPEN.search("9:00~17:00（第3月曜休館）")
+    assert not _NTH_WEEK_OPEN.search("毎月第1日曜日は休み")

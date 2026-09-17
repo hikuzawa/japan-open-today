@@ -58,6 +58,7 @@ reason:
   conflicting: 規則と告知が食い違っている
   stale_source: 公式ページの取得が途切れている（情報が古い）
   holiday_unknown: その年の祝日が分からない
+  rule_unsupported: 公式ページの規則（第 n 週の開館など）をこのサイトの形で表しきれない
   no_data: 時間・休業（運休）の情報を公式ページから取得できていない
 facts:
   heading: 事実
@@ -75,6 +76,7 @@ facts:
   map_heading: 地図
   map_attribution: 地図データ ©Google
   social: 公式アカウント
+  hours: 営業時間
 reservation:
   "yes": 要予約
   "no": 予約不要
@@ -219,6 +221,20 @@ data:
 notfound:
   heading: ページが見つかりません
   back: トップへ
+hours:
+  day_join: "・"
+  day_range: "{a}〜{b}"
+  holidays: 祝日
+  except_holidays: （祝日を除く）
+  always_open: 終日
+  last_entry: "（最終入館 {time}）"
+  season: "{start}〜{end}"
+  month_day: "{m}月{d}日"
+  month_end: "{m}月末"
+  quote_only: 時間の決まり方が複雑なため、公式ページの記載をそのまま載せています。
+area_links:
+  heading: "{area}のほかの施設"
+  all: "{area}の施設をすべて見る（{n} 件）"
 nearby:
   heading: 近くで開いている施設
   lead: "{date}に開いていると確認できた、近くの施設です。"

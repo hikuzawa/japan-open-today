@@ -7,6 +7,7 @@
 
 from __future__ import annotations
 
+import re
 from datetime import date, datetime, timedelta
 
 from sitemill.clock import to_jst
@@ -15,6 +16,28 @@ from sitemill.openstatus import DayVerdict, resolve_day
 from sitemill.openstatus.models import DayState, Reason, ReasonCode
 
 from japan_open_today.schema import Route, Spot
+
+# 開館の規則に「第 2・4 水曜日」のような第 n 週の指定がある。曜日の選び方（DaySelector）では
+# 表せず、読み取りは「毎週水曜」に落ちる。「第 3 月曜休館」のような休みの指定は休館日の規則で
+# 表せるので当てない
+_NTH_WEEK_OPEN = re.compile(
+    r"第\s*[0-9０-９一二三四五](?:\s*[・、,]\s*[0-9０-９一二三四五])*\s*[月火水木金土日]曜日?"
+    # 「曜日」の「日」を省いた一致で後ろを読み違えないよう、先読み側でも「日」を許す
+    r"(?!日?\s*(?:は|が)?\s*(?:定休|休))"
+)
+
+
+def hours_unrepresentable(spot: Spot) -> bool:
+    """開館の規則が、原文の意味を失った形でしか持てていないか。
+
+    鬼無植木盆栽センターは原文が「9月から6月までの第2・4水曜日」で、データは毎週水曜だった。
+    そのまま判定すると第 3・第 5 水曜日も「開館」と断定する（2026-09-17 に確認）。
+    """
+    return any(
+        _NTH_WEEK_OPEN.search(p.evidence.quote)
+        for p in spot.hours
+        if p.evidence and p.evidence.quote
+    )
 
 
 def _stamp(value: str | None) -> datetime | None:
@@ -50,6 +73,11 @@ def spot_verdict(
             # detail は空にする。文言はロケールのカタログ（reason.no_data）が持っていて、
             # 同じ文を detail にも入れると画面に二重に出る
             reasons=[Reason(code=ReasonCode.no_data)],
+        )
+    if hours_unrepresentable(spot):
+        # 表せる形に丸めた規則で判定すると、開いていない日を「開館」と断定する。不明にする
+        return DayVerdict(
+            day=day, state=DayState.unknown, reasons=[Reason(code=ReasonCode.rule_unsupported)]
         )
     return resolve_day(
         day,

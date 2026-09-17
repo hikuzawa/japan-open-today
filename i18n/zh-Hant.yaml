@@ -57,6 +57,7 @@ reason:
   conflicting: 規則與公告不一致
   stale_source: 官方網頁已有一段時間未能取得
   holiday_unknown: 該年度的國定假日不明
+  rule_unsupported: 官方的規定（例如每月特定週次才開放）無法以本站的格式呈現
   no_data: 無法從官方網頁取得時間與休息（停駛）資訊
 facts:
   heading: 事實
@@ -74,6 +75,7 @@ facts:
   map_heading: 地圖
   map_attribution: 地圖資料 ©Google
   social: 官方帳號
+  hours: 營業時間
 reservation:
   "yes": 需預約
   "no": 不需預約
@@ -208,6 +210,20 @@ data:
 notfound:
   heading: 找不到頁面
   back: 回到首頁
+hours:
+  day_join: "、"
+  day_range: "{a}至{b}"
+  holidays: 國定假日
+  except_holidays: （國定假日除外）
+  always_open: 全天開放
+  last_entry: "（最後入場 {time}）"
+  season: "{start}～{end}"
+  month_day: "{m}月{d}日"
+  month_end: "{m}月底"
+  quote_only: 營業時間的規定較複雜，因此直接刊載官方網站的原文（日文）。
+area_links:
+  heading: "{area}的其他設施"
+  all: "查看{area}的全部 {n} 個設施"
 nearby:
   heading: 附近有開的設施
   lead: "已確認在 {date} 有開的附近設施。"

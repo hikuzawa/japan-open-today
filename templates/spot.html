@@ -40,6 +40,24 @@
 <section class="facts">
   <h2 class="section-head">{{ t('facts.heading') }}</h2>
   <dl class="fact-list">
+    {% if hours %}
+    {# 通常の営業時間（規則）。今日の判定・週の帯と違い、日付で変わらない事実 #}
+    <dt>{{ t('facts.hours') }}</dt>
+    <dd>
+      {% if hours.lines %}
+      <ul class="hours">
+        {% for line in hours.lines %}
+        <li>{% if line.condition %}<span class="hours-when">{{ line.condition }}</span> {% endif %}{{ line.time }}</li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <span class="note">{{ t('hours.quote_only') }}</span>
+      {% endif %}
+      {% for quote in hours.quotes %}
+      <span class="quote">{{ t('facts.quote', text=quote) }}</span>
+      {% endfor %}
+    </dd>
+    {% endif %}
     {% if spot.address.ok %}<dt>{{ t('facts.address') }}</dt><dd>{{ spot.address.value }}</dd>{% endif %}
     {% if spot.phone.ok %}<dt>{{ t('facts.phone') }}</dt><dd>{{ spot.phone.value }}</dd>{% endif %}
     {% if fees %}
@@ -89,6 +107,18 @@
   <ul class="cards">
     {% for row in nearby %}{{ ui.spot_card(row, locale) }}{% endfor %}
   </ul>
+</section>
+{% endif %}
+{% if area_links %}
+{# 同じエリアのほかの施設への固定のリンク。今日の判定に左右されないので印は付けない #}
+<section class="area-links">
+  <h2 class="section-head">{{ t('area_links.heading', area=area.name(locale.code)) }}</h2>
+  <ul class="links">
+    {% for link in area_links %}
+    <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+    {% endfor %}
+  </ul>
+  <p class="note"><a href="{{ locale.url_path('areas/' ~ spot.area ~ '/') }}">{{ t('area_links.all', area=area.name(locale.code), n=area_total) }}</a></p>
 </section>
 {% endif %}
 {% if spot.social %}

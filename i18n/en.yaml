@@ -60,6 +60,7 @@ reason:
   conflicting: The rules and the notice disagree
   stale_source: The official page has not been fetched recently
   holiday_unknown: Public holidays for that year are unknown
+  rule_unsupported: "The official schedule (for example, open only on certain weeks of the month) cannot be represented here"
   no_data: Hours and closures could not be obtained from the official page
 facts:
   heading: Facts
@@ -77,6 +78,7 @@ facts:
   map_heading: Map
   map_attribution: Map data ©Google
   social: Official accounts
+  hours: Opening hours
 reservation:
   "yes": Booking required
   "no": No booking needed
@@ -224,6 +226,20 @@ data:
 notfound:
   heading: Page not found
   back: Go to the home page
+hours:
+  day_join: ", "
+  day_range: "{a}–{b}"
+  holidays: public holidays
+  except_holidays: "(except public holidays)"
+  always_open: Open all day
+  last_entry: " (last entry {time})"
+  season: "{start} – {end}"
+  month_day: "{d} {mon}"
+  month_end: "end of {mon}"
+  quote_only: The hours vary in ways we cannot break down reliably, so the official wording is shown as is (in Japanese).
+area_links:
+  heading: "More places in {area}"
+  all: "All {n} places in {area}"
 nearby:
   heading: Open nearby
   lead: "Places near here confirmed open on {date}."
