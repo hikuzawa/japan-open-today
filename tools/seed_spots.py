@@ -47,15 +47,35 @@ THIRD_PARTY = re.compile(
     re.I,
 )
 # 運営主体の根拠になりやすい記述（tools.collect_sources と同じ考え方）
+# 法人格。運営主体の名前として読むのは、これが付いた名前か「運営: 〜」と明記されたものだけ
+LEGAL_FORM = (
+    r"(?:公益財団法人|一般財団法人|公益社団法人|一般社団法人|株式会社|有限会社|合同会社|"
+    r"宗教法人|学校法人|社会福祉法人|特定非営利活動法人|NPO法人)"
+)
+# 運営主体の根拠として拾う書き方。**見出しの語のあとに空白があるだけでは拾わない**。
+# 以前は「運営 情報公開・個人情報保護…」（市サイトのメニュー）や「管理 37.5°C以上の発熱の
+# ある方…」（注意書き）を根拠の引用にしていた（docs/data-issues.md の 1）
 OPERATOR_PATTERNS = (
-    re.compile(r"指定管理者[^。\n]{0,60}"),
-    re.compile(r"運営[：:\s][^。\n]{0,60}"),
-    re.compile(
-        r"(?:公益財団法人|一般財団法人|公益社団法人|一般社団法人|株式会社|有限会社|"
-        r"特定非営利活動法人)\s*[^\s、。（()]{2,30}"
-    ),
+    re.compile(r"指定管理者\s*[：:は]\s*[^。\n]{2,60}"),
+    re.compile(r"(?:運営|管理)(?:者|主体|会社|団体|元)?\s*[：:]\s*[^。\n]{2,60}"),
+    re.compile(LEGAL_FORM + r"\s*[^\s、。，,（()「」]{2,30}"),
     re.compile(r"(?:Copyright|©|\(C\))[^。\n]{0,80}", re.I),
-    re.compile(r"(?:主催|事務局|管理)[：:\s][^。\n]{0,60}"),
+    re.compile(r"(?:主催|事務局)\s*[：:]\s*[^。\n]{2,60}"),
+)
+# 自治体・県のサイトで、運営主体（その自治体）を名乗っている箇所。上から順に採る。
+#   1. フッターの著作権表記（「Copyright (C) Sakaide City. All Rights Reserved.」）。
+#      どの市町にもあり、本文の文と取り違えない
+#   2. 住所か法人番号を伴う名乗り（「坂出市役所 法人番号 9000020372030 〒762-8601 …」）。
+#      「市役所」の語だけでは拾わない。本文の「（市役所4階）」や沿革の「…からは善通寺市役所」を
+#      根拠にしてしまう（2026-09-17 に実測）
+MUNICIPAL_COPYRIGHT = re.compile(
+    r"(?:Copyright|©|\(C\))[^\n。]{0,40}?(?:City|Town|Prefectur\w*|市|町|県)[^\n。]{0,30}?"
+    r"(?:All\s+Rights\s+Reserved\.?|$)",
+    re.I,
+)
+MUNICIPAL_SELF = re.compile(
+    r"[一-龥ぁ-んァ-ヶ]{1,8}(?:市役所|町役場|県庁)\s*[｜|]?\s*(?:法人番号\s*\d+\s*)?〒\s*\d{3}-?\d{4}"
+    r"[^\n。]{0,30}"
 )
 ABOUT_LINK = re.compile(r"会社概要|運営|概要|について|組織|財団|about|company|profile")
 # 上から順に見る。「公園」は「園」で終わるので、庭園より先に park を見る
@@ -153,7 +173,14 @@ def _operator_quote(text: str) -> str:
     return ""
 
 
-def _operator_kind(host: str, quote: str) -> str:
+def _operator_kind(host: str, quote: str, name: str = "") -> str:
+    """運営主体の種別。**判定の材料が無ければ `unknown`**（ADR 0009 のレビュー行列に回す）。
+
+    以前は最後に `facility_official` を返していた。どの規則にも当たらなかった情報源が
+    「施設の公式」として自動で採用され、レビューに回らなかった（21 件。docs/data-issues.md の 1）。
+    施設の公式と読むのは、引用から運営者の名前が取れたとき（法人格つき、
+    または「運営: 〜」の明記）だけ。
+    """
     for pattern, kind in KIND_BY_HOST:
         if pattern.search(host):
             return kind
@@ -161,22 +188,23 @@ def _operator_kind(host: str, quote: str) -> str:
         return "tourism_association"
     if re.search(r"指定管理者", quote):
         return "municipality_affiliated"
-    return "facility_official"
+    if name:
+        return "facility_official"
+    return "unknown"
 
 
 def _operator_name(quote: str) -> str:
-    """引用から運営者の名前を切り出す。取れなければ引用をそのまま使う。"""
+    """引用から運営者の名前を切り出す。**取れなければ空**（引用の先頭を名前にしない）。"""
+    m = re.search(LEGAL_FORM + r"\s*[^\s、。，,（()「」]{2,30}", quote)
+    if m is not None:
+        return " ".join(m.group(0).split())
     m = re.search(
-        r"(?:公益財団法人|一般財団法人|公益社団法人|一般社団法人|株式会社|有限会社|"
-        r"特定非営利活動法人)\s*[^\s、。（()]{2,30}",
+        r"(?:指定管理者|運営|管理)(?:者|主体|会社|団体|元)?\s*[：:は]\s*([^\s、。（()]{2,30})",
         quote,
     )
     if m is not None:
-        return " ".join(m.group(0).split())
-    m = re.search(r"(?:指定管理者|運営|管理)[：:\s]+([^\s、。（()]{2,30})", quote)
-    if m is not None:
         return m.group(1)
-    return quote[:60]
+    return ""
 
 
 def _try_source(client: PoliteClient, seed: Seed, url: str) -> tuple[str, str] | None:
@@ -197,6 +225,10 @@ def _try_source(client: PoliteClient, seed: Seed, url: str) -> tuple[str, str] |
         seed.note = f"ページに「{seed.name}」が出てこない"
         return None
     host = urlparse(res.final_url).netloc
+    if _operator_kind(host, "") in ("prefecture", "municipality"):
+        # 自治体・県のドメインは、それ自体が運営主体の根拠。引用には**その自治体を名乗る行**を使う
+        # （「〒762-8601 香川県坂出市室町二丁目3番5号 坂出市役所」）。メニューの文字列を拾わない
+        return _municipal_quote(res.text, text, host), res.final_url
     quote = _operator_quote(text)
     if quote:
         return quote, res.final_url
@@ -214,13 +246,24 @@ def _try_source(client: PoliteClient, seed: Seed, url: str) -> tuple[str, str] |
             quote = _operator_quote(_plain(r2.text))
             if quote:
                 return quote, r2.final_url
-    if _operator_kind(host, "") in ("prefecture", "municipality"):
-        # 自治体・県のドメインは、それ自体が運営主体の根拠になる。見出しを引用にする
-        title = HTMLParser(res.text).css_first("title")
-        seed.note = "自治体ドメインの一次情報（見出しを根拠にした）"
-        return (" ".join((title.text() if title else "").split())[:120] or host, res.final_url)
     seed.note = "運営主体の記述が無い"
     return None
+
+
+def _municipal_quote(html: str, text: str, host: str) -> str:
+    """自治体・県のページから、その自治体を名乗る箇所を引用にする。無ければ `<title>`。
+
+    名乗りはフッターにあるので、本文だけのテキスト（`text`）ではなくページ全体から探す。
+    """
+    tree = HTMLParser(html)
+    body = tree.body
+    whole = " ".join((body.text(separator=" ") if body else text).split())
+    for pattern in (MUNICIPAL_COPYRIGHT, MUNICIPAL_SELF):
+        m = pattern.search(whole)
+        if m is not None:
+            return " ".join(m.group(0).split())[:120]
+    title = tree.css_first("title")
+    return " ".join((title.text() if title else "").split())[:120] or host
 
 
 def build_seed(client: PoliteClient, cand: dict[str, Any]) -> Seed:
@@ -266,8 +309,13 @@ def build_seed(client: PoliteClient, cand: dict[str, Any]) -> Seed:
     seed.spot_id = _slug_from(official or seed.source_url, seed.point_id)
     seed.operator_quote = quote
     seed.operator_evidence_url = evidence_url
-    seed.operator_kind = _operator_kind(urlparse(evidence_url).netloc, quote)
     seed.operator = _operator_name(quote)
+    seed.operator_kind = _operator_kind(urlparse(evidence_url).netloc, quote, seed.operator)
+    if seed.operator_kind == "unknown":
+        # 引用は取れたが、運営者が誰かは読めない。自動で採用せずレビュー行列に回す（ADR 0009）
+        seed.policy = "pending"
+        seed.note = f"運営主体を判定できない（引用: {quote[:40]}）"
+        return seed
     seed.ok = True
     return seed
 

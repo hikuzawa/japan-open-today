@@ -74,13 +74,61 @@ def test_the_operator_kind_follows_the_host_then_the_quote() -> None:
     assert _operator_kind("www.city.takamatsu.kagawa.jp", "Copyright") == "municipality"
     assert _operator_kind("example.or.jp", "指定管理者 株式会社なにか") == "municipality_affiliated"
     assert _operator_kind("example.or.jp", "公益社団法人 香川県観光協会") == "tourism_association"
-    assert _operator_kind("example.co.jp", "株式会社なにか") == "facility_official"
+    assert (
+        _operator_kind("example.co.jp", "株式会社なにか", "株式会社なにか") == "facility_official"
+    )
+
+
+def test_an_operator_that_cannot_be_read_is_unknown_not_facility_official() -> None:
+    """どの規則にも当たらないものを「施設の公式」にしない。レビュー行列に回す（ADR 0009）。
+
+    以前の既定値で、「主催 | 実施形式 1937年…」「管理 37.5°C以上の発熱のある方…」を根拠に
+    21 件が施設の公式として自動採用されていた（docs/data-issues.md の 1）。
+    """
+    assert _operator_kind("example.com", "© 2025 Shikoku. All Rights Reserved") == "unknown"
+    assert _operator_kind("example.com", "") == "unknown"
+
+
+def test_a_label_followed_only_by_a_space_is_not_an_operator_statement() -> None:
+    """市サイトのメニュー「運営 情報公開・個人情報保護…」や注意書き「管理 37.5°C…」を拾わない。"""
+    from tools.seed_spots import _operator_quote
+
+    assert _operator_quote("市政 運営 情報公開・個人情報保護・監査 人事・職員募集") == ""
+    assert _operator_quote("管理 37.5°C以上の発熱のある方、咳や咽頭痛") == ""
+    assert (
+        _operator_quote("運営：一般社団法人 三豊市観光交流局")
+        == "運営：一般社団法人 三豊市観光交流局"
+    )
+
+
+def test_a_municipal_page_quotes_where_the_city_names_itself() -> None:
+    """市町のサイトの名乗りはフッターにある。メニューや本文の文を根拠にしない。"""
+    from tools.seed_spots import _municipal_quote
+
+    host = "www.city.sakaide.lg.jp"
+    footer = (
+        "<html><head><title>府中湖 - 坂出市ホームページ</title></head><body>"
+        "<main>府中湖の説明。窓口は市役所4階です。</main>"
+        "<footer>坂出市役所 法人番号 9000020372030 〒762-8601 香川県坂出市室町二丁目3番5号"
+        " Copyright (C) Sakaide City. All Rights Reserved.</footer></body></html>"
+    )
+    assert _municipal_quote(footer, "府中湖の説明", host) == (
+        "Copyright (C) Sakaide City. All Rights Reserved."
+    )
+    no_copyright = footer.replace(" Copyright (C) Sakaide City. All Rights Reserved.", "")
+    assert _municipal_quote(no_copyright, "", host).startswith("坂出市役所 法人番号")
+    only_body = (
+        "<html><head><title>府中湖 - 坂出市ホームページ</title></head><body>(市役所4階)</body>"
+    )
+    assert _municipal_quote(only_body, "", host) == "府中湖 - 坂出市ホームページ"
 
 
 def test_the_operator_name_is_taken_from_the_quote() -> None:
     assert _operator_name("公益財団法人 福武財団 が運営しています") == "公益財団法人 福武財団"
     assert _operator_name("指定管理者: 株式会社さぬき") == "株式会社さぬき"
-    assert _operator_name("Copyright City of Takamatsu").startswith("Copyright")
+    # 名前が読めないときは空にする。引用の先頭を名前にしない
+    assert _operator_name("Copyright City of Takamatsu") == ""
+    assert _operator_name("運営 情報公開・個人情報保護・監査") == ""
 
 
 def test_a_check_in_time_means_lodging_even_without_the_word_hotel() -> None:
