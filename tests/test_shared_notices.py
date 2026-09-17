@@ -192,3 +192,50 @@ def test_a_name_split_across_the_page_still_matches(ws: Workspace, tmp_path) -> 
         raw_dir = tmp_path
 
     assert _page_names_the_spot(_WS(), "kagawa-tamamo", "https://example.jp/tamamo", spot) is True
+
+
+# --- 告知の年と、別の施設の告知（2026-09-17） ------------------------------------
+
+
+def test_a_notice_naming_another_place_is_not_this_places_notice() -> None:
+    """運営会社のお知らせページは別の施設の告知も並べる。名指しが別の施設なら取り込まない。"""
+    from japan_open_today.ingest import about_another_place
+
+    assert (
+        about_another_place("太龍寺ロープウェー運休", ["雲辺寺ロープウェイ"])
+        == "太龍寺ロープウェー"
+    )
+    assert about_another_place("地中美術館の長期メンテナンス休館", ["地中美術館"]) is None
+    assert about_another_place("丸亀美術館絵画館の休館", ["中津万象園・丸亀美術館"]) is None
+    assert about_another_place("臨時休館のお知らせ", ["川島猪熊邸"]) is None  # 名指しが無ければ残す
+
+
+def test_stored_notices_are_reread_from_their_quotes() -> None:
+    """去年の告知（令和7年・曜日が今年と合わない）を今年の休業にしない。引用から読み直す。"""
+    from tools.reparse_notices import reparse
+
+    def notice(quote: str, reason: str, start: str, end: str) -> dict:
+        return {
+            "kind": "closed",
+            "reason": reason,
+            "span": {"start": start, "end": end},
+            "evidence": {"quote": quote},
+        }
+
+    kept, changes = reparse(
+        [
+            notice(
+                "R7年11月11日(火)~11月20日(木)", "臨時休館のお知らせ", "2026-11-11", "2026-11-20"
+            ),
+            notice("10月1日(水)", "ロープウェイ運休", "2026-10-01", "2026-10-01"),
+            notice("9/16(水)~9/18(金)", "太龍寺ロープウェー運休", "2026-09-16", "2026-09-18"),
+            notice("2026年10月1日(水)", "臨時休業", "2026-10-01", "2026-10-01"),
+        ],
+        ["雲辺寺ロープウェイ"],
+    )
+    assert [(n["span"]["start"], n["span"]["end"]) for n in kept] == [
+        ("2025-11-11", "2025-11-20"),
+        ("2025-10-01", "2025-10-01"),
+    ]
+    assert any("太龍寺" in c for c in changes)
+    assert any("weekday_mismatch" in c for c in changes)  # 年と曜日が食い違うものは値にしない

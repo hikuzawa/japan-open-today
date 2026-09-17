@@ -95,6 +95,27 @@ def _spot_content(
     return content
 
 
+# 告知の見出しに出てくる、施設らしい名前（「太龍寺ロープウェー」「地中美術館」）
+_PLACE_NAME = re.compile(
+    r"[一-龥ァ-ヶー]{1,8}(?:寺|神社|宮|ロープウェ[イー]|美術館|記念館|資料館|博物館|水族館|温泉|公園|島)"
+)
+
+
+def about_another_place(text: str, names: Sequence[str]) -> str | None:
+    """告知の見出しが、この施設ではない施設を名指ししていれば、その名前を返す。
+
+    運営会社のお知らせページは、別の施設の告知も並べている。四国ケーブルのページから
+    徳島の「太龍寺ロープウェー運休」を雲辺寺ロープウェイの告知として取り込んでいた（2026-09-17）。
+    名指しの無い告知（「臨時休館のお知らせ」）はこの施設のものとして残す。
+    """
+    own = [squash(n) for n in names if n]
+    for m in _PLACE_NAME.finditer(text or ""):
+        token = squash(m.group(0))
+        if not any(token in name or name in token for name in own):
+            return m.group(0)
+    return None
+
+
 def _notices(
     items: Sequence[ExtractedItem], *, url: str, provenance: Provenance
 ) -> list[dict[str, Any]]:
@@ -193,8 +214,21 @@ def ingest_items(
 
     if kind == "notice":
         notices = _notices(items, url=url, provenance=provenance)
-        targets = [s.spot_id for s in [spot_from_entry(entry)] if s is not None]
-        targets += [r.route_id for r in routes_from_entry(entry)]
+        spot = spot_from_entry(entry)
+        routes = routes_from_entry(entry)
+        if spot is not None and not routes:
+            names = [spot.name("ja"), *spot.aliases, entry.get("name") or ""]
+            kept = []
+            for notice in notices:
+                other = about_another_place(notice.get("reason") or "", names)
+                if other:
+                    counts["other_place"] = counts.get("other_place", 0) + 1
+                    log.info("%s: 別の施設（%s）の告知なので取り込まない", url, other)
+                    continue
+                kept.append(notice)
+            notices = kept
+        targets = [s.spot_id for s in [spot] if s is not None]
+        targets += [r.route_id for r in routes]
         if not targets:
             counts["skipped"] += 1
             return counts
