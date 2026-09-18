@@ -22,6 +22,7 @@ from sitemill.models.schedule import DateSpan, Evidence, NoticeKind, SpecialNoti
 from sitemill.settings import Workspace
 from sitemill.store.raw import RawCache
 from sitemill.store.records import RecordStore
+from sitemill.store.wording import freeze_wording
 
 from japan_open_today.data import load_entries, records_path, routes_from_entry, spot_from_entry
 from japan_open_today.schema import Fee, record_id_for
@@ -143,7 +144,12 @@ def _notices(
 
 
 def merge_record(existing: dict[str, Any], new: dict[str, Any]) -> dict[str, Any]:
-    """項目ごとに統合する。詳細ページ由来を優先し、取れなかった項目は既存を残す。"""
+    """項目ごとに統合する。詳細ページ由来を優先し、取れなかった項目は既存を残す。
+
+    値が同じ項目は、引用・見出しを前回のまま残す（`freeze_wording`）。同じ本文でも LLM は
+    言い直すので、そのままだと事実が変わっていないページの `lastmod` が毎日動く
+    （2026-09-19 に実データで 1 晩を突き合わせ、値が同じまま引用だけ動いたものが 3 施設あった）。
+    """
     out = dict(existing)
     new_kind = new.get("_page_kind", "")
     old_kind = existing.get("_page_kind", "")
@@ -161,7 +167,7 @@ def merge_record(existing: dict[str, Any], new: dict[str, Any]) -> dict[str, Any
             continue
         if detail_wins and key in existing and existing[key]:
             continue
-        out[key] = value
+        out[key] = freeze_wording(existing[key], value) if key in existing else value
     out["_page_kind"] = new_kind if not detail_wins else old_kind
     return out
 

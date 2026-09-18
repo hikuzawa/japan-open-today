@@ -239,3 +239,52 @@ def test_stored_notices_are_reread_from_their_quotes() -> None:
     ]
     assert any("太龍寺" in c for c in changes)
     assert any("weekday_mismatch" in c for c in changes)  # 年と曜日が食い違うものは値にしない
+
+
+def test_merge_keeps_the_previous_wording_when_the_value_is_the_same() -> None:
+    """同じ本文でも LLM は言い直す。値が同じなら引用は前回のまま残す（実データで起きた形）。
+
+    引用が動くと、事実が変わっていないページの `lastmod` が毎日動く（sitemill ADR 0025）。
+    """
+    from japan_open_today.ingest import merge_record
+
+    existing = {
+        "_page_kind": "spot_hours",
+        "fees": [
+            {
+                "category": "child",
+                "amount": {
+                    "value": 0,
+                    "status": "parsed",
+                    "quote": "*さぬき市在住の小学生以下の方は無料です。",
+                },
+            }
+        ],
+        "hours_fetched_at": "2026-09-17T22:00:00+00:00",
+    }
+    new = {
+        "_page_kind": "spot_hours",
+        "fees": [
+            {
+                "category": "child",
+                "amount": {
+                    "value": 0,
+                    "status": "parsed",
+                    "quote": "さぬき市在住の小学生以下の方は無料です。",
+                },
+            }
+        ],
+        "hours_fetched_at": "2026-09-18T22:00:00+00:00",
+    }
+    merged = merge_record(existing, new)
+    # 引用は前回のまま
+    assert merged["fees"][0]["amount"]["quote"] == "*さぬき市在住の小学生以下の方は無料です。"
+    # 鮮度は新しい方
+    assert merged["hours_fetched_at"] == "2026-09-18T22:00:00+00:00"
+
+    # 値が変わったときは、引用も新しい本文のものにする
+    changed = {**new}
+    changed["fees"] = [
+        {"category": "child", "amount": {"value": 300, "status": "parsed", "quote": "小学生 300円"}}
+    ]
+    assert merge_record(existing, changed)["fees"][0]["amount"]["quote"] == "小学生 300円"
