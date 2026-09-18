@@ -1,5 +1,5 @@
 {
-  "today": "2026-09-18",
+  "today": "2026-09-19",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -458,13 +458,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -690,13 +690,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -1005,7 +1005,7 @@
       "spot_id": "goldtower",
       "name": "ゴールドタワー",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -1016,13 +1016,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 2,
-        "unknown": 5
+        "unknown": 5,
+        "open": 2
       }
     },
     {
@@ -1249,20 +1249,19 @@
         "fees",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "special_closure_notice"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 7
       }
     },
     {
       "spot_id": "p2788",
       "name": "恋人の聖地",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -1273,13 +1272,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 2,
-        "unknown": 5
+        "unknown": 5,
+        "open": 2
       }
     },
     {
@@ -1475,7 +1474,7 @@
       "spot_id": "jb-honshi",
       "name": "瀬戸大橋",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address",
@@ -1486,13 +1485,13 @@
         "closures",
         "fees"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 2,
-        "unknown": 5
+        "unknown": 5,
+        "open": 2
       }
     },
     {
@@ -2990,7 +2989,7 @@
       "spot_id": "mitoyo-kanko-128",
       "name": "粟島",
       "spot_type": "open_air",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "address"
@@ -3001,13 +3000,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 6,
-        "open": 1
+        "open": 1,
+        "unknown": 6
       }
     },
     {
@@ -4047,13 +4046,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -6560,7 +6559,7 @@
     },
     "open_air": {
       "total": 127,
-      "settled": 126
+      "settled": 127
     },
     "untyped": 0
   },
@@ -6573,12 +6572,12 @@
     "reservation_required": 51
   },
   "states": {
-    "open": 142,
-    "unknown": 137,
-    "closed": 2
+    "open": 138,
+    "unknown": 139,
+    "closed": 4
   },
   "unknown_reasons": {
-    "no_data": 132,
+    "no_data": 134,
     "irregular_closed": 4,
     "rule_unsupported": 1
   }
