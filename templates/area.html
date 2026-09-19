@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="container page">
 <h1>{{ area.name(locale.code) }}</h1>
 {{ ui.ad_notice(offers, locale) }}
 <p class="asof" data-sitemill-volatile>{{ t('verdict.heading', date=today|date_short_l) }}</p>
@@ -19,4 +20,5 @@
   {% if offers %}{{ ui.offer_slot(offers, 'area-stay', locale) }}
   {% else %}<p class="preparing">{{ t('affiliate.preparing') }}</p>{% endif %}
 </section>
+</div>
 {% endblock %}

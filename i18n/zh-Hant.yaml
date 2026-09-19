@@ -5,6 +5,7 @@ site:
   tagline: 香川的設施與交通，今天的狀況
   description: 香川縣的觀光設施與交通，今天與未來一週是否有開、幾點開門。所有事實都取自官方網頁，並附上原文引用。
 nav:
+  language: 選擇語言
   privacy: 隱私權
   today: 今天
   transport: 交通
@@ -34,6 +35,7 @@ state:
   closed_short: 休
   unknown_short: "?"
 verdict:
+  week_legend: ？為無法判斷的日子
   heading: "{date} 的狀況"
   last_entry: "最後入館 {time}"
   week: 未來 7 天
@@ -60,7 +62,7 @@ reason:
   rule_unsupported: 官方的規定（例如每月特定週次才開放）無法以本站的格式呈現
   no_data: 無法從官方網頁取得時間與休息（停駛）資訊
 facts:
-  heading: 事實
+  heading: 基本資訊
   closures: 休息日
   address: 地址
   phone: 電話
@@ -89,6 +91,7 @@ fee:
 area:
   spots: 這個地區的設施
 transport:
+  service_days_tag: 航運日 ？
   here: 前往這裡的船、鐵道與巴士
   service_days_unknown: 尚未能從官方網頁取得行駛日與停駛日。出發前請查看時刻表。
   heading: 交通

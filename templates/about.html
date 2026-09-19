@@ -3,6 +3,7 @@
    運営者名は site.toml の [operator] name を 3 言語共通で出す。役割の語（運営者 / Operator /
    營運者）はカタログ側にあるので、名前に「運営」を足すと重なる #}
 {% block content %}
+<div class="container page">
 <h1>{{ t('about.heading') }}</h1>
 <p class="lead">{{ t('about.lead') }}</p>
 {# いま扱っている範囲。「日本全体のサイトだと思って開いたら香川だけ」にしない #}
@@ -44,4 +45,5 @@
   <a href="{{ locale.url_path('data/') }}">{{ t('about.data_link') }}</a>
   <a href="{{ locale.url_path('privacy/') }}">{{ t('nav.privacy') }}</a>
 </p>
+</div>
 {% endblock %}

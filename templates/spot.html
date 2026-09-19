@@ -1,162 +1,164 @@
 {% extends "base.html" %}
 {% block content %}
-<nav class="breadcrumb"><a href="{{ locale.url_path('') }}">{{ t('nav.home') }}</a> /
-  <a href="{{ locale.url_path('areas/' ~ spot.area ~ '/') }}">{{ area.name(locale.code) }}</a></nav>
-<h1>{{ spot.name(locale.code) }}</h1>
-{# 広告表記は本文の冒頭・最初の広告リンクより前に出す（ADR 0012）。案件が無ければ何も出ない #}
-{{ ui.ad_notice(offers, locale) }}
-{% if no_hours_stated %}
-{# 屋外で時間の定めが無い場所（ADR 0011）。「不明」ではなく、定めが無いことをそのまま出す #}
-<div class="open-air-box">
-  <p class="verdict-date" data-sitemill-volatile>{{ t('verdict.heading', date=today|date_short_l) }}</p>
-  <p class="open-air-lead">{{ t('open_air.lead') }}</p>
-  <p>{{ t('open_air.no_notice') }}</p>
-  <p class="note">{{ t('open_air.caution') }}</p>
-  <p class="actions">{{ ui.primary_link(spot.official_url, t('facts.official')) }}
-  {% if map.link_url %}<a class="secondary" href="{{ map.link_url }}" rel="noopener"
-     target="_blank">{{ t('facts.map') }}</a>{% endif %}</p>
+{# ヒーロー帯（藍）。パンくず・施設名・判定の判子と、PC では週の帯を横に並べる #}
+<div class="hero">
+  <div class="container hero-inner">
+    <div class="hero-main">
+      <nav class="hero-crumbs" aria-label="{{ t('nav.home') }}">
+        <a href="{{ locale.url_path('') }}">{{ t('nav.home') }}</a> ›
+        <a href="{{ locale.url_path('areas/' ~ spot.area ~ '/') }}">{{ area.name(locale.code) }}</a>
+        {% if spot.category != 'other' %} › {{ t('category.' ~ spot.category) }}{% endif %}
+      </nav>
+      <h1>{{ spot.name(locale.code) }}</h1>
+      {% if no_hours_stated %}
+      {# 屋外で時間の定めが無い場所（ADR 0011）。「不明」ではなく、定めが無いことをそのまま出す #}
+      <p class="lead" data-sitemill-volatile>{{ t('verdict.heading', date=today|date_short_l) }} ・ {{ t('open_air.lead') }}</p>
+      {% else %}
+      {{ ui.verdict_stamp(verdict, locale) }}
+      {% endif %}
+    </div>
+    {% if not week_all_unknown and not no_hours_stated %}
+    {{ ui.week_strip(week, locale) }}
+    {% endif %}
+  </div>
 </div>
-{% elif verdict.state.value == 'unknown' %}
-{{ ui.verdict_line(verdict, locale) }}
-{# 不明のときは、利用者がやるべき次の一手（公式ページを見る）を最も大きく出す #}
-<div class="unknown-box">
-  <p class="unknown-lead">{{ t('verdict.unknown_lead') }}</p>
-  <p class="actions actions-block">{{ ui.primary_link(spot.official_url, t('facts.official')) }}</p>
-  {{ ui.reasons(verdict, locale) }}
-</div>
-{% else %}
-{{ ui.verdict_line(verdict, locale) }}
-<p class="actions">{{ ui.primary_link(spot.official_url, t('facts.official')) }}
-{% if map.link_url %}<a class="secondary" href="{{ map.link_url }}" rel="noopener"
-   target="_blank">{{ t('facts.map') }}</a>{% endif %}</p>
-{{ ui.reasons(verdict, locale) }}
-{% endif %}
-{% if not week_all_unknown %}
-{{ ui.week_strip(week, locale) }}
-{% endif %}
-{% if notices %}
-{# 公式ページのお知らせ（臨時休業など）。期間は日付で書く。見出しは日本語で書いたものなので日本語のページだけ #}
-<section class="notices">
-  <h2 class="section-head">{{ t('notices.heading') }}</h2>
-  <ul class="notice-list">
-    {% for n in notices %}
-    <li class="notice notice-{{ n.kind }}">
-      <strong>{{ t('notices.' ~ n.kind) }}</strong>
-      {# 今年と違う年の告知は年まで書く（「1月12日」だけだと今年の話に読める） #}
-      {% set with_year = n.start.year != today.year or n.end.year != today.year %}
-      {% set s = fmt_date(n.start, locale) if with_year else fmt_date_short(n.start, locale) %}
-      {% set e = fmt_date(n.end, locale) if with_year else fmt_date_short(n.end, locale) %}
-      <span class="notice-when">{% if n.start == n.end %}{{ s }}{% else %}{{ t('notices.period', start=s, end=e) }}{% endif %}</span>
-      {% if locale.code == 'ja' and n.reason %}<span class="notice-reason">{{ n.reason }}</span>{% endif %}
-      {% if n.quote %}<span class="quote">{{ t('facts.quote', text=n.quote) }}</span>{% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}
-{% if photo %}
-{{ sm.photo_figure(photo, locale, '/static/assets/' ~ photo.asset_id ~ photo.local_path.suffix) }}
-{% endif %}
-<section class="facts">
-  <h2 class="section-head">{{ t('facts.heading') }}</h2>
-  <dl class="fact-list">
-    {% if hours %}
-    {# 通常の営業時間（規則）。今日の判定・週の帯と違い、日付で変わらない事実 #}
-    <dt>{{ t('facts.hours') }}</dt>
-    <dd>
-      {% if hours.lines %}
-      <ul class="hours">
-        {% for line in hours.lines %}
-        <li>{% if line.condition %}<span class="hours-when">{{ line.condition }}</span> {% endif %}{{ line.time }}</li>
+
+<div class="container layout">
+  {% if notices %}{{ ui.notices_panel(notices, today, locale) }}{% endif %}
+  <div class="col-main">
+    {# 広告表記は本文の冒頭・最初の広告リンクより前に出す（ADR 0012）。案件が無ければ何も出ない #}
+    {{ ui.ad_notice(offers, locale) }}
+
+    {% if no_hours_stated %}
+    <div class="open-air-box">
+      <p class="open-air-lead">{{ t('open_air.no_notice') }}</p>
+      <p class="note">{{ t('open_air.caution') }}</p>
+    </div>
+    {% elif verdict.state.value == 'unknown' %}
+    {# 不明のときは、利用者がやるべき次の一手（公式ページを見る）を最も大きく出す #}
+    <div class="unknown-box">
+      <p class="unknown-lead">{{ t('verdict.unknown_lead') }}</p>
+      <p class="actions actions-block">{{ ui.primary_link(spot.official_url, t('facts.official')) }}</p>
+    </div>
+    {% endif %}
+
+    {% if not no_hours_stated %}{{ ui.reasons(verdict, locale) }}{% endif %}
+
+    <section class="facts">
+      <h2 class="section-head">{{ t('facts.heading') }}</h2>
+      {# 持っていない事実のタイルは出さない（空の枠を作らない） #}
+      <ul class="tiles">
+        {% if hours %}
+        <li class="tile">
+          <span class="tile-label">{{ t('facts.hours') }}</span>
+          {% if hours.lines %}
+          <ul class="tile-lines">
+            {% for line in hours.lines %}
+            <li>{% if line.condition %}<span class="hours-when">{{ line.condition }}</span>{% endif %}{{ line.time }}</li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <span class="tile-value">{{ t('hours.quote_only') }}</span>
+          {% endif %}
+          {% for quote in hours.quotes %}
+          <span class="tile-note">{{ t('facts.quote', text=quote) }}</span>
+          {% endfor %}
+        </li>
+        {% endif %}
+        {% if closures_label %}
+        {{ ui.tile(t('facts.closures'), t(closures_label),
+                   t('facts.quote', text=spot.closures_quote) if spot.closures_quote else '') }}
+        {% endif %}
+        {{ ui.tile(t('facts.reservation'), t('reservation.' ~ spot.reservation_required),
+                   t('facts.quote', text=spot.reservation_quote) if spot.reservation_quote else '') }}
+        {% if fees|selectattr('amount.ok')|list %}
+        <li class="tile">
+          <span class="tile-label">{{ t('facts.fee') }}</span>
+          <span class="tile-value">
+            {% for fee in fees if fee.amount.ok %}
+            <span class="fee">{{ t('fee.' ~ fee.category) }} {{ fee.amount.value|money_l }}</span>
+            {% endfor %}
+          </span>
+        </li>
+        {% endif %}
+        {% if spot.visit_minutes.ok %}
+        {{ ui.tile(t('facts.visit_minutes'), t('facts.minutes', n=spot.visit_minutes.value)) }}
+        {% endif %}
+      </ul>
+      <p class="facts-line">
+        {% if spot.address.ok %}<span>{{ t('facts.address') }} {{ spot.address.value }}</span>{% endif %}
+        {% if spot.phone.ok %}<span>{{ t('facts.phone') }} {{ spot.phone.value }}</span>{% endif %}
+      </p>
+    </section>
+
+    {% if routes %}{{ ui.route_links(routes, locale) }}{% endif %}
+
+    {% if nearby %}
+    {# 不明でも、近くで開いていると分かっている施設があれば行き先を変えられる #}
+    <section class="nearby" data-sitemill-volatile>
+      <h2 class="section-head">{{ t('nearby.heading') }}</h2>
+      <p class="note">{{ t('nearby.lead', date=today|date_short_l) }}</p>
+      <ul class="cards">
+        {% for row in nearby %}{{ ui.spot_card(row, locale) }}{% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if area_links %}
+    {# 同じエリアのほかの施設への固定のリンク。今日の判定に左右されないので印は付けない #}
+    <section class="area-links">
+      <h2 class="section-head">{{ t('area_links.heading', area=area.name(locale.code)) }}</h2>
+      <ul class="cards">
+        {% for link in area_links %}
+        <li class="card"><a class="card-link" href="{{ link.url }}"><span class="card-name">{{ link.name }}</span></a></li>
+        {% endfor %}
+        <li><a class="card-all" href="{{ locale.url_path('areas/' ~ spot.area ~ '/') }}">{{ t('area_links.all', area=area.name(locale.code), n=area_total) }}</a></li>
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if spot.social %}
+    <section class="social">
+      <h2 class="section-head">{{ t('facts.social') }}</h2>
+      <ul class="links">
+        {% for name, url in spot.social.items() %}
+        <li><a href="{{ url }}" rel="noopener nofollow" target="_blank">{{ name }}</a></li>
         {% endfor %}
       </ul>
-      {% else %}
-      <span class="note">{{ t('hours.quote_only') }}</span>
-      {% endif %}
-      {% for quote in hours.quotes %}
-      <span class="quote">{{ t('facts.quote', text=quote) }}</span>
-      {% endfor %}
-    </dd>
+    </section>
     {% endif %}
-    {% if spot.category != 'other' %}<dt>{{ t('facts.category') }}</dt><dd>{{ t('category.' ~ spot.category) }}</dd>{% endif %}
-    {% if spot.address.ok %}<dt>{{ t('facts.address') }}</dt><dd>{{ spot.address.value }}</dd>{% endif %}
-    {% if spot.phone.ok %}<dt>{{ t('facts.phone') }}</dt><dd>{{ spot.phone.value }}</dd>{% endif %}
-    {% if fees %}
-    <dt>{{ t('facts.fee') }}</dt>
-    <dd>
-      {% for fee in fees if fee.amount.ok %}
-      <span class="fee">{{ t('fee.' ~ fee.category) }} {{ fee.amount.value|money_l }}</span>
-      {% endfor %}
-    </dd>
+
+    <section class="affiliate">
+      <h2 class="section-head">{{ t('affiliate.heading') }}</h2>
+      {% if offers %}{{ ui.offer_slot(offers, 'spot-tickets', locale) }}
+      {% else %}<p class="preparing">{{ t('affiliate.preparing') }}</p>{% endif %}
+    </section>
+  </div>
+
+  {# 右列。PC では画面に残る（sticky）。スマホでは判定の直後に来る #}
+  <aside class="col-side">
+    {% if photo %}
+    {{ sm.photo_figure(photo, locale, '/static/assets/' ~ photo.asset_id ~ photo.local_path.suffix) }}
     {% endif %}
-    {% if closures_label %}
-    <dt>{{ t('facts.closures') }}</dt>
-    <dd>{{ t(closures_label) }}
-      {% if spot.closures_quote %}<span class="quote">{{ t('facts.quote', text=spot.closures_quote) }}</span>{% endif %}
-    </dd>
+    <p class="actions actions-block">{{ ui.primary_link(spot.official_url, t('facts.official')) }}</p>
+    {% if map.src_url %}
+    {# 地図の埋め込み（ADR 0006 の経路④）。鍵が無いときは外部リンクだけになる #}
+    <figure class="map-embed sm-embed" data-embed="map">
+      <iframe src="{{ map.src_url }}" title="{{ map.title }}" width="{{ map.width }}"
+              height="{{ map.height }}" style="max-width:100%" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <figcaption class="sm-credit">{{ t('facts.map_attribution') }}
+        <a href="{{ map.link_url }}" rel="noopener" target="_blank">{{ t('facts.map') }}</a></figcaption>
+    </figure>
+    {% elif map.link_url %}
+    <p class="actions"><a class="secondary" href="{{ map.link_url }}" rel="noopener"
+       target="_blank">{{ t('facts.map') }}</a></p>
     {% endif %}
-    <dt>{{ t('facts.reservation') }}</dt>
-    <dd>{{ t('reservation.' ~ spot.reservation_required) }}
-      {% if spot.reservation_quote %}<span class="quote">{{ t('facts.quote', text=spot.reservation_quote) }}</span>{% endif %}
-    </dd>
-    {% if spot.visit_minutes.ok %}
-    <dt>{{ t('facts.visit_minutes') }}</dt><dd>{{ t('facts.minutes', n=spot.visit_minutes.value) }}</dd>
-    {% endif %}
-    {% if verdict.state.value == 'unknown' and map.link_url and not no_hours_stated %}
-    <dt>{{ t('facts.map') }}</dt>
-    <dd><a href="{{ map.link_url }}" rel="noopener" target="_blank">{{ t('facts.map') }}</a></dd>
-    {% endif %}
-  </dl>
-</section>
-{% if map.src_url %}
-{# 地図の埋め込み（ADR 0006 の経路④）。鍵が無いときは上の外部リンクだけになる #}
-<section class="map-embed">
-  <h2 class="section-head">{{ t('facts.map_heading') }}</h2>
-  <figure class="sm-embed" data-embed="map">
-    <iframe src="{{ map.src_url }}" title="{{ map.title }}" width="{{ map.width }}"
-            height="{{ map.height }}" style="border:0;max-width:100%" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-    <figcaption class="sm-credit">{{ t('facts.map_attribution') }}
-      <a href="{{ map.link_url }}" rel="noopener" target="_blank">{{ t('facts.map') }}</a></figcaption>
-  </figure>
-</section>
-{% endif %}
-{% if routes %}{{ ui.route_links(routes, locale) }}{% endif %}
-{% if nearby %}
-{# 不明でも、近くで開いていると分かっている施設があれば行き先を変えられる #}
-<section class="nearby" data-sitemill-volatile>
-  <h2 class="section-head">{{ t('nearby.heading') }}</h2>
-  <p class="lead">{{ t('nearby.lead', date=today|date_short_l) }}</p>
-  <ul class="cards">
-    {% for row in nearby %}{{ ui.spot_card(row, locale) }}{% endfor %}
-  </ul>
-</section>
-{% endif %}
-{% if area_links %}
-{# 同じエリアのほかの施設への固定のリンク。今日の判定に左右されないので印は付けない #}
-<section class="area-links">
-  <h2 class="section-head">{{ t('area_links.heading', area=area.name(locale.code)) }}</h2>
-  <ul class="links">
-    {% for link in area_links %}
-    <li><a href="{{ link.url }}">{{ link.name }}</a></li>
-    {% endfor %}
-  </ul>
-  <p class="note"><a href="{{ locale.url_path('areas/' ~ spot.area ~ '/') }}">{{ t('area_links.all', area=area.name(locale.code), n=area_total) }}</a></p>
-</section>
-{% endif %}
-{% if spot.social %}
-<section class="social">
-  <h2 class="section-head">{{ t('facts.social') }}</h2>
-  <ul class="links">
-    {% for name, url in spot.social.items() %}
-    <li><a href="{{ url }}" rel="noopener nofollow" target="_blank">{{ name }}</a></li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}
-<section class="affiliate">
-  <h2 class="section-head">{{ t('affiliate.heading') }}</h2>
-  {% if offers %}{{ ui.offer_slot(offers, 'spot-tickets', locale) }}
-  {% else %}<p class="preparing">{{ t('affiliate.preparing') }}</p>{% endif %}
-</section>
+  </aside>
+</div>
+{% endblock %}
+
+{% block bottom_bar %}
+{# スマホだけの固定バー。一次情報への主導線を画面から外さない（PC では CSS で消す） #}
+<div class="bottom-bar">{{ ui.primary_link(spot.official_url, t('facts.official')) }}</div>
 {% endblock %}

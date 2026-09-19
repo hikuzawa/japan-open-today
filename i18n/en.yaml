@@ -5,6 +5,7 @@ site:
   tagline: What is open in Kagawa today
   description: Opening days and hours for museums, gardens, shrines and ferries in Kagawa, Japan, for today and the next seven days. Every fact is taken from the official page and quoted.
 nav:
+  language: Choose language
   privacy: Privacy
   today: Today
   transport: Transport
@@ -36,6 +37,7 @@ state:
   closed_short: Closed
   unknown_short: "?"
 verdict:
+  week_legend: "? = we could not decide"
   heading: "Status on {date}"
   last_entry: "Last entry {time}"
   week: Next 7 days
@@ -63,7 +65,7 @@ reason:
   rule_unsupported: "The official schedule (for example, open only on certain weeks of the month) cannot be represented here"
   no_data: Hours and closures could not be obtained from the official page
 facts:
-  heading: Facts
+  heading: Key facts
   closures: Closing days
   address: Address
   phone: Phone
@@ -92,6 +94,7 @@ fee:
 area:
   spots: Places in this area
 transport:
+  service_days_tag: "Service days ?"
   here: Getting here by ferry, train or bus
   service_days_unknown: We have not been able to read which days this runs. Please check the timetable before you travel.
   heading: Transport

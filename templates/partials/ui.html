@@ -1,4 +1,26 @@
-{# 表示の部品。事実は構造化データから、文言はカタログから（ADR 0005）。 #}
+{# 表示の部品。事実は構造化データから、文言はカタログから（ADR 0005）。
+   案B（2026-09-20）: 判定は判子、週は切符の半券、基本情報はタイル、船は搭乗券。
+   判定の色には必ず文字を添える（色だけに意味を持たせない）。 #}
+
+{# 言語切替。追加の JS を使わず <details> で開く。言語は自称（日本語 / English / 繁體中文）で並べ、
+   言語が増えても見た目が変わらない #}
+{% macro lang_switch(locales, locale, meta) %}
+<details class="lang">
+  <summary aria-label="{{ t_in(locale, 'nav.language') }}">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"></path></svg>
+    {{ locale.display }}
+    <svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+  </summary>
+  <ul class="lang-menu">
+    {% for lc in locales if lc.code in meta.alternates %}
+    <li><a href="{{ meta.alternates[lc.code] }}" hreflang="{{ lc.lang }}"
+           {% if lc.code == locale.code %}aria-current="true"{% endif %}>{{ lc.display }}</a></li>
+    {% endfor %}
+  </ul>
+</details>
+{% endmacro %}
 
 {# 判定のしるし。色だけに意味を持たせない（文字も出す） #}
 {% macro state_badge(verdict, locale, short=false) %}
@@ -7,24 +29,28 @@
 </span>
 {% endmacro %}
 
-{# 日付を明記した断定＋時間帯。「今日」だけの表記は使わない（ADR 0004） #}
-{% macro verdict_line(verdict, locale) %}
-<p class="verdict verdict-{{ verdict.state.value }}" data-sitemill-volatile>
-  <strong class="verdict-date">{{ fmt_date_short(verdict.day, locale) }}</strong>
-  <span class="verdict-state">{{ t_in(locale, 'state.' ~ verdict.state.value) }}</span>
-  {% if verdict.periods %}
-  <span class="verdict-hours">
-    {% for r in verdict.periods %}
-    <time>{{ fmt_time(r.start, locale) }}–{{ fmt_time(r.end, locale) }}</time>{% if not loop.last %} / {% endif %}
+{# 判定の判子。日付を明記した断定＋時間帯（「今日」だけの表記は使わない。ADR 0004） #}
+{% macro verdict_stamp(verdict, locale) %}
+{% set mark = t_in(locale, 'state.' ~ verdict.state.value ~ '_short') %}
+<div class="stamp-card" data-sitemill-volatile>
+  <div class="stamp stamp-{{ verdict.state.value }}{% if mark|length > 2 %} stamp-word{% endif %}" aria-hidden="true">{{ mark }}</div>
+  <p class="stamp-body">
+    <span class="stamp-day">{{ fmt_date_short(verdict.day, locale) }}</span>
+    <span class="stamp-state">{{ t_in(locale, 'state.' ~ verdict.state.value) }}</span>
+    {% if verdict.periods %}
+    <span class="stamp-hours">
+      {% for r in verdict.periods %}
+      <time>{{ fmt_time(r.start, locale) }}–{{ fmt_time(r.end, locale) }}</time>{% if not loop.last %} / {% endif %}
+      {% endfor %}
+    </span>
+    {% for r in verdict.periods if r.last_entry %}
+    <span class="stamp-note">{{ t_in(locale, 'verdict.last_entry', time=fmt_time(r.last_entry, locale)) }}</span>
     {% endfor %}
-  </span>
-  {% for r in verdict.periods if r.last_entry %}
-  <span class="verdict-note">{{ t_in(locale, 'verdict.last_entry', time=fmt_time(r.last_entry, locale)) }}</span>
-  {% endfor %}
-  {% elif verdict.codes and 'always_open' in verdict.codes %}
-  <span class="verdict-hours">{{ t_in(locale, 'verdict.no_time') }}</span>
-  {% endif %}
-</p>
+    {% elif verdict.codes and 'always_open' in verdict.codes %}
+    <span class="stamp-hours">{{ t_in(locale, 'verdict.no_time') }}</span>
+    {% endif %}
+  </p>
+</div>
 {% endmacro %}
 
 {# 根拠。原文の引用と一次情報 URL と取得日時を必ず添える（ADR 0004） #}
@@ -48,22 +74,58 @@
 </details>
 {% endmacro %}
 
-{# 7 日分の帯。数日後に見ても事実として読める（ADR 0004） #}
+{# 7 日分の帯（切符の半券）。数日後に見ても事実として読める（ADR 0004）。
+   丸は色だけの意味にならないよう、状態の文字を必ず添える #}
 {% macro week_strip(week, locale) %}
-<section class="week" data-sitemill-volatile aria-label="{{ t_in(locale, 'verdict.week') }}">
-  <h2 class="section-head">{{ t_in(locale, 'verdict.week') }}</h2>
+<section class="week week-card" data-sitemill-volatile aria-label="{{ t_in(locale, 'verdict.week') }}">
+  <div class="week-head">
+    <h2 class="week-title">{{ t_in(locale, 'verdict.week') }}</h2>
+    <span class="week-legend">{{ t_in(locale, 'verdict.week_legend') }}</span>
+  </div>
   <ol class="week-list">
     {% for v in week %}
-    <li class="week-day week-{{ v.state.value }}">
-      <span class="week-date">{{ fmt_date_short(v.day, locale) }}</span>
+    <li class="week-day week-{{ v.state.value }}{% if loop.first %} week-today{% endif %}">
+      <span class="week-wd">{{ v.day|weekday_l }}</span>
+      <span class="week-date">{{ v.day.day }}</span>
+      <span class="week-mark" aria-hidden="true">{% if v.state.value == 'unknown' %}?{% endif %}</span>
       <span class="week-state">{{ t_in(locale, 'state.' ~ v.state.value ~ '_short') }}</span>
-      {% if v.periods %}
-      <span class="week-hours">{{ fmt_time(v.periods[0].start, locale) }}–{{ fmt_time(v.periods[0].end, locale) }}</span>
-      {% endif %}
     </li>
     {% endfor %}
   </ol>
 </section>
+{% endmacro %}
+
+{# 公式ページの告知。期間は日付で書く（相対表現にしない）。原文の引用を必ず添える #}
+{% macro notices_panel(notices, today, locale) %}
+<section class="notices">
+  <h2 class="section-head">{{ t_in(locale, 'notices.heading') }}</h2>
+  <ul class="notice-list">
+    {% for n in notices %}
+    <li class="notice notice-{{ n.kind }}">
+      <span class="notice-icon" aria-hidden="true">!</span>
+      <span class="notice-body">
+        <span class="notice-kind">{{ t_in(locale, 'notices.' ~ n.kind) }}</span>
+        {# 今年と違う年の告知は年まで書く（「1月12日」だけだと今年の話に読める） #}
+        {% set with_year = n.start.year != today.year or n.end.year != today.year %}
+        {% set s = fmt_date(n.start, locale) if with_year else fmt_date_short(n.start, locale) %}
+        {% set e = fmt_date(n.end, locale) if with_year else fmt_date_short(n.end, locale) %}
+        <span class="notice-when">{% if n.start == n.end %}{{ s }}{% else %}{{ t_in(locale, 'notices.period', start=s, end=e) }}{% endif %}</span>
+        {% if locale.code == 'ja' and n.reason %}<span class="notice-reason">{{ n.reason }}</span>{% endif %}
+        {% if n.quote %}<span class="quote">{{ t_in(locale, 'facts.quote', text=n.quote) }}</span>{% endif %}
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endmacro %}
+
+{# 基本情報のタイル 1 枚。値が無い項目はタイルごと出さない（空の枠を作らない） #}
+{% macro tile(label, value, note='') %}
+<li class="tile">
+  <span class="tile-label">{{ label }}</span>
+  <span class="tile-value">{{ value }}</span>
+  {% if note %}<span class="tile-note">{{ note }}</span>{% endif %}
+</li>
 {% endmacro %}
 
 {# 数字の帯（ADR 0007）。値が無い項目は出さない #}
@@ -85,16 +147,15 @@
     <img class="card-photo" src="/static/assets/{{ row.photo.asset_id }}{{ row.photo.local_path.suffix }}"
          alt="" data-sitemill-asset="{{ row.photo.asset_id }}" loading="lazy" decoding="async" width="480" height="320">
     {% endif %}
-    <span class="card-body">
-      <span class="card-head">
-        <span class="card-name">{{ row.name }}</span>
-        {{ state_badge(row.verdict, locale, short=true) }}
-      </span>
-      <span class="card-meta">{{ row.area.name(locale.code) }}</span>
-      {% if row.verdict.periods %}
-      <span class="card-hours" data-sitemill-volatile>{{ fmt_time(row.verdict.periods[0].start, locale) }}–{{ fmt_time(row.verdict.periods[0].end, locale) }}</span>
-      {% endif %}
+    <span class="card-head" data-sitemill-volatile>
+      <span class="dot dot-{{ row.verdict.state.value }}" aria-hidden="true"></span>
+      <span class="dot-label">{{ t_in(locale, 'state.' ~ row.verdict.state.value) }}</span>
     </span>
+    <span class="card-name">{{ row.name }}</span>
+    <span class="card-meta">{{ row.area.name(locale.code) }}</span>
+    {% if row.verdict.periods %}
+    <span class="card-hours" data-sitemill-volatile>{{ fmt_time(row.verdict.periods[0].start, locale) }}–{{ fmt_time(row.verdict.periods[0].end, locale) }}</span>
+    {% endif %}
   </a>
 </li>
 {% endmacro %}
@@ -126,23 +187,61 @@
 {% endif %}
 {%- endmacro %}
 
-{# そのエリアに来る航路・路線（ADR 0001）。島の施設を見ている人が船に辿り着けるようにする。
+{# そのエリアに来る航路・路線（ADR 0001）。搭乗券の形で、取れている事実だけを出す。
    どのエリアに来るかは `Route.areas` の宣言で決まる（着発地の文字列から推測しない） #}
 {% macro route_links(routes, locale) %}
 <section class="routes-here">
   <h2 class="section-head">{{ t_in(locale, 'transport.here') }}</h2>
-  <ul class="links">
-    {% for r in routes %}
-    <li>
-      <span class="route-name">{{ r.route.name(locale.code) }}</span>
-      {{ state_badge(r.verdict, locale, short=true) }}
-      {% if r.route.timetable_url %}
-      <a href="{{ r.route.timetable_url }}" rel="noopener"
-         target="_blank">{{ t_in(locale, 'transport.timetable') }}</a>
-      {% endif %}
-      <a href="{{ locale.url_path('transport/') }}">{{ t_in(locale, 'nav.transport') }}</a>
-    </li>
-    {% endfor %}
-  </ul>
+  {% for r in routes %}
+  {{ boarding_pass(r.route, r.verdict, locale) }}
+  {% endfor %}
 </section>
+{% endmacro %}
+
+{# 航路・路線 1 本の搭乗券。始発・終発・所要・運賃は取れているものだけ並べる #}
+{% macro boarding_pass(route, verdict, locale) %}
+<div class="boarding">
+  <div class="boarding-head">
+    <span class="boarding-route">{{ route.name(locale.code) }}</span>
+    <span class="boarding-operator" data-sitemill-volatile>{{ t_in(locale, 'state.' ~ verdict.state.value) }}</span>
+  </div>
+  <div class="boarding-body">
+    {% set facts = [] %}
+    {% if route.first_departure.ok %}{% set _ = facts.append((t_in(locale, 'transport.first'), route.first_departure.value, '')) %}{% endif %}
+    {% if route.last_departure.ok %}{% set _ = facts.append((t_in(locale, 'transport.last'), route.last_departure.value, '')) %}{% endif %}
+    {% if route.duration_minutes.ok %}{% set _ = facts.append((t_in(locale, 'transport.duration'), t_in(locale, 'facts.minutes', n=route.duration_minutes.value), '')) %}{% endif %}
+    {% for fare in route.fares if fare.amount.ok %}
+    {% set _ = facts.append((t_in(locale, 'fee.' ~ fare.category), fare.amount.value|money_l, '')) %}
+    {% endfor %}
+    {% if facts %}
+    <div class="boarding-facts">
+      {% for label, value, note in facts[:3] %}
+      <div><span class="boarding-label">{{ label }}</span><span class="boarding-value">{{ value }}</span></div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <div class="boarding-foot">
+      <p class="boarding-note">
+        {% if route.service_days_quote %}
+        <span>{{ t_in(locale, 'transport.service_days') }} {{ t_in(locale, 'facts.quote', text=route.service_days_quote) }}</span>
+        {% else %}
+        {# 運航日が取れていないことを**書く**。始発・運賃だけが出ていると、今日も動いていると
+           読めてしまう（運休を見落とす形にしない。ADR 0004） #}
+        <span class="tag-unknown">{{ t_in(locale, 'transport.service_days_tag') }}</span>
+        <span>{{ t_in(locale, 'transport.service_days_unknown') }}</span>
+        {% endif %}
+      </p>
+      <span class="actions">
+        {% if route.timetable_url %}
+        <a class="boarding-link" href="{{ route.timetable_url }}" rel="noopener"
+           target="_blank">{{ t_in(locale, 'transport.timetable') }}<span aria-hidden="true"> ↗</span></a>
+        {% endif %}
+        {% if route.fare_url %}
+        <a class="boarding-link" href="{{ route.fare_url }}" rel="noopener"
+           target="_blank">{{ t_in(locale, 'transport.fares') }}<span aria-hidden="true"> ↗</span></a>
+        {% endif %}
+      </span>
+    </div>
+  </div>
+</div>
 {% endmacro %}

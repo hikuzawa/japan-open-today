@@ -2,6 +2,7 @@
 {# プライバシーポリシー。3 言語とも同じ内容を出す（英語・繁体字の利用者が読むのはこのページで、
    アフィリエイトの審査でも求められる）。書いてあるのは実際にしていることだけにする #}
 {% block content %}
+<div class="container page">
 <h1>{{ t('privacy.heading') }}</h1>
 <p class="lead">{{ t('privacy.lead') }}</p>
 
@@ -29,4 +30,5 @@
   {%- else %} {{ contact }}{% endif %}
 </p>
 <p class="links"><a href="{{ locale.url_path('about/') }}">{{ t('nav.about') }}</a></p>
+</div>
 {% endblock %}

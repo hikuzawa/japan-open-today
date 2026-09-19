@@ -1,5 +1,5 @@
 {% import "sitemill/macros.html" as sm %}
-{% import "partials/ui.html" as ui %}
+{% import "partials/ui.html" as ui with context %}
 <!doctype html>
 <html lang="{{ locale.lang }}">
 <head>
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ meta.title }} | {{ t('site.name_short') }}</title>
 <meta name="description" content="{{ meta.description }}">
-<meta name="theme-color" content="#1B3A5B">
+<meta name="theme-color" content="#0F2C59">
 {{ sm.head_meta(meta, site, base_url, analytics=analytics, site_verification=site_verification,
                 locale=locale, hreflangs=hreflangs) }}
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
@@ -16,27 +16,22 @@
 <body>
 <a class="skip" href="#main">{{ t('nav.skip') }}</a>
 <header class="site-header">
-  <div class="container header-inner">
+  <div class="header-inner">
     <a class="brand" href="{{ locale.url_path('') }}">
-      <span class="brand-mark" aria-hidden="true">今</span>
       <span class="brand-name">{{ t('site.name_short') }}</span>
       {# いま扱っている範囲。検索から施設ページに着いた人にも、ここだけは必ず見える #}
       <span class="brand-area">{{ t('site.area') }}</span>
     </a>
     <nav class="site-nav" aria-label="{{ t('site.name_short') }}">
+      <a href="{{ locale.url_path('') }}">{{ t('nav.today') }}</a>
       <a href="{{ locale.url_path('transport/') }}">{{ t('nav.transport') }}</a>
       <a href="{{ locale.url_path('data/') }}">{{ t('nav.data') }}</a>
       <a href="{{ locale.url_path('about/') }}">{{ t('nav.about') }}</a>
     </nav>
-    <nav class="lang-nav" aria-label="Language">
-      {% for lc in locales if lc.code in meta.alternates %}
-      <a href="{{ meta.alternates[lc.code] }}" hreflang="{{ lc.lang }}"
-         {% if lc.code == locale.code %}aria-current="true"{% endif %}>{{ lc.display }}</a>
-      {% endfor %}
-    </nav>
+    {{ ui.lang_switch(locales, locale, meta) }}
   </div>
 </header>
-<main id="main" class="container">
+<main id="main">
 {% block content %}{% endblock %}
 </main>
 <footer class="site-footer">
@@ -53,5 +48,6 @@
     <p class="copyright">© {{ build_time.year }} {{ site.name }}</p>
   </div>
 </footer>
+{% block bottom_bar %}{% endblock %}
 </body>
 </html>

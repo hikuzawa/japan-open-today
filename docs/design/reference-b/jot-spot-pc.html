@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Japan Open Today 案B 施設ページ（地中美術館）PC</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;background:#FFFFFF;color:#101828}
+a{color:#0F2C59}a:hover{color:#0A1F40}
+</style>
+</helmet>
+<div style="width: 1280px; height: 1560px; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; font-size: 16px; line-height: 1.7; font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif; color: #101828;">
+
+<!-- global header -->
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 0 48px; height: 64px; background: #0F2C59; color: #FFFFFF;">
+<div style="display: flex; align-items: center; gap: 12px;">
+<div style="font-family: 'Zen Kaku Gothic New', sans-serif; font-weight: 900; font-size: 20px;">今日行ける日本</div>
+<div style="font-size: 11px; font-weight: 700; background: rgba(255,255,255,0.16); padding: 3px 10px; border-radius: 999px;">香川</div>
+</div>
+<div style="display: flex; align-items: center; gap: 4px;">
+<a href="#today" style="min-height: 44px; display: inline-flex; align-items: center; padding: 0 14px; font-size: 14px; font-weight: 700; text-decoration: none; color: #FFFFFF; opacity: 0.9;">今日開いている施設</a>
+<a href="#areas" style="min-height: 44px; display: inline-flex; align-items: center; padding: 0 14px; font-size: 14px; font-weight: 700; text-decoration: none; color: #FFFFFF; opacity: 0.9;">エリア</a>
+<a href="#transport" style="min-height: 44px; display: inline-flex; align-items: center; padding: 0 14px; font-size: 14px; font-weight: 700; text-decoration: none; color: #FFFFFF; opacity: 0.9;">船・鉄道・バス</a>
+<a href="#language" aria-label="言語を選ぶ" style="display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 12px; border: 1.5px solid rgba(255,255,255,0.55); border-radius: 999px; color: #FFFFFF; font-size: 13px; font-weight: 700; text-decoration: none; margin-left: 10px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"></path></svg>日本語<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></a>
+</div>
+</div>
+
+<!-- hero band -->
+<div style="background: #0F2C59; color: #FFFFFF; padding: 22px 48px 40px; display: grid; grid-template-columns: minmax(0, 1fr) 520px; gap: 40px; align-items: end;">
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<div style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; opacity: 0.8;"><a href="#kagawa" style="color: #FFFFFF; text-decoration: none;">香川</a> › <a href="#naoshima" style="color: #FFFFFF; text-decoration: none;">直島</a> › 美術館・博物館</div>
+<h1 style="margin: 0; font-family: 'Zen Kaku Gothic New', sans-serif; font-weight: 900; font-size: 48px; line-height: 1.15;">地中美術館</h1>
+<div style="display: flex; align-items: center; gap: 20px; background: rgba(255,255,255,0.08); border-radius: 16px; padding: 16px 20px; margin-top: 6px;">
+<div style="width: 96px; height: 96px; border-radius: 50%; border: 5px solid {{accent}}; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transform: rotate(-8deg);"><div style="font-family: 'Zen Kaku Gothic New', sans-serif; font-weight: 900; font-size: 46px; color: {{accent}}; line-height: 1;">開</div></div>
+<div style="display: flex; flex-direction: column; gap: 2px;">
+<div style="font-size: 13px; font-weight: 700; opacity: 0.85;">9月19日（土）</div>
+<div style="font-family: 'Zen Kaku Gothic New', sans-serif; font-weight: 900; font-size: 26px; line-height: 1.2;">開いています</div>
+<div style="font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums;">10:00–17:00 <span style="font-size: 13px; font-weight: 400; opacity: 0.85;">・ 入館は 16:00 まで ・ 事前予約制</span></div>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<div style="display: flex; align-items: baseline; justify-content: space-between;"><div style="font-size: 12px; font-weight: 900; letter-spacing: 0.08em; opacity: 0.85;">今週</div><div style="font-size: 11px; opacity: 0.75;">？は決められない日</div></div>
+<div style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px;">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 0 8px; border-radius: 10px; background: #FFFFFF; color: #0F2C59;"><div style="font-size: 11px; opacity: 0.8;">土</div><div style="font-size: 18px; font-weight: 900;">19</div><div style="width: 9px; height: 9px; border-radius: 50%; background: {{accent}};"></div></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 0 8px; border-radius: 10px; background: rgba(255,255,255,0.12);"><div style="font-size: 11px; opacity: 0.8;">日</div><div style="font-size: 18px; font-weight: 900;">20</div><div style="width: 9px; height: 9px; border-radius: 50%; background: #5FD39A;"></div></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 0 8px; border-radius: 10px; background: rgba(255,255,255,0.12);"><div style="font-size: 11px; opacity: 0.8;">月</div><div style="font-size: 18px; font-weight: 900;">21</div><div style="width: 9px; height: 9px; border-radius: 50%; background: #5FD39A;"></div></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 0 8px; border-radius: 10px; border: 1px dashed rgba(255,255,255,0.5);"><div style="font-size: 11px; opacity: 0.8;">火</div><div style="font-size: 18px; font-weight: 900; opacity: 0.7;">22</div><div style="font-size: 11px; font-weight: 900; opacity: 0.7; line-height: 9px;">？</div></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 0 8px; border-radius: 10px; background: rgba(255,255,255,0.12);"><div style="font-size: 11px; opacity: 0.8;">水</div><div style="font-size: 18px; font-weight: 900;">23</div><div style="width: 9px; height: 9px; border-radius: 50%; background: #5FD39A;"></div></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 0 8px; border-radius: 10px; border: 1px dashed rgba(255,255,255,0.5);"><div style="font-size: 11px; opacity: 0.8;">木</div><div style="font-size: 18px; font-weight: 900; opacity: 0.7;">24</div><div style="font-size: 11px; font-weight: 900; opacity: 0.7; line-height: 9px;">？</div></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 0 8px; border-radius: 10px; background: rgba(255,255,255,0.12);"><div style="font-size: 11px; opacity: 0.8;">金</div><div style="font-size: 18px; font-weight: 900;">25</div><div style="width: 9px; height: 9px; border-radius: 50%; background: #5FD39A;"></div></div>
+</div>
+<div style="font-size: 12px; opacity: 0.8; line-height: 1.6;">祝日が続くため「祝日の場合は翌日休館」をどの日に当てるか決められない日は「？」。公式ページでご確認ください</div>
+</div>
+</div>
+
+<!-- two columns -->
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 40px; padding: 32px 48px 0;">
+
+<!-- main -->
+<div style="display: flex; flex-direction: column; gap: 28px;">
+
+<!-- notice -->
+<div style="padding: 16px 18px; border-radius: 14px; background: #FFF1E8; display: flex; gap: 14px; align-items: center;">
+<div style="width: 36px; height: 36px; border-radius: 10px; background: {{accent}}; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"></path><path d="M12 16h.01"></path><circle cx="12" cy="12" r="9"></circle></svg></div>
+<div style="display: flex; flex-direction: column; gap: 2px;"><div style="font-size: 12px; font-weight: 900; color: {{accent}}; letter-spacing: 0.06em;">公式のお知らせ</div><div style="font-size: 17px; font-weight: 900;">2027年1月12日〜3月19日 長期休館</div><div style="font-size: 12px; color: #5A6270;">原文：「[公式ページの告知文をそのまま引用]」 ・ 開館カレンダーより</div></div>
+</div>
+
+<!-- facts -->
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<h2 style="margin: 0; font-family: 'Zen Kaku Gothic New', sans-serif; font-weight: 900; font-size: 22px;">基本情報</h2>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px;">
+<div style="border-radius: 12px; background: #F3F5F9; padding: 14px; display: flex; flex-direction: column; gap: 2px;"><div style="font-size: 11px; font-weight: 700; color: #5A6270;">営業時間</div><div style="font-size: 16px; font-weight: 900; font-variant-numeric: tabular-nums;">10:00–17:00</div><div style="font-size: 11px; color: #5A6270;">入館は16:00まで</div></div>
+<div style="border-radius: 12px; background: #F3F5F9; padding: 14px; display: flex; flex-direction: column; gap: 2px;"><div style="font-size: 11px; font-weight: 700; color: #5A6270;">休館日</div><div style="font-size: 16px; font-weight: 900;">月曜日</div><div style="font-size: 11px; color: #5A6270;">祝日の場合は翌日</div></div>
+<div style="border-radius: 12px; background: #F3F5F9; padding: 14px; display: flex; flex-direction: column; gap: 2px;"><div style="font-size: 11px; font-weight: 700; color: #5A6270;">予約</div><div style="font-size: 16px; font-weight: 900;">事前予約制</div><div style="font-size: 11px; color: #5A6270;">「※日時指定の予約制です」</div></div>
+<div style="border-radius: 12px; background: #F3F5F9; padding: 14px; display: flex; flex-direction: column; gap: 2px;"><div style="font-size: 11px; font-weight: 700; color: #5A6270;">料金</div><div style="font-size: 16px; font-weight: 900;">[料金の原文]</div></div>
+</div>
+<div style="font-size: 13px; color: #5A6270;">住所 香川県香川郡直島町3449-1 ・ 根拠は公式ページの記載（取得 <span data-sitemill-volatile="true">9月19日 06:10</span>）</div>
+</div>
+
+<!-- ferry -->
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<h2 style="margin: 0; font-family: 'Zen Kaku Gothic New', sans-serif; font-weight: 900; font-size: 22px;">この島への船</h2>
+<div style="border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(16,24,40,0.10); display: grid; grid-template-columns: 240px minmax(0, 1fr);">
+<div style="background: #0F2C59; color: #FFFFFF; padding: 18px; display: flex; flex-direction: column; justify-content: center; gap: 6px;"><div style="display: flex; align-items: center; gap: 10px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17c1.5 1 3 1 4.5 0s3-1 4.5 0 3 1 4.5 0 3-1 4.5 0"></path><path d="M4 13l2-5h12l2 5"></path><path d="M12 8V4"></path></svg><div style="font-size: 16px; font-weight: 900;">高松 → 直島（宮浦）</div></div><div style="font-size: 11px; font-weight: 700; opacity: 0.85;">四国汽船 ・ 運航日 ？</div></div>
+<div style="background: #FFFFFF; padding: 16px 20px; display: flex; flex-direction: column; gap: 8px; border-left: 2px dashed #D8D6CE;">
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px;">
+<div style="display: flex; flex-direction: column;"><div style="font-size: 11px; color: #5A6270;">始発</div><div style="font-size: 24px; font-weight: 900; font-variant-numeric: tabular-nums;">08:12</div></div>
+<div style="display: flex; flex-direction: column;"><div style="font-size: 11px; color: #5A6270;">終発</div><div style="font-size: 24px; font-weight: 900; font-variant-numeric: tabular-nums;">18:05</div></div>
+<div style="display: flex; flex-direction: column;"><div style="font-size: 11px; color: #5A6270;">所要 / 運賃</div><div style="font-size: 24px; font-weight: 900; font-variant-numeric: tabular-nums;">50<span style="font-size: 13px; font-weight: 700;">分</span> 680<span style="font-size: 13px; font-weight: 700;">円</span></div></div>
+</div>
+<div style="font-size: 12px; color: #5A6270; line-height: 1.6;">運航日・運休日は公式ページから取得できていません。出発前に時刻表で確認を。<a href="#timetable" style="font-weight: 900; text-decoration: none; margin-left: 6px;">時刻表を見る ↗</a></div>
+</div>
+</div>
+</div>
+
+<!-- nearby -->
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<h2 style="margin: 0; font-family: 'Zen Kaku Gothic New', sans-serif; font-weight: 900; font-size: 22px;">直島のほかの施設</h2>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;">
+<a href="#benesse" style="border-radius: 14px; background: #F3F5F9; padding: 14px; display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: #101828; min-height: 92px;"><div style="display: flex; align-items: center; gap: 6px;"><div style="width: 9px; height: 9px; border-radius: 50%; background: #1F7A4D;"></div><div style="font-size: 11px; font-weight: 700; color: #5A6270;">今日 開</div></div><div style="font-size: 15px; font-weight: 900; line-height: 1.4;">ベネッセハウス ミュージアム</div></a>
+<a href="#sento" style="border-radius: 14px; background: #F3F5F9; padding: 14px; display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: #101828; min-height: 92px;"><div style="display: flex; align-items: center; gap: 6px;"><div style="width: 9px; height: 9px; border-radius: 50%; background: #B9B5A9;"></div><div style="font-size: 11px; font-weight: 700; color: #5A6270;">今日 不明</div></div><div style="font-size: 15px; font-weight: 900; line-height: 1.4;">直島銭湯</div></a>
+<a href="#naoshima-all" style="border-radius: 14px; border: 2px solid #0F2C59; padding: 14px; display: flex; align-items: center; justify-content: center; text-decoration: none; color: #0F2C59; font-size: 15px; font-weight: 900; min-height: 92px;">直島の施設をすべて見る</a>
+</div>
+</div>
+
+<!-- trust -->
+<div data-sitemill-trust="true" style="padding: 16px 0 0; border-top: 1px solid #E3E6EC; display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #5A6270; line-height: 1.6;">
+<div><span style="color: #101828; font-weight: 700;">情報元</span> 地中美術館 公式サイト（ベネッセアートサイト直島） ・ <span style="color: #101828; font-weight: 700;">取得日時</span> <span data-sitemill-volatile="true">2026年9月19日 06:10</span></div>
+<div><span style="color: #101828; font-weight: 700;">運営者</span> Japan Open Today ・ <a href="#contact">お問い合わせ</a> ・ <a href="#data">出典一覧</a> ・ 判定は「開いている」「休み」「不明」の3つ</div>
+</div>
+
+</div>
+
+<!-- right column (sticky on PC) -->
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<div style="height: 260px; border-radius: 16px; background: #D5DBE3; display: flex; align-items: center; justify-content: center; color: #5A6270; font-size: 13px;">写真（Wikimedia Commons の CC BY 4.0 画像）</div>
+<div style="font-size: 11px; color: #5A6270;">Fotointheworld（CC BY 4.0）・ 出典ページ（Wikimedia Commons）・ 取得 2026年9月12日</div>
+</div>
+<a href="#official" style="display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 56px; background: {{accent}}; color: #FFFFFF; border-radius: 14px; font-size: 16px; font-weight: 900; text-decoration: none;">公式ページで予約・確認する ↗</a>
+<div style="height: 200px; border-radius: 16px; background: #E9EEF5; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #5A6270; font-size: 13px;"><div>Google マップ（埋め込み）</div><div style="font-size: 11px;">ピンのラベルは表示言語に追従</div></div>
+<div style="font-size: 12px; color: #5A6270; line-height: 1.6; padding: 0 4px;">この列はスクロールしても画面内に残ります（sticky）。スマホでは写真と主ボタンが判定の直後に並び、下部に固定バーが出ます。</div>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#E8613A","options":["#E8613A","#C4562B","#D9622B"]},"$preview":{"width":1280,"height":1560}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#E8613A' };
+  }
+}
+</script>
+</body>
+</html>

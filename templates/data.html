@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="container page">
 <h1>{{ t('data.heading') }}</h1>
 <p class="lead">{{ t('data.lead') }}</p>
 <h2 class="section-head">{{ t('data.sources') }}</h2>
@@ -30,4 +31,5 @@
   </li>
   {% endfor %}
 </ul>
+</div>
 {% endblock %}

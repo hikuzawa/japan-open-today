@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="container page">
 <h1>{{ t('home.heading') }}</h1>
 <p class="lead">{{ t('home.lead') }}</p>
 {# 日付は数字の**前**に出す。何の日の数字か分からないまま読ませない #}
@@ -26,4 +27,5 @@
   <a class="chip" href="{{ locale.url_path('areas/' ~ a.slug ~ '/') }}">{{ a.name(locale.code) }}</a>
   {% endfor %}
 </nav>
+</div>
 {% endblock %}

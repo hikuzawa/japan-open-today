@@ -3,6 +3,7 @@
    ここを 1 枚挟むことで計測ビーコンが 1 回動き、どのページのどの枠から押されたかが数えられる。
    noindex（sitemap にも出ない）。JavaScript を切っていてもボタンで進める #}
 {% block content %}
+<div class="container page">
 <h1>{{ t('affiliate.go_heading') }}</h1>
 {{ ui.ad_notice([offer], locale) }}
 <p class="lead">{{ t('affiliate.go_lead', advertiser=offer.advertiser, name=offer.name or offer.label) }}</p>
@@ -46,4 +47,5 @@
   window.setTimeout(go, 1500);
 })();
 </script>
+</div>
 {% endblock %}
