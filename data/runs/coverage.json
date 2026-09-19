@@ -1,5 +1,5 @@
 {
-  "today": "2026-09-19",
+  "today": "2026-09-20",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -528,13 +528,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -621,13 +621,13 @@
       "missing": [
         "fees"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -667,13 +667,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 3,
-        "closed": 4
+        "closed": 4,
+        "open": 3
       }
     },
     {
@@ -690,13 +690,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -1461,13 +1461,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -2989,7 +2989,7 @@
       "spot_id": "mitoyo-kanko-128",
       "name": "粟島",
       "spot_type": "open_air",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address"
@@ -3000,13 +3000,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 1,
-        "unknown": 6
+        "unknown": 6,
+        "open": 1
       }
     },
     {
@@ -4511,13 +4511,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -6559,7 +6559,7 @@
     },
     "open_air": {
       "total": 127,
-      "settled": 127
+      "settled": 126
     },
     "untyped": 0
   },
@@ -6572,12 +6572,12 @@
     "reservation_required": 51
   },
   "states": {
-    "open": 138,
-    "unknown": 139,
-    "closed": 4
+    "open": 133,
+    "unknown": 140,
+    "closed": 8
   },
   "unknown_reasons": {
-    "no_data": 134,
+    "no_data": 135,
     "irregular_closed": 4,
     "rule_unsupported": 1
   }

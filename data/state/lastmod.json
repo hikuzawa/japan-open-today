@@ -1,4 +1,5 @@
 {
+ "layout": "sha256:e3835ccb3a88a80a5fdcd2617c92113a759e1261c820d35b9303880023dccb83",
  "pages": {
   "about/index.html": {
    "fingerprint": "sha256:2e3ba4141b11e4aba1f9adee66402d7a7cd188ab31e36d28fb920072da1694a8",
@@ -517,8 +518,8 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/mitoyo-kanko-128/index.html": {
-   "fingerprint": "sha256:2398cc6e5c9638805a8b95d10ce7de964de904255b518ce94ca2340e6f79f691",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:9fb4115a1f72ed95b24412026d4facd3102bf08eb9bd0aa94ea412f9c7f3e17b",
+   "lastmod": "2026-09-20"
   },
   "en/spots/mitoyo/mitoyo-kanko-129/index.html": {
    "fingerprint": "sha256:d457e450a286ab8a30216bd512bb3d7b536fd42446f4dffb43d2484c67079829",
@@ -997,8 +998,8 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/city-283/index.html": {
-   "fingerprint": "sha256:5ca5015665df632b858c8a1877e41889e5e1a50efef149848b5ee283f0cbd51a",
-   "lastmod": "2026-09-18"
+   "fingerprint": "sha256:be88094a88db71c99b6fe664005690de8403fa899b808fdc2c698bb52a31da81",
+   "lastmod": "2026-09-20"
   },
   "en/spots/takamatsu/city-284/index.html": {
    "fingerprint": "sha256:2bd818bd9be55cf5eb656ee44436f963ed9eeba211876baa6a11a0ddbd5903b3",
@@ -1653,8 +1654,8 @@
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/mitoyo-kanko-128/index.html": {
-   "fingerprint": "sha256:28fbaf5c88b9f235f39be8cf508bc781bed140b478fc447c3f6d4efaaf7676db",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:b8cadefd1798a9e74a7d146226d66de452db3cdd55df4b2fc5415df35228f77d",
+   "lastmod": "2026-09-20"
   },
   "spots/mitoyo/mitoyo-kanko-129/index.html": {
    "fingerprint": "sha256:bb0bb8d39f52394f725e0aa238dade65b88700f9fd5e076439801b2a0239a334",
@@ -2133,8 +2134,8 @@
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/city-283/index.html": {
-   "fingerprint": "sha256:4f29d732991b32293f72badfde12dd3aadf11413e594c7fed04d316cea14e178",
-   "lastmod": "2026-09-18"
+   "fingerprint": "sha256:179be4d0a1c4f0d84f5e7c8e89fd4157ea81dbde431aa8f441a5d8445a58ceb4",
+   "lastmod": "2026-09-20"
   },
   "spots/takamatsu/city-284/index.html": {
    "fingerprint": "sha256:dd5a7c96325a3c76c5b8d715bbd531bf71d92108d3580a598e24f34ef95dddb4",
@@ -2841,8 +2842,8 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/mitoyo-kanko-128/index.html": {
-   "fingerprint": "sha256:a6684671ef16b18948a236449ff47bfea28a17c3a193dbe6c76b00565b40fdb3",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:00e2c911ff31b78bbedb08fd66f6bfe4002d556580d4c7885d111a7f89b4e057",
+   "lastmod": "2026-09-20"
   },
   "zh-hant/spots/mitoyo/mitoyo-kanko-129/index.html": {
    "fingerprint": "sha256:3b00379fa511468504c4f0b2fe4d64b0932eb3486c40967427b15dd7eb155bbb",
@@ -3321,8 +3322,8 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/city-283/index.html": {
-   "fingerprint": "sha256:7740cf9ee3a4a853b4b8ba1e3063c5e7a1b4401559b91180a53c889084066d1b",
-   "lastmod": "2026-09-18"
+   "fingerprint": "sha256:79982a40efb28a9a9bba23a43db0d41c3776f552a59b887152a295f259b9f706",
+   "lastmod": "2026-09-20"
   },
   "zh-hant/spots/takamatsu/city-284/index.html": {
    "fingerprint": "sha256:af2e9d112dabc326984c6b65feb32a17937f3c3bb9736b73c87203dfbf6e9e46",
