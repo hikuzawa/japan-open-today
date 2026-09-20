@@ -161,6 +161,29 @@
 </li>
 {% endmacro %}
 
+{# 施設ページの写真は画面の上に出る＝LCP になる。sitemill の photo_figure は loading="lazy" で、
+   Lighthouse も「LCP の画像を lazy にしない」と指摘する（本番で LCP 6.0 秒）。ここでは同じ印
+   （data-sitemill-asset）とクレジットのまま、先に読む形で描く。エンジンに寄せたいもの（5）。 #}
+{% macro photo_figure_eager(asset, locale, src) %}
+<figure class="sm-photo" data-embed="asset">
+  <img src="{{ src }}" alt="{{ asset.alt_text }}" data-sitemill-asset="{{ asset.asset_id }}"
+       loading="eager" fetchpriority="high" decoding="async">
+  <figcaption class="sm-credit">
+    <span class="sm-credit-text">
+      {%- if asset.author and asset.license -%}
+      {{ t_in(locale, 'asset.credit', author=asset.author, license=asset.license.short_label) }}
+      {%- else -%}
+      {{ asset.credit_text }}
+      {%- endif -%}
+    </span>
+    {% if asset.page_url %}
+    <a href="{{ asset.page_url }}" rel="noopener nofollow" target="_blank">{{ t_in(locale, 'asset.credit_source') }}</a>
+    {% endif %}
+    <span class="sm-credit-fetched">{{ t_in(locale, 'asset.fetched', when=fmt_date(asset.fetched_at, locale)) }}</span>
+  </figcaption>
+</figure>
+{% endmacro %}
+
 {# 一次情報への主ボタン。常に主導線（ADR 0007） #}
 {% macro primary_link(url, label) %}
 <a class="primary" href="{{ url }}" rel="noopener" target="_blank">{{ label }}<span aria-hidden="true"> ↗</span></a>

@@ -44,3 +44,13 @@
 - なぜエンジン向きか: 「一次情報へのリンクを常に主導線に置く」は ADR 0007 の決めごとで、
   どのサービスでも同じ
 - 移すときの注意: 広告の枠を固定バーに入れない（ADR 0012 の掲載場所の宣言と食い違う）
+
+## 5. 画面の上に出る写真は先に読む（`photo_figure` の優先度）
+
+- いまの実装: `templates/partials/ui.html` の `photo_figure_eager(asset, locale, src)`
+  （sitemill の `photo_figure` の写しに `loading="eager" fetchpriority="high"` を足したもの）
+- なぜエンジン向きか: `sitemill/macros.html` の `photo_figure` は常に `loading="lazy"` で、
+  画面の上に出る 1 枚（= LCP）にもそれが当たる。Lighthouse は「LCP の画像を lazy にしない」
+  「fetchpriority=high を付ける」と指摘し、本番の施設ページは LCP 6.0 秒だった
+- 移すときの形: `photo_figure(..., priority=false)` の引数を足し、true のときだけ
+  `loading="eager" fetchpriority="high"` にする。既定は今までどおり lazy

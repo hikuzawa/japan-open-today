@@ -138,7 +138,7 @@
   {# 右列。PC では画面に残る（sticky）。スマホでは判定の直後に来る #}
   <aside class="col-side">
     {% if photo %}
-    {{ sm.photo_figure(photo, locale, '/static/assets/' ~ photo.asset_id ~ photo.local_path.suffix) }}
+    {{ ui.photo_figure_eager(photo, locale, '/static/assets/' ~ photo.asset_id ~ photo.local_path.suffix) }}
     {% endif %}
     <p class="actions actions-block">{{ ui.primary_link(spot.official_url, t('facts.official')) }}</p>
     {% if map.src_url %}
