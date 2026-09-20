@@ -1,55 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
+{# ヒーロー帯（藍）。島へ渡る船と、島を動く鉄道・バス #}
+<div class="hero">
+  <div class="container hero-inner">
+    <div class="hero-main">
+      <nav class="hero-crumbs" aria-label="{{ t('nav.home') }}">
+        <a href="{{ locale.url_path('') }}">{{ t('nav.home') }}</a> › {{ t('nav.transport') }}
+      </nav>
+      <h1>{{ t('transport.heading') }}</h1>
+      <p class="lead">{{ t('transport.lead') }}</p>
+      <p class="lead" data-sitemill-volatile>{{ t('verdict.heading', date=today|date_short_l) }}</p>
+    </div>
+  </div>
+</div>
+
 <div class="container page">
-<h1>{{ t('transport.heading') }}</h1>
-<p class="lead">{{ t('transport.lead') }}</p>
-<p class="asof" data-sitemill-volatile>{{ t('verdict.heading', date=today|date_short_l) }}</p>
 {% for group in operators %}
 <section class="operator">
-  <h2 class="section-head">{{ group.operator.name(locale.code) }}</h2>
-  <p class="actions">{{ ui.primary_link(group.operator.official_url, t('facts.official')) }}</p>
-  <ul class="routes">
-    {% for row in group.routes %}
-    <li class="route">
-      <span class="route-name">{{ row.route.name(locale.code) }}</span>
-      {{ ui.state_badge(row.verdict, locale, short=true) }}
-      <span class="route-facts">
-        {% if row.route.first_departure.ok %}{{ t('transport.first') }}
-          {{ row.route.first_departure.value }}{% endif %}
-        {% if row.route.last_departure.ok %}/ {{ t('transport.last') }}
-          {{ row.route.last_departure.value }}{% endif %}
-        {% if row.route.duration_minutes.ok %}/ {{ t('transport.duration') }}
-          {{ t('facts.minutes', n=row.route.duration_minutes.value) }}{% endif %}
-      </span>
-      {% if row.route.fares %}
-      <span class="route-facts">
-        {% for fare in row.route.fares if fare.amount.ok %}
-        <span class="fee">{{ t('fee.' ~ fare.category) }} {{ fare.amount.value|money_l }}</span>
-        {% endfor %}
-      </span>
-      {% endif %}
-      {% if row.route.service_days_quote %}
-      <span class="route-facts">{{ t('transport.service_days') }}
-        {{ t('facts.quote', text=row.route.service_days_quote) }}</span>
-      {% else %}
-      {# 運航日が取れていないことを**書く**。始発・運賃だけが出ていると、
-         今日も動いていると読めてしまう（運休を見落とす形にしない。ADR 0004） #}
-      <span class="route-facts route-warning">{{ t('transport.service_days_unknown') }}</span>
-      {% endif %}
-      <span class="actions">
-        {% if row.route.timetable_url %}
-        <a class="secondary" href="{{ row.route.timetable_url }}" rel="noopener"
-           target="_blank">{{ t('transport.timetable') }}</a>
-        {% endif %}
-        {% if row.route.fare_url %}
-        <a class="secondary" href="{{ row.route.fare_url }}" rel="noopener"
-           target="_blank">{{ t('transport.fares') }}</a>
-        {% endif %}
-      </span>
-      {{ ui.reasons(row.verdict, locale) }}
-    </li>
-    {% endfor %}
-  </ul>
+  <div class="operator-head">
+    <h2 class="section-head">{{ group.operator.name(locale.code) }}</h2>
+    <a class="boarding-link" href="{{ group.operator.official_url }}" rel="noopener"
+       target="_blank">{{ t('facts.official') }}<span aria-hidden="true"> ↗</span></a>
+  </div>
+  {% for row in group.routes %}
+  {{ ui.boarding_pass(row.route, row.verdict, locale) }}
+  {{ ui.reasons(row.verdict, locale) }}
+  {% endfor %}
 </section>
 {% endfor %}
 </div>

@@ -1,16 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
+{# ヒーロー帯（藍）。問いは「今日どこへ行けるか」なので、日付と件数を最初に出す #}
+<div class="hero">
+  <div class="container hero-inner">
+    <div class="hero-main">
+      <h1>{{ t('home.heading') }}</h1>
+      <p class="lead">{{ t('home.lead') }}</p>
+    </div>
+    {# 日付は数字の**前**に出す。何の日の数字か分からないまま読ませない #}
+    <div class="hero-card counts-card" data-sitemill-volatile>
+      <p class="week-title">{{ t('verdict.heading', date=today|date_short_l) }}</p>
+      {{ ui.stat_strip([
+        {"value": counts.open, "label": t('home.open_count')},
+        {"value": counts.no_hours, "label": t('home.no_hours_count')},
+        {"value": counts.unknown, "label": t('home.unknown_count')},
+        {"value": counts.closed, "label": t('home.closed_count')},
+      ]) }}
+    </div>
+  </div>
+</div>
+
 <div class="container page">
-<h1>{{ t('home.heading') }}</h1>
-<p class="lead">{{ t('home.lead') }}</p>
-{# 日付は数字の**前**に出す。何の日の数字か分からないまま読ませない #}
-<p class="asof" data-sitemill-volatile>{{ t('verdict.heading', date=today|date_short_l) }}</p>
-{{ ui.stat_strip([
-  {"value": counts.open, "label": t('home.open_count')},
-  {"value": counts.no_hours, "label": t('home.no_hours_count')},
-  {"value": counts.unknown, "label": t('home.unknown_count')},
-  {"value": counts.closed, "label": t('home.closed_count')},
-]) }}
 {# 「不明」の中身は 2 種類ある。屋外で時間の定めが無い場所と、公式に記載が無い施設 #}
 <p class="note">{{ t('home.counts_note') }}
   <a href="{{ locale.url_path('about/') }}">{{ t('home.counts_note_link') }}</a></p>

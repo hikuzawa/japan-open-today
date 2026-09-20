@@ -431,7 +431,9 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         # 地図を埋め込むのは鍵があるときだけ。無いときは外部リンクなので、
                         # プライバシーポリシーの書き方も変わる
                         "has_maps": bool(ws.secrets.google_maps_embed_key),
-                        "analytics": bool(ws.secrets.cf_web_analytics_token),
+                        # 名前を analytics にすると、ビルドの共通変数（解析の埋め込み）を
+                        # ページの文脈で上書きしてしまい、<head> に "False" が出る
+                        "analytics_on": bool(ws.secrets.cf_web_analytics_token),
                         # 広告はまだ 1 枠も出していない（ADR 0006）。出す日にここが True になる
                         "ads_live": False,
                     },

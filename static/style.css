@@ -44,6 +44,10 @@ a { color: var(--indigo-ink); text-decoration: underline; text-underline-offset:
 a:hover { color: #0A1F40; }
 a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 img { max-width: 100%; height: auto; }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
 .skip { position: absolute; left: -9999px; }
 .skip:focus { left: 8px; top: 8px; background: var(--bg); padding: 8px 12px; z-index: 30; }
 
@@ -94,8 +98,8 @@ img { max-width: 100%; height: auto; }
 .hero { background: var(--indigo); color: #FFFFFF; padding: 18px 0 30px; }
 .hero-inner { display: flex; flex-direction: column; gap: 16px; }
 .hero-crumbs { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; color: rgba(255, 255, 255, 0.85); }
-.hero-crumbs a { color: #FFFFFF; text-decoration: none; }
-.hero-crumbs a:hover { color: #FFFFFF; text-decoration: underline; }
+.hero-crumbs a { color: #FFFFFF; text-decoration: underline; text-underline-offset: 3px; }
+.hero-crumbs a:hover { color: #FFFFFF; }
 .hero h1 { margin: 6px 0 0; font-size: 2.15rem; font-weight: 800; line-height: 1.15; }
 .hero .lead { color: rgba(255, 255, 255, 0.88); margin: 0; }
 @media (min-width: 64rem) {
@@ -151,22 +155,23 @@ img { max-width: 100%; height: auto; }
 .week-unknown .week-date { color: var(--unknown-ink); }
 .week-unknown .week-mark { width: auto; height: auto; border-radius: 0; background: none;
   font-size: 0.7rem; font-weight: 800; color: var(--unknown-ink); line-height: 8px; }
-/* スマホでは藍の帯から白いカードを持ち上げる。PC ではヒーローの右列に置く */
-.week-card {
-  margin: -22px var(--gutter) 0; background: var(--bg); border-radius: var(--radius);
+/* スマホでは藍の帯から白いカードを持ち上げる。PC ではヒーローの中に溶かす。
+   週の帯とトップの件数で同じ見た目を使う */
+.hero-card {
+  margin: -22px var(--gutter) 0; background: var(--bg); color: var(--ink); border-radius: var(--radius);
   box-shadow: var(--shadow); padding: 14px; position: relative; z-index: 1;
 }
 @media (min-width: 64rem) {
-  .week-card { margin: 0; background: transparent; box-shadow: none; padding: 0; }
-  .week-card .week-title, .week-card .week-legend { color: rgba(255, 255, 255, 0.85); }
-  .week-card .week-day { background: rgba(255, 255, 255, 0.12); color: #FFFFFF; }
-  .week-card .week-wd, .week-card .week-state { color: rgba(255, 255, 255, 0.85); }
-  .week-card .week-today { background: #FFFFFF; color: var(--indigo); }
-  .week-card .week-today .week-wd, .week-card .week-today .week-state { color: var(--indigo); }
-  .week-card .week-mark { background: #7BE0AE; }
-  .week-card .week-closed .week-mark { background: #FFB08A; }
-  .week-card .week-unknown { background: transparent; border-color: rgba(255, 255, 255, 0.5); }
-  .week-card .week-unknown .week-date, .week-card .week-unknown .week-mark { color: #FFFFFF; }
+  .hero-card { margin: 0; background: transparent; color: #FFFFFF; box-shadow: none; padding: 0; }
+  .hero-card .week-title, .hero-card .week-legend { color: rgba(255, 255, 255, 0.85); }
+  .hero-card .week-day { background: rgba(255, 255, 255, 0.12); color: #FFFFFF; }
+  .hero-card .week-wd, .hero-card .week-state { color: rgba(255, 255, 255, 0.85); }
+  .hero-card .week-today { background: #FFFFFF; color: var(--indigo); }
+  .hero-card .week-today .week-wd, .hero-card .week-today .week-state { color: var(--indigo); }
+  .hero-card .week-mark { background: #7BE0AE; }
+  .hero-card .week-closed .week-mark { background: #FFB08A; }
+  .hero-card .week-unknown { background: transparent; border-color: rgba(255, 255, 255, 0.5); }
+  .hero-card .week-unknown .week-date, .hero-card .week-unknown .week-mark { color: #FFFFFF; }
 }
 
 /* ===== 2 カラム（PC） ===== */
@@ -309,6 +314,13 @@ body:has(.bottom-bar) .site-footer { padding-bottom: 96px; }
 /* ===== 統計の帯・チップ ===== */
 .stats { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 14px; margin: 16px 0 0;
   background: var(--surface-2); border-radius: var(--radius); }
+.counts-card .stats { background: transparent; padding: 0; margin: 8px 0 0; gap: 8px 4px;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 30rem) { .counts-card .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 64rem) {
+  .counts-card .stat-value { color: #FFFFFF; }
+  .counts-card .stat-label { color: rgba(255, 255, 255, 0.85); }
+}
 .stat { flex: 1 1 6rem; text-align: center; }
 .stat-value { display: block; font-size: 2rem; font-weight: 800; color: var(--indigo-ink); line-height: 1.2; }
 .stat-label { display: block; font-size: 0.85rem; color: var(--ink-2); }
@@ -321,7 +333,11 @@ body:has(.bottom-bar) .site-footer { padding-bottom: 96px; }
 
 /* ===== 写真・地図 ===== */
 .sm-photo, .photo-block { margin: 0; }
-.sm-photo img, .photo-block img { border-radius: var(--radius); width: 100%; display: block; }
+/* 写真は場所を先に取る（読み込み時にクレジットがずれない）。見本と同じく高さを決めて切り抜く */
+.sm-photo img, .photo-block img {
+  border-radius: var(--radius); width: 100%; display: block;
+  aspect-ratio: 3 / 2; object-fit: cover;
+}
 .sm-credit { font-size: 0.75rem; color: var(--ink-2); margin-top: 6px; display: block; }
 .sm-credit span { display: inline; margin-right: 8px; }
 .map-embed { margin: 0; }
@@ -357,6 +373,8 @@ body:has(.bottom-bar) .site-footer { padding-bottom: 96px; }
 .trust-list dt { font-weight: 700; color: var(--ink-2); }
 .trust-list dd { margin: 0; }
 .trust-sources { margin: 0; padding-left: 1.2em; }
+.trust-sources li { margin-bottom: 2px; }
+.trust-list a, .trust-sources a { display: inline-block; padding: 4px 0; line-height: 1.5; }
 .disclaimer, .copyright { font-size: 0.8rem; color: var(--ink-2); }
 .foot-nav { display: flex; flex-wrap: wrap; gap: 16px; margin: 12px 0; font-size: 0.9rem; }
 

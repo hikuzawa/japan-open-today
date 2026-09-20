@@ -1,15 +1,29 @@
 {% extends "base.html" %}
 {% block content %}
+{# ヒーロー帯（藍）。エリア名と、その日の件数 #}
+<div class="hero">
+  <div class="container hero-inner">
+    <div class="hero-main">
+      <nav class="hero-crumbs" aria-label="{{ t('nav.home') }}">
+        <a href="{{ locale.url_path('') }}">{{ t('nav.home') }}</a> › {{ t('home.by_area') }}
+      </nav>
+      <h1>{{ area.name(locale.code) }}</h1>
+    </div>
+    <div class="hero-card counts-card" data-sitemill-volatile>
+      <p class="week-title">{{ t('verdict.heading', date=today|date_short_l) }}</p>
+      {{ ui.stat_strip([
+        {"value": counts.open, "label": t('home.open_count')},
+        {"value": counts.no_hours, "label": t('home.no_hours_count')},
+        {"value": counts.unknown, "label": t('home.unknown_count')},
+        {"value": counts.closed, "label": t('home.closed_count')},
+      ]) }}
+    </div>
+  </div>
+</div>
+
 <div class="container page">
-<h1>{{ area.name(locale.code) }}</h1>
+{# 広告表記は本文の冒頭・最初の広告リンクより前に出す（ADR 0012） #}
 {{ ui.ad_notice(offers, locale) }}
-<p class="asof" data-sitemill-volatile>{{ t('verdict.heading', date=today|date_short_l) }}</p>
-{{ ui.stat_strip([
-  {"value": counts.open, "label": t('home.open_count')},
-  {"value": counts.no_hours, "label": t('home.no_hours_count')},
-  {"value": counts.unknown, "label": t('home.unknown_count')},
-  {"value": counts.closed, "label": t('home.closed_count')},
-]) }}
 {% if routes %}{{ ui.route_links(routes, locale) }}{% endif %}
 <h2 class="section-head">{{ t('area.spots') }}</h2>
 <ul class="cards">

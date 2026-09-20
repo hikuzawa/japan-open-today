@@ -6,7 +6,8 @@
    言語が増えても見た目が変わらない #}
 {% macro lang_switch(locales, locale, meta) %}
 <details class="lang">
-  <summary aria-label="{{ t_in(locale, 'nav.language') }}">
+  <summary>
+    <span class="visually-hidden">{{ t_in(locale, 'nav.language') }}</span>
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"></path></svg>
     {{ locale.display }}
@@ -77,7 +78,7 @@
 {# 7 日分の帯（切符の半券）。数日後に見ても事実として読める（ADR 0004）。
    丸は色だけの意味にならないよう、状態の文字を必ず添える #}
 {% macro week_strip(week, locale) %}
-<section class="week week-card" data-sitemill-volatile aria-label="{{ t_in(locale, 'verdict.week') }}">
+<section class="week hero-card" data-sitemill-volatile aria-label="{{ t_in(locale, 'verdict.week') }}">
   <div class="week-head">
     <h2 class="week-title">{{ t_in(locale, 'verdict.week') }}</h2>
     <span class="week-legend">{{ t_in(locale, 'verdict.week_legend') }}</span>
