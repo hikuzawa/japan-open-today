@@ -660,14 +660,31 @@ def _spot_row(
     assets: dict[str, list[Asset]],
 ) -> dict[str, Any]:
     """一覧に出すカード 1 枚。"""
+    photo = (assets.get(spot.spot_id) or [None])[0]
     return {
         "spot": spot,
         "name": spot.name(locale.code),
         "url": locale.url_path(spot.path()),
         "verdict": verdict,
         "area": area(spot.area),
-        "photo": (assets.get(spot.spot_id) or [None])[0],
+        "photo": photo,
+        "photo_url": _card_photo_url(ws, photo),
     }
+
+
+def _card_photo_url(ws: Workspace, photo: Asset | None) -> str:
+    """カードに出す写真の URL。小さい変種（tools/sync_assets）があればそちらを使う。
+
+    カードの枠は 170〜290px 幅なので、本体（長辺 900px）を読むと 1 枚 100KB 以上が無駄になる。
+    変種がまだ作られていないときは本体に落とす（存在しないファイルを指さない）。
+    """
+    if photo is None:
+        return ""
+    suffix = photo.local_path.suffix
+    card = f"{photo.asset_id}-card{suffix}"
+    if (ws.static_dir / "assets" / card).is_file():
+        return f"/static/assets/{card}"
+    return f"/static/assets/{photo.asset_id}{suffix}"
 
 
 def search_index(ws: Workspace, ds: Dataset, *, now: datetime | None = None) -> dict[str, Any]:

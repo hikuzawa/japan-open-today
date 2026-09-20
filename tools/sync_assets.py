@@ -14,6 +14,9 @@
 `assets.json` から描くので、この処理は触らない。CC BY 系は改変を許しており、表示のための縮小に
 追加の表記は要らない（切り抜きはしない。縦横比はそのまま）。原寸は `data/assets/` に残る。
 
+一覧のカード用に、同じ写真の小さい変種（`<asset id>-card.jpg`、長辺 400px）も書く。
+カードの枠は 170〜290px 幅なので、本体の 900px を読むと 1 枚あたり 100KB 以上の無駄になる。
+
 使い方: uv run python -m tools.sync_assets [--edge 900] [--quality 80]
 """
 
@@ -30,6 +33,10 @@ from sitemill.settings import Workspace
 # 長辺の上限。900px の箱に収める（横長は 900x600、縦長は 603x900 あたりになる）
 MAX_EDGE = 900
 JPEG_QUALITY = 80
+# 一覧のカードは 170〜290px 幅でしか出ない。2 倍でも 400px で足りるので、別に 1 枚書く
+CARD_EDGE = 400
+CARD_SUFFIX = "-card"
+
 # 縮小できる形式。ほかの形式（gif など）はそのまま複写する
 RESIZABLE = {".jpg", ".jpeg", ".png", ".webp"}
 
@@ -89,7 +96,9 @@ def main() -> int:
                 skipped += 1
                 continue
             target = dest / asset.local_path.name
+            card = dest / f"{target.stem}{CARD_SUFFIX}{target.suffix}"
             keep.add(target.name)
+            keep.add(card.name)
             source = asset.local_path.stat()
             # 作り直すのは、無いとき・原寸のほうが新しいとき・まだ縮小していない
             # （原寸と同じ大きさで置いてある）とき
@@ -102,8 +111,11 @@ def main() -> int:
                 asset.local_path, target, max_edge=args.edge, quality=args.quality
             ):
                 shrunk += 1
+            # カード用は、本体を作り直したときと、まだ無いときに書く
+            if stale or not card.is_file():
+                fit_box(asset.local_path, card, max_edge=CARD_EDGE, quality=args.quality)
             before += source.st_size
-            after += target.stat().st_size
+            after += target.stat().st_size + card.stat().st_size
             copied += 1
     # 採用をやめた画像の実体が残ると、そのまま dist に載って配信される（原寸のままのものもある）
     removed = 0

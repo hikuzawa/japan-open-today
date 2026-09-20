@@ -145,7 +145,7 @@
 <li class="card">
   <a class="card-link" href="{{ row.url }}">
     {% if row.photo %}
-    <img class="card-photo" src="/static/assets/{{ row.photo.asset_id }}{{ row.photo.local_path.suffix }}"
+    <img class="card-photo" src="{{ row.photo_url }}"
          alt="" data-sitemill-asset="{{ row.photo.asset_id }}" loading="lazy" decoding="async" width="480" height="320">
     {% endif %}
     <span class="card-head" data-sitemill-volatile>
