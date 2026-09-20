@@ -178,9 +178,17 @@ img { max-width: 100%; height: auto; }
 .layout { display: flex; flex-direction: column; padding-top: 18px; }
 .col-main { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 .col-side { display: flex; flex-direction: column; gap: 14px; margin: 16px 0 0; }
-/* スマホの並び: 判定 → 公式のお知らせ → 写真と主ボタン → 基本情報 */
-.layout > .notices { order: -2; }
-.layout > .col-side { order: -1; }
+/* スマホの並び: 判定 → 公式のお知らせ → 写真と主ボタン → 基本情報 → 地図。
+   地図（Google の埋め込み）は 300KB 超の JS を読むので、画面の上に置くと LCP が 2 秒遅れる。
+   右列を display:contents にして、地図だけ最後へ送る */
+.layout > .notices { order: -3; }
+@media (max-width: 63.999rem) {
+  .col-side { display: contents; }
+  .col-side > .sm-photo, .col-side > .photo-block { order: -2; margin-top: 16px; }
+  .col-side > .actions { order: -1; margin: 12px 0 0; }
+  .col-main { order: 0; margin-top: 4px; }
+  .col-side > .map-embed { order: 1; margin-top: 20px; }
+}
 @media (min-width: 64rem) {
   .layout { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 0 40px; padding-top: 32px; }
   .layout > .notices { order: 0; grid-column: 1; grid-row: 1; }
