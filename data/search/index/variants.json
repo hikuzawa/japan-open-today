@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-20T07:34:11.664545+09:00",
+  "checked_at": "2026-09-21T07:34:35.484349+09:00",
   "urls": {
     "http://japan-open-today.com/": {
       "verdict": "PASS",
@@ -7,7 +7,7 @@
       "last_crawl": "2026-09-13T09:18:51Z",
       "google_canonical": "http://japan-open-today.com/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-20"
+      "checked_on": "2026-09-21"
     },
     "http://www.japan-open-today.com/": {
       "verdict": "NEUTRAL",
@@ -15,7 +15,7 @@
       "last_crawl": "2026-09-19T14:23:34Z",
       "google_canonical": "https://japan-open-today.com/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-20"
+      "checked_on": "2026-09-21"
     },
     "https://www.japan-open-today.com/": {
       "verdict": "NEUTRAL",
@@ -23,7 +23,7 @@
       "last_crawl": "2026-09-19T14:23:34Z",
       "google_canonical": "https://japan-open-today.com/",
       "robots": "ALLOWED",
-      "checked_on": "2026-09-20"
+      "checked_on": "2026-09-21"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "today": "2026-09-20",
+  "today": "2026-09-21",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -84,13 +84,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -131,13 +131,13 @@
       "missing": [
         "fees"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -295,7 +295,8 @@
       ],
       "today": "open",
       "today_reasons": [
-        "regular_hours"
+        "regular_hours",
+        "holiday_open_exception"
       ],
       "week": {
         "open": 6,
@@ -353,7 +354,7 @@
       "spot_id": "taka-spo",
       "name": "はくちょう温泉",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -364,20 +365,20 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "substitute_ambiguous"
       ],
       "week": {
-        "open": 6,
-        "unknown": 1
+        "unknown": 1,
+        "open": 6
       }
     },
     {
       "spot_id": "town-375",
       "name": "三木町総合運動公園",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -388,13 +389,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "substitute_ambiguous"
       ],
       "week": {
-        "open": 6,
-        "unknown": 1
+        "unknown": 1,
+        "open": 6
       }
     },
     {
@@ -458,13 +459,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 2,
-        "open": 5
+        "open": 5,
+        "closed": 2
       }
     },
     {
@@ -528,13 +529,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -621,13 +622,13 @@
       "missing": [
         "fees"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -715,7 +716,8 @@
       "missing": [],
       "today": "open",
       "today_reasons": [
-        "regular_hours"
+        "regular_hours",
+        "holiday_open_exception"
       ],
       "week": {
         "open": 6,
@@ -739,7 +741,8 @@
       ],
       "today": "open",
       "today_reasons": [
-        "regular_hours"
+        "regular_hours",
+        "holiday_open_exception"
       ],
       "week": {
         "open": 6,
@@ -763,7 +766,8 @@
       ],
       "today": "open",
       "today_reasons": [
-        "regular_hours"
+        "regular_hours",
+        "holiday_open_exception"
       ],
       "week": {
         "open": 6,
@@ -912,7 +916,7 @@
       "spot_id": "hiragagennai",
       "name": "平賀源内旧邸",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -923,13 +927,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "substitute_ambiguous"
       ],
       "week": {
-        "open": 6,
-        "unknown": 1
+        "unknown": 1,
+        "open": 6
       }
     },
     {
@@ -1109,13 +1113,13 @@
       "missing": [
         "fees"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -1225,13 +1229,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -1321,7 +1325,8 @@
       ],
       "today": "open",
       "today_reasons": [
-        "regular_hours"
+        "regular_hours",
+        "holiday_open_exception"
       ],
       "week": {
         "open": 6,
@@ -1366,20 +1371,20 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
       "spot_id": "mimoca",
       "name": "丸亀市猪熊弦一郎現代美術館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -1390,13 +1395,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "substitute_ambiguous"
       ],
       "week": {
-        "open": 6,
-        "unknown": 1
+        "unknown": 1,
+        "open": 6
       }
     },
     {
@@ -1461,13 +1466,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -1601,13 +1606,14 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed",
+        "holiday_open_exception"
       ],
       "week": {
-        "open": 4,
-        "closed": 3
+        "closed": 3,
+        "open": 4
       }
     },
     {
@@ -3743,7 +3749,8 @@
       ],
       "today": "open",
       "today_reasons": [
-        "regular_hours"
+        "regular_hours",
+        "holiday_open_exception"
       ],
       "week": {
         "open": 6,
@@ -3857,13 +3864,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -3997,20 +4004,20 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
       "spot_id": "city-216",
       "name": "雨滝自然科学館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -4021,14 +4028,14 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "substitute_ambiguous"
       ],
       "week": {
-        "open": 4,
         "unknown": 2,
-        "closed": 1
+        "closed": 1,
+        "open": 4
       }
     },
     {
@@ -4039,20 +4046,20 @@
       "fields": [
         "hours",
         "closures",
-        "address"
+        "address",
+        "reservation_required"
       ],
       "missing": [
         "fees",
-        "phone",
-        "reservation_required"
+        "phone"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 2,
-        "open": 5
+        "open": 5,
+        "closed": 2
       }
     },
     {
@@ -4117,7 +4124,8 @@
       "missing": [],
       "today": "open",
       "today_reasons": [
-        "regular_hours"
+        "regular_hours",
+        "holiday_open_exception"
       ],
       "week": {
         "open": 6,
@@ -4336,7 +4344,7 @@
       "spot_id": "town-490",
       "name": "まんのう天文台",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address",
@@ -4347,13 +4355,13 @@
         "closures",
         "fees"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 3,
-        "unknown": 4
+        "unknown": 4,
+        "open": 3
       }
     },
     {
@@ -4443,7 +4451,8 @@
       ],
       "today": "open",
       "today_reasons": [
-        "regular_hours"
+        "regular_hours",
+        "holiday_open_exception"
       ],
       "week": {
         "open": 7
@@ -4465,7 +4474,8 @@
       "missing": [],
       "today": "open",
       "today_reasons": [
-        "regular_hours"
+        "regular_hours",
+        "holiday_open_exception"
       ],
       "week": {
         "open": 6,
@@ -4698,7 +4708,8 @@
       ],
       "today": "open",
       "today_reasons": [
-        "regular_hours"
+        "regular_hours",
+        "holiday_open_exception"
       ],
       "week": {
         "open": 6,
@@ -4719,13 +4730,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -4836,7 +4847,8 @@
       "missing": [],
       "today": "open",
       "today_reasons": [
-        "regular_hours"
+        "regular_hours",
+        "holiday_open_exception"
       ],
       "week": {
         "open": 6,
@@ -4953,7 +4965,8 @@
       ],
       "today": "closed",
       "today_reasons": [
-        "annual_closed"
+        "annual_closed",
+        "holiday_open_exception"
       ],
       "week": {
         "closed": 7
@@ -4976,7 +4989,8 @@
       ],
       "today": "open",
       "today_reasons": [
-        "regular_hours"
+        "regular_hours",
+        "holiday_open_exception"
       ],
       "week": {
         "open": 6,
@@ -5033,7 +5047,7 @@
       "spot_id": "city-160",
       "name": "香風園",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -5044,13 +5058,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "substitute_ambiguous"
       ],
       "week": {
-        "open": 6,
-        "unknown": 1
+        "unknown": 1,
+        "open": 6
       }
     },
     {
@@ -5068,13 +5082,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -5091,13 +5105,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -5140,7 +5154,8 @@
       ],
       "today": "open",
       "today_reasons": [
-        "regular_hours"
+        "regular_hours",
+        "holiday_open_exception"
       ],
       "week": {
         "open": 6,
@@ -5450,7 +5465,7 @@
       "spot_id": "town",
       "name": "ほたる見公園",
       "spot_type": "open_air",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -5461,13 +5476,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "substitute_ambiguous"
       ],
       "week": {
-        "open": 6,
-        "unknown": 1
+        "unknown": 1,
+        "open": 6
       }
     },
     {
@@ -5576,13 +5591,15 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed",
+        "holiday_open_exception",
+        "holiday_open_exception"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -6559,7 +6576,7 @@
     },
     "open_air": {
       "total": 127,
-      "settled": 126
+      "settled": 125
     },
     "untyped": 0
   },
@@ -6569,16 +6586,17 @@
     "fees": 74,
     "address": 262,
     "phone": 250,
-    "reservation_required": 51
+    "reservation_required": 52
   },
   "states": {
-    "open": 133,
-    "unknown": 140,
-    "closed": 8
+    "open": 118,
+    "unknown": 148,
+    "closed": 15
   },
   "unknown_reasons": {
-    "no_data": 135,
+    "no_data": 136,
     "irregular_closed": 4,
+    "substitute_ambiguous": 7,
     "rule_unsupported": 1
   }
 }
