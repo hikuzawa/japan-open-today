@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "sitemill",
+    # 採用画像を表示する幅まで縮小してから static へ置く（tools/sync_assets.py）
+    "pillow>=11.0",
 ]
 
 [project.scripts]

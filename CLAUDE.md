@@ -26,7 +26,7 @@ sitemill の 2 つ目の利用者。香川県の観光施設と交通につい�
 - `uv sync` / `uv run pytest` / `uv run ruff check src tests`
 - `uv run sitemill discover|crawl|extract|heal|build|run|eval` / `uv run sitemill deploy --dry-run`
 - `uv run python -m tools.fetch_assets` 実体の無い採用画像を出典から取り直す（内容が変わっていたら採らない）
-- `uv run python -m tools.sync_assets` 採用画像を `static/assets/` に複写（extract のあと build の前）
+- `uv run python -m tools.sync_assets` 採用画像を**長辺 900px の箱に収めて**`static/assets/` に複写（extract のあと build の前）。原寸は `data/assets/` に残る。採用をやめた実体はここで消える
 - `uv run japan-open-today ad-check` 広告掲載の検査（ADR 0012）／ `ad-urls` 届け出用の掲載 URL
 - `uv run python .github/scripts/check_public_urls.py` 公開 URL の検査（canonical / og:url / hreflang / sitemap / robots が `base_url` を指すか）
 - `uv run python -m tools.report_coverage` 項目の充足率と判定の内訳（unknown の理由）を数える

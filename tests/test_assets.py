@@ -47,3 +47,34 @@ def test_a_rethumbnailed_copy_is_still_the_same_photo(tmp_path: Path) -> None:
 def test_one_photo_for_one_place_passes(tmp_path: Path) -> None:
     _place(tmp_path, "temple-a", _record())
     assert shared_photos(tmp_path) == {}
+
+
+def test_sync_resizes_wide_photos_and_leaves_small_ones(tmp_path: Path) -> None:
+    """表示する幅まで縮めて複写する（採用画像は原寸で 500KB を超える。2026-09-20）。
+
+    細い画像は再エンコードしない（画質を落とさない）。縦横比は変えない（切り抜かない）。
+    """
+    from PIL import Image
+    from tools.sync_assets import fit_box
+
+    wide = tmp_path / "wide.jpg"
+    Image.new("RGB", (3000, 2000), (120, 140, 160)).save(wide, "JPEG", quality=95)
+    out = tmp_path / "wide-out.jpg"
+    assert fit_box(wide, out, max_edge=900) is True
+    with Image.open(out) as im:
+        assert im.size == (900, 600)  # 縦横比はそのまま
+    assert out.stat().st_size < wide.stat().st_size
+
+    # 縦長は高さで決まる（幅だけを見ると 1MB のまま残る）
+    tall = tmp_path / "tall.jpg"
+    Image.new("RGB", (1280, 1912), (90, 110, 130)).save(tall, "JPEG", quality=95)
+    tall_out = tmp_path / "tall-out.jpg"
+    assert fit_box(tall, tall_out, max_edge=900) is True
+    with Image.open(tall_out) as im:
+        assert im.size == (603, 900)
+
+    narrow = tmp_path / "narrow.jpg"
+    Image.new("RGB", (600, 400), (200, 200, 200)).save(narrow, "JPEG", quality=95)
+    same = tmp_path / "narrow-out.jpg"
+    assert fit_box(narrow, same, max_edge=900) is False
+    assert same.read_bytes() == narrow.read_bytes()  # そのまま複写する
