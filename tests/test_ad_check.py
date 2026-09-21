@@ -51,7 +51,7 @@ def _spot_page(
     head = f"/{prefix}" if prefix else ""
     return (
         "<html><body><main>"
-        + ('<p data-ad-notice>広告を含みます</p>' if notice else "")
+        + ("<p data-ad-notice>広告を含みます</p>" if notice else "")
         + f'<a href="{head}/go/klook-tickets/spot-tickets/" rel="{rel_attr}">入場券</a>'
         + "</main></body></html>"
     )
@@ -62,7 +62,7 @@ def _go_page(url: str = TRACK_URL) -> str:
     escaped = url.replace("&", "&amp;")
     return (
         '<html><head><meta name="robots" content="noindex"></head><body><main>'
-        '<p data-ad-notice>広告を含みます</p>'
+        "<p data-ad-notice>広告を含みます</p>"
         f'<a href="{escaped}" rel="sponsored nofollow noopener">進む</a>'
         "</main></body></html>"
     )
@@ -146,7 +146,10 @@ def test_an_asp_without_its_rules_copied_is_not_let_through(
 ) -> None:
     """許可ホストを写していない ASP に計測 URL を入れたら、公開させない。"""
     offer = replace(affiliates.OFFERS[0], url=TRACK_URL)
-    monkeypatch.setattr(affiliates, "OFFERS", (offer,))  # ASPS["klook"] は許可ホストが空のまま
+    monkeypatch.setattr(affiliates, "OFFERS", (offer,))
+    # 許可ホストを写す前の状態を作る（Klook は 2026-09-22 に承認されて www.klook.com が入った）
+    blank = replace(affiliates.ASPS["klook"], allowed_link_hosts=())
+    monkeypatch.setattr(affiliates, "ASPS", {**affiliates.ASPS, "klook": blank})
     problems, _ = ad_check.check(_dist(tmp_path, _whole_site(), REDIRECTS), LOCALES)
     assert any("許可ホストが未設定" in p for p in problems)
 
@@ -164,3 +167,22 @@ def test_nothing_is_published_before_any_contract() -> None:
     assert affiliates.redirects() == []
     for placement in affiliates.PLACEMENTS:
         assert affiliates.offers_for(placement.id) == []
+
+
+def test_the_short_klook_host_is_refused(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """Klook の計測は www.klook.com の `?aid=` だけ（2026-09-22）。
+
+    短縮形の s.klook.com は計測されない。
+
+    実物の ASP 設定（許可ホストは www.klook.com のみ）のまま、s.klook.com を宛先にしたら落とす。
+    """
+    short = "https://s.klook.com/c/abc123"
+    offer = replace(affiliates.OFFERS[0], url=short, advertiser="Klook", name="Klook")
+    monkeypatch.setattr(affiliates, "OFFERS", (offer,))
+    pages = _whole_site()
+    pages["go/klook-tickets/spot-tickets/index.html"] = _go_page(short)
+    pages["en/go/klook-tickets/spot-tickets/index.html"] = _go_page(short)
+    dist = _dist(tmp_path, pages, f"/go/klook-tickets {short} 302\n")
+    problems, _ = ad_check.check(dist, LOCALES)
+    assert any("s.klook.com" in p for p in problems)
+    assert affiliates.ASPS["klook"].allowed_link_hosts == ("www.klook.com",)

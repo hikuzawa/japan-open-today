@@ -48,15 +48,21 @@ class Asp:
     submit_label: str = ""
 
 
+# Klook の提携 ID（aid）。2026-09-22 承認。計測リンクは www.klook.com の任意の URL に
+# `?aid=` を付けた形（運営者が管理画面で確認）。公開の広告リンクに載る値で、秘密ではない
+KLOOK_AID = "135769"
+
 ASPS: dict[str, Asp] = {
-    # 提携はこれから（docs/human-tasks.md 11）。許可ホストと禁止表現は、承認後に管理画面の
-    # 実物のリンクと規約を見て埋める。埋まるまで案件に計測 URL を入れない
+    # 2026-09-22 承認。**計測されるのは www.klook.com だけ**で、短縮形の s.klook.com は計測されない
+    # （運営者が管理画面で確認）。許可ホストを www.klook.com に限り、s.klook.com を検査で落とす。
+    # 禁止表現・広告表示の要否は、管理画面の掲載規約を受け取ってから入れる。**それまで案件に
+    # 計測 URL を入れない**（Offer.url が空なら「準備中」のまま、何も公開されない）
     "klook": Asp(
         id="klook",
         name="Klook",
         requires_ad_notice=True,
         requires_sponsored_rel=True,
-        allowed_link_hosts=(),
+        allowed_link_hosts=("www.klook.com",),
         forbidden_phrases=(),
         submit_label="",
     ),
@@ -145,8 +151,15 @@ OFFERS: tuple[Offer, ...] = (
         kind=KIND_TICKET,
         description="施設の入場券や体験をあらかじめ予約できます。",
         asp="klook",
+        name="Klook",
+        advertiser="Klook Travel Technology",
+        program_id=KLOOK_AID,
+        # 掲載規約を受け取り、施設ごとの飛び先の設計が決まるまで空（=「準備中」）
+        url=None,
+        landing_prefix="https://www.klook.com/",
         placements=("spot-tickets",),
         rank=10,
+        approved_on="2026-09-22",
     ),
     Offer(
         id="agoda-stay",
