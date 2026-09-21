@@ -142,11 +142,15 @@
     {% endif %}
     <p class="actions actions-block">{{ ui.primary_link(spot.official_url, t('facts.official')) }}</p>
     {% if map.src_url %}
-    {# 地図の埋め込み（ADR 0006 の経路④）。鍵が無いときは外部リンクだけになる #}
+    {# 地図の埋め込み（ADR 0006 の経路④）。**押すまで Google に通信しない**（ADR 0013 追記）。
+       枠とボタンだけを置き、押したときに static/map.js が iframe を作る。
+       JavaScript が動かなくても、下の外部リンクから Google マップへ行ける #}
     <figure class="map-embed sm-embed" data-embed="map">
-      <iframe src="{{ map.src_url }}" title="{{ map.title }}" width="{{ map.width }}"
-              height="{{ map.height }}" style="max-width:100%" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <div class="map-facade" data-map-src="{{ map.src_url }}" data-map-title="{{ map.title }}"
+           data-map-width="{{ map.width }}" data-map-height="{{ map.height }}">
+        <button type="button" class="secondary map-open">{{ t('facts.map_open') }}</button>
+        <span class="note">{{ t('facts.map_open_note') }}</span>
+      </div>
       <figcaption class="sm-credit">{{ t('facts.map_attribution') }}
         <a href="{{ map.link_url }}" rel="noopener" target="_blank">{{ t('facts.map') }}</a></figcaption>
     </figure>
@@ -161,4 +165,8 @@
 {% block bottom_bar %}
 {# スマホだけの固定バー。一次情報への主導線を画面から外さない（PC では CSS で消す） #}
 <div class="bottom-bar">{{ ui.primary_link(spot.official_url, t('facts.official')) }}</div>
+{% endblock %}
+
+{% block scripts %}
+{% if map.src_url %}<script src="/static/map.js" defer></script>{% endif %}
 {% endblock %}

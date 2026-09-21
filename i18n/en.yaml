@@ -78,6 +78,8 @@ facts:
   official: Official page (external)
   map: Open in Maps (external)
   map_heading: Map
+  map_open: Open map
+  map_open_note: Loads Google Maps
   map_attribution: Map data ©Google
   social: Official accounts
   hours: Opening hours
@@ -211,8 +213,8 @@ privacy:
     nothing that identifies you: the page URL, the referrer, an approximate region, the browser and
     how long the page took to load.
   maps: >-
-    Pages with a map embed Google Maps. Loading the map contacts Google, and Google's privacy policy
-    applies to that.
+    Pages with a map show an empty frame and a button. Nothing is sent to Google until you press
+    "Open map". Loading the map then contacts Google, and Google's privacy policy applies to that.
   maps_link_only: >-
     Maps are linked to Google Maps rather than embedded, so opening a page does not contact Google.
   ads_none: We carry no advertising or affiliate links.

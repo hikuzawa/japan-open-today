@@ -351,6 +351,13 @@ body:has(.bottom-bar) .site-footer { padding-bottom: 96px; }
 .map-embed { margin: 0; }
 .map-embed .sm-embed { margin: 0; }
 .map-embed iframe { width: 100%; border-radius: var(--radius); display: block; border: 0; }
+/* 押すまで Google に通信しない地図の枠（ADR 0013 追記） */
+.map-facade {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  aspect-ratio: 3 / 2; max-height: 260px; padding: 16px; text-align: center;
+  background: var(--surface-2); border: 1px dashed var(--line); border-radius: var(--radius);
+}
+.map-facade .note { font-size: 0.8rem; }
 .map-embed figcaption { margin-top: 6px; font-size: 0.75rem; color: var(--ink-2); }
 
 /* ===== 不明・屋外の場所 ===== */

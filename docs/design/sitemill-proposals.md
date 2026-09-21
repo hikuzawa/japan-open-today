@@ -54,3 +54,14 @@
   「fetchpriority=high を付ける」と指摘し、本番の施設ページは LCP 6.0 秒だった
 - 移すときの形: `photo_figure(..., priority=false)` の引数を足し、true のときだけ
   `loading="eager" fetchpriority="high"` にする。既定は今までどおり lazy
+
+## 6. 押したときだけ読み込む埋め込み（地図の facade）
+
+- いまの実装: `static/map.js`（依存なし 25 行）、`templates/spot.html` の `.map-facade`、
+  CSS の `.map-facade`
+- 何をする部品か: 埋め込みの枠とボタンだけを置き、押したときに iframe を作る。押すまで
+  相手先（Google）へ通信しない。JavaScript が無い環境では外部リンクが残る
+- なぜエンジン向きか: 埋め込み（`sitemill.embeds`）はエンジンの機能で、地図も SNS も
+  「相手先の JS が重く、プライバシーの説明も要る」点は同じ。akiya-atlas も物件ページで地図を出す
+- 移すときの形: `render_embed` に `facade=true` の形を足し、ボタンの文言はサービスの
+  カタログ（`facts.map_open` / `facts.map_open_note`）から引く
