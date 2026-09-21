@@ -2,6 +2,9 @@
 {% block content %}
 {# ヒーロー帯（藍）。パンくず・施設名・判定の判子と、PC では週の帯を横に並べる #}
 <div class="hero">
+  {# 広告表記は本文の冒頭・最初の広告リンクより前、ファーストビューに出す（ADR 0012）。
+     案Bでは本文の先頭がヒーロー帯なので、その一番上に置く。案件が無ければ何も出ない #}
+  {% if offers|selectattr("ready")|list %}<div class="container">{{ ui.ad_notice(offers, locale) }}</div>{% endif %}
   <div class="container hero-inner">
     <div class="hero-main">
       <nav class="hero-crumbs" aria-label="{{ t('nav.home') }}">
@@ -26,8 +29,6 @@
 <div class="container layout">
   {% if notices %}{{ ui.notices_panel(notices, today, locale) }}{% endif %}
   <div class="col-main">
-    {# 広告表記は本文の冒頭・最初の広告リンクより前に出す（ADR 0012）。案件が無ければ何も出ない #}
-    {{ ui.ad_notice(offers, locale) }}
 
     {% if no_hours_stated %}
     <div class="open-air-box">
@@ -130,7 +131,7 @@
 
     <section class="affiliate">
       <h2 class="section-head">{{ t('affiliate.heading') }}</h2>
-      {% if offers %}{{ ui.offer_slot(offers, 'spot-tickets', locale) }}
+      {% if ad_links %}{{ ui.ad_slot(ad_links, locale, spot.name(locale.code)) }}
       {% else %}<p class="preparing">{{ t('affiliate.preparing') }}</p>{% endif %}
     </section>
   </div>

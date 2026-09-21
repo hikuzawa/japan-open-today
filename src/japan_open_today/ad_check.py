@@ -25,7 +25,7 @@ import re
 from html import unescape
 from pathlib import Path
 
-from japan_open_today import affiliates
+from japan_open_today import affiliates, klook
 from japan_open_today.affiliates import Offer
 
 # 本文の冒頭とみなす幅。これを超えると、スクロールしないと広告表記が見えない恐れがあるとみなす
@@ -76,7 +76,7 @@ def _ad_links(
     """そのページの広告リンク。転送ページでは ASP の計測 URL そのものが広告リンクになる。"""
     prefixes = _go_prefixes(locales)
     if target is not None:
-        prefixes = prefixes + (target.offer.url or _NO_MATCH,)
+        prefixes = prefixes + (target.target_url or _NO_MATCH,)
     return _links(html, prefixes=prefixes)
 
 
@@ -183,28 +183,60 @@ def _check_coverage(
     """宣言した枠が実際に出ているか、転送ページが生成されているか。"""
     problems: list[str] = []
     by_path = {_url_path(rel): html for rel, html in files.items()}
+    # 同じ案件・枠・ロケールの転送ページをまとめる。飛び先のある案件（Klook）は施設ごとに
+    # どれか 1 つへ送るので、「枠のページがどれかの転送ページを指しているか」で見る
+    groups: dict[tuple[str, str, str], list[affiliates.GoTarget]] = {}
     for target in affiliates.go_targets(locales):
-        pages = _pages_of(target.placement, target.prefix, by_path)
+        key = (target.offer.id, target.placement.id, target.locale)
+        groups.setdefault(key, []).append(target)
+    for (offer_id, placement_id, locale), targets in groups.items():
+        first = targets[0]
+        pages = _pages_of(first.placement, first.prefix, by_path)
         if not pages:
             problems.append(
-                f"{target.placement.page_prefix}（{target.locale}）のページが 1 枚も無い"
-                f"（{target.offer.id} の枠 {target.placement.id} の掲載先）"
+                f"{first.placement.page_prefix}（{locale}）のページが 1 枚も無い"
+                f"（{offer_id} の枠 {placement_id} の掲載先）"
             )
-        missing = [p for p in pages if target.url_path not in by_path[p]]
+        paths = [t.url_path for t in targets]
+        missing = [p for p in pages if not any(path in by_path[p] for path in paths)]
         if missing:
             problems.append(
-                f"{target.offer.id} の枠 {target.placement.id}（{target.locale}）の"
+                f"{offer_id} の枠 {placement_id}（{locale}）の"
                 f"リンクが出ていないページが {len(missing)} 枚（例: {missing[0]}）"
             )
-        go_file = dist / target.url_path.strip("/") / "index.html"
-        if not go_file.is_file():
-            problems.append(f"転送ページ {target.url_path} が生成されていない")
-            continue
-        go_html = go_file.read_text(encoding="utf-8")
-        if target.offer.url and target.offer.url not in unescape(go_html):
-            problems.append(f"転送ページ {target.url_path} に計測 URL が入っていない")
-        if "noindex" not in go_html:
-            problems.append(f"転送ページ {target.url_path} が noindex になっていない")
+        for target in targets:
+            problems += _check_go_file(dist, target)
+    return problems
+
+
+def _check_go_file(dist: Path, target: affiliates.GoTarget) -> list[str]:
+    """転送ページ 1 枚。生成されているか・送り先・noindex・計測の形。"""
+    problems: list[str] = []
+    go_file = dist / target.url_path.strip("/") / "index.html"
+    if not go_file.is_file():
+        return [f"転送ページ {target.url_path} が生成されていない"]
+    go_html = go_file.read_text(encoding="utf-8")
+    url = target.target_url
+    if url and url not in unescape(go_html):
+        problems.append(f"転送ページ {target.url_path} に計測 URL が入っていない")
+    if "noindex" not in go_html:
+        problems.append(f"転送ページ {target.url_path} が noindex になっていない")
+    asp = affiliates.asp_of(target.offer)
+    host = affiliates.link_host(url)
+    if asp is not None and asp.allowed_link_hosts and host not in asp.allowed_link_hosts:
+        problems.append(
+            f"転送ページ {target.url_path} の送り先 {host} が {asp.name} の"
+            f"許可ホスト {asp.allowed_link_hosts} に無い"
+        )
+    # 飛び先のある案件（Klook）は、**生成された転送ページのリンク**がすべて提携 ID（aid）を
+    # 持つこと。付け忘れると計測されない（2026-09-22。s.klook.com の短縮形も計測されない）
+    if target.landing is not None and asp is not None:
+        for href in _HREF.findall(go_html):
+            link = unescape(href)
+            if affiliates.link_host(link) in asp.allowed_link_hosts and not klook.has_aid(link):
+                problems.append(
+                    f"転送ページ {target.url_path} の送り先に aid={klook.AID} が無い（{link}）"
+                )
     return problems
 
 

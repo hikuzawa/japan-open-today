@@ -110,6 +110,11 @@ transport:
   fares: Fares (external)
   service_days: Service days
 affiliate:
+  klook_product: "Tours and experiences that include {name} (Klook)"
+  klook_naoshima: Naoshima tours (Klook)
+  klook_takamatsu: Find tours and experiences in Takamatsu (Klook)
+  klook_kagawa: Find tours and experiences in Kagawa (Klook)
+  go_continue: "Continue to {name}"
   heading: Stays and experiences
   preparing: Coming soon
   tag: Ad

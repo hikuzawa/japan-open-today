@@ -23,12 +23,18 @@ TRACK_URL = "https://af.example.com/click?a_id=1&p_id=2&pl_id=3"
 @pytest.fixture
 def ready(monkeypatch: pytest.MonkeyPatch) -> affiliates.Offer:
     """契約済みの案件が 1 件ある状態にする。"""
-    asp = replace(affiliates.ASPS["klook"], allowed_link_hosts=("af.example.com",))
+    asp = replace(
+        affiliates.ASPS["klook"],
+        allowed_link_hosts=("af.example.com",),
+        terms_checked_on="2026-09-22",
+    )
+    # 飛び先を持たない従来の形（1 案件 1 URL）。飛び先ごとの形は下の Klook のテストで見る
     offer = replace(
         affiliates.OFFERS[0],
         url=TRACK_URL,
         advertiser="例の会社",
         name="例の案件",
+        landings=(),
     )
     monkeypatch.setitem(affiliates.ASPS, "klook", asp)
     monkeypatch.setattr(affiliates, "OFFERS", (offer,))
@@ -145,10 +151,12 @@ def test_an_asp_without_its_rules_copied_is_not_let_through(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     """許可ホストを写していない ASP に計測 URL を入れたら、公開させない。"""
-    offer = replace(affiliates.OFFERS[0], url=TRACK_URL)
+    offer = replace(affiliates.OFFERS[0], url=TRACK_URL, landings=())
     monkeypatch.setattr(affiliates, "OFFERS", (offer,))
     # 許可ホストを写す前の状態を作る（Klook は 2026-09-22 に承認されて www.klook.com が入った）
-    blank = replace(affiliates.ASPS["klook"], allowed_link_hosts=())
+    blank = replace(
+        affiliates.ASPS["klook"], allowed_link_hosts=(), terms_checked_on="2026-09-22"
+    )
     monkeypatch.setattr(affiliates, "ASPS", {**affiliates.ASPS, "klook": blank})
     problems, _ = ad_check.check(_dist(tmp_path, _whole_site(), REDIRECTS), LOCALES)
     assert any("許可ホストが未設定" in p for p in problems)
@@ -177,8 +185,12 @@ def test_the_short_klook_host_is_refused(tmp_path: Path, monkeypatch: pytest.Mon
     実物の ASP 設定（許可ホストは www.klook.com のみ）のまま、s.klook.com を宛先にしたら落とす。
     """
     short = "https://s.klook.com/c/abc123"
-    offer = replace(affiliates.OFFERS[0], url=short, advertiser="Klook", name="Klook")
+    offer = replace(
+        affiliates.OFFERS[0], url=short, advertiser="Klook", name="Klook", landings=()
+    )
     monkeypatch.setattr(affiliates, "OFFERS", (offer,))
+    termed = replace(affiliates.ASPS["klook"], terms_checked_on="2026-09-22")
+    monkeypatch.setitem(affiliates.ASPS, "klook", termed)
     pages = _whole_site()
     pages["go/klook-tickets/spot-tickets/index.html"] = _go_page(short)
     pages["en/go/klook-tickets/spot-tickets/index.html"] = _go_page(short)

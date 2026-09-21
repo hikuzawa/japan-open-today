@@ -105,6 +105,11 @@ transport:
   fares: 票價表（外部）
   service_days: 運航日
 affiliate:
+  klook_product: "包含{name}的行程與體驗（Klook）"
+  klook_naoshima: 直島的行程（Klook）
+  klook_takamatsu: 搜尋高松的行程與體驗（Klook）
+  klook_kagawa: 搜尋香川的行程與體驗（Klook）
+  go_continue: "前往{name}的頁面"
   heading: 住宿與體驗
   preparing: 準備中
   tag: 廣告

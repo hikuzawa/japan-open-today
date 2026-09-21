@@ -395,6 +395,8 @@ body:has(.bottom-bar) .site-footer { padding-bottom: 96px; }
 
 /* ===== 広告（ADR 0012） ===== */
 .ad-notice { font-size: 0.8rem; color: var(--ink-2); margin: 12px 0 0; }
+/* ヒーロー帯の一番上に出す広告表記（藍の地に白 85%、10.3:1） */
+.hero .ad-notice { color: rgba(255, 255, 255, 0.85); font-size: 0.72rem; line-height: 1.5; margin: 0 0 10px; }
 .affiliate { margin-top: 28px; }
 .offer-slot { display: flex; flex-direction: column; gap: 8px; }
 .offer-cta { display: flex; align-items: center; gap: 8px; margin: 0; }

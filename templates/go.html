@@ -8,7 +8,10 @@
 {{ ui.ad_notice([offer], locale) }}
 <p class="lead">{{ t('affiliate.go_lead', advertiser=offer.advertiser, name=offer.name or offer.label) }}</p>
 <p class="offer-cta">
-  <a class="btn-ad" id="go-link" href="{{ offer.url }}" rel="sponsored nofollow noopener">{{ t('affiliate.open', label=offer.label) }}<span aria-hidden="true"> ↗</span></a>
+  <a class="btn-ad" id="go-link" href="{{ target_url }}" rel="sponsored nofollow noopener">
+    {%- if has_landing %}{{ t('affiliate.go_continue', name=offer.name or offer.advertiser) }}
+    {%- else %}{{ t('affiliate.open', label=offer.label) }}{% endif -%}
+    <span aria-hidden="true"> ↗</span></a>
   <span class="ad-tag" aria-hidden="true">{{ t('affiliate.tag') }}</span>
 </p>
 <p class="note">{{ t('affiliate.go_note') }}</p>

@@ -195,15 +195,18 @@
 {% if offers|selectattr("ready")|list %}<p class="ad-notice" data-ad-notice>{{ t_in(locale, 'affiliate.notice') }}</p>{% endif %}
 {%- endmacro %}
 
-{# 広告の枠（ADR 0012）。placement は affiliates.PLACEMENTS の id。offers が空なら何も出ない。
-   リンクは必ず <ロケール>/go/<案件>/<枠>/ の転送ページ経由にして、どの枠から押されたかを数える #}
-{% macro offer_slot(offers, placement, locale) -%}
-{% if offers %}
+{# 広告の枠（ADR 0012）。links は affiliates.slot_link の結果。リンクは必ず転送ページ経由。
+   Klook は施設ごとに飛び先が違い、文言も飛び先で変わる（施設の商品／直島のツアー／高松・香川の一覧）。
+   施設の入場券のようには見せない（ADR 0012 追記） #}
+{% macro ad_slot(links, locale, place_name='') -%}
+{% if links %}
 <div class="offer-slot">
-  {% for o in offers %}
+  {% for l in links %}
   <p class="offer-cta">
-    <a class="btn-ad" href="{{ locale.url_path('go/' ~ o.id ~ '/' ~ placement ~ '/') }}"
-       rel="sponsored noopener" target="_blank">{{ t_in(locale, 'affiliate.open', label=o.label) }}<span aria-hidden="true"> ↗</span></a>
+    <a class="btn-ad" href="{{ l.href }}" rel="sponsored noopener" target="_blank">
+      {%- if l.landing -%}{{ t_in(locale, l.label_key, name=place_name) }}
+      {%- else -%}{{ t_in(locale, 'affiliate.open', label=l.offer.label) }}{%- endif -%}
+      <span aria-hidden="true"> ↗</span></a>
     <span class="ad-tag" aria-hidden="true">{{ t_in(locale, 'affiliate.tag') }}</span>
   </p>
   {% endfor %}

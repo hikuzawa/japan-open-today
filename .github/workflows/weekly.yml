@@ -59,6 +59,10 @@ jobs:
             echo '```'
             uv run python -m tools.report_coverage | head -20
             echo '```'
+            echo ""
+            # Klook の飛び先が生きているか（robots.txt が許すサイトマップだけを読む。
+            # 検索結果は開かず、手で確かめる項目として出す）
+            uv run python -m tools.check_klook || echo "- Klook の点検が失敗した（週次は続ける）"
           } >> summary.md
           cat summary.md
 

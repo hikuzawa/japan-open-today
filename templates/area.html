@@ -2,6 +2,8 @@
 {% block content %}
 {# ヒーロー帯（藍）。エリア名と、その日の件数 #}
 <div class="hero">
+  {# 広告表記はヒーロー帯の一番上（ファーストビュー。ADR 0012） #}
+  {% if offers|selectattr("ready")|list %}<div class="container">{{ ui.ad_notice(offers, locale) }}</div>{% endif %}
   <div class="container hero-inner">
     <div class="hero-main">
       <nav class="hero-crumbs" aria-label="{{ t('nav.home') }}">
@@ -22,8 +24,6 @@
 </div>
 
 <div class="container page">
-{# 広告表記は本文の冒頭・最初の広告リンクより前に出す（ADR 0012） #}
-{{ ui.ad_notice(offers, locale) }}
 {% if routes %}{{ ui.route_links(routes, locale) }}{% endif %}
 <h2 class="section-head">{{ t('area.spots') }}</h2>
 <ul class="cards">
@@ -31,7 +31,7 @@
 </ul>
 <section class="affiliate">
   <h2 class="section-head">{{ t('affiliate.heading') }}</h2>
-  {% if offers %}{{ ui.offer_slot(offers, 'area-stay', locale) }}
+  {% if ad_links %}{{ ui.ad_slot(ad_links, locale, area.name(locale.code)) }}
   {% else %}<p class="preparing">{{ t('affiliate.preparing') }}</p>{% endif %}
 </section>
 </div>

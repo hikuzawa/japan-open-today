@@ -22,6 +22,8 @@ from urllib.parse import urlsplit
 
 from sitemill.models import Redirect
 
+from japan_open_today import klook
+
 # 種別。1 つの枠に同じ種別を 2 件以上出さない（ADR 0012）
 KIND_STAY = "宿泊"
 KIND_TICKET = "入場券・体験"
@@ -46,6 +48,9 @@ class Asp:
     allowed_link_hosts: tuple[str, ...] = ()
     forbidden_phrases: tuple[str, ...] = ()
     submit_label: str = ""
+    # 管理画面の掲載規約を読んで、この設定に写した日。**空のあいだは案件を公開しない**
+    # （規約を見ないまま「制約なし」と読んで出さないため。2026-09-22）
+    terms_checked_on: str = ""
 
 
 # Klook の提携 ID（aid）。2026-09-22 承認。計測リンクは www.klook.com の任意の URL に
@@ -128,10 +133,16 @@ class Offer:
     placements: tuple[str, ...] = ()
     rank: int = 100
     approved_on: str = ""
+    # 施設ごとに飛び先を変える案件（Klook）。空なら `url` 1 つに送る（従来どおり）
+    landings: tuple[klook.Landing, ...] = ()
 
     @property
     def ready(self) -> bool:
-        return bool(self.url)
+        """公開してよいか。計測 URL・ASP の規約・すべての飛び先が揃ったときだけ。"""
+        asp = ASPS.get(self.asp)
+        if not self.url or asp is None or not asp.terms_checked_on:
+            return False
+        return all(landing.complete for landing in self.landings)
 
     @property
     def path(self) -> str:
@@ -154,12 +165,16 @@ OFFERS: tuple[Offer, ...] = (
         name="Klook",
         advertiser="Klook Travel Technology",
         program_id=KLOOK_AID,
-        # 掲載規約を受け取り、施設ごとの飛び先の設計が決まるまで空（=「準備中」）
-        url=None,
+        # 素の導線（/go/klook-tickets）の宛先は「香川」の検索結果。その URL を受け取るまで空で、
+        # 空のあいだは「準備中」のまま何も公開しない
+        url=(
+            klook.BY_ID[klook.DEFAULT].url("ja") if klook.BY_ID[klook.DEFAULT].complete else None
+        ),
         landing_prefix="https://www.klook.com/",
         placements=("spot-tickets",),
         rank=10,
         approved_on="2026-09-22",
+        landings=klook.landings(),
     ),
     Offer(
         id="agoda-stay",
@@ -207,29 +222,77 @@ def placed(offer: Offer) -> list[str]:
     return [p for p in offer.placements if offer.ready and p in PLACEMENT_BY_ID]
 
 
-@dataclass(frozen=True)
+@dataclass(frozen=True, eq=False)
 class GoTarget:
-    """転送ページ 1 枚分。ページ生成と検査が同じ一覧を見る。ロケールごとに 1 枚。"""
+    """転送ページ 1 枚分。ページ生成と検査が同じ一覧を見る。ロケールごとに 1 枚。
+
+    飛び先を持つ案件（Klook）は、飛び先ごとにも 1 枚ずつ出す
+    （`/go/<案件>/<枠>/<飛び先>/`）。どの施設からどの飛び先へ何回押されたかが数えられる。
+    """
 
     offer: Offer
     placement: Placement
     locale: str = "ja"
     prefix: str = ""
+    landing: klook.Landing | None = None
 
     @property
     def url_path(self) -> str:
-        return self.offer.placement_path(self.placement.id, self.prefix)
+        path = self.offer.placement_path(self.placement.id, self.prefix)
+        return f"{path}{self.landing.id}/" if self.landing else path
+
+    @property
+    def rel(self) -> str:
+        """ロケールの接頭辞を含まないパス（ページ生成で使う）。"""
+        base = f"go/{self.offer.id}/{self.placement.id}/"
+        return f"{base}{self.landing.id}/" if self.landing else base
+
+    @property
+    def target_url(self) -> str:
+        """転送ページが送る先（計測付き）。"""
+        if self.landing is not None:
+            return self.landing.url(self.locale)
+        return self.offer.url or ""
 
 
 def go_targets(locales: tuple[tuple[str, str], ...] = (("ja", ""),)) -> list[GoTarget]:
-    """(ロケール, 接頭辞) の組それぞれに転送ページを 1 枚。"""
-    return [
-        GoTarget(offer=o, placement=PLACEMENT_BY_ID[p], locale=code, prefix=prefix)
-        for o in OFFERS
-        if o.ready
-        for p in placed(o)
-        for code, prefix in locales
-    ]
+    """(ロケール, 接頭辞) の組それぞれに転送ページを 1 枚（飛び先があれば飛び先ごと）。"""
+    out: list[GoTarget] = []
+    for o in OFFERS:
+        if not o.ready:
+            continue
+        for p in placed(o):
+            for code, prefix in locales:
+                for landing in o.landings or (None,):
+                    out.append(
+                        GoTarget(
+                            offer=o,
+                            placement=PLACEMENT_BY_ID[p],
+                            locale=code,
+                            prefix=prefix,
+                            landing=landing,
+                        )
+                    )
+    return out
+
+
+def slot_link(offer: Offer, placement: str, locale_prefix: str, spot=None) -> dict:  # noqa: ANN001
+    """枠に出すリンク 1 本（転送ページのパスと文言）。飛び先のある案件は施設で選ぶ。"""
+    head = f"/{locale_prefix}" if locale_prefix else ""
+    if offer.landings and spot is not None:
+        landing = klook.landing_for(spot.spot_id, spot.area)
+        return {
+            "offer": offer,
+            "href": f"{head}/go/{offer.id}/{placement}/{landing.id}/",
+            "label_key": f"affiliate.{landing.label_key}",
+            "landing": landing,
+        }
+    return {
+        "offer": offer,
+        "href": offer.placement_path(placement, locale_prefix),
+        "label_key": "affiliate.open",
+        "landing": None,
+    }
 
 
 def asp_of(offer: Offer) -> Asp | None:

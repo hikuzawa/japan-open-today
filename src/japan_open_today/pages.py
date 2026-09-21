@@ -296,6 +296,10 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         "counts": _summary(spots, verdicts),
                         "routes": _routes_for(ds, a.slug, route_states),
                         "offers": affiliates.offers_for("area-stay"),
+                        "ad_links": [
+                            affiliates.slot_link(o, "area-stay", locale.path)
+                            for o in affiliates.offers_for("area-stay")
+                        ],
                     },
                     trust=_trust(
                         ws,
@@ -347,6 +351,11 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         "closures_label": _closures_label(spot),
                         "no_hours_stated": no_hours_stated(spot),
                         "offers": affiliates.offers_for("spot-tickets"),
+                        # 施設ごとに飛び先を選ぶ（Klook。klook.landing_for）
+                        "ad_links": [
+                            affiliates.slot_link(o, "spot-tickets", locale.path, spot)
+                            for o in affiliates.offers_for("spot-tickets")
+                        ],
                         "routes": _routes_for(ds, spot.area, route_states),
                         "week_all_unknown": all(
                             v.state is DayState.unknown for v in weeks[spot.spot_id]
@@ -434,8 +443,9 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         # 名前を analytics にすると、ビルドの共通変数（解析の埋め込み）を
                         # ページの文脈で上書きしてしまい、<head> に "False" が出る
                         "analytics_on": bool(ws.secrets.cf_web_analytics_token),
-                        # 広告はまだ 1 枠も出していない（ADR 0006）。出す日にここが True になる
-                        "ads_live": False,
+                        # 広告を 1 枠でも出していれば開示文に切り替える（ADR 0006）。
+                        # 案件が公開の条件（規約・計測 URL・飛び先）を満たした日に自動で True になる
+                        "ads_live": bool(affiliates.active_offers()),
                     },
                     trust=_trust(
                         ws, now=now, sources=all_sources, count=len(ds.spots), contact=contact
@@ -448,7 +458,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
     locale_pairs = tuple((lc.code, lc.path) for lc in locales)
     for target in affiliates.go_targets(locale_pairs):
         locale = ws.site.locale(target.locale)
-        rel = f"go/{target.offer.id}/{target.placement.id}/"
+        rel = target.rel
         pages.append(
             Page(
                 meta=PageMeta(
@@ -459,7 +469,12 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                     noindex=True,  # sitemap にも出さない
                 ),
                 template="go.html",
-                context={"today": today, "offer": target.offer},
+                context={
+                    "today": today,
+                    "offer": target.offer,
+                    "target_url": target.target_url,
+                    "has_landing": target.landing is not None,
+                },
                 trust=_trust(ws, now=now, sources=all_sources, count=len(ds.spots)),
             )
         )
