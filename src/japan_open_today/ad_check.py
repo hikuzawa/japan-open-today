@@ -150,6 +150,40 @@ def _check_page(
     return problems
 
 
+# 検索エンジンが読む場所（題名・説明文・見出し・構造化データ）。ここに ASP のブランド語を
+# 入れると、規約 5.2(a) が禁じる「Klook のブランド語での SEO」に当たりうる（2026-09-23）
+_SEO_SPOTS = (
+    (re.compile(r"<title>(.*?)</title>", re.I | re.S), "<title>"),
+    (re.compile(r'<meta\s+name="description"\s+content="([^"]*)"', re.I), "meta description"),
+    (re.compile(r"<h1[^>]*>(.*?)</h1>", re.I | re.S), "<h1>"),
+    (re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.I | re.S), "JSON-LD"),
+)
+
+
+def _check_brand_in_seo_spots(files: dict[str, str]) -> list[str]:
+    """ASP のブランド語が、検索エンジン向けの表示に入っていないか。
+
+    広告の枠（本文の中のボタン）に名前を出すのは、どの広告か分かるようにするためで必要。
+    題名・説明文・見出し・構造化データに入れると SEO とみなされうるので入れない。
+    """
+    names = {
+        asp.name
+        for o in affiliates.active_offers()
+        if (asp := affiliates.asp_of(o)) is not None
+    }
+    problems: list[str] = []
+    for rel, html in sorted(files.items()):
+        for pattern, where in _SEO_SPOTS:
+            for found in pattern.findall(html):
+                for name in names:
+                    if name.lower() in found.lower():
+                        problems.append(
+                            f"{rel}: {where} に {name} の名前が入っている。"
+                            "検索エンジン向けの表示にブランド語を使わない（規約 5.2(a)）"
+                        )
+    return problems
+
+
 def _check_direct_links(
     files: dict[str, str], locales: tuple[tuple[str, str], ...]
 ) -> list[str]:
@@ -290,6 +324,7 @@ def check(
             pages_with_ads += 1
         problems += _check_page(rel, html, locales, go)
     problems += _check_direct_links(files, locales)
+    problems += _check_brand_in_seo_spots(files)
     problems += _check_coverage(dist, files, locales)
     problems += _check_redirects(dist)
     # 同じ問題が 2 経路から出ることがあるので、順序を保ったまま重複を落とす

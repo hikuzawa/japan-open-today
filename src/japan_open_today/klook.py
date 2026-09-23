@@ -132,12 +132,18 @@ FALLBACKS: tuple[Landing, ...] = (
     Landing(
         id="kagawa",
         label_key="klook_kagawa",
-        # 運営者がブラウザで取った「香川」の検索結果。robots.txt が検索を禁じているので、
-        # こちらからは取りに行かない（週次の点検でも開かず、手で確かめる項目として出す）。
-        # **URL を受け取るまで空。空のあいだは Klook の案件全体を公開しない**
+        # 運営者がブラウザで取った「香川」の検索結果（2026-09-23 受領）。robots.txt が検索結果の
+        # 取得を禁じ、規約 4.3(a) も自動の読み取りを禁じているので、こちらからは開かない。
+        # 週次まとめに URL を出し、運営者が開いて確かめる。
+        # **繁体字は zh-CN（簡体字）の URL を受け取っている**。繁体字の利用者には zh-TW が正しいので、
+        # 運営者から zh-TW の URL をもらったら差し替える（それまでは受け取ったものをそのまま使う）
         title="香川の検索結果（運営者がブラウザで取った URL）",
-        found_via="運営者のブラウザ",
-        urls={},
+        found_via="運営者のブラウザ（2026-09-23）",
+        urls={
+            "ja": "https://www.klook.com/ja/search/result/?query=%E9%A6%99%E5%B7%9D&search_scope=main_search",
+            "en": "https://www.klook.com/en-US/search/result/?query=%E9%A6%99%E5%B7%9D&search_scope=main_search&spm=LanguageCurrencySelectionPopup.SuggestLanguage_LIST&clickId=967ee901ba",
+            "zh-Hant": "https://www.klook.com/zh-CN/search/result/?query=%E9%A6%99%E5%B7%9D&search_scope=main_search&spm=LanguageCurrencySelectionPopup.MoreLanguage_LIST&clickId=418ec2d81f",
+        },
     ),
 )
 BY_ID = {landing.id: landing for landing in (*PRODUCTS, *FALLBACKS)}

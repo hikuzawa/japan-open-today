@@ -53,11 +53,20 @@ def test_the_aid_is_added_by_code() -> None:
     assert klook.has_aid(klook.with_aid(SEARCH))
 
 
-def test_nothing_is_published_until_the_terms_and_the_search_url_are_in() -> None:
-    """規約を写すまで・香川の検索結果 URL を受け取るまで、Klook は「準備中」のまま。"""
+def test_publishing_needs_the_terms_and_every_landing(monkeypatch: pytest.MonkeyPatch) -> None:
+    """公開の条件は「規約を写した日」と「全ロケールの飛び先」。どちらが欠けても出さない。"""
     offer = next(o for o in affiliates.OFFERS if o.id == "klook-tickets")
-    assert not offer.ready
-    assert not klook.BY_ID["kagawa"].complete
+    assert offer.ready  # 2026-09-23 に両方そろった
+    assert affiliates.ASPS["klook"].terms_checked_on == "2026-09-23"
+    assert all(landing.complete for landing in klook.landings())
+
+    no_terms = replace(affiliates.ASPS["klook"], terms_checked_on="")
+    monkeypatch.setitem(affiliates.ASPS, "klook", no_terms)
+    assert not offer.ready  # 規約を写す前には戻せない
+
+    monkeypatch.setitem(affiliates.ASPS, "klook", affiliates.ASPS["klook"])
+    half = replace(klook.BY_ID["kagawa"], urls={"ja": SEARCH})
+    assert not replace(offer, landings=(half,)).ready  # 英語・繁体字が欠けたら出さない
 
 
 @pytest.fixture
@@ -141,3 +150,19 @@ def test_the_check_passes_when_each_spot_points_at_one_landing(
 def test_a_transfer_page_without_the_aid_is_caught(tmp_path: Path, live: affiliates.Offer) -> None:
     problems, _ = ad_check.check(_dist(tmp_path, drop_aid="takamatsu"), LOCALES)
     assert any("aid=135769 が無い" in p for p in problems)
+
+
+def test_the_brand_is_kept_out_of_search_facing_text(
+    tmp_path: Path, live: affiliates.Offer
+) -> None:
+    """題名・説明文・見出し・構造化データに Klook の名前を入れない（規約 5.2(a) の SEO）。"""
+    dist = _dist(tmp_path)
+    page = dist / "spots/naoshima/chichu/index.html"
+    page.write_text(
+        "<html><head><title>地中美術館の Klook 予約</title></head><body><main>"
+        '<p data-ad-notice>広告</p><a href="/go/klook-tickets/spot-tickets/naoshima-tours/" '
+        'rel="sponsored noopener">Klook</a></main></body></html>',
+        encoding="utf-8",
+    )
+    problems, _ = ad_check.check(dist, LOCALES)
+    assert any("<title> に Klook の名前が入っている" in p for p in problems)

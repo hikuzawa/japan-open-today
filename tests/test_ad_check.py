@@ -168,13 +168,24 @@ def test_a_redirect_to_another_host_is_caught(tmp_path: Path, ready: affiliates.
     assert any("宛先ホスト" in p for p in problems)
 
 
-def test_nothing_is_published_before_any_contract() -> None:
-    """契約前は案件 0 件。枠も転送ページも出ない（ダミーリンクを置かない。ADR 0006）。"""
+def test_nothing_is_published_before_a_contract(monkeypatch: pytest.MonkeyPatch) -> None:
+    """契約前の案件は出ない（ダミーリンクを置かない。ADR 0006）。
+
+    Klook は 2026-09-23 に公開の条件がそろった。まだ提携していない宿の 2 社は出ない。
+    """
+    for offer in affiliates.OFFERS:
+        if offer.id != "klook-tickets":
+            assert not offer.ready, offer.id
+    assert [o.id for o in affiliates.active_offers()] == ["klook-tickets"]
+    assert affiliates.offers_for("area-stay") == []  # 宿の枠はまだ 1 社も出ない
+
+    # 規約を写す前の状態に戻すと、Klook も出なくなる
+    monkeypatch.setitem(
+        affiliates.ASPS, "klook", replace(affiliates.ASPS["klook"], terms_checked_on="")
+    )
     assert affiliates.active_offers() == []
     assert affiliates.go_targets(LOCALES) == []
     assert affiliates.redirects() == []
-    for placement in affiliates.PLACEMENTS:
-        assert affiliates.offers_for(placement.id) == []
 
 
 def test_the_short_klook_host_is_refused(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:

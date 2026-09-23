@@ -68,8 +68,13 @@ ASPS: dict[str, Asp] = {
         requires_ad_notice=True,
         requires_sponsored_rel=True,
         allowed_link_hosts=("www.klook.com",),
+        # 規約に禁止表現の一覧は無い。機械で確かめられる制約は下の 2 つで、どちらも
+        # `ad_check` が見る（ADR 0012 追記）
+        #  - すべてのリンクに Affiliate ID を付ける（2.4）
+        #  - 検索エンジン向けの表示に KLOOK のブランド語を使わない（5.2(a) の SEO / SEM）
         forbidden_phrases=(),
         submit_label="",
+        terms_checked_on="2026-09-23",
     ),
     "agoda": Asp(
         id="agoda",
@@ -175,6 +180,23 @@ OFFERS: tuple[Offer, ...] = (
         rank=10,
         approved_on="2026-09-22",
         landings=klook.landings(),
+        reward_condition=(
+            "成果は 30 日の最終クリック（宿泊は 7 日）。確定は 3 か月後（規約 3.1・3.3）"
+        ),
+        cookie_days=30,
+        # 機械で確かめられないものは文章で残す（ADR 0012）。出典は規約の条項番号
+        constraints=(
+            "Klook のページを自動で読み取らない（4.3(a) 走査・機械的な抽出の禁止）。"
+            "飛び先の生死は人が開いて確かめる",
+            "Klook・出品者のブランド語や、Klook での予約に関わる語で検索連動広告・SEO をしない"
+            "（5.2(a)）。題名・説明文・見出し・構造化データに Klook の名前を入れない",
+            "Klook の画像・ロゴ・説明文は使わない（2.3(e)・4.6。使えるのは Klook が配る"
+            "Permitted Promotional Content だけで、いまは受け取っていない）",
+            "サイトの見た目を Klook に似せない（4.4(a)）",
+            "予約・返金など Klook の取引の問い合わせは support@klook.com へ案内する（2.2(b)）",
+            "提携が終わったら Klook へのリンク・記述をすべて外す（7.5）",
+            "質の低い送客を続けると停止されうる（4.5(b)）。飛び先は施設に近いものから選ぶ",
+        ),
     ),
     Offer(
         id="agoda-stay",
@@ -308,4 +330,4 @@ def redirects() -> list[Redirect]:
 
     枠つきの `/go/<id>/<枠>/` は転送ページ（HTML）なのでここには出さない。
     """
-    return [Redirect(from_path=o.path, to_url=o.url, status=302) for o in OFFERS if o.url]
+    return [Redirect(from_path=o.path, to_url=o.url, status=302) for o in OFFERS if o.ready]
