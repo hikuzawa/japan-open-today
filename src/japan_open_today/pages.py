@@ -441,8 +441,11 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         # プライバシーポリシーの書き方も変わる
                         "has_maps": bool(ws.secrets.google_maps_embed_key),
                         # 名前を analytics にすると、ビルドの共通変数（解析の埋め込み）を
-                        # ページの文脈で上書きしてしまい、<head> に "False" が出る
-                        "analytics_on": bool(ws.secrets.cf_web_analytics_token),
+                        # ページの文脈で上書きしてしまい、<head> に "False" が出る。
+                        # 値は**サイトの設定**で決める。Cloudflare の Web Analytics は応答に
+                        # 自動で挿し込む形にしており、鍵をサイトに置かない（鍵の有無で判定すると
+                        # 「使っているのに書いていない」開示漏れになる。2026-09-23）
+                        "analytics_on": ws.site.analytics.provider not in ("", "none"),
                         # 広告を 1 枠でも出していれば開示文に切り替える（ADR 0006）。
                         # 案件が公開の条件（規約・計測 URL・飛び先）を満たした日に自動で True になる
                         "ads_live": bool(affiliates.active_offers()),
@@ -474,8 +477,6 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                     "offer": target.offer,
                     "target_url": target.target_url,
                     "has_landing": target.landing is not None,
-                    # 計測ビーコンが出ないときは待たずに転送する（待っても数えられない）
-                    "analytics_on": bool(ws.secrets.cf_web_analytics_token),
                 },
                 trust=_trust(ws, now=now, sources=all_sources, count=len(ds.spots)),
             )

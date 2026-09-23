@@ -8,7 +8,10 @@
 
 - `CLOUDFLARE_ACCOUNT_ID`
 - `CLOUDFLARE_API_TOKEN` に **Account Analytics: Read** の権限（配置用の権限だけでは 403 になる）
-- `CF_WEB_ANALYTICS_TOKEN`（ビーコンのトークン。GraphQL の `siteTag` と同じ値）
+
+ビーコンは Cloudflare が応答に自動で挿し込む形にしてあり、サイトに鍵を置かない
+（`CF_WEB_ANALYTICS_TOKEN` は登録しない）。GraphQL に要る `siteTag` は、同じトークンで
+`rum/site_info/list` を引いて、サイトのホスト名に一致するものを使う。
 
 鍵や権限が足りないときは、何を足せばよいかを書いて 0 で終わる（週次を止めない）。
 
@@ -21,6 +24,7 @@ import argparse
 from collections import defaultdict
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
+from urllib.parse import urlsplit
 
 import httpx
 from sitemill.settings import Workspace
@@ -45,10 +49,29 @@ query($account: string!, $site: string!, $since: Time!, $until: Time!) {
 }
 """
 NEED = (
-    "- クリック数は出せなかった。`CLOUDFLARE_API_TOKEN` に **Account Analytics: Read** を"
-    "足すと出る（配置用の権限だけでは読めない）。当面は Cloudflare の Web Analytics の画面で"
-    "`/go/` のページ別表示数を見る"
+    "- クリック数は出せなかった。`CLOUDFLARE_API_TOKEN` に **Account Analytics: Read** が"
+    "要る（配置用の権限だけでは読めない）。権限を足したトークンと、CI・手元の値が同じかも見る。"
+    "当面は Cloudflare の Web Analytics の画面で `/go/` のページ別表示数を見る"
 )
+
+
+def site_tag(token: str, account: str, host: str) -> str | None:
+    """このサイトの site tag。自動挿入なので鍵を持っておらず、API から引く。"""
+    try:
+        resp = httpx.get(
+            f"https://api.cloudflare.com/client/v4/accounts/{account}/rum/site_info/list",
+            headers={"Authorization": f"Bearer {token}"},
+            timeout=60,
+        )
+    except httpx.HTTPError:
+        return None
+    if resp.status_code != 200 or not resp.json().get("success"):
+        return None
+    for site in resp.json().get("result", []):
+        zone = (site.get("ruleset") or {}).get("zone_name") or site.get("host") or ""
+        if host and host in zone:
+            return site.get("site_tag")
+    return None
 
 
 def fetch(token: str, account: str, site: str, days: int) -> dict[str, int] | None:
@@ -102,18 +125,12 @@ def main() -> int:
 
     secrets = ws.secrets
     counts = None
-    have = (
-        secrets.cloudflare_api_token,
-        secrets.cloudflare_account_id,
-        secrets.cf_web_analytics_token,
-    )
-    if all(have):
-        counts = fetch(
-            secrets.cloudflare_api_token,
-            secrets.cloudflare_account_id,
-            secrets.cf_web_analytics_token,
-            args.days,
-        )
+    token, account = secrets.cloudflare_api_token, secrets.cloudflare_account_id
+    if token and account:
+        host = urlsplit(ws.site.base_url).hostname or ""
+        tag = secrets.cf_web_analytics_token or site_tag(token, account, host)
+        if tag:
+            counts = fetch(token, account, tag, args.days)
     if counts is None:
         lines.append(NEED)
         print("\n".join(lines))

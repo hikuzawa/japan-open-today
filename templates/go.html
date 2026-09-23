@@ -17,17 +17,17 @@
 <p class="note">{{ t('affiliate.go_note') }}</p>
 <p class="links"><a href="{{ locale.url_path('') }}">{{ t('nav.home') }}</a></p>
 <script>
-// 計測（Cloudflare Web Analytics）が入っているときは、読み込み完了の 100〜200 ミリ秒後に
-// /cdn-cgi/rum へ送られる。入っていなければ待たずに転送する（2026-09-23。ビーコンを出す
-// 鍵がまだ登録されておらず、全員が 1.5 秒待たされていた）。
+// 計測（Cloudflare Web Analytics）は読み込み完了の 100〜200 ミリ秒後に /cdn-cgi/rum へ送られる。
+// このサイトのビーコンは Cloudflare が応答に自動で挿し込む（鍵はサイトに置かない）。
+// 自動挿入はブラウザからの要求にだけ入るので、ビーコンの有無はページの中で見る（2026-09-23）。
 // 先に離れると 1 クリックが数えられないので、その通信が出たのを見てから転送する。
 // ビーコンが無い・遮られた環境でも止まらないよう、上限 1.5 秒で打ち切る。
 (function () {
   var a = document.getElementById("go-link");
   if (!a) return;
-  // 計測が入っていないときは待つ理由が無い（ビーコンが出ないので、待っても 1.5 秒の空振り）
-  var measured = {{ "true" if analytics_on else "false" }};
-  if (!measured) {
+  // 計測が入っていないときは待つ理由が無い（空振りで 1.5 秒待たせない）。
+  // Cloudflare の自動挿入はブラウザへの応答にだけ入るので、**ビルド時ではなくこの場で**見る
+  if (!document.querySelector("script[data-cf-beacon]")) {
     window.location.replace(a.href);
     return;
   }

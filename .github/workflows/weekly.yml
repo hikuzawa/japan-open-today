@@ -46,10 +46,10 @@ jobs:
         working-directory: japan-open-today
         env:
           GOOGLE_SEARCH_CONSOLE_KEY: ${{ secrets.GOOGLE_SEARCH_CONSOLE_KEY }}
-          # 広告のクリックを数えるのに使う（Account Analytics: Read の権限が要る）
+          # 広告のクリックを数えるのに使う（Account Analytics: Read の権限が要る。
+          # ビーコンは Cloudflare の自動挿入なので site tag も同じ鍵で引く）
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CF_WEB_ANALYTICS_TOKEN: ${{ secrets.CF_WEB_ANALYTICS_TOKEN }}
         run: |
           # 検索の状況。取り込んだ記録だけを読むので、鍵が無くても（0 件として）出る
           uv run sitemill --site japan-open-today search report --days "${{ inputs.days || 7 }}" > summary.md
