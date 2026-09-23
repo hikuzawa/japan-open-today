@@ -46,6 +46,10 @@ jobs:
         working-directory: japan-open-today
         env:
           GOOGLE_SEARCH_CONSOLE_KEY: ${{ secrets.GOOGLE_SEARCH_CONSOLE_KEY }}
+          # 広告のクリックを数えるのに使う（Account Analytics: Read の権限が要る）
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_WEB_ANALYTICS_TOKEN: ${{ secrets.CF_WEB_ANALYTICS_TOKEN }}
         run: |
           # 検索の状況。取り込んだ記録だけを読むので、鍵が無くても（0 件として）出る
           uv run sitemill --site japan-open-today search report --days "${{ inputs.days || 7 }}" > summary.md
@@ -63,6 +67,9 @@ jobs:
             # Klook の飛び先が生きているか（robots.txt が許すサイトマップだけを読む。
             # 検索結果は開かず、手で確かめる項目として出す）
             uv run python -m tools.check_klook || echo "- Klook の点検が失敗した（週次は続ける）"
+            echo ""
+            # 広告の転送ページが飛び先ごとに何回開かれたか（Cloudflare Web Analytics）
+            uv run python -m tools.report_clicks --days "${{ inputs.days || 7 }}"               || echo "- クリックの集計が失敗した（週次は続ける）"
           } >> summary.md
           cat summary.md
 
