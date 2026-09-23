@@ -15,6 +15,9 @@
 （`f2319ef6…`）にはイベントが 1 件も無く、実データは別の site（`a8bcebea…`）に入っていた。
 同じホスト名の Web Analytics の登録が 2 つあるためで、ホスト名で絞ればどちらでも取れる。
 
+運営者・開発の**動作確認で開いた分**は `data/affiliates/verification_clicks.json` に記録してあり、
+期間が重なるものを差し引いて出す（利用者のクリックと混ぜない）。
+
 鍵や権限が足りないときは、何を足せばよいかを書いて 0 で終わる（週次を止めない）。
 
 使い方: uv run python -m tools.report_clicks [--days 7]
@@ -23,8 +26,9 @@
 from __future__ import annotations
 
 import argparse
+import json
 from collections import defaultdict
-from datetime import UTC, datetime, timedelta
+from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -34,6 +38,7 @@ from sitemill.settings import Workspace
 from japan_open_today import affiliates, klook
 
 ENDPOINT = "https://api.cloudflare.com/client/v4/graphql"
+VERIFICATION = Path("data/affiliates/verification_clicks.json")
 QUERY = """
 query($account: string!, $host: string!, $since: Time!, $until: Time!) {
   viewer {
@@ -92,6 +97,19 @@ def fetch(token: str, account: str, host: str, days: int) -> dict[str, int] | No
     }
 
 
+def verification_clicks(root: Path, days: int) -> dict[tuple[str, str], int]:
+    """動作確認で開いた分（飛び先・言語ごと）。期間に入るものだけ返す。"""
+    path = root / VERIFICATION
+    if not path.is_file():
+        return {}
+    since = (datetime.now(UTC) - timedelta(days=days)).date()
+    out: dict[tuple[str, str], int] = defaultdict(int)
+    for event in json.loads(path.read_text(encoding="utf-8")).get("events", []):
+        if date.fromisoformat(event["date"]) >= since:
+            out[(event["landing"], event["locale"])] += int(event["count"])
+    return out
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--days", type=int, default=7, help="さかのぼる日数")
@@ -122,6 +140,13 @@ def main() -> int:
         name = target.landing.id if target.landing else "（飛び先なし）"
         by_landing[name][target.locale] += counts.get(target.url_path, 0)
 
+    # 動作確認で開いた分を差し引く（期間に入るものだけ）
+    checks = verification_clicks(ws.root, args.days)
+    for (name, locale), n in checks.items():
+        if name in by_landing:
+            by_landing[name][locale] = max(0, by_landing[name].get(locale, 0) - n)
+    checked = sum(checks.values())
+
     codes = [code for code, _ in locales]
     lines.append("| 飛び先 | 種類 | " + " | ".join(codes) + " | 合計 |")
     lines.append("|---|---|" + "---:|" * (len(codes) + 1))
@@ -135,7 +160,8 @@ def main() -> int:
         lines.append(f"| `{landing.id}` | {kind} | {cells} | **{n}** |")
     lines += [
         "",
-        f"- 合計 **{total}** 回。「香川の検索」と「エリア」は、商品が無い施設からの導線",
+        f"- 合計 **{total}** 回（動作確認の {checked} 回を除いた数）。"
+        "「香川の検索」と「エリア」は、商品が無い施設からの導線",
         "- 2 週間見て「香川の検索」がほぼ 0 なら、枠を商品のある施設と直島・高松に絞る"
         "（質の低い送客は規約 4.5(b) で停止されうる）",
     ]

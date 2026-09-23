@@ -46,13 +46,15 @@ AI が全自動で回すための前提として、アカウント作成や鍵�
 12. 各 ASP の掲載ルール（「広告」表記、ロゴの使用条件など）に合わせてテンプレートの文言を確認する。
     - Klook は 2026-09-22 承認・2026-09-23 公開。規約は `affiliates.py` の `terms_checked_on` と
       `Offer.constraints`（条項番号つき）に写した。規約が変わったらここと突き合わせる
-13. **`CLOUDFLARE_API_TOKEN` に「Account Analytics: Read」を足す**（2026-09-23 起票、対応中）。
-    週次の「広告のクリック（飛び先ごと）」がこれで出る。2026-09-23 に権限を足してもらったが、
-    手元の `.env` のトークンではまだ 403。**権限を足したトークンと、GitHub Secrets・手元の
-    `.env` の値が同じか**を確かめる（別のトークンに足した場合は値の差し替えが要る）。
-    - ビーコン（RUM）は Cloudflare 側で**自動挿入**にしてあり、サイトに鍵は置かない。
-      そのため `CF_WEB_ANALYTICS_TOKEN` は登録しない。週次の集計では `siteTag` が要るので、
-      **権限のあるトークンで `rum/site_info/list` から site tag を取る**形にしてある
+13. ~~**`CLOUDFLARE_API_TOKEN` に「Account Analytics: Read」を足す**~~ → 完了（2026-09-23）。
+    GraphQL（`rumPageloadEventsAdaptiveGroups`）はこの権限だけで通る。REST の
+    `rum/site_info/list` は 403 のままだが、集計には使っていない。
+    - ビーコン（RUM）は Cloudflare 側で**自動挿入**にしてあり、サイトに鍵は置かない
+      （`CF_WEB_ANALYTICS_TOKEN` は登録しない）。
+    - **絞り込みは `siteTag` ではなくホスト名**で行う。japan-open-today.com には Web Analytics の
+      登録が 2 つあり、本番の HTML に挿し込まれる token（`f2319ef6…`）にはイベントが 0 件で、
+      実データは別の登録（`a8bcebea…`）に入る。二重登録は**そのままにする**（消すと自動挿入か
+      データのどちらかを失う可能性がある。2026-09-23 の判断）
 14. **Klook の飛び先を月 1 回ブラウザで開く**（2026-09-23 起票）。規約 4.3(a) が自動の読み取りを
     禁じているので、週次まとめに出る一覧を人が開いて、ページが生きているかを確かめる。
 

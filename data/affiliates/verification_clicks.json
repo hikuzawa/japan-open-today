@@ -1,0 +1,26 @@
+{
+  "_note": "広告の転送ページを動作確認で開いた分（ADR 0012 追記、2026-09-23）。週次のクリック数から差し引く。運営者・開発の確認は利用者のクリックではない。日付は JST の実施日、count は Cloudflare Web Analytics に記録された回数（計測は 10 件単位に丸められることがある）。",
+  "events": [
+    {
+      "date": "2026-09-23",
+      "landing": "chichibugahama-sunset-shuttle",
+      "locale": "ja",
+      "count": 1,
+      "note": "公開直後の確認。転送ページ → 父母ヶ浜の商品ページに aid 付きで着地することを見た"
+    },
+    {
+      "date": "2026-09-23",
+      "landing": "naoshima-tours",
+      "locale": "ja",
+      "count": 1,
+      "note": "公開直後の確認。自動挿入のビーコンを見てから転送する作りに直したあとの再確認"
+    },
+    {
+      "date": "2026-09-23",
+      "landing": "kagawa",
+      "locale": "zh-Hant",
+      "count": 2,
+      "note": "繁体字の検索結果 URL の確認（zh-CN から zh-TW に差し替える前と後で 1 回ずつ）"
+    }
+  ]
+}
