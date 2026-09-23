@@ -150,3 +150,12 @@ Paid Search / SEM / SEO をしない」。広告の枠のボタンに「（Klook
 
 繁体字の検索結果に、運営者から受け取った **zh-CN（簡体字）の URL** が入っている。繁体字の
 利用者には zh-TW が正しいので、zh-TW の URL を受け取ったら差し替える。
+
+## 追記（2026-09-23）: クリック数の読み取りは sitemill に寄せた
+
+Cloudflare の GraphQL への問い合わせは akiya-atlas と同じものだったので、
+`sitemill.metrics.rum_pageloads(secrets, host, days)`（sitemill v0.7.6、ADR 0007 追記）に移した。
+`tools/report_clicks.py` に残るのは、パスを飛び先 × 言語に読み替える部分と、
+`data/affiliates/verification_clicks.json` の動作確認分の差し引き。
+ホスト名で絞ること・`Account Analytics: Read` が要ること・自動挿入のビーコンが
+ナビゲーション形の要求にだけ入ることは、エンジン側の docstring にまとめてある。

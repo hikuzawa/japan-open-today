@@ -1,8 +1,9 @@
 """広告の転送ページが何回開かれたかを、飛び先ごとに数える（ADR 0012 追記、2026-09-23）。
 
 転送ページ（`/go/<案件>/<枠>/<飛び先>/`）は 1 枚につき 1 回、Cloudflare Web Analytics の
-ビーコンを出す。その表示数を Cloudflare の GraphQL API から取り、**飛び先ごと・言語ごと**に
-並べる。Klook の「探す」導線（商品が無い施設）が押されているかを見て、枠を絞るかを判断する。
+ビーコンを出す。その表示数を `sitemill.metrics.rum_pageloads`（ホスト名で絞る。ADR 0007 追記）
+で取り、**飛び先ごと・言語ごと**に並べる。Klook の「探す」導線（商品が無い施設）が押されて
+いるかを見て、枠を絞るかを判断する。
 
 必要なもの（`.env` / CI の Secrets）:
 
@@ -10,10 +11,8 @@
 - `CLOUDFLARE_API_TOKEN` に **Account Analytics: Read** の権限（配置用の権限だけでは 403 になる）
 
 ビーコンは Cloudflare が応答に自動で挿し込む形にしてあり、サイトに鍵を置かない
-（`CF_WEB_ANALYTICS_TOKEN` は登録しない）。**絞り込みは `siteTag` ではなくホスト名**で行う。
-2026-09-23 に調べたところ、本番の HTML に挿し込まれている `data-cf-beacon` の token
-（`f2319ef6…`）にはイベントが 1 件も無く、実データは別の site（`a8bcebea…`）に入っていた。
-同じホスト名の Web Analytics の登録が 2 つあるためで、ホスト名で絞ればどちらでも取れる。
+（`CF_WEB_ANALYTICS_TOKEN` は登録しない）。挿し込みの条件と、同じホスト名で登録が 2 つある
+ときの注意は `sitemill.metrics.rum` の docstring にまとめてある。
 
 運営者・開発の**動作確認で開いた分**は `data/affiliates/verification_clicks.json` に記録してあり、
 期間が重なるものを差し引いて出す（利用者のクリックと混ぜない）。
@@ -32,69 +31,13 @@ from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlsplit
 
-import httpx
+from sitemill.metrics import rum_pageloads
+from sitemill.metrics.rum import NEED
 from sitemill.settings import Workspace
 
 from japan_open_today import affiliates, klook
 
-ENDPOINT = "https://api.cloudflare.com/client/v4/graphql"
 VERIFICATION = Path("data/affiliates/verification_clicks.json")
-QUERY = """
-query($account: string!, $host: string!, $since: Time!, $until: Time!) {
-  viewer {
-    accounts(filter: {accountTag: $account}) {
-      rumPageloadEventsAdaptiveGroups(
-        filter: {requestHost: $host, datetime_geq: $since, datetime_leq: $until}
-        limit: 500
-        orderBy: [count_DESC]
-      ) {
-        count
-        dimensions { requestPath }
-      }
-    }
-  }
-}
-"""
-NEED = (
-    "- クリック数は出せなかった。`CLOUDFLARE_API_TOKEN` に **Account Analytics: Read** が"
-    "要る（配置用の権限だけでは読めない）。権限を足したトークンと、CI・手元の値が同じかも見る。"
-    "当面は Cloudflare の Web Analytics の画面で `/go/` のページ別表示数を見る"
-)
-
-
-def fetch(token: str, account: str, host: str, days: int) -> dict[str, int] | None:
-    """パスごとの表示数。取れなければ None。"""
-    until = datetime.now(UTC).replace(microsecond=0)
-    since = until - timedelta(days=days)
-    try:
-        resp = httpx.post(
-            ENDPOINT,
-            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
-            json={
-                "query": QUERY,
-                "variables": {
-                    "account": account,
-                    "host": host,
-                    "since": since.isoformat().replace("+00:00", "Z"),
-                    "until": until.isoformat().replace("+00:00", "Z"),
-                },
-            },
-            timeout=60,
-        )
-    except httpx.HTTPError:
-        return None
-    if resp.status_code != 200:
-        return None
-    body = resp.json()
-    if body.get("errors") or not (body.get("data") or {}).get("viewer"):
-        return None
-    accounts = body["data"]["viewer"].get("accounts") or []
-    if not accounts:
-        return None
-    return {
-        row["dimensions"]["requestPath"]: row["count"]
-        for row in accounts[0]["rumPageloadEventsAdaptiveGroups"]
-    }
 
 
 def verification_clicks(root: Path, days: int) -> dict[tuple[str, str], int]:
@@ -124,12 +67,8 @@ def main() -> int:
         print("\n".join(lines))
         return 0
 
-    secrets = ws.secrets
-    counts = None
-    token, account = secrets.cloudflare_api_token, secrets.cloudflare_account_id
     host = urlsplit(ws.site.base_url).hostname or ""
-    if token and account and host:
-        counts = fetch(token, account, host, args.days)
+    counts = rum_pageloads(ws.secrets, host, args.days)
     if counts is None:
         lines.append(NEED)
         print("\n".join(lines))
