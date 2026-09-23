@@ -474,6 +474,8 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                     "offer": target.offer,
                     "target_url": target.target_url,
                     "has_landing": target.landing is not None,
+                    # 計測ビーコンが出ないときは待たずに転送する（待っても数えられない）
+                    "analytics_on": bool(ws.secrets.cf_web_analytics_token),
                 },
                 trust=_trust(ws, now=now, sources=all_sources, count=len(ds.spots)),
             )
