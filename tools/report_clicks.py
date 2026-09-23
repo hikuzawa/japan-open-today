@@ -10,8 +10,10 @@
 - `CLOUDFLARE_API_TOKEN` に **Account Analytics: Read** の権限（配置用の権限だけでは 403 になる）
 
 ビーコンは Cloudflare が応答に自動で挿し込む形にしてあり、サイトに鍵を置かない
-（`CF_WEB_ANALYTICS_TOKEN` は登録しない）。GraphQL に要る `siteTag` は、同じトークンで
-`rum/site_info/list` を引いて、サイトのホスト名に一致するものを使う。
+（`CF_WEB_ANALYTICS_TOKEN` は登録しない）。**絞り込みは `siteTag` ではなくホスト名**で行う。
+2026-09-23 に調べたところ、本番の HTML に挿し込まれている `data-cf-beacon` の token
+（`f2319ef6…`）にはイベントが 1 件も無く、実データは別の site（`a8bcebea…`）に入っていた。
+同じホスト名の Web Analytics の登録が 2 つあるためで、ホスト名で絞ればどちらでも取れる。
 
 鍵や権限が足りないときは、何を足せばよいかを書いて 0 で終わる（週次を止めない）。
 
@@ -33,11 +35,11 @@ from japan_open_today import affiliates, klook
 
 ENDPOINT = "https://api.cloudflare.com/client/v4/graphql"
 QUERY = """
-query($account: string!, $site: string!, $since: Time!, $until: Time!) {
+query($account: string!, $host: string!, $since: Time!, $until: Time!) {
   viewer {
     accounts(filter: {accountTag: $account}) {
       rumPageloadEventsAdaptiveGroups(
-        filter: {siteTag: $site, datetime_geq: $since, datetime_leq: $until}
+        filter: {requestHost: $host, datetime_geq: $since, datetime_leq: $until}
         limit: 500
         orderBy: [count_DESC]
       ) {
@@ -55,26 +57,7 @@ NEED = (
 )
 
 
-def site_tag(token: str, account: str, host: str) -> str | None:
-    """このサイトの site tag。自動挿入なので鍵を持っておらず、API から引く。"""
-    try:
-        resp = httpx.get(
-            f"https://api.cloudflare.com/client/v4/accounts/{account}/rum/site_info/list",
-            headers={"Authorization": f"Bearer {token}"},
-            timeout=60,
-        )
-    except httpx.HTTPError:
-        return None
-    if resp.status_code != 200 or not resp.json().get("success"):
-        return None
-    for site in resp.json().get("result", []):
-        zone = (site.get("ruleset") or {}).get("zone_name") or site.get("host") or ""
-        if host and host in zone:
-            return site.get("site_tag")
-    return None
-
-
-def fetch(token: str, account: str, site: str, days: int) -> dict[str, int] | None:
+def fetch(token: str, account: str, host: str, days: int) -> dict[str, int] | None:
     """パスごとの表示数。取れなければ None。"""
     until = datetime.now(UTC).replace(microsecond=0)
     since = until - timedelta(days=days)
@@ -86,7 +69,7 @@ def fetch(token: str, account: str, site: str, days: int) -> dict[str, int] | No
                 "query": QUERY,
                 "variables": {
                     "account": account,
-                    "site": site,
+                    "host": host,
                     "since": since.isoformat().replace("+00:00", "Z"),
                     "until": until.isoformat().replace("+00:00", "Z"),
                 },
@@ -126,11 +109,9 @@ def main() -> int:
     secrets = ws.secrets
     counts = None
     token, account = secrets.cloudflare_api_token, secrets.cloudflare_account_id
-    if token and account:
-        host = urlsplit(ws.site.base_url).hostname or ""
-        tag = secrets.cf_web_analytics_token or site_tag(token, account, host)
-        if tag:
-            counts = fetch(token, account, tag, args.days)
+    host = urlsplit(ws.site.base_url).hostname or ""
+    if token and account and host:
+        counts = fetch(token, account, host, args.days)
     if counts is None:
         lines.append(NEED)
         print("\n".join(lines))
