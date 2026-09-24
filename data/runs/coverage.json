@@ -1,5 +1,5 @@
 {
-  "today": "2026-09-24",
+  "today": "2026-09-25",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -183,7 +183,8 @@
         "regular_hours"
       ],
       "week": {
-        "open": 7
+        "open": 6,
+        "unknown": 1
       }
     },
     {
@@ -340,13 +341,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -713,13 +714,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "substitute_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 2,
-        "open": 5
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -737,13 +738,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "substitute_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 2,
-        "open": 5
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -761,13 +762,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "substitute_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 2,
-        "open": 5
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -1604,13 +1605,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 3,
-        "open": 4
+        "open": 4,
+        "closed": 3
       }
     },
     {
@@ -1650,13 +1651,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -1809,13 +1810,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 2,
-        "open": 5
+        "open": 5,
+        "closed": 2
       }
     },
     {
@@ -3578,13 +3579,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -3697,13 +3698,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "substitute_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 2,
-        "open": 5
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -3744,13 +3745,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "substitute_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 2,
-        "open": 5
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -3826,7 +3827,7 @@
       "spot_id": "karokaro",
       "name": "讃岐漆芸美術館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "closures",
         "address",
@@ -3837,13 +3838,13 @@
         "hours",
         "fees"
       ],
-      "today": "closed",
+      "today": "unknown",
       "today_reasons": [
-        "weekly_closed"
+        "no_data"
       ],
       "week": {
-        "closed": 1,
-        "unknown": 6
+        "unknown": 6,
+        "closed": 1
       }
     },
     {
@@ -4341,7 +4342,7 @@
       "spot_id": "town-490",
       "name": "まんのう天文台",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "address",
@@ -4352,13 +4353,13 @@
         "closures",
         "fees"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 4,
-        "open": 3
+        "open": 3,
+        "unknown": 4
       }
     },
     {
@@ -4702,13 +4703,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "substitute_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 2,
-        "open": 5
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -4800,7 +4801,8 @@
         "regular_hours"
       ],
       "week": {
-        "open": 7
+        "open": 6,
+        "unknown": 1
       }
     },
     {
@@ -6578,9 +6580,9 @@
     "reservation_required": 52
   },
   "states": {
-    "open": 131,
+    "open": 143,
     "unknown": 137,
-    "closed": 13
+    "closed": 1
   },
   "unknown_reasons": {
     "no_data": 132,
