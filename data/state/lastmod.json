@@ -190,8 +190,8 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/konpira/index.html": {
-   "fingerprint": "sha256:ee072bf99bee9d871bd2f36820fe38ea7fb3ae8e35fbad5057017edd60246a12",
-   "lastmod": "2026-09-18"
+   "fingerprint": "sha256:4d91b782b7f1fde0aae57ec4cb2990a346eda62ce84f2a25bba2dd3dacceac4d",
+   "lastmod": "2026-09-26"
   },
   "en/spots/kotohira/konpirakabuki/index.html": {
    "fingerprint": "sha256:1efc5c6774cfd82ee75172d1d9a204a91250a176a3b81d74ffc4a166694cdc44",
@@ -518,8 +518,8 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/mitoyo-kanko-128/index.html": {
-   "fingerprint": "sha256:a1c344dfc03166daab94603f557b42408393c187fe93efb516c4c930ce15ef7c",
-   "lastmod": "2026-09-20"
+   "fingerprint": "sha256:6db7c7147f5080c0a1ab9b1e278a1df2306200ab06b1bca8de60d66d39d7f4c8",
+   "lastmod": "2026-09-26"
   },
   "en/spots/mitoyo/mitoyo-kanko-129/index.html": {
    "fingerprint": "sha256:a9e3ddecff1f7f0f175c1c01fe31785082035e16cab585c8aab093c09c2f8a92",
@@ -678,24 +678,24 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/goldtower/index.html": {
-   "fingerprint": "sha256:350e823687d26d70b94fec67faa0cd423d53e17a33b66a48adfa366a0c76b1be",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:707720bbe7c5395f71dbb0d956d8eacf3159d8235e7d516f0396a94954782283",
+   "lastmod": "2026-09-26"
   },
   "en/spots/sakaide/goshikivc/index.html": {
    "fingerprint": "sha256:619652c4c5214b5375afdd8404bf47387462192970ecc9d5b59cb1b94ff173fa",
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/jb-honshi/index.html": {
-   "fingerprint": "sha256:b77844115b8896e49ad1090675adef784e4d26e452a9544e0ddeac5070de6012",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:14533ef1e1538f50426791ef4751ad661a54cb1014daa89fdfc6d0a2b1180f94",
+   "lastmod": "2026-09-26"
   },
   "en/spots/sakaide/p13/index.html": {
    "fingerprint": "sha256:c17bf0da9cda65912ca3493e88672a7a7babda67b2573058199ca81cc49200ec",
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/p2788/index.html": {
-   "fingerprint": "sha256:6a79d4e7d417b3f021f2ed7b3e3296dadde8d7cb040d712f7a47d4a68a78eec4",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:b5356a70f30fd06c8f98ae9e8de581fc6309e879927c5eab5d6c8691cb0dc958",
+   "lastmod": "2026-09-26"
   },
   "en/spots/sakaide/p2970/index.html": {
    "fingerprint": "sha256:fd246104dd25a956e25be8973e6b97c277bb668d68131ef9c2c09eb0a5def3fd",
@@ -1326,8 +1326,8 @@
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/konpira/index.html": {
-   "fingerprint": "sha256:29f6e2b01ed73f95cf844eee550dfbc34d92400478c845f6e738ea561427f9be",
-   "lastmod": "2026-09-18"
+   "fingerprint": "sha256:5d8af94c903635c19b1125d4080c7aa7f0d53dd0ea84aaca46db963a6fc509be",
+   "lastmod": "2026-09-26"
   },
   "spots/kotohira/konpirakabuki/index.html": {
    "fingerprint": "sha256:ead038f47361bc76d04b275f6d391b48ab3f87d9e6ff86d422f6a4df3d2470b8",
@@ -1654,8 +1654,8 @@
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/mitoyo-kanko-128/index.html": {
-   "fingerprint": "sha256:0025ef76167fd169cf3af5ab08851f8ad5927541eb61d1d5eaeaae523c198ed9",
-   "lastmod": "2026-09-20"
+   "fingerprint": "sha256:b39038dbed1d63b062c239445a5f2dd91bdb052cf04e5b1a323a043b78867481",
+   "lastmod": "2026-09-26"
   },
   "spots/mitoyo/mitoyo-kanko-129/index.html": {
    "fingerprint": "sha256:307574d0b758404e3a770c7f02a0a1586f0ab1f00be9177abaeb693a0d530860",
@@ -1814,24 +1814,24 @@
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/goldtower/index.html": {
-   "fingerprint": "sha256:1d8ef2a2b660a21c17f0052a94f356e83d558b96765a69ebe1b1c11d56338fe2",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:011ef402f0adda5fa94984857317fe50989cf65b8cfce06b693be3461ea8e197",
+   "lastmod": "2026-09-26"
   },
   "spots/sakaide/goshikivc/index.html": {
    "fingerprint": "sha256:2ebdc3eaea77aac156b5bcc567023e0dac65d3039812096ef70ccc352fa8c100",
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/jb-honshi/index.html": {
-   "fingerprint": "sha256:f799db9e415aa454daa5bf73874411f4d57d0c83cbd11a6d573cddb2a1d408f3",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:cc1552fe6f9c5cc0768774038a8b4ed80ff9d8d90807ae181bc184417256e5fc",
+   "lastmod": "2026-09-26"
   },
   "spots/sakaide/p13/index.html": {
    "fingerprint": "sha256:bba90ec8da59ea07a8363be76033c72906283b8269c9342f56204a8c1e40fd4a",
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/p2788/index.html": {
-   "fingerprint": "sha256:cbd2152b83bb770f5893d79b6fac02841d5dd17bd66c42376b9b0b82806ef20b",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:a5a42c5c8c818101332a46a3a66255509f565e39bbbb49ef206a00ca809dd067",
+   "lastmod": "2026-09-26"
   },
   "spots/sakaide/p2970/index.html": {
    "fingerprint": "sha256:ea62149867ff87da03065c6c6b6a4787c9559ad6ea2d52037bf846a284d7be7c",
@@ -2514,8 +2514,8 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/konpira/index.html": {
-   "fingerprint": "sha256:7238f1a6210bc04d2612f863e17cd88b1e02ce5f91cbe0e64063755f6e7bc9ac",
-   "lastmod": "2026-09-18"
+   "fingerprint": "sha256:4a990e2b5ad5d91ca0cedbcbd25e114af088573c1a9dce0eb642326363120da5",
+   "lastmod": "2026-09-26"
   },
   "zh-hant/spots/kotohira/konpirakabuki/index.html": {
    "fingerprint": "sha256:55820ffc8948a5617e055ccfe99df944fea57d51da3f9232e305391974a484fb",
@@ -2842,8 +2842,8 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/mitoyo-kanko-128/index.html": {
-   "fingerprint": "sha256:371d3ae8e2bc8d2e2503fc23368dc6b3bd8786649cb1266e9fecea17c8e25eab",
-   "lastmod": "2026-09-20"
+   "fingerprint": "sha256:301d42d8c934f55da7c583ae8a6c71c24669b2ed56c0181aaa2badcc959f00b4",
+   "lastmod": "2026-09-26"
   },
   "zh-hant/spots/mitoyo/mitoyo-kanko-129/index.html": {
    "fingerprint": "sha256:5b726feff8ac3927e82d3a98e99f39a4722f442a63ec50b2dd29604130cd2ad1",
@@ -3002,24 +3002,24 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/goldtower/index.html": {
-   "fingerprint": "sha256:9332439f1590226b8ed4d45cf1734c1a64185388c6d9b4197c15209506b01504",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:4ae72c9e37d26118cebc41a0e6edf0f76a93f1d72f8da6d7c55780f6c6ded70f",
+   "lastmod": "2026-09-26"
   },
   "zh-hant/spots/sakaide/goshikivc/index.html": {
    "fingerprint": "sha256:3efc52eca1c76de8a6a51fc5f5046f6c4b3dd2d15becfce734cc939b2969f2ca",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/jb-honshi/index.html": {
-   "fingerprint": "sha256:c1c4278c7990c47b7be892213af6678662f0f90f8499bc7bf885456090a067b3",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:a66192a89e3c1ec83db10e646da02bb0f14be53c6b6d27024599d444a1178e78",
+   "lastmod": "2026-09-26"
   },
   "zh-hant/spots/sakaide/p13/index.html": {
    "fingerprint": "sha256:e21a4ede48597baed3d06346a167965828619ed4de509a4d8cfaefa5e59370e5",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/p2788/index.html": {
-   "fingerprint": "sha256:18c2f57b78d63b204416b4e30c69aaf3542563938f5dfb391f0b9d42069b29a8",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:fe1da1fa9c664067710bb64763cf44ce6d98400138645bb474e4579c6abc72dd",
+   "lastmod": "2026-09-26"
   },
   "zh-hant/spots/sakaide/p2970/index.html": {
    "fingerprint": "sha256:bed38b5ef84be2301d3ede6757f6c0e1b14642cf301aaa17de4b136719a2d73a",
