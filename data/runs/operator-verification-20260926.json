@@ -1,0 +1,2831 @@
+{
+  "checked_at": "2026-09-26T08:05:59.672406+09:00",
+  "requests": 149,
+  "sources": [
+    {
+      "id": "kagawa-ha-art",
+      "name": "歯ART美術館",
+      "operator": "株式会社」が設立した",
+      "operator_kind": "facility_official",
+      "official_url": "http://ha-art.com/index.html",
+      "old_evidence": {
+        "quote": "株式会社」が設立した",
+        "url": "http://ha-art.com/index.html",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://ha-art.com/index.html",
+          "status": 404,
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-city",
+      "name": "菊池寛記念館",
+      "operator": "菊池寛記念館｜高松市",
+      "operator_kind": "municipality",
+      "official_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kikuchikan/index.html",
+      "old_evidence": {
+        "quote": "菊池寛記念館｜高松市",
+        "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kikuchikan/index.html",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kikuchikan/index.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kikuchikan/index.html",
+          "title": "菊池寛記念館｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": " お持ちでない方は、Adobe社から無償でダウンロードできます。 Adobe Acrobat Reader DCのダウンロードへ ページ上部へ 販売物 刊行物 オリジナルグッズ SNS リンク集 館内では、指定されたケース以外の 撮影は御遠慮ください 。取材等で撮影される場合は、別途申請が必要です。 このウェブサイトに掲載の写真・イラスト・その他のコンテンツの無断転載を禁じます。 Copyright © Takamatsu City, All rights reserved."
+        }
+      ]
+    },
+    {
+      "id": "kagawa-city-284",
+      "name": "高松市美術館",
+      "operator": "Copyright©TAKAMATSU ART MUSEUM.All rights reserved.",
+      "operator_kind": "municipality",
+      "official_url": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/index.html",
+      "old_evidence": {
+        "quote": "Copyright©TAKAMATSU ART MUSEUM.All rights reserved.",
+        "url": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/index.html",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/index.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/index.html",
+          "title": "高松市美術館公式サイト",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright©TAKAMATSU ART MUSEUM.All rights reserved."
+            }
+          ],
+          "tail": "必要です。 お持ちでない方は、Adobe社から無償でダウンロードできます。 Adobe Acrobat Reader DCのダウンロードへ Page Top 〒760-0027香川県高松市紺屋町10番地4 電話:087-823-1711 ファックス:087-851-7250 申請用紙ダウンロード メールマガジン サイトについて 関連リンク サイトマップ プライバシーポリシー Copyright©TAKAMATSU ART MUSEUM.All rights reserved."
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/info/contact.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/info/contact.html",
+          "title": "お問い合わせ｜高松市美術館公式サイト",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright©TAKAMATSU ART MUSEUM.All rights reserved."
+            }
+          ],
+          "tail": "渡し） 領収書が必要な方は、現金でお支払いくださいますようお願いいたします。 ・現在、 QRコードやバーコードの読み取り決済はできません。 Page Top 〒760-0027香川県高松市紺屋町10番地4 電話:087-823-1711 ファックス:087-851-7250 申請用紙ダウンロード メールマガジン サイトについて 関連リンク サイトマップ プライバシーポリシー Copyright©TAKAMATSU ART MUSEUM.All rights reserved."
+        },
+        {
+          "label": "サイトについて",
+          "url": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/homepage.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/homepage.html",
+          "title": "サイトについて｜高松市美術館公式サイト",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright©TAKAMATSU ART MUSEUM.All rights reserved."
+            }
+          ],
+          "tail": "ことがあります。全てのコンテンツをご利用いただくには、ブラウザ設定でJavascriptの設定を有効にしていただくことをお奨めいたします。 Page Top 〒760-0027香川県高松市紺屋町10番地4 電話:087-823-1711 ファックス:087-851-7250 申請用紙ダウンロード メールマガジン サイトについて 関連リンク サイトマップ プライバシーポリシー Copyright©TAKAMATSU ART MUSEUM.All rights reserved."
+        }
+      ]
+    },
+    {
+      "id": "kagawa-j-dc2",
+      "name": "日本ドルフィンセンター",
+      "operator": "一般財団法人赤澤記念財団様からの助成に関して",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.j-dc2.net/",
+      "old_evidence": {
+        "quote": "一般財団法人赤澤記念財団様からの助成に関して",
+        "url": "https://www.j-dc2.net/",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.j-dc2.net/",
+          "status": 200,
+          "final_url": "https://www.j-dc2.net/",
+          "title": "こころがジャンプするわくわくドキドキの体験を - 日本ドルフィンセンター公式ホームページ",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "ついて 2026.06.17 令和８年度一般財団法人赤澤記念財団様からの助成に関して（イルカふれあい特別活動） 2026.0"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright ©2011 日本ドルフィンセンター All Rights Reserved. ログイン ログアウト | 編集 トップへ戻る // <![CDATA[ wind"
+            }
+          ],
+          "tail": "[CDATA[ window.regModule(\"common_scrolltotop\", []); // ]]> //<![CDATA[ addAutomatedTracking('creator.website', track_anon); //]]> 閉じる // <![CDATA[ window.regModule(\"web_login\", {\"url\":\"https:\\/\\/www.j-dc2.net\\/\",\"pageId\":896546973}); // ]]>"
+        },
+        {
+          "label": "施設概要",
+          "url": "https://www.j-dc2.net/facility/",
+          "status": 200,
+          "final_url": "https://www.j-dc2.net/facility/",
+          "title": "施設情報 - 日本ドルフィンセンター公式ホームページ",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "動物取扱業に関する表示 氏名 株式会社 日本ドルフィンセンター 事業所の名称 日本ドルフィンセンター"
+            },
+            {
+              "kind": "法人名",
+              "quote": "舗名 日本ドルフィンセンター 運営会社 株式会社日本ドルフィンセンター 運営責任者 センター長 寺山 弘樹 所"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright ©2011 日本ドルフィンセンター All Rights Reserved. ログイン ログアウト | 編集 トップへ戻る // <![CDATA[ wind"
+            }
+          ],
+          "tail": "[CDATA[ window.regModule(\"common_scrolltotop\", []); // ]]> //<![CDATA[ addAutomatedTracking('creator.website', track_anon); //]]> 閉じる // <![CDATA[ window.regModule(\"web_login\", {\"url\":\"https:\\/\\/www.j-dc2.net\\/\",\"pageId\":896812173}); // ]]>"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.j-dc2.net/contact/",
+          "status": 200,
+          "final_url": "https://www.j-dc2.net/contact/",
+          "title": "お問い合わせ - 日本ドルフィンセンター公式ホームページ",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright ©2011 日本ドルフィンセンター All Rights Reserved. ログイン ログアウト | 編集 トップへ戻る // <![CDATA[ wind"
+            }
+          ],
+          "tail": "[CDATA[ window.regModule(\"common_scrolltotop\", []); // ]]> //<![CDATA[ addAutomatedTracking('creator.website', track_anon); //]]> 閉じる // <![CDATA[ window.regModule(\"web_login\", {\"url\":\"https:\\/\\/www.j-dc2.net\\/\",\"pageId\":896547873}); // ]]>"
+        },
+        {
+          "label": "日本ドルフィンセンターについて",
+          "url": "https://www.j-dc2.net/about-us/",
+          "status": 200,
+          "final_url": "https://www.j-dc2.net/about-us/",
+          "title": "日本ドルフィンセンターについて - 日本ドルフィンセンター公式ホームページ",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright ©2011 日本ドルフィンセンター All Rights Reserved. ログイン ログアウト | 編集 トップへ戻る // <![CDATA[ wind"
+            }
+          ],
+          "tail": "[CDATA[ window.regModule(\"common_scrolltotop\", []); // ]]> //<![CDATA[ addAutomatedTracking('creator.website', track_anon); //]]> 閉じる // <![CDATA[ window.regModule(\"web_login\", {\"url\":\"https:\\/\\/www.j-dc2.net\\/\",\"pageId\":896547073}); // ]]>"
+        },
+        {
+          "label": "調査・研究",
+          "url": "https://www.j-dc2.net/about-us/調査-研究/",
+          "status": 200,
+          "final_url": "https://www.j-dc2.net/about-us/%E8%AA%BF%E6%9F%BB-%E7%A0%94%E7%A9%B6/",
+          "title": "調査・研究について - 日本ドルフィンセンター公式ホームページ",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "寄鯨事業は、一般財団法人日本鯨類研究所が行なっている事業です"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright ©2011 日本ドルフィンセンター All Rights Reserved. ログイン ログアウト | 編集 トップへ戻る // <![CDATA[ wind"
+            }
+          ],
+          "tail": "CDATA[ window.regModule(\"common_scrolltotop\", []); // ]]> //<![CDATA[ addAutomatedTracking('creator.website', track_anon); //]]> 閉じる // <![CDATA[ window.regModule(\"web_login\", {\"url\":\"https:\\/\\/www.j-dc2.net\\/\",\"pageId\":2210790373}); // ]]>"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-souyu",
+      "name": "つばさ山温泉",
+      "operator": "創裕",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.souyu.co.jp/shisetsu/tsubasayama",
+      "old_evidence": {
+        "quote": "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved.",
+        "url": "https://www.souyu.co.jp/shisetsu/tsubasayama",
+        "checked_on": "2026-09-17"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.souyu.co.jp/shisetsu/tsubasayama",
+          "status": 200,
+          "final_url": "https://www.souyu.co.jp/shisetsu/tsubasayama",
+          "title": "つばさ山温泉 | 創裕",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "株式会社 創裕 〒760-0064 香川県高松市朝日新"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プラ"
+            }
+          ],
+          "tail": "覧 natural body Rakura ボディケア こころ 地下水設備部門 浅井戸・深井戸温泉ボーリング CREINS(クリアンス)配管洗浄 社会福祉部門 アヤトリエ 企業情報 HOME お知らせ メディア掲載情報 企業情報 採用情報 お問い合わせ プライバシーポリシー Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プライバシーポリシー ×閉じる"
+        },
+        {
+          "label": "企業情報",
+          "url": "https://www.souyu.co.jp/company/",
+          "status": 200,
+          "final_url": "https://www.souyu.co.jp/company/",
+          "title": "会社概要 < 企業情報 | 株式会社 創裕 私たちは、ゆとりある生活を創造します。",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "このような時代の流れの中で、私たち株式会社創裕は1994年に創業し、当初から一貫して「ゆとりある生活の創造"
+            },
+            {
+              "kind": "法人名",
+              "quote": "な企業となる 沿革 平成 5年 12月 有限会社創裕 設立 平成 6年 10月 高松ぽかぽか"
+            },
+            {
+              "kind": "法人名",
+              "quote": "高松市伏石町） 開業 平成 7年 7月 株式会社に変更、資本金1,000万円に増資 平成 8年"
+            },
+            {
+              "kind": "法人名",
+              "quote": "2年 1月 足摺テルメの展望台アネモネがNPO法人地域活性化支援センターより「恋人の聖地」に認定 4月 足摺テルメを"
+            },
+            {
+              "kind": "法人名",
+              "quote": "（香川県高松市鍛冶屋町） 開業［株式会社クリエイトから運営移行］ 7月 ル・ポール粟島（香川県三豊市）"
+            },
+            {
+              "kind": "法人名",
+              "quote": "運営受託](令和2年3月終了) 11月 株式会社クリエイトを株式会社創裕の完全子会社化 11月 本場さぬきうどん 讃州 佐賀本"
+            },
+            {
+              "kind": "法人名",
+              "quote": "わ市）開業［指定管理者による運営受託］ 株式会社 創裕 〒760-0064 香川県高松市朝日新"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プラ"
+            }
+          ],
+          "tail": "覧 natural body Rakura ボディケア こころ 地下水設備部門 浅井戸・深井戸温泉ボーリング CREINS(クリアンス)配管洗浄 社会福祉部門 アヤトリエ 企業情報 HOME お知らせ メディア掲載情報 企業情報 採用情報 お問い合わせ プライバシーポリシー Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プライバシーポリシー ×閉じる"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.souyu.co.jp/contact/",
+          "status": 200,
+          "final_url": "https://www.souyu.co.jp/contact/",
+          "title": "お問い合わせ | 株式会社 創裕 私たちは、ゆとりある生活を創造します。",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "支援事業所 アヤトリエ お問合わせ内容 株式会社 創裕 〒760-0064 香川県高松市朝日新"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プラ"
+            }
+          ],
+          "tail": "覧 natural body Rakura ボディケア こころ 地下水設備部門 浅井戸・深井戸温泉ボーリング CREINS(クリアンス)配管洗浄 社会福祉部門 アヤトリエ 企業情報 HOME お知らせ メディア掲載情報 企業情報 採用情報 お問い合わせ プライバシーポリシー Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プライバシーポリシー ×閉じる"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-higashikagawa",
+      "name": "引田城跡（城山）",
+      "operator": "公益財団法人日本城郭協会により続日本100名城に選定",
+      "operator_kind": "tourism_association",
+      "official_url": "https://higashikagawa.net/sightseeing/hiketajo",
+      "old_evidence": {
+        "quote": "公益財団法人日本城郭協会により続日本100名城に選定",
+        "url": "https://www.my-kagawa.jp/point/481",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://higashikagawa.net/sightseeing/hiketajo",
+          "status": 200,
+          "final_url": "https://higashikagawa.net/sightseeing/hiketajo",
+          "title": "引田城跡・城山 | 東かがわ市観光情報サイト",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "リシー サイトポリシー 東かがわ市役所 一般社団法人東かがわ地域経営機構 〒769-2701 香川県東かがわ市湊"
+            }
+          ],
+          "tail": "tps://app.chatplus.jp/cp.js\"; d[\"__cp_d\"] = \"https://app.chatplus.jp\"; d[\"__cp_c\"] = \"f6f56bed_1\"; var a = d.createElement(\"script\"), m = d.getElementsByTagName(\"script\")[0]; a.async = true, a.src = s, m.parentNode.insertBefore(a, m); })();"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.my-kagawa.jp/point/481",
+          "status": 200,
+          "final_url": "https://www.my-kagawa.jp/point/481",
+          "title": "引田城跡（城山）｜スポット・体験｜香川県観光協会公式サイト - うどん県旅ネット",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "泊施設・店舗向け） このサイトについて 公益社団法人香川県観光協会について 当サイトについて サイトマップ 関連リ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "2017年に公益財団法人日本城郭協会により続日本100名城に選定、2020年に国史跡に指定されました"
+            },
+            {
+              "kind": "法人名",
+              "quote": "501\" ,name: \"【食文化体験】株式会社 かめびし\" ,latitude: \"34.2287"
+            },
+            {
+              "kind": "法人名",
+              "quote": "スマートフォン版 このサイトについて 公益社団法人香川県観光協会について 当サイトについて サイトマップ 関連リ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "e Ritsurin français 公益社団法人香川県観光協会 〒760-8570 香川県高松市番町四"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © kagawa Prefecture Tourism Association. ALL RIGHTS RESERVED. 当サイトでは、利便性の向上と利用状"
+            }
+          ],
+          "tail": "s.id = id; js.src = \"//connect.facebook.net/ja_JP/sdk.js\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); {lang: 'ja'} $(function() { $(\"#commonFlashMessage\").modal({}); $(\".banner a.tooltip\").tooltip(); });"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-e-mikado",
+      "name": "エピアみかど",
+      "operator": "株式会社より路線バスが運行しております",
+      "operator_kind": "facility_official",
+      "official_url": "http://e-mikado.jp/",
+      "old_evidence": {
+        "quote": "株式会社より路線バスが運行しております",
+        "url": "https://e-mikado.jp/pages/62/",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://e-mikado.jp/",
+          "status": 200,
+          "final_url": "https://e-mikado.jp/",
+          "title": "香川 高松で日帰り温泉 宴会やキャンプを楽しむなら｜エピアみかど",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "-56-0016 Copyright© 一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど） All"
+            },
+            {
+              "kind": "法人名",
+              "quote": "anization\", \"name\":\"一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど）\", \""
+            },
+            {
+              "kind": "法人名",
+              "quote": "nization\", \"name\": \"一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど）\" },"
+            },
+            {
+              "kind": "法人名",
+              "quote": "nization\", \"name\": \"一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど）\" ,"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright© 一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど） All Rights Reserved. 個人情報保護方針 サイトマップ サイトポリシー 当サ"
+            }
+          ],
+          "tail": "xt\": \"https://schema.org\", \"@type\": \"PlanAction\", \"name\": \"♨みかどの日\", \"URL\": \"https://e-mikado.jp/\", \"scheduledTime\": \"2026-09-23\" } , { \"@context\": \"https://schema.org\", \"@type\": \"PlanAction\", \"name\": \"休館日\", \"scheduledTime\": \"2026-09-29\" } ]"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://e-mikado.jp/pages/62/",
+          "status": 200,
+          "final_url": "https://e-mikado.jp/pages/62/",
+          "title": "イベント",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "ちらは有料の路線バスです～～～ 琴参バス株式会社より路線バスが運行しております(有料) 中学生以上は大人運賃となります"
+            },
+            {
+              "kind": "法人名",
+              "quote": "ージより引用 ↓お問い合わせ↓ 琴参バス株式会社 Tel：0877-22-9191 町内在住70歳以上の方へ 温泉行きバス"
+            },
+            {
+              "kind": "法人名",
+              "quote": "-56-0016 Copyright© 一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど） All"
+            },
+            {
+              "kind": "法人名",
+              "quote": "anization\", \"name\":\"一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど）\", \""
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright© 一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど） All Rights Reserved. 個人情報保護方針 サイトマップ サイトポリシー 当サ"
+            }
+          ],
+          "tail": "代表者名@■\", \"address\":\"香川県仲多度郡まんのう町川東2355-1\", \"telephone\": \"0877-56-0015\", \"faxNumber\": \"0877-56-0016\", \"url\":\"https://e-mikado.jp/pages/62/\" } { \"@context\":\"https://schema.org\", \"@type\":\"WebSite\", \"name\":\"イベント\", \"url\":\"https://e-mikado.jp/\" }"
+        },
+        {
+          "label": "フォームでのお問い合わせはこちら CONTACT",
+          "url": "https://e-mikado.jp/pages/3/",
+          "status": 200,
+          "final_url": "https://e-mikado.jp/pages/3/",
+          "title": "お問い合わせ｜香川 高松で日帰り温泉 宴会やキャンプを楽しむなら｜エピアみかど",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "-56-0016 Copyright© 一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど） All"
+            },
+            {
+              "kind": "法人名",
+              "quote": "anization\", \"name\":\"一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど）\", \""
+            },
+            {
+              "kind": "法人名",
+              "quote": "nization\", \"name\": \"一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど）\", \""
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright© 一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど） All Rights Reserved. 個人情報保護方針 サイトマップ サイトポリシー 当サ"
+            }
+          ],
+          "tail": "ntext\": \"https://schema.org\", \"@type\": \"ContactPage\", \"name\": \"\", \"description\": \"\", \"url\": \"https://e-mikado.jp/pages/3/\", \"mainEntity\": { \"@type\": \"Organization\", \"name\": \"一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど）\", \"url\": \"https://e-mikado.jp/\" } }"
+        },
+        {
+          "label": "会社案内",
+          "url": "https://e-mikado.jp/pages/2/",
+          "status": 200,
+          "final_url": "https://e-mikado.jp/pages/2/",
+          "title": "会社案内｜香川 高松で日帰り温泉 宴会やキャンプを楽しむなら｜エピアみかど",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "ージ ＞ 会社案内 会社概要 ■会社名 一般財団法人 ことなみ振興公社 ■所在地 〒766-0203 香川県仲"
+            },
+            {
+              "kind": "法人名",
+              "quote": "-56-0016 Copyright© 一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど） All"
+            },
+            {
+              "kind": "法人名",
+              "quote": "anization\", \"name\":\"一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど）\", \""
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright© 一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど） All Rights Reserved. 個人情報保護方針 サイトマップ サイトポリシー 当サ"
+            }
+          ],
+          "tail": "hasMap\": \"https://maps.google.com/?q=34.094994,134.007543\", \"address\": { \"postalCode\": \"766-0203\", \"addressRegion\": \"香川県\", \"addressLocality\": \"仲多度郡まんのう町\", \"@type\": \"PostalAddress\", \"addressCountry\": \"JP\", \"streetAddress\": \"川東2355−1\" } } ] }"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-shikoku-aquarium",
+      "name": "四国水族館",
+      "operator": "公益社団法人瀬戸内海環境保全協会×四国水族館",
+      "operator_kind": "facility_official",
+      "official_url": "http://shikoku-aquarium.jp/",
+      "old_evidence": {
+        "quote": "公益社団法人瀬戸内海環境保全協会×四国水族館",
+        "url": "https://shikoku-aquarium.jp/",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://shikoku-aquarium.jp/",
+          "status": 200,
+          "final_url": "https://shikoku-aquarium.jp/",
+          "title": "【公式】四国水族館／四国・香川県の水族館",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "5 四国水族館アートギャラリー2026 公益社団法人瀬戸内海環境保全協会×四国水族館 瀬戸内海環境保全推進ポスター原画展 開"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © SHIKOKU AQUARIUM. All Rights Reserved. 現在の駐車場空き状況 収容台数 残り台数 四国水族館駐車場 223 台 22"
+            }
+          ],
+          "tail": "ction: false, }, speed: 1000, slidesPerView: 'auto', spaceBetween: 50, centeredSlides : true, navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', }, breakpoints: { 768: { slidesPerView: 1.5, spaceBetween: 30, } } });"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://shikoku-aquarium.jp/",
+          "status": 200,
+          "final_url": "https://shikoku-aquarium.jp/",
+          "title": "【公式】四国水族館／四国・香川県の水族館",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "5 四国水族館アートギャラリー2026 公益社団法人瀬戸内海環境保全協会×四国水族館 瀬戸内海環境保全推進ポスター原画展 開"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © SHIKOKU AQUARIUM. All Rights Reserved. 現在の駐車場空き状況 収容台数 残り台数 四国水族館駐車場 223 台 22"
+            }
+          ],
+          "tail": "ction: false, }, speed: 1000, slidesPerView: 'auto', spaceBetween: 50, centeredSlides : true, navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', }, breakpoints: { 768: { slidesPerView: 1.5, spaceBetween: 30, } } });"
+        },
+        {
+          "label": "四国水族館の魅力",
+          "url": "https://shikoku-aquarium.jp/about/",
+          "status": 200,
+          "final_url": "https://shikoku-aquarium.jp/about/",
+          "title": "四国水族館の魅力｜四国水族館",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © SHIKOKU AQUARIUM. All Rights Reserved. 現在の駐車場空き状況 収容台数 残り台数 四国水族館駐車場 223 台 22"
+            }
+          ],
+          "tail": " 採用情報 スポンサーシップ・プログラム 著作権とリンク Copyright © SHIKOKU AQUARIUM. All Rights Reserved. 現在の駐車場空き状況 収容台数 残り台数 四国水族館駐車場 223 台 223 台 更新 ご注意 空き情報の更新のタイミングには時間差がございますので、目安としてご利用下さい。 満車の場合はご利用いただけませんので、あらかじめご了承下さい。（満車の場合は、臨時駐車場をご利用いただくことになります） 駐車場マップはこちら"
+        },
+        {
+          "label": "",
+          "url": "https://shikoku-aquarium.jp/about/enjoywithchild.html",
+          "status": 200,
+          "final_url": "https://shikoku-aquarium.jp/about/enjoywithchild.html",
+          "title": "心が踊る。体験と発見 子どもと楽しむ四国水族館｜四国水族館の魅力｜四国水族館",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © SHIKOKU AQUARIUM. All Rights Reserved. 現在の駐車場空き状況 収容台数 残り台数 四国水族館駐車場 223 台 22"
+            }
+          ],
+          "tail": " 採用情報 スポンサーシップ・プログラム 著作権とリンク Copyright © SHIKOKU AQUARIUM. All Rights Reserved. 現在の駐車場空き状況 収容台数 残り台数 四国水族館駐車場 223 台 223 台 更新 ご注意 空き情報の更新のタイミングには時間差がございますので、目安としてご利用下さい。 満車の場合はご利用いただけませんので、あらかじめご了承下さい。（満車の場合は、臨時駐車場をご利用いただくことになります） 駐車場マップはこちら"
+        },
+        {
+          "label": "",
+          "url": "https://shikoku-aquarium.jp/about/enjoy.html",
+          "status": 200,
+          "final_url": "https://shikoku-aquarium.jp/about/enjoy.html",
+          "title": "心が和む。癒しと寛ぎ 大人が楽しむ四国水族館｜四国水族館の魅力｜四国水族館",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © SHIKOKU AQUARIUM. All Rights Reserved. 現在の駐車場空き状況 収容台数 残り台数 四国水族館駐車場 223 台 22"
+            }
+          ],
+          "tail": "ction: false, }, speed: 1000, slidesPerView: 'auto', spaceBetween: 40, centeredSlides : true, navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', }, breakpoints: { 768: { slidesPerView: 1.5, spaceBetween: 30, } } });"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-pref-156",
+      "name": "香川県立東山魁夷せとうち美術館",
+      "operator": "Copyright © 2020 Kagawa Prefectural Government. All rights r",
+      "operator_kind": "prefecture",
+      "official_url": "http://www.pref.kagawa.lg.jp/higashiyama/",
+      "old_evidence": {
+        "quote": "Copyright © 2020 Kagawa Prefectural Government. All rights reserved.",
+        "url": "https://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/index.html",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://www.pref.kagawa.lg.jp/higashiyama/",
+          "status": 200,
+          "final_url": "https://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/index.html",
+          "title": "東山魁夷せとうち美術館｜香川県",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+            }
+          ],
+          "tail": "問い合わせ ページトップへ [ 法人番号 ] 8000020370002 〒760-8570 香川県高松市番町四丁目1番10号 代表電話 : 087-831-1111 開庁時間 : 月曜日～金曜日・午前8時30分～午後5時15分 （休日・年末年始を除く） サイトマップ このサイトについて 携帯サイト ウェブアクセシビリティ方針 広告について Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/index.html",
+          "status": 200,
+          "final_url": "https://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/index.html",
+          "title": "東山魁夷せとうち美術館｜香川県",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+            }
+          ],
+          "tail": "問い合わせ ページトップへ [ 法人番号 ] 8000020370002 〒760-8570 香川県高松市番町四丁目1番10号 代表電話 : 087-831-1111 開庁時間 : 月曜日～金曜日・午前8時30分～午後5時15分 （休日・年末年始を除く） サイトマップ このサイトについて 携帯サイト ウェブアクセシビリティ方針 広告について Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+        },
+        {
+          "label": "東山魁夷の紹介",
+          "url": "https://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/profile/kfvn.html",
+          "status": 200,
+          "final_url": "https://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/profile/kfvn.html",
+          "title": "東山魁夷の紹介｜香川県",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+            }
+          ],
+          "tail": "山魁夷物語 ページトップへ [ 法人番号 ] 8000020370002 〒760-8570 香川県高松市番町四丁目1番10号 代表電話 : 087-831-1111 開庁時間 : 月曜日～金曜日・午前8時30分～午後5時15分 （休日・年末年始を除く） サイトマップ このサイトについて 携帯サイト ウェブアクセシビリティ方針 広告について Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/inquiry.html",
+          "status": 200,
+          "final_url": "https://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/inquiry.html",
+          "title": "お問い合わせ｜香川県",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+            }
+          ],
+          "tail": "着情報一覧 ページトップへ [ 法人番号 ] 8000020370002 〒760-8570 香川県高松市番町四丁目1番10号 代表電話 : 087-831-1111 開庁時間 : 月曜日～金曜日・午前8時30分～午後5時15分 （休日・年末年始を除く） サイトマップ このサイトについて 携帯サイト ウェブアクセシビリティ方針 広告について Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+        }
+      ]
+    },
+    {
+      "id": "kagawa-bansyouen",
+      "name": "中津万象園・丸亀美術館",
+      "operator": "公益財団法人の認定を受けました",
+      "operator_kind": "facility_official",
+      "official_url": "http://www.bansyouen.com/",
+      "old_evidence": {
+        "quote": "公益財団法人の認定を受けました",
+        "url": "http://www.bansyouen.com/koueki/",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://www.bansyouen.com/",
+          "status": 200,
+          "final_url": "http://www.bansyouen.com/",
+          "title": "中津万象園・丸亀美術館",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "新年風景 PAGETOP トップページ 公益財団法人について 賛助会募集 リンク 採用情報 お問い合"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 中津万象園・丸亀美術館 All Rights Reserved. Powered by WordPress & BizVektor Theme by Ve"
+            }
+          ],
+          "tail": " = {\"slideshowSpeed\":\"4000\",\"animation\":\"fade\"}; /* ]]> */ _stq = window._stq || []; _stq.push([ 'view', {v:'ext',j:'1:4.3.1',blog:'118103609',post:'0',tz:'9',srv:'www.bansyouen.com'} ]); _stq.push([ 'clickTrackerInit', '118103609', '0' ]);"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "http://www.bansyouen.com/koueki/",
+          "status": 200,
+          "final_url": "http://www.bansyouen.com/koueki/",
+          "title": "公益財団法人について | 中津万象園・丸亀美術館",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "ト開催に お問い合わせ メールフォーム 公益財団法人について HOME » 公益財団法人について ("
+            },
+            {
+              "kind": "法人名",
+              "quote": "jssdk')); 2010年8月5日 公益財団法人の認定を受けました"
+            },
+            {
+              "kind": "法人名",
+              "quote": "新年風景 PAGETOP トップページ 公益財団法人について 賛助会募集 リンク 採用情報 お問い合"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 中津万象園・丸亀美術館 All Rights Reserved. Powered by WordPress & BizVektor Theme by Ve"
+            }
+          ],
+          "tail": "\"slideshowSpeed\":\"4000\",\"animation\":\"fade\"}; /* ]]> */ _stq = window._stq || []; _stq.push([ 'view', {v:'ext',j:'1:4.3.1',blog:'118103609',post:'295',tz:'9',srv:'www.bansyouen.com'} ]); _stq.push([ 'clickTrackerInit', '118103609', '295' ]);"
+        },
+        {
+          "label": "庭園のご案内料金・アクセス",
+          "url": "http://www.bansyouen.com/about",
+          "status": 200,
+          "final_url": "http://www.bansyouen.com/about/",
+          "title": "庭園・美術館のご案内 | 中津万象園・丸亀美術館",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "新年風景 PAGETOP トップページ 公益財団法人について 賛助会募集 リンク 採用情報 お問い合"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 中津万象園・丸亀美術館 All Rights Reserved. Powered by WordPress & BizVektor Theme by Ve"
+            }
+          ],
+          "tail": " {\"slideshowSpeed\":\"4000\",\"animation\":\"fade\"}; /* ]]> */ _stq = window._stq || []; _stq.push([ 'view', {v:'ext',j:'1:4.3.1',blog:'118103609',post:'20',tz:'9',srv:'www.bansyouen.com'} ]); _stq.push([ 'clickTrackerInit', '118103609', '20' ]);"
+        },
+        {
+          "label": "お問い合わせメールフォーム",
+          "url": "http://www.bansyouen.com/form",
+          "status": 200,
+          "final_url": "http://www.bansyouen.com/form/",
+          "title": "お問い合わせ | 中津万象園・丸亀美術館",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "新年風景 PAGETOP トップページ 公益財団法人について 賛助会募集 リンク 採用情報 お問い合"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 中津万象園・丸亀美術館 All Rights Reserved. Powered by WordPress & BizVektor Theme by Ve"
+            }
+          ],
+          "tail": " {\"slideshowSpeed\":\"4000\",\"animation\":\"fade\"}; /* ]]> */ _stq = window._stq || []; _stq.push([ 'view', {v:'ext',j:'1:4.3.1',blog:'118103609',post:'33',tz:'9',srv:'www.bansyouen.com'} ]); _stq.push([ 'clickTrackerInit', '118103609', '33' ]);"
+        },
+        {
+          "label": "料金・アクセス",
+          "url": "http://www.bansyouen.com/about/",
+          "status": 200,
+          "final_url": "http://www.bansyouen.com/about/",
+          "title": "庭園・美術館のご案内 | 中津万象園・丸亀美術館",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "新年風景 PAGETOP トップページ 公益財団法人について 賛助会募集 リンク 採用情報 お問い合"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 中津万象園・丸亀美術館 All Rights Reserved. Powered by WordPress & BizVektor Theme by Ve"
+            }
+          ],
+          "tail": " {\"slideshowSpeed\":\"4000\",\"animation\":\"fade\"}; /* ]]> */ _stq = window._stq || []; _stq.push([ 'view', {v:'ext',j:'1:4.3.1',blog:'118103609',post:'20',tz:'9',srv:'www.bansyouen.com'} ]); _stq.push([ 'clickTrackerInit', '118103609', '20' ]);"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-setoohashitower",
+      "name": "瀬戸大橋タワー",
+      "operator": "株式会社 沿革",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.setoohashitower.com/index.html#content4-4",
+      "old_evidence": {
+        "quote": "株式会社 沿革",
+        "url": "https://www.setoohashitower.com/index.html#content4-4",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.setoohashitower.com/index.html#content4-4",
+          "status": 200,
+          "final_url": "https://www.setoohashitower.com/index.html#content4-4",
+          "title": "【公式】瀬戸大橋タワー｜瀬戸大橋を見下ろす絶景！",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "（昭和63）年 運用会社 瀬戸大橋タワー株式会社 沿革 1988年3月20日 瀬戸大橋の開通"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "© Copyright Setoohashitower, All Rights Reserved. $(function() { var topBtn = $('"
+            }
+          ],
+          "tail": "魁夷せとうち美術館 © Copyright Setoohashitower, All Rights Reserved. $(function() { var topBtn = $('.scroll'); //スクロールが100に達したらボタン表示 $(window).scroll(function () { if ($(this).scrollTop() > 50) { topBtn.fadeOut(); } else { topBtn.fadeIn(); } }); });"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-kotohiki-kairo",
+      "name": "琴弾廻廊",
+      "operator": "株式会社 所在地",
+      "operator_kind": "facility_official",
+      "official_url": "https://kotohiki-kairo.co.jp/",
+      "old_evidence": {
+        "quote": "株式会社 所在地",
+        "url": "https://kotohiki-kairo.co.jp/about/",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://kotohiki-kairo.co.jp/",
+          "status": 200,
+          "final_url": "https://kotohiki-kairo.co.jp/",
+          "title": "【公式】香川・観音寺の天然温泉・レストラン・宿泊、民泊の『琴弾廻廊』 | 父母ヶ浜、高屋神社へのアクセス良好",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "© 2021 Kotohiki-Kairo ホーム お知らせ 会社案内 よくある質問 採用情報 温泉 サウナ お食事 法要 宴会・記念日 施設案内・ご利用料金 ア"
+            }
+          ],
+          "tail": "tween: 0, loop: true, pagination: { el: '.swiper-pagination', type: 'bullets', }, autoplay: { delay: 3000, }, }); var instagram = new Swiper('.instagram', { speed: 400, spaceBetween: 0, slidesPerView: 6, centeredSlides: true, loop: true });"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://kotohiki-kairo.co.jp/about/",
+          "status": 200,
+          "final_url": "https://kotohiki-kairo.co.jp/about/",
+          "title": "【公式】琴弾廻廊-会社案内 | 香川（観音寺）の日帰り天然温泉",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "ki-kairo.co.jp/ 讃岐煉瓦株式会社 所在地 〒768-0062 香川県観音寺市有明"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "© 2021 Kotohiki-Kairo ホーム お知らせ 会社案内 よくある質問 採用情報 温泉 サウナ お食事 法要 宴会・記念日 施設案内・ご利用料金 ア"
+            }
+          ],
+          "tail": "4:30） 17:00-22:00（ラストオーダー 21:30） 温泉/宿泊 11:00-23:00（受付 22:00まで） 食事 11:00-15:00（ラストオーダー14:30） 17:00-22:00（ラストオーダー 21:30） © 2021 Kotohiki-Kairo ホーム お知らせ 会社案内 よくある質問 採用情報 温泉 サウナ お食事 法要 宴会・記念日 施設案内・ご利用料金 アクセス 周辺観光案内 プライバシーポリシー ご宿泊予約 お食事予約 お問い合わせ"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://kotohiki-kairo.co.jp/contact/",
+          "status": 200,
+          "final_url": "https://kotohiki-kairo.co.jp/contact/",
+          "title": "【公式】琴弾廻廊-お問い合わせ | 香川（観音寺）の日帰り天然温泉",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "© 2021 Kotohiki-Kairo ホーム お知らせ 会社案内 よくある質問 採用情報 温泉 サウナ お食事 法要 宴会・記念日 施設案内・ご利用料金 ア"
+            }
+          ],
+          "tail": "4:30） 17:00-22:00（ラストオーダー 21:30） 温泉/宿泊 11:00-23:00（受付 22:00まで） 食事 11:00-15:00（ラストオーダー14:30） 17:00-22:00（ラストオーダー 21:30） © 2021 Kotohiki-Kairo ホーム お知らせ 会社案内 よくある質問 採用情報 温泉 サウナ お食事 法要 宴会・記念日 施設案内・ご利用料金 アクセス 周辺観光案内 プライバシーポリシー ご宿泊予約 お食事予約 お問い合わせ"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-souyu-135",
+      "name": "たかせ天然温泉",
+      "operator": "創裕",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.souyu.co.jp/shisetsu/takase",
+      "old_evidence": {
+        "quote": "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved.",
+        "url": "https://www.souyu.co.jp/shisetsu/takase",
+        "checked_on": "2026-09-17"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.souyu.co.jp/shisetsu/takase",
+          "status": 200,
+          "final_url": "https://www.souyu.co.jp/shisetsu/takase",
+          "title": "たかせ天然温泉 | 創裕",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "株式会社 創裕 〒760-0064 香川県高松市朝日新"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プラ"
+            }
+          ],
+          "tail": "覧 natural body Rakura ボディケア こころ 地下水設備部門 浅井戸・深井戸温泉ボーリング CREINS(クリアンス)配管洗浄 社会福祉部門 アヤトリエ 企業情報 HOME お知らせ メディア掲載情報 企業情報 採用情報 お問い合わせ プライバシーポリシー Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プライバシーポリシー ×閉じる"
+        },
+        {
+          "label": "企業情報",
+          "url": "https://www.souyu.co.jp/company/",
+          "status": 200,
+          "final_url": "https://www.souyu.co.jp/company/",
+          "title": "会社概要 < 企業情報 | 株式会社 創裕 私たちは、ゆとりある生活を創造します。",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "このような時代の流れの中で、私たち株式会社創裕は1994年に創業し、当初から一貫して「ゆとりある生活の創造"
+            },
+            {
+              "kind": "法人名",
+              "quote": "な企業となる 沿革 平成 5年 12月 有限会社創裕 設立 平成 6年 10月 高松ぽかぽか"
+            },
+            {
+              "kind": "法人名",
+              "quote": "高松市伏石町） 開業 平成 7年 7月 株式会社に変更、資本金1,000万円に増資 平成 8年"
+            },
+            {
+              "kind": "法人名",
+              "quote": "2年 1月 足摺テルメの展望台アネモネがNPO法人地域活性化支援センターより「恋人の聖地」に認定 4月 足摺テルメを"
+            },
+            {
+              "kind": "法人名",
+              "quote": "（香川県高松市鍛冶屋町） 開業［株式会社クリエイトから運営移行］ 7月 ル・ポール粟島（香川県三豊市）"
+            },
+            {
+              "kind": "法人名",
+              "quote": "運営受託](令和2年3月終了) 11月 株式会社クリエイトを株式会社創裕の完全子会社化 11月 本場さぬきうどん 讃州 佐賀本"
+            },
+            {
+              "kind": "法人名",
+              "quote": "わ市）開業［指定管理者による運営受託］ 株式会社 創裕 〒760-0064 香川県高松市朝日新"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プラ"
+            }
+          ],
+          "tail": "覧 natural body Rakura ボディケア こころ 地下水設備部門 浅井戸・深井戸温泉ボーリング CREINS(クリアンス)配管洗浄 社会福祉部門 アヤトリエ 企業情報 HOME お知らせ メディア掲載情報 企業情報 採用情報 お問い合わせ プライバシーポリシー Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プライバシーポリシー ×閉じる"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.souyu.co.jp/contact/",
+          "status": 200,
+          "final_url": "https://www.souyu.co.jp/contact/",
+          "title": "お問い合わせ | 株式会社 創裕 私たちは、ゆとりある生活を創造します。",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "支援事業所 アヤトリエ お問合わせ内容 株式会社 創裕 〒760-0064 香川県高松市朝日新"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プラ"
+            }
+          ],
+          "tail": "覧 natural body Rakura ボディケア こころ 地下水設備部門 浅井戸・深井戸温泉ボーリング CREINS(クリアンス)配管洗浄 社会福祉部門 アヤトリエ 企業情報 HOME お知らせ メディア掲載情報 企業情報 採用情報 お問い合わせ プライバシーポリシー Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プライバシーポリシー ×閉じる"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-naoshima",
+      "name": "直島",
+      "operator": "株式会社ベネッセホールディングスと公益財団法人",
+      "operator_kind": "facility_official",
+      "official_url": "http://www.naoshima.net/",
+      "old_evidence": {
+        "quote": "株式会社ベネッセホールディングスと公益財団法人",
+        "url": "http://naoshima.net/ja/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://www.naoshima.net/",
+          "status": 200,
+          "final_url": "http://naoshima.net/ja/",
+          "title": "「直島(なおしま)観光旅サイト」直島町観光協会公式",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "イト直島」は、直島、豊島、犬島を舞台に、株式会社ベネッセホールディングスと公益財団法人 福武財団が展開しているアート活動の総称"
+            },
+            {
+              "kind": "法人名",
+              "quote": "ァイル） 貸借対照表（PDFファイル） NPO法人 直島町観光協会 〒761-3110 香川県香川郡直島町"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright (c) Town-Naoshima Tourism Association official site. All Rights Reserved. {\"pre"
+            }
+          ],
+          "tail": "_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]} /* <![CDATA[ */ var vkLtc = {\"ajaxurl\":\"https:\\/\\/naoshima.net\\/wp-admin\\/admin-ajax.php\"}; /* ]]> */ Japanese English Chinese (China) Chinese (Taiwan) French Korean"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "http://naoshima.net/ja/",
+          "status": 200,
+          "final_url": "http://naoshima.net/ja/",
+          "title": "「直島(なおしま)観光旅サイト」直島町観光協会公式",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "イト直島」は、直島、豊島、犬島を舞台に、株式会社ベネッセホールディングスと公益財団法人 福武財団が展開しているアート活動の総称"
+            },
+            {
+              "kind": "法人名",
+              "quote": "ァイル） 貸借対照表（PDFファイル） NPO法人 直島町観光協会 〒761-3110 香川県香川郡直島町"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright (c) Town-Naoshima Tourism Association official site. All Rights Reserved. {\"pre"
+            }
+          ],
+          "tail": "_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]} /* <![CDATA[ */ var vkLtc = {\"ajaxurl\":\"https:\\/\\/naoshima.net\\/wp-admin\\/admin-ajax.php\"}; /* ]]> */ Japanese English Chinese (China) Chinese (Taiwan) French Korean"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-sanuki-kanko",
+      "name": "大窪寺",
+      "operator": "一般社団法人さぬき市観光協会概要",
+      "operator_kind": "tourism_association",
+      "official_url": "https://sanuki-kanko.jp/sightseeing/temple/post-510.html",
+      "old_evidence": {
+        "quote": "一般社団法人さぬき市観光協会概要",
+        "url": "https://sanuki-kanko.jp/information.html",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://sanuki-kanko.jp/sightseeing/temple/post-510.html",
+          "status": 200,
+          "final_url": "https://sanuki-kanko.jp/sightseeing/temple/post-510.html",
+          "title": "四国霊場88番札所 大窪寺 | さぬき市観光ガイド｜一般社団法人 さぬき市観光協会",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "一般社団法人さぬき市観光協会公式 さぬき市観光ガイド メニューを開く ホ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "イト内検索 検索 Copyright© 一般社団法人さぬき市観光協会 All Rights Reserved"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright© 一般社団法人さぬき市観光協会 All Rights Reserved. {\"prefetch\":[{\"source\":\"document\",\"where\":"
+            }
+          ],
+          "tail": ".jp/wp2021/wp-content/plugins/logo-slider-wp/public/assets/img/prev.png\",\"owl_navigationTextR\":\"https://sanuki-kanko.jp/wp2021/wp-content/plugins/logo-slider-wp/public/assets/img/next.png\"}; //# sourceURL=lgx-logo-slider-script-dep-js-extra"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://sanuki-kanko.jp/information.html",
+          "status": 200,
+          "final_url": "https://sanuki-kanko.jp/information.html",
+          "title": "さぬき市観光協会について | さぬき市観光ガイド｜一般社団法人 さぬき市観光協会",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "一般社団法人さぬき市観光協会公式 さぬき市観光ガイド メニューを開く ホ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "ホーム > さぬき市観光協会について 一般社団法人さぬき市観光協会概要 法人名 一般社団法人さぬき市観光協会"
+            },
+            {
+              "kind": "法人名",
+              "quote": "イト内検索 検索 Copyright© 一般社団法人さぬき市観光協会 All Rights Reserved"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright© 一般社団法人さぬき市観光協会 All Rights Reserved. {\"prefetch\":[{\"source\":\"document\",\"where\":"
+            },
+            {
+              "kind": "表の名称",
+              "quote": "法人名 一般社団法人さぬき市観光協会"
+            }
+          ],
+          "tail": ".jp/wp2021/wp-content/plugins/logo-slider-wp/public/assets/img/prev.png\",\"owl_navigationTextR\":\"https://sanuki-kanko.jp/wp2021/wp-content/plugins/logo-slider-wp/public/assets/img/next.png\"}; //# sourceURL=lgx-logo-slider-script-dep-js-extra"
+        },
+        {
+          "label": "さぬき市の概要",
+          "url": "https://sanuki-kanko.jp/overview.html",
+          "status": 200,
+          "final_url": "https://sanuki-kanko.jp/overview.html",
+          "title": "さぬき市の概要 | さぬき市観光ガイド｜一般社団法人 さぬき市観光協会",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "一般社団法人さぬき市観光協会公式 さぬき市観光ガイド メニューを開く ホ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "イト内検索 検索 Copyright© 一般社団法人さぬき市観光協会 All Rights Reserved"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright© 一般社団法人さぬき市観光協会 All Rights Reserved. {\"prefetch\":[{\"source\":\"document\",\"where\":"
+            }
+          ],
+          "tail": ".jp/wp2021/wp-content/plugins/logo-slider-wp/public/assets/img/prev.png\",\"owl_navigationTextR\":\"https://sanuki-kanko.jp/wp2021/wp-content/plugins/logo-slider-wp/public/assets/img/next.png\"}; //# sourceURL=lgx-logo-slider-script-dep-js-extra"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://sanuki-kanko.jp/inquiry.html",
+          "status": 200,
+          "final_url": "https://sanuki-kanko.jp/inquiry.html",
+          "title": "お問い合わせ | さぬき市観光ガイド｜一般社団法人 さぬき市観光協会",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "一般社団法人さぬき市観光協会公式 さぬき市観光ガイド メニューを開く ホ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "お問い合わせ ホーム > お問い合わせ 一般社団法人さぬき市観光協会へのメールでのお問い合せはこちらのフォームからお願いいたします"
+            },
+            {
+              "kind": "法人名",
+              "quote": "イト内検索 検索 Copyright© 一般社団法人さぬき市観光協会 All Rights Reserved"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright© 一般社団法人さぬき市観光協会 All Rights Reserved. {\"prefetch\":[{\"source\":\"document\",\"where\":"
+            }
+          ],
+          "tail": ".jp/wp2021/wp-content/plugins/logo-slider-wp/public/assets/img/prev.png\",\"owl_navigationTextR\":\"https://sanuki-kanko.jp/wp2021/wp-content/plugins/logo-slider-wp/public/assets/img/next.png\"}; //# sourceURL=lgx-logo-slider-script-dep-js-extra"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-town-421",
+      "name": "三霞洞渓谷",
+      "operator": "三霞洞渓谷（みかどけいこく） - Manno まんのう魅力発信ポータルサイト - まんのう町",
+      "operator_kind": "municipality",
+      "official_url": "https://www.town.manno.lg.jp/site/miryoku-hasshin/5310.html",
+      "old_evidence": {
+        "quote": "三霞洞渓谷（みかどけいこく） - Manno まんのう魅力発信ポータルサイト - まんのう町",
+        "url": "https://www.town.manno.lg.jp/site/miryoku-hasshin/5310.html",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.town.manno.lg.jp/site/miryoku-hasshin/5310.html",
+          "status": 200,
+          "final_url": "https://www.town.manno.lg.jp/site/miryoku-hasshin/5310.html",
+          "title": "三霞洞渓谷（みかどけいこく） - Manno まんのう魅力発信ポータルサイト - まんのう町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Manno Town. All Rights Reserved."
+            }
+          ],
+          "tail": "-0122 Fax：0877-73-0113 メールでのお問い合わせはこちら このページを見ている人は こんなページも見ています AI（人工知能）は こんなページをおすすめします まんのう町役場 地域振興課 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73-0122 まんのう町公式ホームページ 個人情報の取り扱いについて ウェブアクセシビリティ お問い合わせ Copyright © Manno Town. All Rights Reserved."
+        },
+        {
+          "label": "メールでのお問い合わせはこちら",
+          "url": "https://www.town.manno.lg.jp/form/detail.php?sec_sec1=5&lif_id=5310",
+          "status": 200,
+          "final_url": "https://www.town.manno.lg.jp/form/detail.php?sec_sec1=5&lif_id=5310&check",
+          "title": "地域振興課へのお問い合わせ - まんのう町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Manno Town. All Rights Reserved."
+            },
+            {
+              "kind": "自治体",
+              "quote": "まんのう町役場 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73"
+            }
+          ],
+          "tail": "次の画面では送信はまだされません。 このページの先頭へ まんのう町役場 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73-0100 開庁時間：月曜日から金曜日の8時30分から17時15分（祝日、12月29日から1月3日を除く） 法人番号1000020374067 このホームページについて サイトマップ アクセシビリティについて 組織別連絡先一覧 お問い合わせ Copyright © Manno Town. All Rights Reserved."
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.town.manno.lg.jp/form/detail.php?sec_sec1=5",
+          "status": 200,
+          "final_url": "https://www.town.manno.lg.jp/form/detail.php?sec_sec1=5&check",
+          "title": "地域振興課へのお問い合わせ - まんのう町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Manno Town. All Rights Reserved."
+            },
+            {
+              "kind": "自治体",
+              "quote": "まんのう町役場 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73"
+            }
+          ],
+          "tail": "次の画面では送信はまだされません。 このページの先頭へ まんのう町役場 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73-0100 開庁時間：月曜日から金曜日の8時30分から17時15分（祝日、12月29日から1月3日を除く） 法人番号1000020374067 このホームページについて サイトマップ アクセシビリティについて 組織別連絡先一覧 お問い合わせ Copyright © Manno Town. All Rights Reserved."
+        }
+      ]
+    },
+    {
+      "id": "kagawa-kanonji-kanko-54",
+      "name": "名勝",
+      "operator": "Copyright © 観音寺市観光協会. All Rights Reserved. PAGE TOP",
+      "operator_kind": "tourism_association",
+      "official_url": "https://kanonji-kanko.jp/kotohiki-park/",
+      "old_evidence": {
+        "quote": "Copyright © 観音寺市観光協会. All Rights Reserved. PAGE TOP",
+        "url": "https://kanonji-kanko.jp/kotohiki-park/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://kanonji-kanko.jp/kotohiki-park/",
+          "status": 200,
+          "final_url": "https://kanonji-kanko.jp/kotohiki-park/",
+          "title": "名勝 琴弾公園｜白砂青松の有明浜と美しい景色 - 観音寺市観光協会",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "事 藤原畳店｜畳ドクターの居るお店！！ 有限会社のぼり屋｜文具・事務用品の事ならおまかせ 山田ふれあい緑地｜四季を楽しめる公園"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 観音寺市観光協会 . All Rights Reserved. PAGE TOP jQuery(document).ready(function($){"
+            }
+          ],
+          "tail": ".everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))}); //# sourceURL=https://kanonji-kanko.jp/wp-includes/js/wp-emoji-loader.min.js"
+        },
+        {
+          "label": "観光業者様",
+          "url": "https://kanonji-kanko.jp/contact-tourism-company/",
+          "status": 200,
+          "final_url": "https://kanonji-kanko.jp/contact-tourism-company/",
+          "title": "問い合わせ（観光業者様） - 観音寺市観光協会",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "加屋かまぼこ｜素朴で昔懐かしいかまぼこ 株式会社紀州屋｜生麺・乾麺を全国の皆様へ 川鶴酒造株式会社｜素直な気持ちで呑み手"
+            },
+            {
+              "kind": "法人名",
+              "quote": "に感動を 山福製綿株式会社｜ひとつひとつ丁寧に作られた布団をあなたに イサム・ノグチ遊具彫刻 ｜世界的彫刻家"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 観音寺市観光協会 . All Rights Reserved. PAGE TOP jQuery(document).ready(function($){"
+            }
+          ],
+          "tail": ".everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))}); //# sourceURL=https://kanonji-kanko.jp/wp-includes/js/wp-emoji-loader.min.js"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-kanonji-kanko-477",
+      "name": "伊吹島",
+      "operator": "Copyright © 観音寺市観光協会. All Rights Reserved. PAGE TOP",
+      "operator_kind": "tourism_association",
+      "official_url": "https://kanonji-kanko.jp/ibukijima/",
+      "old_evidence": {
+        "quote": "Copyright © 観音寺市観光協会. All Rights Reserved. PAGE TOP",
+        "url": "https://kanonji-kanko.jp/ibukijima/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://kanonji-kanko.jp/ibukijima/",
+          "status": 200,
+          "final_url": "https://kanonji-kanko.jp/ibukijima/",
+          "title": "伊吹島｜瀬戸内海、ど真ん中。 - 観音寺市観光協会",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 観音寺市観光協会 . All Rights Reserved. PAGE TOP jQuery(document).ready(function($){"
+            }
+          ],
+          "tail": ".everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))}); //# sourceURL=https://kanonji-kanko.jp/wp-includes/js/wp-emoji-loader.min.js"
+        },
+        {
+          "label": "観光業者様",
+          "url": "https://kanonji-kanko.jp/contact-tourism-company/",
+          "status": 200,
+          "final_url": "https://kanonji-kanko.jp/contact-tourism-company/",
+          "title": "問い合わせ（観光業者様） - 観音寺市観光協会",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "加屋かまぼこ｜素朴で昔懐かしいかまぼこ 株式会社紀州屋｜生麺・乾麺を全国の皆様へ 川鶴酒造株式会社｜素直な気持ちで呑み手"
+            },
+            {
+              "kind": "法人名",
+              "quote": "に感動を 山福製綿株式会社｜ひとつひとつ丁寧に作られた布団をあなたに イサム・ノグチ遊具彫刻 ｜世界的彫刻家"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 観音寺市観光協会 . All Rights Reserved. PAGE TOP jQuery(document).ready(function($){"
+            }
+          ],
+          "tail": ".everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))}); //# sourceURL=https://kanonji-kanko.jp/wp-includes/js/wp-emoji-loader.min.js"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-kanonji-kanko-65",
+      "name": "萩原寺",
+      "operator": "Copyright © 観音寺市観光協会. All Rights Reserved. PAGE TOP",
+      "operator_kind": "tourism_association",
+      "official_url": "https://kanonji-kanko.jp/hagiwaraji/",
+      "old_evidence": {
+        "quote": "Copyright © 観音寺市観光協会. All Rights Reserved. PAGE TOP",
+        "url": "https://kanonji-kanko.jp/hagiwaraji/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://kanonji-kanko.jp/hagiwaraji/",
+          "status": 200,
+          "final_url": "https://kanonji-kanko.jp/hagiwaraji/",
+          "title": "萩原寺｜県指定自然記念物、萩の名所 - 観音寺市観光協会",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 観音寺市観光協会 . All Rights Reserved. PAGE TOP jQuery(document).ready(function($){"
+            }
+          ],
+          "tail": ".everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))}); //# sourceURL=https://kanonji-kanko.jp/wp-includes/js/wp-emoji-loader.min.js"
+        },
+        {
+          "label": "観光業者様",
+          "url": "https://kanonji-kanko.jp/contact-tourism-company/",
+          "status": 200,
+          "final_url": "https://kanonji-kanko.jp/contact-tourism-company/",
+          "title": "問い合わせ（観光業者様） - 観音寺市観光協会",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "加屋かまぼこ｜素朴で昔懐かしいかまぼこ 株式会社紀州屋｜生麺・乾麺を全国の皆様へ 川鶴酒造株式会社｜素直な気持ちで呑み手"
+            },
+            {
+              "kind": "法人名",
+              "quote": "に感動を 山福製綿株式会社｜ひとつひとつ丁寧に作られた布団をあなたに イサム・ノグチ遊具彫刻 ｜世界的彫刻家"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 観音寺市観光協会 . All Rights Reserved. PAGE TOP jQuery(document).ready(function($){"
+            }
+          ],
+          "tail": ".everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))}); //# sourceURL=https://kanonji-kanko.jp/wp-includes/js/wp-emoji-loader.min.js"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-teshima-navi",
+      "name": "豊島",
+      "operator": "公益財団法人福武財団による棚田の復元が行われました",
+      "operator_kind": "facility_official",
+      "official_url": "https://teshima-navi.jp/",
+      "old_evidence": {
+        "quote": "公益財団法人福武財団による棚田の復元が行われました",
+        "url": "https://teshima-navi.jp/about-2/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://teshima-navi.jp/",
+          "status": 200,
+          "final_url": "https://teshima-navi.jp/",
+          "title": "豊島観光ナビ",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "よくある質問 団体でお越しのお客様へ NPO法人 豊島観光協会 〒761-4661小豆郡土庄町豊島家浦"
+            },
+            {
+              "kind": "法人名",
+              "quote": "ート Copyright © 2018 NPO法人 豊島観光協会 All Rights Reserved"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2018 NPO法人 豊島観光協会 All Rights Reserved. {\"prefetch\":[{\"source\":\"document\",\"whe"
+            }
+          ],
+          "tail": "; !function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"https://assets.tumblr.com/share-button.js\";ajs.parentNode.insertBefore(js,ajs);}}(document, \"script\", \"tumblr-js\");"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://teshima-navi.jp/about-2/",
+          "status": 200,
+          "final_url": "https://teshima-navi.jp/about-2/",
+          "title": "豊島について | 豊島観光ナビ",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "の住民の方や行政、そして美術館を運営する公益財団法人福武財団による棚田の復元が行われました"
+            },
+            {
+              "kind": "法人名",
+              "quote": "よくある質問 団体でお越しのお客様へ NPO法人 豊島観光協会 〒761-4661小豆郡土庄町豊島家浦"
+            },
+            {
+              "kind": "法人名",
+              "quote": "ート Copyright © 2018 NPO法人 豊島観光協会 All Rights Reserved"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2018 NPO法人 豊島観光協会 All Rights Reserved. {\"prefetch\":[{\"source\":\"document\",\"whe"
+            }
+          ],
+          "tail": "; !function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"https://assets.tumblr.com/share-button.js\";ajs.parentNode.insertBefore(js,ajs);}}(document, \"script\", \"tumblr-js\");"
+        },
+        {
+          "label": "arrow_forward 詳しく知る",
+          "url": "https://teshima-navi.jp/about-2",
+          "status": 200,
+          "final_url": "https://teshima-navi.jp/about-2/",
+          "title": "豊島について | 豊島観光ナビ",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "の住民の方や行政、そして美術館を運営する公益財団法人福武財団による棚田の復元が行われました"
+            },
+            {
+              "kind": "法人名",
+              "quote": "よくある質問 団体でお越しのお客様へ NPO法人 豊島観光協会 〒761-4661小豆郡土庄町豊島家浦"
+            },
+            {
+              "kind": "法人名",
+              "quote": "ート Copyright © 2018 NPO法人 豊島観光協会 All Rights Reserved"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2018 NPO法人 豊島観光協会 All Rights Reserved. {\"prefetch\":[{\"source\":\"document\",\"whe"
+            }
+          ],
+          "tail": "; !function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"https://assets.tumblr.com/share-button.js\";ajs.parentNode.insertBefore(js,ajs);}}(document, \"script\", \"tumblr-js\");"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-kinbuchi-shinrin",
+      "name": "公渕森林公園",
+      "operator": "指定管理者) 香川県木材需要拡大協議会(香川県木材協会内) .2025.10.1﻿ 『令和7年・菊花展』が開催されます(",
+      "operator_kind": "municipality_affiliated",
+      "official_url": "https://kinbuchi-shinrin.jp/",
+      "old_evidence": {
+        "quote": "指定管理者) 香川県木材需要拡大協議会(香川県木材協会内) .2025.10.1﻿ 『令和7年・菊花展』が開催されます(終了) 毎",
+        "url": "https://kinbuchi-shinrin.jp/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://kinbuchi-shinrin.jp/",
+          "status": 200,
+          "final_url": "https://kinbuchi-shinrin.jp/",
+          "title": "公渕森林公園（公式HP） – 香川県高松市東植田町にある公渕森林公園の公式HPです。",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "② 申込み先 公益財団法人かがわ水と緑の財団（公渕森林公園管理事務所） 電 話 ０８"
+            },
+            {
+              "kind": "法人名",
+              "quote": "（２）申込み先 公益財団法人かがわ水と緑の財団（公渕森林公園管理事務所） 電話 ０８７"
+            },
+            {
+              "kind": "法人名",
+              "quote": "（２）申込み先 公益財団法人かがわ水と緑の財団（公渕森林公園管理事務所） 電 話 ０８"
+            },
+            {
+              "kind": "法人名",
+              "quote": "② 申込み先 公益財団法人かがわ水と緑の財団（公園管理事務所） 電 話 ０８７－８４"
+            },
+            {
+              "kind": "法人名",
+              "quote": "） ５ 共催 公益財団法人かがわ水と緑の財団（公渕森林公園指定管理者） 香川県木材需"
+            },
+            {
+              "kind": "法人名",
+              "quote": "６ 主 催 公益財団法人 かがわ水と緑の財団 2025.6.16 『夏休み親子草木染"
+            },
+            {
+              "kind": "法人名",
+              "quote": "② 申込み先 公益財団法人かがわ水と緑の財団（公園管理事務所） 電話番号 087-8"
+            },
+            {
+              "kind": "法人名",
+              "quote": "主催：公益財団法人 かがわ水と緑の財団 2025.1.20 『きのこ栽培体験教"
+            },
+            {
+              "kind": "法人名",
+              "quote": "② 申込み先 公益財団法人かがわ水と緑の財団（公渕森林公園管理事務所） 電話番号 0"
+            },
+            {
+              "kind": "法人名",
+              "quote": "） ５ 共 催 公益財団法人かがわ水と緑の財団（公渕森林公園指定管理者） 香川県木材需"
+            },
+            {
+              "kind": "法人名",
+              "quote": "主催：公益財団法人 かがわ水と緑の財団 2024.2.7 『きのこ栽培体験教室"
+            },
+            {
+              "kind": "法人名",
+              "quote": "主催：公益財団法人 かがわ水と緑の財団 2023.10.3 第32回菊花展が開"
+            }
+          ],
+          "tail": "erythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))}); //# sourceURL=https://kinbuchi-shinrin.jp/wp-includes/js/wp-emoji-loader.min.js"
+        },
+        {
+          "label": "公園概要",
+          "url": "https://kinbuchi-shinrin.jp/%e5%85%ac%e6%b8%95%e6%a3%ae%e6%9e%97%e5%85%ac%e5%9c%92%e3%81%ae%e6%b2%bf%e9%9d%a9/",
+          "status": 200,
+          "final_url": "https://kinbuchi-shinrin.jp/%e5%85%ac%e6%b8%95%e6%a3%ae%e6%9e%97%e5%85%ac%e5%9c%92%e3%81%ae%e6%b2%bf%e9%9d%a9/",
+          "title": "公渕森林公園の概要 – 公渕森林公園（公式HP）",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "月より指定管理者制度が導入され、現在は、公益財団法人かがわ水と緑の財団が指定管理者として管理を行っています"
+            },
+            {
+              "kind": "法人名",
+              "quote": "定管理者として管理を開始 令和3年4月 公益財団法人かがわ水と緑の財団が第4期指定管理者に 関連施設 満濃池森林公園 香川用記念公"
+            },
+            {
+              "kind": "法人名",
+              "quote": "園 どんぐりランド しっぽの森 公益財団法人 かがわ水と緑の財団 〒761-0446 香川県高松市東植田"
+            },
+            {
+              "kind": "法人名",
+              "quote": "AX 087-849-1667 管理者 公益財団法人 かがわ水と緑の財団 © 2026 公渕森林公園（公式HP）"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "© 2026 公渕森林公園（公式HP）. window.colibriFrontendData = []; {\"prefetch\":[{\"source\":\"doc"
+            }
+          ],
+          "tail": "erythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))}); //# sourceURL=https://kinbuchi-shinrin.jp/wp-includes/js/wp-emoji-loader.min.js"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-pref-279",
+      "name": "瀬戸内海歴史民俗資料館",
+      "operator": "Copyright © 2020 Kagawa Prefectural Government. All rights r",
+      "operator_kind": "prefecture",
+      "official_url": "https://www.pref.kagawa.lg.jp/setorekishi/",
+      "old_evidence": {
+        "quote": "Copyright © 2020 Kagawa Prefectural Government. All rights reserved.",
+        "url": "https://www.pref.kagawa.lg.jp/kmuseum/setorekishi/index.html",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.pref.kagawa.lg.jp/setorekishi/",
+          "status": 200,
+          "final_url": "https://www.pref.kagawa.lg.jp/kmuseum/setorekishi/index.html",
+          "title": "瀬戸内海歴史民俗資料館｜香川県",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+            }
+          ],
+          "tail": "へリンク） ページトップへ [ 法人番号 ] 8000020370002 〒760-8570 香川県高松市番町四丁目1番10号 代表電話 : 087-831-1111 開庁時間 : 月曜日～金曜日・午前8時30分～午後5時15分 （休日・年末年始を除く） サイトマップ このサイトについて 携帯サイト ウェブアクセシビリティ方針 広告について Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.pref.kagawa.lg.jp/kmuseum/setorekishi/index.html",
+          "status": 200,
+          "final_url": "https://www.pref.kagawa.lg.jp/kmuseum/setorekishi/index.html",
+          "title": "瀬戸内海歴史民俗資料館｜香川県",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+            }
+          ],
+          "tail": "へリンク） ページトップへ [ 法人番号 ] 8000020370002 〒760-8570 香川県高松市番町四丁目1番10号 代表電話 : 087-831-1111 開庁時間 : 月曜日～金曜日・午前8時30分～午後5時15分 （休日・年末年始を除く） サイトマップ このサイトについて 携帯サイト ウェブアクセシビリティ方針 広告について Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+        },
+        {
+          "label": "館の紹介",
+          "url": "https://www.pref.kagawa.lg.jp/kmuseum/setorekishi/about/kfvn.html",
+          "status": 200,
+          "final_url": "https://www.pref.kagawa.lg.jp/kmuseum/setorekishi/about/kfvn.html",
+          "title": "館の紹介｜香川県",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+            }
+          ],
+          "tail": " 建物紹介 ページトップへ [ 法人番号 ] 8000020370002 〒760-8570 香川県高松市番町四丁目1番10号 代表電話 : 087-831-1111 開庁時間 : 月曜日～金曜日・午前8時30分～午後5時15分 （休日・年末年始を除く） サイトマップ このサイトについて 携帯サイト ウェブアクセシビリティ方針 広告について Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+        },
+        {
+          "label": "建物紹介",
+          "url": "https://www.pref.kagawa.lg.jp/kmuseum/setorekishi/about/archi.html",
+          "status": 200,
+          "final_url": "https://www.pref.kagawa.lg.jp/kmuseum/setorekishi/about/archi.html",
+          "title": "建物紹介｜香川県",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+            }
+          ],
+          "tail": " 建物紹介 ページトップへ [ 法人番号 ] 8000020370002 〒760-8570 香川県高松市番町四丁目1番10号 代表電話 : 087-831-1111 開庁時間 : 月曜日～金曜日・午前8時30分～午後5時15分 （休日・年末年始を除く） サイトマップ このサイトについて 携帯サイト ウェブアクセシビリティ方針 広告について Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.pref.kagawa.lg.jp/kmuseum/setorekishi/contact.html",
+          "status": 200,
+          "final_url": "https://www.pref.kagawa.lg.jp/kmuseum/setorekishi/contact.html",
+          "title": "お問い合わせ｜香川県",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+            }
+          ],
+          "tail": " 館の紹介 ページトップへ [ 法人番号 ] 8000020370002 〒760-8570 香川県高松市番町四丁目1番10号 代表電話 : 087-831-1111 開庁時間 : 月曜日～金曜日・午前8時30分～午後5時15分 （休日・年末年始を除く） サイトマップ このサイトについて 携帯サイト ウェブアクセシビリティ方針 広告について Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+        },
+        {
+          "label": "このサイトについて",
+          "url": "https://www.pref.kagawa.lg.jp/kocho/koho/kohosonota/about.html",
+          "status": 200,
+          "final_url": "https://www.pref.kagawa.lg.jp/kocho/koho/kohosonota/about.html",
+          "title": "このサイトについて｜香川県",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "ンポートするには（GMOグローバルサイン株式会社のホームページ）（外部サイトへリンク） 」をご確認くださ"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © 2020 Kagawa Prefectural Government. All rights reserved. <!-- google_ad_clien"
+            }
+          ],
+          "tail": " このサイトについて 携帯サイト ウェブアクセシビリティ方針 広告について Copyright © 2020 Kagawa Prefectural Government. All rights reserved. <!-- google_ad_client = \"ca-pub-5144793389256935\"; google_ad_slot = \"9003318709\"; google_ad_width = 468; google_ad_height = 60; //-->"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-city-507",
+      "name": "高松市香南歴史民俗郷土館",
+      "operator": "公益財団法人高松市文化芸術財団の事務局主幹をお招きし",
+      "operator_kind": "municipality",
+      "official_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kounanrekishi/index.html",
+      "old_evidence": {
+        "quote": "指定管理者である公益財団法人高松市文化芸術財団の事務局主幹をお招きし、活動内容をご説明いただきました",
+        "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kounanrekishi/index.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kounanrekishi/index.html",
+          "title": "高松市香南歴史民俗郷土館｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ました 国指定史跡高松城跡ガイダンス施設 陳列館リニューアルオープン！ 史跡石清尾山古墳群の保存活用計画について 高松市の無形民俗文化財 特別史跡 讃岐国分寺跡 市役所吹奏楽団 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html",
+          "title": "高松版文化芸術プラットフォーム構築事業について｜高松市",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "ンシル「クリエイティブ・ポート高松」 を公益財団法人高松市文化芸術財団内に 設置しました"
+            },
+            {
+              "kind": "法人名",
+              "quote": "ボルタワー ホール棟2階 管理事務室 （公益財団法人 高松市文化芸術財団内） TEL：087-825-5053 FA"
+            },
+            {
+              "kind": "法人名",
+              "quote": "、サンポートホール高松の指定管理者である公益財団法人高松市文化芸術財団の事務局主幹をお招きし、活動内容をご説明いただきました"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ました 国指定史跡高松城跡ガイダンス施設 陳列館リニューアルオープン！ 史跡石清尾山古墳群の保存活用計画について 高松市の無形民俗文化財 特別史跡 讃岐国分寺跡 市役所吹奏楽団 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "高松市役所へのアクセス",
+          "url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/profile/info/access.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/profile/info/access.html",
+          "title": "高松市役所へのアクセス｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ている人はこんなページも見ています ご意見箱 くらしの情報 高松市美術館公式サイト 高松市インフォメーション 高松市役所庁舎のご案内 高松市役所へのアクセス 統計 市町合併情報 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "このサイトについて",
+          "url": "https://www.city.takamatsu.kagawa.jp/homepage/thissite.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/homepage/thissite.html",
+          "title": "このサイトについて｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "クセシビリティ方針 multilingual 高松市ホームページへのリンクについて ご意見箱 このサイトについて リンク集 サイトマップ 情報が見つからない時は PDFについて 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.city.takamatsu.kagawa.jp/homepage/otoiawase.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/homepage/otoiawase.html",
+          "title": "ご意見箱｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "クセシビリティ方針 multilingual 高松市ホームページへのリンクについて ご意見箱 このサイトについて リンク集 サイトマップ 情報が見つからない時は PDFについて 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        }
+      ]
+    },
+    {
+      "id": "kagawa-michi-no-eki",
+      "name": "道の駅「しおのえ」",
+      "operator": "一般社団法人に移行し",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.michi-no-eki.jp/stations/views/19635",
+      "old_evidence": {
+        "quote": "一般社団法人に移行し",
+        "url": "https://www.michi-no-eki.jp/about",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.michi-no-eki.jp/stations/views/19635",
+          "status": 200,
+          "final_url": "https://www.michi-no-eki.jp/stations/views/19635",
+          "title": "道の駅 公式ホームページ 全国「道の駅」連絡会",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "© 2021 National Michi-no-Eki Association"
+            }
+          ],
+          "tail": "沖縄 道の駅の取り組み 道の駅の取り組み 道の駅とは？ 特定テーマ型モデル「道の駅」 道の駅と大学の連携協定 特集 道の駅サクセスストーリー 日本全国 旬&珍食材 スタンプラリー・道の駅カード スタンプラリーについて 地域別スタンプラリー情報 道の駅カードについて 道の駅モール リンク 賛助会員一覧 よくあるご質問 お問い合わせ 各地区の連絡会 当サイトのご利用にあたって プライバシー・ポリシー © 2021 National Michi-no-Eki Association"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.michi-no-eki.jp/about",
+          "status": 200,
+          "final_url": "https://www.michi-no-eki.jp/about",
+          "title": "道の駅 公式ホームページ 全国「道の駅」連絡会",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "して活動を行って参りましたが、今年度より一般社団法人に移行し、全国組織としての機能強化、経営体制の透"
+            },
+            {
+              "kind": "法人名",
+              "quote": "0807 札幌市北区北7条西2丁目20 一般財団法人 北海道道路管理技術センター内 TEL：011-736-8577 東北"
+            },
+            {
+              "kind": "法人名",
+              "quote": "青葉区本町一丁目9-5 五城ビル203 特定非営利活動法人 東北みち会議内 TEL：022-398-5518 関東"
+            },
+            {
+              "kind": "法人名",
+              "quote": "区神田東松下町45番地神田金子ビル7階 一般社団法人 関東地域づくり協会 東京事務所 TEL：03-3254-3"
+            },
+            {
+              "kind": "法人名",
+              "quote": "新潟市江南区亀田工業団地二丁目3-4 一般社団法人 北陸地域づくり協会 企画部 TEL：025-381-116"
+            },
+            {
+              "kind": "法人名",
+              "quote": "知県名古屋市東区葵1-2-20-502 特定非営利活動法人 大地とまちを創る匠たち内 TEL：052-908-0378 近畿"
+            },
+            {
+              "kind": "法人名",
+              "quote": "591 大阪市中央区大手前1-7-31 一般社団法人 近畿建設協会内 TEL：06-6949-0330 中国"
+            },
+            {
+              "kind": "法人名",
+              "quote": "BA Nakahiro BLDG.4階 一般社団法人 中国建設弘済会内 TEL：082-218-1231 四国"
+            },
+            {
+              "kind": "法人名",
+              "quote": "3-11-22 建設クリエイトビル2F 一般社団法人 四国クリエイト協会内 TEL：087-813-1430 九州"
+            },
+            {
+              "kind": "法人名",
+              "quote": "南房総市長（関東ブロック会長）が就任し、一般社団法人全国道の駅連絡会として活動をスタートしました"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "© 2021 National Michi-no-Eki Association"
+            }
+          ],
+          "tail": "沖縄 道の駅の取り組み 道の駅の取り組み 道の駅とは？ 特定テーマ型モデル「道の駅」 道の駅と大学の連携協定 特集 道の駅サクセスストーリー 日本全国 旬&珍食材 スタンプラリー・道の駅カード スタンプラリーについて 地域別スタンプラリー情報 道の駅カードについて 道の駅モール リンク 賛助会員一覧 よくあるご質問 お問い合わせ 各地区の連絡会 当サイトのご利用にあたって プライバシー・ポリシー © 2021 National Michi-no-Eki Association"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.michi-no-eki.jp/contacts/before",
+          "status": 200,
+          "final_url": "https://www.michi-no-eki.jp/contacts/before",
+          "title": "道の駅 公式ホームページ 全国「道の駅」連絡会",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "© 2021 National Michi-no-Eki Association"
+            }
+          ],
+          "tail": "沖縄 道の駅の取り組み 道の駅の取り組み 道の駅とは？ 特定テーマ型モデル「道の駅」 道の駅と大学の連携協定 特集 道の駅サクセスストーリー 日本全国 旬&珍食材 スタンプラリー・道の駅カード スタンプラリーについて 地域別スタンプラリー情報 道の駅カードについて 道の駅モール リンク 賛助会員一覧 よくあるご質問 お問い合わせ 各地区の連絡会 当サイトのご利用にあたって プライバシー・ポリシー © 2021 National Michi-no-Eki Association"
+        },
+        {
+          "label": "特定テーマ型モデル「道の駅」",
+          "url": "https://www.michi-no-eki.jp/about/modelcase",
+          "status": 200,
+          "final_url": "https://www.michi-no-eki.jp/about/modelcase",
+          "title": "道の駅 公式ホームページ 全国「道の駅」連絡会",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "© 2021 National Michi-no-Eki Association"
+            }
+          ],
+          "tail": "沖縄 道の駅の取り組み 道の駅の取り組み 道の駅とは？ 特定テーマ型モデル「道の駅」 道の駅と大学の連携協定 特集 道の駅サクセスストーリー 日本全国 旬&珍食材 スタンプラリー・道の駅カード スタンプラリーについて 地域別スタンプラリー情報 道の駅カードについて 道の駅モール リンク 賛助会員一覧 よくあるご質問 お問い合わせ 各地区の連絡会 当サイトのご利用にあたって プライバシー・ポリシー © 2021 National Michi-no-Eki Association"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-city-283",
+      "name": "高松市石の民俗資料館",
+      "operator": "公益財団法人高松市文化芸術財団の事務局主幹をお招きし",
+      "operator_kind": "municipality",
+      "official_url": "http://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/ishimin/index.html",
+      "old_evidence": {
+        "quote": "指定管理者である公益財団法人高松市文化芸術財団の事務局主幹をお招きし、活動内容をご説明いただきました",
+        "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/ishimin/index.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/ishimin/index.html",
+          "title": "石の民俗資料館｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ました 国指定史跡高松城跡ガイダンス施設 陳列館リニューアルオープン！ 史跡石清尾山古墳群の保存活用計画について 高松市の無形民俗文化財 特別史跡 讃岐国分寺跡 市役所吹奏楽団 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html",
+          "title": "高松版文化芸術プラットフォーム構築事業について｜高松市",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "ンシル「クリエイティブ・ポート高松」 を公益財団法人高松市文化芸術財団内に 設置しました"
+            },
+            {
+              "kind": "法人名",
+              "quote": "ボルタワー ホール棟2階 管理事務室 （公益財団法人 高松市文化芸術財団内） TEL：087-825-5053 FA"
+            },
+            {
+              "kind": "法人名",
+              "quote": "、サンポートホール高松の指定管理者である公益財団法人高松市文化芸術財団の事務局主幹をお招きし、活動内容をご説明いただきました"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ました 国指定史跡高松城跡ガイダンス施設 陳列館リニューアルオープン！ 史跡石清尾山古墳群の保存活用計画について 高松市の無形民俗文化財 特別史跡 讃岐国分寺跡 市役所吹奏楽団 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "高松市役所へのアクセス",
+          "url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/profile/info/access.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/profile/info/access.html",
+          "title": "高松市役所へのアクセス｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ている人はこんなページも見ています ご意見箱 くらしの情報 高松市美術館公式サイト 高松市インフォメーション 高松市役所庁舎のご案内 高松市役所へのアクセス 統計 市町合併情報 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "このサイトについて",
+          "url": "https://www.city.takamatsu.kagawa.jp/homepage/thissite.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/homepage/thissite.html",
+          "title": "このサイトについて｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "クセシビリティ方針 multilingual 高松市ホームページへのリンクについて ご意見箱 このサイトについて リンク集 サイトマップ 情報が見つからない時は PDFについて 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.city.takamatsu.kagawa.jp/homepage/otoiawase.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/homepage/otoiawase.html",
+          "title": "ご意見箱｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "クセシビリティ方針 multilingual 高松市ホームページへのリンクについて ご意見箱 このサイトについて リンク集 サイトマップ 情報が見つからない時は PDFについて 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        }
+      ]
+    },
+    {
+      "id": "kagawa-telescope-museum",
+      "name": "天体望遠鏡博物館",
+      "operator": "一般社団法人「天体望遠鏡博物館」が発足しました",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.telescope-museum.com/",
+      "old_evidence": {
+        "quote": "一般社団法人「天体望遠鏡博物館」が発足しました",
+        "url": "https://www.telescope-museum.com/about/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.telescope-museum.com/",
+          "status": 200,
+          "final_url": "https://www.telescope-museum.com/",
+          "title": "天体望遠鏡博物館 公式ホームページ",
+          "statements": [],
+          "tail": "館内案内 収蔵望遠鏡 お知らせ お問い合わせ 望遠鏡を寄贈されたい方へ 寄付されたい方へ ボランティアスタッフ募集 法人賛助会員 運営組織概要 活動内容 リンク サイトマップ 天体望遠鏡博物館定款 天体望遠鏡博物館会則 プライバシーポリシー このページのTOPへ /* <![CDATA[ */ var ajax = {\"url\":\"https:\\/\\/www.telescope-museum.com\\/wp-admin\\/admin-ajax.php\"}; /* ]]> */"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.telescope-museum.com/about/",
+          "status": 200,
+          "final_url": "https://www.telescope-museum.com/about/",
+          "title": "天体望遠鏡博物館 公式ホームページ",
+          "statements": [],
+          "tail": "館内案内 収蔵望遠鏡 お知らせ お問い合わせ 望遠鏡を寄贈されたい方へ 寄付されたい方へ ボランティアスタッフ募集 法人賛助会員 運営組織概要 活動内容 リンク サイトマップ 天体望遠鏡博物館定款 天体望遠鏡博物館会則 プライバシーポリシー このページのTOPへ /* <![CDATA[ */ var ajax = {\"url\":\"https:\\/\\/www.telescope-museum.com\\/wp-admin\\/admin-ajax.php\"}; /* ]]> */"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.telescope-museum.com/inquiry/",
+          "status": 200,
+          "final_url": "https://www.telescope-museum.com/inquiry/",
+          "title": "天体望遠鏡博物館 公式ホームページ",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "したい望遠鏡や天文機材・天文図書がある 一般社団法人天体望遠鏡博物館会員への入会を検討したい 天体望遠鏡博物館の活動に協力したい（ボ"
+            }
+          ],
+          "tail": "館内案内 収蔵望遠鏡 お知らせ お問い合わせ 望遠鏡を寄贈されたい方へ 寄付されたい方へ ボランティアスタッフ募集 法人賛助会員 運営組織概要 活動内容 リンク サイトマップ 天体望遠鏡博物館定款 天体望遠鏡博物館会則 プライバシーポリシー このページのTOPへ /* <![CDATA[ */ var ajax = {\"url\":\"https:\\/\\/www.telescope-museum.com\\/wp-admin\\/admin-ajax.php\"}; /* ]]> */"
+        },
+        {
+          "label": "活動内容",
+          "url": "https://www.telescope-museum.com/about/katudounaiyou/",
+          "status": 200,
+          "final_url": "https://www.telescope-museum.com/about/katudounaiyou/",
+          "title": "天体望遠鏡博物館 公式ホームページ",
+          "statements": [],
+          "tail": "館内案内 収蔵望遠鏡 お知らせ お問い合わせ 望遠鏡を寄贈されたい方へ 寄付されたい方へ ボランティアスタッフ募集 法人賛助会員 運営組織概要 活動内容 リンク サイトマップ 天体望遠鏡博物館定款 天体望遠鏡博物館会則 プライバシーポリシー このページのTOPへ /* <![CDATA[ */ var ajax = {\"url\":\"https:\\/\\/www.telescope-museum.com\\/wp-admin\\/admin-ajax.php\"}; /* ]]> */"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-town-338",
+      "name": "かりんの丘公園",
+      "operator": "かりんの丘公園について - Manno まんのう魅力発信ポータルサイト - まんのう町",
+      "operator_kind": "municipality",
+      "official_url": "https://www.town.manno.lg.jp/site/miryoku-hasshin/5662.html",
+      "old_evidence": {
+        "quote": "かりんの丘公園について - Manno まんのう魅力発信ポータルサイト - まんのう町",
+        "url": "https://www.town.manno.lg.jp/site/miryoku-hasshin/5662.html",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.town.manno.lg.jp/site/miryoku-hasshin/5662.html",
+          "status": 200,
+          "final_url": "https://www.town.manno.lg.jp/site/miryoku-hasshin/5662.html",
+          "title": "かりんの丘公園について - Manno まんのう魅力発信ポータルサイト - まんのう町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Manno Town. All Rights Reserved."
+            }
+          ],
+          "tail": "-0107 Fax：0877-73-0112 メールでのお問い合わせはこちら このページを見ている人は こんなページも見ています AI（人工知能）は こんなページをおすすめします まんのう町役場 地域振興課 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73-0122 まんのう町公式ホームページ 個人情報の取り扱いについて ウェブアクセシビリティ お問い合わせ Copyright © Manno Town. All Rights Reserved."
+        },
+        {
+          "label": "メールでのお問い合わせはこちら",
+          "url": "https://www.town.manno.lg.jp/form/detail.php?sec_sec1=11&lif_id=5662",
+          "status": 200,
+          "final_url": "https://www.town.manno.lg.jp/form/detail.php?sec_sec1=11&lif_id=5662&check",
+          "title": "建設土地改良課へのお問い合わせ - まんのう町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Manno Town. All Rights Reserved."
+            },
+            {
+              "kind": "自治体",
+              "quote": "まんのう町役場 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73"
+            }
+          ],
+          "tail": "次の画面では送信はまだされません。 このページの先頭へ まんのう町役場 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73-0100 開庁時間：月曜日から金曜日の8時30分から17時15分（祝日、12月29日から1月3日を除く） 法人番号1000020374067 このホームページについて サイトマップ アクセシビリティについて 組織別連絡先一覧 お問い合わせ Copyright © Manno Town. All Rights Reserved."
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.town.manno.lg.jp/form/detail.php?sec_sec1=5",
+          "status": 200,
+          "final_url": "https://www.town.manno.lg.jp/form/detail.php?sec_sec1=5&check",
+          "title": "地域振興課へのお問い合わせ - まんのう町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Manno Town. All Rights Reserved."
+            },
+            {
+              "kind": "自治体",
+              "quote": "まんのう町役場 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73"
+            }
+          ],
+          "tail": "次の画面では送信はまだされません。 このページの先頭へ まんのう町役場 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73-0100 開庁時間：月曜日から金曜日の8時30分から17時15分（祝日、12月29日から1月3日を除く） 法人番号1000020374067 このホームページについて サイトマップ アクセシビリティについて 組織別連絡先一覧 お問い合わせ Copyright © Manno Town. All Rights Reserved."
+        }
+      ]
+    },
+    {
+      "id": "kagawa-souyu-353",
+      "name": "香南楽湯",
+      "operator": "創裕",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.souyu.co.jp/shisetsu/kounanrakuyu",
+      "old_evidence": {
+        "quote": "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved.",
+        "url": "https://www.souyu.co.jp/shisetsu/kounanrakuyu",
+        "checked_on": "2026-09-17"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.souyu.co.jp/shisetsu/kounanrakuyu",
+          "status": 200,
+          "final_url": "https://www.souyu.co.jp/shisetsu/kounanrakuyu",
+          "title": "香南楽湯 | 創裕",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "株式会社 創裕 〒760-0064 香川県高松市朝日新"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プラ"
+            }
+          ],
+          "tail": "覧 natural body Rakura ボディケア こころ 地下水設備部門 浅井戸・深井戸温泉ボーリング CREINS(クリアンス)配管洗浄 社会福祉部門 アヤトリエ 企業情報 HOME お知らせ メディア掲載情報 企業情報 採用情報 お問い合わせ プライバシーポリシー Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プライバシーポリシー ×閉じる"
+        },
+        {
+          "label": "企業情報",
+          "url": "https://www.souyu.co.jp/company/",
+          "status": 200,
+          "final_url": "https://www.souyu.co.jp/company/",
+          "title": "会社概要 < 企業情報 | 株式会社 創裕 私たちは、ゆとりある生活を創造します。",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "このような時代の流れの中で、私たち株式会社創裕は1994年に創業し、当初から一貫して「ゆとりある生活の創造"
+            },
+            {
+              "kind": "法人名",
+              "quote": "な企業となる 沿革 平成 5年 12月 有限会社創裕 設立 平成 6年 10月 高松ぽかぽか"
+            },
+            {
+              "kind": "法人名",
+              "quote": "高松市伏石町） 開業 平成 7年 7月 株式会社に変更、資本金1,000万円に増資 平成 8年"
+            },
+            {
+              "kind": "法人名",
+              "quote": "2年 1月 足摺テルメの展望台アネモネがNPO法人地域活性化支援センターより「恋人の聖地」に認定 4月 足摺テルメを"
+            },
+            {
+              "kind": "法人名",
+              "quote": "（香川県高松市鍛冶屋町） 開業［株式会社クリエイトから運営移行］ 7月 ル・ポール粟島（香川県三豊市）"
+            },
+            {
+              "kind": "法人名",
+              "quote": "運営受託](令和2年3月終了) 11月 株式会社クリエイトを株式会社創裕の完全子会社化 11月 本場さぬきうどん 讃州 佐賀本"
+            },
+            {
+              "kind": "法人名",
+              "quote": "わ市）開業［指定管理者による運営受託］ 株式会社 創裕 〒760-0064 香川県高松市朝日新"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プラ"
+            }
+          ],
+          "tail": "覧 natural body Rakura ボディケア こころ 地下水設備部門 浅井戸・深井戸温泉ボーリング CREINS(クリアンス)配管洗浄 社会福祉部門 アヤトリエ 企業情報 HOME お知らせ メディア掲載情報 企業情報 採用情報 お問い合わせ プライバシーポリシー Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プライバシーポリシー ×閉じる"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.souyu.co.jp/contact/",
+          "status": 200,
+          "final_url": "https://www.souyu.co.jp/contact/",
+          "title": "お問い合わせ | 株式会社 創裕 私たちは、ゆとりある生活を創造します。",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "支援事業所 アヤトリエ お問合わせ内容 株式会社 創裕 〒760-0064 香川県高松市朝日新"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プラ"
+            }
+          ],
+          "tail": "覧 natural body Rakura ボディケア こころ 地下水設備部門 浅井戸・深井戸温泉ボーリング CREINS(クリアンス)配管洗浄 社会福祉部門 アヤトリエ 企業情報 HOME お知らせ メディア掲載情報 企業情報 採用情報 お問い合わせ プライバシーポリシー Copyright (C) SOUYU Co.,Ltd. All Rights Reserved. ×閉じる HOME お知らせ 施設一覧 会社情報 採用情報 お問い合わせ プライバシーポリシー ×閉じる"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-city-505",
+      "name": "高松市歴史資料館",
+      "operator": "公益財団法人高松市文化芸術財団の事務局主幹をお招きし",
+      "operator_kind": "municipality",
+      "official_url": "http://www.city.takamatsu.kagawa.jp/23506.html",
+      "old_evidence": {
+        "quote": "指定管理者である公益財団法人高松市文化芸術財団の事務局主幹をお招きし、活動内容をご説明いただきました",
+        "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://www.city.takamatsu.kagawa.jp/23506.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/rekishi/index.html",
+          "title": "高松市歴史資料館｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ました 国指定史跡高松城跡ガイダンス施設 陳列館リニューアルオープン！ 史跡石清尾山古墳群の保存活用計画について 高松市の無形民俗文化財 特別史跡 讃岐国分寺跡 市役所吹奏楽団 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html",
+          "title": "高松版文化芸術プラットフォーム構築事業について｜高松市",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "ンシル「クリエイティブ・ポート高松」 を公益財団法人高松市文化芸術財団内に 設置しました"
+            },
+            {
+              "kind": "法人名",
+              "quote": "ボルタワー ホール棟2階 管理事務室 （公益財団法人 高松市文化芸術財団内） TEL：087-825-5053 FA"
+            },
+            {
+              "kind": "法人名",
+              "quote": "、サンポートホール高松の指定管理者である公益財団法人高松市文化芸術財団の事務局主幹をお招きし、活動内容をご説明いただきました"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ました 国指定史跡高松城跡ガイダンス施設 陳列館リニューアルオープン！ 史跡石清尾山古墳群の保存活用計画について 高松市の無形民俗文化財 特別史跡 讃岐国分寺跡 市役所吹奏楽団 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "高松市役所へのアクセス",
+          "url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/profile/info/access.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/profile/info/access.html",
+          "title": "高松市役所へのアクセス｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ている人はこんなページも見ています ご意見箱 くらしの情報 高松市美術館公式サイト 高松市インフォメーション 高松市役所庁舎のご案内 高松市役所へのアクセス 統計 市町合併情報 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "このサイトについて",
+          "url": "https://www.city.takamatsu.kagawa.jp/homepage/thissite.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/homepage/thissite.html",
+          "title": "このサイトについて｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "クセシビリティ方針 multilingual 高松市ホームページへのリンクについて ご意見箱 このサイトについて リンク集 サイトマップ 情報が見つからない時は PDFについて 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.city.takamatsu.kagawa.jp/homepage/otoiawase.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/homepage/otoiawase.html",
+          "title": "ご意見箱｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "クセシビリティ方針 multilingual 高松市ホームページへのリンクについて ご意見箱 このサイトについて リンク集 サイトマップ 情報が見つからない時は PDFについて 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        }
+      ]
+    },
+    {
+      "id": "kagawa-city-506",
+      "name": "高松市讃岐国分寺跡資料館",
+      "operator": "公益財団法人高松市文化芸術財団の事務局主幹をお招きし",
+      "operator_kind": "municipality",
+      "official_url": "http://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/sanuki.html",
+      "old_evidence": {
+        "quote": "指定管理者である公益財団法人高松市文化芸術財団の事務局主幹をお招きし、活動内容をご説明いただきました",
+        "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/sanuki.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/sanuki.html",
+          "title": "讃岐国分寺跡資料館｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ました 国指定史跡高松城跡ガイダンス施設 陳列館リニューアルオープン！ 史跡石清尾山古墳群の保存活用計画について 高松市の無形民俗文化財 特別史跡 讃岐国分寺跡 市役所吹奏楽団 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html",
+          "title": "高松版文化芸術プラットフォーム構築事業について｜高松市",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "ンシル「クリエイティブ・ポート高松」 を公益財団法人高松市文化芸術財団内に 設置しました"
+            },
+            {
+              "kind": "法人名",
+              "quote": "ボルタワー ホール棟2階 管理事務室 （公益財団法人 高松市文化芸術財団内） TEL：087-825-5053 FA"
+            },
+            {
+              "kind": "法人名",
+              "quote": "、サンポートホール高松の指定管理者である公益財団法人高松市文化芸術財団の事務局主幹をお招きし、活動内容をご説明いただきました"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ました 国指定史跡高松城跡ガイダンス施設 陳列館リニューアルオープン！ 史跡石清尾山古墳群の保存活用計画について 高松市の無形民俗文化財 特別史跡 讃岐国分寺跡 市役所吹奏楽団 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "高松市役所へのアクセス",
+          "url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/profile/info/access.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/profile/info/access.html",
+          "title": "高松市役所へのアクセス｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ている人はこんなページも見ています ご意見箱 くらしの情報 高松市美術館公式サイト 高松市インフォメーション 高松市役所庁舎のご案内 高松市役所へのアクセス 統計 市町合併情報 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "このサイトについて",
+          "url": "https://www.city.takamatsu.kagawa.jp/homepage/thissite.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/homepage/thissite.html",
+          "title": "このサイトについて｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "クセシビリティ方針 multilingual 高松市ホームページへのリンクについて ご意見箱 このサイトについて リンク集 サイトマップ 情報が見つからない時は PDFについて 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.city.takamatsu.kagawa.jp/homepage/otoiawase.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/homepage/otoiawase.html",
+          "title": "ご意見箱｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "クセシビリティ方針 multilingual 高松市ホームページへのリンクについて ご意見箱 このサイトについて リンク集 サイトマップ 情報が見つからない時は PDFについて 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        }
+      ]
+    },
+    {
+      "id": "kagawa-town-8",
+      "name": "高山航空公園",
+      "operator": "Copyright©2011 AYAGAWA All Rights Reserved.",
+      "operator_kind": "municipality",
+      "official_url": "https://www.town.ayagawa.lg.jp/docs/2011071300140/",
+      "old_evidence": {
+        "quote": "Copyright©2011 AYAGAWA All Rights Reserved.",
+        "url": "https://www.town.ayagawa.lg.jp/docs/2011070700033/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.town.ayagawa.lg.jp/docs/2011071300140/",
+          "status": 200,
+          "final_url": "https://www.town.ayagawa.lg.jp/docs/2011071300140/",
+          "title": "高山航空公園（たかやまこうくうこうえん） | 綾川町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright©2011 AYAGAWA All Rights Reserved. window.dataLayer = window.dataLayer || []; fu"
+            }
+          ],
+          "tail": "r || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-24406620-1'); $(function(){ $('#breadCrumbs a').each(function(){ if( $(this).attr('href') == \"/\" ){ $(this).attr('href', '/top.html'); } }); });"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.town.ayagawa.lg.jp/docs/2011070700033/",
+          "status": 200,
+          "final_url": "https://www.town.ayagawa.lg.jp/docs/2011070700033/",
+          "title": "RSSとATOMについて | 綾川町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright©2011 AYAGAWA All Rights Reserved. window.dataLayer = window.dataLayer || []; fu"
+            }
+          ],
+          "tail": "r || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-24406620-1'); $(function(){ $('#breadCrumbs a').each(function(){ if( $(this).attr('href') == \"/\" ){ $(this).attr('href', '/top.html'); } }); });"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.town.ayagawa.lg.jp/docs/2011070700019/",
+          "status": 200,
+          "final_url": "https://www.town.ayagawa.lg.jp/docs/2011070700019/",
+          "title": "このサイトの考え方 | 綾川町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright©2011 AYAGAWA All Rights Reserved. window.dataLayer = window.dataLayer || []; fu"
+            }
+          ],
+          "tail": "r || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-24406620-1'); $(function(){ $('#breadCrumbs a').each(function(){ if( $(this).attr('href') == \"/\" ){ $(this).attr('href', '/top.html'); } }); });"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-shioiri-onsen-96",
+      "name": "塩入温泉",
+      "operator": "有限会社 仲南振興公社が運営しています",
+      "operator_kind": "facility_official",
+      "official_url": "http://www.shioiri-onsen.jp/",
+      "old_evidence": {
+        "quote": "有限会社 仲南振興公社が運営しています",
+        "url": "http://www.shioiri-onsen.jp/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://www.shioiri-onsen.jp/",
+          "status": 200,
+          "final_url": "http://www.shioiri-onsen.jp/",
+          "title": "塩入温泉 水と緑に囲まれた さぬきの秘湯【香川県仲多度郡まんのう町】",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "現在は、有限会社 仲南振興公社が運営しています"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright c Chunan shinkousha. All Rights Reserved. 温まる 泊まる 健康 買う 学ぶ Language setTimeout("
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright c Chunan shinkousha. All Rights Reserved. $(function(){ $('.owl-carousel.top')."
+            }
+          ],
+          "tail": ":{items:3,loop:true}, 1000:{items:4,loop:true} } }); }); $('#spmenu').slicknav({ label:'', }); $(document).on('click touchend', function(event) { if (!$(event.target).closest('.slicknav_menu').length) { $('#spmenu').slicknav('close'); } });"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "http://www.shioiri-onsen.jp/inquiry/",
+          "status": 200,
+          "final_url": "http://www.shioiri-onsen.jp/inquiry/",
+          "title": "お問い合わせ | 塩入温泉 水と緑に囲まれた さぬきの秘湯【香川県仲多度郡まんのう町】",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Chunan shinkousha. All Rights Reserved. $('#spmenu').slicknav({ label:'', });"
+            }
+          ],
+          "tail": "(!$(event.target).closest('.slicknav_menu').length) { $('#spmenu').slicknav('close'); } }); (function( $ ) { $.fn.autoKana( '#name_1', '#read_1', { katakana: false }); $.fn.autoKana( '#name_2', '#read_2', { katakana: false }); })( jQuery );"
+        },
+        {
+          "label": "運営会社案内",
+          "url": "http://www.shioiri-onsen.jp/company/",
+          "status": 200,
+          "final_url": "http://www.shioiri-onsen.jp/company/",
+          "title": "運営会社案内 | 塩入温泉 水と緑に囲まれた さぬきの秘湯【香川県仲多度郡まんのう町】",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "個人情報保護方針 運営会社案内 社名 有限会社 仲南振興公社 設立年月日 平成15年11月20日 所"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Chunan shinkousha. All Rights Reserved. $('#spmenu').slicknav({ label:'', });"
+            }
+          ],
+          "tail": "入温泉。 Copyright © Chunan shinkousha. All Rights Reserved. $('#spmenu').slicknav({ label:'', }); $(document).on('click touchend', function(event) { if (!$(event.target).closest('.slicknav_menu').length) { $('#spmenu').slicknav('close'); } });"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-p2970",
+      "name": "鎌田共済会郷土博物館",
+      "operator": "公益財団法人 鎌田共済会郷土博物館",
+      "operator_kind": "tourism_association",
+      "official_url": "https://www.my-kagawa.jp/point/2970",
+      "old_evidence": {
+        "quote": "公益財団法人 鎌田共済会郷土博物館",
+        "url": "https://www.my-kagawa.jp/point/2970",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.my-kagawa.jp/point/2970",
+          "status": 200,
+          "final_url": "https://www.my-kagawa.jp/point/2970",
+          "title": "鎌田共済会郷土博物館｜スポット・体験｜香川県観光協会公式サイト - うどん県旅ネット",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "泊施設・店舗向け） このサイトについて 公益社団法人香川県観光協会について 当サイトについて サイトマップ 関連リ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "車場 駐車場あり 15台 ウェブサイト 公益財団法人 鎌田共済会郷土博物館 $(function() { var"
+            },
+            {
+              "kind": "法人名",
+              "quote": "スマートフォン版 このサイトについて 公益社団法人香川県観光協会について 当サイトについて サイトマップ 関連リ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "e Ritsurin français 公益社団法人香川県観光協会 〒760-8570 香川県高松市番町四"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © kagawa Prefecture Tourism Association. ALL RIGHTS RESERVED. 当サイトでは、利便性の向上と利用状"
+            }
+          ],
+          "tail": "s.id = id; js.src = \"//connect.facebook.net/ja_JP/sdk.js\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); {lang: 'ja'} $(function() { $(\"#commonFlashMessage\").modal({}); $(\".banner a.tooltip\").tooltip(); });"
+        },
+        {
+          "label": "公益社団法人香川県観光協会について",
+          "url": "https://www.my-kagawa.jp/organization",
+          "status": 200,
+          "final_url": "https://www.my-kagawa.jp/organization",
+          "title": "組織概要｜香川県観光協会公式サイト - うどん県旅ネット",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "泊施設・店舗向け） このサイトについて 公益社団法人香川県観光協会について 当サイトについて サイトマップ 関連リ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "このWebサイト（以下、当サイト）は、公益社団法人香川県観光協会（以下、当協会）およびその関連組織が運営"
+            },
+            {
+              "kind": "法人名",
+              "quote": "公益社団法人香川県観光協会とは 1970（昭和45）年に、香川県の観光"
+            },
+            {
+              "kind": "法人名",
+              "quote": "年には公益法人制度改革に伴い、それまでの一般社団法人から公益社団法人に移行しました"
+            },
+            {
+              "kind": "法人名",
+              "quote": "公益社団法人香川県観光協会定款（PDF） 公益社団法人香川県観光協会役"
+            },
+            {
+              "kind": "法人名",
+              "quote": "スマートフォン版 このサイトについて 公益社団法人香川県観光協会について 当サイトについて サイトマップ 関連リ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "e Ritsurin français 公益社団法人香川県観光協会 〒760-8570 香川県高松市番町四"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © kagawa Prefecture Tourism Association. ALL RIGHTS RESERVED. 当サイトでは、利便性の向上と利用状"
+            }
+          ],
+          "tail": "s.id = id; js.src = \"//connect.facebook.net/ja_JP/sdk.js\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); {lang: 'ja'} $(function() { $(\"#commonFlashMessage\").modal({}); $(\".banner a.tooltip\").tooltip(); });"
+        },
+        {
+          "label": "当サイトについて",
+          "url": "https://www.my-kagawa.jp/site",
+          "status": 200,
+          "final_url": "https://www.my-kagawa.jp/site",
+          "title": "当サイトについて｜香川県観光協会公式サイト - うどん県旅ネット",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "泊施設・店舗向け） このサイトについて 公益社団法人香川県観光協会について 当サイトについて サイトマップ 関連リ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "当サイトについて プライバシーポリシー 公益社団法人香川県観光協会（以下「当協会」という"
+            },
+            {
+              "kind": "法人名",
+              "quote": "スマートフォン版 このサイトについて 公益社団法人香川県観光協会について 当サイトについて サイトマップ 関連リ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "e Ritsurin français 公益社団法人香川県観光協会 〒760-8570 香川県高松市番町四"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © kagawa Prefecture Tourism Association. ALL RIGHTS RESERVED. 当サイトでは、利便性の向上と利用状"
+            }
+          ],
+          "tail": "s.id = id; js.src = \"//connect.facebook.net/ja_JP/sdk.js\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); {lang: 'ja'} $(function() { $(\"#commonFlashMessage\").modal({}); $(\".banner a.tooltip\").tooltip(); });"
+        },
+        {
+          "label": "香川せとうちアート観光圏",
+          "url": "https://www.my-kagawa.jp/setouchi-art/feature/top/about",
+          "status": 200,
+          "final_url": "https://www.my-kagawa.jp/setouchi-art/feature/top/about",
+          "title": "香川せとうちアート観光圏とは｜TOP｜香川せとうちアート観光圏｜香川県観光協会公式サイト - うどん県旅ネット",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "泊施設・店舗向け） このサイトについて 公益社団法人香川県観光協会について 当サイトについて サイトマップ 関連リ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "スマートフォン版 このサイトについて 公益社団法人香川県観光協会について 当サイトについて サイトマップ 関連リ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "e Ritsurin français 公益社団法人香川県観光協会 〒760-8570 香川県高松市番町四"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © kagawa Prefecture Tourism Association. ALL RIGHTS RESERVED. 当サイトでは、利便性の向上と利用状"
+            }
+          ],
+          "tail": "s.id = id; js.src = \"//connect.facebook.net/ja_JP/sdk.js\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); {lang: 'ja'} $(function() { $(\"#commonFlashMessage\").modal({}); $(\".banner a.tooltip\").tooltip(); });"
+        },
+        {
+          "label": "お問い合わせはこちら",
+          "url": "https://www.my-kagawa.jp/qa",
+          "status": 200,
+          "final_url": "https://www.my-kagawa.jp/qa",
+          "title": "お問い合わせ｜香川県観光協会公式サイト - うどん県旅ネット",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "泊施設・店舗向け） このサイトについて 公益社団法人香川県観光協会について 当サイトについて サイトマップ 関連リ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "スマートフォン版 このサイトについて 公益社団法人香川県観光協会について 当サイトについて サイトマップ 関連リ"
+            },
+            {
+              "kind": "法人名",
+              "quote": "e Ritsurin français 公益社団法人香川県観光協会 〒760-8570 香川県高松市番町四"
+            },
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © kagawa Prefecture Tourism Association. ALL RIGHTS RESERVED. 当サイトでは、利便性の向上と利用状"
+            }
+          ],
+          "tail": "s.id = id; js.src = \"//connect.facebook.net/ja_JP/sdk.js\"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); {lang: 'ja'} $(function() { $(\"#commonFlashMessage\").modal({}); $(\".banner a.tooltip\").tooltip(); });"
+        }
+      ]
+    },
+    {
+      "id": "kagawa-city-2484",
+      "name": "古代山城屋嶋城",
+      "operator": "屋嶋城詳細へ｜高松市",
+      "operator_kind": "municipality",
+      "official_url": "http://www.city.takamatsu.kagawa.jp/4727.html",
+      "old_evidence": {
+        "quote": "屋嶋城詳細へ｜高松市",
+        "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunkazai/chosa/yashimajo/index.html",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "http://www.city.takamatsu.kagawa.jp/4727.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunkazai/chosa/yashimajo/index.html",
+          "title": "屋嶋城詳細へ｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ader DCのダウンロードへ ページ上部へ 史跡天然記念物屋島の調査 史跡天然記念物屋島の調査 屋嶋城詳細へ 千間堂跡（せんげんどうあと） 長崎鼻古墳（ながさきのはなこふん） 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunkazai/chosa/yashimajo/index.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunkazai/chosa/yashimajo/index.html",
+          "title": "屋嶋城詳細へ｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ader DCのダウンロードへ ページ上部へ 史跡天然記念物屋島の調査 史跡天然記念物屋島の調査 屋嶋城詳細へ 千間堂跡（せんげんどうあと） 長崎鼻古墳（ながさきのはなこふん） 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "高松市役所へのアクセス",
+          "url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/profile/info/access.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/profile/info/access.html",
+          "title": "高松市役所へのアクセス｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "ている人はこんなページも見ています ご意見箱 くらしの情報 高松市美術館公式サイト 高松市インフォメーション 高松市役所庁舎のご案内 高松市役所へのアクセス 統計 市町合併情報 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "このサイトについて",
+          "url": "https://www.city.takamatsu.kagawa.jp/homepage/thissite.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/homepage/thissite.html",
+          "title": "このサイトについて｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "クセシビリティ方針 multilingual 高松市ホームページへのリンクについて ご意見箱 このサイトについて リンク集 サイトマップ 情報が見つからない時は PDFについて 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.city.takamatsu.kagawa.jp/homepage/otoiawase.html",
+          "status": 200,
+          "final_url": "https://www.city.takamatsu.kagawa.jp/homepage/otoiawase.html",
+          "title": "ご意見箱｜高松市",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Takamatsu City, All rights reserved."
+            }
+          ],
+          "tail": "クセシビリティ方針 multilingual 高松市ホームページへのリンクについて ご意見箱 このサイトについて リンク集 サイトマップ 情報が見つからない時は PDFについて 高松市 〒760-8571 香川県高松市番町一丁目8番15号 電話:087-839-2011（代表） 法人番号1000020372013 高松市役所へのアクセス リンク集 このサイトについて お問い合わせ Copyright © Takamatsu City, All rights reserved."
+        }
+      ]
+    },
+    {
+      "id": "kagawa-town",
+      "name": "ほたる見公園",
+      "operator": "ほたる見公園について - Manno まんのう魅力発信ポータルサイト - まんのう町",
+      "operator_kind": "municipality",
+      "official_url": "https://www.town.manno.lg.jp/site/miryoku-hasshin/5665.html",
+      "old_evidence": {
+        "quote": "ほたる見公園について - Manno まんのう魅力発信ポータルサイト - まんのう町",
+        "url": "https://www.town.manno.lg.jp/site/miryoku-hasshin/5665.html",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.town.manno.lg.jp/site/miryoku-hasshin/5665.html",
+          "status": 200,
+          "final_url": "https://www.town.manno.lg.jp/site/miryoku-hasshin/5665.html",
+          "title": "ほたる見公園について - Manno まんのう魅力発信ポータルサイト - まんのう町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Manno Town. All Rights Reserved."
+            }
+          ],
+          "tail": "-0107 Fax：0877-73-0112 メールでのお問い合わせはこちら このページを見ている人は こんなページも見ています AI（人工知能）は こんなページをおすすめします まんのう町役場 地域振興課 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73-0122 まんのう町公式ホームページ 個人情報の取り扱いについて ウェブアクセシビリティ お問い合わせ Copyright © Manno Town. All Rights Reserved."
+        },
+        {
+          "label": "メールでのお問い合わせはこちら",
+          "url": "https://www.town.manno.lg.jp/form/detail.php?sec_sec1=11&lif_id=5665",
+          "status": 200,
+          "final_url": "https://www.town.manno.lg.jp/form/detail.php?sec_sec1=11&lif_id=5665&check",
+          "title": "建設土地改良課へのお問い合わせ - まんのう町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Manno Town. All Rights Reserved."
+            },
+            {
+              "kind": "自治体",
+              "quote": "まんのう町役場 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73"
+            }
+          ],
+          "tail": "次の画面では送信はまだされません。 このページの先頭へ まんのう町役場 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73-0100 開庁時間：月曜日から金曜日の8時30分から17時15分（祝日、12月29日から1月3日を除く） 法人番号1000020374067 このホームページについて サイトマップ アクセシビリティについて 組織別連絡先一覧 お問い合わせ Copyright © Manno Town. All Rights Reserved."
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.town.manno.lg.jp/form/detail.php?sec_sec1=5",
+          "status": 200,
+          "final_url": "https://www.town.manno.lg.jp/form/detail.php?sec_sec1=5&check",
+          "title": "地域振興課へのお問い合わせ - まんのう町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright © Manno Town. All Rights Reserved."
+            },
+            {
+              "kind": "自治体",
+              "quote": "まんのう町役場 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73"
+            }
+          ],
+          "tail": "次の画面では送信はまだされません。 このページの先頭へ まんのう町役場 〒766-8503 香川県仲多度郡まんのう町吉野下430 電話：0877-73-0100 開庁時間：月曜日から金曜日の8時30分から17時15分（祝日、12月29日から1月3日を除く） 法人番号1000020374067 このホームページについて サイトマップ アクセシビリティについて 組織別連絡先一覧 お問い合わせ Copyright © Manno Town. All Rights Reserved."
+        }
+      ]
+    },
+    {
+      "id": "kagawa-town-9",
+      "name": "滝宮公園",
+      "operator": "Copyright©2011 AYAGAWA All Rights Reserved.",
+      "operator_kind": "municipality",
+      "official_url": "https://www.town.ayagawa.lg.jp/docs/2017121900032/",
+      "old_evidence": {
+        "quote": "Copyright©2011 AYAGAWA All Rights Reserved.",
+        "url": "https://www.town.ayagawa.lg.jp/docs/2011070700033/",
+        "checked_on": "2026-09-13"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.town.ayagawa.lg.jp/docs/2017121900032/",
+          "status": 200,
+          "final_url": "https://www.town.ayagawa.lg.jp/docs/2017121900032/",
+          "title": "滝宮公園（たきのみやこうえん） | 綾川町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright©2011 AYAGAWA All Rights Reserved. window.dataLayer = window.dataLayer || []; fu"
+            }
+          ],
+          "tail": "r || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-24406620-1'); $(function(){ $('#breadCrumbs a').each(function(){ if( $(this).attr('href') == \"/\" ){ $(this).attr('href', '/top.html'); } }); });"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.town.ayagawa.lg.jp/docs/2011070700033/",
+          "status": 200,
+          "final_url": "https://www.town.ayagawa.lg.jp/docs/2011070700033/",
+          "title": "RSSとATOMについて | 綾川町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright©2011 AYAGAWA All Rights Reserved. window.dataLayer = window.dataLayer || []; fu"
+            }
+          ],
+          "tail": "r || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-24406620-1'); $(function(){ $('#breadCrumbs a').each(function(){ if( $(this).attr('href') == \"/\" ){ $(this).attr('href', '/top.html'); } }); });"
+        },
+        {
+          "label": "お問い合わせ",
+          "url": "https://www.town.ayagawa.lg.jp/docs/2011070700019/",
+          "status": 200,
+          "final_url": "https://www.town.ayagawa.lg.jp/docs/2011070700019/",
+          "title": "このサイトの考え方 | 綾川町",
+          "statements": [
+            {
+              "kind": "著作権表記",
+              "quote": "Copyright©2011 AYAGAWA All Rights Reserved. window.dataLayer = window.dataLayer || []; fu"
+            }
+          ],
+          "tail": "r || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-24406620-1'); $(function(){ $('#breadCrumbs a').each(function(){ if( $(this).attr('href') == \"/\" ){ $(this).attr('href', '/top.html'); } }); });"
+        }
+      ]
+    }
+  ]
+}

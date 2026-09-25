@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-09-26T08:06:20.688605+09:00",
+  "requests": 3,
+  "sources": [
+    {
+      "id": "kagawa-shikokumura",
+      "name": "四国村ミウゼアム",
+      "operator": "公益財団法人四国民家博物館",
+      "operator_kind": "facility_official",
+      "official_url": "https://www.shikokumura.or.jp/",
+      "old_evidence": {
+        "quote": "平成21年（2011）公益財団法人認定 高い次元の公益に資することを目的として公益財団法人に認定されました。",
+        "url": "https://www.shikokumura.or.jp/about/",
+        "checked_on": "2026-09-12"
+      },
+      "pages": [
+        {
+          "label": "公式ページ",
+          "url": "https://www.shikokumura.or.jp/",
+          "status": 200,
+          "final_url": "https://www.shikokumura.or.jp/",
+          "title": "SHIKOKUMURA",
+          "statements": [],
+          "tail": "ads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/shikokumura/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}"
+        },
+        {
+          "label": "これまでの根拠のページ",
+          "url": "https://www.shikokumura.or.jp/about/",
+          "status": 200,
+          "final_url": "https://www.shikokumura.or.jp/about/",
+          "title": "四国村とは | SHIKOKUMURA",
+          "statements": [
+            {
+              "kind": "法人名",
+              "quote": "平成２１年（２０１１）公益財団法人認定 高い次元の公益に資することを目的として"
+            },
+            {
+              "kind": "法人名",
+              "quote": "公益財団法人に認定されました"
+            }
+          ],
+          "tail": "ads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/shikokumura/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}"
+        }
+      ]
+    }
+  ]
+}

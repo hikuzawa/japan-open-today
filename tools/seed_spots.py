@@ -39,6 +39,7 @@ from sitemill.settings import Workspace
 
 from japan_open_today.areas import area_for_address
 from japan_open_today.data import load_entries
+from japan_open_today.operators import operator_problems
 
 # 第三者のサイト。一次情報にしない（ADR 0001）
 THIRD_PARTY = re.compile(
@@ -315,6 +316,20 @@ def build_seed(client: PoliteClient, cand: dict[str, Any]) -> Seed:
         # 引用は取れたが、運営者が誰かは読めない。自動で採用せずレビュー行列に回す（ADR 0009）
         seed.policy = "pending"
         seed.note = f"運営主体を判定できない（引用: {quote[:40]}）"
+        return seed
+    problems = operator_problems(
+        {
+            "operator": seed.operator,
+            "operator_kind": seed.operator_kind,
+            "operator_evidence": {"quote": quote},
+        }
+    )
+    if problems:
+        # 名前が断片、または施設の公式なのに引用が運営者を名乗っていない。書き込まずに
+        # レビュー行列に回す（CI のテストも同じ関数で全件を見る。ADR 0009 追記 2026-09-26）
+        seed.operator_kind = "unknown"
+        seed.policy = "pending"
+        seed.note = f"運営主体の根拠が意味を成さない（{problems[0]}）"
         return seed
     seed.ok = True
     return seed

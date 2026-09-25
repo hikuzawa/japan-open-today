@@ -18,6 +18,7 @@ from sitemill.service import check_crawl_gate, crawlable_operator_kinds
 from sitemill.settings import Workspace
 
 from japan_open_today.data import Dataset, load_entries, load_sources
+from japan_open_today.operators import operator_problems
 from japan_open_today.service import service
 from japan_open_today.spec import spec_for_kind
 
@@ -55,6 +56,16 @@ def test_crawlable_sources_have_evidence_and_an_official_operator(ws: Workspace)
         assert source.operator_evidence.url.startswith(("https://", "http://")), source.id
         assert source.operator_evidence.checked_on is not None, source.id
         assert source.operator_kind in allowed, (source.id, source.operator_kind)
+
+
+def test_operator_names_and_quotes_make_sense(entries: list[dict]) -> None:
+    """運営者の欄は名前、施設の公式は引用が運営者を名乗っている（ADR 0009 追記 2026-09-26）。
+
+    書き込む道具（seed_spots）も同じ関数で止めるが、手編集や別の道具で戻ったものはここで捕まえる。
+    同じ形の緩い引用が 3 回見つかった（観光協会 10 件、自治体 24 件、2026-09-26 の 42 件）。
+    """
+    problems = [(e["id"], p) for e in entries for p in operator_problems(e)]
+    assert problems == []
 
 
 def test_crawl_gate_passes(ws: Workspace) -> None:

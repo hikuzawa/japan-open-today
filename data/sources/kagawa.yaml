@@ -49,12 +49,13 @@ sources:
 
   - id: kagawa-shikokumura
     name: 四国村ミウゼアム
-    operator: 公益財団法人四国民家博物館
+    operator: "四国村"
     operator_kind: facility_official
     operator_evidence:
-      quote: "平成21年（2011）公益財団法人認定 高い次元の公益に資することを目的として公益財団法人に認定されました。"
+      quote: "高い次元の公益に資することを目的として公益財団法人に認定されました。"
       url: https://www.shikokumura.or.jp/about/
-      checked_on: 2026-09-12
+      checked_on: 2026-09-26
+    operator_note: "運営する法人の名称はサイトに無い（「四国村とは」のページに公益財団法人に認定された記述だけがある）。サイトは施設自身のもの（題名 SHIKOKUMURA）"
     policy: crawl
     official_url: https://www.shikokumura.or.jp/
     pages:
@@ -314,7 +315,7 @@ sources:
 
   - id: kagawa-kankakei
     name: 寒霞渓
-    operator: 小豆島総合開発株式会社（寒霞渓ロープウェイ）
+    operator: "小豆島総合開発株式会社"
     operator_kind: facility_official
     operator_evidence:
       quote: "会社名 小豆島総合開発株式会社"
@@ -351,6 +352,7 @@ sources:
     operator_kind: facility_official
     operator_evidence:
       quote: "Copyright Nijyushinohitomi eigamura Inc. Future institute Corporation All rights reserved."
+      name_in_quote: "Nijyushinohitomi eigamura Inc."
       url: https://www.24hitomi.or.jp/
       checked_on: 2026-09-12
     policy: crawl
@@ -383,6 +385,7 @@ sources:
     operator_kind: facility_official
     operator_evidence:
       quote: "(C) KOTOHIRA-GU"
+      name_in_quote: "KOTOHIRA-GU"
       url: https://www.konpira.or.jp/articles_2026/20260331_about-changes-to-the-rules/article.html
       checked_on: 2026-09-17
     policy: crawl
@@ -973,12 +976,12 @@ sources:
 
   - id: kagawa-ha-art
     name: "歯ART美術館"
-    operator: "株式会社」が設立した"
+    operator: "和田精密歯研株式会社"
     operator_kind: facility_official
     operator_evidence:
-      quote: "株式会社」が設立した"
-      url: http://ha-art.com/index.html
-      checked_on: 2026-09-12
+      quote: "和田精密歯研株式会社が運営する、歯の美術館"
+      url: http://ha-art.com/access/index.html
+      checked_on: 2026-09-26
     policy: crawl
     official_url: http://ha-art.com/index.html
     pages:
@@ -1053,12 +1056,13 @@ sources:
 
   - id: kagawa-city  # 自治体ドメインの一次情報（見出しを根拠にした）
     name: "菊池寛記念館"
-    operator: "菊池寛記念館｜高松市"
+    operator: "高松市"
     operator_kind: municipality
     operator_evidence:
-      quote: "菊池寛記念館｜高松市"
+      quote: "Copyright © Takamatsu City, All rights reserved."
+      name_in_quote: "Takamatsu City"
       url: https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kikuchikan/index.html
-      checked_on: 2026-09-12
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kikuchikan/index.html
     pages:
@@ -1077,12 +1081,12 @@ sources:
 
   - id: kagawa-city-284
     name: "高松市美術館"
-    operator: "Copyright©TAKAMATSU ART MUSEUM.All rights reserved."
+    operator: "高松市美術館美術課"
     operator_kind: municipality
     operator_evidence:
-      quote: "Copyright©TAKAMATSU ART MUSEUM.All rights reserved."
-      url: https://www.city.takamatsu.kagawa.jp/museum/takamatsu/index.html
-      checked_on: 2026-09-12
+      quote: "高松市美術館美術課によって管理・運営されております"
+      url: https://www.city.takamatsu.kagawa.jp/museum/takamatsu/homepage.html
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.city.takamatsu.kagawa.jp/museum/takamatsu/index.html
     pages:
@@ -1180,12 +1184,12 @@ sources:
 
   - id: kagawa-j-dc2
     name: "日本ドルフィンセンター"
-    operator: "一般財団法人赤澤記念財団様からの助成に関して"
+    operator: "株式会社日本ドルフィンセンター"
     operator_kind: facility_official
     operator_evidence:
-      quote: "一般財団法人赤澤記念財団様からの助成に関して"
-      url: https://www.j-dc2.net/
-      checked_on: 2026-09-12
+      quote: "運営会社 株式会社日本ドルフィンセンター"
+      url: https://www.j-dc2.net/facility/
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.j-dc2.net/
     pages:
@@ -1208,12 +1212,13 @@ sources:
 
   - id: kagawa-souyu
     name: "つばさ山温泉"
-    operator: "創裕"
+    operator: "株式会社創裕"
     operator_kind: facility_official
     operator_evidence:
       quote: "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved."
+      name_in_quote: "SOUYU Co.,Ltd."
       url: https://www.souyu.co.jp/shisetsu/tsubasayama
-      checked_on: 2026-09-17
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.souyu.co.jp/shisetsu/tsubasayama
     pages:
@@ -1310,12 +1315,12 @@ sources:
 
   - id: kagawa-higashikagawa  # 観光協会のページを一次情報にした（ページに「引田城跡（城山）」が出てこない）
     name: "引田城跡（城山）"
-    operator: "公益財団法人日本城郭協会により続日本100名城に選定"
+    operator: "公益社団法人香川県観光協会"
     operator_kind: tourism_association
     operator_evidence:
-      quote: "公益財団法人日本城郭協会により続日本100名城に選定"
-      url: https://www.my-kagawa.jp/point/481
-      checked_on: 2026-09-12
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://higashikagawa.net/sightseeing/hiketajo
     pages:
@@ -1456,12 +1461,12 @@ sources:
       map_query: "香川県丸亀市 天然温泉"
   - id: kagawa-e-mikado
     name: "エピアみかど"
-    operator: "株式会社より路線バスが運行しております"
+    operator: "一般財団法人ことなみ振興公社"
     operator_kind: facility_official
     operator_evidence:
-      quote: "株式会社より路線バスが運行しております"
-      url: https://e-mikado.jp/pages/62/
-      checked_on: 2026-09-12
+      quote: "Copyright© 一般財団法人ことなみ振興公社（道の駅ことなみ・エピアみかど） All Rights Reserved."
+      url: http://e-mikado.jp/
+      checked_on: 2026-09-26
     policy: crawl
     official_url: http://e-mikado.jp/
     pages:
@@ -1590,12 +1595,14 @@ sources:
 
   - id: kagawa-shikoku-aquarium
     name: "四国水族館"
-    operator: "公益社団法人瀬戸内海環境保全協会×四国水族館"
+    operator: "四国水族館"
     operator_kind: facility_official
     operator_evidence:
-      quote: "公益社団法人瀬戸内海環境保全協会×四国水族館"
+      quote: "Copyright © SHIKOKU AQUARIUM. All Rights Reserved."
+      name_in_quote: "SHIKOKU AQUARIUM"
       url: https://shikoku-aquarium.jp/
-      checked_on: 2026-09-12
+      checked_on: 2026-09-26
+    operator_note: "運営する法人名はサイトに無い（トップと「四国水族館の魅力」など 5 枚を確認）。サイトは施設自身のもの（題名「【公式】四国水族館」）"
     policy: crawl
     official_url: http://shikoku-aquarium.jp/
     pages:
@@ -1625,12 +1632,13 @@ sources:
 
   - id: kagawa-pref-156
     name: "香川県立東山魁夷せとうち美術館"
-    operator: "Copyright © 2020 Kagawa Prefectural Government. All rights r"
+    operator: "香川県"
     operator_kind: prefecture
     operator_evidence:
       quote: "Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+      name_in_quote: "Kagawa Prefectural Government"
       url: https://www.pref.kagawa.lg.jp/higasiyamakaii/higashiyama/index.html
-      checked_on: 2026-09-12
+      checked_on: 2026-09-26
     policy: crawl
     official_url: http://www.pref.kagawa.lg.jp/higashiyama/
     pages:
@@ -1655,12 +1663,13 @@ sources:
 
   - id: kagawa-bansyouen
     name: "中津万象園・丸亀美術館"
-    operator: "公益財団法人の認定を受けました"
+    operator: "中津万象園・丸亀美術館"
     operator_kind: facility_official
     operator_evidence:
-      quote: "公益財団法人の認定を受けました"
-      url: http://www.bansyouen.com/koueki/
-      checked_on: 2026-09-12
+      quote: "Copyright © 中津万象園・丸亀美術館 All Rights Reserved."
+      url: http://www.bansyouen.com/
+      checked_on: 2026-09-26
+    operator_note: "運営する法人名はサイトに無い（「公益財団法人について」のページは認定の記述だけで名称が無い）。サイトは施設自身のもの"
     policy: crawl
     official_url: http://www.bansyouen.com/
     pages:
@@ -1733,12 +1742,12 @@ sources:
 
   - id: kagawa-setoohashitower
     name: "瀬戸大橋タワー"
-    operator: "株式会社 沿革"
+    operator: "瀬戸大橋タワー株式会社"
     operator_kind: facility_official
     operator_evidence:
-      quote: "株式会社 沿革"
-      url: https://www.setoohashitower.com/index.html#content4-4
-      checked_on: 2026-09-12
+      quote: "運用会社 瀬戸大橋タワー株式会社"
+      url: https://www.setoohashitower.com/index.html
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.setoohashitower.com/index.html#content4-4
     pages:
@@ -1980,12 +1989,12 @@ sources:
 
   - id: kagawa-kotohiki-kairo
     name: "琴弾廻廊"
-    operator: "株式会社 所在地"
+    operator: "讃岐煉瓦株式会社"
     operator_kind: facility_official
     operator_evidence:
-      quote: "株式会社 所在地"
+      quote: "讃岐煉瓦株式会社 所在地 〒768-0062 香川県観音寺市有明町6-6"
       url: https://kotohiki-kairo.co.jp/about/
-      checked_on: 2026-09-12
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://kotohiki-kairo.co.jp/
     pages:
@@ -2108,12 +2117,13 @@ sources:
 
   - id: kagawa-souyu-135
     name: "たかせ天然温泉"
-    operator: "創裕"
+    operator: "株式会社創裕"
     operator_kind: facility_official
     operator_evidence:
       quote: "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved."
+      name_in_quote: "SOUYU Co.,Ltd."
       url: https://www.souyu.co.jp/shisetsu/takase
-      checked_on: 2026-09-17
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.souyu.co.jp/shisetsu/takase
     pages:
@@ -2222,6 +2232,7 @@ sources:
     operator_kind: facility_official
     operator_evidence:
       quote: "Copyright(c) 2018 Daikou-ji temple. All Rights Reserved."
+      name_in_quote: "Daikou-ji temple"
       url: http://www.komatsuoji.com/
       checked_on: 2026-09-17
     policy: crawl
@@ -2582,12 +2593,12 @@ sources:
 
   - id: kagawa-naoshima
     name: "直島"
-    operator: "株式会社ベネッセホールディングスと公益財団法人"
-    operator_kind: facility_official
+    operator: "NPO法人直島町観光協会"
+    operator_kind: tourism_association
     operator_evidence:
-      quote: "株式会社ベネッセホールディングスと公益財団法人"
-      url: http://naoshima.net/ja/
-      checked_on: 2026-09-13
+      quote: "NPO法人 直島町観光協会 〒761-3110 香川県香川郡直島町"
+      url: http://www.naoshima.net/
+      checked_on: 2026-09-26
     policy: crawl
     official_url: http://www.naoshima.net/
     pages:
@@ -2896,12 +2907,12 @@ sources:
 
   - id: kagawa-sanuki-kanko
     name: "大窪寺"
-    operator: "一般社団法人さぬき市観光協会概要"
+    operator: "一般社団法人さぬき市観光協会"
     operator_kind: tourism_association
     operator_evidence:
-      quote: "一般社団法人さぬき市観光協会概要"
+      quote: "法人名 一般社団法人さぬき市観光協会"
       url: https://sanuki-kanko.jp/information.html
-      checked_on: 2026-09-13
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://sanuki-kanko.jp/sightseeing/temple/post-510.html
     pages:
@@ -3237,12 +3248,13 @@ sources:
 
   - id: kagawa-town-421  # 自治体ドメインの一次情報（見出しを根拠にした）
     name: "三霞洞渓谷"
-    operator: "三霞洞渓谷（みかどけいこく） - Manno まんのう魅力発信ポータルサイト - まんのう町"
+    operator: "まんのう町"
     operator_kind: municipality
     operator_evidence:
-      quote: "三霞洞渓谷（みかどけいこく） - Manno まんのう魅力発信ポータルサイト - まんのう町"
+      quote: "Copyright © Manno Town. All Rights Reserved."
+      name_in_quote: "Manno Town"
       url: https://www.town.manno.lg.jp/site/miryoku-hasshin/5310.html
-      checked_on: 2026-09-13
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.town.manno.lg.jp/site/miryoku-hasshin/5310.html
     pages:
@@ -3503,12 +3515,12 @@ sources:
 
   - id: kagawa-kanonji-kanko-54
     name: "名勝"
-    operator: "Copyright © 観音寺市観光協会. All Rights Reserved. PAGE TOP"
+    operator: "観音寺市観光協会"
     operator_kind: tourism_association
     operator_evidence:
-      quote: "Copyright © 観音寺市観光協会. All Rights Reserved. PAGE TOP"
+      quote: "Copyright © 観音寺市観光協会 . All Rights Reserved."
       url: https://kanonji-kanko.jp/kotohiki-park/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://kanonji-kanko.jp/kotohiki-park/
     pages:
@@ -3626,12 +3638,12 @@ sources:
 
   - id: kagawa-kanonji-kanko-477
     name: "伊吹島"
-    operator: "Copyright © 観音寺市観光協会. All Rights Reserved. PAGE TOP"
+    operator: "観音寺市観光協会"
     operator_kind: tourism_association
     operator_evidence:
-      quote: "Copyright © 観音寺市観光協会. All Rights Reserved. PAGE TOP"
+      quote: "Copyright © 観音寺市観光協会 . All Rights Reserved."
       url: https://kanonji-kanko.jp/ibukijima/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://kanonji-kanko.jp/ibukijima/
     pages:
@@ -3796,12 +3808,12 @@ sources:
 
   - id: kagawa-kanonji-kanko-65
     name: "萩原寺"
-    operator: "Copyright © 観音寺市観光協会. All Rights Reserved. PAGE TOP"
+    operator: "観音寺市観光協会"
     operator_kind: tourism_association
     operator_evidence:
-      quote: "Copyright © 観音寺市観光協会. All Rights Reserved. PAGE TOP"
+      quote: "Copyright © 観音寺市観光協会 . All Rights Reserved."
       url: https://kanonji-kanko.jp/hagiwaraji/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://kanonji-kanko.jp/hagiwaraji/
     pages:
@@ -4087,12 +4099,12 @@ sources:
 
   - id: kagawa-teshima-navi
     name: "豊島"
-    operator: "公益財団法人福武財団による棚田の復元が行われました"
-    operator_kind: facility_official
+    operator: "NPO法人豊島観光協会"
+    operator_kind: tourism_association
     operator_evidence:
-      quote: "公益財団法人福武財団による棚田の復元が行われました"
-      url: https://teshima-navi.jp/about-2/
-      checked_on: 2026-09-13
+      quote: "Copyright © 2018 NPO法人 豊島観光協会 All Rights Reserved"
+      url: https://teshima-navi.jp/
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://teshima-navi.jp/
     pages:
@@ -4211,12 +4223,12 @@ sources:
 
   - id: kagawa-kinbuchi-shinrin
     name: "公渕森林公園"
-    operator: "指定管理者) 香川県木材需要拡大協議会(香川県木材協会内) .2025.10.1﻿ 『令和7年・菊花展』が開催されます("
+    operator: "公益財団法人かがわ水と緑の財団"
     operator_kind: municipality_affiliated
     operator_evidence:
-      quote: "指定管理者) 香川県木材需要拡大協議会(香川県木材協会内) .2025.10.1﻿ 『令和7年・菊花展』が開催されます(終了) 毎"
-      url: https://kinbuchi-shinrin.jp/
-      checked_on: 2026-09-13
+      quote: "現在は、公益財団法人かがわ水と緑の財団が指定管理者として管理を行っています"
+      url: https://kinbuchi-shinrin.jp/%e5%85%ac%e6%b8%95%e6%a3%ae%e6%9e%97%e5%85%ac%e5%9c%92%e3%81%ae%e6%b2%bf%e9%9d%a9/
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://kinbuchi-shinrin.jp/
     pages:
@@ -4284,12 +4296,13 @@ sources:
 
   - id: kagawa-pref-279
     name: "瀬戸内海歴史民俗資料館"
-    operator: "Copyright © 2020 Kagawa Prefectural Government. All rights r"
+    operator: "香川県"
     operator_kind: prefecture
     operator_evidence:
       quote: "Copyright © 2020 Kagawa Prefectural Government. All rights reserved."
+      name_in_quote: "Kagawa Prefectural Government"
       url: https://www.pref.kagawa.lg.jp/kmuseum/setorekishi/index.html
-      checked_on: 2026-09-13
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.pref.kagawa.lg.jp/setorekishi/
     pages:
@@ -4309,12 +4322,13 @@ sources:
 
   - id: kagawa-city-507
     name: "高松市香南歴史民俗郷土館"
-    operator: "公益財団法人高松市文化芸術財団の事務局主幹をお招きし"
+    operator: "高松市"
     operator_kind: municipality
     operator_evidence:
-      quote: "指定管理者である公益財団法人高松市文化芸術財団の事務局主幹をお招きし、活動内容をご説明いただきました"
-      url: https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html
-      checked_on: 2026-09-13
+      quote: "Copyright © Takamatsu City, All rights reserved."
+      name_in_quote: "Takamatsu City"
+      url: https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kounanrekishi/index.html
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kounanrekishi/index.html
     pages:
@@ -4331,20 +4345,20 @@ sources:
         ja: {text: "高松市香南歴史民俗郷土館", source: ja}
       map_query: "香川県高松市 高松市香南歴史民俗郷土館"
 
-  - id: kagawa-michi-no-eki
+  - id: kagawa-michi-no-eki  # 観光協会のページを一次情報にした（全国「道の駅」連絡会の一覧は施設の公式ではない。2026-09-26）
     name: "道の駅「しおのえ」"
-    operator: "一般社団法人に移行し"
-    operator_kind: facility_official
+    operator: "公益社団法人香川県観光協会"
+    operator_kind: tourism_association
     operator_evidence:
-      quote: "一般社団法人に移行し"
-      url: https://www.michi-no-eki.jp/about
-      checked_on: 2026-09-13
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-26
     policy: crawl
-    official_url: https://www.michi-no-eki.jp/stations/views/19635
+    official_url: https://www.my-kagawa.jp/point/297
     pages:
-      - url: https://www.michi-no-eki.jp/stations/views/19635
+      - url: https://www.my-kagawa.jp/point/297
         kind: spot_detail
-    allow_hosts: [www.michi-no-eki.jp]
+    allow_hosts: [www.my-kagawa.jp]
     max_pages: 8
     spot:
       spot_id: michi-no-eki
@@ -4429,12 +4443,13 @@ sources:
 
   - id: kagawa-city-283
     name: "高松市石の民俗資料館"
-    operator: "公益財団法人高松市文化芸術財団の事務局主幹をお招きし"
+    operator: "高松市"
     operator_kind: municipality
     operator_evidence:
-      quote: "指定管理者である公益財団法人高松市文化芸術財団の事務局主幹をお招きし、活動内容をご説明いただきました"
-      url: https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html
-      checked_on: 2026-09-13
+      quote: "Copyright © Takamatsu City, All rights reserved."
+      name_in_quote: "Takamatsu City"
+      url: http://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/ishimin/index.html
+      checked_on: 2026-09-26
     policy: crawl
     official_url: http://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/ishimin/index.html
     pages:
@@ -4625,12 +4640,13 @@ sources:
 
   - id: kagawa-telescope-museum
     name: "天体望遠鏡博物館"
-    operator: "一般社団法人「天体望遠鏡博物館」が発足しました"
+    operator: "一般社団法人天体望遠鏡博物館"
     operator_kind: facility_official
     operator_evidence:
-      quote: "一般社団法人「天体望遠鏡博物館」が発足しました"
+      quote: "２０１０年１０月に一般社団法人「天体望遠鏡博物館」が発足しました。"
+      name_in_quote: "一般社団法人「天体望遠鏡博物館」"
       url: https://www.telescope-museum.com/about/
-      checked_on: 2026-09-13
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.telescope-museum.com/
     pages:
@@ -4770,12 +4786,13 @@ sources:
 
   - id: kagawa-town-338  # 自治体ドメインの一次情報（見出しを根拠にした）
     name: "かりんの丘公園"
-    operator: "かりんの丘公園について - Manno まんのう魅力発信ポータルサイト - まんのう町"
+    operator: "まんのう町"
     operator_kind: municipality
     operator_evidence:
-      quote: "かりんの丘公園について - Manno まんのう魅力発信ポータルサイト - まんのう町"
+      quote: "Copyright © Manno Town. All Rights Reserved."
+      name_in_quote: "Manno Town"
       url: https://www.town.manno.lg.jp/site/miryoku-hasshin/5662.html
-      checked_on: 2026-09-13
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.town.manno.lg.jp/site/miryoku-hasshin/5662.html
     pages:
@@ -5207,12 +5224,13 @@ sources:
 
   - id: kagawa-souyu-353
     name: "香南楽湯"
-    operator: "創裕"
+    operator: "株式会社創裕"
     operator_kind: facility_official
     operator_evidence:
       quote: "Copyright (C) SOUYU Co.,Ltd. All Rights Reserved."
+      name_in_quote: "SOUYU Co.,Ltd."
       url: https://www.souyu.co.jp/shisetsu/kounanrakuyu
-      checked_on: 2026-09-17
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.souyu.co.jp/shisetsu/kounanrakuyu
     pages:
@@ -5308,12 +5326,13 @@ sources:
 
   - id: kagawa-city-505
     name: "高松市歴史資料館"
-    operator: "公益財団法人高松市文化芸術財団の事務局主幹をお招きし"
+    operator: "高松市"
     operator_kind: municipality
     operator_evidence:
-      quote: "指定管理者である公益財団法人高松市文化芸術財団の事務局主幹をお招きし、活動内容をご説明いただきました"
-      url: https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html
-      checked_on: 2026-09-13
+      quote: "Copyright © Takamatsu City, All rights reserved."
+      name_in_quote: "Takamatsu City"
+      url: http://www.city.takamatsu.kagawa.jp/23506.html
+      checked_on: 2026-09-26
     policy: crawl
     official_url: http://www.city.takamatsu.kagawa.jp/23506.html
     pages:
@@ -5332,12 +5351,13 @@ sources:
 
   - id: kagawa-city-506
     name: "高松市讃岐国分寺跡資料館"
-    operator: "公益財団法人高松市文化芸術財団の事務局主幹をお招きし"
+    operator: "高松市"
     operator_kind: municipality
     operator_evidence:
-      quote: "指定管理者である公益財団法人高松市文化芸術財団の事務局主幹をお招きし、活動内容をご説明いただきました"
-      url: https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunsin_platoform.html
-      checked_on: 2026-09-13
+      quote: "Copyright © Takamatsu City, All rights reserved."
+      name_in_quote: "Takamatsu City"
+      url: http://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/sanuki.html
+      checked_on: 2026-09-26
     policy: crawl
     official_url: http://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/sanuki.html
     pages:
@@ -5404,12 +5424,13 @@ sources:
 
   - id: kagawa-town-8
     name: "高山航空公園"
-    operator: "Copyright©2011 AYAGAWA All Rights Reserved."
+    operator: "綾川町"
     operator_kind: municipality
     operator_evidence:
       quote: "Copyright©2011 AYAGAWA All Rights Reserved."
-      url: https://www.town.ayagawa.lg.jp/docs/2011070700033/
-      checked_on: 2026-09-13
+      name_in_quote: "AYAGAWA"
+      url: https://www.town.ayagawa.lg.jp/docs/2011071300140/
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.town.ayagawa.lg.jp/docs/2011071300140/
     pages:
@@ -5502,12 +5523,12 @@ sources:
 
   - id: kagawa-shioiri-onsen-96
     name: "塩入温泉"
-    operator: "有限会社 仲南振興公社が運営しています"
+    operator: "有限会社仲南振興公社"
     operator_kind: facility_official
     operator_evidence:
-      quote: "有限会社 仲南振興公社が運営しています"
-      url: http://www.shioiri-onsen.jp/
-      checked_on: 2026-09-13
+      quote: "社名 有限会社 仲南振興公社"
+      url: http://www.shioiri-onsen.jp/company/
+      checked_on: 2026-09-26
     policy: crawl
     official_url: http://www.shioiri-onsen.jp/
     pages:
@@ -5698,12 +5719,12 @@ sources:
 
   - id: kagawa-p2970  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
     name: "鎌田共済会郷土博物館"
-    operator: "公益財団法人 鎌田共済会郷土博物館"
+    operator: "公益社団法人香川県観光協会"
     operator_kind: tourism_association
     operator_evidence:
-      quote: "公益財団法人 鎌田共済会郷土博物館"
-      url: https://www.my-kagawa.jp/point/2970
-      checked_on: 2026-09-13
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.my-kagawa.jp/point/2970
     pages:
@@ -5941,12 +5962,13 @@ sources:
 
   - id: kagawa-city-2484  # 自治体ドメインの一次情報（見出しを根拠にした）
     name: "古代山城屋嶋城"
-    operator: "屋嶋城詳細へ｜高松市"
+    operator: "高松市"
     operator_kind: municipality
     operator_evidence:
-      quote: "屋嶋城詳細へ｜高松市"
-      url: https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunkazai/chosa/yashimajo/index.html
-      checked_on: 2026-09-13
+      quote: "Copyright © Takamatsu City, All rights reserved."
+      name_in_quote: "Takamatsu City"
+      url: http://www.city.takamatsu.kagawa.jp/4727.html
+      checked_on: 2026-09-26
     policy: crawl
     official_url: http://www.city.takamatsu.kagawa.jp/4727.html
     pages:
@@ -6110,12 +6132,13 @@ sources:
 
   - id: kagawa-town  # 自治体ドメインの一次情報（見出しを根拠にした）
     name: "ほたる見公園"
-    operator: "ほたる見公園について - Manno まんのう魅力発信ポータルサイト - まんのう町"
+    operator: "まんのう町"
     operator_kind: municipality
     operator_evidence:
-      quote: "ほたる見公園について - Manno まんのう魅力発信ポータルサイト - まんのう町"
+      quote: "Copyright © Manno Town. All Rights Reserved."
+      name_in_quote: "Manno Town"
       url: https://www.town.manno.lg.jp/site/miryoku-hasshin/5665.html
-      checked_on: 2026-09-13
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.town.manno.lg.jp/site/miryoku-hasshin/5665.html
     pages:
@@ -6496,12 +6519,13 @@ sources:
 
   - id: kagawa-town-9
     name: "滝宮公園"
-    operator: "Copyright©2011 AYAGAWA All Rights Reserved."
+    operator: "綾川町"
     operator_kind: municipality
     operator_evidence:
       quote: "Copyright©2011 AYAGAWA All Rights Reserved."
-      url: https://www.town.ayagawa.lg.jp/docs/2011070700033/
-      checked_on: 2026-09-13
+      name_in_quote: "AYAGAWA"
+      url: https://www.town.ayagawa.lg.jp/docs/2017121900032/
+      checked_on: 2026-09-26
     policy: crawl
     official_url: https://www.town.ayagawa.lg.jp/docs/2017121900032/
     pages:
@@ -7133,6 +7157,7 @@ sources:
     operator_kind: facility_official
     operator_evidence:
       quote: "Copyright© SHORINJI KEMPO All rights reserved."
+      name_in_quote: "SHORINJI KEMPO"
       url: https://kongozen.jp/
       checked_on: 2026-09-17
     policy: crawl
