@@ -264,6 +264,8 @@ area_links:
 nearby:
   heading: 近くで開いている施設
   lead: "{date}に開いていると確認できた、近くの施設です。"
+  neighbor_heading: となりのエリアで開いている施設
+  neighbor_lead: "{date}に開いていると確認できた、となりのエリアの施設です。"
 open_air:
   lead: この場所には開館時間の定めが公式ページに記載されていません。屋外の場所で、入場料の記載もありません。
   no_notice: 立入禁止・休業の告知も出ていません。

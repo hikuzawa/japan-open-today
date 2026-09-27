@@ -94,13 +94,23 @@
 
     {% if routes %}{{ ui.route_links(routes, locale) }}{% endif %}
 
-    {% if nearby %}
+    {% if nearby.same %}
     {# 不明でも、近くで開いていると分かっている施設があれば行き先を変えられる #}
     <section class="nearby" data-sitemill-volatile>
       <h2 class="section-head">{{ t('nearby.heading') }}</h2>
       <p class="note">{{ t('nearby.lead', date=today|date_short_l) }}</p>
       <ul class="cards">
-        {% for row in nearby %}{{ ui.spot_card(row, locale) }}{% endfor %}
+        {% for row in nearby.same %}{{ ui.spot_card(row, locale) }}{% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+    {% if nearby.neighbor %}
+    {# 同じエリアで足りないときだけ、となりのエリアから足す。島は海を越えて足さない（areas.NEIGHBOR_PAIRS） #}
+    <section class="nearby nearby-neighbor" data-sitemill-volatile>
+      <h2 class="section-head">{{ t('nearby.neighbor_heading') }}</h2>
+      <p class="note">{{ t('nearby.neighbor_lead', date=today|date_short_l) }}</p>
+      <ul class="cards">
+        {% for row in nearby.neighbor %}{{ ui.spot_card(row, locale) }}{% endfor %}
       </ul>
     </section>
     {% endif %}

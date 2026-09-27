@@ -10,6 +10,7 @@ from sitemill.openstatus import DayState, ReasonCode
 from sitemill.settings import Workspace
 
 from japan_open_today import pages as page_builder
+from japan_open_today.areas import ISLANDS, neighbors
 from japan_open_today.data import Dataset
 from japan_open_today.verdict import page_stale, spot_verdict, spot_week
 
@@ -127,10 +128,12 @@ def test_unknown_pages_offer_nearby_open_spots(built: list) -> None:
     assert unknown_pages, "不明の施設が無いので、この検査が意味を持たない"
     for page in unknown_pages:
         nearby = page.context["nearby"]
-        assert nearby, page.meta.path
+        rows = [*nearby["same"], *nearby["neighbor"]]
+        # 開いている近くの施設が無い日は枠を出さず、同じエリアのほかの施設へのリンクで代える
+        assert rows or page.context["area_links"], page.meta.path
         # 並べるのは「開いていると分かっている」施設だけ。不明を並べても不明が増えるだけ
-        assert all(row["verdict"].state is DayState.open for row in nearby), page.meta.path
-        assert all(row["spot"].spot_id != page.context["spot"].spot_id for row in nearby)
+        assert all(row["verdict"].state is DayState.open for row in rows), page.meta.path
+        assert all(row["spot"].spot_id != page.context["spot"].spot_id for row in rows)
 
 
 def test_all_unknown_weeks_hide_the_strip(built: list) -> None:
@@ -146,8 +149,26 @@ def test_all_unknown_weeks_hide_the_strip(built: list) -> None:
 def test_known_spots_do_not_need_nearby_but_may_have_it(built: list) -> None:
     """開いている施設のページでも近隣を出してよいが、自分は含めない。"""
     for page in built:
-        for row in page.context.get("nearby") or []:
+        nearby = page.context.get("nearby") or {"same": [], "neighbor": []}
+        for row in [*nearby["same"], *nearby["neighbor"]]:
             assert row["spot"].spot_id != page.context["spot"].spot_id
+
+
+def test_nearby_never_crosses_the_sea_or_leaves_the_declared_neighbours(built: list) -> None:
+    """豊島のページに小豆島・琴平・さぬきが「近く」として並んでいた（2026-09-27）。
+
+    同じエリアの施設は「近く」、足した施設は宣言した「となり」のエリアからだけ。島は足さない。
+    """
+    for page in built:
+        if not page.meta.path.startswith(("spots/", "en/spots/", "zh-hant/spots/")):
+            continue
+        spot = page.context["spot"]
+        nearby = page.context["nearby"]
+        assert all(row["spot"].area == spot.area for row in nearby["same"]), page.meta.path
+        allowed = set(neighbors(spot.area))
+        assert all(row["spot"].area in allowed for row in nearby["neighbor"]), page.meta.path
+        if spot.area in ISLANDS:
+            assert nearby["neighbor"] == [], page.meta.path
 
 
 def test_open_air_places_say_that_no_hours_are_stated(ws: Workspace, built: list) -> None:

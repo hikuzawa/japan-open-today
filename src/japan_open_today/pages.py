@@ -22,7 +22,7 @@ from sitemill.openstatus import DayState, DayVerdict
 from sitemill.settings import Workspace
 
 from japan_open_today import affiliates
-from japan_open_today.areas import AREAS, area
+from japan_open_today.areas import AREAS, area, neighbors
 from japan_open_today.data import Dataset
 from japan_open_today.schema import Spot
 from japan_open_today.verdict import (
@@ -519,11 +519,16 @@ def _nearby_open(
     verdicts: dict[str, DayVerdict],
     assets: dict[str, list[Asset]],
     limit: int = 3,
-) -> list[dict[str, Any]]:
+) -> dict[str, list[dict[str, Any]]]:
     """その日「開いていると分かっている」近くの施設（ADR 0003 追記）。
 
-    不明のページに次の一手を置くために使う。同じエリアを優先し、足りなければ他のエリアから足す。
-    **判定が open のものだけ**を出す。不明の施設を並べても、不明が増えるだけで役に立たない。
+    不明のページに次の一手を置くために使う。**判定が open のものだけ**を出す。不明の施設を並べても、
+    不明が増えるだけで役に立たない。
+
+    `same` は同じエリア、`neighbor` はとなりのエリア（`areas.NEIGHBOR_PAIRS`）から足したもの。
+    以前は足りない分を県内のどこからでもデータの並び順で足していて、豊島のページに小豆島・琴平・
+    さぬきが「近く」として並んでいた（2026-09-27）。島は海を越えて足さない。足りなければ件数を減らし、
+    0 件なら枠を出さない（同じエリアのほかの施設へのリンクは別にある）。
     """
 
     def pick(spots: list[Spot]) -> list[Spot]:
@@ -533,11 +538,17 @@ def _nearby_open(
             if s.spot_id != spot.spot_id and verdicts[s.spot_id].state is DayState.open
         ]
 
-    chosen = pick(ds.spots_in(spot.area))
-    if len(chosen) < limit:
-        others = [s for s in pick(ds.spots) if s.area != spot.area]
-        chosen = [*chosen, *others]
-    return [_spot_row(ws, s, locale, verdicts[s.spot_id], assets) for s in chosen[:limit]]
+    same = pick(ds.spots_in(spot.area))[:limit]
+    extra: list[Spot] = []
+    for slug in neighbors(spot.area):
+        if len(same) + len(extra) >= limit:
+            break
+        extra += pick(ds.spots_in(slug))[: limit - len(same) - len(extra)]
+
+    def rows(spots: list[Spot]) -> list[dict[str, Any]]:
+        return [_spot_row(ws, s, locale, verdicts[s.spot_id], assets) for s in spots]
+
+    return {"same": rows(same), "neighbor": rows(extra)}
 
 
 def _area_links(

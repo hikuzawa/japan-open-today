@@ -253,6 +253,8 @@ area_links:
 nearby:
   heading: 附近有開的設施
   lead: "已確認在 {date} 有開的附近設施。"
+  neighbor_heading: 鄰近地區有開的設施
+  neighbor_lead: "已確認在 {date} 有開的鄰近地區設施。"
 open_air:
   lead: 官方網頁沒有記載這裡的開放時間。這是戶外的場所，也沒有記載入場費。
   no_notice: 目前也沒有禁止進入或休息的公告。

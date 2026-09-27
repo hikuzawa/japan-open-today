@@ -268,6 +268,8 @@ area_links:
 nearby:
   heading: Open nearby
   lead: "Places near here confirmed open on {date}."
+  neighbor_heading: Open in neighbouring areas
+  neighbor_lead: "Places in neighbouring areas confirmed open on {date}."
 open_air:
   lead: >-
     The official page states no opening hours for this place. It is outdoors, and no admission

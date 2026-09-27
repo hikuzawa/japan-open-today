@@ -55,6 +55,31 @@ AREAS: tuple[Area, ...] = (
 )
 
 BY_SLUG = {a.slug: a for a in AREAS}
+
+# 島のエリア。「近くで開いている施設」を海を越えて足さない（2026-09-27）。
+# 豊島のページに小豆島・琴平・さぬきの施設が「近く」として並び、海を挟んだ施設を近いと誤解させていた
+ISLANDS = frozenset({"naoshima", "teshima", "megijima", "shodoshima"})
+
+# 本土のエリアどうしの「となり」。同じエリアで開いている施設が足りないときだけ、ここから足す。
+# **根拠を言える組だけ**を、理由を 1 行添えて入れる（推測で組まない）。島は入れない。
+# 表は運営者の確認を経て確定する（案は ADR 0003 の 2026-09-27 の追記）。確定するまでは空で、
+# 本土も同じエリアの施設だけを出す
+NEIGHBOR_PAIRS: tuple[tuple[str, str, str], ...] = ()
+
+
+def neighbors(slug: str) -> tuple[str, ...]:
+    """となりのエリア（表に書いた順）。島は常に空。"""
+    if slug in ISLANDS:
+        return ()
+    out: list[str] = []
+    for a, b, _reason in NEIGHBOR_PAIRS:
+        if slug == a:
+            out.append(b)
+        elif slug == b:
+            out.append(a)
+    return tuple(out)
+
+
 # 島は市町の中にあるので、市町より先に住所の地名で判定する
 ISLAND_HINTS: tuple[tuple[str, str], ...] = (
     ("豊島", "teshima"),
