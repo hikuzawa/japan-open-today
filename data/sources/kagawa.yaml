@@ -2541,20 +2541,20 @@ sources:
         ja: {text: "竹居観音岬・竹居観音寺（四国最北端）", source: ja}
       map_query: "香川県高松市 竹居観音岬・竹居観音寺（四国最北端）"
 
-  - id: kagawa-takamatsu
+  - id: kagawa-takamatsu  # 観光協会のページを一次情報にした（公式サイトは CI（海外）から robots.txt が時間切れで読めない。2026-09-27）
     name: "サンポート高松"
-    operator: "高松観光コンベンション・ビューロー"
+    operator: "公益社団法人香川県観光協会"
     operator_kind: tourism_association
     operator_evidence:
-      quote: "サンポート高松イベント情報 – 高松観光コンベンション・ビューロー"
-      url: https://takamatsu.or.jp/event/
-      checked_on: 2026-09-17
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-27
     policy: crawl
     official_url: https://takamatsu.or.jp/event/
     pages:
-      - url: https://takamatsu.or.jp/event/
+      - url: https://www.my-kagawa.jp/point/267
         kind: spot_detail
-    allow_hosts: [takamatsu.or.jp]
+    allow_hosts: [www.my-kagawa.jp]
     max_pages: 8
     spot:
       spot_id: takamatsu
@@ -4097,20 +4097,20 @@ sources:
         ja: {text: "高見山展望台", source: ja}
       map_query: "香川県小豆郡土庄町 高見山展望台"
 
-  - id: kagawa-teshima-navi
+  - id: kagawa-teshima-navi  # 観光協会のページを一次情報にした（公式サイトは CI（海外）から robots.txt が時間切れで読めない。2026-09-27）
     name: "豊島"
-    operator: "NPO法人豊島観光協会"
+    operator: "公益社団法人香川県観光協会"
     operator_kind: tourism_association
     operator_evidence:
-      quote: "Copyright © 2018 NPO法人 豊島観光協会 All Rights Reserved"
-      url: https://teshima-navi.jp/
-      checked_on: 2026-09-26
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-27
     policy: crawl
     official_url: https://teshima-navi.jp/
     pages:
-      - url: https://teshima-navi.jp/
+      - url: https://www.my-kagawa.jp/point/470
         kind: spot_detail
-    allow_hosts: [teshima-navi.jp]
+    allow_hosts: [www.my-kagawa.jp]
     max_pages: 8
     spot:
       spot_id: teshima-navi

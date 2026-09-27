@@ -11,7 +11,7 @@ from sitemill.settings import Workspace
 
 from japan_open_today import pages as page_builder
 from japan_open_today.data import Dataset
-from japan_open_today.verdict import spot_verdict, spot_week
+from japan_open_today.verdict import page_stale, spot_verdict, spot_week
 
 ROOT = Path(__file__).resolve().parents[1]
 NOW = datetime(2026, 9, 12, 21, 10, tzinfo=UTC)  # JST では 9/13 06:10
@@ -150,14 +150,22 @@ def test_known_spots_do_not_need_nearby_but_may_have_it(built: list) -> None:
             assert row["spot"].spot_id != page.context["spot"].spot_id
 
 
-def test_open_air_places_say_that_no_hours_are_stated(built: list) -> None:
-    """砂浜や境内を「不明」と出すのは事実に合わない。定めが無いことをそのまま出す（ADR 0011）。"""
+def test_open_air_places_say_that_no_hours_are_stated(ws: Workspace, built: list) -> None:
+    """砂浜や境内を「不明」と出すのは事実に合わない。定めが無いことをそのまま出す（ADR 0011）。
+
+    公式ページを読めていない場所は除く（「取得が途切れている」の不明に落ちる。
+    ADR 0011 追記 2026-09-27）。
+    """
     pages = [p for p in built if p.meta.path.startswith("spots/")]
     open_air = [p for p in pages if p.context["spot"].spot_type == "open_air"]
     assert open_air, "屋外の場所が無いので、この検査が意味を持たない"
+    stale_after = ws.site.crawl.stale_after_days
     for page in open_air:
         spot = page.context["spot"]
         if spot.hours or spot.closures or spot.notices:
+            continue
+        if page_stale(spot, now=NOW, stale_after_days=stale_after):
+            assert page.context["no_hours_stated"] is False, page.meta.path
             continue
         assert page.context["no_hours_stated"] is True, page.meta.path
     # ゲートのある施設ではこの表示をしない（時間が取れていないだけなので「不明」が正しい）
