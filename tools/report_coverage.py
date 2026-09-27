@@ -46,7 +46,7 @@ def _has(spot: Any, field: str) -> bool:
     return bool(value)
 
 
-def _settled(spot: Any, verdict: Any) -> bool:
+def _settled(spot: Any, verdict: Any, stale_after_days: int | None = None) -> bool:
     """屋外の場所について、利用者が行動を決められる状態か（ADR 0011）。
 
     open / closed と出せているか、または「時間の定めが記載されていない」と明示できていれば
@@ -54,7 +54,7 @@ def _settled(spot: Any, verdict: Any) -> bool:
     """
     if verdict.state is not DayState.unknown:
         return True
-    return no_hours_stated(spot)
+    return no_hours_stated(spot, stale_after_days=stale_after_days)
 
 
 def main() -> int:
@@ -94,7 +94,7 @@ def main() -> int:
                 "spot_id": spot.spot_id,
                 "name": spot.name("ja"),
                 "spot_type": spot.spot_type,
-                "settled": _settled(spot, verdict),
+                "settled": _settled(spot, verdict, stale_after),
                 "fields": present,
                 "missing": [f for f in SPOT_FIELDS if f not in present],
                 "today": verdict.state.value,
@@ -122,7 +122,7 @@ def main() -> int:
     open_air = [s for s in ds.spots if s.spot_type == "open_air"]
     untyped = [s for s in ds.spots if s.spot_type == "unknown"]
     gated_hours = [s for s in gated if s.hours]
-    settled = [s for s in open_air if _settled(s, verdicts_by_id[s.spot_id])]
+    settled = [s for s in open_air if _settled(s, verdicts_by_id[s.spot_id], stale_after)]
 
     print("== 型別の指標（ADR 0011）==")
     if gated:

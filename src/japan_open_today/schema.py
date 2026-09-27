@@ -118,6 +118,9 @@ class Spot(BaseModel):
     # 鮮度。判定を「不明」に落とすかの判断に使う（ADR 0004）
     hours_fetched_at: str | None = None
     notices_fetched_at: str | None = None
+    # 情報源のページ（巡回先）を最後に読めた日時。事実が 1 つも取れない屋外の場所でも、
+    # 「記載が無い」「告知が出ていない」と言えるのは読めているあいだだけ（2026-09-27）
+    page_fetched_at: str | None = None
     provenance: dict[str, Any] | None = None
     status: str = "active"
     first_seen_at: str | None = None

@@ -6,6 +6,7 @@
 
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -139,6 +140,28 @@ def _fill_names(payload: dict[str, Any], glossary: dict[str, dict[str, Localized
     payload["names"] = names
 
 
+def _page_fetched_at(ws: Workspace, entries: list[dict[str, Any]]) -> dict[str, str]:
+    """情報源ごとの「巡回先のページを最後に読めた日時」（巡回の状態から。いまの巡回先だけ）。
+
+    巡回の状態の `fetched_at` は、200 でも 304（変わっていない）でも進み、失敗では進まない。
+    巡回間隔の上限は 7 日なので、正常に巡回していれば 14 日（`stale_after_days`）は超えない。
+    """
+    try:
+        urls = json.loads((ws.state_dir / "crawl.json").read_text(encoding="utf-8")).get("urls")
+    except (OSError, ValueError):
+        return {}
+    out: dict[str, str] = {}
+    for entry in entries:
+        stamps = [
+            str((urls or {}).get(page["url"], {}).get("fetched_at") or "")
+            for page in entry.get("pages") or []
+        ]
+        latest = max((s for s in stamps if s), default="")
+        if latest:
+            out[entry["id"]] = latest
+    return out
+
+
 def records_path(ws: Workspace, source_id: str) -> Path:
     return ws.records_dir / f"{source_id}.jsonl"
 
@@ -173,6 +196,7 @@ class Dataset:
         spots: list[Spot] = []
         operators: list[TransportOperator] = []
         routes: list[Route] = []
+        read_at = _page_fetched_at(ws, entries)
         # 共有ページ（covers を持つ情報源）の告知。施設を持つ情報源とは別のファイルに入る
         shared_notices: dict[str, list[dict[str, Any]]] = {}
         for entry in entries:
@@ -190,6 +214,7 @@ class Dataset:
             if spot is not None:
                 record = stored.get(spot.spot_id)
                 payload = {**spot.model_dump(), **record} if record else spot.model_dump()
+                payload["page_fetched_at"] = read_at.get(entry["id"])
                 _fill_names(payload, glossary)
                 extra = shared_notices.get(spot.spot_id) or []
                 if extra:

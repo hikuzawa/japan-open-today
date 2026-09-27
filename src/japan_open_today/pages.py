@@ -27,6 +27,7 @@ from japan_open_today.data import Dataset
 from japan_open_today.schema import Spot
 from japan_open_today.verdict import (
     hours_unrepresentable,
+    page_stale,
     route_verdict,
     spot_verdict,
     spot_week,
@@ -135,7 +136,13 @@ def _spot_node(
     return node
 
 
-def _summary(spots: list[Spot], verdicts: dict[str, DayVerdict]) -> dict[str, int]:
+def _summary(
+    spots: list[Spot],
+    verdicts: dict[str, DayVerdict],
+    *,
+    now: datetime | None = None,
+    stale_after_days: int | None = None,
+) -> dict[str, int]:
     """その日の内訳。「不明」を 2 つに割る。
 
     屋外で時間の定めが無い場所（砂浜・境内）と、公式ページに記載が無い施設は、利用者に
@@ -145,7 +152,9 @@ def _summary(spots: list[Spot], verdicts: dict[str, DayVerdict]) -> dict[str, in
     counts = {"open": 0, "no_hours": 0, "unknown": 0, "closed": 0}
     for spot in spots:
         verdict = verdicts[spot.spot_id]
-        if verdict.state is DayState.unknown and no_hours_stated(spot):
+        if verdict.state is DayState.unknown and no_hours_stated(
+            spot, now=now, stale_after_days=stale_after_days
+        ):
             counts["no_hours"] += 1
         else:
             counts[verdict.state.value] += 1
@@ -228,7 +237,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
         r.route_id: route_verdict(r, today, holidays=holidays, stale_after_days=stale_after)
         for r in ds.routes
     }
-    counts = _summary(ds.spots, verdicts)
+    counts = _summary(ds.spots, verdicts, now=now, stale_after_days=stale_after)
     all_sources = [SourceLink(label=s.name("ja"), url=s.official_url) for s in ds.spots[:6]]
     pages: list[Page] = []
 
@@ -293,7 +302,7 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         "rows": [
                             _spot_row(ws, s, locale, verdicts[s.spot_id], assets) for s in spots
                         ],
-                        "counts": _summary(spots, verdicts),
+                        "counts": _summary(spots, verdicts, now=now, stale_after_days=stale_after),
                         "routes": _routes_for(ds, a.slug, route_states),
                         "offers": affiliates.offers_for("area-stay"),
                         "ad_links": [
@@ -349,7 +358,9 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
                         "hours": _hours_display(spot, words, locale),
                         "notices": _current_notices(spot, today),
                         "closures_label": _closures_label(spot),
-                        "no_hours_stated": no_hours_stated(spot),
+                        "no_hours_stated": no_hours_stated(
+                            spot, now=now, stale_after_days=stale_after
+                        ),
                         "offers": affiliates.offers_for("spot-tickets"),
                         # 施設ごとに飛び先を選ぶ（Klook。klook.landing_for）
                         "ad_links": [
@@ -737,7 +748,9 @@ def search_index(ws: Workspace, ds: Dataset, *, now: datetime | None = None) -> 
     return out
 
 
-def no_hours_stated(spot: Spot) -> bool:
+def no_hours_stated(
+    spot: Spot, *, now: datetime | None = None, stale_after_days: int | None = None
+) -> bool:
     """「時間の定めが無い屋外の場所」か（ADR 0011）。
 
     砂浜や境内は閉まる時間が無く、公式ページも時間を書かない。これを「不明」と出すのは
@@ -746,9 +759,17 @@ def no_hours_stated(spot: Spot) -> bool:
 
     条件は「屋外と宣言されている」「時間も定休日規則も取れていない」「告知も出ていない」。
     告知（臨時の立入禁止など）があるときは、その告知を出すほうが先なのでこの表示はしない。
+
+    「記載が無い」「告知が出ていない」と言えるのは、公式ページを読めているあいだだけ。
+    `stale_after_days` 日以上読めていなければ、この表示をやめて「取得が途切れている」の不明に落とす
+    （判定は `spot_verdict` が `stale_source` を付ける。2026-09-27）。
     """
     return (
-        spot.spot_type == "open_air" and not spot.hours and not spot.closures and not spot.notices
+        spot.spot_type == "open_air"
+        and not spot.hours
+        and not spot.closures
+        and not spot.notices
+        and not page_stale(spot, now=now, stale_after_days=stale_after_days)
     )
 
 

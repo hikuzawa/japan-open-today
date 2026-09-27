@@ -12,8 +12,10 @@ from datetime import date, datetime, timedelta
 
 from sitemill.clock import to_jst
 from sitemill.jpcal import HolidayCalendar
+from sitemill.models.schedule import Evidence
 from sitemill.openstatus import DayVerdict, resolve_day
 from sitemill.openstatus.models import DayState, Reason, ReasonCode
+from sitemill.openstatus.resolve import is_stale
 
 from japan_open_today.schema import Route, Spot
 
@@ -58,6 +60,18 @@ def _freshness(spot: Spot) -> datetime | None:
     return min(stamps) if stamps else None
 
 
+def page_stale(
+    spot: Spot, *, now: datetime | None = None, stale_after_days: int | None = None
+) -> bool:
+    """情報源のページを `stale_after_days` 日以上読めていないか。読めた記録が無ければ True。
+
+    時間も告知も取れていない屋外の場所は、`hours_fetched_at` も `notices_fetched_at` も持たない。
+    そのままでは取得が途切れても「記載が無い」「告知が出ていない」と言い続ける
+    （サンポート高松・豊島で、CI から robots.txt が取れず 9/12 から読めていなかった。2026-09-27）。
+    """
+    return is_stale(_stamp(spot.page_fetched_at), now=now, days=stale_after_days)
+
+
 def spot_verdict(
     spot: Spot,
     day: date,
@@ -67,13 +81,14 @@ def spot_verdict(
     stale_after_days: int | None = None,
 ) -> DayVerdict:
     if not spot.has_schedule:
-        return DayVerdict(
-            day=day,
-            state=DayState.unknown,
-            # detail は空にする。文言はロケールのカタログ（reason.no_data）が持っていて、
-            # 同じ文を detail にも入れると画面に二重に出る
-            reasons=[Reason(code=ReasonCode.no_data)],
-        )
+        # detail は空にする。文言はロケールのカタログ（reason.no_data）が持っていて、
+        # 同じ文を detail にも入れると画面に二重に出る
+        reasons = [Reason(code=ReasonCode.no_data)]
+        if page_stale(spot, now=now, stale_after_days=stale_after_days):
+            # 最後に読めた日時は evidence に入れる（画面では「取得: …」とロケールごとに出る）
+            read = Evidence(source_url=spot.official_url, fetched_at=_stamp(spot.page_fetched_at))
+            reasons.insert(0, Reason(code=ReasonCode.stale_source, evidence=read))
+        return DayVerdict(day=day, state=DayState.unknown, reasons=reasons)
     if hours_unrepresentable(spot):
         # 表せる形に丸めた規則で判定すると、開いていない日を「開館」と断定する。不明にする
         return DayVerdict(
