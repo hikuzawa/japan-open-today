@@ -272,8 +272,19 @@ def _norm_name(name: str) -> str:
     return re.sub(r"[（(][^）)]*[）)]", "", name).strip()
 
 
+# 住所も名前も重なるが、別の施設として載せているもの。観光協会が別の項目として、別の時間・料金で
+# 載せている境内の施設など。理由を書いて 1 組ずつ足す
+DISTINCT_PLACES = {
+    # 書院は金刀比羅宮の境内にある別施設で、入館料と時間（9:00〜17:00、入館 16:30 まで）が本宮と別
+    # （観光協会の point/76）。本宮の住所の前置き「住所:」が 9/25 の読み直しで外れ、
+    # 形がそろって表に出た
+    frozenset({"konpira", "konpira-76"}),
+}
+
+
 def _addr_key(address: str) -> str:
-    address = re.sub(r"〒?\d{3}-?\d{4}", "", address or "")
+    address = re.sub(r"^\s*住所\s*[:：]?", "", address or "")  # 抽出の前置きで形が変わらないように
+    address = re.sub(r"〒?\d{3}-?\d{4}", "", address)
     address = address.translate(str.maketrans("０１２３４５６７８９", "0123456789"))
     return re.sub(r"[丁目番地号の\-ー－\s]", "", address)[:24]
 
@@ -299,6 +310,8 @@ def test_the_same_place_is_not_listed_twice(ws: Workspace) -> None:
         name = _norm_name(spot.name("ja"))
         if found is not None:
             other_id, other_name = found
+            if frozenset({spot.spot_id, other_id}) in DISTINCT_PLACES:
+                continue
             assert not (name in other_name or other_name in name), (spot.spot_id, other_id)
         else:
             by_addr[addr] = (spot.spot_id, name)

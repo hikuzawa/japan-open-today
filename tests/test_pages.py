@@ -250,8 +250,13 @@ def test_regular_hours_are_shown_as_facts_with_the_original_wording(built: list)
 
 
 def test_hours_that_cannot_be_broken_down_show_only_the_original(built: list) -> None:
-    """構造化データからは何の時間か読み取れないものは、行にせず原文だけを出す。"""
-    for spot in ("kotohira/konpira", "takamatsu/ritsurin"):
+    """構造化データからは何の時間か読み取れないものは、行にせず原文だけを出す。
+
+    金刀比羅宮は外した。観光協会の原文（参拝時間と表書院・宝物館の時間が 1 文に混ざる）から、
+    9/25 に公式サイトの「大門（境内の入口）《開》午前6時《閉》午後6時」を読むようになり、
+    1 行に分解できる。
+    """
+    for spot in ("takamatsu/ritsurin",):
         pages = [p for p in built if p.meta.path.endswith(f"spots/{spot}/index.html")]
         assert pages, spot
         for page in pages:
