@@ -25,3 +25,6 @@ logs/
 # 手元には残り、無ければ tools.collect_spots / tools.seed_spots で作り直せる
 data/runs/kagawa-inventory.json
 data/runs/spot-seeds*.json
+# `sitemill runs report` が既定で書く週次のまとめ（weekly-<日付>.json）。正本は週次の Issue の本文で、
+# CI はこれをコミットしない。手元で試すと残るので無視する（2026-09-27）
+data/runs/weekly-*.json
