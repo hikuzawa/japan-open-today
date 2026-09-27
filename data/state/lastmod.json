@@ -1,5 +1,5 @@
 {
- "layout": "sha256:f3b85d74d34596995a6fa26103cc8709fafcdea92806a91e03b488f6f6663887",
+ "layout": "sha256:8485b411cd90883c9a483b39db86041ae6c0501ff6263f5123555f0d259e2929",
  "pages": {
   "about/index.html": {
    "fingerprint": "sha256:6192e81c7300308bc814008df000efe8d4899669e8c0c57cb6ed48001dbaec83",
@@ -50,7 +50,7 @@
    "lastmod": "2026-09-18"
   },
   "data/index.html": {
-   "fingerprint": "sha256:4fd08039ee56ae577d143957984e54757ee96fed0b479df1ff920e1e17c43a6a",
+   "fingerprint": "sha256:e66b2436820d270bd06abf16fda91d86e6befa43521c58c56fb5d79c54c91705",
    "lastmod": "2026-09-27"
   },
   "en/about/index.html": {
@@ -102,7 +102,7 @@
    "lastmod": "2026-09-18"
   },
   "en/data/index.html": {
-   "fingerprint": "sha256:4396aff21017a52de93b372eeaf005178d072a424d9a6ad4df31354c9eeff137",
+   "fingerprint": "sha256:49f56662cf072d8677325c7af0cd656112d4e696a33e9f6d9b1470f8d84bbb78",
    "lastmod": "2026-09-27"
   },
   "en/index.html": {
@@ -130,7 +130,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/higashikagawa/p30/index.html": {
-   "fingerprint": "sha256:3ed7f0b1def3f8df79babe8882131eea1c49227cd07c3d45cc95d4fa24aa0aa6",
+   "fingerprint": "sha256:5c007ca6e2e6f64d64c104f7ec45fb36262eabeee7049fb90e6c01d52e3c9706",
    "lastmod": "2026-09-18"
   },
   "en/spots/higashikagawa/p35/index.html": {
@@ -166,7 +166,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/higashikagawa/tebukurokumiai/index.html": {
-   "fingerprint": "sha256:7569946433cbe01697986f03ace866182828df8fb145918a95179511e82c5729",
+   "fingerprint": "sha256:44321153630d8eb4ddd592b5890a5a7117ec16e3e27ed5d18bfb05205422f3c9",
    "lastmod": "2026-09-18"
   },
   "en/spots/higashikagawa/yodaji/index.html": {
@@ -174,7 +174,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/kotohira/e-mikado-105/index.html": {
-   "fingerprint": "sha256:5ef2d8fd2d5623dc909b8cca60b738313ced45a3a4c71dd42cd060945981f847",
+   "fingerprint": "sha256:c3dd253b0c8c75fec1865b5eda24c3f8fc0f7684a352dbea427e9a00bf617e91",
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/e-mikado-90/index.html": {
@@ -186,7 +186,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/kotohira/konpira-76/index.html": {
-   "fingerprint": "sha256:e92d2073e07e688f49ff18f2ee43fcc1c4fafe695744cb74532ace188d15722b",
+   "fingerprint": "sha256:dd1cedf4bd1e663c066bf026e4fa0fcd69ec71d0f6486726e8fb15e7fb9215d9",
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/konpira/index.html": {
@@ -198,7 +198,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/kotohira/kotohira/index.html": {
-   "fingerprint": "sha256:f9da02f705656f68dd573471d4b31864e50eadde081d68500948b308e3204529",
+   "fingerprint": "sha256:8d2a837c26cb6950e2e4452eb126f6c7fa0b78b71cd79b29d2719a597d262aaa",
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/kotohirakankou-2576/index.html": {
@@ -206,7 +206,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/kotohirakankou-77/index.html": {
-   "fingerprint": "sha256:86d4573009071144136f079bc80b9a5b0b5c27d6dc1c2a4e8a5b5770d52884d3",
+   "fingerprint": "sha256:1a486ccfe49c79695d16754f8bfc9a72066ba5f959de88b939d2193ce3870745",
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/kotohirakankou-79/index.html": {
@@ -226,7 +226,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/mannou-mori/index.html": {
-   "fingerprint": "sha256:903a36a0271fe949650f8be471ef3f45a5b85f1f160c09cf7fb96354e666fed3",
+   "fingerprint": "sha256:eef2e383b887bf843e1003ec0f36ab17f04731cf7d0b3c7cf0c45f79e0e2bb56",
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/nishino-kinryo/index.html": {
@@ -254,15 +254,15 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/sanukimannopark/index.html": {
-   "fingerprint": "sha256:ca55fd722ef7ffda5795c2736a7ea7db2b88deaf0747ff4c6854530db099d66e",
+   "fingerprint": "sha256:22d947958a23a91d3e1c284f4a90d6a35bca60ee01f6367e4ca838420f82fde1",
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/shioiri-onsen-2360/index.html": {
-   "fingerprint": "sha256:63088ae28d6fd4bcaab2a0276fd3e48d3f96bed16584150fa3e572c902ddee3b",
+   "fingerprint": "sha256:8be9844736ea43925cdff5a61c0c2bd6ac446a95fa619262c370142af6936fe9",
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/shioiri-onsen-96/index.html": {
-   "fingerprint": "sha256:614b0c7f8ebe27ed0fab7f21388931de87a1155b831b01235d7b6d9d8cd5e00b",
+   "fingerprint": "sha256:6ad9769594d7260fd09da932a23c55566145a511bf85958ebe3b83ff390556fe",
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/shioiri-onsen/index.html": {
@@ -278,7 +278,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/town-338/index.html": {
-   "fingerprint": "sha256:356ff6331168b7d79d4061926435905b06e99535ee5a61162f834ec63b961c29",
+   "fingerprint": "sha256:99a636bb616d3f7844b9391d357c5c17e2582af7f762521c8dd26de98d1d5726",
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/town-421/index.html": {
@@ -286,7 +286,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/kotohira/town-490/index.html": {
-   "fingerprint": "sha256:19c7b4f12346c4ccd0fdc43adc7b7eca5c0c9355bb1d2c235af8a08b551e49c6",
+   "fingerprint": "sha256:b2be2384991ad6b4dcb0c0ebae79c1023f91812305b56946ecbdd0b26d9d244d",
    "lastmod": "2026-09-25"
   },
   "en/spots/kotohira/town/index.html": {
@@ -302,11 +302,11 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/marugame/city-334/index.html": {
-   "fingerprint": "sha256:dc75a90f72ccc5a3163b29ec07df6f61969fbf1f27f738bd87f735d01c3389c5",
+   "fingerprint": "sha256:bed99bd28ca362579c6b968a277da5bcdff40d4def990813f527785200379c62",
    "lastmod": "2026-09-18"
   },
   "en/spots/marugame/city-335/index.html": {
-   "fingerprint": "sha256:7d4c9d2dd406179e61db6df29331d5a4da320fa0022ea9b8473bdef25e379144",
+   "fingerprint": "sha256:dc75d18aa54f3b324f9a2860d3f35519a9b2e43966f7c1a35504b531b2fbe2b3",
    "lastmod": "2026-09-18"
   },
   "en/spots/marugame/city-339/index.html": {
@@ -318,7 +318,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/marugame/kagawa-konzouji/index.html": {
-   "fingerprint": "sha256:8eed835c80a3aec31ec03d523f89ef9fb724b34079c4bef7373e711a0910142f",
+   "fingerprint": "sha256:1d3c419e9dfe0fa7965342047cd2344099782ec3f2b5685aa35b9e6d6a3c0ed8",
    "lastmod": "2026-09-18"
   },
   "en/spots/marugame/koyamaji/index.html": {
@@ -342,7 +342,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/marugame/marugame-happylife-112/index.html": {
-   "fingerprint": "sha256:49e169acfe1c44b1d00ad81057e0ad1ce3189424442bde66b50531866cc02a36",
+   "fingerprint": "sha256:d5f3474d91bc158bd9242c9bcce9aa0e68136a94608c058ebc5458245148c1d5",
    "lastmod": "2026-09-18"
   },
   "en/spots/marugame/marugame-happylife-115/index.html": {
@@ -350,7 +350,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/marugame/marugame-happylife-379/index.html": {
-   "fingerprint": "sha256:e0a160d2e59ba7a1e1cffd6a7dd2d75a325224e4d5569abbc6a6485a6478ff7a",
+   "fingerprint": "sha256:884cbb7e1ee8a79ef8aa632fec19df66653e3ca715646106078fa166ac1ddf20",
    "lastmod": "2026-09-18"
   },
   "en/spots/marugame/marugame-happylife-458/index.html": {
@@ -370,7 +370,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/marugame/marugame-happylife/index.html": {
-   "fingerprint": "sha256:274a2f94485ce4c77d6c6f2e6fd4692e5bc0a0632e4bcbf32ab0a18b6959411a",
+   "fingerprint": "sha256:900abb7e13bbcddf5a16755f3ae345e59b1ad8584826b1634063f4850ccee147",
    "lastmod": "2026-09-18"
   },
   "en/spots/marugame/mimoca/index.html": {
@@ -378,7 +378,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/marugame/mod/index.html": {
-   "fingerprint": "sha256:d1a0a1352698fc3a867c63df253596a7526faeacde27b6470799087f9133abeb",
+   "fingerprint": "sha256:580186d17d2ba7042cf2e1947f9fde9367f574709657e0f1753d0d1e7066ca8b",
    "lastmod": "2026-09-18"
   },
   "en/spots/marugame/newreomaworld/index.html": {
@@ -438,7 +438,7 @@
    "lastmod": "2026-09-19"
   },
   "en/spots/mitoyo/city-148/index.html": {
-   "fingerprint": "sha256:bb5f7478d630ab9fb486a810177e8be5172a8b777590b305499bd4bbe47fc72f",
+   "fingerprint": "sha256:07806f931e0c69a29d1cd357a4e41d6c77373b7feeebfa00874c85d4518c4ae7",
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/city-2938/index.html": {
@@ -458,7 +458,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/city-61/index.html": {
-   "fingerprint": "sha256:2bbe25305ac37ef75ff6afd7224a1a02227d62ec6dc98eb65e0cc77cea44951e",
+   "fingerprint": "sha256:c529888ed5bc163c4771931a07870d517c964f30fdba841b682fa64b39ff4133",
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/city-64/index.html": {
@@ -506,11 +506,11 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/mitoyo/michinoeki-kotohiki/index.html": {
-   "fingerprint": "sha256:892bad49f9615d14c4777a640cd4d2c7a7bc3d25e0d6ac4c3005d0a56e91a90b",
+   "fingerprint": "sha256:f6cf88841b1f231b8ff194ae9ad04ded027b39c108d1235113f9c8572464bee2",
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/michitoyo-oh/index.html": {
-   "fingerprint": "sha256:6e035ad423e48ca441a00c3e4c39675224bc09a83b033ee3a2c5a347d4d8e56b",
+   "fingerprint": "sha256:6b06e546e4cac117759af7ac4a621c33badf6a580c62b78c145003a0326d241c",
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/mitoyo-kanko-127/index.html": {
@@ -522,7 +522,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/mitoyo/mitoyo-kanko-129/index.html": {
-   "fingerprint": "sha256:a9e3ddecff1f7f0f175c1c01fe31785082035e16cab585c8aab093c09c2f8a92",
+   "fingerprint": "sha256:d56d7b1f9c55097016b62e02eddfc685353946cd5a50e4790e20f213f907d3b5",
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/mitoyo-kanko-131/index.html": {
@@ -542,11 +542,11 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/mitoyo-kanko/index.html": {
-   "fingerprint": "sha256:a443ed97ef4885b0ce09c0288eedbe6489b71e8cc2c684617ebd7d2572ec5a7b",
+   "fingerprint": "sha256:ca990c5e48e80c3dc4705fdcb5cf23f2fc214b85b9b1d0ce22476d5cd870dfa4",
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/mitoyocs/index.html": {
-   "fingerprint": "sha256:f03abce2183fdd6a9569c6b082c2efab15dc450c9e1870663e2971fc11901a48",
+   "fingerprint": "sha256:7217a70bd6cad3e633e0c93ede942d95ddbbc7c5342982b4fe81a85c4fe1ac43",
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/mizupark-4344/index.html": {
@@ -582,7 +582,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/park-mino-147/index.html": {
-   "fingerprint": "sha256:40d7423269d1d63eab3afc929cbdacb6c9405bb7b470cee7b97074a1d9dab2b3",
+   "fingerprint": "sha256:00ae171596f36a9b91d0b00a49ee0485935bde7d9fdbb0f1bf9a60254d24c6ad",
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/park-mino-380/index.html": {
@@ -610,7 +610,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/mitoyo/takaradanosato-449/index.html": {
-   "fingerprint": "sha256:239a92703e312c4d4df20c85d7f27ae3e235c7c2181bf215bd3beaa186b635dc",
+   "fingerprint": "sha256:575059adc177fd30337ddf2f8bfd0b9f73524df21f70fb6a82c11fb0f2f81413",
    "lastmod": "2026-09-18"
   },
   "en/spots/mitoyo/takaradanosato/index.html": {
@@ -638,7 +638,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/city-155/index.html": {
-   "fingerprint": "sha256:973e0e79a680fccf4cd487343499c89d309b610729bf25033e4f1d546f20e127",
+   "fingerprint": "sha256:9d7967acf197d53453377dd4d3e181267c25a40d0735cbdaec4cfa334355356f",
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/city-157/index.html": {
@@ -650,7 +650,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/city-160/index.html": {
-   "fingerprint": "sha256:75a45dd324693154742603486292c67c1e2dfe42b1506887067235b2827ccac4",
+   "fingerprint": "sha256:691182e05af8d469d17fe3dac656ca78b3b9f7cee43549911184d539d3dc3b98",
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/city-175/index.html": {
@@ -682,7 +682,7 @@
    "lastmod": "2026-09-26"
   },
   "en/spots/sakaide/goshikivc/index.html": {
-   "fingerprint": "sha256:619652c4c5214b5375afdd8404bf47387462192970ecc9d5b59cb1b94ff173fa",
+   "fingerprint": "sha256:eef3c465c70ee1953a796639f8ec4b51b3011fe7f51e7dca155c28cb76068fb3",
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/jb-honshi/index.html": {
@@ -690,7 +690,7 @@
    "lastmod": "2026-09-26"
   },
   "en/spots/sakaide/p13/index.html": {
-   "fingerprint": "sha256:c17bf0da9cda65912ca3493e88672a7a7babda67b2573058199ca81cc49200ec",
+   "fingerprint": "sha256:5ca8218606cb080d1a9362ab48d33a41e0c4f773b4547b51a0b8a7ddbb7cbe24",
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/p2788/index.html": {
@@ -698,7 +698,7 @@
    "lastmod": "2026-09-26"
   },
   "en/spots/sakaide/p2970/index.html": {
-   "fingerprint": "sha256:fd246104dd25a956e25be8973e6b97c277bb668d68131ef9c2c09eb0a5def3fd",
+   "fingerprint": "sha256:35a6bea73cfda9cdb0cdaf315752b21a97860410a728c527f1d91fedf2c67975",
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/p317/index.html": {
@@ -734,11 +734,11 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/sakaide/setoohhashi-181/index.html": {
-   "fingerprint": "sha256:88379564f30de550d63cf30ca561ae293a128f74dfd853e4b2235db6a3232909",
+   "fingerprint": "sha256:42b37d498246bb26a246c0c502c6765e802dcab1473754092ae94a816e68867a",
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/setoohhashi-2353/index.html": {
-   "fingerprint": "sha256:60ccc4e26724c1c290410f156a60668412ff00d9195e2ef241eecac3c9b33bd5",
+   "fingerprint": "sha256:1b18133b3c4afce295933e47cbaa9354994ee30f157b8105f5970bcec95b6907",
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/setoohhashi/index.html": {
@@ -758,7 +758,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/town-8/index.html": {
-   "fingerprint": "sha256:a7456b8f2f8d644ac86573d9c50c4a628444bd2992f6deb1f69232d89b91539d",
+   "fingerprint": "sha256:b6ad2df8376fe4fb89a0e5ba0a4cb6f70939a2d75b6bdcceb3b339da04532a58",
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/town-9/index.html": {
@@ -766,7 +766,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/utazu-umihotaru/index.html": {
-   "fingerprint": "sha256:11b94ed47b80ead64bc812e3824d48caec64b9f82b16817dfbcaa0c63c164672",
+   "fingerprint": "sha256:50ff627cdf769158a2c86bceaac59dbc867a088268100fbe4e2e3d9d0f5f1bbc",
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/yakuyoke/index.html": {
@@ -774,7 +774,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/sanuki/city-183/index.html": {
-   "fingerprint": "sha256:34dddab6df1e7f25adfe3073c92d844125efcf7f07d6e62f4a92f216b99e5d3b",
+   "fingerprint": "sha256:d65dd99d72b56db374a7263a5372b50e28af61bc9ed37f4299ce9125a153ba39",
    "lastmod": "2026-09-18"
   },
   "en/spots/sanuki/city-187/index.html": {
@@ -786,23 +786,23 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/sanuki/city-208/index.html": {
-   "fingerprint": "sha256:a719f28df3a4be3cc05cf1fb03e83e3f9bcfec4385705be5a629038105202af7",
+   "fingerprint": "sha256:e51927454d2d6d8a027ba8a4aadbed4c3a3ff96ac689baec27fef486ee783c4d",
    "lastmod": "2026-09-18"
   },
   "en/spots/sanuki/city-209/index.html": {
-   "fingerprint": "sha256:2639221e260a68bd9565fe6355f2dc9871b2e299c87c282ed788919f9832c2c7",
+   "fingerprint": "sha256:33bfa21bcb989d39d74d95ca951c28d445425078f5822371fbf368c2068f805b",
    "lastmod": "2026-09-18"
   },
   "en/spots/sanuki/city-211/index.html": {
-   "fingerprint": "sha256:17a31111dee00f34ed9673ebe6ebe8de4af15ead2518ce6305229b5f14da0878",
+   "fingerprint": "sha256:d84def6b495ca25886bb8e542eb6976e1ae8406edc1b08a3ace7646450f6f114",
    "lastmod": "2026-09-18"
   },
   "en/spots/sanuki/city-216/index.html": {
-   "fingerprint": "sha256:98f0f5ea538b35bf1d67c3e9c208598957d41c82f1bbb5574e0e2b49a366faa9",
+   "fingerprint": "sha256:ac265463fed834b716f1127728f121b3eccda1667a6552cb56930e4e026294ba",
    "lastmod": "2026-09-18"
   },
   "en/spots/sanuki/hiragagennai-205/index.html": {
-   "fingerprint": "sha256:e74b5e5c8c1b5ce80c3dca413549793aae23c89bf3e1c28aa75521ddbaebad55",
+   "fingerprint": "sha256:9fc393e32a554861177a5104c0b8036d5d6976643cf0320afaf466acb42e13ee",
    "lastmod": "2026-09-18"
   },
   "en/spots/sanuki/hiragagennai/index.html": {
@@ -842,7 +842,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/sanuki/sanuki-191/index.html": {
-   "fingerprint": "sha256:8f2d9d364dc958ac7a361961fdb9630819f226a8bbb86f9eb51ac7e8ce8df8e1",
+   "fingerprint": "sha256:2139d4fd40f255d0465ba13ba5b72b12ffbc2a8da214f483dc727e374bb0b7bb",
    "lastmod": "2026-09-18"
   },
   "en/spots/sanuki/sanuki-kanko/index.html": {
@@ -850,7 +850,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/sanuki/sanuki-sa/index.html": {
-   "fingerprint": "sha256:24a26ece40ea057ceb30d5ae700a9b1c43cafc03149ceb6ecc1fa0fb22d9f830",
+   "fingerprint": "sha256:640159a2ee06cfa580496648148cfbf05b20089e902e660d9f58175b43bebf4f",
    "lastmod": "2026-09-18"
   },
   "en/spots/sanuki/sanukicity-sportspark-198/index.html": {
@@ -858,7 +858,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/sanuki/sanukicity-sportspark-204/index.html": {
-   "fingerprint": "sha256:1ba590835471b24f719f0084cd7bde8a148625e4b84df2b7767b59d9eafb3910",
+   "fingerprint": "sha256:05f1aed064545d04acfa18fc9185c186caec45db7dc6c9b2d018b9bc4bb5cf8f",
    "lastmod": "2026-09-18"
   },
   "en/spots/sanuki/sanukicity-sportspark/index.html": {
@@ -882,7 +882,7 @@
    "lastmod": "2026-09-19"
   },
   "en/spots/shodoshima/hoshoin/index.html": {
-   "fingerprint": "sha256:f3f69f0f485e06ce092a5ce40a4653fe011a719080a9bf5cfbe0d0aedac2bb1c",
+   "fingerprint": "sha256:0c810b542384085d3e720c04a62a7a35020e00d9b9e690f390e652240b9aadb9",
    "lastmod": "2026-09-18"
   },
   "en/spots/shodoshima/kankakei/index.html": {
@@ -898,7 +898,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/shodoshima/olive-pk-239/index.html": {
-   "fingerprint": "sha256:094cfc0eaeb9b07d878b8f98a62a5bd185a4e6c0ff902c8f069c56454702f3a4",
+   "fingerprint": "sha256:961189a24ede1466dfa9b191cd5b61c668bece9efa0c593ef9fe05f291823b4f",
    "lastmod": "2026-09-18"
   },
   "en/spots/shodoshima/olive-pk-357/index.html": {
@@ -954,7 +954,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/shodoshima/shodoshima/index.html": {
-   "fingerprint": "sha256:dbcf0e315dd9b013bdd67714dc31d1f9bb94792f49eae2819c6a99d22a9d9950",
+   "fingerprint": "sha256:55156c833879ff2abc9cd3c4e30b24f6aee3d81551d86ef95fdf6aacc07a3d5b",
    "lastmod": "2026-09-18"
   },
   "en/spots/shodoshima/tonosho-shokokai/index.html": {
@@ -970,7 +970,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/shodoshima/town-314/index.html": {
-   "fingerprint": "sha256:feff1ccf61981d9866ff67d696b1babd8a3be8839bd25d773d187c4855b9e96f",
+   "fingerprint": "sha256:b95403a0331ee544885b3faaf316735d0e4876537d7eab581e4dfb8499126f99",
    "lastmod": "2026-09-18"
   },
   "en/spots/shodoshima/town-485/index.html": {
@@ -982,7 +982,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/88shikokuhenro-245/index.html": {
-   "fingerprint": "sha256:8915623c1b05e7c905cefdd22deb8f2a841a9b296be40cfb5e604699b8d199ab",
+   "fingerprint": "sha256:b01dddbd9a472037dd96d34a983075d9cb04d93f9a689fce0f60a5b206d00e94",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/88shikokuhenro/index.html": {
@@ -1010,15 +1010,15 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/city-505/index.html": {
-   "fingerprint": "sha256:7ffebe4f4b9d2031050b61aa20daaad0bcbc38a20fd9dbeda1a16d308f0f1c86",
+   "fingerprint": "sha256:fb81575de1ad4901d841b72db484101f6e675db8dd84c476562c0af87aaf3ee8",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/city-506/index.html": {
-   "fingerprint": "sha256:000c5d6a042e968afb9b344e53a498981990f77239bb9a31f90d938598c0aff2",
+   "fingerprint": "sha256:bb6f14254c7dbbca0c9624f7bcf99c7830c537bafeb73e7f4ea3d16f5424c61b",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/city-507/index.html": {
-   "fingerprint": "sha256:054f0a329b740a687b4df17dbdb0da6389b19eb664459422032aa60d0a89fd93",
+   "fingerprint": "sha256:378c0abeda7de5f20e11daa46447419b4f42e52ef79086d30765a959fa56c1ab",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/city/index.html": {
@@ -1026,7 +1026,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/takamatsu/genpei-mure/index.html": {
-   "fingerprint": "sha256:4b866f15c93026483c044908114f6de0438e64accc7e14c78704c4b68a0d5391",
+   "fingerprint": "sha256:b83fec0e01afd3ca470bc5fa4098536b376e210eba24fd2059b9d058b8068706",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/ha-art/index.html": {
@@ -1070,11 +1070,11 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/takamatsu/mineyama-park/index.html": {
-   "fingerprint": "sha256:f8e636ac5253c9191d4c57121b3d1372d2a7b99084ed61d227b95eb7b0a01f12",
+   "fingerprint": "sha256:325cd7863bf15b7ad406c6c0983f96bdf53777ccd265bcb76e00d128d25bbe2e",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/mure-aji-park/index.html": {
-   "fingerprint": "sha256:e20ea59a9eb1d669a38021e2a7d5877e2aaf810eea033be33a608feaec4120c4",
+   "fingerprint": "sha256:c6d1fcfd7d6f63bffea19e3043b7a3aec4fda4ed5fda40a28487324de8352ea4",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/nagarestudio/index.html": {
@@ -1094,7 +1094,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/p2636/index.html": {
-   "fingerprint": "sha256:c395b39cda823fdbfcc7b52f95e3242c5ca7464bc963068b1402aba35c1d9b70",
+   "fingerprint": "sha256:ba3ba484e3ee4883e7baed5724a015873292c50ec9471c08f3af57a1135ba8c6",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/p281/index.html": {
@@ -1110,7 +1110,7 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/p3010/index.html": {
-   "fingerprint": "sha256:e6773fde6800b1e29cb69e89888edf06d455ac3028ec6316b3111b0c123fa4eb",
+   "fingerprint": "sha256:72c2c1c7e1c1cd9c87c2073c512b81679e7c678437dcf92c970a923239c035dd",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/p304/index.html": {
@@ -1150,7 +1150,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/takamatsu/sanuki-airport-park/index.html": {
-   "fingerprint": "sha256:a368d276c2b693428cf5feb9d20656952e650e7310e84392e46f75ee79f8ad20",
+   "fingerprint": "sha256:122c6bc6548fb48a3d2922923939a225b1f0a0ae5db1a688cd74e4d99c6d3d2f",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/sanuki-ichinomiyaji/index.html": {
@@ -1178,11 +1178,11 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/souyu-296/index.html": {
-   "fingerprint": "sha256:26aa09ae40ab445a907e2f8d6a47e111db6639c4c777ef2c5a5c07fe54060213",
+   "fingerprint": "sha256:58ea07b9291e7cbbedd687bf5e420127313edb8162ba02517f71f97a1b1556cd",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/souyu-353/index.html": {
-   "fingerprint": "sha256:17a283736af526b3cfda2547d25030ac540fd3beca6688c4bcbd641740d0329d",
+   "fingerprint": "sha256:134fad0cbc0a92daf0f980bff452b5aec102d2e0e67106941d44e9b195fff20d",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/sunport-hall/index.html": {
@@ -1198,7 +1198,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/takamatsu/takamatsu/index.html": {
-   "fingerprint": "sha256:5704ebe1ad54c73e8e5cde2cd46d3dfb471cd71cc949cebada4ae458696a412d",
+   "fingerprint": "sha256:4a8fe4cbed07094917efd4703034a2b5785c214c14f16a1071649df5e9de1703",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/takamatsujyo/index.html": {
@@ -1218,7 +1218,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/takamatsu/yashima-navi-4144/index.html": {
-   "fingerprint": "sha256:02cd6839990d7aeb92ff442093ad2de587fc98e7ad8a1a7d95a5df123d7e0945",
+   "fingerprint": "sha256:efd8309f57b51e1270aaf6035c142e8b15cdc915a84c4fda95101365f0939cdb",
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/yashima-navi/index.html": {
@@ -1234,7 +1234,7 @@
    "lastmod": "2026-09-27"
   },
   "en/spots/teshima/teshima-navi/index.html": {
-   "fingerprint": "sha256:8e2f3d4a611ec2dc157eb7ffcc39ce75d52b07c5cb6fc0064317fc56d2b2b954",
+   "fingerprint": "sha256:0fdaa6bf8aa6bb6048b734359eab8743f36b3d0819214dc3420abcf92161b189",
    "lastmod": "2026-09-18"
   },
   "en/transport/index.html": {
@@ -1266,7 +1266,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/higashikagawa/p30/index.html": {
-   "fingerprint": "sha256:c5af66d213819a5e9b029732516c9b10a6af6cbe91fea8a24ea021cc753327b8",
+   "fingerprint": "sha256:185fc89a201576e64347efef3b7867c78c1f30b5b76466b144e6a089dca3f16d",
    "lastmod": "2026-09-18"
   },
   "spots/higashikagawa/p35/index.html": {
@@ -1302,7 +1302,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/higashikagawa/tebukurokumiai/index.html": {
-   "fingerprint": "sha256:3df6394f7c763763156bb6173c813537628f57f015ea6969488d1abdaf8e4471",
+   "fingerprint": "sha256:6d6a0b8c9d2a59cd59b3b47112844e9dbd622f2e8ea503e1494a610ca15583bd",
    "lastmod": "2026-09-18"
   },
   "spots/higashikagawa/yodaji/index.html": {
@@ -1310,7 +1310,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/kotohira/e-mikado-105/index.html": {
-   "fingerprint": "sha256:4e200699619611faa473d3639fbf0f3f04983f7a923fac15a1e159782286386b",
+   "fingerprint": "sha256:ae5919b7f7077c0bb177bbabb842e5d75acbfd3cc67be69894c2f82e95b38ec4",
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/e-mikado-90/index.html": {
@@ -1322,7 +1322,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/kotohira/konpira-76/index.html": {
-   "fingerprint": "sha256:6fa34f69a9ce4bb116146e872af989f4541354ac012e5acfe331e17bf68344a3",
+   "fingerprint": "sha256:8d7c39d03a2f384370bbaf9292c2aabf835bdfb5867ac21d1141fa21178991ae",
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/konpira/index.html": {
@@ -1334,7 +1334,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/kotohira/kotohira/index.html": {
-   "fingerprint": "sha256:b5e7424c05d2e2b1190148c41ba09705a232b53f35506ad2a114fd86ae87b7a8",
+   "fingerprint": "sha256:64868d626fa03a642afbb1c1df2ee2ebe156672b9157b6eb0dd061d30356c299",
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/kotohirakankou-2576/index.html": {
@@ -1342,7 +1342,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/kotohirakankou-77/index.html": {
-   "fingerprint": "sha256:36c345b6cd639a1d3bdfa74bdcb9d6ba1b706e447f12ff6cba3b07dd688d4dbf",
+   "fingerprint": "sha256:35779b492f931fd251fa9cd66f80dec66c4f2f10ff844337a46330b77f4c6ba2",
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/kotohirakankou-79/index.html": {
@@ -1362,7 +1362,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/mannou-mori/index.html": {
-   "fingerprint": "sha256:3bdd3b53395bdf5460bdeeaa608d776cb0c8e50406f4f96f74a2cd6eef91f091",
+   "fingerprint": "sha256:c03e7381aa2c5b38522974e8b14a04faec62a20d79f135ae60dfbbcfa3d911e8",
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/nishino-kinryo/index.html": {
@@ -1390,15 +1390,15 @@
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/sanukimannopark/index.html": {
-   "fingerprint": "sha256:2f414e7ff56e1d7bbffdabbd84cc9b2b65ee8cf8fa4c8fdaacd6c583b6639b02",
+   "fingerprint": "sha256:cf312f914b6ef105ad7c4106c360429535e514419eea8af68ddd453014001e1e",
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/shioiri-onsen-2360/index.html": {
-   "fingerprint": "sha256:93fb3a013a631c8ee636cffd2284360500b6dbf5489d7f1f758941e74caef1fa",
+   "fingerprint": "sha256:7e6a681ef75021121b37fede395d3a3fba84b23e76beb39ee86076c9b110ec05",
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/shioiri-onsen-96/index.html": {
-   "fingerprint": "sha256:73dc539fa9550a9a00a7926c8d9eedff6fed0db425963decb49a923372614212",
+   "fingerprint": "sha256:bdfb3d3803bf083c16c9ee1a0aaeb2232723c3d3dd0a5f909937e894348a3272",
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/shioiri-onsen/index.html": {
@@ -1414,7 +1414,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/town-338/index.html": {
-   "fingerprint": "sha256:b9fa13dfb0db8ed02d35915d50a858eadd9b220064e47acf3194a5b71a4fa2f4",
+   "fingerprint": "sha256:701bb23df71982fbbd9ff7b7f99b48c2075ce9a724805b5a51e954b2f5c0fa97",
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/town-421/index.html": {
@@ -1422,7 +1422,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/kotohira/town-490/index.html": {
-   "fingerprint": "sha256:e640fa4b65c86c1e774f404de9fb07e1f42a692d9bd375f4f0af7722b447c335",
+   "fingerprint": "sha256:da8f6c5ab2614d68dbbd8ac3fdd3d25ba9a6d19a2acfd21a7d16526fea0d4a19",
    "lastmod": "2026-09-25"
   },
   "spots/kotohira/town/index.html": {
@@ -1438,11 +1438,11 @@
    "lastmod": "2026-09-27"
   },
   "spots/marugame/city-334/index.html": {
-   "fingerprint": "sha256:b23dc2d30d22e6d8150e0ac06bb8a8513c64e960e8b79883fcd79b333f647098",
+   "fingerprint": "sha256:dd00778d9dcf1525aed0edc3c9d47bd83da17465a97eedc2ff679ec9cce81141",
    "lastmod": "2026-09-18"
   },
   "spots/marugame/city-335/index.html": {
-   "fingerprint": "sha256:ae5a2916d584214cd3d05e641482d54fc52e620e79254b6297c49062ef5c3d15",
+   "fingerprint": "sha256:7173165af53095ae726d435802b17fd6c1f54c8d5d2821cc1a2a56c2521563ac",
    "lastmod": "2026-09-18"
   },
   "spots/marugame/city-339/index.html": {
@@ -1454,7 +1454,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/marugame/kagawa-konzouji/index.html": {
-   "fingerprint": "sha256:1a3cd4361aad269f204fe8d170be5b70d79a84eaf1246a6ca234f4a99ae4cf5e",
+   "fingerprint": "sha256:b570763f48ff99561811bf70a4ac5dd4504193fcfe16de80eb9dcd4755547969",
    "lastmod": "2026-09-18"
   },
   "spots/marugame/koyamaji/index.html": {
@@ -1478,7 +1478,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/marugame/marugame-happylife-112/index.html": {
-   "fingerprint": "sha256:6019271ea2d8cbad8d4decf0720baf050bf469a6434f1c0a1d6eff1d9e55825c",
+   "fingerprint": "sha256:a1296fb41e9f0ee6f7ff05a68a4bf5ecee693b2c961db01022ad054206488682",
    "lastmod": "2026-09-18"
   },
   "spots/marugame/marugame-happylife-115/index.html": {
@@ -1486,7 +1486,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/marugame/marugame-happylife-379/index.html": {
-   "fingerprint": "sha256:93e4257103a669d1f068176bc7e987c6ebe7b7ae87087d77f9427f293d143f5b",
+   "fingerprint": "sha256:24518e27c883cfbdf85fa2b814968fa2318c375276f6add2b6e91608f89b56fe",
    "lastmod": "2026-09-18"
   },
   "spots/marugame/marugame-happylife-458/index.html": {
@@ -1506,7 +1506,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/marugame/marugame-happylife/index.html": {
-   "fingerprint": "sha256:3dcabd9b0a55d7dd71a6cd1a4a900153f7265692402bbc9b1c3eca3d3221659e",
+   "fingerprint": "sha256:70cb2b3402805e7cbf2406730c48c31a9252df51da1cb19b7673a94a415f1ec2",
    "lastmod": "2026-09-18"
   },
   "spots/marugame/mimoca/index.html": {
@@ -1514,7 +1514,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/marugame/mod/index.html": {
-   "fingerprint": "sha256:f427c31891479e331247a2fb35181082066d1bf3fa2d3bf6029311fbfb9bc326",
+   "fingerprint": "sha256:9c04890570e9c95df52171f9e46ac764b624d6ee64b6b71b6b1f9d5929c970c3",
    "lastmod": "2026-09-18"
   },
   "spots/marugame/newreomaworld/index.html": {
@@ -1574,7 +1574,7 @@
    "lastmod": "2026-09-19"
   },
   "spots/mitoyo/city-148/index.html": {
-   "fingerprint": "sha256:7651f89543cbbcacc102ee3daa6bcbeb84f353e4d0efc36b560de7210acb24c5",
+   "fingerprint": "sha256:e58d484ed9efc89754b4edd8e5fb56c81b7139e261cd578b04e1e27d6f8a8ce1",
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/city-2938/index.html": {
@@ -1594,7 +1594,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/city-61/index.html": {
-   "fingerprint": "sha256:aa5592efc2ff0d994d99ef19d236b7f7b07e79183d69e2f6e479a81b3d04335d",
+   "fingerprint": "sha256:1a82fc05146288187dea9eec3e210294170045674e66c497ef2f6ee641041113",
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/city-64/index.html": {
@@ -1642,11 +1642,11 @@
    "lastmod": "2026-09-27"
   },
   "spots/mitoyo/michinoeki-kotohiki/index.html": {
-   "fingerprint": "sha256:c69a47b24fab417748085e97d145410ab419902da101f69f509f73688d2a5493",
+   "fingerprint": "sha256:f8e4fc80a1854799a740135117c28bfc0341688f2dea87ee7b00a782ad0161df",
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/michitoyo-oh/index.html": {
-   "fingerprint": "sha256:69d9ccffeb4e18ae047c0882beff3b74ea196f05029f85f64a2ee2d1655ee521",
+   "fingerprint": "sha256:224e0da94df1b9280815f50f7039b59641e08f76e6edb6b21edad92919b3fc63",
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/mitoyo-kanko-127/index.html": {
@@ -1658,7 +1658,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/mitoyo/mitoyo-kanko-129/index.html": {
-   "fingerprint": "sha256:307574d0b758404e3a770c7f02a0a1586f0ab1f00be9177abaeb693a0d530860",
+   "fingerprint": "sha256:77ce1fcdc65aaa9e919903df21bbf24834b5a6e0a1b97c53955e2d9bb4e4d9c9",
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/mitoyo-kanko-131/index.html": {
@@ -1678,11 +1678,11 @@
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/mitoyo-kanko/index.html": {
-   "fingerprint": "sha256:8d57c6fa60c02a5318419b56a982b3915cd0cee95553838fb074b4d82c8f18ac",
+   "fingerprint": "sha256:1c83ecaf3af63a6dcc486c9df73f3cef84096fec2b20faa931ba58d1b1dbe015",
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/mitoyocs/index.html": {
-   "fingerprint": "sha256:c0b9187aa9c57af6b13fdc2895bb08b9e62fb8aee4bd22802a10783bb2abeb42",
+   "fingerprint": "sha256:ae7c151f3ea5f9f67fbd81e38d234935e91c70715aaaaf68003331fd81dac0ba",
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/mizupark-4344/index.html": {
@@ -1718,7 +1718,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/park-mino-147/index.html": {
-   "fingerprint": "sha256:262d698920e0260e6d386c359beaca31b63fe6353bec913446d13dd9081eb32a",
+   "fingerprint": "sha256:74d4678a203035cc73827f10a25592207d54747bf6b7474c04647d671bc98028",
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/park-mino-380/index.html": {
@@ -1746,7 +1746,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/mitoyo/takaradanosato-449/index.html": {
-   "fingerprint": "sha256:f766ec525036808a65807aaf07ce7c9bce8acad7700345cc4f4fc7778efbd0e1",
+   "fingerprint": "sha256:f4fb74fc9fc57bb62b55135a264136834b9d35c3e96f7cf9a5f59462f1f646a7",
    "lastmod": "2026-09-18"
   },
   "spots/mitoyo/takaradanosato/index.html": {
@@ -1774,7 +1774,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/city-155/index.html": {
-   "fingerprint": "sha256:088865b88ca9342e94d9454c843bf24490d075ac5d4ab2399f98feb57ae76b01",
+   "fingerprint": "sha256:524451c223163619f68eb4b3d6258eff0d895b82a444c6c073528ec368b3153d",
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/city-157/index.html": {
@@ -1786,7 +1786,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/city-160/index.html": {
-   "fingerprint": "sha256:6e2bd3fc5cdc7f5517a5dbfc162f389cf73e751673eebb9f29ec0fc7ed373e9e",
+   "fingerprint": "sha256:5a2c47c1352f437e3afab094b55c233baa54a9563fa84e95056fa2c6acf0fec8",
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/city-175/index.html": {
@@ -1818,7 +1818,7 @@
    "lastmod": "2026-09-26"
   },
   "spots/sakaide/goshikivc/index.html": {
-   "fingerprint": "sha256:2ebdc3eaea77aac156b5bcc567023e0dac65d3039812096ef70ccc352fa8c100",
+   "fingerprint": "sha256:1bc4211995e21bb2aee5398076a58e2e2e31effda45916cd5f2d786b85fbba21",
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/jb-honshi/index.html": {
@@ -1826,7 +1826,7 @@
    "lastmod": "2026-09-26"
   },
   "spots/sakaide/p13/index.html": {
-   "fingerprint": "sha256:bba90ec8da59ea07a8363be76033c72906283b8269c9342f56204a8c1e40fd4a",
+   "fingerprint": "sha256:8b34bd95ea4516f977d15dcf3786a3ede310112e20a9a3b5d048b34c93c3e9a3",
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/p2788/index.html": {
@@ -1834,7 +1834,7 @@
    "lastmod": "2026-09-26"
   },
   "spots/sakaide/p2970/index.html": {
-   "fingerprint": "sha256:ea62149867ff87da03065c6c6b6a4787c9559ad6ea2d52037bf846a284d7be7c",
+   "fingerprint": "sha256:6af509d189719dcd903c26e5f3941252e91bba971a58d50cf4725a36b9aef0ac",
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/p317/index.html": {
@@ -1870,11 +1870,11 @@
    "lastmod": "2026-09-27"
   },
   "spots/sakaide/setoohhashi-181/index.html": {
-   "fingerprint": "sha256:e47f79eedb7f539edfecadffadbc173508a65e6b9ba675d7cb0d861438905e86",
+   "fingerprint": "sha256:de778cdbba305e8857b485ca976febade41b6a89572217164132f6d28b3f7247",
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/setoohhashi-2353/index.html": {
-   "fingerprint": "sha256:3ea5887e40afbe8c7c375f4dcbe6efac08eb99da5dabffd71f2811f0363b4eb9",
+   "fingerprint": "sha256:dfc9f52aa0e360b20cc4dab223c5906279f817608e2214bb527b774398d00859",
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/setoohhashi/index.html": {
@@ -1894,7 +1894,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/town-8/index.html": {
-   "fingerprint": "sha256:4356b143b2066c956da5e887289a23799d8c54c100b641d7113edfe83991366c",
+   "fingerprint": "sha256:ae844b8d761f30cb69bda8654beb6be48c2bbdc62e241ad76b4668103aa630c1",
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/town-9/index.html": {
@@ -1902,7 +1902,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/utazu-umihotaru/index.html": {
-   "fingerprint": "sha256:0c3a6a7e04d37622eb4d057ec10fb159cf8dd8ebc96d54450f9c04a21dfefa5a",
+   "fingerprint": "sha256:7ab216c7657ff4f34c1229f712fede5461eec2f3d62275b45bce8af8866e6e76",
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/yakuyoke/index.html": {
@@ -1910,7 +1910,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/sanuki/city-183/index.html": {
-   "fingerprint": "sha256:36bdf317162b0530709eaeafe79f1eb1473044832e81400f21b4f571a51a1485",
+   "fingerprint": "sha256:d459d1a09b75e0615acf722cd98abda57b227f97430a2d157d7371feadd26352",
    "lastmod": "2026-09-18"
   },
   "spots/sanuki/city-187/index.html": {
@@ -1922,23 +1922,23 @@
    "lastmod": "2026-09-18"
   },
   "spots/sanuki/city-208/index.html": {
-   "fingerprint": "sha256:369585eeb41bf0c64e778d4133c8359aedde2c2862fc81f222c07028ce629e72",
+   "fingerprint": "sha256:ce30535d01386f29a83c8e58b7a03fee6a0cc63325774cd694e9817340db92c0",
    "lastmod": "2026-09-18"
   },
   "spots/sanuki/city-209/index.html": {
-   "fingerprint": "sha256:300e2ded2e99d132a0ccbcc78a51d0287522f3c7baa71446488fff340cb1a3d9",
+   "fingerprint": "sha256:9d1e4c7a4b4c5458a213e95cbc2f885f00872be0650fb1670859d78f7222365e",
    "lastmod": "2026-09-18"
   },
   "spots/sanuki/city-211/index.html": {
-   "fingerprint": "sha256:b95a196ff521690106ab907ba4393fb3791b1c903aa91b8463bdf1537fce63b0",
+   "fingerprint": "sha256:8b057b0032c75ee404f6775868a90f3485f7e2d17a7b9abc7c12f3d754020cae",
    "lastmod": "2026-09-18"
   },
   "spots/sanuki/city-216/index.html": {
-   "fingerprint": "sha256:ba041b3e1f4321f1c8a470e4caad967e634ab7b1adeb750e54f05f7d2e406b17",
+   "fingerprint": "sha256:06c6e77009db48ef712afd8c2dc58c266166d5961fefe9999ed768d0e5050fe6",
    "lastmod": "2026-09-18"
   },
   "spots/sanuki/hiragagennai-205/index.html": {
-   "fingerprint": "sha256:f6c334d9c67c47808494976f0dc957f7ff7eb81f54ad5c693a5f16e981fbbf11",
+   "fingerprint": "sha256:548ece58873ec305d88eae0080277f99203f84f67f0077539d5ce0e13b89ab31",
    "lastmod": "2026-09-18"
   },
   "spots/sanuki/hiragagennai/index.html": {
@@ -1978,7 +1978,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/sanuki/sanuki-191/index.html": {
-   "fingerprint": "sha256:66418b02a9829a329c8ae5fe333b5e5d8c746c7924d7bd30e7c443a414451bf7",
+   "fingerprint": "sha256:417b8d245709cd6a37907d6b0ed928351cd431a2260dea493b8c5f0112a1c9b7",
    "lastmod": "2026-09-18"
   },
   "spots/sanuki/sanuki-kanko/index.html": {
@@ -1986,7 +1986,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/sanuki/sanuki-sa/index.html": {
-   "fingerprint": "sha256:1e0b52c6ee760a00af14610b0336c326d856ed4e8af6c0f9e82471ee0dceee3c",
+   "fingerprint": "sha256:0147fda9a32dd698c2c5bbdaa6e2a3340beb4b3a3b26b67d2f86854b92df235d",
    "lastmod": "2026-09-18"
   },
   "spots/sanuki/sanukicity-sportspark-198/index.html": {
@@ -1994,7 +1994,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/sanuki/sanukicity-sportspark-204/index.html": {
-   "fingerprint": "sha256:e27cc7fe409ee331d2f2770bd6d587b24b2b7f5f21883b0467ec0ac739c3b088",
+   "fingerprint": "sha256:0b4c968451c8391cc182679013942b3bb5d451d10119d68618ba88ca0710c715",
    "lastmod": "2026-09-18"
   },
   "spots/sanuki/sanukicity-sportspark/index.html": {
@@ -2018,7 +2018,7 @@
    "lastmod": "2026-09-19"
   },
   "spots/shodoshima/hoshoin/index.html": {
-   "fingerprint": "sha256:0683d78874623096fc7127ae437945f913657f0fb3e3ee5b84c8dcb35f46e932",
+   "fingerprint": "sha256:36982df2bb931bcef91158c95b7409797ced541773ce1ca0997def4a82366d92",
    "lastmod": "2026-09-18"
   },
   "spots/shodoshima/kankakei/index.html": {
@@ -2034,7 +2034,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/shodoshima/olive-pk-239/index.html": {
-   "fingerprint": "sha256:55f4df4bdcb711743f5b91757baaa376594b8f8663d63fb93b79721a4b5becc9",
+   "fingerprint": "sha256:30448d02308a137b892377773d6b96770495cfb9fc5a4f595eb8d734fb3375f8",
    "lastmod": "2026-09-18"
   },
   "spots/shodoshima/olive-pk-357/index.html": {
@@ -2090,7 +2090,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/shodoshima/shodoshima/index.html": {
-   "fingerprint": "sha256:5b5264bc4958e4e67986e23726f5fe8c912ca44ca9f1fee03d7d0e9e7d49da97",
+   "fingerprint": "sha256:37d86133c3dab7b74cccce1a42aa77f8d0cb8ddcf62cfde16ce192277db500fc",
    "lastmod": "2026-09-18"
   },
   "spots/shodoshima/tonosho-shokokai/index.html": {
@@ -2106,7 +2106,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/shodoshima/town-314/index.html": {
-   "fingerprint": "sha256:65e5775cff09e5aeb3d40052df5c7e559e3dcf4802548f0b87678b21c31405b4",
+   "fingerprint": "sha256:c123cc1779a1002637f808d2d7e8d168184357a8827481c7f6d8f45822617b02",
    "lastmod": "2026-09-18"
   },
   "spots/shodoshima/town-485/index.html": {
@@ -2118,7 +2118,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/88shikokuhenro-245/index.html": {
-   "fingerprint": "sha256:76f64dd515d919e480537a84690aba7dcca7ddb7c34b80ebb57f941c608e7fdd",
+   "fingerprint": "sha256:747674ff3ef101ded096b2536eb7e612c12d0c14a7229a512efd9e2e74a7584a",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/88shikokuhenro/index.html": {
@@ -2146,15 +2146,15 @@
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/city-505/index.html": {
-   "fingerprint": "sha256:62f55f923e9392da3d6ce34d6667229d3e280b87c090127d2c2c34e7b022b6e3",
+   "fingerprint": "sha256:5415e5bd966b73a7ceb0a91bf67ab2a2dd0092b99c2021f6ec0905181bc2141d",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/city-506/index.html": {
-   "fingerprint": "sha256:cac4e53e1b6b8f91a74bae7d31eb247286d45abcd99fda176107b0074f5b37cc",
+   "fingerprint": "sha256:988360016d1a2e06ae44e386b24689078361d60d93ae00753b96610adea23a8b",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/city-507/index.html": {
-   "fingerprint": "sha256:8ba650fe4fb0c0ddc24b9e089b768ca6dec15eddc27198617cbbb4b1f97783fc",
+   "fingerprint": "sha256:b7aedb8de1ee70037be1b64b2a16d4bd750b596f1999332568fe84fc3056e16a",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/city/index.html": {
@@ -2162,7 +2162,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/takamatsu/genpei-mure/index.html": {
-   "fingerprint": "sha256:284eb2425c2dd86ddd6b443046a20edef48983e00e03b22a401c6605c74c07f0",
+   "fingerprint": "sha256:6f10c0c66e8932996988616d6af5a512c92caa6ffcb9f6ce627f1d51a7c0dbb5",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/ha-art/index.html": {
@@ -2206,11 +2206,11 @@
    "lastmod": "2026-09-27"
   },
   "spots/takamatsu/mineyama-park/index.html": {
-   "fingerprint": "sha256:815d4e6e95ded84e9f697b85819cac86ae23e90aded899d2967ec0a465c56e7a",
+   "fingerprint": "sha256:13a9a06d586435decce140c191ca0017abc414888f72d32b20d7182a2cc3e1a2",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/mure-aji-park/index.html": {
-   "fingerprint": "sha256:e5eca2eb8e81433048cc7cacd15e2d20c034a4e0318ad7a14b7fc6f0d21c6621",
+   "fingerprint": "sha256:d4119bc908bf8d3ec7a3201353b5e94ff7dded0e8b1aaa8ab24c96e5333d66a5",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/nagarestudio/index.html": {
@@ -2230,7 +2230,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/p2636/index.html": {
-   "fingerprint": "sha256:fae3328ce2dc7f081db79aa789ef99fff8c371aadc7cacf50534c2514f665b97",
+   "fingerprint": "sha256:7381a6a06b3f567c0359146b5bc6ee334ecf3974835bd9155c1f7ede1080afec",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/p281/index.html": {
@@ -2246,7 +2246,7 @@
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/p3010/index.html": {
-   "fingerprint": "sha256:5640332e4fa7c74a0208a4d755b1a3c29ae66b2cbc823bc761a47584d612efaa",
+   "fingerprint": "sha256:54b2ad5cf20358bc04cf7fdd5459e9284befc8333259ab6a914d9fe8b9a0f4df",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/p304/index.html": {
@@ -2286,7 +2286,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/takamatsu/sanuki-airport-park/index.html": {
-   "fingerprint": "sha256:69ca0b71ef7422e0d0c0cce79056f1a392154607acc2cee8411bb4030182a523",
+   "fingerprint": "sha256:94e4d655d1526a076a2894e0d766ef84a2d186d333bd23fc770eb8e8521f7a02",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/sanuki-ichinomiyaji/index.html": {
@@ -2314,11 +2314,11 @@
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/souyu-296/index.html": {
-   "fingerprint": "sha256:ef9c9807f427c960cc54bf91934539acda30c780cb49ca6a8114d191cf7742a4",
+   "fingerprint": "sha256:6acb67e42f558fd150ef97ae24253b50f67a6ff19190372ab464b07af586d45a",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/souyu-353/index.html": {
-   "fingerprint": "sha256:5432fced83f53f422641ef7b5870a031c8da9c65d34346de6b14dd483fba3f40",
+   "fingerprint": "sha256:925f337e590a673246fe21ce3121a9547835bbfcb33b4c36da987313b2010f87",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/sunport-hall/index.html": {
@@ -2334,7 +2334,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/takamatsu/takamatsu/index.html": {
-   "fingerprint": "sha256:0e6e9c13f837c1d7731c2bae4a973719305aa73df364e11d05937dc3fb1e30a7",
+   "fingerprint": "sha256:7b8d607c4d5fcf76cbff67a58df4704bd4c662171bcf4065fd3d0de9187537e5",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/takamatsujyo/index.html": {
@@ -2354,7 +2354,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/takamatsu/yashima-navi-4144/index.html": {
-   "fingerprint": "sha256:5cc9bc9ceeb48acc3ee1f84ec32d9fa5d2e6a11e30e3d1ebb80b6cc7d4ac8c4c",
+   "fingerprint": "sha256:01875f71635242a7a4bb1bb7a911c80f10add373cb6e708a2ae2410e7cafae73",
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/yashima-navi/index.html": {
@@ -2370,7 +2370,7 @@
    "lastmod": "2026-09-27"
   },
   "spots/teshima/teshima-navi/index.html": {
-   "fingerprint": "sha256:62dc1036bf7da0139aacd14177c94a69cebf191ff2437752d14f568b5466615d",
+   "fingerprint": "sha256:5011ed8b2834b2753971a3a3b81368f0a624db3cf0e0df228ed59c6c85f5e5de",
    "lastmod": "2026-09-18"
   },
   "transport/index.html": {
@@ -2426,7 +2426,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/data/index.html": {
-   "fingerprint": "sha256:58f33e48f84c5c3dd2456a6e28841b1e3d39e64e94f733a319ca5db96181358f",
+   "fingerprint": "sha256:b26bd681ae14da251eb464ae85c8f53b42f3d485c25cbb97796c3c857f5637ad",
    "lastmod": "2026-09-27"
   },
   "zh-hant/index.html": {
@@ -2454,7 +2454,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/higashikagawa/p30/index.html": {
-   "fingerprint": "sha256:519277de9e1ea7d650e2ba83213da898cf2690373fad68e9de84867a91689b79",
+   "fingerprint": "sha256:36f60ada991da30967a691a8a7d90f131942912fe7f539a7019b74c8605dbcbb",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/higashikagawa/p35/index.html": {
@@ -2490,7 +2490,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/higashikagawa/tebukurokumiai/index.html": {
-   "fingerprint": "sha256:7d6465a90f803bf164b556a9295d176efb6cad5b3d8fc59f08e62339d1e6ef37",
+   "fingerprint": "sha256:8bec28235af31e6d898c2d22d0d107a300688e31f7aad7b5e5af1a36a3475978",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/higashikagawa/yodaji/index.html": {
@@ -2498,7 +2498,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/kotohira/e-mikado-105/index.html": {
-   "fingerprint": "sha256:2e9b959658e228d5c7f885e27df91b988375da6eceadc0e5c758ddb434b62ad5",
+   "fingerprint": "sha256:39fd0dd71831ba1394211357d2e9b7a965cde4acd4215bce189a69ee93f3aaab",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/e-mikado-90/index.html": {
@@ -2510,7 +2510,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/kotohira/konpira-76/index.html": {
-   "fingerprint": "sha256:3d5149be26518a9e29f227eaeb9401c0466a07570a6aa5a276455361cac06f4d",
+   "fingerprint": "sha256:91579687bc01fd9b690925d5d290fa4bfff48e97018717f2df055a9f6d88eb67",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/konpira/index.html": {
@@ -2522,7 +2522,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/kotohira/kotohira/index.html": {
-   "fingerprint": "sha256:3730c23721b8d22dbaf95b8233846d98dbf941d65ebc44767e5f66dd53cf5f54",
+   "fingerprint": "sha256:57fee05ff491c4ee5c6ab51cb0ab6dacc263ef483bbf48755d539c56fddbebf8",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/kotohirakankou-2576/index.html": {
@@ -2530,7 +2530,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/kotohirakankou-77/index.html": {
-   "fingerprint": "sha256:31788d78e20cec2c99eed39d804c58cae4c2dcfc34d530b33f858f61d30f8b9c",
+   "fingerprint": "sha256:9768ccd32decb2f21842336df70e616bcaac67e6a785ec0feeca5a8e60598b0f",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/kotohirakankou-79/index.html": {
@@ -2550,7 +2550,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/mannou-mori/index.html": {
-   "fingerprint": "sha256:2833fba46f1be9ec88d151491766b6cb7dfe8ca8aae23631c2fa5de5d0d2a6ed",
+   "fingerprint": "sha256:a929db71afbf310e8ff4e325fd72b730127aa195f7e187fb6e1e76621c551e53",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/nishino-kinryo/index.html": {
@@ -2578,15 +2578,15 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/sanukimannopark/index.html": {
-   "fingerprint": "sha256:28d930985539bb7ee10a0757b6c8bb3b8cf2e3a33457cdecf3607d380d52b0d4",
+   "fingerprint": "sha256:ae402d2f3eb6d484d5c0c8b3028dc98a510955b540c5d1ee65dfd86a12c75b5f",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/shioiri-onsen-2360/index.html": {
-   "fingerprint": "sha256:3609c75f25e475bf1b21201f360a9fc97a848ed6c1e6c995405c6f33e68e3693",
+   "fingerprint": "sha256:c9d66ba0430b2ca97db1939b30c22e39570fa6af89300e4cd30715b98e40920b",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/shioiri-onsen-96/index.html": {
-   "fingerprint": "sha256:0de7d83e2f1efe1ca4837ff6394881df09045da80b0f684d24027bb00ebc36cf",
+   "fingerprint": "sha256:31cc82d2896e934199305464c8417b8e0916dc6e5f84d44973c74ba40adae4b4",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/shioiri-onsen/index.html": {
@@ -2602,7 +2602,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/town-338/index.html": {
-   "fingerprint": "sha256:d441bcd976bad5f184689f47f9689137fb4232e4c67712356b4155516fcf9227",
+   "fingerprint": "sha256:eee833c45d08395f4f02422c0ede3aa97556ef4a4f19ce6f9c73c9d23dc88dbe",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/town-421/index.html": {
@@ -2610,7 +2610,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/kotohira/town-490/index.html": {
-   "fingerprint": "sha256:3912146f6ffffdc4f45a3aaa12f7ddc0083798914022eb20701bcf9c5542694e",
+   "fingerprint": "sha256:943bf902361aeafe9d383ff89ee62e1d2c742b5fc4e5e179a2860f92708118db",
    "lastmod": "2026-09-25"
   },
   "zh-hant/spots/kotohira/town/index.html": {
@@ -2626,11 +2626,11 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/marugame/city-334/index.html": {
-   "fingerprint": "sha256:d4b7ac38909866ebae3f5ead017cd5dee47dd9ceb9a5183694c7dda38851d8fc",
+   "fingerprint": "sha256:8fa5df933e7f4ce751ac1bf2dea9293b8bacf5d7920960ecfb6ab4912ad7f531",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/marugame/city-335/index.html": {
-   "fingerprint": "sha256:70e0fd67a7d53172330b387fa9052ebcc411400cb9ef62724977c25efe7cacaf",
+   "fingerprint": "sha256:32448fa63774b5c0af087d87ffc2f4b5e43153b463ccfa2e4b900bbd4dd73afb",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/marugame/city-339/index.html": {
@@ -2642,7 +2642,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/marugame/kagawa-konzouji/index.html": {
-   "fingerprint": "sha256:6aabbff598951caee5aa231aeb5fa380bc59c903749be18fb4d4753411730fe6",
+   "fingerprint": "sha256:03f2488849e157369957e91483b84dad7c7c0a9365ec26fc6dc5db413b1b82ca",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/marugame/koyamaji/index.html": {
@@ -2666,7 +2666,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/marugame/marugame-happylife-112/index.html": {
-   "fingerprint": "sha256:d09708aa025dc39f37a9d7404fb361701ed386f54c79fea02b88c61af7873142",
+   "fingerprint": "sha256:25e5ca34ffe28794af9866fe725c287a65286462bed3bc168cac2664cd1fd38f",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/marugame/marugame-happylife-115/index.html": {
@@ -2674,7 +2674,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/marugame/marugame-happylife-379/index.html": {
-   "fingerprint": "sha256:25e07349edd70a72962297f6cabaadd4d0ca2a5a0f3e520e448cc0e26947e261",
+   "fingerprint": "sha256:2eb0aea7c32215bbbaf65dff4d1df54535f0f727efccc352077ab20583f8465b",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/marugame/marugame-happylife-458/index.html": {
@@ -2694,7 +2694,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/marugame/marugame-happylife/index.html": {
-   "fingerprint": "sha256:0a2aaceb0331e9b318630d815a566ec70c150ffe184a984852da65724c516fa2",
+   "fingerprint": "sha256:fc9120a9e17b3672e43bf640194c1708a3ddb0841b5761bbecdcb32451b88b76",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/marugame/mimoca/index.html": {
@@ -2702,7 +2702,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/marugame/mod/index.html": {
-   "fingerprint": "sha256:e2251207e79b06952e9c07dd00e4c467428e96e0d1543a235fdacebe9e88a7c6",
+   "fingerprint": "sha256:3a6dd892d4e2f9d6663a7cae4dc93ea558a69dd60076d24cb507970961706585",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/marugame/newreomaworld/index.html": {
@@ -2762,7 +2762,7 @@
    "lastmod": "2026-09-19"
   },
   "zh-hant/spots/mitoyo/city-148/index.html": {
-   "fingerprint": "sha256:51b0416cc5502ed5b15ffcaef268ef9fed1c0a91b30976b171e7ea599fa5c2a3",
+   "fingerprint": "sha256:81a074597c0cdabac47dcdfe5d4dfbe30fbbdf3288fb6a3ab1658789edd8dbcd",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/city-2938/index.html": {
@@ -2782,7 +2782,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/city-61/index.html": {
-   "fingerprint": "sha256:becf453042516225214da817fdce28bf1310c13d4f0c6229a40a860694288dc5",
+   "fingerprint": "sha256:6912c2843d4c2b2234b88994f9f16b1eee5915468fbb9cf2154a8032116db44f",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/city-64/index.html": {
@@ -2830,11 +2830,11 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/mitoyo/michinoeki-kotohiki/index.html": {
-   "fingerprint": "sha256:90598987a36f3880864d669e2dac2c646c611c9e21264a6c4b727184ab1cbb24",
+   "fingerprint": "sha256:6f5fe82100a0155443c13012b5b10bfc63d7b4572803fceaaf748a927900ab3b",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/michitoyo-oh/index.html": {
-   "fingerprint": "sha256:ae7d7e0ae912928b83ad340e82b53f8b84cf53b34dfec4144a18ff337b67aa4d",
+   "fingerprint": "sha256:af0b58847a03d87380ed391167924dda04520c40d4d517475f12fce11754bd13",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/mitoyo-kanko-127/index.html": {
@@ -2846,7 +2846,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/mitoyo/mitoyo-kanko-129/index.html": {
-   "fingerprint": "sha256:5b726feff8ac3927e82d3a98e99f39a4722f442a63ec50b2dd29604130cd2ad1",
+   "fingerprint": "sha256:3d0e3c207142170e62f7470f3e4ab1744e69d18082a25813ae6c6530cf96aecd",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/mitoyo-kanko-131/index.html": {
@@ -2866,11 +2866,11 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/mitoyo-kanko/index.html": {
-   "fingerprint": "sha256:026603d7601b4eed8be2f31902515df95cf0d83dbd2fe90bbb63bd9a265fc718",
+   "fingerprint": "sha256:3179c1a14a7fb3588f22ca54ba0d2e5ba3ecb38f50dbb2faae8fb80fc546f6bf",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/mitoyocs/index.html": {
-   "fingerprint": "sha256:95ea0de5eaea422f06868384c2aab323ec7c2a7515ac84103ad79b47ef44b7ba",
+   "fingerprint": "sha256:75618f33c9c6dc5a2d41388d843f9ef0e9a4b1122988f0eaef01c54fb710ca1b",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/mizupark-4344/index.html": {
@@ -2906,7 +2906,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/park-mino-147/index.html": {
-   "fingerprint": "sha256:143373556cfba164c902919a411e568cc6c7288fefc813ae96a46049252ae759",
+   "fingerprint": "sha256:581d179c8c9b7e2736bc18a45517dc123e409eb5fd202b9e9f891bec3b35900a",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/park-mino-380/index.html": {
@@ -2934,7 +2934,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/mitoyo/takaradanosato-449/index.html": {
-   "fingerprint": "sha256:a4dbabfd1d85f9e337397bef866a9d8754d2a11568f0ce0aae9b179579fdb261",
+   "fingerprint": "sha256:0594d79b860622e03b8e9877f2344f087e719676f07185d4e9dfa4bc685969f8",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/mitoyo/takaradanosato/index.html": {
@@ -2962,7 +2962,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/city-155/index.html": {
-   "fingerprint": "sha256:f44dae88ab22e8b4c8694fcbca068780a335227ed028d63495fabae49010128f",
+   "fingerprint": "sha256:a08ce373df43f16185ab33380fa439e6213568f60dc0369e398b3140cf1556e7",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/city-157/index.html": {
@@ -2974,7 +2974,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/city-160/index.html": {
-   "fingerprint": "sha256:0881c3db04d43b960d1a6c142f252a0b9c5a56bc3fe82dfef8e311214ca62bf9",
+   "fingerprint": "sha256:df43878c546efa8c1c54c45011117b20b5334cfc3c5d95314f494c54d6019d4b",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/city-175/index.html": {
@@ -3006,7 +3006,7 @@
    "lastmod": "2026-09-26"
   },
   "zh-hant/spots/sakaide/goshikivc/index.html": {
-   "fingerprint": "sha256:3efc52eca1c76de8a6a51fc5f5046f6c4b3dd2d15becfce734cc939b2969f2ca",
+   "fingerprint": "sha256:eaa9cde640a44142b91a1649a5ef47a3bb909dda70026347c431fb3367781d5f",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/jb-honshi/index.html": {
@@ -3014,7 +3014,7 @@
    "lastmod": "2026-09-26"
   },
   "zh-hant/spots/sakaide/p13/index.html": {
-   "fingerprint": "sha256:e21a4ede48597baed3d06346a167965828619ed4de509a4d8cfaefa5e59370e5",
+   "fingerprint": "sha256:9c39299d6c0daa2f1c837292bfa170c0b7dbe29a0702df707fc53510c5cb9d1e",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/p2788/index.html": {
@@ -3022,7 +3022,7 @@
    "lastmod": "2026-09-26"
   },
   "zh-hant/spots/sakaide/p2970/index.html": {
-   "fingerprint": "sha256:bed38b5ef84be2301d3ede6757f6c0e1b14642cf301aaa17de4b136719a2d73a",
+   "fingerprint": "sha256:8d9b42aac0c0288a031afb361332aea6a11b9df4fed33000d602ee82570bc92b",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/p317/index.html": {
@@ -3058,11 +3058,11 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/sakaide/setoohhashi-181/index.html": {
-   "fingerprint": "sha256:f95b1c2f5507a352d73e4315f41235a7fa4ad23726816f3d471ec49ba27d16c2",
+   "fingerprint": "sha256:d03f5e5b8236af2248728b2f67cd57e1d51ce0518b4431aaeb5862a6962a1310",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/setoohhashi-2353/index.html": {
-   "fingerprint": "sha256:cea194a1688f17367c469c9c3d5581e06ea89afb34d556e661cfc74c47b3ee9b",
+   "fingerprint": "sha256:22a5df2decf2efe7376af9718b431ad9f650baa4370e34a11da62cf92f907dec",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/setoohhashi/index.html": {
@@ -3082,7 +3082,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/town-8/index.html": {
-   "fingerprint": "sha256:d6e24e5dde6e0f86deff873737768f2d0e45979631ff5472f1de4f74af928892",
+   "fingerprint": "sha256:aee99a86f2b8b766725585ebaf4385d7a199784cf3021acb66e624e5fbbaf27f",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/town-9/index.html": {
@@ -3090,7 +3090,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/utazu-umihotaru/index.html": {
-   "fingerprint": "sha256:ccbdd91d3caf537c21d523343a1e87a6fba6b8b5655d579bc1e46b1fd53204b8",
+   "fingerprint": "sha256:91bb9348b9fe63660b011f3e8a62be62db2758fbf48858f88eecdfbe2ae96190",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/yakuyoke/index.html": {
@@ -3098,7 +3098,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/sanuki/city-183/index.html": {
-   "fingerprint": "sha256:9dc12621677e7b4223e0a13352eacef6e289c90b22733dae3020383bf67c2712",
+   "fingerprint": "sha256:482bfa8f0d47c5068876bdfe2ef7c6a8a3f1f26baa27ed5f551b9248d7db782d",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sanuki/city-187/index.html": {
@@ -3110,23 +3110,23 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sanuki/city-208/index.html": {
-   "fingerprint": "sha256:ecec7fe7597576556fba78e2ad843dd2d0221920b9b2a02a6906fa2fa61cf5b7",
+   "fingerprint": "sha256:2bafdd008d089ba676f37ffe0c6cd24e8c96d6bd74ef9674c00bdf9064b52d82",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sanuki/city-209/index.html": {
-   "fingerprint": "sha256:d66f68135f7e089b6caa6bb31747d7abefb0ce9c6ccc6d13d780f8e256ef4820",
+   "fingerprint": "sha256:c535f9c9d5bf1e607a83320081d763eb8fd9c2046c6e3e2971636d69317fc47f",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sanuki/city-211/index.html": {
-   "fingerprint": "sha256:979b2ff054cf30c6263f05281d6db3b1221a5ee39ba8153cef2b42950ffed2c8",
+   "fingerprint": "sha256:3eab40559dc21aa808b3468fb2301a5845d1f53dfea93e3e5059a9049e5cd60f",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sanuki/city-216/index.html": {
-   "fingerprint": "sha256:4b5cdbc2406e6b4478633f8c91ae633ff2cd8e75a4c253d6dfadcb85fcfc5d78",
+   "fingerprint": "sha256:350e85e6f8607418457c2e66596295ae1af5ae87e72bb7756a0d1872beb3d3eb",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sanuki/hiragagennai-205/index.html": {
-   "fingerprint": "sha256:3dcfac827bc9e7c43262ea02d8f08db9d7efa4445bea2b99720df31b37b058d1",
+   "fingerprint": "sha256:560e670030259f6583f528aab765e721f33ba52bf718892209fa411ebad0be76",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sanuki/hiragagennai/index.html": {
@@ -3166,7 +3166,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sanuki/sanuki-191/index.html": {
-   "fingerprint": "sha256:ed19dc96f8876f6ef0af869db043bddcbf33643ae2973775dddd8a311307240f",
+   "fingerprint": "sha256:7a4e92ecd64071871b1635ccbfd5141ec1638c94babbe9d820897e3ef18a53a0",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sanuki/sanuki-kanko/index.html": {
@@ -3174,7 +3174,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sanuki/sanuki-sa/index.html": {
-   "fingerprint": "sha256:f707e0f1aa9cfa1b5fa028a0ae9060e0f515ea815d1eb1d898817be82210f9f2",
+   "fingerprint": "sha256:b93e3f0f3d6cf29eac6e5628d1bbb38521300cb9b8a2be397fb8ca0d7db7f37b",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sanuki/sanukicity-sportspark-198/index.html": {
@@ -3182,7 +3182,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sanuki/sanukicity-sportspark-204/index.html": {
-   "fingerprint": "sha256:ffd4675387a8f4eda4ae6aeacbf40d7475ba41e79ad8ae2e7d7e292ad085e60f",
+   "fingerprint": "sha256:fa49789c895c9a2a68d35e4a39f800e4ec8b0589f8929dc2c1acb0d1b88a750e",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sanuki/sanukicity-sportspark/index.html": {
@@ -3206,7 +3206,7 @@
    "lastmod": "2026-09-19"
   },
   "zh-hant/spots/shodoshima/hoshoin/index.html": {
-   "fingerprint": "sha256:d1c195a131798526dc84edaec998082d88e00d2f7c3c4586f3a324619cce1f1b",
+   "fingerprint": "sha256:2bafbd068b9eafb1dcdcff958cbd0c3ef6a84845d9744cd40dc95f58c2ac1efd",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/shodoshima/kankakei/index.html": {
@@ -3222,7 +3222,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/shodoshima/olive-pk-239/index.html": {
-   "fingerprint": "sha256:570b31a89bd3f552f66ca18e8ca6fc5f64acb9cc346c9bdfe02a7f8b0aefbf4e",
+   "fingerprint": "sha256:21d2824bd7402448ea4e5de4259d646039326c15d2f99653d75e496a6b110bc9",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/shodoshima/olive-pk-357/index.html": {
@@ -3278,7 +3278,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/shodoshima/shodoshima/index.html": {
-   "fingerprint": "sha256:19a30c321f5640847e01661d6a4cc81c353e392cb10ef3697465d28ed60a2fc8",
+   "fingerprint": "sha256:576bad776a9bb25d7b4a1441a87b6f31eff4b1da401ea7bb0a8bd3ee8b6631b6",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/shodoshima/tonosho-shokokai/index.html": {
@@ -3294,7 +3294,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/shodoshima/town-314/index.html": {
-   "fingerprint": "sha256:64df85ee105134d534db5c4e338b76fbd457f8594c927504ca4657da31e44c9d",
+   "fingerprint": "sha256:faeb912672ec0389b03622dc8c567ce49ea7289f5f4d8e289c68e8ffa05f7da2",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/shodoshima/town-485/index.html": {
@@ -3306,7 +3306,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/88shikokuhenro-245/index.html": {
-   "fingerprint": "sha256:02dcfbc6c3703dc723eb755dadf5a9de2986776982829fe9fc2d39373450f02c",
+   "fingerprint": "sha256:7c7a00444d8cf2e5df2841f0f2923deb54cbfd3ca59dd396d93ff5d8036be6f7",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/88shikokuhenro/index.html": {
@@ -3334,15 +3334,15 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/city-505/index.html": {
-   "fingerprint": "sha256:fdd63c7e6dcffe36843b457eac414551c1cf08f0962aa245d4c65ed8036b350e",
+   "fingerprint": "sha256:8db4984d1ee7031a286797c4bb911dcc6a7afc5dd83ed775c6bde062e70a34b4",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/city-506/index.html": {
-   "fingerprint": "sha256:c436ce2d8150b4d7dbb3ffb525242b1826e04b821a904edaa3af5b1e43f6f8d4",
+   "fingerprint": "sha256:bbc36ce7829ed41e479d169910cb941f8d6eb4be0e4babd5246a2cbb14a13bd3",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/city-507/index.html": {
-   "fingerprint": "sha256:d7572f365eb79222985e08b50c313cf2579a5fca07ecc51250c558620ffe4b8b",
+   "fingerprint": "sha256:0e7d260312eb0eed576fdda497777ea44241bb8b78020a58e5583a550f3857ed",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/city/index.html": {
@@ -3350,7 +3350,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/takamatsu/genpei-mure/index.html": {
-   "fingerprint": "sha256:640c0696457db30aac42cd2679fe303958922ee18d469d079bab179b86c68c19",
+   "fingerprint": "sha256:dff67b886bc3a069aed20e8abc5c30a862e209ea8ed44bbe03aaad3df844a997",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/ha-art/index.html": {
@@ -3394,11 +3394,11 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/takamatsu/mineyama-park/index.html": {
-   "fingerprint": "sha256:73daa14bda45b06cdc038f2a1868cf3ea191ac9262c0a7792736049f6d97987d",
+   "fingerprint": "sha256:e47952df58fb57ecd60d73851a79a936c85f250f343fbd7def1ccf2f734cbf4f",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/mure-aji-park/index.html": {
-   "fingerprint": "sha256:ba8fe4b7ed8c3ca2b29255ddcf3b757a8d6eae902328e7cd10708fded26807dd",
+   "fingerprint": "sha256:5e3dd6f86a603004f28bdec0e1ac766f1e2c6e0b77bf67332e2d2e7129e5d575",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/nagarestudio/index.html": {
@@ -3418,7 +3418,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/p2636/index.html": {
-   "fingerprint": "sha256:f93f80445daee6028688ccee2482a062cc313f8c7a60a8dc782bd24cb6567803",
+   "fingerprint": "sha256:d6685887e250eb07bb9babf1ca3bab00968a41fa806cdf702359418695e33514",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/p281/index.html": {
@@ -3434,7 +3434,7 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/p3010/index.html": {
-   "fingerprint": "sha256:9bc3b6cf036669358d6fc7b9ab7f5b9aa7d9181365d896941c21d2dfa41dfe28",
+   "fingerprint": "sha256:da07194186f95f0baaf4ee944e64f3d2e7875731fcedc31c940c6be02ab685b0",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/p304/index.html": {
@@ -3474,7 +3474,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/takamatsu/sanuki-airport-park/index.html": {
-   "fingerprint": "sha256:399ebd6d313f096ac991cf31f70570f00b261b759b3c0a2cea0201b5f33fd3e5",
+   "fingerprint": "sha256:ec6f24edcb03c3fa71b373dd2215622c5daee64339ee554cadfa48c80518841c",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/sanuki-ichinomiyaji/index.html": {
@@ -3502,11 +3502,11 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/souyu-296/index.html": {
-   "fingerprint": "sha256:04dfda2c1c88cabebf693f80d1cadb42e56d94388a6883bdd5ddd4caf48d4fdc",
+   "fingerprint": "sha256:41dd2310c2bafb71bb3718300bc761b0972d4b00824ae5a06f5f6a223060cc07",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/souyu-353/index.html": {
-   "fingerprint": "sha256:a1cc0b05a135c9d401054fb4e182dc1cc6437ea0b29bb89f520b89710ec317e3",
+   "fingerprint": "sha256:dbe7d6573d54349d3765cdcad6f2b0290223f1b2cee6ba9e5275245ae7758a55",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/sunport-hall/index.html": {
@@ -3522,7 +3522,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/takamatsu/takamatsu/index.html": {
-   "fingerprint": "sha256:2ab1248a93c091db96f1439dcff45355d9ed49afd1ffa27d1d61475d8f5c79aa",
+   "fingerprint": "sha256:f30792f9a517f2a04c7f0d012e277038a8348ea989947f2b01867dc5b68188e6",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/takamatsujyo/index.html": {
@@ -3542,7 +3542,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/takamatsu/yashima-navi-4144/index.html": {
-   "fingerprint": "sha256:14a150cef5e4588dc95a50d1a9aa15616c6ab1ad2ab49b56f52bcdd35014d307",
+   "fingerprint": "sha256:1a9030eb13e3cfe2fc4c7cd6d06387e529de5ed581073b61b951f68d4f4e3e68",
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/yashima-navi/index.html": {
@@ -3558,7 +3558,7 @@
    "lastmod": "2026-09-27"
   },
   "zh-hant/spots/teshima/teshima-navi/index.html": {
-   "fingerprint": "sha256:70ba4bd99b475458a583d7a69f74622c7d2177243994825842152ff1d34d9b2a",
+   "fingerprint": "sha256:e2b4df625e8fc6a2af2e354ddbdfd2e3bd961c72b82427e1e6bf61a1faa53ec1",
    "lastmod": "2026-09-18"
   },
   "zh-hant/transport/index.html": {
