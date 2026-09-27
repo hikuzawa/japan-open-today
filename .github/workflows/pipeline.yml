@@ -234,6 +234,43 @@ jobs:
           # 検出できないため、production branch の main を明示して本番に配置する
           command: pages deploy japan-open-today/dist --project-name=japan-open-today --branch=main
 
+      # データのコミットは GITHUB_TOKEN で push するので checks が走らない。その晩の巡回・抽出で
+      # データに依るテストが落ちても、次に人が push するまで見えなかった（2026-09-27、金刀比羅宮の
+      # 読み直しで 2 件）。最後にテストを回し、落ちたら Issue で知らせる。コミットと配置は止めない
+      - name: テスト（その晩のデータで。落ちてもコミットと配置は止めない）
+        id: tests
+        if: inputs.mode != 'deploy-only'
+        working-directory: japan-open-today
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          uv run --frozen pytest -q -p no:cacheprovider 2>&1 | tee "$RUNNER_TEMP/pytest.txt"
+
+      - name: テストの失敗を Issue で通知
+        if: steps.tests.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        shell: bash
+        run: |
+          gh label create daily-tests-failure --color D93F0B --description "日次のデータでテストが落ちた" 2>/dev/null || true
+          failed="$(grep -E '^(FAILED|ERROR) ' "$RUNNER_TEMP/pytest.txt" | head -10 | sed 's/^/- /')"
+          [ -n "$failed" ] || failed="- （失敗したテスト名を取れなかった。実行ログを見る）"
+          msg="$(printf '%s に日次のデータでテストが落ちました（データのコミットと配置は実行済み）: %s\n\n%s' \
+            "$(date -u +%FT%TZ)" "$RUN_URL" "$failed")"
+          num=$(gh issue list --label daily-tests-failure --state open --json number --jq '.[0].number // empty')
+          if [ -n "$num" ]; then
+            gh issue comment "$num" --body "$msg"
+          else
+            gh issue create --title "日次のデータでテストが落ちました" --label daily-tests-failure \
+              --body "$msg
+
+          データの変化（読み直しで値が変わった等）がテストの前提を崩したことが多い。テストかデータを直し、
+          次の日次で通ったら閉じてください（落ち続ける限りこの Issue に追記されます）"
+          fi
+
       - name: 失敗時に Issue で通知
         if: failure() || steps.commit.outcome == 'failure'
         env:
