@@ -62,9 +62,24 @@ ISLANDS = frozenset({"naoshima", "teshima", "megijima", "shodoshima"})
 
 # 本土のエリアどうしの「となり」。同じエリアで開いている施設が足りないときだけ、ここから足す。
 # **根拠を言える組だけ**を、理由を 1 行添えて入れる（推測で組まない）。島は入れない。
-# 表は運営者の確認を経て確定する（案は ADR 0003 の 2026-09-27 の追記）。確定するまでは空で、
-# 本土も同じエリアの施設だけを出す
-NEIGHBOR_PAIRS: tuple[tuple[str, str, str], ...] = ()
+# 根拠はそろえて 1 つ: エリアに含まれる市町どうしの境界が陸で接している（各市町の Wikipedia 記事の
+# 基礎情報「隣接自治体」、2026-09-27 に読んだ版。ADR 0003 追記）。海を挟む隣接は入れない。
+# 運営者の確認を経て 2026-09-27 に確定。足す順番はエリアごとにこの表の順
+NEIGHBOR_PAIRS: tuple[tuple[str, str, str], ...] = (
+    ("takamatsu", "sakaide", "陸で接する: 高松市と坂出市、高松市と綾川町"),
+    ("takamatsu", "sanuki", "陸で接する: 高松市とさぬき市、高松市と三木町"),
+    ("takamatsu", "kotohira", "陸で接する: 高松市とまんのう町"),
+    ("sakaide", "marugame", "陸で接する: 坂出市と丸亀市、宇多津町と丸亀市、綾川町と丸亀市"),
+    ("sakaide", "kotohira", "陸で接する: 綾川町とまんのう町"),
+    (
+        "marugame",
+        "kotohira",
+        "陸で接する: 善通寺市と琴平町、善通寺市とまんのう町、丸亀市とまんのう町",
+    ),
+    ("marugame", "mitoyo", "陸で接する: 善通寺市と三豊市、多度津町と三豊市"),
+    ("kotohira", "mitoyo", "陸で接する: 琴平町と三豊市、まんのう町と三豊市"),
+    ("sanuki", "higashikagawa", "陸で接する: さぬき市と東かがわ市"),
+)
 
 
 def neighbors(slug: str) -> tuple[str, ...]:
