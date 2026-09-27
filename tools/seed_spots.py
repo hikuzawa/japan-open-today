@@ -321,11 +321,14 @@ def build_seed(client: PoliteClient, cand: dict[str, Any]) -> Seed:
         {
             "operator": seed.operator,
             "operator_kind": seed.operator_kind,
-            "operator_evidence": {"quote": quote},
+            "operator_evidence": {"quote": quote, "url": evidence_url},
+            "official_url": seed.official_url,
+            "pages": [{"url": seed.source_url}],
         }
     )
     if problems:
-        # 名前が断片、または施設の公式なのに引用が運営者を名乗っていない。書き込まずに
+        # 名前が断片、施設の公式なのに引用が運営者を名乗っていない、引用が自治体・協会の名乗りで
+        # ない、根拠が別のサイトにある、のどれか。書き込まずに
         # レビュー行列に回す（CI のテストも同じ関数で全件を見る。ADR 0009 追記 2026-09-26）
         seed.operator_kind = "unknown"
         seed.policy = "pending"

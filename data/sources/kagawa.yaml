@@ -899,12 +899,12 @@ sources:
   # 除外: kagawa-p2939 — 【紅葉スポット】屋島 は kagawa-yashima と同じ場所
   - id: kagawa-sunport-hall  # 観光協会のページを一次情報にした（ページに「サンポートホール高松（高松市文化芸術ホール）」が出てこない）
     name: "サンポートホール高松（高松市文化芸術ホール）"
-    operator: "公益財団法人高松市文化芸術財団"
+    operator: "公益社団法人香川県観光協会"
     operator_kind: tourism_association
     operator_evidence:
-      quote: "公益財団法人高松市文化芸術財団"
-      url: https://www.my-kagawa.jp/point/480
-      checked_on: 2026-09-12
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-27
     policy: crawl
     official_url: http://www.sunport-hall.jp/
     pages:
@@ -1438,12 +1438,12 @@ sources:
 
   - id: kagawa-ooedoonsen  # 観光協会のページを一次情報にした（ページに「天然温泉」が出てこない）
     name: "天然温泉"
-    operator: "株式会社レオマユニティー"
+    operator: "公益社団法人香川県観光協会"
     operator_kind: tourism_association
     operator_evidence:
-      quote: "株式会社レオマユニティー"
-      url: https://www.my-kagawa.jp/point/343
-      checked_on: 2026-09-12
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-27
     policy: crawl
     official_url: https://www.ooedoonsen.jp/reomanomori/
     pages:
@@ -1892,12 +1892,12 @@ sources:
       map_query: "香川県仲多度郡多度津町 家中舎"
   - id: kagawa-p3920  # 観光協会のページを一次情報にした（公式サイトを一次情報にできない）
     name: "リモベヤ"
-    operator: "株式会社藤井システムエンジニアリング"
+    operator: "公益社団法人香川県観光協会"
     operator_kind: tourism_association
     operator_evidence:
-      quote: "株式会社藤井システムエンジニアリング"
-      url: https://www.my-kagawa.jp/point/3920
-      checked_on: 2026-09-12
+      quote: "公益社団法人香川県観光協会"
+      url: https://www.my-kagawa.jp/organization
+      checked_on: 2026-09-27
     policy: crawl
     official_url: https://www.my-kagawa.jp/point/3920
     pages:
@@ -6011,12 +6011,13 @@ sources:
 
   - id: kagawa-city-183
     name: "大串自然公園"
-    operator: "株式会社さぬき市SA公社"
+    operator: "さぬき市"
     operator_kind: municipality
     operator_evidence:
-      quote: "株式会社さぬき市SA公社"
+      quote: "Copyright (c) 2026 Sanuki city. All Rights Reserved."
+      name_in_quote: "Sanuki city"
       url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5863.html
-      checked_on: 2026-09-13
+      checked_on: 2026-09-27
     policy: crawl
     official_url: https://www.city.sanuki.lg.jp/kanko-bunka-sports/kanko-leisure/kanko-spot/5863.html
     pages:
@@ -7156,10 +7157,9 @@ sources:
     operator: "金剛禅総本山少林寺"
     operator_kind: facility_official
     operator_evidence:
-      quote: "Copyright© SHORINJI KEMPO All rights reserved."
-      name_in_quote: "SHORINJI KEMPO"
-      url: https://kongozen.jp/
-      checked_on: 2026-09-17
+      quote: "金剛禅総本山少林寺 〒764-8511 香川県仲多度郡多度津町本通3-1-48"
+      url: https://www.shorinjikempo.or.jp/religious/
+      checked_on: 2026-09-27
     policy: crawl
     official_url: https://www.shorinjikempo.or.jp/religious/
     pages:

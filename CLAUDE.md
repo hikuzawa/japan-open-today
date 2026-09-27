@@ -59,7 +59,9 @@ sitemill の 2 つ目の利用者。香川県の観光施設と交通につい�
 - 運営主体の根拠（引用と URL、確認日）を必ず `sources/*.yaml` に残す（ADR 0009）。
   **運営者の欄は名前**（引用の断片を入れない）、**施設の公式は引用が運営者を名乗っていること**。
   英字の名乗りは `operator_evidence.name_in_quote`、法人名がサイトに無ければ `operator_note` に理由。
-  `operators.operator_problems` が取り込み（seed_spots）と CI のテストで全件を見る（ADR 0009 追記 2026-09-26）
+  自治体・県・観光協会も、引用が自らの名乗りで、根拠がその情報源のサイトにあること。満たせない理由が
+  あるときだけ `operator_check_exceptions: {規則名: 理由}`（理由の無い例外は通らない）。
+  `operators.operator_problems` が取り込み（seed_spots）と CI のテストで全件を見る（ADR 0009 追記 2026-09-26・27）
 - お知らせ・運休告知のページは変化率に関わらず**毎日**取りに行く。営業時間・料金は変化率に従う（ADR 0007）
 - robots.txt を守り、ホストごとに間隔を空ける。取得した生 HTML はコミットしない
 
