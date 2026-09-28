@@ -16,7 +16,7 @@ sitemill の 2 つ目の利用者。香川県の観光施設と交通につい�
 - `templates/` Jinja2、`static/` CSS/JS、`dist/` 生成物（git 管理外）
 - `site.toml` サイト設定。基準 URL はここ 1 か所だけで差し替える
 - `.github/workflows/` 日次パイプライン（pipeline.yml, 05:00 JST）、週次まとめ（weekly.yml）、push ごとの検査（checks.yml）。
-  sitemill はタグ固定（現在 `v0.7.9`）。上げるときは 3 本の `ref:` を揃える
+  sitemill はタグ固定（現在 `v0.7.11`）。上げるときは 3 本の `ref:` を揃える
   日次は最後にその晩のデータでテストを回し、落ちたら `daily-tests-failure` の Issue で知らせる
   （データのコミットは checks を起動しないため。コミットと配置は止めない）
   配置の前に `sitemill guard` が本番の「不明」の割合を前回公開した値と比べ、+10pt を超えて増えたか

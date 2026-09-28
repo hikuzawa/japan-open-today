@@ -12,7 +12,7 @@ from datetime import date, datetime, timedelta
 
 from sitemill.clock import to_jst
 from sitemill.jpcal import HolidayCalendar
-from sitemill.models.schedule import Evidence
+from sitemill.models.schedule import Evidence, TimeRange
 from sitemill.openstatus import DayVerdict, resolve_day
 from sitemill.openstatus.models import DayState, Reason, ReasonCode
 from sitemill.openstatus.resolve import is_stale
@@ -94,7 +94,7 @@ def spot_verdict(
         return DayVerdict(
             day=day, state=DayState.unknown, reasons=[Reason(code=ReasonCode.rule_unsupported)]
         )
-    return resolve_day(
+    verdict = resolve_day(
         day,
         hours=spot.hours,
         closures=spot.closures,
@@ -104,6 +104,22 @@ def spot_verdict(
         now=now,
         stale_after_days=stale_after_days,
     )
+    if times_ambiguous(verdict.periods):
+        # 開いていることは分かるが、どの時間帯がその日のものかは原文の条件が読めず決まらない。
+        # 判定は残し、時刻は出さない（事実の欄に原文が出る）
+        return verdict.model_copy(update={"periods": []})
+    return verdict
+
+
+def times_ambiguous(periods: list[TimeRange]) -> bool:
+    """その日に当てはまる時間帯が重なり合っているか（条件の読めない別々の時間の並び）。
+
+    栗林公園は月ごとの表が季節を持たずに読まれ、「9月28日は開いています 07:00–17:00 / 07:00–17:30 /
+    06:30–18:00 / …」と 12 個並んでいた（2026-09-28）。昼休みで分かれる時間（10:00–12:00 と
+    13:00–17:00）は重ならないので、これまでどおり時刻を出す。同じ時間帯の重複は 1 つとみなす。
+    """
+    spans = sorted({(r.start, r.end) for r in periods})
+    return any(later[0] < earlier[1] for earlier, later in zip(spans, spans[1:], strict=False))
 
 
 def spot_week(

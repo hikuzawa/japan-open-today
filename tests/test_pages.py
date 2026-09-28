@@ -6,13 +6,13 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 import pytest
-from sitemill.openstatus import DayState, ReasonCode
+from sitemill.openstatus import DayState, ReasonCode, resolve_day
 from sitemill.settings import Workspace
 
 from japan_open_today import pages as page_builder
 from japan_open_today.areas import ISLANDS, neighbors
 from japan_open_today.data import Dataset
-from japan_open_today.verdict import page_stale, spot_verdict, spot_week
+from japan_open_today.verdict import page_stale, spot_verdict, spot_week, times_ambiguous
 
 ROOT = Path(__file__).resolve().parents[1]
 NOW = datetime(2026, 9, 12, 21, 10, tzinfo=UTC)  # JST では 9/13 06:10
@@ -81,12 +81,21 @@ def test_unknown_verdicts_always_carry_a_reason(ws: Workspace) -> None:
 
 
 def test_open_verdicts_have_hours_or_an_always_open_statement(ws: Workspace) -> None:
-    """「開いている」と言うなら時間帯か「時間の指定なし」の根拠がある（推測で開けない）。"""
+    """「開いている」と言うなら時間帯か「時間の指定なし」の根拠がある（推測で開けない）。
+
+    時間帯が重なり合って条件が読めない施設は、判定を残して時刻を外す（2026-09-28）。そのときも
+    開館時間の規則そのものは持っている（受け皿であって、推測で開けたのではない）。
+    """
     ds = Dataset.load(ws)
+    today = page_builder.jst_today(NOW)
     for spot in ds.spots:
-        verdict = spot_verdict(spot, page_builder.jst_today(NOW))
-        if verdict.state is DayState.open:
-            assert verdict.periods or verdict.has(ReasonCode.always_open), spot.spot_id
+        verdict = spot_verdict(spot, today)
+        if verdict.state is not DayState.open:
+            continue
+        if verdict.periods or verdict.has(ReasonCode.always_open):
+            continue
+        raw = resolve_day(today, hours=spot.hours, closures=spot.closures, notices=spot.notices)
+        assert spot.hours and times_ambiguous(raw.periods), spot.spot_id
 
 
 def test_search_index_is_split_per_locale(ws: Workspace) -> None:
@@ -283,14 +292,27 @@ def test_hours_that_cannot_be_broken_down_show_only_the_original(built: list) ->
 
     金刀比羅宮は外した。観光協会の原文（参拝時間と表書院・宝物館の時間が 1 文に混ざる）から、
     9/25 に公式サイトの「大門（境内の入口）《開》午前6時《閉》午後6時」を読むようになり、
-    1 行に分解できる。
+    1 行に分解できる。栗林公園も外した（月ごとの表を季節として読むようになった。2026-09-28）。
+    玉藻公園は「4、5月」「6~8月」と西門・東門が混ざる表で、季節に分けられない。
     """
-    for spot in ("takamatsu/ritsurin",):
+    for spot in ("takamatsu/takamatsujyo",):
         pages = [p for p in built if p.meta.path.endswith(f"spots/{spot}/index.html")]
         assert pages, spot
         for page in pages:
             assert page.context["hours"]["lines"] == [], page.meta.path
             assert page.context["hours"]["quotes"], page.meta.path
+
+
+def test_a_month_by_month_table_shows_only_that_month(built: list) -> None:
+    """栗林公園は月ごとの表。その日の月の時間だけを出し、事実の欄は月ごとの行にする（2026-09-28）。"""
+    page = next(p for p in built if p.meta.path == "spots/takamatsu/ritsurin/index.html")
+    periods = [
+        (r.start.strftime("%H:%M"), r.end.strftime("%H:%M"))
+        for r in page.context["verdict"].periods
+    ]
+    assert periods == [("05:30", "18:30")]  # NOW は 9 月
+    lines = page.context["hours"]["lines"]
+    assert len(lines) == 12 and lines[0]["condition"].startswith("1月")
 
 
 def test_an_nth_week_rule_is_not_flattened_into_every_week(ws: Workspace) -> None:
