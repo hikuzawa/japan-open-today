@@ -213,7 +213,19 @@ jobs:
           git add data/state/publish_guard.json
           git diff --cached --quiet && exit 0
           git commit -m "data: 公開前の歯止めの基準 $(date -u +%Y-%m-%dT%H:%MZ)"
-          git pull --rebase origin main && git push origin HEAD:main
+          # ビルドが書いた lastmod や実行記録で作業ツリーは汚れている（deploy-only ではコミットしない）。
+          # 素の pull --rebase はそこで止まった（2026-09-28）。先に push し、断られたときだけ
+          # 汚れを退避して取り込み直す
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git fetch origin main
+            if ! git rebase --autostash origin/main; then
+              git rebase --abort || true
+              echo "::error::歯止めの基準を push できなかった（origin/main と競合）"
+              exit 1
+            fi
+          done
+          exit 1
 
       - name: Cloudflare の Secrets を確認
         id: cf
