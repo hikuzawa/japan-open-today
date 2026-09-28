@@ -299,9 +299,9 @@ sources:
     operator: 株式会社ベネッセコーポレーション・公益財団法人福武財団
     operator_kind: facility_official
     operator_evidence:
-      quote: "「ベネッセアートサイト直島」は、直島・犬島（香川県）、豊島（岡山県）を舞台に株式会社ベネッセコーポレーションと公益財団法人 福武財団が展開しているアート活動の総体です。"
+      quote: "「ベネッセアートサイト直島」は、直島・豊島（香川県）、犬島（岡山県）を舞台に株式会社ベネッセコーポレーションと公益財団法人 福武財団が展開しているアート活動の総称です。"
       url: https://benesse-artsite.jp/about/
-      checked_on: 2026-09-12
+      checked_on: 2026-09-28
     policy: crawl
     official_url: https://benesse-artsite.jp/
     covers: [chichu, benesse-house, teshima-art]

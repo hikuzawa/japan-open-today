@@ -64,7 +64,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: hikuzawa/sitemill # public。既定の github.token で checkout できる
-          ref: v0.7.11 # タグ固定。sitemill の main の変更は自動では入らない
+          ref: v0.7.12 # タグ固定。sitemill の main の変更は自動では入らない
           path: sitemill
 
       - name: Install uv
@@ -156,6 +156,15 @@ jobs:
         if: inputs.mode != 'deploy-only'
         working-directory: japan-open-today
         run: uv run sitemill eval
+
+      # 運営主体の根拠の確かめ直し（sitemill ADR 0027）。確認日の古い順に 1 晩 4 件、根拠の引用が
+      # いまもページに出ているかを見る。成り立たないものは週次に出る（1 周目は選び直さない）。
+      # 通信できないもの・robots.txt で取れないものは失敗に数えず 7 日後に見直す。失敗しても止めない
+      - name: 運営主体の根拠を確かめ直す
+        if: inputs.mode != 'deploy-only'
+        working-directory: japan-open-today
+        continue-on-error: true
+        run: uv run sitemill recheck
 
       # 公開前の歯止め（sitemill ADR 0026）。本番で「不明」と出る割合が前回公開した値から急に増えたら、
       # 配置を止めて前日の本番を残す（9/27〜28 に鮮度の誤りで「不明 152」を 2 日間公開した）。

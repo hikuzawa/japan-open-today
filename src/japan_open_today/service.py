@@ -4,17 +4,21 @@ from __future__ import annotations
 
 import logging
 from collections.abc import Sequence
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 from typing import Any
 
+from selectolax.parser import HTMLParser
 from sitemill.assets import Asset, AssetStore
 from sitemill.build.guard import GuardLimit, GuardMetric
 from sitemill.clock import jst_today
+from sitemill.diff.normalize import squash
 from sitemill.extract import ExtractedItem, ExtractionSpec
+from sitemill.fetch.client import PoliteClient
 from sitemill.jpcal import HolidayCalendar
 from sitemill.models import OperatorKind, Page, Provenance, Redirect, Source
 from sitemill.openstatus import DayState
+from sitemill.recheck import RecheckTarget, unreachable
 from sitemill.settings import Workspace
 from sitemill.store.records import RecordStore
 
@@ -29,6 +33,13 @@ from japan_open_today.ingest import ingest_items, merge_record
 from japan_open_today.spec import spec_for_kind
 
 log = logging.getLogger(__name__)
+
+
+def _iso_date(value: object) -> date | None:
+    try:
+        return date.fromisoformat(str(value)) if value else None
+    except ValueError:
+        return None
 
 
 def _spot_texts(spot: Any) -> list[str]:
@@ -101,6 +112,48 @@ class JapanOpenTodayService:
             ):
                 unknown += 1
         return {"unknown": GuardMetric(unknown, len(ds.spots))}
+
+    # 運営主体の根拠の確かめ直し（sitemill ADR 0027、2026-09-28）。286 件を約 90 日で 1 周する
+    # （286 ÷ 90 ≒ 3.2 の切り上げ）。1 周目は選び直しを持たず、成り立たないものを週次に出すだけ
+    recheck_per_night = 4
+
+    def recheck_targets(self, ws: Workspace) -> list[RecheckTarget]:
+        """巡回している情報源のうち、運営主体の根拠（引用と URL）を持つもの。"""
+        out: list[RecheckTarget] = []
+        for entry in load_entries(ws):
+            evidence = entry.get("operator_evidence") or {}
+            if entry.get("policy") != "crawl" or not evidence.get("url"):
+                continue
+            checked = evidence.get("checked_on")
+            day = checked if isinstance(checked, date) else _iso_date(checked)
+            out.append(RecheckTarget(entry["id"], f"{entry['name']}（{entry['id']}）", day))
+        return out
+
+    def recheck_one(
+        self, ws: Workspace, target: RecheckTarget, client: PoliteClient
+    ) -> tuple[str, str]:
+        """根拠のページを開き、根拠の引用がいまもページに出ているかを見る（LLM は使わない）。"""
+        entry = next((e for e in load_entries(ws) if e["id"] == target.key), None)
+        if entry is None:
+            return "skip", "情報源が無くなった"
+        evidence = entry.get("operator_evidence") or {}
+        url, quote = str(evidence.get("url") or ""), str(evidence.get("quote") or "")
+        res = client.get(url)
+        if res.blocked:
+            return "skip", "robots.txt で根拠のページを取得できない"
+        if unreachable(res):
+            why = res.error or f"HTTP {res.status}"
+            return (
+                "unreachable",
+                f"根拠のページに通信できない（{why}）",
+            )
+        if not res.ok:
+            return "fail", f"根拠のページを開けない（HTTP {res.status}）"
+        body = HTMLParser(res.text).body
+        text = body.text(separator=" ") if body is not None else ""
+        if squash(quote) not in squash(text):
+            return "fail", f"根拠の引用がページに無い: {quote[:40]}"
+        return "ok", ""
 
     def sources(self, ws: Workspace) -> list[Source]:
         return load_sources(ws)
