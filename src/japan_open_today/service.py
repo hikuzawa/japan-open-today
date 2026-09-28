@@ -9,8 +9,12 @@ from pathlib import Path
 from typing import Any
 
 from sitemill.assets import Asset, AssetStore
+from sitemill.build.guard import GuardLimit, GuardMetric
+from sitemill.clock import jst_today
 from sitemill.extract import ExtractedItem, ExtractionSpec
+from sitemill.jpcal import HolidayCalendar
 from sitemill.models import OperatorKind, Page, Provenance, Redirect, Source
+from sitemill.openstatus import DayState
 from sitemill.settings import Workspace
 from sitemill.store.records import RecordStore
 
@@ -62,6 +66,41 @@ class JapanOpenTodayService:
         OperatorKind.facility_official,
         OperatorKind.transport_operator,
     )
+
+    # 公開前の歯止め（sitemill ADR 0026、2026-09-28）。本番の「不明」の割合が急に増えたら
+    # 配置を止め、前日の本番を残す。台風で一斉に休館しても増えるのは「休み」で「不明」ではない
+    # ので、不明の割合で見れば正当な変化と区別できる。しきい値の根拠は 9/17〜9/28 の日次の内訳
+    # （ADR 0004 の 9/28 追記）
+    publish_limits = {
+        "unknown": GuardLimit(
+            reason=(
+                "平常の日の不明は 6〜12%、1 日の増加は最大でも約 +3pt（9/17〜26）。"
+                "鮮度の誤りの日は 1 日で +25pt（9/27）、翌日は 54%（9/28）"
+            ),
+            max_rise=0.10,  # 平常の最大の増加の約 3 倍。9/27 の障害は初日に止まる
+            max_share=0.25,  # 平常の上限（約 12%）の約 2 倍。少しずつ増える場合の歯止め
+        ),
+    }
+
+    def publish_metrics(self, ws: Workspace, *, now: datetime) -> dict[str, GuardMetric]:
+        """その日の判定のうち、本番で「不明」と出る施設の数（時間の定めが無い屋外の場所は除く）。"""
+        from japan_open_today.pages import no_hours_stated
+        from japan_open_today.verdict import spot_verdict
+
+        ds = Dataset.load(ws)
+        today = jst_today(now)
+        holidays = HolidayCalendar.load(ws.data_dir / "reference" / "syukujitsu.csv")
+        stale_after = ws.site.crawl.stale_after_days
+        unknown = 0
+        for spot in ds.spots:
+            verdict = spot_verdict(
+                spot, today, holidays=holidays, now=now, stale_after_days=stale_after
+            )
+            if verdict.state is DayState.unknown and not no_hours_stated(
+                spot, now=now, stale_after_days=stale_after
+            ):
+                unknown += 1
+        return {"unknown": GuardMetric(unknown, len(ds.spots))}
 
     def sources(self, ws: Workspace) -> list[Source]:
         return load_sources(ws)

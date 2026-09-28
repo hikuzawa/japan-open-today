@@ -224,17 +224,20 @@ def build_pages(ws: Workspace, ds: Dataset, *, now: datetime) -> list[Page]:
     words = _wording(ws)
 
     verdicts = {
-        s.spot_id: spot_verdict(s, today, holidays=holidays, stale_after_days=stale_after)
+        # 鮮度はビルドの時刻で測る（実際の今の時刻ではなく。公開前の歯止めと同じ数え方にする）
+        s.spot_id: spot_verdict(s, today, holidays=holidays, now=now, stale_after_days=stale_after)
         for s in ds.spots
     }
     weeks = {
         s.spot_id: spot_week(
-            s, today, days=WEEK_DAYS, holidays=holidays, stale_after_days=stale_after
+            s, today, days=WEEK_DAYS, holidays=holidays, now=now, stale_after_days=stale_after
         )
         for s in ds.spots
     }
     route_states = {
-        r.route_id: route_verdict(r, today, holidays=holidays, stale_after_days=stale_after)
+        r.route_id: route_verdict(
+            r, today, holidays=holidays, now=now, stale_after_days=stale_after
+        )
         for r in ds.routes
     }
     counts = _summary(ds.spots, verdicts, now=now, stale_after_days=stale_after)
@@ -736,7 +739,9 @@ def search_index(ws: Workspace, ds: Dataset, *, now: datetime | None = None) -> 
     for locale in _locales(ws):
         rows = []
         for spot in ds.spots:
-            verdict = spot_verdict(spot, today, holidays=holidays, stale_after_days=stale_after)
+            verdict = spot_verdict(
+                spot, today, holidays=holidays, now=now, stale_after_days=stale_after
+            )
             rows.append(
                 {
                     "id": spot.spot_id,

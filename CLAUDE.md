@@ -16,9 +16,12 @@ sitemill の 2 つ目の利用者。香川県の観光施設と交通につい�
 - `templates/` Jinja2、`static/` CSS/JS、`dist/` 生成物（git 管理外）
 - `site.toml` サイト設定。基準 URL はここ 1 か所だけで差し替える
 - `.github/workflows/` 日次パイプライン（pipeline.yml, 05:00 JST）、週次まとめ（weekly.yml）、push ごとの検査（checks.yml）。
-  sitemill はタグ固定（現在 `v0.7.8`）。上げるときは 3 本の `ref:` を揃える
+  sitemill はタグ固定（現在 `v0.7.9`）。上げるときは 3 本の `ref:` を揃える
   日次は最後にその晩のデータでテストを回し、落ちたら `daily-tests-failure` の Issue で知らせる
   （データのコミットは checks を起動しないため。コミットと配置は止めない）
+  配置の前に `sitemill guard` が本番の「不明」の割合を前回公開した値と比べ、+10pt を超えて増えたか
+  25% を超えたら配置だけを止めて `publish-guard` の Issue で知らせる（sitemill ADR 0026）。正当な変化なら
+  pipeline を手動実行し `accept_guard` を付ける
 - `tools/contact_form/` 連絡先フォーム（Google フォーム + Apps Script + AI 自動返信、3 言語）。
   akiya-atlas とは**別のインスタンス**にする（種別も返信文も別。Issue の宛先も違う）
 - `docs/adr/` 設計判断、`docs/human-tasks.md` 人間側で必要な作業
