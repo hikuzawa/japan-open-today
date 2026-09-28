@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 from dataclasses import dataclass, field
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -162,6 +163,59 @@ def _page_fetched_at(ws: Workspace, entries: list[dict[str, Any]]) -> dict[str, 
     return out
 
 
+def _crawl_fetched(ws: Workspace) -> dict[str, datetime]:
+    """URL ごとの「最後に読めた日時」。
+
+    巡回の状態の `fetched_at` は、200 でも 304（変わっていない）でも進み、失敗では進まない。
+    """
+    try:
+        urls = json.loads((ws.state_dir / "crawl.json").read_text(encoding="utf-8")).get("urls")
+    except (OSError, ValueError):
+        return {}
+    out: dict[str, datetime] = {}
+    for url, st in (urls or {}).items():
+        stamp = _parse((st or {}).get("fetched_at"))
+        if stamp is not None:
+            out[url] = stamp
+    return out
+
+
+def _parse(value: Any) -> datetime | None:
+    if not value:
+        return None
+    try:
+        stamp = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return stamp if stamp.tzinfo else stamp.replace(tzinfo=UTC)
+
+
+def _refreshed(stamp: Any, urls: set[str], fetched: dict[str, datetime]) -> Any:
+    """事実の鮮度を、その出どころのページを最後に読めた日時まで進める（2026-09-28）。
+
+    事実の `*_fetched_at` は**抽出した時刻**で、ページを読み直しても中身が変わっていなければ
+    抽出し直さないので進まない。そのため最初の抽出（9/12〜14）から 14 日たった 9/26 ごろから、
+    毎日読めている施設まで「公式ページの取得が 14 日以上できていない」に落ちていた（9/28 の月曜に
+    不明 152 件）。変わっていないページを読めたなら、そこから取った事実はその時点でも正しい。
+
+    出どころのページを**すべて**読めているときだけ進め、いちばん古く読めた日時を採る。1 枚でも
+    読めた記録が無ければ（取得の失敗・URL の食い違い）、抽出した時刻のまま据え置く。
+    """
+    if not urls or any(u not in fetched for u in urls):
+        return stamp
+    read = min(fetched[u] for u in urls)
+    current = _parse(stamp)
+    return read.isoformat() if current is None or read > current else stamp
+
+
+def _evidence_urls(items: Any) -> set[str]:
+    return {
+        str((item.get("evidence") or {}).get("source_url"))
+        for item in items or []
+        if isinstance(item, dict) and (item.get("evidence") or {}).get("source_url")
+    }
+
+
 def records_path(ws: Workspace, source_id: str) -> Path:
     return ws.records_dir / f"{source_id}.jsonl"
 
@@ -197,11 +251,17 @@ class Dataset:
         operators: list[TransportOperator] = []
         routes: list[Route] = []
         read_at = _page_fetched_at(ws, entries)
+        fetched = _crawl_fetched(ws)
         # 共有ページ（covers を持つ情報源）の告知。施設を持つ情報源とは別のファイルに入る
         shared_notices: dict[str, list[dict[str, Any]]] = {}
+        # 共有ページのうち告知を読む URL（施設ごと）。告知の鮮度はこのページを読めた日時でも測る
+        shared_pages: dict[str, set[str]] = {}
         for entry in entries:
             if not entry.get("covers"):
                 continue
+            pages = {p["url"] for p in entry.get("pages") or [] if p.get("kind") == "shared_notice"}
+            for covered in entry["covers"]:
+                shared_pages.setdefault(covered, set()).update(pages)
             for record in load_records(ws, entry["id"]):
                 spot_id = record.get("spot_id")
                 if spot_id:
@@ -215,6 +275,22 @@ class Dataset:
                 record = stored.get(spot.spot_id)
                 payload = {**spot.model_dump(), **record} if record else spot.model_dump()
                 payload["page_fetched_at"] = read_at.get(entry["id"])
+                # 鮮度は抽出した時刻ではなく、出どころのページを最後に読めた時刻（_refreshed）
+                payload["hours_fetched_at"] = _refreshed(
+                    payload.get("hours_fetched_at"),
+                    _evidence_urls(payload.get("hours")) | _evidence_urls(payload.get("closures")),
+                    fetched,
+                )
+                notice_pages = {
+                    p["url"] for p in entry.get("pages") or [] if p.get("kind") == "notice"
+                }
+                payload["notices_fetched_at"] = _refreshed(
+                    payload.get("notices_fetched_at"),
+                    notice_pages
+                    or _evidence_urls(payload.get("notices"))
+                    or shared_pages.get(spot.spot_id, set()),
+                    fetched,
+                )
                 _fill_names(payload, glossary)
                 extra = shared_notices.get(spot.spot_id) or []
                 if extra:
