@@ -14,6 +14,8 @@ from typing import Any
 
 import yaml
 from pydantic import ValidationError
+from sitemill.diff.freshness import read_at
+from sitemill.diff.state import CrawlState
 from sitemill.models import Source
 from sitemill.settings import Workspace
 from sitemill.store.records import RecordStore
@@ -163,21 +165,12 @@ def _page_fetched_at(ws: Workspace, entries: list[dict[str, Any]]) -> dict[str, 
     return out
 
 
-def _crawl_fetched(ws: Workspace) -> dict[str, datetime]:
-    """URL ごとの「最後に読めた日時」。
-
-    巡回の状態の `fetched_at` は、200 でも 304（変わっていない）でも進み、失敗では進まない。
-    """
+def _crawl_state(ws: Workspace) -> CrawlState:
+    """巡回の状態。読めなければ空（鮮度はどれも抽出した時刻のまま据え置かれる）。"""
     try:
-        urls = json.loads((ws.state_dir / "crawl.json").read_text(encoding="utf-8")).get("urls")
+        return CrawlState.load(ws.state_dir / "crawl.json")
     except (OSError, ValueError):
-        return {}
-    out: dict[str, datetime] = {}
-    for url, st in (urls or {}).items():
-        stamp = _parse((st or {}).get("fetched_at"))
-        if stamp is not None:
-            out[url] = stamp
-    return out
+        return CrawlState()
 
 
 def _parse(value: Any) -> datetime | None:
@@ -190,7 +183,7 @@ def _parse(value: Any) -> datetime | None:
     return stamp if stamp.tzinfo else stamp.replace(tzinfo=UTC)
 
 
-def _refreshed(stamp: Any, urls: set[str], fetched: dict[str, datetime]) -> Any:
+def _refreshed(stamp: Any, urls: set[str], state: CrawlState) -> Any:
     """事実の鮮度を、その出どころのページを最後に読めた日時まで進める（2026-09-28）。
 
     事実の `*_fetched_at` は**抽出した時刻**で、ページを読み直しても中身が変わっていなければ
@@ -200,10 +193,13 @@ def _refreshed(stamp: Any, urls: set[str], fetched: dict[str, datetime]) -> Any:
 
     出どころのページを**すべて**読めているときだけ進め、いちばん古く読めた日時を採る。1 枚でも
     読めた記録が無ければ（取得の失敗・URL の食い違い）、抽出した時刻のまま据え置く。
+    「読めた」の判定は sitemill の `read_at`（提案 L、sitemill ADR 0028）。失敗が無く、
+    抽出したときから中身が変わっていないページだけを数える。中身が変わったのに抽出が失敗した晩に、古い事実を新しく
+    扱わない（2026-09-29 に切り替え。それまでは読めた時刻だけを見ていた）
     """
-    if not urls or any(u not in fetched for u in urls):
+    read = read_at(state, urls)
+    if read is None:
         return stamp
-    read = min(fetched[u] for u in urls)
     current = _parse(stamp)
     return read.isoformat() if current is None or read > current else stamp
 
@@ -251,7 +247,7 @@ class Dataset:
         operators: list[TransportOperator] = []
         routes: list[Route] = []
         read_at = _page_fetched_at(ws, entries)
-        fetched = _crawl_fetched(ws)
+        fetched = _crawl_state(ws)
         # 共有ページ（covers を持つ情報源）の告知。施設を持つ情報源とは別のファイルに入る
         shared_notices: dict[str, list[dict[str, Any]]] = {}
         # 共有ページのうち告知を読む URL（施設ごと）。告知の鮮度はこのページを読めた日時でも測る
