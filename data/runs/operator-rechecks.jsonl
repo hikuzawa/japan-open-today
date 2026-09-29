@@ -2,3 +2,7 @@
 {"at": "2026-09-29T09:39:41+09:00", "result": "ok", "key": "kagawa-benesse-house", "label": "ベネッセハウス ミュージアム（kagawa-benesse-house）"}
 {"at": "2026-09-29T09:39:41+09:00", "result": "ok", "key": "kagawa-chichibugahama", "label": "父母ヶ浜（kagawa-chichibugahama）"}
 {"at": "2026-09-29T09:39:41+09:00", "result": "ok", "key": "kagawa-chichu", "label": "地中美術館（kagawa-chichu）"}
+{"at": "2026-09-30T08:48:12+09:00", "result": "ok", "key": "kagawa-goldtower", "label": "ゴールドタワー（kagawa-goldtower）"}
+{"at": "2026-09-30T08:48:12+09:00", "result": "ok", "key": "kagawa-hiragagennai", "label": "平賀源内旧邸（kagawa-hiragagennai）"}
+{"at": "2026-09-30T08:48:12+09:00", "result": "ok", "key": "kagawa-jb-honshi", "label": "瀬戸大橋（kagawa-jb-honshi）"}
+{"at": "2026-09-30T08:48:12+09:00", "result": "skip", "key": "kagawa-jumbo-ferry", "label": "ジャンボフェリー（kagawa-jumbo-ferry）", "reason": "robots.txt で根拠のページを取得できない"}

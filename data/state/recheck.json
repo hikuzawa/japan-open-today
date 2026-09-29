@@ -10,5 +10,19 @@
  },
  "kagawa-chichu": {
   "checked_on": "2026-09-29"
+ },
+ "kagawa-goldtower": {
+  "checked_on": "2026-09-30"
+ },
+ "kagawa-hiragagennai": {
+  "checked_on": "2026-09-30"
+ },
+ "kagawa-jb-honshi": {
+  "checked_on": "2026-09-30"
+ },
+ "kagawa-jumbo-ferry": {
+  "last_tried": "2026-09-30",
+  "waiting_reason": "robots.txt で根拠のページを取得できない",
+  "waiting_since": "2026-09-30"
  }
 }

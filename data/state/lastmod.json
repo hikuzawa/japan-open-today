@@ -310,8 +310,8 @@
    "lastmod": "2026-09-29"
   },
   "en/spots/marugame/city-339/index.html": {
-   "fingerprint": "sha256:41d3708f4af8ed9137ce64e717260866bda9244afb708779e43fcb0648e6f660",
-   "lastmod": "2026-09-29"
+   "fingerprint": "sha256:b2b0ae293263305047552b71b2a5934c524731a31c8f6193ccacb82774e5b3b4",
+   "lastmod": "2026-09-30"
   },
   "en/spots/marugame/city-3696/index.html": {
    "fingerprint": "sha256:b4aec77835819d1d611e88983cdd820a7c426472008aa7785cb3315f8e36e78a",
@@ -618,8 +618,8 @@
    "lastmod": "2026-09-29"
   },
   "en/spots/naoshima/benesse-house/index.html": {
-   "fingerprint": "sha256:024a00ace4ca8b17a2b72784af8f30f953d438bdec68b1641546062bfbe2a0bd",
-   "lastmod": "2026-09-29"
+   "fingerprint": "sha256:ec7ef72adba67cbcb6649711d7dc756cc8df9f4f945c2e6b6c3d1a9bde85a299",
+   "lastmod": "2026-09-30"
   },
   "en/spots/naoshima/chichu/index.html": {
    "fingerprint": "sha256:f26a044c99d7dc8c1d9986c11bef5d02bdc47dcf75e0abcf18bfceb4e150042b",
@@ -878,8 +878,8 @@
    "lastmod": "2026-09-29"
   },
   "en/spots/shodoshima/24hitomi/index.html": {
-   "fingerprint": "sha256:1c64ae4e91af65a9a43523b7e94c0d05b4b0274944cd65b45aa5c211af797d32",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:c27dc16af89f9771e7ea3d6b586ae939f35754a3a967a3c6cceb13356340f10e",
+   "lastmod": "2026-09-30"
   },
   "en/spots/shodoshima/hoshoin/index.html": {
    "fingerprint": "sha256:f3f69f0f485e06ce092a5ce40a4653fe011a719080a9bf5cfbe0d0aedac2bb1c",
@@ -1066,8 +1066,8 @@
    "lastmod": "2026-09-29"
   },
   "en/spots/takamatsu/michi-no-eki/index.html": {
-   "fingerprint": "sha256:79d45e46286d37594a64638c12c382cae72ec28d99fa93e60c62202e2800a2c4",
-   "lastmod": "2026-09-29"
+   "fingerprint": "sha256:ca4df2a7d83f833dbfed183475e996083bae1dbac248592d751a0147a3776dc6",
+   "lastmod": "2026-09-30"
   },
   "en/spots/takamatsu/mineyama-park/index.html": {
    "fingerprint": "sha256:f8e636ac5253c9191d4c57121b3d1372d2a7b99084ed61d227b95eb7b0a01f12",
@@ -1446,8 +1446,8 @@
    "lastmod": "2026-09-29"
   },
   "spots/marugame/city-339/index.html": {
-   "fingerprint": "sha256:9a920cbca1ca7f3ade204f61880201bac4bc638b07dc28e06fc4e4f8c658f779",
-   "lastmod": "2026-09-29"
+   "fingerprint": "sha256:8cd4a9ca621eb102b7cdc8946a18c44d035f9c7c9ee0c41ca6080b1bde645f5a",
+   "lastmod": "2026-09-30"
   },
   "spots/marugame/city-3696/index.html": {
    "fingerprint": "sha256:ffd4e94f0093e2ac73b88f383719ed081154f3729a6c084dbe5e59eb364ce9c3",
@@ -1754,8 +1754,8 @@
    "lastmod": "2026-09-29"
   },
   "spots/naoshima/benesse-house/index.html": {
-   "fingerprint": "sha256:8a640f0b8c8b8aa58537a0e67107d2fd9b14a8bf670a79a6fa1ed9b820bbb47a",
-   "lastmod": "2026-09-29"
+   "fingerprint": "sha256:ccf76c1eb392800c121a3f069fcf556f00996bcf3b1ea87337cb954c40da9262",
+   "lastmod": "2026-09-30"
   },
   "spots/naoshima/chichu/index.html": {
    "fingerprint": "sha256:7b01f55a2d3fb4408debd629e06a332a9d503762a4c8ed931efb8aceb853e887",
@@ -2014,8 +2014,8 @@
    "lastmod": "2026-09-29"
   },
   "spots/shodoshima/24hitomi/index.html": {
-   "fingerprint": "sha256:818377eab9959218b1018b70a3ce39d5d115e0fa3b27f0c2ccdb2fc44e18f461",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:b09c0320c2a21fa3a367113bcf3646bbf77f2fa18bca2b80e0c24ffe6f1e1128",
+   "lastmod": "2026-09-30"
   },
   "spots/shodoshima/hoshoin/index.html": {
    "fingerprint": "sha256:0683d78874623096fc7127ae437945f913657f0fb3e3ee5b84c8dcb35f46e932",
@@ -2202,8 +2202,8 @@
    "lastmod": "2026-09-29"
   },
   "spots/takamatsu/michi-no-eki/index.html": {
-   "fingerprint": "sha256:fedcc1c088cd1679fbc4aa9ae627b50598e68133712a0b3e99a04b937e0e5fc3",
-   "lastmod": "2026-09-29"
+   "fingerprint": "sha256:5d5acb32bd7c0a6676bfc471e552f0a1f3a760f2e4d8b15742d7bced9a564071",
+   "lastmod": "2026-09-30"
   },
   "spots/takamatsu/mineyama-park/index.html": {
    "fingerprint": "sha256:815d4e6e95ded84e9f697b85819cac86ae23e90aded899d2967ec0a465c56e7a",
@@ -2634,8 +2634,8 @@
    "lastmod": "2026-09-29"
   },
   "zh-hant/spots/marugame/city-339/index.html": {
-   "fingerprint": "sha256:5f96f6129f92d433d9d091d2d232c70c9560cd3ea37d1b878b3e01a0ff5bd3ab",
-   "lastmod": "2026-09-29"
+   "fingerprint": "sha256:2e6933f05c1cd6e211878d18d26c1540b8284272aced79eb8126a26a13e2e817",
+   "lastmod": "2026-09-30"
   },
   "zh-hant/spots/marugame/city-3696/index.html": {
    "fingerprint": "sha256:ffa6651d87edecbdd5104ec529e6469e6ecbf420c95f023ae35b526b1c965be1",
@@ -2942,8 +2942,8 @@
    "lastmod": "2026-09-29"
   },
   "zh-hant/spots/naoshima/benesse-house/index.html": {
-   "fingerprint": "sha256:7feccefad52ae718ab82a9a43529b3840506d1b4ed60677f38713342ef11fe57",
-   "lastmod": "2026-09-29"
+   "fingerprint": "sha256:e76f5486fce687ae7863c9ce1cd07e4ee7c20062308d050ab62886b16041f04c",
+   "lastmod": "2026-09-30"
   },
   "zh-hant/spots/naoshima/chichu/index.html": {
    "fingerprint": "sha256:ae445f776d005fbe4362c9c01c2d68794034c10942fe19a06ea78d267455ac45",
@@ -3202,8 +3202,8 @@
    "lastmod": "2026-09-29"
   },
   "zh-hant/spots/shodoshima/24hitomi/index.html": {
-   "fingerprint": "sha256:97f2553d4cb2b00c63474c42bef4449e96cd71fc338336e32f1ecf86476f05f5",
-   "lastmod": "2026-09-19"
+   "fingerprint": "sha256:b50a36adab99b68903fa0309f8fdddb9388259087613284c48a2b10628ec4d07",
+   "lastmod": "2026-09-30"
   },
   "zh-hant/spots/shodoshima/hoshoin/index.html": {
    "fingerprint": "sha256:d1c195a131798526dc84edaec998082d88e00d2f7c3c4586f3a324619cce1f1b",
@@ -3390,8 +3390,8 @@
    "lastmod": "2026-09-29"
   },
   "zh-hant/spots/takamatsu/michi-no-eki/index.html": {
-   "fingerprint": "sha256:f12ba7fb58e93e5cf9bfcc26a58ddc41bda71a61a506ef6730f266223b97648b",
-   "lastmod": "2026-09-29"
+   "fingerprint": "sha256:e3a4e70ac8714150b1966fcd9560936aa66dfedd29ba6501c48eb434bd83338b",
+   "lastmod": "2026-09-30"
   },
   "zh-hant/spots/takamatsu/mineyama-park/index.html": {
    "fingerprint": "sha256:73daa14bda45b06cdc038f2a1868cf3ea191ac9262c0a7792736049f6d97987d",
