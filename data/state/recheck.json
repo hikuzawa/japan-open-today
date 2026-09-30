@@ -24,5 +24,17 @@
   "last_tried": "2026-09-30",
   "waiting_reason": "robots.txt で根拠のページを取得できない",
   "waiting_since": "2026-09-30"
+ },
+ "kagawa-kankakei": {
+  "checked_on": "2026-10-01"
+ },
+ "kagawa-kawashima-af": {
+  "checked_on": "2026-10-01"
+ },
+ "kagawa-kinashi-bonsai": {
+  "checked_on": "2026-10-01"
+ },
+ "kagawa-kmuseum": {
+  "checked_on": "2026-10-01"
  }
 }

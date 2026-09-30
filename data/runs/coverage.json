@@ -1,5 +1,5 @@
 {
-  "today": "2026-09-30",
+  "today": "2026-10-01",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -167,7 +167,7 @@
       "spot_id": "teshima-art",
       "name": "豊島美術館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address",
@@ -178,13 +178,12 @@
         "closures",
         "fees"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 1,
-        "unknown": 6
+        "unknown": 7
       }
     },
     {
@@ -341,13 +340,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -668,13 +667,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 4,
-        "open": 3
+        "open": 3,
+        "closed": 4
       }
     },
     {
@@ -691,13 +690,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "special_closure_notice"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -831,13 +830,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -877,13 +876,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -1251,13 +1250,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -1275,14 +1274,14 @@
         "fees",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
         "open": 4,
-        "unknown": 2
+        "unknown": 2,
+        "closed": 1
       }
     },
     {
@@ -1418,13 +1417,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 2,
-        "open": 5
+        "open": 5,
+        "closed": 2
       }
     },
     {
@@ -1605,13 +1604,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 4,
-        "closed": 3
+        "closed": 3,
+        "open": 4
       }
     },
     {
@@ -1651,13 +1650,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -3581,13 +3580,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -3823,14 +3822,15 @@
         "regular_hours"
       ],
       "week": {
-        "open": 7
+        "open": 6,
+        "closed": 1
       }
     },
     {
       "spot_id": "karokaro",
       "name": "讃岐漆芸美術館",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "closures",
         "address",
@@ -3841,13 +3841,13 @@
         "hours",
         "fees"
       ],
-      "today": "unknown",
+      "today": "closed",
       "today_reasons": [
-        "no_data"
+        "weekly_closed"
       ],
       "week": {
-        "unknown": 6,
-        "closed": 1
+        "closed": 1,
+        "unknown": 6
       }
     },
     {
@@ -3888,13 +3888,13 @@
       "missing": [
         "fees"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -3934,13 +3934,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -3981,13 +3981,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -4029,13 +4029,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 3,
-        "open": 4
+        "open": 4,
+        "closed": 3
       }
     },
     {
@@ -4099,13 +4099,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -4215,13 +4215,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -4788,7 +4788,7 @@
       "spot_id": "town-8",
       "name": "高山航空公園",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -4799,13 +4799,12 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 1,
-        "unknown": 6
+        "unknown": 7
       }
     },
     {
@@ -4892,13 +4891,13 @@
         "address",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -5587,13 +5586,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 3,
-        "open": 4
+        "open": 4,
+        "closed": 3
       }
     },
     {
@@ -6583,12 +6582,12 @@
     "reservation_required": 52
   },
   "states": {
-    "open": 125,
-    "unknown": 140,
-    "closed": 16
+    "open": 132,
+    "unknown": 141,
+    "closed": 8
   },
   "unknown_reasons": {
-    "no_data": 134,
+    "no_data": 135,
     "irregular_closed": 4,
     "rule_unsupported": 1,
     "stale_source": 1

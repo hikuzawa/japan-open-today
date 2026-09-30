@@ -6,3 +6,7 @@
 {"at": "2026-09-30T08:48:12+09:00", "result": "ok", "key": "kagawa-hiragagennai", "label": "平賀源内旧邸（kagawa-hiragagennai）"}
 {"at": "2026-09-30T08:48:12+09:00", "result": "ok", "key": "kagawa-jb-honshi", "label": "瀬戸大橋（kagawa-jb-honshi）"}
 {"at": "2026-09-30T08:48:12+09:00", "result": "skip", "key": "kagawa-jumbo-ferry", "label": "ジャンボフェリー（kagawa-jumbo-ferry）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-01T08:50:47+09:00", "result": "ok", "key": "kagawa-kankakei", "label": "寒霞渓（kagawa-kankakei）"}
+{"at": "2026-10-01T08:50:47+09:00", "result": "ok", "key": "kagawa-kawashima-af", "label": "川島猛アートファクトリー（kagawa-kawashima-af）"}
+{"at": "2026-10-01T08:50:47+09:00", "result": "ok", "key": "kagawa-kinashi-bonsai", "label": "鬼無植木盆栽センター（kagawa-kinashi-bonsai）"}
+{"at": "2026-10-01T08:50:47+09:00", "result": "ok", "key": "kagawa-kmuseum", "label": "香川県立ミュージアム（kagawa-kmuseum）"}
