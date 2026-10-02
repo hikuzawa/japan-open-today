@@ -1,5 +1,5 @@
 {
-  "today": "2026-10-02",
+  "today": "2026-10-03",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -42,8 +42,8 @@
         "regular_hours"
       ],
       "week": {
-        "open": 3,
-        "closed": 4
+        "open": 2,
+        "closed": 5
       }
     },
     {
@@ -110,6 +110,7 @@
       ],
       "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "no_data"
       ],
       "week": {
@@ -377,7 +378,7 @@
       "spot_id": "town-375",
       "name": "三木町総合運動公園",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -388,13 +389,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "unknown": 7
       }
     },
     {
@@ -458,13 +459,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -690,13 +691,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -1005,7 +1006,7 @@
       "spot_id": "goldtower",
       "name": "ゴールドタワー",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -1016,13 +1017,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 5,
-        "unknown": 2
+        "unknown": 2,
+        "open": 5
       }
     },
     {
@@ -1099,7 +1100,7 @@
       "spot_id": "e-mikado-90",
       "name": "健康ふれあいの里",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -1110,13 +1111,13 @@
       "missing": [
         "fees"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "unknown": 7
       }
     },
     {
@@ -1192,7 +1193,7 @@
       "spot_id": "shikoku-aquarium",
       "name": "四国水族館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -1203,19 +1204,20 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 7
+        "unknown": 7
       }
     },
     {
       "spot_id": "pref-156",
       "name": "香川県立東山魁夷せとうち美術館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -1226,20 +1228,20 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "unknown": 7
       }
     },
     {
       "spot_id": "bansyouen",
       "name": "中津万象園・丸亀美術館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -1250,20 +1252,20 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "unknown": 7
       }
     },
     {
       "spot_id": "p2788",
       "name": "恋人の聖地",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -1274,13 +1276,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 4,
         "unknown": 2,
+        "open": 4,
         "closed": 1
       }
     },
@@ -1406,7 +1408,7 @@
       "spot_id": "kyuman",
       "name": "灸まん美術館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -1417,13 +1419,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "unknown": 7
       }
     },
     {
@@ -1477,7 +1479,7 @@
       "spot_id": "jb-honshi",
       "name": "瀬戸大橋",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address",
@@ -1488,13 +1490,13 @@
         "closures",
         "fees"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 5,
-        "unknown": 2
+        "unknown": 2,
+        "open": 5
       }
     },
     {
@@ -1547,7 +1549,7 @@
       "spot_id": "kotohiki-kairo",
       "name": "琴弾廻廊",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -1558,12 +1560,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 7
+        "unknown": 7
       }
     },
     {
@@ -1754,7 +1757,7 @@
       "spot_id": "komatsuoji",
       "name": "大興寺",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address",
@@ -1765,12 +1768,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 7
+        "unknown": 7
       }
     },
     {
@@ -2993,7 +2997,7 @@
       "spot_id": "mitoyo-kanko-128",
       "name": "粟島",
       "spot_type": "open_air",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "address"
@@ -3004,13 +3008,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 6,
-        "open": 1
+        "open": 1,
+        "unknown": 6
       }
     },
     {
@@ -4053,13 +4057,13 @@
         "fees",
         "phone"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -6569,7 +6573,7 @@
     },
     "open_air": {
       "total": 127,
-      "settled": 125
+      "settled": 126
     },
     "untyped": 0
   },
@@ -6582,14 +6586,14 @@
     "reservation_required": 52
   },
   "states": {
-    "open": 139,
-    "unknown": 141,
-    "closed": 1
+    "open": 126,
+    "unknown": 151,
+    "closed": 4
   },
   "unknown_reasons": {
-    "no_data": 135,
+    "no_data": 136,
+    "stale_source": 10,
     "irregular_closed": 4,
-    "rule_unsupported": 1,
-    "stale_source": 1
+    "rule_unsupported": 1
   }
 }
