@@ -21,9 +21,7 @@
   "checked_on": "2026-09-30"
  },
  "kagawa-jumbo-ferry": {
-  "last_tried": "2026-09-30",
-  "waiting_reason": "robots.txt で根拠のページを取得できない",
-  "waiting_since": "2026-09-30"
+  "checked_on": "2026-10-07"
  },
  "kagawa-kankakei": {
   "checked_on": "2026-10-01"
@@ -96,5 +94,14 @@
  },
  "kagawa-p2463": {
   "checked_on": "2026-10-06"
+ },
+ "kagawa-p2788": {
+  "checked_on": "2026-10-07"
+ },
+ "kagawa-p309": {
+  "checked_on": "2026-10-07"
+ },
+ "kagawa-p3639": {
+  "checked_on": "2026-10-07"
  }
 }
