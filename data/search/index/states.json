@@ -119,6 +119,12 @@
       "Discovered - currently not indexed": 159,
       "Submitted and indexed": 704,
       "URL is unknown to Google": 25
+    },
+    "2026-10-08": {
+      "Crawled - currently not indexed": 2,
+      "Discovered - currently not indexed": 146,
+      "Submitted and indexed": 705,
+      "URL is unknown to Google": 38
     }
   }
 }
