@@ -1,5 +1,5 @@
 {
-  "today": "2026-10-10",
+  "today": "2026-10-11",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -532,13 +532,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -625,13 +625,13 @@
       "missing": [
         "fees"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -671,20 +671,20 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 3,
-        "closed": 4
+        "closed": 4,
+        "open": 3
       }
     },
     {
       "spot_id": "kawashima-af",
       "name": "川島猛アートファクトリー",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -694,13 +694,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "unknown",
       "today_reasons": [
-        "weekly_closed"
+        "stale_source",
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "unknown": 7
       }
     },
     {
@@ -1471,13 +1471,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -3003,7 +3003,7 @@
       "spot_id": "mitoyo-kanko-128",
       "name": "粟島",
       "spot_type": "open_air",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address"
@@ -3014,13 +3014,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 1,
-        "unknown": 6
+        "unknown": 6,
+        "open": 1
       }
     },
     {
@@ -4530,13 +4530,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -6579,7 +6579,7 @@
     },
     "open_air": {
       "total": 127,
-      "settled": 126
+      "settled": 125
     },
     "untyped": 0
   },
@@ -6592,13 +6592,13 @@
     "reservation_required": 52
   },
   "states": {
-    "unknown": 162,
-    "open": 115,
-    "closed": 4
+    "unknown": 164,
+    "open": 109,
+    "closed": 8
   },
   "unknown_reasons": {
-    "stale_source": 22,
-    "no_data": 135,
+    "stale_source": 23,
+    "no_data": 136,
     "irregular_closed": 4,
     "rule_unsupported": 1
   }
