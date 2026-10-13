@@ -172,11 +172,23 @@
  },
  "kagawa-tamamo": {
   "failed_since": "2026-10-13",
-  "failures": 1,
-  "last_tried": "2026-10-13",
+  "failures": 2,
+  "last_tried": "2026-10-14",
   "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu"
  },
  "kagawa-tanokuchiyakushi": {
   "checked_on": "2026-10-13"
+ },
+ "kagawa-teshima-art": {
+  "checked_on": "2026-10-14"
+ },
+ "kagawa-yakuriji": {
+  "checked_on": "2026-10-14"
+ },
+ "kagawa-yakuyoke": {
+  "checked_on": "2026-10-14"
+ },
+ "kagawa-yashima": {
+  "checked_on": "2026-10-14"
  }
 }

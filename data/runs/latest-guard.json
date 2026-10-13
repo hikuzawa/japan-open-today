@@ -3,7 +3,7 @@
   "command": "guard",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-10-13T02:10:12Z",
+  "finished_at": "2026-10-13T23:59:09Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -15,10 +15,10 @@
   "stages": {
     "guard": {
       "breaches": 0,
-      "unknown_bp": 1495,
-      "unknown_count": 42,
+      "unknown_bp": 1601,
+      "unknown_count": 45,
       "unknown_total": 281
     }
   },
-  "started_at": "2026-10-13T02:10:11Z"
+  "started_at": "2026-10-13T23:59:08Z"
 }
