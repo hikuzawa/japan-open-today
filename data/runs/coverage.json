@@ -1,5 +1,5 @@
 {
-  "today": "2026-10-12",
+  "today": "2026-10-13",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -41,6 +41,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
+        "weekly_closed",
         "special_closure_notice"
       ],
       "week": {
@@ -136,7 +137,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -298,14 +299,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours",
-        "holiday_open_exception"
+        "substitute_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -359,7 +359,7 @@
       "spot_id": "taka-spo",
       "name": "はくちょう温泉",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "closures",
@@ -370,13 +370,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "substitute_ambiguous"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -397,7 +397,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "substitute_ambiguous"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -719,14 +719,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours",
-        "holiday_open_exception"
+        "substitute_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -747,8 +746,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours",
-        "holiday_open_exception"
+        "substitute_closed"
       ],
       "week": {
         "unknown": 7
@@ -769,14 +767,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours",
-        "holiday_open_exception"
+        "substitute_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -922,7 +919,7 @@
       "spot_id": "hiragagennai",
       "name": "平賀源内旧邸",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "closures",
@@ -933,13 +930,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "substitute_ambiguous"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -1015,7 +1012,7 @@
       "spot_id": "goldtower",
       "name": "ゴールドタワー",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "closures",
@@ -1026,13 +1023,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 3,
-        "open": 4
+        "open": 5,
+        "unknown": 2
       }
     },
     {
@@ -1099,7 +1096,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -1123,7 +1120,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -1275,7 +1272,7 @@
       "spot_id": "p2788",
       "name": "恋人の聖地",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "closures",
@@ -1286,14 +1283,14 @@
         "fees",
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 3,
-        "open": 3,
-        "closed": 1
+        "open": 4,
+        "closed": 1,
+        "unknown": 2
       }
     },
     {
@@ -1334,14 +1331,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours",
-        "holiday_open_exception"
+        "substitute_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -1395,7 +1391,7 @@
       "spot_id": "mimoca",
       "name": "丸亀市猪熊弦一郎現代美術館",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "closures",
@@ -1406,13 +1402,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "substitute_ambiguous"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -1433,7 +1429,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -1490,7 +1486,7 @@
       "spot_id": "jb-honshi",
       "name": "瀬戸大橋",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "address",
@@ -1501,13 +1497,13 @@
         "closures",
         "fees"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 3,
-        "open": 4
+        "open": 5,
+        "unknown": 2
       }
     },
     {
@@ -1621,7 +1617,7 @@
       "today": "closed",
       "today_reasons": [
         "weekly_closed",
-        "holiday_open_exception"
+        "weekly_closed"
       ],
       "week": {
         "closed": 3,
@@ -1691,7 +1687,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "nth_weekday_closed"
       ],
       "week": {
         "unknown": 7
@@ -1850,13 +1846,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -1943,13 +1939,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -2951,13 +2947,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -3621,13 +3617,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -3668,13 +3664,13 @@
       "missing": [
         "fees"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -3692,13 +3688,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -3716,13 +3712,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -3766,8 +3762,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours",
-        "holiday_open_exception"
+        "substitute_closed"
       ],
       "week": {
         "unknown": 7
@@ -3777,7 +3772,7 @@
       "spot_id": "michi-no-eki",
       "name": "道の駅「しおのえ」",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "closures",
@@ -3788,13 +3783,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "closed",
       "today_reasons": [
-        "no_data"
+        "weekly_closed"
       ],
       "week": {
-        "unknown": 6,
-        "closed": 1
+        "closed": 1,
+        "unknown": 6
       }
     },
     {
@@ -3871,7 +3866,7 @@
       "spot_id": "city-283",
       "name": "高松市石の民俗資料館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -3881,13 +3876,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "unknown",
       "today_reasons": [
-        "weekly_closed"
+        "stale_source",
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "unknown": 7
       }
     },
     {
@@ -4035,7 +4030,7 @@
       "spot_id": "city-216",
       "name": "雨滝自然科学館",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "closures",
@@ -4046,13 +4041,12 @@
         "fees",
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "closed",
       "today_reasons": [
-        "substitute_ambiguous"
+        "weekly_closed"
       ],
       "week": {
-        "unknown": 1,
-        "closed": 2,
+        "closed": 3,
         "open": 4
       }
     },
@@ -4140,21 +4134,20 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours",
-        "holiday_open_exception"
+        "substitute_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 2,
+        "open": 5
       }
     },
     {
       "spot_id": "city-339",
       "name": "「善通寺五岳の里」市民集いの丘公園",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "closures",
@@ -4165,13 +4158,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "closed",
       "today_reasons": [
-        "no_data"
+        "weekly_closed"
       ],
       "week": {
-        "unknown": 6,
-        "closed": 1
+        "closed": 1,
+        "unknown": 6
       }
     },
     {
@@ -4258,13 +4251,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -4328,13 +4321,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -4422,13 +4415,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -4471,11 +4464,11 @@
       ],
       "today": "open",
       "today_reasons": [
-        "regular_hours",
-        "holiday_open_exception"
+        "regular_hours"
       ],
       "week": {
-        "open": 7
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -4492,14 +4485,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours",
-        "holiday_open_exception"
+        "substitute_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -4517,13 +4509,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -4541,13 +4533,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 2,
-        "open": 5
+        "open": 5,
+        "closed": 2
       }
     },
     {
@@ -4656,13 +4648,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -4726,14 +4718,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours",
-        "holiday_open_exception"
+        "substitute_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -4750,13 +4741,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -4866,14 +4857,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours",
-        "holiday_open_exception"
+        "substitute_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -4987,7 +4977,7 @@
       "today": "closed",
       "today_reasons": [
         "annual_closed",
-        "holiday_open_exception"
+        "substitute_closed"
       ],
       "week": {
         "closed": 7
@@ -5008,14 +4998,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours",
-        "holiday_open_exception"
+        "substitute_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -5068,7 +5057,7 @@
       "spot_id": "city-160",
       "name": "香風園",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "closures",
@@ -5079,13 +5068,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "substitute_ambiguous"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -5103,13 +5092,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -5126,13 +5115,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -5173,14 +5162,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours",
-        "holiday_open_exception"
+        "substitute_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -5198,13 +5186,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -5382,13 +5370,13 @@
         "address",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -5500,7 +5488,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "substitute_ambiguous"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -5614,9 +5602,7 @@
       ],
       "today": "closed",
       "today_reasons": [
-        "weekly_closed",
-        "holiday_open_exception",
-        "holiday_open_exception"
+        "weekly_closed"
       ],
       "week": {
         "closed": 3,
@@ -6610,15 +6596,14 @@
     "reservation_required": 52
   },
   "states": {
-    "unknown": 171,
-    "open": 99,
-    "closed": 11
+    "unknown": 162,
+    "open": 86,
+    "closed": 33
   },
   "unknown_reasons": {
-    "stale_source": 24,
-    "no_data": 137,
+    "stale_source": 25,
+    "no_data": 132,
     "irregular_closed": 4,
-    "substitute_ambiguous": 5,
     "rule_unsupported": 1
   }
 }

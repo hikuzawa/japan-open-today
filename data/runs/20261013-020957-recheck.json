@@ -1,0 +1,30 @@
+{
+  "ci": true,
+  "command": "recheck",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-10-13T02:10:10Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "運営主体の確かめ直し: 4 件（成り立った 3・成り立たなかった 1・robots.txt で見送り 0・通信できない 0・選び直し 0）",
+    "高松城跡 玉藻公園（kagawa-tamamo）: 成り立たない（1 晩目）: 根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu"
+  ],
+  "service": "japan-open-today",
+  "stages": {
+    "recheck": {
+      "checked": 4,
+      "fail": 1,
+      "ok": 3,
+      "requests": 6,
+      "reselected": 0,
+      "skip": 0,
+      "unreachable": 0
+    }
+  },
+  "started_at": "2026-10-13T02:09:57Z"
+}

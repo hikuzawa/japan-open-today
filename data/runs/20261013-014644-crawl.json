@@ -1,0 +1,30 @@
+{
+  "ci": true,
+  "command": "crawl",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-10-13T01:47:52Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "japan-open-today",
+  "stages": {
+    "crawl": {
+      "changed": 20,
+      "daily_kinds_only": 12,
+      "errors": 0,
+      "fetched": 84,
+      "not_modified": 5,
+      "requests": 128,
+      "skipped_not_due": 237,
+      "stale_cache": 0,
+      "unchanged": 69,
+      "workers": 6
+    }
+  },
+  "started_at": "2026-10-13T01:46:44Z"
+}

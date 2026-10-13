@@ -54,3 +54,7 @@
 {"at": "2026-10-12T08:49:36+09:00", "result": "ok", "key": "kagawa-sionoe", "label": "しおのえふじかわ牧場（kagawa-sionoe）"}
 {"at": "2026-10-12T08:49:36+09:00", "result": "ok", "key": "kagawa-taka-spo", "label": "はくちょう温泉（kagawa-taka-spo）"}
 {"at": "2026-10-12T08:49:36+09:00", "result": "ok", "key": "kagawa-takamatsu-orne", "label": "香川・高松ツーリストインフォメーション（kagawa-takamatsu-orne）"}
+{"at": "2026-10-13T11:10:10+09:00", "result": "ok", "key": "kagawa-takamatsujyo", "label": "史跡高松城跡・玉藻公園（kagawa-takamatsujyo）"}
+{"at": "2026-10-13T11:10:10+09:00", "result": "ok", "key": "kagawa-takaradanosato", "label": "たからだの里「環の湯」（kagawa-takaradanosato）"}
+{"at": "2026-10-13T11:10:10+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 1}
+{"at": "2026-10-13T11:10:10+09:00", "result": "ok", "key": "kagawa-tanokuchiyakushi", "label": "田ノ口薬師（東照寺）（kagawa-tanokuchiyakushi）"}
