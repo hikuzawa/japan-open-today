@@ -11,6 +11,12 @@
  "kagawa-chichu": {
   "checked_on": "2026-09-29"
  },
+ "kagawa-city-148": {
+  "checked_on": "2026-10-15"
+ },
+ "kagawa-city-199": {
+  "checked_on": "2026-10-15"
+ },
  "kagawa-goldtower": {
   "checked_on": "2026-09-30"
  },
@@ -172,8 +178,8 @@
  },
  "kagawa-tamamo": {
   "failed_since": "2026-10-13",
-  "failures": 2,
-  "last_tried": "2026-10-14",
+  "failures": 3,
+  "last_tried": "2026-10-15",
   "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu"
  },
  "kagawa-tanokuchiyakushi": {
@@ -190,5 +196,11 @@
  },
  "kagawa-yashima": {
   "checked_on": "2026-10-14"
+ },
+ "kagawa-yodaji": {
+  "checked_on": "2026-10-15"
+ },
+ "kagawa-zentsuji": {
+  "checked_on": "2026-10-15"
  }
 }
