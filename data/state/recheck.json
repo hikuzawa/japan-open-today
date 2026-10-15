@@ -17,6 +17,18 @@
  "kagawa-city-199": {
   "checked_on": "2026-10-15"
  },
+ "kagawa-city-2938": {
+  "checked_on": "2026-10-16"
+ },
+ "kagawa-city-47": {
+  "checked_on": "2026-10-16"
+ },
+ "kagawa-city-67": {
+  "checked_on": "2026-10-16"
+ },
+ "kagawa-co-machi-no-ie": {
+  "checked_on": "2026-10-16"
+ },
  "kagawa-goldtower": {
   "checked_on": "2026-09-30"
  },
@@ -179,8 +191,10 @@
  "kagawa-tamamo": {
   "failed_since": "2026-10-13",
   "failures": 3,
-  "last_tried": "2026-10-15",
-  "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu"
+  "last_tried": "2026-10-16",
+  "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu",
+  "waiting_reason": "robots.txt で根拠のページを取得できない",
+  "waiting_since": "2026-10-16"
  },
  "kagawa-tanokuchiyakushi": {
   "checked_on": "2026-10-13"

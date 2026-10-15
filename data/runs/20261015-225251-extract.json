@@ -1,0 +1,163 @@
+{
+  "ci": true,
+  "command": "extract",
+  "errors": [
+    "https://www.my-kagawa.jp/ritsuringarden/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtxsA7ZCJWcY9dP4jo'}",
+    "https://www.my-kagawa.jp/ritsuringarden/news/category:information: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtyFU8mLtPqmpDSeCC'}",
+    "https://www.shikokumura.or.jp/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtxws132wBma41LWMt'}",
+    "https://www.shikokumura.or.jp/news/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtyJTH6E5niPwRstWa'}",
+    "https://www.pref.kagawa.lg.jp/cgi-bin/page/list.php?tpl_type=2&dept_code=&page_type=4&tpl_id=&dir=%2Fkmuseum%2F&link_page_id=15840: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtxcmrhmGvzuRFEhzT'}",
+    "https://www.pref.kagawa.lg.jp/kmuseum/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qty26CcVbkVZ97oYa8'}",
+    "https://www.pref.kagawa.lg.jp/kmuseum/kmuseum/riyou/kfvn.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtyQeZAA7U4uvMUoxw'}",
+    "https://benesse-artsite.jp/art/chichu.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtxgjuGzyTZYUxHEuz'}",
+    "https://benesse-artsite.jp/calendar/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtxc35hm9HfnQeZexJ'}",
+    "https://benesse-artsite.jp/news/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtyd3utc985sUY4BgG'}",
+    "https://www.kankakei.co.jp/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtxoS72FVsKmNnGq2f'}",
+    "https://www.kankakei.co.jp/information/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtyDk9ZKmfcuyyNXMc'}",
+    "https://www.24hitomi.or.jp/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtyAFzTaGyxeKZdNJk'}",
+    "https://www.konpira.or.jp/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtydY8TX4g6s4VwuCW'}",
+    "https://www.mitoyo-kanko.com/spot/chichibugahama/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtyqCdqMDD8NrkEzyK'}",
+    "https://ferry.co.jp/news/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtyiWBYNokDdX8oeov'}",
+    "https://shikokukisen.com/news/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtypCqRtcoseN5E2nm'}",
+    "https://shikokukisen.com/takamatsu-miyanoura-ferry-unko/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtzGywnhGP5vnqhnBk'}",
+    "https://npo-wahaha.net/stm/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtypCsYPeoHKhGRzx2'}",
+    "http://www.kenminhall.com/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtz568daHjmr1A7g3C'}",
+    "http://www.kenminhall.com/visitors/ticket/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtzUQEEQ6K1JhJqFWG'}",
+    "https://www.sakurashop.co.jp/news: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtzBYEmqvWBKhqkCR9'}",
+    "https://kawashima-af.com/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtzE1Y63WfRDMx8S3y'}",
+    "https://kawashima-af.com/opening-information/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtzd4tSPFNUH4cNaHG'}",
+    "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/allNewsList.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtzCHHs45jriBKC9Lb'}",
+    "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/index.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtzbagcy63xfzjsfei'}",
+    "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/info/ticket.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu1Bp5ufAUvHzLu8wk'}",
+    "https://www.j-dc2.net/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtzHVHdQec3G2AYRTS'}",
+    "https://www.city.marugame.lg.jp/site/castle/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtzZMhRR2JU95xykxt'}",
+    "https://www.city.marugame.lg.jp/site/castle/list11-21.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu1RSdkaQUhboLyFvK'}",
+    "http://www.bansyouen.com/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtzhnEuFWKhPutMD5Y'}",
+    "http://www.bansyouen.com/info/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu1nmUbAf1s9Ufjmha'}",
+    "https://www.shikoku-cable.co.jp/unpenji/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qtzjGdbE3oWxQFLrvq'}",
+    "https://kanonji-kanko.jp/kotohiki-park/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu1JFkZBbJJTkT2G8z'}",
+    "https://kanonji-kanko.jp/ibukijima/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu1Zd2oevv7DDNM5Pc'}",
+    "https://kanonji-kanko.jp/hagiwaraji/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu21uiatEyHvWtbuxH'}",
+    "http://sanuki-airport-park.com/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu2Abemc2p6RAsapxQ'}",
+    "https://kinbuchi-shinrin.jp/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu3J4SLt2rqnvkYQ8G'}",
+    "https://www.pref.kagawa.lg.jp/setorekishi/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu2hqjuuSks7ysJgxh'}",
+    "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kounanrekishi/index.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu2wEJs9SyL6fN7rve'}",
+    "http://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/ishimin/index.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu3MXkhfKRx4itKUKS'}",
+    "https://www.telescope-museum.com/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu39sGprEmELfvytpq'}",
+    "https://www.city.zentsuji.kagawa.jp/site/gogaku/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu3i76q4Qe8jU59PGi'}",
+    "https://www.town.manno.lg.jp/site/mannotenmondai/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu3aBXyd41WBkLvUJR'}",
+    "https://www.city.zentsuji.kagawa.jp/soshiki/53/parkindex.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu3nKVRW3HZhDm2drz'}",
+    "https://mannou-mori.com/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu3p4pMv61ink6JXaC'}",
+    "https://www.my-kagawa.jp/point/3214: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu3p4umq3PjpM1gv54'}",
+    "http://www.city.takamatsu.kagawa.jp/4727.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu3nKrmeNw2dR9SLg4'}",
+    "https://www.mizupark.com/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu3wzbpvQYL5irPrfa'}",
+    "https://ogijima.site/: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu47AnBYSh6ziwNF3C'}",
+    "https://www.kotohirakankou.jp/spot/see/entry-110.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu4Gr4xV39r7FwLoMH'}",
+    "https://www.kotohirakankou.jp/spot/see/entry-109.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu4Be7KWZqDRWSBDPm'}",
+    "https://www.kotohirakankou.jp/spot/see/entry-116.html: API エラー 401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cg4qu4CdBm47MEYCMni6C'}"
+  ],
+  "extraction_metrics": {
+    "fields": {
+      "address": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 1,
+        "quote_not_in_source": 0,
+        "total": 1,
+        "unparsed": 0
+      },
+      "closures": {
+        "not_found": 1,
+        "notes": {},
+        "parsed": 0,
+        "quote_not_in_source": 0,
+        "total": 1,
+        "unparsed": 0
+      },
+      "fee_adult": {
+        "not_found": 1,
+        "notes": {},
+        "parsed": 0,
+        "quote_not_in_source": 0,
+        "total": 1,
+        "unparsed": 0
+      },
+      "fee_child": {
+        "not_found": 1,
+        "notes": {},
+        "parsed": 0,
+        "quote_not_in_source": 0,
+        "total": 1,
+        "unparsed": 0
+      },
+      "fee_senior": {
+        "not_found": 1,
+        "notes": {},
+        "parsed": 0,
+        "quote_not_in_source": 0,
+        "total": 1,
+        "unparsed": 0
+      },
+      "hours": {
+        "not_found": 1,
+        "notes": {},
+        "parsed": 0,
+        "quote_not_in_source": 0,
+        "total": 1,
+        "unparsed": 0
+      },
+      "phone": {
+        "not_found": 0,
+        "notes": {},
+        "parsed": 1,
+        "quote_not_in_source": 0,
+        "total": 1,
+        "unparsed": 0
+      },
+      "reservation_note": {
+        "not_found": 1,
+        "notes": {},
+        "parsed": 0,
+        "quote_not_in_source": 0,
+        "total": 1,
+        "unparsed": 0
+      },
+      "visit_minutes": {
+        "not_found": 1,
+        "notes": {},
+        "parsed": 0,
+        "quote_not_in_source": 0,
+        "total": 1,
+        "unparsed": 0
+      }
+    },
+    "flags": {},
+    "items": 1,
+    "pages": 1,
+    "summary_replaced": 0,
+    "truncated_pages": 0
+  },
+  "finished_at": "2026-10-15T22:52:54Z",
+  "llm": {
+    "cached_calls": 1,
+    "calls": 1,
+    "input_tokens": 2875,
+    "output_tokens": 207
+  },
+  "notes": [],
+  "service": "japan-open-today",
+  "stages": {
+    "extract": {
+      "items": 1,
+      "llm_errors": 53,
+      "pages": 1
+    },
+    "ingest": {
+      "created": 0,
+      "skipped": 0,
+      "unchanged": 1,
+      "updated": 0
+    }
+  },
+  "started_at": "2026-10-15T22:52:51Z"
+}

@@ -1,0 +1,29 @@
+{
+  "ci": true,
+  "command": "recheck",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-10-15T23:15:26Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "運営主体の確かめ直し: 5 件（成り立った 4・成り立たなかった 0・robots.txt で見送り 1・通信できない 0・選び直し 0）"
+  ],
+  "service": "japan-open-today",
+  "stages": {
+    "recheck": {
+      "checked": 5,
+      "fail": 0,
+      "ok": 4,
+      "requests": 5,
+      "reselected": 0,
+      "skip": 1,
+      "unreachable": 0
+    }
+  },
+  "started_at": "2026-10-15T23:15:00Z"
+}

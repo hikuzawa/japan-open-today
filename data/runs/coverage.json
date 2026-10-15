@@ -1,5 +1,5 @@
 {
-  "today": "2026-10-15",
+  "today": "2026-10-16",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -41,7 +41,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "special_closure_notice"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -217,7 +217,7 @@
       "spot_id": "24hitomi",
       "name": "二十四の瞳映画村",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address",
@@ -228,12 +228,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 7
+        "unknown": 7
       }
     },
     {
@@ -345,13 +346,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -685,7 +686,7 @@
       "spot_id": "kawashima-af",
       "name": "川島猛アートファクトリー",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -695,13 +696,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "unknown": 7
       }
     },
     {
@@ -1613,13 +1614,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 3,
-        "open": 4
+        "open": 4,
+        "closed": 3
       }
     },
     {
@@ -1659,13 +1660,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -1820,13 +1821,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 2,
-        "open": 5
+        "open": 5,
+        "closed": 2
       }
     },
     {
@@ -3591,13 +3592,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -3842,7 +3843,7 @@
       "spot_id": "karokaro",
       "name": "讃岐漆芸美術館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "closures",
         "address",
@@ -3853,13 +3854,13 @@
         "hours",
         "fees"
       ],
-      "today": "closed",
+      "today": "unknown",
       "today_reasons": [
-        "weekly_closed"
+        "no_data"
       ],
       "week": {
-        "closed": 1,
-        "unknown": 6
+        "unknown": 6,
+        "closed": 1
       }
     },
     {
@@ -4357,7 +4358,7 @@
       "spot_id": "town-490",
       "name": "まんのう天文台",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "address",
@@ -4368,13 +4369,13 @@
         "closures",
         "fees"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 4,
-        "open": 3
+        "open": 3,
+        "unknown": 4
       }
     },
     {
@@ -6596,12 +6597,12 @@
     "reservation_required": 52
   },
   "states": {
-    "unknown": 164,
-    "open": 110,
-    "closed": 7
+    "unknown": 166,
+    "open": 114,
+    "closed": 1
   },
   "unknown_reasons": {
-    "stale_source": 26,
+    "stale_source": 28,
     "no_data": 133,
     "irregular_closed": 4,
     "rule_unsupported": 1

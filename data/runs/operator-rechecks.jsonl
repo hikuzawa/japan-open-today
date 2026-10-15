@@ -68,3 +68,8 @@
 {"at": "2026-10-15T08:21:26+09:00", "result": "ok", "key": "kagawa-zentsuji", "label": "総本山善通寺（kagawa-zentsuji）"}
 {"at": "2026-10-15T08:21:26+09:00", "result": "ok", "key": "kagawa-city-148", "label": "宗吉かわらの里展示館（宗吉瓦窯跡史跡公園）（kagawa-city-148）"}
 {"at": "2026-10-15T08:21:26+09:00", "result": "ok", "key": "kagawa-city-199", "label": "津田の松原・琴林公園（kagawa-city-199）"}
+{"at": "2026-10-16T08:15:26+09:00", "result": "skip", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-16T08:15:26+09:00", "result": "ok", "key": "kagawa-city-2938", "label": "【紅葉スポット】法泉寺（kagawa-city-2938）"}
+{"at": "2026-10-16T08:15:26+09:00", "result": "ok", "key": "kagawa-city-47", "label": "一の宮公園・一の宮海岸海水浴場・キャンプ場（kagawa-city-47）"}
+{"at": "2026-10-16T08:15:26+09:00", "result": "ok", "key": "kagawa-city-67", "label": "豊稔池堰堤（アーチダム）（kagawa-city-67）"}
+{"at": "2026-10-16T08:15:26+09:00", "result": "ok", "key": "kagawa-co-machi-no-ie", "label": "【宇多津町】宇多津（kagawa-co-machi-no-ie）"}
