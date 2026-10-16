@@ -1,5 +1,5 @@
 {
-  "today": "2026-10-16",
+  "today": "2026-10-17",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -464,13 +464,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -699,7 +699,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -709,7 +709,7 @@
       "spot_id": "city",
       "name": "菊池寛記念館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -719,13 +719,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "unknown": 7
       }
     },
     {
@@ -1012,7 +1012,7 @@
       "spot_id": "goldtower",
       "name": "ゴールドタワー",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -1023,13 +1023,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 5,
-        "unknown": 2
+        "unknown": 2,
+        "open": 5
       }
     },
     {
@@ -1272,7 +1272,7 @@
       "spot_id": "p2788",
       "name": "恋人の聖地",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -1283,13 +1283,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 4,
         "unknown": 2,
+        "open": 4,
         "closed": 1
       }
     },
@@ -1486,7 +1486,7 @@
       "spot_id": "jb-honshi",
       "name": "瀬戸大橋",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address",
@@ -1497,13 +1497,13 @@
         "closures",
         "fees"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 5,
-        "unknown": 2
+        "unknown": 2,
+        "open": 5
       }
     },
     {
@@ -3005,7 +3005,7 @@
       "spot_id": "mitoyo-kanko-128",
       "name": "粟島",
       "spot_type": "open_air",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "address"
@@ -3016,13 +3016,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 6,
-        "open": 1
+        "open": 1,
+        "unknown": 6
       }
     },
     {
@@ -4069,7 +4069,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -4358,7 +4358,7 @@
       "spot_id": "town-490",
       "name": "まんのう天文台",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address",
@@ -4369,13 +4369,13 @@
         "closures",
         "fees"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 3,
-        "unknown": 4
+        "unknown": 7
       }
     },
     {
@@ -6584,7 +6584,7 @@
     },
     "open_air": {
       "total": 127,
-      "settled": 125
+      "settled": 126
     },
     "untyped": 0
   },
@@ -6597,13 +6597,13 @@
     "reservation_required": 52
   },
   "states": {
-    "unknown": 166,
-    "open": 114,
-    "closed": 1
+    "unknown": 170,
+    "open": 109,
+    "closed": 2
   },
   "unknown_reasons": {
-    "stale_source": 28,
-    "no_data": 133,
+    "stale_source": 30,
+    "no_data": 135,
     "irregular_closed": 4,
     "rule_unsupported": 1
   }

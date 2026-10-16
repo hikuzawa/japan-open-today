@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-16T08:14:39.132308+09:00",
+  "checked_at": "2026-10-17T07:53:38.062784+09:00",
   "urls": {
     "http://japan-open-today.com/": {
       "verdict": "NEUTRAL",
@@ -7,7 +7,7 @@
       "last_crawl": "2026-10-15T10:08:50Z",
       "google_canonical": "https://japan-open-today.com/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-17"
     },
     "http://www.japan-open-today.com/": {
       "verdict": "NEUTRAL",
@@ -15,7 +15,7 @@
       "last_crawl": "2026-10-07T16:01:55Z",
       "google_canonical": "https://japan-open-today.com/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-17"
     },
     "https://www.japan-open-today.com/": {
       "verdict": "NEUTRAL",
@@ -23,7 +23,7 @@
       "last_crawl": "2026-10-15T03:19:37Z",
       "google_canonical": "https://japan-open-today.com/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-17"
     }
   }
 }
