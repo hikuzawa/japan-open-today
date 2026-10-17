@@ -1,5 +1,5 @@
 {
-  "today": "2026-10-17",
+  "today": "2026-10-18",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -534,13 +534,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -627,13 +627,13 @@
       "missing": [
         "fees"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -673,13 +673,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 3,
-        "closed": 4
+        "closed": 4,
+        "open": 3
       }
     },
     {
@@ -699,7 +699,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -826,7 +826,7 @@
       "spot_id": "j-dc2",
       "name": "日本ドルフィンセンター",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -836,13 +836,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "unknown": 7
       }
     },
     {
@@ -1473,13 +1473,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -1696,7 +1696,7 @@
       "spot_id": "shikoku-cable",
       "name": "雲辺寺ロープウェイ",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address",
@@ -1707,12 +1707,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 7
+        "unknown": 7
       }
     },
     {
@@ -2935,7 +2936,7 @@
       "spot_id": "mitoyo-kanko",
       "name": "紫雲出山",
       "spot_type": "open_air",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -2946,13 +2947,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "unknown": 7
       }
     },
     {
@@ -3005,7 +3006,7 @@
       "spot_id": "mitoyo-kanko-128",
       "name": "粟島",
       "spot_type": "open_air",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address"
@@ -3016,13 +3017,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 1,
-        "unknown": 6
+        "unknown": 6,
+        "open": 1
       }
     },
     {
@@ -3652,7 +3653,7 @@
       "spot_id": "kinbuchi-shinrin",
       "name": "公渕森林公園",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -3663,13 +3664,13 @@
       "missing": [
         "fees"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "unknown": 7
       }
     },
     {
@@ -3724,7 +3725,7 @@
       "spot_id": "pref-279",
       "name": "瀬戸内海歴史民俗資料館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address",
@@ -3735,12 +3736,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 7
+        "unknown": 7
       }
     },
     {
@@ -4534,13 +4536,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -4616,7 +4618,7 @@
       "spot_id": "souyu-353",
       "name": "香南楽湯",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -4626,13 +4628,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "unknown": 7
       }
     },
     {
@@ -4919,7 +4921,7 @@
       "spot_id": "mannou-mori-89",
       "name": "香川県満濃池森林公園",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -4930,12 +4932,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 7
+        "unknown": 7
       }
     },
     {
@@ -5129,7 +5132,7 @@
       "spot_id": "p3214",
       "name": "尾ノ瀬山展望台",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -5140,12 +5143,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "always_open"
       ],
       "week": {
-        "open": 7
+        "unknown": 7
       }
     },
     {
@@ -6584,7 +6588,7 @@
     },
     "open_air": {
       "total": 127,
-      "settled": 126
+      "settled": 124
     },
     "untyped": 0
   },
@@ -6597,13 +6601,13 @@
     "reservation_required": 52
   },
   "states": {
-    "unknown": 170,
-    "open": 109,
-    "closed": 2
+    "unknown": 179,
+    "open": 95,
+    "closed": 7
   },
   "unknown_reasons": {
-    "stale_source": 30,
-    "no_data": 135,
+    "stale_source": 38,
+    "no_data": 136,
     "irregular_closed": 4,
     "rule_unsupported": 1
   }
