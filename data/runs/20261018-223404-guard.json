@@ -1,0 +1,24 @@
+{
+  "ci": true,
+  "command": "guard",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-10-18T22:34:05Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "japan-open-today",
+  "stages": {
+    "guard": {
+      "breaches": 0,
+      "unknown_bp": 1993,
+      "unknown_count": 56,
+      "unknown_total": 281
+    }
+  },
+  "started_at": "2026-10-18T22:34:04Z"
+}
