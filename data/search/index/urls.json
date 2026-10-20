@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-20T08:18:05.290247+09:00",
+  "checked_at": "2026-10-21T07:55:50.731604+09:00",
   "urls": {
     "https://japan-open-today.com/": {
       "verdict": "PASS",
@@ -15,7 +15,7 @@
       "last_crawl": "2026-10-14T01:53:33Z",
       "google_canonical": "https://japan-open-today.com/about/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/areas/higashikagawa/": {
       "verdict": "PASS",
@@ -108,10 +108,10 @@
     "https://japan-open-today.com/data/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-10-05T15:38:37Z",
+      "last_crawl": "2026-10-18T10:18:40Z",
       "google_canonical": "https://japan-open-today.com/data/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/": {
       "verdict": "PASS",
@@ -119,7 +119,7 @@
       "last_crawl": "2026-10-16T05:46:07Z",
       "google_canonical": "https://japan-open-today.com/en/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/about/": {
       "verdict": "PASS",
@@ -135,7 +135,7 @@
       "last_crawl": "2026-09-27T13:52:08Z",
       "google_canonical": "https://japan-open-today.com/en/areas/higashikagawa/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/areas/kotohira/": {
       "verdict": "PASS",
@@ -143,7 +143,7 @@
       "last_crawl": "2026-09-14T10:04:33Z",
       "google_canonical": "https://japan-open-today.com/en/areas/kotohira/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/areas/marugame/": {
       "verdict": "PASS",
@@ -151,7 +151,7 @@
       "last_crawl": "2026-10-14T16:40:29Z",
       "google_canonical": "https://japan-open-today.com/en/areas/marugame/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/areas/megijima/": {
       "verdict": "PASS",
@@ -159,7 +159,7 @@
       "last_crawl": "2026-09-14T09:00:33Z",
       "google_canonical": "https://japan-open-today.com/en/areas/megijima/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/areas/mitoyo/": {
       "verdict": "PASS",
@@ -167,7 +167,7 @@
       "last_crawl": "2026-09-28T16:19:42Z",
       "google_canonical": "https://japan-open-today.com/en/areas/mitoyo/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/areas/naoshima/": {
       "verdict": "PASS",
@@ -175,7 +175,7 @@
       "last_crawl": "2026-09-14T15:37:23Z",
       "google_canonical": "https://japan-open-today.com/en/areas/naoshima/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/areas/sakaide/": {
       "verdict": "PASS",
@@ -183,15 +183,15 @@
       "last_crawl": "2026-09-14T08:35:42Z",
       "google_canonical": "https://japan-open-today.com/en/areas/sakaide/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/areas/sanuki/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T08:20:59Z",
+      "last_crawl": "2026-10-19T05:45:42Z",
       "google_canonical": "https://japan-open-today.com/en/areas/sanuki/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/areas/shodoshima/": {
       "verdict": "PASS",
@@ -199,15 +199,15 @@
       "last_crawl": "2026-10-14T15:25:29Z",
       "google_canonical": "https://japan-open-today.com/en/areas/shodoshima/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/areas/takamatsu/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T08:22:16Z",
+      "last_crawl": "2026-10-17T07:34:51Z",
       "google_canonical": "https://japan-open-today.com/en/areas/takamatsu/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/areas/teshima/": {
       "verdict": "PASS",
@@ -215,7 +215,7 @@
       "last_crawl": "2026-09-27T19:04:49Z",
       "google_canonical": "https://japan-open-today.com/en/areas/teshima/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/data/": {
       "verdict": "PASS",
@@ -236,10 +236,10 @@
     "https://japan-open-today.com/en/spots/higashikagawa/higashikagawa/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T12:36:44Z",
+      "last_crawl": "2026-10-19T12:24:01Z",
       "google_canonical": "https://japan-open-today.com/en/spots/higashikagawa/higashikagawa/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/higashikagawa/p18/": {
       "verdict": "PASS",
@@ -319,7 +319,7 @@
       "last_crawl": "2026-09-27T19:54:42Z",
       "google_canonical": "https://japan-open-today.com/en/spots/higashikagawa/shirotorizoo/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/higashikagawa/souyu/": {
       "verdict": "NEUTRAL",
@@ -327,15 +327,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/higashikagawa/tanokuchiyakushi/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/higashikagawa/tebukurokumiai/": {
       "verdict": "NEUTRAL",
@@ -351,7 +351,7 @@
       "last_crawl": "2026-09-28T18:37:35Z",
       "google_canonical": "https://japan-open-today.com/en/spots/higashikagawa/yodaji/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/kotohira/e-mikado-105/": {
       "verdict": "PASS",
@@ -367,7 +367,7 @@
       "last_crawl": "2026-09-14T12:36:02Z",
       "google_canonical": "https://japan-open-today.com/en/spots/kotohira/e-mikado-90/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/kotohira/e-mikado/": {
       "verdict": "NEUTRAL",
@@ -375,7 +375,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/kotohira/konpira-76/": {
       "verdict": "PASS",
@@ -391,7 +391,7 @@
       "last_crawl": "2026-09-27T17:05:28Z",
       "google_canonical": "https://japan-open-today.com/en/spots/kotohira/konpira/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/kotohira/konpirakabuki/": {
       "verdict": "PASS",
@@ -399,7 +399,7 @@
       "last_crawl": "2026-09-14T12:12:20Z",
       "google_canonical": "https://japan-open-today.com/en/spots/kotohira/konpirakabuki/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/kotohira/kotohira/": {
       "verdict": "NEUTRAL",
@@ -599,7 +599,7 @@
       "last_crawl": "2026-09-14T17:35:19Z",
       "google_canonical": "https://japan-open-today.com/en/spots/marugame/bansyouen/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/marugame/city-117/": {
       "verdict": "PASS",
@@ -607,7 +607,7 @@
       "last_crawl": "2026-10-13T17:51:28Z",
       "google_canonical": "https://japan-open-today.com/en/spots/marugame/city-117/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/marugame/city-334/": {
       "verdict": "PASS",
@@ -663,7 +663,7 @@
       "last_crawl": "2026-09-14T08:28:02Z",
       "google_canonical": "https://japan-open-today.com/en/spots/marugame/kyougokuann/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/marugame/kyuman/": {
       "verdict": "PASS",
@@ -671,7 +671,7 @@
       "last_crawl": "2026-09-27T11:34:42Z",
       "google_canonical": "https://japan-open-today.com/en/spots/marugame/kyuman/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/marugame/love-marugame/": {
       "verdict": "PASS",
@@ -759,7 +759,7 @@
       "last_crawl": "2026-10-15T13:47:14Z",
       "google_canonical": "https://japan-open-today.com/en/spots/marugame/mimoca/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/marugame/mod/": {
       "verdict": "PASS",
@@ -775,7 +775,7 @@
       "last_crawl": "2026-09-14T09:40:58Z",
       "google_canonical": "https://japan-open-today.com/en/spots/marugame/newreomaworld/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/marugame/ooedoonsen/": {
       "verdict": "PASS",
@@ -783,15 +783,15 @@
       "last_crawl": "2026-09-14T17:45:25Z",
       "google_canonical": "https://japan-open-today.com/en/spots/marugame/ooedoonsen/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/marugame/p3639/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T07:07:31Z",
+      "last_crawl": "2026-10-18T16:16:44Z",
       "google_canonical": "https://japan-open-today.com/en/spots/marugame/p3639/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/marugame/p3920/": {
       "verdict": "PASS",
@@ -855,7 +855,7 @@
       "last_crawl": "2026-09-14T16:59:29Z",
       "google_canonical": "https://japan-open-today.com/en/spots/marugame/zentsuji/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/megijima/onigasima/": {
       "verdict": "PASS",
@@ -863,7 +863,7 @@
       "last_crawl": "2026-09-14T09:32:20Z",
       "google_canonical": "https://japan-open-today.com/en/spots/megijima/onigasima/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/megijima/p2463/": {
       "verdict": "PASS",
@@ -871,15 +871,15 @@
       "last_crawl": "2026-10-13T17:13:59Z",
       "google_canonical": "https://japan-open-today.com/en/spots/megijima/p2463/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/mitoyo/chichibugahama/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-15T08:04:58Z",
+      "last_crawl": "2026-10-18T20:24:03Z",
       "google_canonical": "https://japan-open-today.com/en/spots/mitoyo/chichibugahama/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/mitoyo/city-148/": {
       "verdict": "PASS",
@@ -1159,7 +1159,7 @@
       "last_crawl": "2026-09-21T14:47:33Z",
       "google_canonical": "https://japan-open-today.com/en/spots/mitoyo/p46/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/mitoyo/p484/": {
       "verdict": "PASS",
@@ -1247,7 +1247,7 @@
       "last_crawl": "2026-09-14T09:37:12Z",
       "google_canonical": "https://japan-open-today.com/en/spots/naoshima/benesse-house/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/naoshima/chichu/": {
       "verdict": "NEUTRAL",
@@ -1255,7 +1255,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/naoshima/naoshima/": {
       "verdict": "PASS",
@@ -1359,7 +1359,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/sakaide/goldtower/": {
       "verdict": "PASS",
@@ -1367,7 +1367,7 @@
       "last_crawl": "2026-09-14T10:29:26Z",
       "google_canonical": "https://japan-open-today.com/en/spots/sakaide/goldtower/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/sakaide/goshikivc/": {
       "verdict": "PASS",
@@ -1399,7 +1399,7 @@
       "last_crawl": "2026-09-14T07:42:56Z",
       "google_canonical": "https://japan-open-today.com/en/spots/sakaide/p2788/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/sakaide/p2970/": {
       "verdict": "PASS",
@@ -1439,7 +1439,7 @@
       "last_crawl": "2026-10-13T21:10:17Z",
       "google_canonical": "https://japan-open-today.com/en/spots/sakaide/pref-156/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/sakaide/sakaide-kankou-462/": {
       "verdict": "PASS",
@@ -1471,7 +1471,7 @@
       "last_crawl": "2026-09-14T13:24:27Z",
       "google_canonical": "https://japan-open-today.com/en/spots/sakaide/setoohashitower/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/sakaide/setoohhashi-181/": {
       "verdict": "PASS",
@@ -1503,7 +1503,7 @@
       "last_crawl": "2026-09-14T08:16:31Z",
       "google_canonical": "https://japan-open-today.com/en/spots/sakaide/shikoku-aquarium/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/sakaide/shiromineji/": {
       "verdict": "PASS",
@@ -1511,7 +1511,7 @@
       "last_crawl": "2026-09-16T12:54:32Z",
       "google_canonical": "https://japan-open-today.com/en/spots/sakaide/shiromineji/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/sakaide/takinomiyatenmangu/": {
       "verdict": "PASS",
@@ -1551,7 +1551,7 @@
       "last_crawl": "2026-09-14T07:40:39Z",
       "google_canonical": "https://japan-open-today.com/en/spots/sakaide/yakuyoke/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/sanuki/city-183/": {
       "verdict": "PASS",
@@ -1623,7 +1623,7 @@
       "last_crawl": "2026-10-05T04:35:02Z",
       "google_canonical": "https://japan-open-today.com/en/spots/sanuki/hiragagennai/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/sanuki/j-dc2/": {
       "verdict": "PASS",
@@ -1631,7 +1631,7 @@
       "last_crawl": "2026-09-14T19:05:36Z",
       "google_canonical": "https://japan-open-today.com/en/spots/sanuki/j-dc2/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/sanuki/mikicho-kanko/": {
       "verdict": "PASS",
@@ -1735,7 +1735,7 @@
       "last_crawl": "2026-09-15T14:44:36Z",
       "google_canonical": "https://japan-open-today.com/en/spots/sanuki/sanukicity-sportspark/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/sanuki/shidoji/": {
       "verdict": "PASS",
@@ -1759,15 +1759,15 @@
       "last_crawl": "2026-09-15T10:37:52Z",
       "google_canonical": "https://japan-open-today.com/en/spots/sanuki/town-375/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/shodoshima/24hitomi/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-15T01:14:23Z",
+      "last_crawl": "2026-10-18T20:39:33Z",
       "google_canonical": "https://japan-open-today.com/en/spots/shodoshima/24hitomi/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/shodoshima/hoshoin/": {
       "verdict": "PASS",
@@ -1783,7 +1783,7 @@
       "last_crawl": "2026-09-14T07:38:56Z",
       "google_canonical": "https://japan-open-today.com/en/spots/shodoshima/kankakei/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/shodoshima/manten-shodoshima/": {
       "verdict": "NEUTRAL",
@@ -1983,7 +1983,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/city-161/": {
       "verdict": "PASS",
@@ -2015,7 +2015,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/city-474/": {
       "verdict": "PASS",
@@ -2055,7 +2055,7 @@
       "last_crawl": "2026-10-14T09:30:24Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/city/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/genpei-mure/": {
       "verdict": "NEUTRAL",
@@ -2071,7 +2071,7 @@
       "last_crawl": "2026-10-14T08:21:52Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/ha-art/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/ikoinomori/": {
       "verdict": "PASS",
@@ -2099,11 +2099,11 @@
     },
     "https://japan-open-today.com/en/spots/takamatsu/kawashima-af/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/kenminhall/": {
       "verdict": "PASS",
@@ -2111,7 +2111,7 @@
       "last_crawl": "2026-09-25T18:44:42Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/kenminhall/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/kinashi-bonsai/": {
       "verdict": "PASS",
@@ -2135,7 +2135,7 @@
       "last_crawl": "2026-09-27T06:41:03Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/kmuseum/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/michi-no-eki/": {
       "verdict": "NEUTRAL",
@@ -2163,11 +2163,11 @@
     },
     "https://japan-open-today.com/en/spots/takamatsu/nagarestudio/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/npo-wahaha/": {
       "verdict": "PASS",
@@ -2175,7 +2175,7 @@
       "last_crawl": "2026-09-25T03:40:45Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/npo-wahaha/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/ogijima/": {
       "verdict": "PASS",
@@ -2263,7 +2263,7 @@
       "last_crawl": "2026-10-05T00:32:13Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/p443/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/p447/": {
       "verdict": "PASS",
@@ -2271,7 +2271,7 @@
       "last_crawl": "2026-10-13T23:40:18Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/p447/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/pref-279/": {
       "verdict": "NEUTRAL",
@@ -2287,7 +2287,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/ritsurin/": {
       "verdict": "NEUTRAL",
@@ -2295,7 +2295,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/sakurashop/": {
       "verdict": "PASS",
@@ -2303,7 +2303,7 @@
       "last_crawl": "2026-10-01T14:30:18Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/sakurashop/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/sanuki-airport-park/": {
       "verdict": "PASS",
@@ -2322,12 +2322,12 @@
       "checked_on": "2026-10-19"
     },
     "https://japan-open-today.com/en/spots/takamatsu/sanuki/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-19T07:23:43Z",
+      "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/sanuki/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/sanukikokubunji/": {
       "verdict": "PASS",
@@ -2339,11 +2339,11 @@
     },
     "https://japan-open-today.com/en/spots/takamatsu/shikokumura/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/shionoe/": {
       "verdict": "NEUTRAL",
@@ -2359,7 +2359,7 @@
       "last_crawl": "2026-09-14T16:56:14Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/sionoe/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/souyu-296/": {
       "verdict": "NEUTRAL",
@@ -2383,7 +2383,7 @@
       "last_crawl": "2026-10-14T20:00:16Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/sunport-hall/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/taka-spo/": {
       "verdict": "NEUTRAL",
@@ -2391,15 +2391,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/takamatsu-orne/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/takamatsu/": {
       "verdict": "PASS",
@@ -2415,7 +2415,7 @@
       "last_crawl": "2026-09-26T19:47:54Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/takamatsujyo/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/tamamo/": {
       "verdict": "PASS",
@@ -2423,7 +2423,7 @@
       "last_crawl": "2026-10-14T17:57:10Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/tamamo/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/tamurajinja/": {
       "verdict": "PASS",
@@ -2439,7 +2439,7 @@
       "last_crawl": "2026-09-26T22:49:30Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/yakuriji/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/takamatsu/yashima-navi-4144/": {
       "verdict": "PASS",
@@ -2463,7 +2463,7 @@
       "last_crawl": "2026-09-14T23:57:21Z",
       "google_canonical": "https://japan-open-today.com/en/spots/takamatsu/yashima/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/teshima/teshima-art/": {
       "verdict": "PASS",
@@ -2471,7 +2471,7 @@
       "last_crawl": "2026-10-02T04:12:15Z",
       "google_canonical": "https://japan-open-today.com/en/spots/teshima/teshima-art/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/en/spots/teshima/teshima-navi/": {
       "verdict": "PASS",
@@ -2495,7 +2495,7 @@
       "last_crawl": "2026-09-14T08:49:06Z",
       "google_canonical": "https://japan-open-today.com/privacy/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/higashikagawa/higashikagawa/": {
       "verdict": "PASS",
@@ -2674,12 +2674,12 @@
       "checked_on": "2026-10-20"
     },
     "https://japan-open-today.com/spots/kotohira/kotohirakankou-2576/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-20T15:50:29Z",
+      "google_canonical": "https://japan-open-today.com/spots/kotohira/kotohirakankou-2576/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/kotohira/kotohirakankou-77/": {
       "verdict": "NEUTRAL",
@@ -2695,15 +2695,15 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/kotohira/kotohirakankou-80/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/kotohira/kotohirakankou/": {
       "verdict": "PASS",
@@ -2743,7 +2743,7 @@
       "last_crawl": "2026-09-30T17:47:07Z",
       "google_canonical": "https://japan-open-today.com/spots/kotohira/p3007/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/kotohira/p3214/": {
       "verdict": "NEUTRAL",
@@ -2767,7 +2767,7 @@
       "last_crawl": "2026-09-14T20:12:28Z",
       "google_canonical": "https://japan-open-today.com/spots/kotohira/p71/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/kotohira/p81/": {
       "verdict": "PASS",
@@ -2775,7 +2775,7 @@
       "last_crawl": "2026-09-14T19:51:44Z",
       "google_canonical": "https://japan-open-today.com/spots/kotohira/p81/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/kotohira/sanukimannopark/": {
       "verdict": "PASS",
@@ -2811,11 +2811,11 @@
     },
     "https://japan-open-today.com/spots/kotohira/town-104/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/kotohira/town-3006/": {
       "verdict": "PASS",
@@ -2823,7 +2823,7 @@
       "last_crawl": "2026-09-14T17:32:07Z",
       "google_canonical": "https://japan-open-today.com/spots/kotohira/town-3006/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/kotohira/town-338/": {
       "verdict": "PASS",
@@ -2899,11 +2899,11 @@
     },
     "https://japan-open-today.com/spots/marugame/city-3696/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/marugame/kagawa-konzouji/": {
       "verdict": "PASS",
@@ -2919,7 +2919,7 @@
       "last_crawl": "2026-09-14T09:15:39Z",
       "google_canonical": "https://japan-open-today.com/spots/marugame/koyamaji/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/marugame/kyougokuann/": {
       "verdict": "PASS",
@@ -2951,7 +2951,7 @@
       "last_crawl": "2026-09-29T05:03:31Z",
       "google_canonical": "https://japan-open-today.com/spots/marugame/mandaraji/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/marugame/marugame-happylife-112/": {
       "verdict": "PASS",
@@ -2967,7 +2967,7 @@
       "last_crawl": "2026-09-14T09:11:18Z",
       "google_canonical": "https://japan-open-today.com/spots/marugame/marugame-happylife-115/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/marugame/marugame-happylife-379/": {
       "verdict": "PASS",
@@ -2983,15 +2983,15 @@
       "last_crawl": "2026-09-14T12:08:09Z",
       "google_canonical": "https://japan-open-today.com/spots/marugame/marugame-happylife-458/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/marugame/marugame-happylife-459/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/marugame/marugame-happylife-460/": {
       "verdict": "NEUTRAL",
@@ -2999,7 +2999,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/marugame/marugame-happylife-461/": {
       "verdict": "PASS",
@@ -3007,7 +3007,7 @@
       "last_crawl": "2026-09-29T05:14:31Z",
       "google_canonical": "https://japan-open-today.com/spots/marugame/marugame-happylife-461/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/marugame/marugame-happylife/": {
       "verdict": "PASS",
@@ -3071,7 +3071,7 @@
       "last_crawl": "2026-09-27T05:26:03Z",
       "google_canonical": "https://japan-open-today.com/spots/marugame/shorinjikempo/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/marugame/shusshakaji/": {
       "verdict": "PASS",
@@ -3087,7 +3087,7 @@
       "last_crawl": "2026-10-05T01:48:21Z",
       "google_canonical": "https://japan-open-today.com/spots/marugame/tadotsu-kanko-242/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/marugame/tadotsu-kanko-243/": {
       "verdict": "PASS",
@@ -3103,7 +3103,7 @@
       "last_crawl": "2026-09-30T00:22:21Z",
       "google_canonical": "https://japan-open-today.com/spots/marugame/tadotsu-kanko-479/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/marugame/tadotsu-kanko/": {
       "verdict": "PASS",
@@ -3199,7 +3199,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/mitoyo/city-67/": {
       "verdict": "NEUTRAL",
@@ -3543,7 +3543,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/sakaide/city-155/": {
       "verdict": "NEUTRAL",
@@ -3567,7 +3567,7 @@
       "last_crawl": "2026-09-14T09:01:39Z",
       "google_canonical": "https://japan-open-today.com/spots/sakaide/city-158/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/sakaide/city-160/": {
       "verdict": "PASS",
@@ -3591,7 +3591,7 @@
       "last_crawl": "2026-10-13T14:40:21Z",
       "google_canonical": "https://japan-open-today.com/spots/sakaide/city-178/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/sakaide/city-496/": {
       "verdict": "PASS",
@@ -3599,7 +3599,7 @@
       "last_crawl": "2026-09-14T08:47:11Z",
       "google_canonical": "https://japan-open-today.com/spots/sakaide/city-496/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/sakaide/city-500/": {
       "verdict": "PASS",
@@ -3607,15 +3607,15 @@
       "last_crawl": "2026-09-28T18:44:25Z",
       "google_canonical": "https://japan-open-today.com/spots/sakaide/city-500/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/sakaide/city-502/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-10-12T05:27:14Z",
+      "last_crawl": "2026-10-19T07:08:46Z",
       "google_canonical": "https://japan-open-today.com/spots/sakaide/city-502/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/sakaide/co-machi-no-ie/": {
       "verdict": "PASS",
@@ -3711,7 +3711,7 @@
       "last_crawl": "2026-09-29T05:35:27Z",
       "google_canonical": "https://japan-open-today.com/spots/sakaide/sakaide-kankou-462/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/sakaide/sakaide-kankou-463/": {
       "verdict": "PASS",
@@ -3719,7 +3719,7 @@
       "last_crawl": "2026-09-25T01:14:42Z",
       "google_canonical": "https://japan-open-today.com/spots/sakaide/sakaide-kankou-463/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/sakaide/sakaide-kankou/": {
       "verdict": "PASS",
@@ -3779,11 +3779,11 @@
     },
     "https://japan-open-today.com/spots/sakaide/takinomiyatenmangu/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/sakaide/town-8/": {
       "verdict": "PASS",
@@ -3799,7 +3799,7 @@
       "last_crawl": "2026-10-12T02:54:02Z",
       "google_canonical": "https://japan-open-today.com/spots/sakaide/town-9/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/spots/sakaide/utazu-umihotaru/": {
       "verdict": "PASS",
@@ -4748,10 +4748,10 @@
     "https://japan-open-today.com/transport/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-10-07T17:12:09Z",
+      "last_crawl": "2026-10-18T21:00:37Z",
       "google_canonical": "https://japan-open-today.com/transport/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-17"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/": {
       "verdict": "PASS",
@@ -4887,7 +4887,7 @@
       "last_crawl": "2026-10-05T02:05:01Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/higashikagawa/p18/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/higashikagawa/p20/": {
       "verdict": "PASS",
@@ -4895,7 +4895,7 @@
       "last_crawl": "2026-10-09T05:23:31Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/higashikagawa/p20/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/higashikagawa/p27/": {
       "verdict": "PASS",
@@ -4911,7 +4911,7 @@
       "last_crawl": "2026-09-14T08:26:06Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/higashikagawa/p30/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/higashikagawa/p35/": {
       "verdict": "PASS",
@@ -4919,7 +4919,7 @@
       "last_crawl": "2026-09-14T08:01:49Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/higashikagawa/p35/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/higashikagawa/p39/": {
       "verdict": "NEUTRAL",
@@ -4935,7 +4935,7 @@
       "last_crawl": "2026-09-14T08:07:34Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/higashikagawa/p43/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/higashikagawa/p44/": {
       "verdict": "PASS",
@@ -4951,7 +4951,7 @@
       "last_crawl": "2026-09-14T09:39:53Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/higashikagawa/shirotori-jinja/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/higashikagawa/shirotorizoo/": {
       "verdict": "PASS",
@@ -4983,7 +4983,7 @@
       "last_crawl": "2026-10-05T15:57:26Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/higashikagawa/tebukurokumiai/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/higashikagawa/yodaji/": {
       "verdict": "PASS",
@@ -4999,7 +4999,7 @@
       "last_crawl": "2026-10-08T06:20:54Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/kotohira/e-mikado-105/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/kotohira/e-mikado-90/": {
       "verdict": "PASS",
@@ -5087,7 +5087,7 @@
       "last_crawl": "2026-09-14T10:23:33Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/kotohira/kotohirakankou/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/kotohira/mannou-mori-89/": {
       "verdict": "PASS",
@@ -5103,7 +5103,7 @@
       "last_crawl": "2026-09-14T08:48:28Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/kotohira/mannou-mori/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/kotohira/nishino-kinryo/": {
       "verdict": "PASS",
@@ -5135,7 +5135,7 @@
       "last_crawl": "2026-09-14T07:46:22Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/kotohira/p431/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/kotohira/p71/": {
       "verdict": "PASS",
@@ -5183,7 +5183,7 @@
       "last_crawl": "2026-10-12T00:53:58Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/kotohira/shioiri-onsen/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/kotohira/town-104/": {
       "verdict": "NEUTRAL",
@@ -5207,7 +5207,7 @@
       "last_crawl": "2026-10-08T05:11:52Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/kotohira/town-338/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/kotohira/town-421/": {
       "verdict": "NEUTRAL",
@@ -5215,7 +5215,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/kotohira/town-490/": {
       "verdict": "NEUTRAL",
@@ -5223,7 +5223,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/kotohira/town/": {
       "verdict": "PASS",
@@ -5267,11 +5267,11 @@
     },
     "https://japan-open-today.com/zh-hant/spots/marugame/city-339/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/marugame/city-3696/": {
       "verdict": "NEUTRAL",
@@ -5319,7 +5319,7 @@
       "last_crawl": "2026-09-28T17:57:12Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/marugame/love-marugame/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/marugame/mandaraji/": {
       "verdict": "PASS",
@@ -5407,7 +5407,7 @@
       "last_crawl": "2026-10-08T14:09:03Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/marugame/mod/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/marugame/newreomaworld/": {
       "verdict": "PASS",
@@ -5455,7 +5455,7 @@
       "last_crawl": "2026-10-05T04:14:20Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/marugame/shusshakaji/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/marugame/tadotsu-kanko-242/": {
       "verdict": "PASS",
@@ -5487,7 +5487,7 @@
       "last_crawl": "2026-10-05T06:48:35Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/marugame/tadotsu-kanko/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/marugame/zentsuji/": {
       "verdict": "PASS",
@@ -5535,7 +5535,7 @@
       "last_crawl": "2026-10-05T15:19:52Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/city-2938/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/city-426/": {
       "verdict": "NEUTRAL",
@@ -5543,7 +5543,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/city-47/": {
       "verdict": "NEUTRAL",
@@ -5559,7 +5559,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/city-61/": {
       "verdict": "PASS",
@@ -5567,7 +5567,7 @@
       "last_crawl": "2026-09-28T12:31:48Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/city-61/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/city-64/": {
       "verdict": "NEUTRAL",
@@ -5579,11 +5579,11 @@
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/city-67/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/ichiyaan/": {
       "verdict": "PASS",
@@ -5591,7 +5591,7 @@
       "last_crawl": "2026-09-14T07:39:30Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/ichiyaan/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/kanonji-kanko-4483/": {
       "verdict": "PASS",
@@ -5599,15 +5599,15 @@
       "last_crawl": "2026-09-14T09:18:51Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/kanonji-kanko-4483/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/kanonji-kanko-477/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-10-12T02:08:59Z",
+      "last_crawl": "2026-10-16T04:31:07Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/kanonji-kanko-477/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/kanonji-kanko-54/": {
       "verdict": "PASS",
@@ -5615,7 +5615,7 @@
       "last_crawl": "2026-09-14T09:13:28Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/kanonji-kanko-54/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/kanonji-kanko-65/": {
       "verdict": "PASS",
@@ -5623,7 +5623,7 @@
       "last_crawl": "2026-10-01T04:46:37Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/kanonji-kanko-65/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/kanonji-kanko/": {
       "verdict": "PASS",
@@ -5631,7 +5631,7 @@
       "last_crawl": "2026-10-08T02:49:09Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/kanonji-kanko/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/komatsuoji/": {
       "verdict": "PASS",
@@ -5663,7 +5663,7 @@
       "last_crawl": "2026-10-05T06:15:10Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/michinoeki-kotohiki/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/michitoyo-oh/": {
       "verdict": "PASS",
@@ -5683,11 +5683,11 @@
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/mitoyo-kanko-128/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "URL is unknown to Google",
+      "coverage_state": "Discovered - currently not indexed",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/mitoyo-kanko-129/": {
       "verdict": "PASS",
@@ -5695,15 +5695,15 @@
       "last_crawl": "2026-09-14T09:10:18Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/mitoyo-kanko-129/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/mitoyo-kanko-131/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-17T12:57:52Z",
+      "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/mitoyo-kanko-131/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/mitoyo-kanko-141/": {
       "verdict": "NEUTRAL",
@@ -5719,7 +5719,7 @@
       "last_crawl": "2026-09-14T09:09:12Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/mitoyo-kanko-143/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/mitoyo-kanko-457/": {
       "verdict": "NEUTRAL",
@@ -5727,7 +5727,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/mitoyo-kanko/": {
       "verdict": "PASS",
@@ -5735,7 +5735,7 @@
       "last_crawl": "2026-10-15T04:47:56Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/mitoyo-kanko/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/mitoyocs/": {
       "verdict": "PASS",
@@ -5743,7 +5743,7 @@
       "last_crawl": "2026-10-05T05:25:21Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/mitoyocs/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/mizupark-4344/": {
       "verdict": "PASS",
@@ -5775,7 +5775,7 @@
       "last_crawl": "2026-09-14T07:01:15Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/p133/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/p144/": {
       "verdict": "PASS",
@@ -5791,7 +5791,7 @@
       "last_crawl": "2026-09-28T23:01:13Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/p3441/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/p46/": {
       "verdict": "PASS",
@@ -5799,7 +5799,7 @@
       "last_crawl": "2026-09-14T08:30:34Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/p46/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/p484/": {
       "verdict": "PASS",
@@ -5807,15 +5807,15 @@
       "last_crawl": "2026-09-14T07:08:07Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/p484/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/park-mino-147/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T08:43:23Z",
+      "last_crawl": "2026-10-20T19:01:52Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/park-mino-147/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/park-mino-380/": {
       "verdict": "PASS",
@@ -5850,12 +5850,12 @@
       "checked_on": "2026-10-20"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/shippouzan/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-17T20:07:46Z",
+      "google_canonical": "https://japan-open-today.com/zh-hant/spots/mitoyo/shippouzan/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/souyu-135/": {
       "verdict": "PASS",
@@ -5871,7 +5871,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/mitoyo/takaradanosato/": {
       "verdict": "PASS",
@@ -5996,10 +5996,10 @@
     "https://japan-open-today.com/zh-hant/spots/sakaide/co-machi-no-ie/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T10:24:51Z",
+      "last_crawl": "2026-10-17T05:03:54Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sakaide/co-machi-no-ie/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sakaide/goldtower/": {
       "verdict": "PASS",
@@ -6031,7 +6031,7 @@
       "last_crawl": "2026-10-01T04:35:38Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sakaide/p13/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sakaide/p2788/": {
       "verdict": "PASS",
@@ -6055,15 +6055,15 @@
       "last_crawl": "2026-09-14T07:15:32Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sakaide/p317/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sakaide/p4/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-20T14:35:28Z",
+      "google_canonical": "https://japan-open-today.com/zh-hant/spots/sakaide/p4/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sakaide/p422/": {
       "verdict": "PASS",
@@ -6103,7 +6103,7 @@
       "last_crawl": "2026-10-08T19:52:10Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sakaide/sakaide-kankou/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sakaide/setoohashitower/": {
       "verdict": "PASS",
@@ -6119,7 +6119,7 @@
       "last_crawl": "2026-09-21T23:21:53Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sakaide/setoohhashi-181/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sakaide/setoohhashi-2353/": {
       "verdict": "PASS",
@@ -6183,7 +6183,7 @@
       "last_crawl": "2026-09-14T09:07:01Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sakaide/utazu-umihotaru/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sakaide/yakuyoke/": {
       "verdict": "PASS",
@@ -6218,12 +6218,12 @@
       "checked_on": "2026-10-17"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/city-208/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-19T04:53:44Z",
+      "google_canonical": "https://japan-open-today.com/zh-hant/spots/sanuki/city-208/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/city-209/": {
       "verdict": "PASS",
@@ -6231,7 +6231,7 @@
       "last_crawl": "2026-09-29T14:40:40Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sanuki/city-209/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/city-211/": {
       "verdict": "PASS",
@@ -6239,15 +6239,15 @@
       "last_crawl": "2026-10-01T13:15:07Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sanuki/city-211/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/city-216/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T07:29:14Z",
+      "last_crawl": "2026-10-16T23:57:46Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sanuki/city-216/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/hiragagennai-205/": {
       "verdict": "NEUTRAL",
@@ -6255,7 +6255,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/hiragagennai/": {
       "verdict": "PASS",
@@ -6287,7 +6287,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/p120/": {
       "verdict": "PASS",
@@ -6319,7 +6319,7 @@
       "last_crawl": "2026-10-08T19:28:27Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sanuki/p424/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/p425/": {
       "verdict": "PASS",
@@ -6327,7 +6327,7 @@
       "last_crawl": "2026-10-14T09:58:13Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sanuki/p425/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/sanuki-191/": {
       "verdict": "PASS",
@@ -6335,7 +6335,7 @@
       "last_crawl": "2026-10-15T04:15:49Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sanuki/sanuki-191/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/sanuki-kanko/": {
       "verdict": "PASS",
@@ -6343,7 +6343,7 @@
       "last_crawl": "2026-09-14T08:32:29Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sanuki/sanuki-kanko/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/sanuki-sa/": {
       "verdict": "PASS",
@@ -6351,7 +6351,7 @@
       "last_crawl": "2026-10-05T15:00:49Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sanuki/sanuki-sa/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/sanukicity-sportspark-198/": {
       "verdict": "PASS",
@@ -6378,12 +6378,12 @@
       "checked_on": "2026-10-20"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/shidoji/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-18T08:57:40Z",
+      "google_canonical": "https://japan-open-today.com/zh-hant/spots/sanuki/shidoji/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/telescope-museum/": {
       "verdict": "PASS",
@@ -6391,7 +6391,7 @@
       "last_crawl": "2026-09-14T09:08:37Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/sanuki/telescope-museum/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/sanuki/town-375/": {
       "verdict": "PASS",
@@ -6415,7 +6415,7 @@
       "last_crawl": "2026-10-15T12:57:15Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/shodoshima/hoshoin/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/shodoshima/kankakei/": {
       "verdict": "PASS",
@@ -6471,7 +6471,7 @@
       "last_crawl": "2026-09-14T07:41:13Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/shodoshima/p217/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/shodoshima/p308/": {
       "verdict": "PASS",
@@ -6479,7 +6479,7 @@
       "last_crawl": "2026-10-12T17:14:11Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/shodoshima/p308/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/shodoshima/p309/": {
       "verdict": "PASS",
@@ -6495,15 +6495,15 @@
       "last_crawl": "2026-10-05T03:36:50Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/shodoshima/p312/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/shodoshima/p3309/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-27T09:45:30Z",
+      "last_crawl": "2026-10-20T15:12:58Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/shodoshima/p3309/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/shodoshima/p3832/": {
       "verdict": "PASS",
@@ -6530,12 +6530,12 @@
       "checked_on": "2026-10-20"
     },
     "https://japan-open-today.com/zh-hant/spots/shodoshima/pref-469/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-20T15:12:59Z",
+      "google_canonical": "https://japan-open-today.com/zh-hant/spots/shodoshima/pref-469/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/shodoshima/shimahaku-shimameshi-shimayu/": {
       "verdict": "PASS",
@@ -6564,18 +6564,18 @@
     "https://japan-open-today.com/zh-hant/spots/shodoshima/tonosho-shokokai/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T09:29:39Z",
+      "last_crawl": "2026-10-18T23:03:49Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/shodoshima/tonosho-shokokai/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/shodoshima/town-306/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/shodoshima/town-310/": {
       "verdict": "NEUTRAL",
@@ -6595,19 +6595,19 @@
     },
     "https://japan-open-today.com/zh-hant/spots/shodoshima/town-485/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/shodoshima/town-486/": {
       "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
+      "coverage_state": "URL is unknown to Google",
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/88shikokuhenro-245/": {
       "verdict": "PASS",
@@ -6626,12 +6626,12 @@
       "checked_on": "2026-10-20"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/city-161/": {
-      "verdict": "NEUTRAL",
-      "coverage_state": "Discovered - currently not indexed",
-      "last_crawl": "",
-      "google_canonical": "",
-      "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "verdict": "PASS",
+      "coverage_state": "Submitted and indexed",
+      "last_crawl": "2026-10-17T01:41:50Z",
+      "google_canonical": "https://japan-open-today.com/zh-hant/spots/takamatsu/city-161/",
+      "robots": "ALLOWED",
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/city-2484/": {
       "verdict": "PASS",
@@ -6647,7 +6647,7 @@
       "last_crawl": "2026-10-14T16:03:22Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/takamatsu/city-283/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/city-284/": {
       "verdict": "NEUTRAL",
@@ -6687,7 +6687,7 @@
       "last_crawl": "2026-09-29T05:24:59Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/takamatsu/city-507/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/city/": {
       "verdict": "PASS",
@@ -6703,7 +6703,7 @@
       "last_crawl": "2026-10-08T13:12:34Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/takamatsu/genpei-mure/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/ha-art/": {
       "verdict": "PASS",
@@ -6735,7 +6735,7 @@
       "last_crawl": "2026-10-08T03:55:42Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/takamatsu/karokaro/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/kawashima-af/": {
       "verdict": "PASS",
@@ -6764,10 +6764,10 @@
     "https://japan-open-today.com/zh-hant/spots/takamatsu/kinbuchi-shinrin/": {
       "verdict": "PASS",
       "coverage_state": "Submitted and indexed",
-      "last_crawl": "2026-09-14T09:25:20Z",
+      "last_crawl": "2026-10-20T20:16:52Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/takamatsu/kinbuchi-shinrin/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/kmuseum/": {
       "verdict": "PASS",
@@ -6783,7 +6783,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/mineyama-park/": {
       "verdict": "PASS",
@@ -6791,7 +6791,7 @@
       "last_crawl": "2026-09-14T09:12:55Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/takamatsu/mineyama-park/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/mure-aji-park/": {
       "verdict": "PASS",
@@ -6799,7 +6799,7 @@
       "last_crawl": "2026-10-10T14:54:11Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/takamatsu/mure-aji-park/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/nagarestudio/": {
       "verdict": "PASS",
@@ -6839,7 +6839,7 @@
       "last_crawl": "2026-09-14T07:37:14Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/takamatsu/p2636/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/p281/": {
       "verdict": "PASS",
@@ -6919,7 +6919,7 @@
       "last_crawl": "",
       "google_canonical": "",
       "robots": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/pref/": {
       "verdict": "NEUTRAL",
@@ -6951,7 +6951,7 @@
       "last_crawl": "2026-09-23T08:52:13Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/takamatsu/sanuki-airport-park/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/sanuki-ichinomiyaji/": {
       "verdict": "PASS",
@@ -7007,7 +7007,7 @@
       "last_crawl": "2026-10-08T07:02:03Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/takamatsu/souyu-296/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/souyu-353/": {
       "verdict": "NEUTRAL",
@@ -7087,7 +7087,7 @@
       "last_crawl": "2026-09-14T05:52:32Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/takamatsu/yashima-navi-4144/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/spots/takamatsu/yashima-navi/": {
       "verdict": "PASS",
@@ -7119,7 +7119,7 @@
       "last_crawl": "2026-09-14T12:10:58Z",
       "google_canonical": "https://japan-open-today.com/zh-hant/spots/teshima/teshima-navi/",
       "robots": "ALLOWED",
-      "checked_on": "2026-10-16"
+      "checked_on": "2026-10-21"
     },
     "https://japan-open-today.com/zh-hant/transport/": {
       "verdict": "PASS",

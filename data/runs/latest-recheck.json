@@ -3,7 +3,7 @@
   "command": "recheck",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-10-19T23:39:58Z",
+  "finished_at": "2026-10-20T23:17:23Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -25,5 +25,5 @@
       "unreachable": 0
     }
   },
-  "started_at": "2026-10-19T23:39:43Z"
+  "started_at": "2026-10-20T23:17:07Z"
 }
