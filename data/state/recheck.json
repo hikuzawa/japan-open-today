@@ -128,8 +128,23 @@
  "kagawa-love-marugame": {
   "checked_on": "2026-10-21"
  },
+ "kagawa-mandaraji": {
+  "checked_on": "2026-10-22"
+ },
+ "kagawa-mannou-mori": {
+  "checked_on": "2026-10-22"
+ },
+ "kagawa-mannou-mori-89": {
+  "failed_since": "2026-10-22",
+  "failures": 1,
+  "last_tried": "2026-10-22",
+  "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8"
+ },
  "kagawa-manten-shodoshima": {
   "checked_on": "2026-10-03"
+ },
+ "kagawa-marugame-happylife": {
+  "checked_on": "2026-10-22"
  },
  "kagawa-marukin": {
   "checked_on": "2026-10-03"

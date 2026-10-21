@@ -93,3 +93,7 @@
 {"at": "2026-10-21T08:17:23+09:00", "result": "ok", "key": "kagawa-kotohirakankou-80", "label": "大センダン（kagawa-kotohirakankou-80）"}
 {"at": "2026-10-21T08:17:23+09:00", "result": "ok", "key": "kagawa-koyamaji", "label": "甲山寺（kagawa-koyamaji）"}
 {"at": "2026-10-21T08:17:23+09:00", "result": "ok", "key": "kagawa-love-marugame", "label": "飯野山（讃岐富士）（kagawa-love-marugame）"}
+{"at": "2026-10-22T08:22:42+09:00", "result": "ok", "key": "kagawa-mandaraji", "label": "曼荼羅寺（kagawa-mandaraji）"}
+{"at": "2026-10-22T08:22:42+09:00", "result": "ok", "key": "kagawa-mannou-mori", "label": "森林の館（満濃池森林公園内）（kagawa-mannou-mori）"}
+{"at": "2026-10-22T08:22:42+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 1}
+{"at": "2026-10-22T08:22:42+09:00", "result": "ok", "key": "kagawa-marugame-happylife", "label": "笠島集落（kagawa-marugame-happylife）"}

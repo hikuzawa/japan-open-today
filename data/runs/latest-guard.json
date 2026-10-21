@@ -3,7 +3,7 @@
   "command": "guard",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-10-20T23:17:25Z",
+  "finished_at": "2026-10-21T23:22:43Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -20,5 +20,5 @@
       "unknown_total": 281
     }
   },
-  "started_at": "2026-10-20T23:17:24Z"
+  "started_at": "2026-10-21T23:22:43Z"
 }
