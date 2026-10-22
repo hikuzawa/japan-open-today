@@ -1,5 +1,5 @@
 {
-  "today": "2026-10-22",
+  "today": "2026-10-23",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -335,7 +335,7 @@
       "spot_id": "npo-wahaha",
       "name": "讃岐おもちゃ美術館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -346,13 +346,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "unknown",
       "today_reasons": [
-        "weekly_closed"
+        "stale_source",
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "unknown": 7
       }
     },
     {
@@ -1615,13 +1615,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 3,
-        "open": 4
+        "open": 4,
+        "closed": 3
       }
     },
     {
@@ -1661,13 +1661,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -1823,13 +1823,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 2,
-        "open": 5
+        "open": 5,
+        "closed": 2
       }
     },
     {
@@ -3583,7 +3583,7 @@
       "spot_id": "sanuki-airport-park",
       "name": "さぬき空港公園",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -3594,13 +3594,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "closed",
+      "today": "unknown",
       "today_reasons": [
-        "weekly_closed"
+        "stale_source",
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "unknown": 7
       }
     },
     {
@@ -3844,7 +3844,7 @@
       "spot_id": "karokaro",
       "name": "讃岐漆芸美術館",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "closures",
         "address",
@@ -3855,13 +3855,13 @@
         "hours",
         "fees"
       ],
-      "today": "closed",
+      "today": "unknown",
       "today_reasons": [
-        "weekly_closed"
+        "no_data"
       ],
       "week": {
-        "closed": 1,
-        "unknown": 6
+        "unknown": 6,
+        "closed": 1
       }
     },
     {
@@ -4373,7 +4373,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "no_data"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -5640,7 +5640,7 @@
       "spot_id": "shodoshima",
       "name": "道の駅・海の駅「小豆島ふるさと村」",
       "spot_type": "open_air",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -5651,12 +5651,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
+        "stale_source",
         "regular_hours"
       ],
       "week": {
-        "open": 7
+        "unknown": 7
       }
     },
     {
@@ -6587,7 +6588,7 @@
     },
     "open_air": {
       "total": 127,
-      "settled": 124
+      "settled": 123
     },
     "untyped": 0
   },
@@ -6600,13 +6601,13 @@
     "reservation_required": 52
   },
   "states": {
-    "unknown": 176,
-    "open": 98,
-    "closed": 7
+    "unknown": 180,
+    "open": 100,
+    "closed": 1
   },
   "unknown_reasons": {
-    "stale_source": 39,
-    "no_data": 132,
+    "stale_source": 42,
+    "no_data": 133,
     "irregular_closed": 4,
     "rule_unsupported": 1
   }

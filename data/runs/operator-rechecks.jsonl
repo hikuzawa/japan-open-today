@@ -97,3 +97,9 @@
 {"at": "2026-10-22T08:22:42+09:00", "result": "ok", "key": "kagawa-mannou-mori", "label": "森林の館（満濃池森林公園内）（kagawa-mannou-mori）"}
 {"at": "2026-10-22T08:22:42+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 1}
 {"at": "2026-10-22T08:22:42+09:00", "result": "ok", "key": "kagawa-marugame-happylife", "label": "笠島集落（kagawa-marugame-happylife）"}
+{"at": "2026-10-23T08:19:36+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 4}
+{"at": "2026-10-23T08:19:36+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 2}
+{"at": "2026-10-23T08:19:36+09:00", "result": "skip", "key": "kagawa-marugame-happylife-112", "label": "塩飽勤番所跡（kagawa-marugame-happylife-112）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-23T08:19:36+09:00", "result": "skip", "key": "kagawa-marugame-happylife-115", "label": "本島（kagawa-marugame-happylife-115）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-23T08:19:36+09:00", "result": "skip", "key": "kagawa-marugame-happylife-379", "label": "丸亀市手島自然教育センター（kagawa-marugame-happylife-379）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-23T08:19:36+09:00", "result": "skip", "key": "kagawa-marugame-happylife-458", "label": "牛島（kagawa-marugame-happylife-458）", "reason": "robots.txt で根拠のページを取得できない"}

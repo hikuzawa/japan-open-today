@@ -2,13 +2,31 @@
   "ci": true,
   "command": "crawl",
   "errors": [
+    "https://www.my-kagawa.jp/ritsuringarden/: robots.txt 503: 今回は巡回しない",
+    "https://www.my-kagawa.jp/ritsuringarden/news/category:information: robots.txt 503: 今回は巡回しない",
+    "https://www.my-kagawa.jp/access: robots.txt 503: 今回は巡回しない",
+    "https://www.my-kagawa.jp/ritsuringarden/feature/ritsuringarden/guide: robots.txt 503: 今回は巡回しない",
+    "https://www.my-kagawa.jp/ritsuringarden/feature/ritsuringarden/access: robots.txt 503: 今回は巡回しない",
     "https://www.pref.kagawa.lg.jp/cgi-bin/page/list.php?tpl_type=2&dept_code=&page_type=4&tpl_id=&dir=%2Fkmuseum%2F&link_page_id=15840: HTTP 403",
+    "https://benesse-artsite.jp/art/chichu.html: robots.txt 503: 今回は巡回しない",
+    "https://benesse-artsite.jp/general-information.html: robots.txt 503: 今回は巡回しない",
+    "https://www.my-kagawa.jp/point/75: robots.txt 503: 今回は巡回しない",
+    "https://npo-wahaha.net/stm/: robots.txt 503: 今回は巡回しない",
+    "https://npo-wahaha.net/stm/info/: robots.txt 503: 今回は巡回しない",
+    "https://www.town.miki.lg.jp/life/dtl.php?hdnKey=1001&hdnSKBN=A: HTTP 404",
     "http://www.kenminhall.com/: robots.txt を取得できないため今回は巡回しない",
     "http://www.kenminhall.com/visitors/ticket/: robots.txt を取得できないため今回は巡回しない",
-    "http://www.kenminhall.com/visitors/ticket/howto: robots.txt を取得できないため今回は巡回しない"
+    "http://www.kenminhall.com/visitors/ticket/howto: robots.txt を取得できないため今回は巡回しない",
+    "https://www.my-kagawa.jp/point/433: robots.txt 503: 今回は巡回しない",
+    "https://www.my-kagawa.jp/point/202: robots.txt 503: 今回は巡回しない",
+    "https://www.my-kagawa.jp/point/267: robots.txt 503: 今回は巡回しない",
+    "https://www.my-kagawa.jp/point/470: robots.txt 503: 今回は巡回しない",
+    "https://www.my-kagawa.jp/point/262: robots.txt 503: 今回は巡回しない",
+    "https://www.my-kagawa.jp/point/3214: robots.txt 503: 今回は巡回しない",
+    "https://www.my-kagawa.jp/point/238: robots.txt 503: 今回は巡回しない"
   ],
   "extraction_metrics": null,
-  "finished_at": "2026-10-21T23:00:18Z",
+  "finished_at": "2026-10-22T22:57:18Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -19,17 +37,17 @@
   "service": "japan-open-today",
   "stages": {
     "crawl": {
-      "changed": 12,
+      "changed": 11,
       "daily_kinds_only": 15,
-      "errors": 4,
-      "fetched": 63,
-      "not_modified": 4,
-      "requests": 100,
-      "skipped_not_due": 244,
+      "errors": 22,
+      "fetched": 54,
+      "not_modified": 5,
+      "requests": 98,
+      "skipped_not_due": 236,
       "stale_cache": 0,
-      "unchanged": 55,
+      "unchanged": 48,
       "workers": 6
     }
   },
-  "started_at": "2026-10-21T22:59:22Z"
+  "started_at": "2026-10-22T22:56:24Z"
 }
