@@ -103,3 +103,9 @@
 {"at": "2026-10-23T08:19:36+09:00", "result": "skip", "key": "kagawa-marugame-happylife-115", "label": "本島（kagawa-marugame-happylife-115）", "reason": "robots.txt で根拠のページを取得できない"}
 {"at": "2026-10-23T08:19:36+09:00", "result": "skip", "key": "kagawa-marugame-happylife-379", "label": "丸亀市手島自然教育センター（kagawa-marugame-happylife-379）", "reason": "robots.txt で根拠のページを取得できない"}
 {"at": "2026-10-23T08:19:36+09:00", "result": "skip", "key": "kagawa-marugame-happylife-458", "label": "牛島（kagawa-marugame-happylife-458）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-24T08:14:14+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 5}
+{"at": "2026-10-24T08:14:14+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 3}
+{"at": "2026-10-24T08:14:14+09:00", "result": "skip", "key": "kagawa-marugame-happylife-459", "label": "広島（kagawa-marugame-happylife-459）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-24T08:14:14+09:00", "result": "skip", "key": "kagawa-marugame-happylife-460", "label": "手島（kagawa-marugame-happylife-460）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-24T08:14:14+09:00", "result": "skip", "key": "kagawa-marugame-happylife-461", "label": "小手島（kagawa-marugame-happylife-461）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-24T08:14:14+09:00", "result": "skip", "key": "kagawa-michitoyo-oh", "label": "道の駅「とよはま」（kagawa-michitoyo-oh）", "reason": "robots.txt で根拠のページを取得できない"}
