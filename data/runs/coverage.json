@@ -1,5 +1,5 @@
 {
-  "today": "2026-10-25",
+  "today": "2026-10-26",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -88,7 +88,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -136,7 +136,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -302,7 +302,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -374,7 +374,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -398,7 +398,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -470,7 +470,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -541,7 +541,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -634,13 +634,13 @@
       "missing": [
         "fees"
       ],
-      "today": "closed",
+      "today": "open",
       "today_reasons": [
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
-        "closed": 1,
-        "open": 6
+        "open": 6,
+        "closed": 1
       }
     },
     {
@@ -729,7 +729,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -753,7 +753,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -777,7 +777,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -942,7 +942,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -1037,7 +1037,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "no_data"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -1132,7 +1132,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -1251,7 +1251,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -1299,7 +1299,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "no_data"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -1344,13 +1344,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -1395,7 +1395,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -1419,7 +1419,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -1491,7 +1491,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -1515,7 +1515,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "no_data"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -1635,7 +1635,8 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed",
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -3790,7 +3791,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -3909,7 +3910,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -4051,7 +4052,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -4072,13 +4073,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 4,
-        "closed": 3
+        "closed": 3,
+        "open": 4
       }
     },
     {
@@ -4099,7 +4100,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -4169,7 +4170,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -4407,7 +4408,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "no_data"
       ],
       "week": {
         "unknown": 7
@@ -4503,7 +4504,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -4523,13 +4524,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -4760,13 +4761,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -4783,13 +4784,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -4904,7 +4905,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -5024,7 +5025,8 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "annual_closed"
+        "annual_closed",
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -5048,7 +5050,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -5116,13 +5118,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -5143,7 +5145,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -5166,7 +5168,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -5211,13 +5213,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -5540,7 +5542,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -5655,7 +5657,9 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "regular_hours"
+        "weekly_closed",
+        "weekly_closed",
+        "weekly_closed"
       ],
       "week": {
         "unknown": 7
@@ -6650,8 +6654,8 @@
   },
   "states": {
     "unknown": 261,
-    "open": 19,
-    "closed": 1
+    "open": 13,
+    "closed": 7
   },
   "unknown_reasons": {
     "stale_source": 131,

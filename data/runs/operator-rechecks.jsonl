@@ -115,3 +115,9 @@
 {"at": "2026-10-25T07:36:16+09:00", "result": "skip", "key": "kagawa-mineyama-park", "label": "峰山公園（kagawa-mineyama-park）", "reason": "robots.txt で根拠のページを取得できない"}
 {"at": "2026-10-25T07:36:16+09:00", "result": "ok", "key": "kagawa-mitoyocs", "label": "三豊市文化会館マリンウェーブ（kagawa-mitoyocs）"}
 {"at": "2026-10-25T07:36:16+09:00", "result": "ok", "key": "kagawa-mizupark-4344", "label": "香川用水記念公園（kagawa-mizupark-4344）"}
+{"at": "2026-10-26T07:38:25+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 7}
+{"at": "2026-10-26T07:38:25+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 5}
+{"at": "2026-10-26T07:38:25+09:00", "result": "skip", "key": "kagawa-mod", "label": "乃木館（陸上自衛隊善通寺駐屯地資料館）（kagawa-mod）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-26T07:38:25+09:00", "result": "skip", "key": "kagawa-mure-aji-park", "label": "城岬公園（kagawa-mure-aji-park）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-26T07:38:25+09:00", "result": "skip", "key": "kagawa-nagaoji", "label": "長尾寺（kagawa-nagaoji）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-26T07:38:25+09:00", "result": "skip", "key": "kagawa-olive-pk-239", "label": "道の駅「小豆島オリーブ公園」（kagawa-olive-pk-239）", "reason": "robots.txt で根拠のページを取得できない"}

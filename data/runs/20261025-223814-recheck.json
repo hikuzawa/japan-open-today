@@ -1,0 +1,31 @@
+{
+  "ci": true,
+  "command": "recheck",
+  "errors": [],
+  "extraction_metrics": null,
+  "finished_at": "2026-10-25T22:38:25Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [
+    "運営主体の確かめ直し: 6 件（成り立った 0・成り立たなかった 2・robots.txt で見送り 4・通信できない 0・選び直し 0）",
+    "高松城跡 玉藻公園（kagawa-tamamo）: 成り立たない（7 晩目）: 根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu",
+    "香川県満濃池森林公園（kagawa-mannou-mori-89）: 成り立たない（5 晩目）: 根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8"
+  ],
+  "service": "japan-open-today",
+  "stages": {
+    "recheck": {
+      "checked": 6,
+      "fail": 2,
+      "ok": 0,
+      "requests": 5,
+      "reselected": 0,
+      "skip": 4,
+      "unreachable": 0
+    }
+  },
+  "started_at": "2026-10-25T22:38:14Z"
+}

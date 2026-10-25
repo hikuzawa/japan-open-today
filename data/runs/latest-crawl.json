@@ -204,11 +204,12 @@
     "https://www.my-kagawa.jp/point/325: robots.txt 503: 今回は巡回しない",
     "https://www.my-kagawa.jp/point/461: robots.txt 503: 今回は巡回しない",
     "https://www.my-kagawa.jp/point/3006: robots.txt 503: 今回は巡回しない",
+    "https://www.shorinjikempo.or.jp/religious/: robots.txt 503: 今回は巡回しない",
     "https://www.my-kagawa.jp/point/81: robots.txt 503: 今回は巡回しない",
     "https://www.my-kagawa.jp/point/3007: robots.txt 503: 今回は巡回しない"
   ],
   "extraction_metrics": null,
-  "finished_at": "2026-10-24T22:14:14Z",
+  "finished_at": "2026-10-25T22:16:10Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -219,17 +220,17 @@
   "service": "japan-open-today",
   "stages": {
     "crawl": {
-      "changed": 9,
+      "changed": 11,
       "daily_kinds_only": 12,
-      "errors": 204,
-      "fetched": 94,
-      "not_modified": 11,
-      "requests": 154,
-      "skipped_not_due": 25,
+      "errors": 205,
+      "fetched": 59,
+      "not_modified": 12,
+      "requests": 115,
+      "skipped_not_due": 61,
       "stale_cache": 0,
-      "unchanged": 96,
+      "unchanged": 60,
       "workers": 6
     }
   },
-  "started_at": "2026-10-24T22:12:47Z"
+  "started_at": "2026-10-25T22:15:10Z"
 }
