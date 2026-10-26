@@ -121,3 +121,9 @@
 {"at": "2026-10-26T07:38:25+09:00", "result": "skip", "key": "kagawa-mure-aji-park", "label": "城岬公園（kagawa-mure-aji-park）", "reason": "robots.txt で根拠のページを取得できない"}
 {"at": "2026-10-26T07:38:25+09:00", "result": "skip", "key": "kagawa-nagaoji", "label": "長尾寺（kagawa-nagaoji）", "reason": "robots.txt で根拠のページを取得できない"}
 {"at": "2026-10-26T07:38:25+09:00", "result": "skip", "key": "kagawa-olive-pk-239", "label": "道の駅「小豆島オリーブ公園」（kagawa-olive-pk-239）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-27T08:57:27+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 8}
+{"at": "2026-10-27T08:57:27+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 6}
+{"at": "2026-10-27T08:57:27+09:00", "result": "skip", "key": "kagawa-onigasima-472", "label": "女木島（kagawa-onigasima-472）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-27T08:57:27+09:00", "result": "skip", "key": "kagawa-p120", "label": "高仙山山頂（kagawa-p120）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-27T08:57:27+09:00", "result": "skip", "key": "kagawa-p121", "label": "虹の滝（kagawa-p121）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-27T08:57:27+09:00", "result": "skip", "key": "kagawa-p122", "label": "白山（kagawa-p122）", "reason": "robots.txt で根拠のページを取得できない"}

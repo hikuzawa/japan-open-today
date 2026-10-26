@@ -209,7 +209,7 @@
     "https://www.my-kagawa.jp/point/3007: robots.txt 503: 今回は巡回しない"
   ],
   "extraction_metrics": null,
-  "finished_at": "2026-10-25T22:16:10Z",
+  "finished_at": "2026-10-26T23:32:53Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -220,17 +220,17 @@
   "service": "japan-open-today",
   "stages": {
     "crawl": {
-      "changed": 11,
-      "daily_kinds_only": 12,
+      "changed": 6,
+      "daily_kinds_only": 13,
       "errors": 205,
-      "fetched": 59,
-      "not_modified": 12,
-      "requests": 115,
-      "skipped_not_due": 61,
+      "fetched": 57,
+      "not_modified": 8,
+      "requests": 105,
+      "skipped_not_due": 60,
       "stale_cache": 0,
-      "unchanged": 60,
+      "unchanged": 59,
       "workers": 6
     }
   },
-  "started_at": "2026-10-25T22:15:10Z"
+  "started_at": "2026-10-26T23:32:03Z"
 }
