@@ -9,10 +9,6 @@
     "https://www.my-kagawa.jp/ritsuringarden/feature/ritsuringarden/access: robots.txt 503: 今回は巡回しない",
     "https://www.my-kagawa.jp/point/298: robots.txt 503: 今回は巡回しない",
     "https://www.my-kagawa.jp/access: robots.txt 503: 今回は巡回しない",
-    "https://www.kankakei.co.jp/: robots.txt 503: 今回は巡回しない",
-    "https://www.kankakei.co.jp/information/: robots.txt 503: 今回は巡回しない",
-    "https://www.kankakei.co.jp/access/: robots.txt 503: 今回は巡回しない",
-    "https://www.kankakei.co.jp/ropeway/: robots.txt 503: 今回は巡回しない",
     "https://www.my-kagawa.jp/point/75: robots.txt 503: 今回は巡回しない",
     "https://www.my-kagawa.jp/point/263: robots.txt 503: 今回は巡回しない",
     "https://www.my-kagawa.jp/point/274: robots.txt 503: 今回は巡回しない",
@@ -209,7 +205,7 @@
     "https://www.my-kagawa.jp/point/3007: robots.txt 503: 今回は巡回しない"
   ],
   "extraction_metrics": null,
-  "finished_at": "2026-10-26T23:32:53Z",
+  "finished_at": "2026-10-27T23:27:28Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -220,17 +216,17 @@
   "service": "japan-open-today",
   "stages": {
     "crawl": {
-      "changed": 6,
+      "changed": 11,
       "daily_kinds_only": 13,
-      "errors": 205,
-      "fetched": 57,
-      "not_modified": 8,
-      "requests": 105,
-      "skipped_not_due": 60,
+      "errors": 201,
+      "fetched": 55,
+      "not_modified": 9,
+      "requests": 106,
+      "skipped_not_due": 65,
       "stale_cache": 0,
-      "unchanged": 59,
+      "unchanged": 53,
       "workers": 6
     }
   },
-  "started_at": "2026-10-26T23:32:03Z"
+  "started_at": "2026-10-27T23:26:02Z"
 }

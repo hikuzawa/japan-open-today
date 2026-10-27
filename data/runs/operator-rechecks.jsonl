@@ -127,3 +127,9 @@
 {"at": "2026-10-27T08:57:27+09:00", "result": "skip", "key": "kagawa-p120", "label": "高仙山山頂（kagawa-p120）", "reason": "robots.txt で根拠のページを取得できない"}
 {"at": "2026-10-27T08:57:27+09:00", "result": "skip", "key": "kagawa-p121", "label": "虹の滝（kagawa-p121）", "reason": "robots.txt で根拠のページを取得できない"}
 {"at": "2026-10-27T08:57:27+09:00", "result": "skip", "key": "kagawa-p122", "label": "白山（kagawa-p122）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-28T08:50:13+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 9}
+{"at": "2026-10-28T08:50:13+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 7}
+{"at": "2026-10-28T08:50:13+09:00", "result": "skip", "key": "kagawa-p13", "label": "道の駅「滝宮」・綾川町うどん会館（kagawa-p13）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-28T08:50:13+09:00", "result": "skip", "key": "kagawa-p133", "label": "荘内半島（kagawa-p133）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-28T08:50:13+09:00", "result": "skip", "key": "kagawa-p18", "label": "大坂峠展望台（kagawa-p18）", "reason": "robots.txt で根拠のページを取得できない"}
+{"at": "2026-10-28T08:50:13+09:00", "result": "skip", "key": "kagawa-p20", "label": "絹島・丸亀島（kagawa-p20）", "reason": "robots.txt で根拠のページを取得できない"}
