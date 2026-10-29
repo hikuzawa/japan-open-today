@@ -136,8 +136,8 @@
  },
  "kagawa-mannou-mori-89": {
   "failed_since": "2026-10-22",
-  "failures": 7,
-  "last_tried": "2026-10-28",
+  "failures": 8,
+  "last_tried": "2026-10-29",
   "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8"
  },
  "kagawa-manten-shodoshima": {
@@ -301,11 +301,31 @@
   "waiting_reason": "robots.txt で根拠のページを取得できない",
   "waiting_since": "2026-10-28"
  },
+ "kagawa-p217": {
+  "last_tried": "2026-10-29",
+  "waiting_reason": "robots.txt で根拠のページを取得できない",
+  "waiting_since": "2026-10-29"
+ },
  "kagawa-p2463": {
   "checked_on": "2026-10-06"
  },
+ "kagawa-p2636": {
+  "last_tried": "2026-10-29",
+  "waiting_reason": "robots.txt で根拠のページを取得できない",
+  "waiting_since": "2026-10-29"
+ },
+ "kagawa-p27": {
+  "last_tried": "2026-10-29",
+  "waiting_reason": "robots.txt で根拠のページを取得できない",
+  "waiting_since": "2026-10-29"
+ },
  "kagawa-p2788": {
   "checked_on": "2026-10-07"
+ },
+ "kagawa-p281": {
+  "last_tried": "2026-10-29",
+  "waiting_reason": "robots.txt で根拠のページを取得できない",
+  "waiting_since": "2026-10-29"
  },
  "kagawa-p309": {
   "checked_on": "2026-10-07"
@@ -381,8 +401,8 @@
  },
  "kagawa-tamamo": {
   "failed_since": "2026-10-13",
-  "failures": 9,
-  "last_tried": "2026-10-28",
+  "failures": 10,
+  "last_tried": "2026-10-29",
   "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu"
  },
  "kagawa-tanokuchiyakushi": {
