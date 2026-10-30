@@ -1,12 +1,9 @@
 {
   "ci": true,
   "command": "guard",
-  "errors": [
-    "unknown: 50.2%（141/281）が上限 25% を超えた — 平常の日の不明は 6〜12%、1 日の増加は最大でも約 +3pt（9/17〜26）。鮮度の誤りの日は 1 日で +25pt（9/27）、翌日は 54%（9/28）",
-    "unknown: 前回公開した 21.4%（60/281）から 50.2%（141/281）へ +28.8pt。上限は +10pt — 平常の日の不明は 6〜12%、1 日の増加は最大でも約 +3pt（9/17〜26）。鮮度の誤りの日は 1 日で +25pt（9/27）、翌日は 54%（9/28）"
-  ],
+  "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-10-29T00:13:53Z",
+  "finished_at": "2026-10-30T00:19:38Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -17,11 +14,11 @@
   "service": "japan-open-today",
   "stages": {
     "guard": {
-      "breaches": 2,
-      "unknown_bp": 5018,
-      "unknown_count": 141,
+      "breaches": 0,
+      "unknown_bp": 2064,
+      "unknown_count": 58,
       "unknown_total": 281
     }
   },
-  "started_at": "2026-10-29T00:13:53Z"
+  "started_at": "2026-10-30T00:19:38Z"
 }

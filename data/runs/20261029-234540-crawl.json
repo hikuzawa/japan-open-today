@@ -1,0 +1,42 @@
+{
+  "ci": true,
+  "command": "crawl",
+  "errors": [
+    "https://npo-wahaha.net/stm/: robots.txt 503: 今回は巡回しない",
+    "https://npo-wahaha.net/stm/info/: robots.txt 503: 今回は巡回しない",
+    "http://www.kenminhall.com/: robots.txt を取得できないため今回は巡回しない",
+    "http://www.kenminhall.com/visitors/ticket/: robots.txt を取得できないため今回は巡回しない",
+    "http://www.kenminhall.com/visitors/ticket/howto: robots.txt を取得できないため今回は巡回しない",
+    "http://shikoku-aquarium.jp/: robots.txt 503: 今回は巡回しない",
+    "http://shikoku-aquarium.jp/ticket/: robots.txt 503: 今回は巡回しない",
+    "http://shikoku-aquarium.jp/access/: robots.txt 503: 今回は巡回しない",
+    "http://shikoku-aquarium.jp/information/setouchi.html: robots.txt 503: 今回は巡回しない",
+    "http://shikoku-aquarium.jp/special/blog/archive/542/: robots.txt 503: 今回は巡回しない",
+    "https://www.shorinjikempo.or.jp/religious/: robots.txt 503: 今回は巡回しない"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-10-29T23:56:53Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "japan-open-today",
+  "stages": {
+    "crawl": {
+      "changed": 13,
+      "daily_kinds_only": 13,
+      "errors": 11,
+      "fetched": 250,
+      "not_modified": 8,
+      "requests": 297,
+      "skipped_not_due": 61,
+      "stale_cache": 0,
+      "unchanged": 245,
+      "workers": 6
+    }
+  },
+  "started_at": "2026-10-29T23:45:40Z"
+}
