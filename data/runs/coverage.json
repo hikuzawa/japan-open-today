@@ -1,5 +1,5 @@
 {
-  "today": "2026-10-31",
+  "today": "2026-11-01",
   "spots": [
     {
       "spot_id": "ritsurin",
@@ -535,13 +535,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -628,13 +628,13 @@
       "missing": [
         "fees"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -674,13 +674,13 @@
         "reservation_required"
       ],
       "missing": [],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 3,
-        "closed": 4
+        "closed": 4,
+        "open": 3
       }
     },
     {
@@ -700,7 +700,7 @@
       "today": "unknown",
       "today_reasons": [
         "stale_source",
-        "weekly_closed"
+        "regular_hours"
       ],
       "week": {
         "unknown": 7
@@ -1474,13 +1474,13 @@
         "fees",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 6,
-        "closed": 1
+        "closed": 1,
+        "open": 6
       }
     },
     {
@@ -3007,7 +3007,7 @@
       "spot_id": "mitoyo-kanko-128",
       "name": "粟島",
       "spot_type": "open_air",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "address"
@@ -3018,13 +3018,13 @@
         "phone",
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 1,
-        "unknown": 6
+        "unknown": 6,
+        "open": 1
       }
     },
     {
@@ -3607,7 +3607,7 @@
       "spot_id": "p2636",
       "name": "あじ竜王山公園",
       "spot_type": "gated",
-      "settled": true,
+      "settled": false,
       "fields": [
         "hours",
         "closures",
@@ -3618,13 +3618,12 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "unknown",
       "today_reasons": [
-        "regular_hours"
+        "no_data"
       ],
       "week": {
-        "open": 1,
-        "unknown": 6
+        "unknown": 7
       }
     },
     {
@@ -3774,7 +3773,7 @@
       "spot_id": "michi-no-eki",
       "name": "道の駅「しおのえ」",
       "spot_type": "gated",
-      "settled": false,
+      "settled": true,
       "fields": [
         "hours",
         "closures",
@@ -3785,13 +3784,12 @@
         "fees",
         "reservation_required"
       ],
-      "today": "unknown",
+      "today": "open",
       "today_reasons": [
-        "no_data"
+        "regular_hours"
       ],
       "week": {
-        "unknown": 1,
-        "open": 5,
+        "open": 6,
         "closed": 1
       }
     },
@@ -4537,13 +4535,13 @@
       "missing": [
         "reservation_required"
       ],
-      "today": "open",
+      "today": "closed",
       "today_reasons": [
-        "regular_hours"
+        "weekly_closed"
       ],
       "week": {
-        "open": 5,
-        "closed": 2
+        "closed": 2,
+        "open": 5
       }
     },
     {
@@ -6589,7 +6587,7 @@
     },
     "open_air": {
       "total": 127,
-      "settled": 125
+      "settled": 124
     },
     "untyped": 0
   },
@@ -6602,13 +6600,13 @@
     "reservation_required": 52
   },
   "states": {
-    "unknown": 179,
-    "open": 100,
-    "closed": 2
+    "unknown": 180,
+    "open": 94,
+    "closed": 7
   },
   "unknown_reasons": {
     "stale_source": 39,
-    "no_data": 135,
+    "no_data": 136,
     "irregular_closed": 4,
     "rule_unsupported": 1
   }
