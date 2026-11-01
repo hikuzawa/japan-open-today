@@ -392,7 +392,9 @@
 {"date": "2026-10-30", "page": "https://japan-open-today.com/zh-hant/spots/shodoshima/shimayado/", "query": "小豆島溫泉", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 12.0}
 {"date": "2026-10-30", "page": "https://japan-open-today.com/zh-hant/spots/takamatsu/p3271/", "query": "岩部八幡神社", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 6.0}
 {"date": "2026-10-30", "page": "https://japan-open-today.com/zh-hant/spots/takamatsu/sanuki/", "query": "讚岐兒童之國", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 10.0}
-{"date": "2026-10-31", "page": "https://japan-open-today.com/en/", "query": "what is open", "clicks": 0, "impressions": 3, "ctr": 0.0, "position": 8.33}
+{"date": "2026-10-31", "page": "https://japan-open-today.com/en/", "query": "what is open", "clicks": 0, "impressions": 6, "ctr": 0.0, "position": 6.33}
+{"date": "2026-10-31", "page": "https://japan-open-today.com/en/areas/takamatsu/", "query": "takamatsu sightseeing", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 21.0}
+{"date": "2026-10-31", "page": "https://japan-open-today.com/en/spots/marugame/city-117/", "query": "marugame castle", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 30.0}
 {"date": "2026-10-31", "page": "https://japan-open-today.com/spots/sanuki/sanukicity-sportspark-204/", "query": "長尾総合運動公園", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 11.0}
 {"date": "2026-10-31", "page": "https://japan-open-today.com/spots/shodoshima/pref-469/", "query": "小豆島 沖ノ島", "clicks": 1, "impressions": 1, "ctr": 1.0, "position": 41.0}
 {"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/areas/naoshima/", "query": "naoshima", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 35.0}
@@ -400,5 +402,14 @@
 {"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/higashikagawa/p27/", "query": "田の浦海岸", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 4.0}
 {"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/kotohira/kotohira/", "query": "琴平海洋博物館", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 6.0}
 {"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/naoshima/naoshima/", "query": "naoshima", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 49.0}
+{"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/sakaide/setoohhashi/", "query": "瀨戶大橋紀念公園", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 29.0}
+{"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/sakaide/setoohhashi/", "query": "瀬戸 大橋 記念 公園", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 48.0}
 {"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/sakaide/shikoku-aquarium/", "query": "四国水族館 営業時間", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 11.0}
+{"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/shodoshima/shimayado/", "query": "小豆島溫泉", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 13.0}
+{"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/takamatsu/iwaseo/", "query": "石清尾八幡宮", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 6.0}
+{"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/takamatsu/npo-wahaha/", "query": "讚岐玩具美術館", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 9.0}
 {"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/takamatsu/sanuki-airport-park/", "query": "高松空港公園", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 7.0}
+{"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/takamatsu/sanuki/", "query": "讚岐兒童之國", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 9.0}
+{"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/takamatsu/takamatsujyo/", "query": "到幾點", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 6.0}
+{"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/takamatsu/takamatsujyo/", "query": "高松 玉藻公園", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 54.0}
+{"date": "2026-10-31", "page": "https://japan-open-today.com/zh-hant/spots/takamatsu/tamamo/", "query": "高松 玉藻公園", "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 96.0}

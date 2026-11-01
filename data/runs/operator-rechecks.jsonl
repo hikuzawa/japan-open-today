@@ -157,3 +157,9 @@
 {"at": "2026-11-01T08:23:47+09:00", "result": "ok", "key": "kagawa-mineyama-park", "label": "峰山公園（kagawa-mineyama-park）"}
 {"at": "2026-11-01T08:23:47+09:00", "result": "ok", "key": "kagawa-p2852", "label": "竹居観音岬・竹居観音寺（四国最北端）（kagawa-p2852）"}
 {"at": "2026-11-01T08:23:47+09:00", "result": "ok", "key": "kagawa-p287", "label": "玉藻防波堤（kagawa-p287）"}
+{"at": "2026-11-02T08:42:54+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 14}
+{"at": "2026-11-02T08:42:54+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 12}
+{"at": "2026-11-02T08:42:54+09:00", "result": "ok", "key": "kagawa-mod", "label": "乃木館（陸上自衛隊善通寺駐屯地資料館）（kagawa-mod）"}
+{"at": "2026-11-02T08:42:54+09:00", "result": "ok", "key": "kagawa-mure-aji-park", "label": "城岬公園（kagawa-mure-aji-park）"}
+{"at": "2026-11-02T08:42:54+09:00", "result": "ok", "key": "kagawa-nagaoji", "label": "長尾寺（kagawa-nagaoji）"}
+{"at": "2026-11-02T08:42:54+09:00", "result": "ok", "key": "kagawa-olive-pk-239", "label": "道の駅「小豆島オリーブ公園」（kagawa-olive-pk-239）"}

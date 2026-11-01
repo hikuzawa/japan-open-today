@@ -3,7 +3,7 @@
   "command": "build",
   "errors": [],
   "extraction_metrics": null,
-  "finished_at": "2026-10-31T23:01:56Z",
+  "finished_at": "2026-11-01T23:20:49Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -16,11 +16,11 @@
     "build": {
       "files": 915,
       "lastmod_added": 0,
-      "lastmod_changed": 9,
-      "lastmod_kept": 882,
+      "lastmod_changed": 12,
+      "lastmod_kept": 879,
       "lastmod_relearned": 0,
       "pages": 907
     }
   },
-  "started_at": "2026-10-31T23:01:50Z"
+  "started_at": "2026-11-01T23:20:46Z"
 }
