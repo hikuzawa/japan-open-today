@@ -169,3 +169,9 @@
 {"at": "2026-11-03T11:20:41+09:00", "result": "ok", "key": "kagawa-p120", "label": "高仙山山頂（kagawa-p120）"}
 {"at": "2026-11-03T11:20:41+09:00", "result": "ok", "key": "kagawa-p121", "label": "虹の滝（kagawa-p121）"}
 {"at": "2026-11-03T11:20:41+09:00", "result": "ok", "key": "kagawa-p122", "label": "白山（kagawa-p122）"}
+{"at": "2026-11-04T09:44:12+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 16}
+{"at": "2026-11-04T09:44:12+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 14}
+{"at": "2026-11-04T09:44:12+09:00", "result": "ok", "key": "kagawa-p13", "label": "道の駅「滝宮」・綾川町うどん会館（kagawa-p13）"}
+{"at": "2026-11-04T09:44:12+09:00", "result": "ok", "key": "kagawa-p133", "label": "荘内半島（kagawa-p133）"}
+{"at": "2026-11-04T09:44:12+09:00", "result": "ok", "key": "kagawa-p18", "label": "大坂峠展望台（kagawa-p18）"}
+{"at": "2026-11-04T09:44:12+09:00", "result": "ok", "key": "kagawa-p20", "label": "絹島・丸亀島（kagawa-p20）"}
