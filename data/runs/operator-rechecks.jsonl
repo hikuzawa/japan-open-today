@@ -175,3 +175,9 @@
 {"at": "2026-11-04T09:44:12+09:00", "result": "ok", "key": "kagawa-p133", "label": "荘内半島（kagawa-p133）"}
 {"at": "2026-11-04T09:44:12+09:00", "result": "ok", "key": "kagawa-p18", "label": "大坂峠展望台（kagawa-p18）"}
 {"at": "2026-11-04T09:44:12+09:00", "result": "ok", "key": "kagawa-p20", "label": "絹島・丸亀島（kagawa-p20）"}
+{"at": "2026-11-05T10:05:25+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 17}
+{"at": "2026-11-05T10:05:25+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 15}
+{"at": "2026-11-05T10:05:25+09:00", "result": "ok", "key": "kagawa-p217", "label": "美しの原高原（kagawa-p217）"}
+{"at": "2026-11-05T10:05:25+09:00", "result": "ok", "key": "kagawa-p2636", "label": "あじ竜王山公園（kagawa-p2636）"}
+{"at": "2026-11-05T10:05:25+09:00", "result": "ok", "key": "kagawa-p27", "label": "田の浦海岸（kagawa-p27）"}
+{"at": "2026-11-05T10:05:25+09:00", "result": "ok", "key": "kagawa-p281", "label": "「TIME（kagawa-p281）"}
