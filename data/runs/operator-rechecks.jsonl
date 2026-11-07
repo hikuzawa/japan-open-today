@@ -187,3 +187,9 @@
 {"at": "2026-11-06T10:15:32+09:00", "result": "ok", "key": "kagawa-p3007", "label": "小橋滝（kagawa-p3007）"}
 {"at": "2026-11-06T10:15:32+09:00", "result": "ok", "key": "kagawa-p3010", "label": "純愛の聖地庵治・観光交流館（kagawa-p3010）"}
 {"at": "2026-11-06T10:15:32+09:00", "result": "ok", "key": "kagawa-p304", "label": "せとしるべ（高松港玉藻防波堤灯台）（kagawa-p304）"}
+{"at": "2026-11-07T09:19:12+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 19}
+{"at": "2026-11-07T09:19:12+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 17}
+{"at": "2026-11-07T09:19:12+09:00", "result": "ok", "key": "kagawa-p308", "label": "高見山展望台（kagawa-p308）"}
+{"at": "2026-11-07T09:19:12+09:00", "result": "ok", "key": "kagawa-p312", "label": "平和の群像（kagawa-p312）"}
+{"at": "2026-11-07T09:19:12+09:00", "result": "ok", "key": "kagawa-p317", "label": "【宇多津町】青の山頂展望台（kagawa-p317）"}
+{"at": "2026-11-07T09:19:12+09:00", "result": "ok", "key": "kagawa-p3214", "label": "尾ノ瀬山展望台（kagawa-p3214）"}
