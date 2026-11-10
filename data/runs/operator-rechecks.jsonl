@@ -205,3 +205,9 @@
 {"at": "2026-11-09T08:46:52+09:00", "result": "ok", "key": "kagawa-p398", "label": "田井浜海水浴場・キャンプ場（kagawa-p398）"}
 {"at": "2026-11-09T08:46:52+09:00", "result": "ok", "key": "kagawa-p4", "label": "柏原渓谷（kagawa-p4）"}
 {"at": "2026-11-09T08:46:52+09:00", "result": "ok", "key": "kagawa-p422", "label": "生子山公園（kagawa-p422）"}
+{"at": "2026-11-10T11:54:39+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 22}
+{"at": "2026-11-10T11:54:39+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 20}
+{"at": "2026-11-10T11:54:39+09:00", "result": "ok", "key": "kagawa-p424", "label": "雨滝山（kagawa-p424）"}
+{"at": "2026-11-10T11:54:39+09:00", "result": "ok", "key": "kagawa-p425", "label": "山上公園（kagawa-p425）"}
+{"at": "2026-11-10T11:54:39+09:00", "result": "ok", "key": "kagawa-p429", "label": "桃太郎神社（熊野権現）（kagawa-p429）"}
+{"at": "2026-11-10T11:54:39+09:00", "result": "ok", "key": "kagawa-p43", "label": "水主神社（kagawa-p43）"}
