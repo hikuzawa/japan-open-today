@@ -211,3 +211,9 @@
 {"at": "2026-11-10T11:54:39+09:00", "result": "ok", "key": "kagawa-p425", "label": "山上公園（kagawa-p425）"}
 {"at": "2026-11-10T11:54:39+09:00", "result": "ok", "key": "kagawa-p429", "label": "桃太郎神社（熊野権現）（kagawa-p429）"}
 {"at": "2026-11-10T11:54:39+09:00", "result": "ok", "key": "kagawa-p43", "label": "水主神社（kagawa-p43）"}
+{"at": "2026-11-11T09:47:04+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 23}
+{"at": "2026-11-11T09:47:04+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 21}
+{"at": "2026-11-11T09:47:04+09:00", "result": "ok", "key": "kagawa-p431", "label": "こんぴらの句碑群（kagawa-p431）"}
+{"at": "2026-11-11T09:47:04+09:00", "result": "ok", "key": "kagawa-p44", "label": "山田海岸（kagawa-p44）"}
+{"at": "2026-11-11T09:47:04+09:00", "result": "ok", "key": "kagawa-p46", "label": "有明浜（kagawa-p46）"}
+{"at": "2026-11-11T09:47:04+09:00", "result": "ok", "key": "kagawa-p484", "label": "イサム・ノグチ遊具彫刻（kagawa-p484）"}
