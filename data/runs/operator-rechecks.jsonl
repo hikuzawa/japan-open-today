@@ -223,3 +223,9 @@
 {"at": "2026-11-12T11:09:31+09:00", "result": "ok", "key": "kagawa-p81", "label": "富士見町の並び燈籠（kagawa-p81）"}
 {"at": "2026-11-12T11:09:31+09:00", "result": "ok", "key": "kagawa-park-mino-147", "label": "道の駅「ふれあいパークみの」（kagawa-park-mino-147）"}
 {"at": "2026-11-12T11:09:31+09:00", "result": "ok", "key": "kagawa-pref-469", "label": "沖之島（kagawa-pref-469）"}
+{"at": "2026-11-13T10:24:27+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 25}
+{"at": "2026-11-13T10:24:27+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 23}
+{"at": "2026-11-13T10:24:27+09:00", "result": "ok", "key": "kagawa-sakaide-kankou", "label": "与島（kagawa-sakaide-kankou）"}
+{"at": "2026-11-13T10:24:27+09:00", "result": "ok", "key": "kagawa-sakaide-kankou-462", "label": "櫃石島（kagawa-sakaide-kankou-462）"}
+{"at": "2026-11-13T10:24:27+09:00", "result": "ok", "key": "kagawa-sakaide-kankou-463", "label": "岩黒島（kagawa-sakaide-kankou-463）"}
+{"at": "2026-11-13T10:24:27+09:00", "result": "ok", "key": "kagawa-sanuki-airport-park", "label": "さぬき空港公園（kagawa-sanuki-airport-park）"}
