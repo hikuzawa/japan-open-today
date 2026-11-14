@@ -136,8 +136,8 @@
  },
  "kagawa-mannou-mori-89": {
   "failed_since": "2026-10-22",
-  "failures": 23,
-  "last_tried": "2026-11-13",
+  "failures": 24,
+  "last_tried": "2026-11-14",
   "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8"
  },
  "kagawa-manten-shodoshima": {
@@ -413,8 +413,20 @@
  "kagawa-sanuki-airport-park": {
   "checked_on": "2026-11-13"
  },
+ "kagawa-sanuki-ichinomiyaji": {
+  "checked_on": "2026-11-14"
+ },
+ "kagawa-sanuki-sa": {
+  "checked_on": "2026-11-14"
+ },
  "kagawa-sanukicity-sportspark": {
   "checked_on": "2026-10-10"
+ },
+ "kagawa-sanukicity-sportspark-198": {
+  "checked_on": "2026-11-14"
+ },
+ "kagawa-sanukicity-sportspark-204": {
+  "checked_on": "2026-11-14"
  },
  "kagawa-shikoku88-6869": {
   "checked_on": "2026-10-10"
@@ -451,8 +463,8 @@
  },
  "kagawa-tamamo": {
   "failed_since": "2026-10-13",
-  "failures": 25,
-  "last_tried": "2026-11-13",
+  "failures": 26,
+  "last_tried": "2026-11-14",
   "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu"
  },
  "kagawa-tanokuchiyakushi": {
