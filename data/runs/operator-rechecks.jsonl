@@ -241,3 +241,9 @@
 {"at": "2026-11-15T08:59:00+09:00", "result": "ok", "key": "kagawa-sanukimannopark", "label": "国営讃岐まんのう公園（kagawa-sanukimannopark）"}
 {"at": "2026-11-15T08:59:00+09:00", "result": "ok", "key": "kagawa-setoohhashi", "label": "瀬戸大橋記念公園（kagawa-setoohhashi）"}
 {"at": "2026-11-15T08:59:00+09:00", "result": "ok", "key": "kagawa-setoohhashi-181", "label": "道の駅「瀬戸大橋記念公園」（kagawa-setoohhashi-181）"}
+{"at": "2026-11-16T09:06:26+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 28}
+{"at": "2026-11-16T09:06:26+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 26}
+{"at": "2026-11-16T09:06:26+09:00", "result": "ok", "key": "kagawa-setoohhashi-2353", "label": "瀬戸大橋記念館（かがわこどもの駅）（kagawa-setoohhashi-2353）"}
+{"at": "2026-11-16T09:06:26+09:00", "result": "ok", "key": "kagawa-shidoji", "label": "志度寺（kagawa-shidoji）"}
+{"at": "2026-11-16T09:06:26+09:00", "result": "ok", "key": "kagawa-shioiri-onsen", "label": "道の駅「空の夢もみの木パーク」（kagawa-shioiri-onsen）"}
+{"at": "2026-11-16T09:06:26+09:00", "result": "ok", "key": "kagawa-shioiri-onsen-2360", "label": "塩入ふるさと研修館（kagawa-shioiri-onsen-2360）"}
