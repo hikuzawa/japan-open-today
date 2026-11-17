@@ -1,0 +1,16 @@
+{
+  "accuracy": {},
+  "cases": 0,
+  "metrics": {
+    "fields": {},
+    "flags": {},
+    "items": 0,
+    "pages": 0,
+    "summary_replaced": 0,
+    "truncated_pages": 0
+  },
+  "mismatches": [],
+  "recorded": [],
+  "skipped": [],
+  "unmatched_expected": []
+}
