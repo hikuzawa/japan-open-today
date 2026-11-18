@@ -253,3 +253,9 @@
 {"at": "2026-11-17T11:46:42+09:00", "result": "ok", "key": "kagawa-shippouzan", "label": "本山寺（kagawa-shippouzan）"}
 {"at": "2026-11-17T11:46:42+09:00", "result": "ok", "key": "kagawa-shirotori-jinja", "label": "白鳥神社（kagawa-shirotori-jinja）"}
 {"at": "2026-11-17T11:46:42+09:00", "result": "ok", "key": "kagawa-shodoshima", "label": "道の駅・海の駅「小豆島ふるさと村」（kagawa-shodoshima）"}
+{"at": "2026-11-18T11:03:58+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 30}
+{"at": "2026-11-18T11:03:58+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 28}
+{"at": "2026-11-18T11:03:58+09:00", "result": "ok", "key": "kagawa-shusshakaji", "label": "出釋迦寺（kagawa-shusshakaji）"}
+{"at": "2026-11-18T11:03:58+09:00", "result": "ok", "key": "kagawa-souyu-296", "label": "道の駅「香南楽湯」（kagawa-souyu-296）"}
+{"at": "2026-11-18T11:03:58+09:00", "result": "ok", "key": "kagawa-tadotsu-kanko", "label": "佐柳島（kagawa-tadotsu-kanko）"}
+{"at": "2026-11-18T11:03:58+09:00", "result": "ok", "key": "kagawa-tadotsu-kanko-242", "label": "道隆寺（kagawa-tadotsu-kanko-242）"}
