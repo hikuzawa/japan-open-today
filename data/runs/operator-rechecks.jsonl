@@ -271,3 +271,9 @@
 {"at": "2026-11-20T10:49:03+09:00", "result": "ok", "key": "kagawa-tebukurokumiai", "label": "香川のてぶくろ資料館（kagawa-tebukurokumiai）"}
 {"at": "2026-11-20T10:49:03+09:00", "result": "ok", "key": "kagawa-tonosho-shokokai", "label": "迷路のまち（kagawa-tonosho-shokokai）"}
 {"at": "2026-11-20T10:49:03+09:00", "result": "ok", "key": "kagawa-town-3006", "label": "木戸の馬蹄石（kagawa-town-3006）"}
+{"at": "2026-11-21T10:04:13+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 33}
+{"at": "2026-11-21T10:04:13+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 31}
+{"at": "2026-11-21T10:04:13+09:00", "result": "ok", "key": "kagawa-town-306", "label": "エンジェルロード（天使の散歩道）（kagawa-town-306）"}
+{"at": "2026-11-21T10:04:13+09:00", "result": "ok", "key": "kagawa-town-310", "label": "土渕海峡・フレトピア公園（kagawa-town-310）"}
+{"at": "2026-11-21T10:04:13+09:00", "result": "ok", "key": "kagawa-town-314", "label": "道の駅・みなとオアシス「大坂城残石記念公園」（kagawa-town-314）"}
+{"at": "2026-11-21T10:04:13+09:00", "result": "ok", "key": "kagawa-town-446", "label": "直島町役場（kagawa-town-446）"}
