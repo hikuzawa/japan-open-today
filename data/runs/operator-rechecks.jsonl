@@ -277,3 +277,9 @@
 {"at": "2026-11-21T10:04:13+09:00", "result": "ok", "key": "kagawa-town-310", "label": "土渕海峡・フレトピア公園（kagawa-town-310）"}
 {"at": "2026-11-21T10:04:13+09:00", "result": "ok", "key": "kagawa-town-314", "label": "道の駅・みなとオアシス「大坂城残石記念公園」（kagawa-town-314）"}
 {"at": "2026-11-21T10:04:13+09:00", "result": "ok", "key": "kagawa-town-446", "label": "直島町役場（kagawa-town-446）"}
+{"at": "2026-11-22T09:05:25+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 34}
+{"at": "2026-11-22T09:05:25+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 32}
+{"at": "2026-11-22T09:05:25+09:00", "result": "ok", "key": "kagawa-town-485", "label": "小瀬の重岩（kagawa-town-485）"}
+{"at": "2026-11-22T09:05:25+09:00", "result": "ok", "key": "kagawa-town-486", "label": "大坂城石垣石丁場跡（小豆島石丁場跡）「天狗岩丁場」（kagawa-town-486）"}
+{"at": "2026-11-22T09:05:25+09:00", "result": "ok", "key": "kagawa-utazu-umihotaru", "label": "【宇多津町】道の駅（kagawa-utazu-umihotaru）"}
+{"at": "2026-11-22T09:05:25+09:00", "result": "ok", "key": "kagawa-yashima-navi", "label": "屋島山上（kagawa-yashima-navi）"}

@@ -136,8 +136,8 @@
  },
  "kagawa-mannou-mori-89": {
   "failed_since": "2026-10-22",
-  "failures": 31,
-  "last_tried": "2026-11-21",
+  "failures": 32,
+  "last_tried": "2026-11-22",
   "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8"
  },
  "kagawa-manten-shodoshima": {
@@ -523,8 +523,8 @@
  },
  "kagawa-tamamo": {
   "failed_since": "2026-10-13",
-  "failures": 33,
-  "last_tried": "2026-11-21",
+  "failures": 34,
+  "last_tried": "2026-11-22",
   "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu"
  },
  "kagawa-tamurajinja": {
@@ -557,6 +557,15 @@
  "kagawa-town-446": {
   "checked_on": "2026-11-21"
  },
+ "kagawa-town-485": {
+  "checked_on": "2026-11-22"
+ },
+ "kagawa-town-486": {
+  "checked_on": "2026-11-22"
+ },
+ "kagawa-utazu-umihotaru": {
+  "checked_on": "2026-11-22"
+ },
  "kagawa-yakuriji": {
   "checked_on": "2026-10-14"
  },
@@ -565,6 +574,9 @@
  },
  "kagawa-yashima": {
   "checked_on": "2026-10-14"
+ },
+ "kagawa-yashima-navi": {
+  "checked_on": "2026-11-22"
  },
  "kagawa-yodaji": {
   "checked_on": "2026-10-15"

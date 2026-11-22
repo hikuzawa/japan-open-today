@@ -1,0 +1,36 @@
+{
+  "ci": true,
+  "command": "crawl",
+  "errors": [
+    "http://www.kenminhall.com/: robots.txt を取得できないため今回は巡回しない",
+    "http://www.kenminhall.com/visitors/ticket/: robots.txt を取得できないため今回は巡回しない",
+    "http://www.kenminhall.com/visitors/ticket/howto: robots.txt を取得できないため今回は巡回しない",
+    "https://www.my-kagawa.jp/point/30: HTTP 404",
+    "https://www.shorinjikempo.or.jp/religious/: robots.txt 503: 今回は巡回しない"
+  ],
+  "extraction_metrics": null,
+  "finished_at": "2026-11-22T00:04:37Z",
+  "llm": {
+    "cached_calls": 0,
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "notes": [],
+  "service": "japan-open-today",
+  "stages": {
+    "crawl": {
+      "changed": 10,
+      "daily_kinds_only": 14,
+      "errors": 5,
+      "fetched": 107,
+      "not_modified": 6,
+      "requests": 160,
+      "skipped_not_due": 200,
+      "stale_cache": 0,
+      "unchanged": 103,
+      "workers": 6
+    }
+  },
+  "started_at": "2026-11-22T00:03:10Z"
+}
