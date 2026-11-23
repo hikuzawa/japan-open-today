@@ -283,3 +283,9 @@
 {"at": "2026-11-22T09:05:25+09:00", "result": "ok", "key": "kagawa-town-486", "label": "大坂城石垣石丁場跡（小豆島石丁場跡）「天狗岩丁場」（kagawa-town-486）"}
 {"at": "2026-11-22T09:05:25+09:00", "result": "ok", "key": "kagawa-utazu-umihotaru", "label": "【宇多津町】道の駅（kagawa-utazu-umihotaru）"}
 {"at": "2026-11-22T09:05:25+09:00", "result": "ok", "key": "kagawa-yashima-navi", "label": "屋島山上（kagawa-yashima-navi）"}
+{"at": "2026-11-23T09:37:22+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 35}
+{"at": "2026-11-23T09:37:22+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 33}
+{"at": "2026-11-23T09:37:22+09:00", "result": "ok", "key": "kagawa-yashima-navi-4144", "label": "高松市屋島山上交流拠点施設「やしまーる」（kagawa-yashima-navi-4144）"}
+{"at": "2026-11-23T09:37:22+09:00", "result": "fail", "key": "kagawa-88shikokuhenro", "label": "屋島寺（kagawa-88shikokuhenro）", "reason": "根拠の引用がページに無い: 南面山 千光院 屋島寺 – （一社）四国八十八ヶ所霊場会", "failures": 1}
+{"at": "2026-11-23T09:37:22+09:00", "result": "fail", "key": "kagawa-88shikokuhenro-174", "label": "天皇寺（kagawa-88shikokuhenro-174）", "reason": "根拠の引用がページに無い: 金華山 高照院 天皇寺 – （一社）四国八十八ヶ所霊場会", "failures": 1}
+{"at": "2026-11-23T09:37:22+09:00", "result": "fail", "key": "kagawa-88shikokuhenro-245", "label": "根香寺（kagawa-88shikokuhenro-245）", "reason": "根拠の引用がページに無い: 青峰山 千手院 根香寺 – （一社）四国八十八ヶ所霊場会", "failures": 1}
