@@ -310,8 +310,8 @@
    "lastmod": "2026-10-08"
   },
   "en/spots/marugame/city-339/index.html": {
-   "fingerprint": "sha256:b2b0ae293263305047552b71b2a5934c524731a31c8f6193ccacb82774e5b3b4",
-   "lastmod": "2026-11-18"
+   "fingerprint": "sha256:41d3708f4af8ed9137ce64e717260866bda9244afb708779e43fcb0648e6f660",
+   "lastmod": "2026-11-24"
   },
   "en/spots/marugame/city-3696/index.html": {
    "fingerprint": "sha256:b4aec77835819d1d611e88983cdd820a7c426472008aa7785cb3315f8e36e78a",
@@ -374,8 +374,8 @@
    "lastmod": "2026-10-30"
   },
   "en/spots/marugame/mimoca/index.html": {
-   "fingerprint": "sha256:abeda85c19b7e5be5d781a7678f4b410c05b52b374710e02a91d35228b39fef9",
-   "lastmod": "2026-11-23"
+   "fingerprint": "sha256:f017b2efab74b75f74ab62882e97c50b5b76b39c2e10f203626c754b8b26b6e1",
+   "lastmod": "2026-11-24"
   },
   "en/spots/marugame/mod/index.html": {
    "fingerprint": "sha256:d1a0a1352698fc3a867c63df253596a7526faeacde27b6470799087f9133abeb",
@@ -650,8 +650,8 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/sakaide/city-160/index.html": {
-   "fingerprint": "sha256:691182e05af8d469d17fe3dac656ca78b3b9f7cee43549911184d539d3dc3b98",
-   "lastmod": "2026-11-23"
+   "fingerprint": "sha256:75a45dd324693154742603486292c67c1e2dfe42b1506887067235b2827ccac4",
+   "lastmod": "2026-11-24"
   },
   "en/spots/sakaide/city-175/index.html": {
    "fingerprint": "sha256:32f85c8af43f3f0475d241c104e53ba32d80ef623034c9796e59f7abc3fa8915",
@@ -686,16 +686,16 @@
    "lastmod": "2026-10-30"
   },
   "en/spots/sakaide/jb-honshi/index.html": {
-   "fingerprint": "sha256:14533ef1e1538f50426791ef4751ad661a54cb1014daa89fdfc6d0a2b1180f94",
-   "lastmod": "2026-11-21"
+   "fingerprint": "sha256:b77844115b8896e49ad1090675adef784e4d26e452a9544e0ddeac5070de6012",
+   "lastmod": "2026-11-24"
   },
   "en/spots/sakaide/p13/index.html": {
    "fingerprint": "sha256:c17bf0da9cda65912ca3493e88672a7a7babda67b2573058199ca81cc49200ec",
    "lastmod": "2026-11-04"
   },
   "en/spots/sakaide/p2788/index.html": {
-   "fingerprint": "sha256:b5356a70f30fd06c8f98ae9e8de581fc6309e879927c5eab5d6c8691cb0dc958",
-   "lastmod": "2026-11-21"
+   "fingerprint": "sha256:6a79d4e7d417b3f021f2ed7b3e3296dadde8d7cb040d712f7a47d4a68a78eec4",
+   "lastmod": "2026-11-24"
   },
   "en/spots/sakaide/p2970/index.html": {
    "fingerprint": "sha256:fd246104dd25a956e25be8973e6b97c277bb668d68131ef9c2c09eb0a5def3fd",
@@ -798,16 +798,16 @@
    "lastmod": "2026-10-30"
   },
   "en/spots/sanuki/city-216/index.html": {
-   "fingerprint": "sha256:ac265463fed834b716f1127728f121b3eccda1667a6552cb56930e4e026294ba",
-   "lastmod": "2026-11-23"
+   "fingerprint": "sha256:98f0f5ea538b35bf1d67c3e9c208598957d41c82f1bbb5574e0e2b49a366faa9",
+   "lastmod": "2026-11-24"
   },
   "en/spots/sanuki/hiragagennai-205/index.html": {
    "fingerprint": "sha256:e74b5e5c8c1b5ce80c3dca413549793aae23c89bf3e1c28aa75521ddbaebad55",
    "lastmod": "2026-10-30"
   },
   "en/spots/sanuki/hiragagennai/index.html": {
-   "fingerprint": "sha256:ff8a0d27fc02f4fc99d4e511ba455d38871c5960b01d856784bf2e908011107c",
-   "lastmod": "2026-11-23"
+   "fingerprint": "sha256:b9a30f69ce1383f7a448602d552e34508295290ad0ec97f61bebd9fa66398c84",
+   "lastmod": "2026-11-24"
   },
   "en/spots/sanuki/j-dc2/index.html": {
    "fingerprint": "sha256:1689f2892622e3f0b8df6b9fcf8178ff39aae68b4909ca0181a7cbad8d9378d8",
@@ -1094,8 +1094,8 @@
    "lastmod": "2026-09-18"
   },
   "en/spots/takamatsu/p2636/index.html": {
-   "fingerprint": "sha256:ba3ba484e3ee4883e7baed5724a015873292c50ec9471c08f3af57a1135ba8c6",
-   "lastmod": "2026-11-18"
+   "fingerprint": "sha256:c395b39cda823fdbfcc7b52f95e3242c5ca7464bc963068b1402aba35c1d9b70",
+   "lastmod": "2026-11-24"
   },
   "en/spots/takamatsu/p281/index.html": {
    "fingerprint": "sha256:82d587d79f7166ec14d7e0e010db953adbdc5e9672580506a2fae2fdac253c3f",
@@ -1446,8 +1446,8 @@
    "lastmod": "2026-10-08"
   },
   "spots/marugame/city-339/index.html": {
-   "fingerprint": "sha256:8cd4a9ca621eb102b7cdc8946a18c44d035f9c7c9ee0c41ca6080b1bde645f5a",
-   "lastmod": "2026-11-18"
+   "fingerprint": "sha256:9a920cbca1ca7f3ade204f61880201bac4bc638b07dc28e06fc4e4f8c658f779",
+   "lastmod": "2026-11-24"
   },
   "spots/marugame/city-3696/index.html": {
    "fingerprint": "sha256:ffd4e94f0093e2ac73b88f383719ed081154f3729a6c084dbe5e59eb364ce9c3",
@@ -1510,8 +1510,8 @@
    "lastmod": "2026-10-30"
   },
   "spots/marugame/mimoca/index.html": {
-   "fingerprint": "sha256:4b5e2a948c844f775195120f5e4eb612ed4d5f4e74dfd05fd54dbf2583ba734f",
-   "lastmod": "2026-11-23"
+   "fingerprint": "sha256:17815a24a76d0f2e95fcc192ab392435c6e6c8a4113f7c724ed5ccfd2ec23f1f",
+   "lastmod": "2026-11-24"
   },
   "spots/marugame/mod/index.html": {
    "fingerprint": "sha256:f427c31891479e331247a2fb35181082066d1bf3fa2d3bf6029311fbfb9bc326",
@@ -1786,8 +1786,8 @@
    "lastmod": "2026-09-18"
   },
   "spots/sakaide/city-160/index.html": {
-   "fingerprint": "sha256:5a2c47c1352f437e3afab094b55c233baa54a9563fa84e95056fa2c6acf0fec8",
-   "lastmod": "2026-11-23"
+   "fingerprint": "sha256:6e2bd3fc5cdc7f5517a5dbfc162f389cf73e751673eebb9f29ec0fc7ed373e9e",
+   "lastmod": "2026-11-24"
   },
   "spots/sakaide/city-175/index.html": {
    "fingerprint": "sha256:cb60565e8d2e3fe7a9abf32888c29c1f2f976fe4b103e44fda35ff73f3b68c78",
@@ -1822,16 +1822,16 @@
    "lastmod": "2026-10-30"
   },
   "spots/sakaide/jb-honshi/index.html": {
-   "fingerprint": "sha256:cc1552fe6f9c5cc0768774038a8b4ed80ff9d8d90807ae181bc184417256e5fc",
-   "lastmod": "2026-11-21"
+   "fingerprint": "sha256:f799db9e415aa454daa5bf73874411f4d57d0c83cbd11a6d573cddb2a1d408f3",
+   "lastmod": "2026-11-24"
   },
   "spots/sakaide/p13/index.html": {
    "fingerprint": "sha256:bba90ec8da59ea07a8363be76033c72906283b8269c9342f56204a8c1e40fd4a",
    "lastmod": "2026-11-04"
   },
   "spots/sakaide/p2788/index.html": {
-   "fingerprint": "sha256:a5a42c5c8c818101332a46a3a66255509f565e39bbbb49ef206a00ca809dd067",
-   "lastmod": "2026-11-21"
+   "fingerprint": "sha256:cbd2152b83bb770f5893d79b6fac02841d5dd17bd66c42376b9b0b82806ef20b",
+   "lastmod": "2026-11-24"
   },
   "spots/sakaide/p2970/index.html": {
    "fingerprint": "sha256:ea62149867ff87da03065c6c6b6a4787c9559ad6ea2d52037bf846a284d7be7c",
@@ -1934,16 +1934,16 @@
    "lastmod": "2026-10-30"
   },
   "spots/sanuki/city-216/index.html": {
-   "fingerprint": "sha256:06c6e77009db48ef712afd8c2dc58c266166d5961fefe9999ed768d0e5050fe6",
-   "lastmod": "2026-11-23"
+   "fingerprint": "sha256:ba041b3e1f4321f1c8a470e4caad967e634ab7b1adeb750e54f05f7d2e406b17",
+   "lastmod": "2026-11-24"
   },
   "spots/sanuki/hiragagennai-205/index.html": {
    "fingerprint": "sha256:f6c334d9c67c47808494976f0dc957f7ff7eb81f54ad5c693a5f16e981fbbf11",
    "lastmod": "2026-10-30"
   },
   "spots/sanuki/hiragagennai/index.html": {
-   "fingerprint": "sha256:adc4a24a18377e1bc6bbef60b2cf4f09103be446b438ea2dc60481005c21124d",
-   "lastmod": "2026-11-23"
+   "fingerprint": "sha256:89ba4ba6652e65e86a8ab5902ff86cd39a61bd1ebb475aec471cd9a1671db90c",
+   "lastmod": "2026-11-24"
   },
   "spots/sanuki/j-dc2/index.html": {
    "fingerprint": "sha256:67daab175a4081926a96c738ebd3a141e65183d80d8910f4e4794ad2309e4c49",
@@ -2230,8 +2230,8 @@
    "lastmod": "2026-09-18"
   },
   "spots/takamatsu/p2636/index.html": {
-   "fingerprint": "sha256:7381a6a06b3f567c0359146b5bc6ee334ecf3974835bd9155c1f7ede1080afec",
-   "lastmod": "2026-11-18"
+   "fingerprint": "sha256:fae3328ce2dc7f081db79aa789ef99fff8c371aadc7cacf50534c2514f665b97",
+   "lastmod": "2026-11-24"
   },
   "spots/takamatsu/p281/index.html": {
    "fingerprint": "sha256:23217a4f263ecb33aa002c346c7e98627f799e108d6e2f632f560afc6c03f988",
@@ -2634,8 +2634,8 @@
    "lastmod": "2026-10-08"
   },
   "zh-hant/spots/marugame/city-339/index.html": {
-   "fingerprint": "sha256:2e6933f05c1cd6e211878d18d26c1540b8284272aced79eb8126a26a13e2e817",
-   "lastmod": "2026-11-18"
+   "fingerprint": "sha256:5f96f6129f92d433d9d091d2d232c70c9560cd3ea37d1b878b3e01a0ff5bd3ab",
+   "lastmod": "2026-11-24"
   },
   "zh-hant/spots/marugame/city-3696/index.html": {
    "fingerprint": "sha256:ffa6651d87edecbdd5104ec529e6469e6ecbf420c95f023ae35b526b1c965be1",
@@ -2698,8 +2698,8 @@
    "lastmod": "2026-10-30"
   },
   "zh-hant/spots/marugame/mimoca/index.html": {
-   "fingerprint": "sha256:ae218b6e89dd52889b877b5b1cfa2539baf7f8278e25d30a40f82ba8a29832e9",
-   "lastmod": "2026-11-23"
+   "fingerprint": "sha256:37044f2e203c610a35d4260a111f4d1b75124a608529fb94a9861ff5bfd71ccb",
+   "lastmod": "2026-11-24"
   },
   "zh-hant/spots/marugame/mod/index.html": {
    "fingerprint": "sha256:e2251207e79b06952e9c07dd00e4c467428e96e0d1543a235fdacebe9e88a7c6",
@@ -2974,8 +2974,8 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/sakaide/city-160/index.html": {
-   "fingerprint": "sha256:df43878c546efa8c1c54c45011117b20b5334cfc3c5d95314f494c54d6019d4b",
-   "lastmod": "2026-11-23"
+   "fingerprint": "sha256:0881c3db04d43b960d1a6c142f252a0b9c5a56bc3fe82dfef8e311214ca62bf9",
+   "lastmod": "2026-11-24"
   },
   "zh-hant/spots/sakaide/city-175/index.html": {
    "fingerprint": "sha256:d604ac72a3c7cf2dd405fc214f9531f31aa22069b0136d062dff8ddaf15d3323",
@@ -3010,16 +3010,16 @@
    "lastmod": "2026-10-30"
   },
   "zh-hant/spots/sakaide/jb-honshi/index.html": {
-   "fingerprint": "sha256:a66192a89e3c1ec83db10e646da02bb0f14be53c6b6d27024599d444a1178e78",
-   "lastmod": "2026-11-21"
+   "fingerprint": "sha256:c1c4278c7990c47b7be892213af6678662f0f90f8499bc7bf885456090a067b3",
+   "lastmod": "2026-11-24"
   },
   "zh-hant/spots/sakaide/p13/index.html": {
    "fingerprint": "sha256:e21a4ede48597baed3d06346a167965828619ed4de509a4d8cfaefa5e59370e5",
    "lastmod": "2026-11-04"
   },
   "zh-hant/spots/sakaide/p2788/index.html": {
-   "fingerprint": "sha256:fe1da1fa9c664067710bb64763cf44ce6d98400138645bb474e4579c6abc72dd",
-   "lastmod": "2026-11-21"
+   "fingerprint": "sha256:18c2f57b78d63b204416b4e30c69aaf3542563938f5dfb391f0b9d42069b29a8",
+   "lastmod": "2026-11-24"
   },
   "zh-hant/spots/sakaide/p2970/index.html": {
    "fingerprint": "sha256:bed38b5ef84be2301d3ede6757f6c0e1b14642cf301aaa17de4b136719a2d73a",
@@ -3122,16 +3122,16 @@
    "lastmod": "2026-10-30"
   },
   "zh-hant/spots/sanuki/city-216/index.html": {
-   "fingerprint": "sha256:350e85e6f8607418457c2e66596295ae1af5ae87e72bb7756a0d1872beb3d3eb",
-   "lastmod": "2026-11-23"
+   "fingerprint": "sha256:4b5cdbc2406e6b4478633f8c91ae633ff2cd8e75a4c253d6dfadcb85fcfc5d78",
+   "lastmod": "2026-11-24"
   },
   "zh-hant/spots/sanuki/hiragagennai-205/index.html": {
    "fingerprint": "sha256:3dcfac827bc9e7c43262ea02d8f08db9d7efa4445bea2b99720df31b37b058d1",
    "lastmod": "2026-10-30"
   },
   "zh-hant/spots/sanuki/hiragagennai/index.html": {
-   "fingerprint": "sha256:fe9b40e35d4d75ae77dd522b618ba1d2c43641a345025b7ee5e06f69e2d4b2a5",
-   "lastmod": "2026-11-23"
+   "fingerprint": "sha256:5d2993a135eb0065beb20c21d36952de90c39e73789445a22aaa2d45a9a15951",
+   "lastmod": "2026-11-24"
   },
   "zh-hant/spots/sanuki/j-dc2/index.html": {
    "fingerprint": "sha256:99002c74ef8305b8f2904b8e32a18bacfe1ecfa09b10f3ffd832951f6d06046b",
@@ -3418,8 +3418,8 @@
    "lastmod": "2026-09-18"
   },
   "zh-hant/spots/takamatsu/p2636/index.html": {
-   "fingerprint": "sha256:d6685887e250eb07bb9babf1ca3bab00968a41fa806cdf702359418695e33514",
-   "lastmod": "2026-11-18"
+   "fingerprint": "sha256:f93f80445daee6028688ccee2482a062cc313f8c7a60a8dc782bd24cb6567803",
+   "lastmod": "2026-11-24"
   },
   "zh-hant/spots/takamatsu/p281/index.html": {
    "fingerprint": "sha256:082906513a469a76f610582e72c84279ea6d088056a4eb138a3c9c2e7b406cdf",
