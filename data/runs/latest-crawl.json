@@ -9,7 +9,7 @@
     "https://www.shorinjikempo.or.jp/religious/: robots.txt 503: 今回は巡回しない"
   ],
   "extraction_metrics": null,
-  "finished_at": "2026-11-24T04:35:18Z",
+  "finished_at": "2026-11-25T03:20:34Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -20,17 +20,17 @@
   "service": "japan-open-today",
   "stages": {
     "crawl": {
-      "changed": 16,
+      "changed": 13,
       "daily_kinds_only": 15,
       "errors": 5,
-      "fetched": 67,
-      "not_modified": 10,
-      "requests": 117,
-      "skipped_not_due": 233,
+      "fetched": 71,
+      "not_modified": 6,
+      "requests": 116,
+      "skipped_not_due": 236,
       "stale_cache": 0,
-      "unchanged": 61,
+      "unchanged": 64,
       "workers": 6
     }
   },
-  "started_at": "2026-11-24T04:34:16Z"
+  "started_at": "2026-11-25T03:19:33Z"
 }
