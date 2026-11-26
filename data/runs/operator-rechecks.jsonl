@@ -307,3 +307,12 @@
 {"at": "2026-11-25T12:21:34+09:00", "result": "ok", "key": "kagawa-city-161", "label": "五色台（kagawa-city-161）"}
 {"at": "2026-11-25T12:21:34+09:00", "result": "ok", "key": "kagawa-city-175", "label": "常盤公園（kagawa-city-175）"}
 {"at": "2026-11-25T12:21:34+09:00", "result": "ok", "key": "kagawa-city-178", "label": "府中湖（kagawa-city-178）"}
+{"at": "2026-11-26T11:38:58+09:00", "result": "fail", "key": "kagawa-tamamo", "label": "高松城跡 玉藻公園（kagawa-tamamo）", "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu", "failures": 38}
+{"at": "2026-11-26T11:38:58+09:00", "result": "fail", "key": "kagawa-88shikokuhenro", "label": "屋島寺（kagawa-88shikokuhenro）", "reason": "根拠の引用がページに無い: 南面山 千光院 屋島寺 – （一社）四国八十八ヶ所霊場会", "failures": 4}
+{"at": "2026-11-26T11:38:58+09:00", "result": "fail", "key": "kagawa-88shikokuhenro-245", "label": "根香寺（kagawa-88shikokuhenro-245）", "reason": "根拠の引用がページに無い: 青峰山 千手院 根香寺 – （一社）四国八十八ヶ所霊場会", "failures": 4}
+{"at": "2026-11-26T11:38:58+09:00", "result": "fail", "key": "kagawa-mannou-mori-89", "label": "香川県満濃池森林公園（kagawa-mannou-mori-89）", "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8", "failures": 36}
+{"at": "2026-11-26T11:38:58+09:00", "result": "fail", "key": "kagawa-88shikokuhenro-174", "label": "天皇寺（kagawa-88shikokuhenro-174）", "reason": "根拠の引用がページに無い: 金華山 高照院 天皇寺 – （一社）四国八十八ヶ所霊場会", "failures": 4}
+{"at": "2026-11-26T11:38:58+09:00", "result": "ok", "key": "kagawa-city-187", "label": "県立亀鶴公園（kagawa-city-187）"}
+{"at": "2026-11-26T11:38:58+09:00", "result": "ok", "key": "kagawa-city-208", "label": "道の駅「ながお」（kagawa-city-208）"}
+{"at": "2026-11-26T11:38:58+09:00", "result": "ok", "key": "kagawa-city-209", "label": "道の駅「みろく」（kagawa-city-209）"}
+{"at": "2026-11-26T11:38:58+09:00", "result": "ok", "key": "kagawa-city-211", "label": "みろく自然公園（kagawa-city-211）"}
