@@ -8,7 +8,7 @@
     "https://www.my-kagawa.jp/point/30: HTTP 404"
   ],
   "extraction_metrics": null,
-  "finished_at": "2026-11-26T02:38:01Z",
+  "finished_at": "2026-11-27T02:48:08Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -19,17 +19,17 @@
   "service": "japan-open-today",
   "stages": {
     "crawl": {
-      "changed": 18,
-      "daily_kinds_only": 15,
+      "changed": 10,
+      "daily_kinds_only": 14,
       "errors": 4,
-      "fetched": 72,
-      "not_modified": 8,
-      "requests": 120,
-      "skipped_not_due": 233,
+      "fetched": 246,
+      "not_modified": 12,
+      "requests": 302,
+      "skipped_not_due": 63,
       "stale_cache": 0,
-      "unchanged": 62,
+      "unchanged": 248,
       "workers": 6
     }
   },
-  "started_at": "2026-11-26T02:36:46Z"
+  "started_at": "2026-11-27T02:37:13Z"
 }

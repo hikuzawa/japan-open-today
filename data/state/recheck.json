@@ -4,20 +4,20 @@
  },
  "kagawa-88shikokuhenro": {
   "failed_since": "2026-11-23",
-  "failures": 4,
-  "last_tried": "2026-11-26",
+  "failures": 5,
+  "last_tried": "2026-11-27",
   "reason": "根拠の引用がページに無い: 南面山 千光院 屋島寺 – （一社）四国八十八ヶ所霊場会"
  },
  "kagawa-88shikokuhenro-174": {
   "failed_since": "2026-11-23",
-  "failures": 4,
-  "last_tried": "2026-11-26",
+  "failures": 5,
+  "last_tried": "2026-11-27",
   "reason": "根拠の引用がページに無い: 金華山 高照院 天皇寺 – （一社）四国八十八ヶ所霊場会"
  },
  "kagawa-88shikokuhenro-245": {
   "failed_since": "2026-11-23",
-  "failures": 4,
-  "last_tried": "2026-11-26",
+  "failures": 5,
+  "last_tried": "2026-11-27",
   "reason": "根拠の引用がページに無い: 青峰山 千手院 根香寺 – （一社）四国八十八ヶ所霊場会"
  },
  "kagawa-benesse-house": {
@@ -71,8 +71,20 @@
  "kagawa-city-211": {
   "checked_on": "2026-11-26"
  },
+ "kagawa-city-216": {
+  "checked_on": "2026-11-27"
+ },
  "kagawa-city-2938": {
   "checked_on": "2026-10-16"
+ },
+ "kagawa-city-334": {
+  "checked_on": "2026-11-27"
+ },
+ "kagawa-city-335": {
+  "checked_on": "2026-11-27"
+ },
+ "kagawa-city-339": {
+  "checked_on": "2026-11-27"
  },
  "kagawa-city-47": {
   "checked_on": "2026-10-16"
@@ -190,8 +202,8 @@
  },
  "kagawa-mannou-mori-89": {
   "failed_since": "2026-10-22",
-  "failures": 36,
-  "last_tried": "2026-11-26",
+  "failures": 37,
+  "last_tried": "2026-11-27",
   "reason": "根拠の引用がページに無い: 指定管理者 香川県造園事業協同組合 ──────────────── 4 2 8"
  },
  "kagawa-manten-shodoshima": {
@@ -577,8 +589,8 @@
  },
  "kagawa-tamamo": {
   "failed_since": "2026-10-13",
-  "failures": 38,
-  "last_tried": "2026-11-26",
+  "failures": 39,
+  "last_tried": "2026-11-27",
   "reason": "根拠の引用がページに無い: 史跡高松城跡(高松市立玉藻公園) … Copyright © Takamatsu"
  },
  "kagawa-tamurajinja": {
