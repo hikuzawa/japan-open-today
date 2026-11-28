@@ -2,13 +2,21 @@
   "ci": true,
   "command": "crawl",
   "errors": [
+    "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shisetsu/park/tamamo/bunzai2018122.html: robots.txt を取得できないため今回は巡回しない",
     "http://www.kenminhall.com/: robots.txt を取得できないため今回は巡回しない",
     "http://www.kenminhall.com/visitors/ticket/: robots.txt を取得できないため今回は巡回しない",
     "http://www.kenminhall.com/visitors/ticket/howto: robots.txt を取得できないため今回は巡回しない",
+    "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kikuchikan/index.html: robots.txt を取得できないため今回は巡回しない",
+    "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/index.html: robots.txt を取得できないため今回は巡回しない",
+    "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/info/access.html: robots.txt を取得できないため今回は巡回しない",
+    "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/info/index.html: robots.txt を取得できないため今回は巡回しない",
+    "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/info/ticket.html: robots.txt を取得できないため今回は巡回しない",
+    "https://www.city.takamatsu.kagawa.jp/museum/takamatsu/allNewsList.html: robots.txt を取得できないため今回は巡回しない",
+    "https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/kounanrekishi/index.html: robots.txt を取得できないため今回は巡回しない",
     "https://www.my-kagawa.jp/point/30: HTTP 404"
   ],
   "extraction_metrics": null,
-  "finished_at": "2026-11-27T02:48:08Z",
+  "finished_at": "2026-11-28T02:28:23Z",
   "llm": {
     "cached_calls": 0,
     "calls": 0,
@@ -19,17 +27,17 @@
   "service": "japan-open-today",
   "stages": {
     "crawl": {
-      "changed": 10,
-      "daily_kinds_only": 14,
-      "errors": 4,
-      "fetched": 246,
-      "not_modified": 12,
-      "requests": 302,
-      "skipped_not_due": 63,
+      "changed": 16,
+      "daily_kinds_only": 13,
+      "errors": 12,
+      "fetched": 78,
+      "not_modified": 9,
+      "requests": 131,
+      "skipped_not_due": 229,
       "stale_cache": 0,
-      "unchanged": 248,
+      "unchanged": 71,
       "workers": 6
     }
   },
-  "started_at": "2026-11-27T02:37:13Z"
+  "started_at": "2026-11-28T02:27:12Z"
 }
